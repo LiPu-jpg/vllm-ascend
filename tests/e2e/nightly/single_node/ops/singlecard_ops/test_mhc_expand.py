@@ -88,8 +88,8 @@ def test_mhc_expand_npu_graph(dtype, tokens, hidden):
 
 
 @pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
-def test_mhc_expand_cached_addresses_and_streams(dtype):
-    # Keep every allocation live: a reused executor must update both addresses
+def test_mhc_expand_addresses_and_streams(dtype):
+    # Keep every allocation live: queued dispatch must preserve both addresses
     # and must not overwrite an earlier result or share state between streams.
     streams = [torch.npu.Stream(), torch.npu.Stream()]
     pending = []
