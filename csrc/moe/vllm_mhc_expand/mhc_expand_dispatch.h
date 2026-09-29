@@ -1,14 +1,16 @@
 // SPDX-License-Identifier: Apache-2.0
 #pragma once
 #include <limits>
-#include <memory>
+#include <torch_npu/csrc/core/npu/NPUFunctions.h>
 
 namespace vllm_ascend {
 
-// Match the framework's lightweight op-api submission path. Keep ACLNN tensor
-// conversion and workspace discovery on the caller, as in EXEC_NPU_CMD_V1.
-inline void LaunchMhcExpand(const at::Tensor& x, int64_t mult, const at::Tensor& y)
+// Run ACLNN preparation and submission together on the framework's queue thread.
+// The enclosing callback owns x/y until submission and preserves the caller's stream.
+inline int ExecuteMhcExpand(const at::Tensor& x, int64_t mult, const at::Tensor& y,
+                            c10_npu::NPUStream npuStream, aclrtStream stream)
 {
+    const c10_npu::NPUStreamGuard streamGuard(npuStream.unwrap());
     using Query = int (*)(const aclTensor*, int64_t, const aclTensor*, uint64_t*, aclOpExecutor**);
     using Execute = int (*)(void*, uint64_t, aclOpExecutor*, aclrtStream);
     static const auto getWorkspace = reinterpret_cast<Query>(
@@ -20,7 +22,6 @@ inline void LaunchMhcExpand(const at::Tensor& x, int64_t mult, const at::Tensor&
         GetOpApiFuncAddr("UnInitHugeMemThreadLocal"));
     static const auto releaseMemory = reinterpret_cast<ReleaseHugeMem>(GetOpApiFuncAddr("ReleaseHugeMem"));
     TORCH_CHECK(getWorkspace && execute, "mHC Expand ACLNN API is unavailable");
-    const auto stream = c10_npu::getCurrentNPUStream().stream(false);
     if (initMemory) {
         initMemory(nullptr, false);
     }
@@ -31,7 +32,6 @@ inline void LaunchMhcExpand(const at::Tensor& x, int64_t mult, const at::Tensor&
     struct Resources {
         aclTensor* input = nullptr;
         aclTensor* output = nullptr;
-        at::Tensor inputOwner, outputOwner, workspace;
         ReleaseHugeMem release = nullptr;
         ~Resources()
         {
@@ -39,32 +39,39 @@ inline void LaunchMhcExpand(const at::Tensor& x, int64_t mult, const at::Tensor&
             if (output) Release(output);
             if (release) release(nullptr, false);
         }
-    };
-    // The submission may execute later on the framework's queue thread. Keep
-    // descriptors and all storage alive through completion, including errors.
-    auto resources = std::make_shared<Resources>();
-    resources->release = releaseMemory;
-    resources->inputOwner = x;
-    resources->outputOwner = y;
-    resources->input = ConvertType(x);
-    resources->output = ConvertType(y);
+    } resources;
+    resources.release = releaseMemory;
+    resources.input = ConvertType(x);
+    resources.output = ConvertType(y);
     uint64_t workspaceSize = 0;
     aclOpExecutor* executor = nullptr;
-    const auto workspaceStatus = getWorkspace(resources->input, mult, resources->output, &workspaceSize, &executor);
+    const auto workspaceStatus = getWorkspace(resources.input, mult, resources.output, &workspaceSize, &executor);
     TORCH_CHECK(workspaceStatus == 0, "aclnnVllmMhcExpandGetWorkspaceSize failed: ", aclGetRecentErrMsg());
+    at::Tensor workspace;
     if (workspaceSize != 0) {
         TORCH_CHECK(workspaceSize <= static_cast<uint64_t>(std::numeric_limits<int64_t>::max()),
                     "mHC Expand workspace size overflows int64");
-        const auto options = at::TensorOptions(torch_npu::utils::get_npu_device_type()).dtype(at::kByte);
-        resources->workspace = at::empty({static_cast<int64_t>(workspaceSize)}, options);
+        workspace = at::empty({static_cast<int64_t>(workspaceSize)}, x.options().dtype(at::kByte));
     }
+    void* data = workspace.defined() ? const_cast<void*>(workspace.storage().data()) : nullptr;
+    const auto status = execute(data, workspaceSize, executor, stream);
+    TORCH_CHECK(status == 0, "aclnnVllmMhcExpand failed: ", aclGetRecentErrMsg());
+    return status;
+}
+
+inline void LaunchMhcExpand(const at::Tensor& x, int64_t mult, const at::Tensor& y)
+{
+    // Preserve the existing caller-side path for thread-local core controls and
+    // non-base storage formats. The asynchronous path copies only base formats.
+    if (c10_npu::is_core_control_enabled() || !IsOpInputBaseFormat(x)) {
+        EXEC_NPU_CMD(aclnnVllmMhcExpand, x, mult, y);
+        return;
+    }
+    const auto npuStream = c10_npu::getCurrentNPUStream();
+    const auto stream = npuStream.stream(false);
     at_npu::native::OpCommand::RunOpApiV2("aclnnVllmMhcExpand",
-        [resources, workspaceSize, stream, executor]() -> int {
-            void* data = resources->workspace.defined()
-                ? const_cast<void*>(resources->workspace.storage().data()) : nullptr;
-            const auto status = execute(data, workspaceSize, executor, stream);
-            TORCH_CHECK(status == 0, "aclnnVllmMhcExpand failed: ", aclGetRecentErrMsg());
-            return status;
+        [x, mult, y, npuStream, stream]() -> int {
+            return ExecuteMhcExpand(x, mult, y, npuStream, stream);
         });
 }
 
