@@ -124,6 +124,22 @@ def test_mhc_expand_validation(device):
         torch.ops._C_ascend.npu_mhc_expand(x.float(), 4)
 
 
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
+def test_mhc_expand_temporary_inputs(dtype):
+    # Only retain outputs on the caller. Queued preparation must keep each
+    # temporary input alive while later allocations put pressure on its storage.
+    pending = []
+    for iteration in range(12):
+        generator = torch.Generator().manual_seed(401 + iteration)
+        bits = torch.randint(-32768, 32768, (7, 4096), dtype=torch.int16, generator=generator)
+        expected = bits.view(dtype)
+        output = torch.ops._C_ascend.npu_mhc_expand(expected.to("npu"), 4)
+        pending.append((output, expected))
+    torch.npu.synchronize()
+    for output, expected in pending:
+        assert_bits_equal(output, expected.unsqueeze(1).repeat(1, 4, 1))
+
+
 def test_mhc_expand_meta():
     x = torch.empty(3, 17, device="meta", dtype=torch.bfloat16)
     y = torch.ops._C_ascend.npu_mhc_expand(x, 4)
