@@ -140,6 +140,30 @@ def test_mhc_expand_temporary_inputs(dtype):
         assert_bits_equal(output, expected.unsqueeze(1).repeat(1, 4, 1))
 
 
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
+@pytest.mark.parametrize("change_output", [False, True])
+def test_mhc_expand_metadata_snapshot(dtype, change_output):
+    pending = []
+    for iteration in range(12):
+        generator = torch.Generator().manual_seed(601 + iteration)
+        bits = torch.randint(-32768, 32768, (7, 4096), dtype=torch.int16, generator=generator)
+        expected = bits.view(dtype)
+        x = expected.to("npu")
+        output = torch.ops._C_ascend.npu_mhc_expand(x, 4)
+        # Metadata mutation is immediate on the caller; queued work must use
+        # the original descriptor even if its preparation has not started yet.
+        if change_output:
+            output.transpose_(0, 2)
+        else:
+            x.transpose_(0, 1)
+        pending.append((x, output, expected))
+    torch.npu.synchronize()
+    for _, output, expected in pending:
+        if change_output:
+            output = output.transpose(0, 2)
+        assert_bits_equal(output, expected.unsqueeze(1).repeat(1, 4, 1))
+
+
 def test_mhc_expand_meta():
     x = torch.empty(3, 17, device="meta", dtype=torch.bfloat16)
     y = torch.ops._C_ascend.npu_mhc_expand(x, 4)
