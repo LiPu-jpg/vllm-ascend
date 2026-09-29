@@ -2,6 +2,7 @@
 #pragma once
 #include <array>
 #include <cstring>
+#include <limits>
 #include <torch_npu/csrc/core/npu/NPUFunctions.h>
 
 namespace vllm_ascend {
@@ -71,7 +72,10 @@ public:
         }
         at::Tensor workspace;
         if (workspaceSize_ != 0) {
-            workspace = at_npu::native::OpPreparation::unsafe_empty_workspace(workspaceSize_);
+            TORCH_CHECK(workspaceSize_ <= static_cast<uint64_t>(std::numeric_limits<int64_t>::max()),
+                        "mHC Expand workspace size overflows int64");
+            const auto options = at::TensorOptions(torch_npu::utils::get_npu_device_type()).dtype(at::kByte);
+            workspace = at::empty({static_cast<int64_t>(workspaceSize_)}, options);
         }
         const auto execute = api_.execute;
         const auto stream = stream_;
