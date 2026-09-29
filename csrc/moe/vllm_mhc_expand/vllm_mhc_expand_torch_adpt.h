@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 #pragma once
 #include <limits>
+#include "mhc_expand_exec_cache.h"
 namespace vllm_ascend {
 at::Tensor npu_mhc_expand(const at::Tensor& x, int64_t mult)
 {
@@ -14,7 +15,10 @@ at::Tensor npu_mhc_expand(const at::Tensor& x, int64_t mult)
     const c10_npu::OptionalNPUGuard guard(x.device());
     auto y = at::empty({x.size(0), mult, x.size(1)}, x.options());
     if (x.numel() != 0) {
-        EXEC_NPU_CMD(aclnnVllmMhcExpand, x, mult, y);
+        MhcExpandExecCache cache(x, mult, y, c10_npu::getCurrentNPUStream().stream(false));
+        if (!cache.RunIfHit()) {
+            EXEC_NPU_CMD(aclnnVllmMhcExpand, x, mult, y);
+        }
     }
     return y;
 }

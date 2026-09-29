@@ -87,6 +87,29 @@ def test_mhc_expand_npu_graph(dtype, tokens, hidden):
         assert_bits_equal(y, x.unsqueeze(1).repeat(1, 4, 1))
 
 
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
+def test_mhc_expand_cached_addresses_and_streams(dtype):
+    # Keep every allocation live: a reused executor must update both addresses
+    # and must not overwrite an earlier result or share state between streams.
+    streams = [torch.npu.Stream(), torch.npu.Stream()]
+    pending = []
+    for stream_index, stream in enumerate(streams):
+        stream.wait_stream(torch.npu.current_stream())
+        with torch.npu.stream(stream):
+            for iteration in range(6):
+                offset = iteration % 3
+                generator = torch.Generator().manual_seed(101 + 11 * stream_index + iteration)
+                bits = torch.randint(-32768, 32768, (7 * 4096 + offset,), dtype=torch.int16, generator=generator)
+                x = bits.view(dtype).to("npu")[offset:].reshape(7, 4096)
+                expected = bits[offset:].view(dtype).reshape(7, 4096)
+                y = torch.ops._C_ascend.npu_mhc_expand(x, 4)
+                pending.append((x, y, expected))
+    torch.npu.synchronize()
+    for x, y, expected in pending:
+        assert_bits_equal(y, expected.unsqueeze(1).repeat(1, 4, 1))
+        assert_bits_equal(x, expected)
+
+
 @pytest.mark.parametrize("device", ["npu", "meta"])
 def test_mhc_expand_validation(device):
     x = torch.empty(3, 17, dtype=torch.float16, device=device)
