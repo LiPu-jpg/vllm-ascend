@@ -185,29 +185,36 @@ def test_mhc_expand_compile_dynamic():
 @pytest.mark.parametrize("shape", [(1, 4096), (16, 7168), (128, 4096), (3, 8193), (3, 17), (0, 17), (3, 0)])
 def test_mhc_expand_dispatch(expand, dtype, shape, monkeypatch):
     x = torch.randn(shape, dtype=dtype, device="npu")
-    original = torch.ops._C_ascend.npu_mhc_expand
+    original = torch.ops._C_ascend.npu_mhc_expand_if_supported
     calls = []
 
     def traced(x, mult):
-        calls.append((tuple(x.shape), mult))
-        return original(x, mult)
+        result = original(x, mult)
+        calls.append((tuple(x.shape), mult, result is not None))
+        return result
 
-    monkeypatch.setattr(torch.ops._C_ascend, "npu_mhc_expand", traced)
+    monkeypatch.setattr(torch.ops._C_ascend, "npu_mhc_expand_if_supported", traced)
     assert_bits_equal(expand(x, 4), x.unsqueeze(1).repeat(1, 4, 1))
-    expected_calls = [(shape, 4)] if x.numel() > 0 and shape[1] % 16 == 0 else []
-    assert calls == expected_calls
+    assert calls == [(shape, 4, x.numel() > 0 and shape[1] % 16 == 0)]
 
 
 @pytest.mark.parametrize("expand", [mhc_expand, hc_expand], ids=["helper", "glm"])
 @pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
 @pytest.mark.parametrize("mult", [2, 8])
 def test_mhc_expand_other_multipliers_use_native(expand, dtype, mult, monkeypatch):
-    def unexpected_custom(*args):
-        raise AssertionError("Only mult=4 has a measured custom path")
+    original = torch.ops._C_ascend.npu_mhc_expand_if_supported
+    calls = []
 
-    monkeypatch.setattr(torch.ops._C_ascend, "npu_mhc_expand", unexpected_custom)
+    def checked(x, mult):
+        result = original(x, mult)
+        assert result is None
+        calls.append(mult)
+        return result
+
+    monkeypatch.setattr(torch.ops._C_ascend, "npu_mhc_expand_if_supported", checked)
     x = torch.randn(3, 64, dtype=dtype, device="npu")
     assert_bits_equal(expand(x, mult), x.unsqueeze(1).repeat(1, mult, 1))
+    assert calls == [mult]
 
 
 @pytest.mark.parametrize("expand", [mhc_expand, hc_expand], ids=["helper", "glm"])
@@ -216,7 +223,7 @@ def test_mhc_expand_gradient_fallback(expand, dtype, monkeypatch):
     def unexpected_custom(*args):
         raise AssertionError("Gradient-requiring input must use native expansion")
 
-    monkeypatch.setattr(torch.ops._C_ascend, "npu_mhc_expand", unexpected_custom)
+    monkeypatch.setattr(torch.ops._C_ascend, "npu_mhc_expand_if_supported", unexpected_custom)
     x = torch.randn(3, 64, dtype=dtype, device="npu", requires_grad=True)
     expand(x, 4).sum().backward()
     assert_bits_equal(x.grad, torch.full((3, 64), 4, dtype=dtype))
@@ -236,3 +243,56 @@ def test_mhc_expand_helper_graph(expand, dtype):
         x.fill_(value)
         graph.replay()
         assert_bits_equal(y, x.unsqueeze(1).repeat(1, 4, 1))
+
+
+@pytest.mark.parametrize("device", ["npu", "meta"])
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
+@pytest.mark.parametrize(
+    "reason",
+    ["supported", "dtype", "rank", "noncontiguous", "unaligned", "gradient", "empty", "zero_hidden", "trivial", "mult"],
+)
+def test_mhc_expand_optional_eligibility(device, dtype, reason):
+    shape = {"unaligned": (3, 17), "empty": (0, 64), "zero_hidden": (3, 0)}.get(reason, (3, 64))
+    x = torch.empty(shape, device=device, dtype=torch.float32 if reason == "dtype" else dtype)
+    if reason == "rank":
+        x = x.unsqueeze(0)
+    elif reason == "noncontiguous":
+        x = x.t()
+    elif reason == "gradient":
+        x.requires_grad_()
+    mult = {"trivial": 1, "mult": 8}.get(reason, 4)
+    result = torch.ops._C_ascend.npu_mhc_expand_if_supported(x, mult)
+    if reason != "supported":
+        assert result is None
+    else:
+        assert result.shape == (3, 4, 64)
+        assert result.dtype == dtype
+        assert result.device == x.device
+        assert result.is_contiguous()
+        if device == "npu":
+            assert_bits_equal(result, x.unsqueeze(1).repeat(1, 4, 1))
+            assert result.data_ptr() != x.data_ptr()
+
+
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
+def test_mhc_expand_fallback_aliasing(dtype):
+    x = torch.randn(3, 64, device="npu", dtype=dtype)
+    y = mhc_expand(x, 1)
+    assert y.data_ptr() == x.data_ptr()
+    y.fill_(2)
+    assert_bits_equal(x, torch.full((3, 64), 2, dtype=dtype))
+    empty = x[:0]
+    result = mhc_expand(empty, 4)
+    assert result.untyped_storage().data_ptr() == empty.untyped_storage().data_ptr()
+
+
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
+def test_mhc_expand_optional_compile_dynamic(dtype):
+    def expand(x, mult):
+        result = torch.ops._C_ascend.npu_mhc_expand_if_supported(x, mult)
+        return result if result is not None else x.unsqueeze(1).expand(-1, mult, -1).contiguous()
+
+    compiled = torch.compile(expand, backend="eager", dynamic=True, fullgraph=True)
+    for tokens, hidden in ((3, 64), (11, 64), (7, 128), (3, 17), (5, 33), (0, 64), (3, 0)):
+        x = torch.randn(tokens, hidden, device="npu", dtype=dtype)
+        assert_bits_equal(compiled(x, 4), x.unsqueeze(1).repeat(1, 4, 1))

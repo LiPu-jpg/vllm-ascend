@@ -2,6 +2,7 @@
 #pragma once
 #include <limits>
 #include "mhc_expand_dispatch.h"
+#include "mhc_expand_support.h"
 namespace vllm_ascend {
 at::Tensor npu_mhc_expand(const at::Tensor& x, int64_t mult)
 {
@@ -18,5 +19,13 @@ at::Tensor npu_mhc_expand(const at::Tensor& x, int64_t mult)
         LaunchMhcExpand(x, mult, y);
     }
     return y;
+}
+
+std::optional<at::Tensor> npu_mhc_expand_if_supported(const at::Tensor& x, int64_t mult)
+{
+    if (!MhcExpandSupported(x, mult)) {
+        return std::nullopt;
+    }
+    return npu_mhc_expand(x, mult);
 }
 }  // namespace vllm_ascend
