@@ -1,0 +1,149 @@
+{
+  "body": "### What this PR does / why we need it?\n\nA2/A3 unquantized SFA stages selected KV rows before Cube attention. A nonempty DCP-local index prefix can leave many invalid suffix rows; RoPE padding currently issues one DMA command per row. Reuse the already zeroed 512-element key row to fill up to eight contiguous 64-element RoPE rows per command, clamping the last copy to the existing AIV partition boundary. The native change is 8 added / 2 removed lines, with tests, a portable benchmark and the operator README.\n\nActual callers include DCP decode/prefill in `sfa_cp.py`, via the current native SFA device dispatcher. The patch preserves existing synchronization, key padding, allocation, tiling and attention arithmetic. It is independently implemented against the publicly licensed upstream kernel; no contest source is copied. The source/provenance audit is included with the evidence.\n\nRelated #17653 trims the valid prefix on **A3**, mode 0/block 1. This patch coalesces padding copies in the shared A2/A3 V-template (blocks 1/2/4, modes 0/3). Benefits overlap where that PR removes padding work; combined A3 behavior/performance is not validated. Quantized and A5 kernels are separate. This PR is independent of empty-row PR #17823 and mHC PR #17775.\n\n### Does this PR introduce _any_ user-facing change?\n\nNo new API/configuration. After rebuilding custom operators, eligible RoPE calls issue fewer padding DMA commands. Operator-level gains are workload dependent; **no model throughput improvement or consistent eager-call wall-time improvement is claimed**.\n\n### How was this patch tested?\n\nKeep as **draft** for maintainer review and A3 CI. Tested on one Ascend910B3 (A2), 64 GiB HBM, driver 25.5.0, CANN 9.1.0, Python 3.12.14, Torch 2.10.0+cpu / torch_npu 2.10.0.post4, GCC/G++13 Release/O3. Baseline and candidate use identical host/framework libraries and separate SFA kernel objects. All source/generated/installed hashes and raw observations are retained.\n\nLocked benchmark source: `eee0ef7dfbe99a7ada56dafb3739dd952a0265b5`; final integration base: `11682d1e341d161a4129a58863f39a912846f71d`. SFA source and relevant callers are unchanged between the snapshots; the actual runtime SFA dispatch method text matches current upstream. Candidate kernel SHA256: `489daf734b639dbd6afb25ed661f250ff4d161e076d55171f4267ce61b749191`.\n\n- `bash format.sh ci` and `git diff --check`: passed. The contribution is a single Signed-off-by commit.\n- New native pytest: **56 passed** on candidate; **56 passed** on baseline. Covers FP16/BF16, RoPE/NoPE, permuted physical pages, valid-prefix boundaries, multiple KV tiles, variable query lengths, empty rows and graph replay with changing indices.\n- Independent FP64-reference experiment: **60 cases passed** with project attention tolerances; candidate attention and both raw softmax-statistic outputs match baseline bytes.\n- Expanded layouts/block sizes/modes/head counts: **96 cases** retain baseline bytes, plus **2 actual device-dispatch checks**. **Eight existing BSND/block8/head1 LSE reference failures (nonempty NaNs) occur in both builds** and remain recorded as failures. They are not claimed as passing numerical accuracy. The stricter generic per-element MERE/MARE criterion also fails many baseline near-zero attention outputs; we do not claim it passes.\n- Actual DCP index-remap -> device-dispatch receiver component: **80 cases per build**, local counts 1/127/257/513/2048, FP16/BF16, ranks 0/7, interleave 1/16, modes 0/3. Exact remapping, independent FP64 checks and baseline output-byte parity pass. This uses synthetic metadata on one receiver, **not distributed query gather/output merge or model inference**.\n- Native CPU+NPU profiler: all **52 nonempty cases per build**, wait=0/warmup=5/active=5/repeat=1, Level1/PipeUtilization; sum all `op_statistic.csv` Total Time(us) rows /5. Profiled durations are kept separate from unprofiled benchmark data.\n\n**Complete performance comparison:** 52 fixed nonempty cases, B/C/C/B/B/C process order, three fresh processes and 15 raw samples per case/variant, identical input hashes, dtype, toolchain and timing. NPU contention detection pauses/retries in fresh output paths; aborted attempts are retained. Clocks/power are not fixed, and no statistical significance is claimed.\n\n| Case | dtype | RoPE | Q | KV | Valid/query | Current native us | Candidate us | Device latency change | Amortized wall change |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 6 | FP16 | 64 | 1 | 512 | 1 | 37.919 | 35.652 | -5.98% | -0.14% |\n| 18 | BF16 | 64 | 1 | 512 | 1 | 38.165 | 35.992 | -5.69% | -3.14% |\n| 32 | FP16 | 64 | 1 | 4096 | 1 | 66.290 | 61.434 | -7.33% | +4.31% |\n| 46 | BF16 | 64 | 1 | 4096 | 1 | 66.191 | 62.413 | -5.71% | +0.43% |\n| 23 | BF16 | 64 | 32 | 512 | 512 | 67.638 | 69.934 | **+3.39%** | -0.94% |\n| 40 | BF16 | 0 | 1 | 4096 | 127 | 56.980 | 58.637 | **+2.91%** | +1.77% |\n\nAcross all 52 cases: **32 lower / 20 higher device medians**, maximum reduction 7.33%, maximum slowdown 3.39%. The two regressions above are not discarded as noise, including the NoPE source-unaffected control. Full results include every case, raw range/sample, per-process median, wall measurement, slowdown and rejected first iteration (20 lower /32 higher).\n\nEvidence: [complete raw data, environment/build hashes, correctness, all52-case performance tables, rejected iteration and reproduction scripts](https://github.com/LiPu-jpg/vllm-ascend/tree/3d6558a784a368cd479a02dcf0bd0c064ee03f7d).\n\nFinal source commit: `5e51218dc3285dab1d58684d4804eb680fa51510`. [Full acceptance matrix with ranges and wall measurements](https://github.com/LiPu-jpg/vllm-ascend/blob/3d6558a784a368cd479a02dcf0bd0c064ee03f7d/a2/performance-table.md); [native profiler comparison](https://github.com/LiPu-jpg/vllm-ascend/blob/3d6558a784a368cd479a02dcf0bd0c064ee03f7d/a2/profiler-comparison.md); [exact final public-script run](https://github.com/LiPu-jpg/vllm-ascend/blob/3d6558a784a368cd479a02dcf0bd0c064ee03f7d/a2/public-v2/public-benchmark-table.md).\n\nReproduce with independent installations, a fresh output path per process and an idle NPU:\n\n```bash\npytest -q tests/e2e/nightly/single_node/ops/singlecard_ops/test_sparse_flash_attention_kv_padding.py\n# Run in baseline installation:\npython benchmarks/ops/benchmark_sparse_flash_attention_kv_padding.py --label baseline-commit --output baseline-b1.json\n# Run in candidate installation:\npython benchmarks/ops/benchmark_sparse_flash_attention_kv_padding.py --label candidate-commit --output candidate-c1.json --reference baseline-b1.pt\n```\n\nRepeat baseline/candidate in the stated interleaved order. The public benchmark saves every timing sample, input hash and output tensor; output comparison is bytewise. Graph samples capture eight native calls, warm up ten replays and time 100 replays (800 calls/sample). Wall samples amortize 25 eager calls plus synchronization; they are not single-call latency. Public benchmark execution/parity evidence is included separately from the acceptance sample pool.\n\n**Outstanding:** A3 compile/device tests, combined validation with #17653, distributed DCP and full-model performance, and maintainer-triggered CI. These limitations are the reason for a draft PR.\n\n- vLLM main: https://github.com/vllm-project/vllm/commit/ced6857afa0ea7b2e3f0846a62e1394e90f15607\n",
+  "headRefOid": "5e51218dc3285dab1d58684d4804eb680fa51510",
+  "isDraft": true,
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:48:01Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109869907195",
+      "name": "pre-commit",
+      "startedAt": "2026-09-30T11:43:06Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:43:58Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710201728/job/109869904428",
+      "name": "PR create action",
+      "startedAt": "2026-09-30T11:43:01Z",
+      "status": "COMPLETED",
+      "workflowName": "PR Create"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:58:07Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109871696067",
+      "name": "cpu-ut (vllm@ced6857afa0ea7b2e3f0846a62e1394e90f15607) / cpu-ut card-",
+      "startedAt": "2026-09-30T11:48:25Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:58:08Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109875083646",
+      "name": "cpu-ut (vllm@ced6857afa0ea7b2e3f0846a62e1394e90f15607) / upload-coverage-to-obs",
+      "startedAt": "2026-09-30T11:58:08Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:57:33Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109871695980",
+      "name": "cpu-ut (vllm@v0.30.0) / cpu-ut card-",
+      "startedAt": "2026-09-30T11:48:23Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:57:34Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109874896374",
+      "name": "cpu-ut (vllm@v0.30.0) / upload-coverage-to-obs",
+      "startedAt": "2026-09-30T11:57:34Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:58:08Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109875084669",
+      "name": "Recommend tests",
+      "startedAt": "2026-09-30T11:58:08Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:58:08Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109875086136",
+      "name": "select-tests",
+      "startedAt": "2026-09-30T11:58:09Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:58:08Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109875087206",
+      "name": "prepare-csrc-cache",
+      "startedAt": "2026-09-30T11:58:09Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:58:08Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109875087228",
+      "name": "run-selected-tests-a5 (vllm@${{ matrix.vllm_version_short }})",
+      "startedAt": "2026-09-30T11:58:09Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:58:09Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109875089279",
+      "name": "run-selected-tests (vllm@${{ matrix.vllm_version }})",
+      "startedAt": "2026-09-30T11:58:09Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:58:09Z",
+      "conclusion": "SKIPPED",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109875088779",
+      "name": "run-selected-tests-upstream (vllm@${{ matrix.vllm_version_short }})",
+      "startedAt": "2026-09-30T11:58:09Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:58:38Z",
+      "conclusion": "FAILURE",
+      "detailsUrl": "https://github.com/vllm-project/vllm-ascend/actions/runs/36710202907/job/109875088393",
+      "name": "ci-gate",
+      "startedAt": "2026-09-30T11:58:30Z",
+      "status": "COMPLETED",
+      "workflowName": "E2E"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-09-30T11:42:35Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://probot.github.io/apps/dco/",
+      "name": "DCO",
+      "startedAt": "2026-09-30T11:42:34Z",
+      "status": "COMPLETED",
+      "workflowName": ""
+    }
+  ],
+  "title": "[Performance][SFA] Coalesce RoPE padding DMA on A2/A3",
+  "url": "https://github.com/vllm-project/vllm-ascend/pull/17852"
+}

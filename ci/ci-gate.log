@@ -1,0 +1,127 @@
+ci-gate	Check all required jobs	﻿2026-09-30T11:58:32.2905985Z ##[group]Run set -euo pipefail
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2906930Z ^[[36;1mset -euo pipefail^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2907533Z ^[[36;1m^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2908075Z ^[[36;1mPRE_COMMIT_RESULT="success"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2908761Z ^[[36;1mCPU_UT_RESULT="success"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2909597Z ^[[36;1mSELECT_TESTS_RESULT="skipped"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2910292Z ^[[36;1mHAS_TESTS="false"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2910903Z ^[[36;1mHAS_TESTS_A5=""^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2911479Z ^[[36;1m^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2912045Z ^[[36;1mecho "=== CI Gate Summary ==="^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2912792Z ^[[36;1mecho "pre-commit: ${PRE_COMMIT_RESULT}"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2913567Z ^[[36;1mecho "cpu-ut: ${CPU_UT_RESULT}"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2914350Z ^[[36;1mecho "src filter: true"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2915024Z ^[[36;1mecho "ci_pipeline filter: false"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2916060Z ^[[36;1mecho "select-tests: ${SELECT_TESTS_RESULT} (source: ${SELECTION_SOURCE:-unknown})"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2917097Z ^[[36;1mecho "has_tests: ${HAS_TESTS}"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2917878Z ^[[36;1mecho "has_tests_a5: ${HAS_TESTS_A5}"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2919314Z ^[[36;1mecho "labels: main2main=${HAS_MAIN2MAIN_LABEL} ready-precise=${HAS_READY_LABEL} ready-all=${HAS_READY_ALL_LABEL} ready-a5=${HAS_READY_A5_LABEL}"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2921085Z ^[[36;1mif [ "${SELECT_TESTS_RESULT}" = "success" ] && [ -n "${MATCHED_MODULES// /}" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2922141Z ^[[36;1m  echo "matched_modules: ${MATCHED_MODULES}"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2922886Z ^[[36;1mfi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2923408Z ^[[36;1m^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2924100Z ^[[36;1mif [ "${PRE_COMMIT_RESULT}" != "success" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2925140Z ^[[36;1m  echo "::error::pre-commit did not succeed (result: ${PRE_COMMIT_RESULT})."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2927238Z ^[[36;1m  echo "::error::This job runs lint / markdownlint / mypy / gitleaks on all files. Open the failed 'pre-commit' job above, fix the reported issues in your PR, and push again. No test label is needed for this failure."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2929050Z ^[[36;1m  exit 1^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2929644Z ^[[36;1mfi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2930146Z ^[[36;1m^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2930726Z ^[[36;1mif [ "${CPU_UT_RESULT}" != "success" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2931668Z ^[[36;1m  echo "::error::cpu-ut did not succeed (result: ${CPU_UT_RESULT})."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2932892Z ^[[36;1m  echo "::error::Open the failed 'cpu-ut' job above, fix the failing test(s) and push again."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2933910Z ^[[36;1m  exit 1^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2934813Z ^[[36;1mfi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2935445Z ^[[36;1m^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2936050Z ^[[36;1mif [ "${SELECT_TESTS_RESULT}" = "skipped" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2936978Z ^[[36;1m  # select-tests only runs under a run-enabling label^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2937944Z ^[[36;1m  # (ready-precise / ready-all / main2main). An unlabeled run^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2938957Z ^[[36;1m  # passes the gate when (and only when) the paths-filter in^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2940055Z ^[[36;1m  # pre-commit found no src or ci_pipeline paths in the diff.^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2940919Z ^[[36;1m  SRC_FILTER="true"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2941549Z ^[[36;1m  CI_PIPELINE_FILTER="false"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2942434Z ^[[36;1m  if [ "${SRC_FILTER}" != "true" ] && [ "${CI_PIPELINE_FILTER}" != "true" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2943706Z ^[[36;1m    echo "::notice::No source paths changed; precision tests are not required for this PR."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2944848Z ^[[36;1m    echo "=== CI Gate: PASSED ==="^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2945544Z ^[[36;1m    exit 0^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2946083Z ^[[36;1m  fi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2947345Z ^[[36;1m  echo "::error::This PR touches source code (src=${SRC_FILTER}, ci_pipeline=${CI_PIPELINE_FILTER}), so precision/full tests are required before merge."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2950608Z ^[[36;1m  echo "::error::How to fix: a maintainer adds exactly one label to this PR - 'ready-precise' to run the selected tests (recommended), 'ready-all' to run the full suite, or 'main2main' to run the full suite against both the vLLM main commit and the release tag. The workflow reruns automatically once the label is added."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2953238Z ^[[36;1m  exit 1^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2953763Z ^[[36;1mfi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2954340Z ^[[36;1m^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2954958Z ^[[36;1mif [ "${SELECT_TESTS_RESULT}" != "success" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2956015Z ^[[36;1m  echo "::error::select-tests did not succeed (result: ${SELECT_TESTS_RESULT})."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2957985Z ^[[36;1m  echo "::error::Open the failed 'select-tests' job above to see which step failed (checkout/rebase, coverage config validation, or test selection). Fix the reported issue and push again."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2959713Z ^[[36;1m  exit 1^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2960233Z ^[[36;1mfi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2960718Z ^[[36;1m^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2961422Z ^[[36;1m# Even after successful test selection, only explicit true/false^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2962458Z ^[[36;1m# values are valid. A missing output must not mean no tests.^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2963482Z ^[[36;1mif [ "${HAS_TESTS}" != "true" ] && [ "${HAS_TESTS}" != "false" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2964628Z ^[[36;1m  echo "::error::Invalid or missing has_tests output: '${HAS_TESTS}'"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2965502Z ^[[36;1m  exit 1^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2966025Z ^[[36;1mfi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2966515Z ^[[36;1m^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2967225Z ^[[36;1mif [ "${HAS_TESTS_A5}" != "true" ] && [ "${HAS_TESTS_A5}" != "false" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2968347Z ^[[36;1m  echo "::error::Invalid or missing has_tests_a5 output: '${HAS_TESTS_A5}'"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2969249Z ^[[36;1m  exit 1^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2969833Z ^[[36;1mfi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2970322Z ^[[36;1m^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2970865Z ^[[36;1mif [ "${HAS_TESTS}" = "true" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2971572Z ^[[36;1m  TESTS_RESULT="skipped"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2972289Z ^[[36;1m  echo "run-selected-tests: ${TESTS_RESULT}"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2973506Z ^[[36;1m  if [ "${HAS_MAIN2MAIN_LABEL}" != "true" ] && [ "${HAS_READY_LABEL}" != "true" ] && [ "${HAS_READY_ALL_LABEL}" != "true" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2975504Z ^[[36;1m    echo "::error::This PR touches source code (test selection source: ${SELECTION_SOURCE:-unknown}), so precision/full tests are required before merge."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2977003Z ^[[36;1m    if [ -n "${MATCHED_MODULES// /}" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2977862Z ^[[36;1m      echo "::error::Affected modules: ${MATCHED_MODULES}"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2978802Z ^[[36;1m    fi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2981199Z ^[[36;1m    echo "::error::How to fix: a maintainer adds exactly one label to this PR - 'ready-precise' to run the selected tests (recommended), 'ready-all' to run the full suite, or 'main2main' to run the full suite against both the vLLM main commit and the release tag. The workflow reruns automatically once the label is added."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2983673Z ^[[36;1m    exit 1^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2984300Z ^[[36;1m  fi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2984900Z ^[[36;1m  if [ "${TESTS_RESULT}" != "success" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2985922Z ^[[36;1m    echo "::error::run-selected-tests did not succeed (result: ${TESTS_RESULT})."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2986978Z ^[[36;1m    if [ "${HAS_MAIN2MAIN_LABEL}" = "true" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2988884Z ^[[36;1m      echo "::error::The 'main2main' dual-version suite failed. Open the failed job(s) inside the run-selected-tests matrix above (one per vLLM version) and fix the failing test(s) or the code change that broke them."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2990874Z ^[[36;1m    elif [ "${HAS_READY_ALL_LABEL}" = "true" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2992570Z ^[[36;1m      echo "::error::The 'ready-all' suite failed. Open the failed job(s) inside the run-selected-tests matrix above and fix the failing test(s) or the code change that broke them."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2994204Z ^[[36;1m    else^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2996217Z ^[[36;1m      echo "::error::The 'ready-precise' selected tests failed. Open the failed job(s) inside the run-selected-tests matrix above. If you believe the failures are unrelated to your change, you may ask a maintainer to switch to 'ready-all' for a broader comparison."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2998463Z ^[[36;1m    fi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2998978Z ^[[36;1m    exit 1^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.2999597Z ^[[36;1m  fi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3000112Z ^[[36;1mfi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3000608Z ^[[36;1m^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3001150Z ^[[36;1mif [ "${HAS_TESTS_A5}" = "true" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3001881Z ^[[36;1m  TESTS_A5_RESULT="skipped"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3002649Z ^[[36;1m  echo "run-selected-tests-a5: ${TESTS_A5_RESULT}"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3003697Z ^[[36;1m  if [ "${TESTS_A5_RESULT}" = "skipped" ] && [ "${HAS_READY_A5_LABEL}" != "true" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3005097Z ^[[36;1m    echo "::notice::run-selected-tests-a5 was skipped because ready-a5 is not set"^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3006174Z ^[[36;1m  elif [ "${TESTS_A5_RESULT}" != "success" ]; then^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3007268Z ^[[36;1m    echo "::error::run-selected-tests-a5 did not succeed (result: ${TESTS_A5_RESULT})."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3008710Z ^[[36;1m    echo "::error::The A5 test suite failed. Open the failed run-selected-tests-a5 job above for details."^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3009882Z ^[[36;1m    exit 1^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3010419Z ^[[36;1m  fi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3010913Z ^[[36;1mfi^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3011397Z ^[[36;1m^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3011920Z ^[[36;1mecho "=== CI Gate: PASSED ==="^[[0m
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3034814Z shell: /usr/bin/bash -el {0}
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3035881Z env:
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3036404Z   HAS_MAIN2MAIN_LABEL: false
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3037017Z   HAS_READY_LABEL: false
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3037602Z   HAS_READY_ALL_LABEL: false
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3038226Z   HAS_READY_A5_LABEL: false
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3038809Z   SELECTION_SOURCE: 
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3039354Z   MATCHED_MODULES: 
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3040021Z ##[endgroup]
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3390847Z === CI Gate Summary ===
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3391579Z pre-commit: success
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3392123Z cpu-ut: success
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3392640Z src filter: true
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3393175Z ci_pipeline filter: false
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3393795Z select-tests: skipped (source: unknown)
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3394586Z has_tests: false
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3395106Z has_tests_a5: 
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3395868Z labels: main2main=false ready-precise=false ready-all=false ready-a5=false
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3429843Z ##[error]This PR touches source code (src=true, ci_pipeline=false), so precision/full tests are required before merge.
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3442903Z ##[error]How to fix: a maintainer adds exactly one label to this PR - 'ready-precise' to run the selected tests (recommended), 'ready-all' to run the full suite, or 'main2main' to run the full suite against both the vLLM main commit and the release tag. The workflow reruns automatically once the label is added.
+ci-gate	Check all required jobs	2026-09-30T11:58:32.3457099Z ##[error]Process completed with exit code 1.
