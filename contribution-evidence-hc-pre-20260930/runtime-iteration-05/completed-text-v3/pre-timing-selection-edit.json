@@ -1,0 +1,6 @@
+{
+  "reason": "Verify actual selected private HcPre objects before the initial measured arms, in independent instrumented subprocesses with separate fresh cache; no runtime/build or timing-driver changes.",
+  "before": "3c8e1bc2e9e2f8c422b15d436d7470fc14379de0a23251ddc7d05c84a08cd226",
+  "after": "3d934d803e9e30d8dd7b146d0efe255794d320184bbb5885be866d72a829c23a",
+  "phase": "candidate build active; no NPU validation or timing started"
+}

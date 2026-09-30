@@ -1,0 +1,4 @@
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-build/CMakeFiles/precompile_obj.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-build/CMakeFiles/check_src_template.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-build/CMakeFiles/edit_cache.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

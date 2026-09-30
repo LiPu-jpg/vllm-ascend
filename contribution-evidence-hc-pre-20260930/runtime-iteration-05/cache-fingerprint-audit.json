@@ -1,0 +1,62 @@
+[
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:630",
+    "line_sha256": "f4d4194b65da6ec4f90d98f53efbb3a51e11861dc3f8b251cd52b85df8bc2afa",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  },
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:639",
+    "line_sha256": "84a4a598a3fccec992af4d14efe844f3d505d8a919cbf4d950072302eaf09066",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  },
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:641",
+    "line_sha256": "edcc31b275e48d4c0a5121adfebd267e03a0aa2c31a26c150cef9086836d22e9",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  },
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:650",
+    "line_sha256": "c595b0a8ed353e15fcb3ebfa06ee22ec283de6a3b88f5f09d9ae237996c83eaf",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  },
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:666",
+    "line_sha256": "595674a65b67aa68ca3533f25d58de1183816940a79a50ba80f9f706af94435f",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  },
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:1265",
+    "line_sha256": "16357e040c7ab3a8c4302a048d382eba1dc9bfa01e0c5038d5fb249ec099d21f",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  },
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:3341",
+    "line_sha256": "9c5fdba24034efcd2bf50d623d2e9e05ffd8f4b8853e5bd3faf1a8d2119485eb",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  },
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:3350",
+    "line_sha256": "311942614d38b4918cf287ff627c09136c145317f969182de640b0cfeabbe67d",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  },
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:3352",
+    "line_sha256": "0d2ddbbf2f4a0e736bd0dbed5da00147472b18456f2e6ff0d42ca204d3370895",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  },
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:3361",
+    "line_sha256": "36fcdbe463e6f1893691685f5efc3a7a6eea0f94f538b5eb500b8c822cc1d3b2",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  },
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:3377",
+    "line_sha256": "0866808de67cf1c1bb7484e30bdc5ac3242e4b1806dbcd350dd254589f814065",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  },
+  {
+    "fingerprint": "contribution-evidence-hc-pre-20260930/runtime-iteration-05/completed-text-v3/build.log:generic-api-key:3976",
+    "line_sha256": "7d3ad84253db3039d15d59af1ee50f550522b606fd9eb3f1f328bc39de195fef",
+    "reason": "Upstream csrc/scripts/build_cache.py emits a SHA256 content-addressed build cache identifier. This is not an authentication credential. Original bytes preserved."
+  }
+]

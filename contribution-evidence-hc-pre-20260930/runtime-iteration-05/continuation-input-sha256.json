@@ -1,0 +1,14 @@
+{
+  "controller_v5.sh": "cdd8e0eb82eab3cf92dcf331b13c810a3c1fac2f57298228fbbfae7d9f59a827",
+  "controller_v6.sh": "3bafd2159c7854fd808d21d6684ee316824582cf2d2c7da44c27f6cfd9c906f4",
+  "controller_v7.sh": "cf60df54a23735c200619dba9a829862798b5c95984260d2cccd30c9bbbbd545",
+  "start_candidate_comparison.py": "550358f2b674222c77d6ae2ca05a833595f0cf27730d3666e031c6dc7bb6bef5",
+  "start_fixture_diagnostics.py": "fe17417c32d13a6f350dd1c051825c18334a9feb35d1a00c63ae5440c5c648af",
+  "start_order_controls.py": "b423b55842e5978ad1ed0145a12ef5dcd0f9c07b9a47f80748d74ca408d21e9e",
+  "finite_fixture_diagnostics.py": "6493456ecf7804751871623bdbaa17f5b5fcdf3fee49380954729846aa7d9d72",
+  "run_fixture_diagnostics.sh": "4b2a7c3cce0cddd4412398a4e1433570f97d2a107e786960968ada91b051992b",
+  "run_validation.sh": "3d934d803e9e30d8dd7b146d0efe255794d320184bbb5885be866d72a829c23a",
+  "test_npu_hc_pre.py": "41f48ed79a8ca08d95d8fc8126d0fb388bf55f12fe6b2aeab52bda3ef0f42bdc",
+  "hc_pre_v2.py": "011144fd9193fe946979eda950ec5e8a94ee9ee03a60aa4839cef68351239076",
+  "validation-status.md": "c894205fce92e1a4315f54d6122064c168e8c6279db0a4b808459735d0c7bcc1"
+}

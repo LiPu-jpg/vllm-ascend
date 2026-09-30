@@ -1,0 +1,776 @@
+{
+  "baseline": [
+    {
+      "case": "test_npu_hc_pre_v2_bf16_3d_input",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: 1.53125\nassert 0.15819552540779114 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375\nassert 0.5075061321258545 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan\nassert 0.294534295797348 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375\nassert 0.5130208134651184 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: nan\nassert 0.15819552540779114 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375\nassert 0.5075061321258545 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan\nassert 0.294534295797348 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375\nassert 0.5130208134651184 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: nan\nassert 0.15819552540779114 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375\nassert 0.5075061321258545 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan\nassert 0.294534295797348 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375\nassert 0.5130208134651184 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_bf16_4d_input",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_bf16_dsv4_flash_hidden_size",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_bf16_extended_hidden_size",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v3_uses_external_pre_mix",
+      "failure": null,
+      "error": null
+    }
+  ],
+  "candidate": [
+    {
+      "case": "test_npu_hc_pre_v2_bf16_3d_input",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: nan\nassert 0.15819552540779114 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375\nassert 0.5075061321258545 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan\nassert 0.294534295797348 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375\nassert 0.5130208134651184 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: nan\nassert 0.15819552540779114 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375\nassert 0.5075061321258545 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan\nassert 0.294534295797348 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375\nassert 0.5130208134651184 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: nan\nassert 0.15819552540779114 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375\nassert 0.5075061321258545 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape0-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape0-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape0-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape1-128]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape1-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape1-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape2-128]",
+      "failure": "AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan\nassert 0.294534295797348 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape2-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape2-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape3-128]",
+      "failure": "AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375\nassert 0.5130208134651184 >= 0.98",
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape3-4096]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape3-7168]",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_bf16_4d_input",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_bf16_dsv4_flash_hidden_size",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v2_bf16_extended_hidden_size",
+      "failure": null,
+      "error": null
+    },
+    {
+      "case": "test_npu_hc_pre_v3_uses_external_pre_mix",
+      "failure": null,
+      "error": null
+    }
+  ]
+}

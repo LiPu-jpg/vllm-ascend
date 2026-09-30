@@ -1,0 +1,12 @@
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/lib/libvllm_ascend_kernels.so
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/include/vllm_ascend_kernels/aclrtlaunch_bgmv_expand_bfloat16_t.h
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/include/vllm_ascend_kernels/aclrtlaunch_sgmv_shrink_half.h
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/include/vllm_ascend_kernels/aclrtlaunch_sgmv_shrink_bfloat16_t.h
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/include/vllm_ascend_kernels/aclrtlaunch_bgmv_expand_half.h
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/include/vllm_ascend_kernels/aclrtlaunch_sgmv_expand_bfloat16_t.h
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/include/vllm_ascend_kernels/aclrtlaunch_bgmv_shrink_half.h
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/include/vllm_ascend_kernels/aclrtlaunch_bgmv_shrink_bfloat16_t.h
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/include/vllm_ascend_kernels/aclrtlaunch_triple_chevrons_func.h
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/include/vllm_ascend_kernels/aclrtlaunch_sgmv_expand_half.h
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/vllm_ascend_C.cpython-312-aarch64-linux-gnu.so
+/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/vllm_ascend/libvllm_ascend_kernels.so

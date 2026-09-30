@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvllm_ascend_kernels_interface.a CMakeFiles/vllm_ascend_kernels_interface.dir/vllm_ascend_kernels_stub.cpp.o
+/usr/bin/ranlib libvllm_ascend_kernels_interface.a

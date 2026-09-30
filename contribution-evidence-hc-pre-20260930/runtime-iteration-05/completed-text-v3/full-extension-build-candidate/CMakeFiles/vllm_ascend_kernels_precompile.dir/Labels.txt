@@ -1,0 +1,13 @@
+# Target labels
+ vllm_ascend_kernels_precompile
+# Source files and their labels
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/CMakeFiles/vllm_ascend_kernels_precompile
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/CMakeFiles/vllm_ascend_kernels_precompile.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/CMakeFiles/vllm_ascend_kernels_precompile-complete.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-stamp/vllm_ascend_kernels_precompile-build.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-stamp/vllm_ascend_kernels_precompile-configure.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-stamp/vllm_ascend_kernels_precompile-download.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-stamp/vllm_ascend_kernels_precompile-install.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-stamp/vllm_ascend_kernels_precompile-mkdir.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-stamp/vllm_ascend_kernels_precompile-patch.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_precompile-prefix/src/vllm_ascend_kernels_precompile-stamp/vllm_ascend_kernels_precompile-update.rule

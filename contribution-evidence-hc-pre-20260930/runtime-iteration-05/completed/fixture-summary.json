@@ -1,0 +1,57 @@
+{
+  "baseline": {
+    "total": 72,
+    "cpu_pass": 60,
+    "all_checks_pass": 60,
+    "model_hidden_cases": 48,
+    "model_hidden_all_checks_pass": 48,
+    "errors": {
+      "repeat:1": 12,
+      "v3:1": 12,
+      "graph:1": 12
+    },
+    "failed_cases": [
+      "b257-d128-signed0-i1",
+      "b257-d128-signed0-i3",
+      "b257-d128-signed0-i20",
+      "b257-d128-signed1-i1",
+      "b257-d128-signed1-i3",
+      "b257-d128-signed1-i20",
+      "b3x17-d128-signed0-i1",
+      "b3x17-d128-signed0-i3",
+      "b3x17-d128-signed0-i20",
+      "b3x17-d128-signed1-i1",
+      "b3x17-d128-signed1-i3",
+      "b3x17-d128-signed1-i20"
+    ]
+  },
+  "candidate": {
+    "total": 72,
+    "cpu_pass": 60,
+    "all_checks_pass": 60,
+    "model_hidden_cases": 48,
+    "model_hidden_all_checks_pass": 48,
+    "errors": {
+      "repeat:1": 12,
+      "v3:1": 12,
+      "graph:1": 12,
+      "baseline:v3:1": 1
+    },
+    "failed_cases": [
+      "b257-d128-signed0-i1",
+      "b257-d128-signed0-i3",
+      "b257-d128-signed0-i20",
+      "b257-d128-signed1-i1",
+      "b257-d128-signed1-i3",
+      "b257-d128-signed1-i20",
+      "b3x17-d128-signed0-i1",
+      "b3x17-d128-signed0-i3",
+      "b3x17-d128-signed0-i20",
+      "b3x17-d128-signed1-i1",
+      "b3x17-d128-signed1-i3",
+      "b3x17-d128-signed1-i20"
+    ]
+  },
+  "scope": "Full-plugin operator diagnostic, not model correctness or throughput",
+  "candidate_acceptance": "pending; baseline existing failures retained; one failed-case post output differs across processes"
+}

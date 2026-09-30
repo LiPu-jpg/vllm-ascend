@@ -1,0 +1,8 @@
+{
+  "reason": "Actual official OPP build uses --vendor_name=cast_VARIANT; correct unexecuted validation paths to that generated vendor under the new short-div private source directories. Build/runtime inputs are unchanged.",
+  "before": "9b0b43945305d8aa219aad8958389ec8ba165b5b6eafbbd7b83ae35173198859",
+  "after": "3c8e1bc2e9e2f8c422b15d436d7470fc14379de0a23251ddc7d05c84a08cd226",
+  "build_controller_pid": 1408363,
+  "build_process_pid": 1408479,
+  "validation_started": false
+}

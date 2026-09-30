@@ -1,0 +1,109 @@
+{
+  "scope": "Source/API analysis and proof obligations only; not emitted instructions or performance evidence",
+  "source_ref": "21d7920f51a71cedd1500ac95929d44031cbaafd",
+  "baseline_ref": "a40b52df0ef06a6360e2e97ce9b37a8939240d3f",
+  "helper": "DivABLastDimBrcInline",
+  "selection": "curColNum <= 32 / sizeof(T), with 0 < curRowNum * RoundUp<T>(curColNum) <= 256 / sizeof(T)",
+  "short_path": {
+    "repeat": 1,
+    "normal_continuous_mask": "curRowNum * padded_width",
+    "strides": {
+      "block": [
+        1,
+        1,
+        1
+      ],
+      "repeat": [
+        8,
+        8,
+        8
+      ]
+    },
+    "dtype": "same T",
+    "arithmetic": "vdiv in both SDK overloads; same lane quotient and operands"
+  },
+  "fallbacks": [
+    "zero or more-than-one-repeat count uses original count Div",
+    "wider columns retain original branch"
+  ],
+  "unchanged": [
+    "Brcb broadcast",
+    "both PIPE_V barriers",
+    "padding widths",
+    "FP32 reductions and reduction order",
+    "hcEps placement",
+    "Sinkhorn iteration count",
+    "public V2/V3 interfaces",
+    "tiling",
+    "model code",
+    "architecture35 path"
+  ],
+  "actual_kernel_callers": [
+    {
+      "path": "csrc/moe/hc_pre/op_kernel/hc_pre_base.h",
+      "caller": "SoftmaxFP32Perf",
+      "uses": "one row-normalization Div per invocation"
+    },
+    {
+      "path": "csrc/moe/hc_pre/op_kernel/hc_pre_m_k_split_core.h",
+      "caller": "HcPre Stage2 Process",
+      "uses": "one row-normalization per iterTimes-1 loop"
+    }
+  ],
+  "source_level_counts": {
+    "n4_single_matrix_row": "curRowNum=4, padded width=8, count=32 FP32 elements",
+    "n4_two_matrix_rows": "curRowNum=8, count=64 FP32 elements",
+    "row_div_calls_per_outer_tile": "1 + (iterTimes - 1) = iterTimes; col Div is unchanged"
+  },
+  "mask_state_obligation": "New short path leaves the last normal-mode mask, as the existing wider-column path already does. All following arithmetic/reduction calls set their own masks. Requires NPU eager/graph byte parity and CPU correctness rather than source inference alone.",
+  "fixture_cases": {
+    "original": 5,
+    "added": 72,
+    "total": 77,
+    "hidden": [
+      128,
+      4096,
+      7168
+    ],
+    "batch_shapes": [
+      [
+        1
+      ],
+      [
+        17
+      ],
+      [
+        257
+      ],
+      [
+        3,
+        17
+      ]
+    ],
+    "signed": [
+      false,
+      true
+    ],
+    "iterations": [
+      1,
+      3,
+      20
+    ],
+    "cpu_thresholds": "unchanged"
+  },
+  "SDK": "CANN 9.1.0 dav_c220 kernel_operator_vec_binary_impl.h DivImpl lines182-225",
+  "unverified": [
+    "actual candidate binary and kernel loading",
+    "77 normal-nightly tests",
+    "boundaries",
+    "stable complete-operator performance",
+    "L1 critical path",
+    "actual caller and standard-loader model"
+  ],
+  "files_sha256": {
+    "csrc/moe/hc_pre/op_kernel/hc_pre_base.h": "055352545de7ccd4add6ab539c044522f8a7672a0f3dbbc19ed487cfab48d8cd",
+    "csrc/moe/hc_pre/op_kernel/hc_pre_m_k_split_core.h": "4d697b15e541216722369284cbd8c9bd5f4154cd0d2251cdb06a6cd46f42fc14",
+    "tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py": "41f48ed79a8ca08d95d8fc8126d0fb388bf55f12fe6b2aeab52bda3ef0f42bdc",
+    "benchmarks/hc_pre.py": "011144fd9193fe946979eda950ec5e8a94ee9ee03a60aa4839cef68351239076"
+  }
+}

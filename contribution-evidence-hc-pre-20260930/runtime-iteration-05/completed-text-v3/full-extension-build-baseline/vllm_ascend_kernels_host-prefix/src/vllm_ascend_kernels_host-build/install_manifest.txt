@@ -1,0 +1,4 @@
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_host_dir/./objects-Release/host_bisheng_obj/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/csrc/kernels/bgmv_expand.cpp.o
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_host_dir/./objects-Release/host_bisheng_obj/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/csrc/kernels/bgmv_shrink.cpp.o
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_host_dir/./objects-Release/host_bisheng_obj/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/csrc/kernels/sgmv_expand.cpp.o
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_host_dir/./objects-Release/host_bisheng_obj/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/csrc/kernels/sgmv_shrink.cpp.o

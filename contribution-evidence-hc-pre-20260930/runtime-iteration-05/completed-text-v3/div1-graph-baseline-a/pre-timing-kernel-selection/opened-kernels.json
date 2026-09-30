@@ -1,0 +1,7 @@
+[
+  {
+    "operation": "open",
+    "path": "/mnt/workspace/hc-pre-reduction-20260930/short-div-source-baseline/opp/vendors/cast_baseline_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be.o",
+    "sha256": "e4fe3ba278578281a0bb142d5da21cbfeb6d55e355378112fc429440eea23622"
+  }
+]

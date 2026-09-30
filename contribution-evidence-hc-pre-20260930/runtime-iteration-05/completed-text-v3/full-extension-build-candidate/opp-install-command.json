@@ -1,0 +1,5 @@
+[
+  "bash",
+  "/mnt/workspace/hc-pre-reduction-20260930/short-div-source-candidate/csrc/build/cann-ops-transformer-cast_candidate_linux-aarch64.run",
+  "--install-path=/mnt/workspace/hc-pre-reduction-20260930/short-div-source-candidate/opp"
+]

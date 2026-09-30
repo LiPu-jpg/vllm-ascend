@@ -1,0 +1,13 @@
+# Target labels
+ vllm_ascend_kernels_aiv_device
+# Source files and their labels
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels_aiv_device
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels_aiv_device.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels_aiv_device-complete.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_aiv_device-prefix/src/vllm_ascend_kernels_aiv_device-stamp/vllm_ascend_kernels_aiv_device-build.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_aiv_device-prefix/src/vllm_ascend_kernels_aiv_device-stamp/vllm_ascend_kernels_aiv_device-configure.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_aiv_device-prefix/src/vllm_ascend_kernels_aiv_device-stamp/vllm_ascend_kernels_aiv_device-download.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_aiv_device-prefix/src/vllm_ascend_kernels_aiv_device-stamp/vllm_ascend_kernels_aiv_device-install.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_aiv_device-prefix/src/vllm_ascend_kernels_aiv_device-stamp/vllm_ascend_kernels_aiv_device-mkdir.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_aiv_device-prefix/src/vllm_ascend_kernels_aiv_device-stamp/vllm_ascend_kernels_aiv_device-patch.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/vllm_ascend_kernels_aiv_device-prefix/src/vllm_ascend_kernels_aiv_device-stamp/vllm_ascend_kernels_aiv_device-update.rule

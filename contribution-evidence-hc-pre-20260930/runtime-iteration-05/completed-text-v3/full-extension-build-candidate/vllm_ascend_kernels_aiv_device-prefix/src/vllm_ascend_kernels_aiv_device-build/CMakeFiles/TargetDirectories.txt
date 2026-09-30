@@ -1,0 +1,4 @@
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_aiv_device-prefix/src/vllm_ascend_kernels_aiv_device-build/CMakeFiles/device_aiv_obj.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_aiv_device-prefix/src/vllm_ascend_kernels_aiv_device-build/CMakeFiles/merge_aiv_device_obj.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_aiv_device-prefix/src/vllm_ascend_kernels_aiv_device-build/CMakeFiles/edit_cache.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_aiv_device-prefix/src/vllm_ascend_kernels_aiv_device-build/CMakeFiles/rebuild_cache.dir

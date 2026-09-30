@@ -1,0 +1,215 @@
+{
+  "scope": "First independent graph A/B pair only; ABBA, BAAB and A/A incomplete; no acceptance or model speedup claim",
+  "geometric_mean_speedup": 1.0103201492619827,
+  "faster": 24,
+  "slower": 4,
+  "max_slowdown_percent": 2.1866344522756487,
+  "sources": [
+    {
+      "path": "completed/div1-graph-baseline-a/data/results.json",
+      "sha256": "dbae55ef90782dd2e3dc3bc5c2af76f8d2c7de8d2b53cb64cda0996f36ca3289"
+    },
+    {
+      "path": "completed/div1-graph-candidate-a/data/results.json",
+      "sha256": "c34fd36f95f2a6d8a9583742e155ef4b23fcc837b118a6cc80a730ee0d452516"
+    }
+  ],
+  "cases": [
+    {
+      "case": "t1-d4096-signed0",
+      "baseline_us": 30.284875631332397,
+      "candidate_us": 30.947095155715942,
+      "speedup": 0.9786015611141703,
+      "latency_change_percent": 2.1866344522756487
+    },
+    {
+      "case": "t1-d4096-signed1",
+      "baseline_us": 31.526094675064087,
+      "candidate_us": 30.945125222206116,
+      "speedup": 1.018774183290138,
+      "latency_change_percent": -1.8428208721884443
+    },
+    {
+      "case": "t2-d4096-signed0",
+      "baseline_us": 31.772655248641968,
+      "candidate_us": 30.961874127388,
+      "speedup": 1.0261864355470902,
+      "latency_change_percent": -2.551820472381272
+    },
+    {
+      "case": "t2-d4096-signed1",
+      "baseline_us": 31.5559059381485,
+      "candidate_us": 31.03090524673462,
+      "speedup": 1.0169186392481775,
+      "latency_change_percent": -1.663716112105651
+    },
+    {
+      "case": "t4-d4096-signed0",
+      "baseline_us": 32.08343684673309,
+      "candidate_us": 31.436687707901,
+      "speedup": 1.0205730687927896,
+      "latency_change_percent": -2.0158349678112697
+    },
+    {
+      "case": "t4-d4096-signed1",
+      "baseline_us": 32.50953257083893,
+      "candidate_us": 31.808748841285706,
+      "speedup": 1.0220311629687129,
+      "latency_change_percent": -2.155625363195246
+    },
+    {
+      "case": "t17-d4096-signed0",
+      "baseline_us": 32.35693871974945,
+      "candidate_us": 32.78999924659729,
+      "speedup": 0.9867929083013693,
+      "latency_change_percent": 1.3383853478806218
+    },
+    {
+      "case": "t17-d4096-signed1",
+      "baseline_us": 33.85406136512756,
+      "candidate_us": 33.929938077926636,
+      "speedup": 0.9977637238056607,
+      "latency_change_percent": 0.2241288334085434
+    },
+    {
+      "case": "t128-d4096-signed0",
+      "baseline_us": 64.32371735572815,
+      "candidate_us": 63.49818706512451,
+      "speedup": 1.013000848193618,
+      "latency_change_percent": -1.2833995368119466
+    },
+    {
+      "case": "t128-d4096-signed1",
+      "baseline_us": 63.95037770271301,
+      "candidate_us": 63.27553391456604,
+      "speedup": 1.0106651614992004,
+      "latency_change_percent": -1.0552616143787774
+    },
+    {
+      "case": "t257-d4096-signed0",
+      "baseline_us": 91.28393530845642,
+      "candidate_us": 90.96181392669678,
+      "speedup": 1.0035412814218858,
+      "latency_change_percent": -0.35287850011195276
+    },
+    {
+      "case": "t257-d4096-signed1",
+      "baseline_us": 91.27587676048279,
+      "candidate_us": 90.49612283706665,
+      "speedup": 1.0086164345937787,
+      "latency_change_percent": -0.8542825893223638
+    },
+    {
+      "case": "t512-d4096-signed0",
+      "baseline_us": 142.13662147521973,
+      "candidate_us": 140.97636938095093,
+      "speedup": 1.0082301175676722,
+      "latency_change_percent": -0.8162935647595071
+    },
+    {
+      "case": "t512-d4096-signed1",
+      "baseline_us": 142.4153447151184,
+      "candidate_us": 140.56824445724487,
+      "speedup": 1.0131402385012735,
+      "latency_change_percent": -1.2969812077261778
+    },
+    {
+      "case": "t1-d7168-signed0",
+      "baseline_us": 34.137219190597534,
+      "candidate_us": 33.50499868392944,
+      "speedup": 1.0188694383376093,
+      "latency_change_percent": -1.851997677778694
+    },
+    {
+      "case": "t1-d7168-signed1",
+      "baseline_us": 34.14403200149536,
+      "candidate_us": 33.454251289367676,
+      "speedup": 1.020618626498657,
+      "latency_change_percent": -2.0202087208021524
+    },
+    {
+      "case": "t2-d7168-signed0",
+      "baseline_us": 34.532782435417175,
+      "candidate_us": 33.87440741062164,
+      "speedup": 1.019435765084088,
+      "latency_change_percent": -1.9065217986034555
+    },
+    {
+      "case": "t2-d7168-signed1",
+      "baseline_us": 34.51456129550934,
+      "candidate_us": 33.78034234046936,
+      "speedup": 1.0217350951520812,
+      "latency_change_percent": -2.127273033412447
+    },
+    {
+      "case": "t4-d7168-signed0",
+      "baseline_us": 34.262219071388245,
+      "candidate_us": 33.50203037261963,
+      "speedup": 1.022690824714609,
+      "latency_change_percent": -2.2187374880322186
+    },
+    {
+      "case": "t4-d7168-signed1",
+      "baseline_us": 34.30950045585632,
+      "candidate_us": 33.734625577926636,
+      "speedup": 1.0170410925890294,
+      "latency_change_percent": -1.6755559547401155
+    },
+    {
+      "case": "t17-d7168-signed0",
+      "baseline_us": 35.357844829559326,
+      "candidate_us": 35.29684245586395,
+      "speedup": 1.0017282671607708,
+      "latency_change_percent": -0.17252854066596157
+    },
+    {
+      "case": "t17-d7168-signed1",
+      "baseline_us": 35.37009358406067,
+      "candidate_us": 35.34309267997742,
+      "speedup": 1.0007639655173286,
+      "latency_change_percent": -0.07633823195599687
+    },
+    {
+      "case": "t128-d7168-signed0",
+      "baseline_us": 71.40662670135498,
+      "candidate_us": 71.72552943229675,
+      "speedup": 0.9955538462599598,
+      "latency_change_percent": 0.4466010308476376
+    },
+    {
+      "case": "t128-d7168-signed1",
+      "baseline_us": 71.8852162361145,
+      "candidate_us": 71.09668850898743,
+      "speedup": 1.0110909205993104,
+      "latency_change_percent": -1.0969261392176577
+    },
+    {
+      "case": "t257-d7168-signed0",
+      "baseline_us": 108.01272392272949,
+      "candidate_us": 107.97618627548218,
+      "speedup": 1.0003383861618718,
+      "latency_change_percent": -0.03382716954111187
+    },
+    {
+      "case": "t257-d7168-signed1",
+      "baseline_us": 107.32574462890625,
+      "candidate_us": 106.70006275177002,
+      "speedup": 1.005863931669767,
+      "latency_change_percent": -0.5829746435019989
+    },
+    {
+      "case": "t512-d7168-signed0",
+      "baseline_us": 170.973002910614,
+      "candidate_us": 168.86600255966187,
+      "speedup": 1.0124773507930214,
+      "latency_change_percent": -1.2323585098717005
+    },
+    {
+      "case": "t512-d7168-signed1",
+      "baseline_us": 171.78927659988403,
+      "candidate_us": 168.80319118499756,
+      "speedup": 1.0176897450452458,
+      "latency_change_percent": -1.7382257344510488
+    }
+  ]
+}

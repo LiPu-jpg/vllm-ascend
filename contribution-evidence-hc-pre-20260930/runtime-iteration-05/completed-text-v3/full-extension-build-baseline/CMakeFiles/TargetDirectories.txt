@@ -1,0 +1,16 @@
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels_interface.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels_precompile.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels_preprocess.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels_aic_device.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels_aiv_device.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels_merge_obj.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels_host.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels_host_stub_obj.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_kernels.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/vllm_ascend_C.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/edit_cache.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/rebuild_cache.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/list_install_components.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/install.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/install/local.dir
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-baseline/CMakeFiles/install/strip.dir

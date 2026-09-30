@@ -1,0 +1,1 @@
+41f48ed79a8ca08d95d8fc8126d0fb388bf55f12fe6b2aeab52bda3ef0f42bdc  tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py

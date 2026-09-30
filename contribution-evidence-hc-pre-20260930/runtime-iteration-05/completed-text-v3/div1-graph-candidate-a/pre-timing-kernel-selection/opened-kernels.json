@@ -1,0 +1,7 @@
+[
+  {
+    "operation": "open",
+    "path": "/mnt/workspace/hc-pre-reduction-20260930/short-div-source-candidate/opp/vendors/cast_candidate_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be.o",
+    "sha256": "4e9ef301061f455c5821574fa3549ce8580df2caaa13d47c6e348694934fb6df"
+  }
+]

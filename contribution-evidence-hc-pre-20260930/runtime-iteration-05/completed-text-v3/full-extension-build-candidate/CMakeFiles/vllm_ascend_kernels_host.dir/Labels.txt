@@ -1,0 +1,13 @@
+# Target labels
+ vllm_ascend_kernels_host
+# Source files and their labels
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/CMakeFiles/vllm_ascend_kernels_host
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/CMakeFiles/vllm_ascend_kernels_host.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/CMakeFiles/vllm_ascend_kernels_host-complete.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_host-prefix/src/vllm_ascend_kernels_host-stamp/vllm_ascend_kernels_host-build.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_host-prefix/src/vllm_ascend_kernels_host-stamp/vllm_ascend_kernels_host-configure.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_host-prefix/src/vllm_ascend_kernels_host-stamp/vllm_ascend_kernels_host-download.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_host-prefix/src/vllm_ascend_kernels_host-stamp/vllm_ascend_kernels_host-install.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_host-prefix/src/vllm_ascend_kernels_host-stamp/vllm_ascend_kernels_host-mkdir.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_host-prefix/src/vllm_ascend_kernels_host-stamp/vllm_ascend_kernels_host-patch.rule
+/mnt/workspace/hc-pre-reduction-20260930/iteration-05/full-extension-build-candidate/vllm_ascend_kernels_host-prefix/src/vllm_ascend_kernels_host-stamp/vllm_ascend_kernels_host-update.rule

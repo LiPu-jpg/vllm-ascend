@@ -1,0 +1,6 @@
+{
+  "pid": 1377608,
+  "reason": "Other SFA controller guard sees our waiting controller as a foreign job; remove our unstarted waiter to avoid mutual waiting.",
+  "build_started": false,
+  "npu_validation_started": false
+}

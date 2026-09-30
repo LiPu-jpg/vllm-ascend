@@ -1,0 +1,363 @@
+diff --git a/csrc/moe/hc_pre/op_host/hc_pre_tiling.cpp b/csrc/moe/hc_pre/op_host/hc_pre_tiling.cpp
+index 2115791b7496..4a9462fe875d 100644
+--- a/csrc/moe/hc_pre/op_host/hc_pre_tiling.cpp
++++ b/csrc/moe/hc_pre/op_host/hc_pre_tiling.cpp
+@@ -52,6 +52,15 @@ constexpr int64_t ITER_TIMES_ATTR_IDX = 1;
+ constexpr int64_t HC_EPS_ATTR_IDX = 2;
+ constexpr int64_t NORM_EPS_ATTR_IDX = 3;
+ constexpr int64_t DEFAULT_ITER_TIMES = 20;
++constexpr int64_t X_DTYPE_SIZE = 2;              // x and y are bfloat16
++constexpr int64_t PRE_POST_MIX_NUM = 2;          // the mixes01 buffers carry pre and post together
++constexpr int64_t SQUARE_SUM_SIZE = 16;          // must match SQUARE_SUM_SIZE in the kernel
++constexpr int64_t MASK_PATTERN_ELEM_NUM = 128;   // MASK_PATTERN_BASE_SIZE * MASK_PATTERN_REPEAT_SIZE
++// MHC runs with four residual streams
++constexpr int64_t EXPECTED_HC_MULT = 4;
++// batching gain flattens before this point and the UB is worth more to the x/y
++// buffers; COMB_ROW_FACTOR_MAX * EXPECTED_HC_MULT stays within the 255 repeat limit
++constexpr int64_t COMB_ROW_FACTOR_MAX = 32;
+ }
+ 
+ ge::graphStatus HcPreTiling::GetPlatformInfo()
+@@ -141,10 +150,73 @@ ge::graphStatus HcPreTiling::GetShapeAttrsInfoInner()
+                   OPS_LOG_E(context_->GetNodeName(), "get attr failed."),
+                   return ge::GRAPH_FAILED);
+ 
++    // GetAttr has the final word on hcMult_
++    OPS_ERR_IF(hcMult_ != EXPECTED_HC_MULT,
++                    OPS_LOG_E(context_->GetNodeName(),
++                             "hc_mult should be %ld, but is %ld", EXPECTED_HC_MULT, hcMult_),
++                    return ge::GRAPH_FAILED);
++
+     return ge::GRAPH_SUCCESS;
+ }
+ 
+ 
++// UB bytes the stage-2 kernel Init allocates; mirrors its InitBuffer calls one for
++// one, keep in step when a buffer is added there
++int64_t HcPreTiling::CalcStage2UbSize(int64_t rowFactor, int64_t dFactor, int64_t combRowFactor)
++{
++    const int64_t kBlockNum = tilingData_.get_cubeBlockDimK();
++    const int64_t floatSize = static_cast<int64_t>(sizeof(float));
++    const int64_t floatPerBlock = BLOCK_SIZE / floatSize;
++    // the kernel aligns the d axis on x's dtype for both the b16 and the fp32 copies
++    const int64_t dFactorAlign = RoundUp(dFactor, BLOCK_SIZE / X_DTYPE_SIZE);
++    const int64_t xElemNum = rowFactor * hcMult_ * dFactorAlign;
++
++    int64_t queSize = DOUBLE_BUFFER *
++        (kBlockNum * rowFactor * hcMultAlign_ * PRE_POST_MIX_NUM * floatSize +  // mixesQue01
++         kBlockNum * rowFactor * hcMult_ * hcMultAlign_ * floatSize +           // mixesQue2
++         kBlockNum * rowFactor * SQUARE_SUM_SIZE * floatSize +                  // squareSumQue
++         xElemNum * X_DTYPE_SIZE +                                             // xQue
++         rowFactor * dFactorAlign * X_DTYPE_SIZE +                             // yQue
++         rowFactor * hcMultAlign_ * floatSize +                                // postQue
++         combRowFactor * hcMult_ * hcMultAlign_ * floatSize);                  // combFragQue
++
++    int64_t bufSize =
++        (PRE_POST_MIX_NUM + hcMult_) * hcMultAlign_ * floatSize +              // hcBaseBuf0/1/2
++        RoundUp(rowFactor, floatPerBlock) * BLOCK_SIZE +                       // rowBrcbBuf0
++        RoundUp(combRowFactor * hcMultAlign_, floatPerBlock) * BLOCK_SIZE +    // hcBrcbBuf1
++        combRowFactor * hcMultAlign_ * floatSize +                             // reduceBuf
++        rowFactor * hcMultAlign_ * PRE_POST_MIX_NUM * floatSize +              // mixes01ReduceBuf
++        rowFactor * hcMultAlign_ * hcMult_ * floatSize +                       // mixes02ReduceBuf
++        rowFactor * hcMultAlign_ * floatSize +                                 // squareReduceBuf
++        xElemNum * floatSize +                                                 // xCastBuf
++        rowFactor * dFactorAlign * floatSize +                                 // yCastBuf
++        RoundUp(rowFactor, floatPerBlock) * floatSize +                        // rsqrtBuf
++        RoundUp(MASK_PATTERN_ELEM_NUM, floatPerBlock) * floatSize +            // maskPatternBuf
++        rowFactor * hcMultAlign_ * floatSize;                                  // preMixBuf
++
++    return queSize + bufSize;
++}
++
++// comb rows staged per batched sinkhorn burst, grown against the real UB budget.
++// Whole stage2RowFactor groups only: the kernel flushes on >=, so a bound that is
++// not a multiple would be stepped over. Starting from stage2RowFactor keeps the
++// no-slack case identical to the unbatched footprint.
++void HcPreTiling::CalcCombRowFactor()
++{
++    // Zero-batch dynamic shapes can drive rowFactor_ to 0; the growth loop below
++    // would then never terminate, so bail out early.
++    if (rowFactor_ <= 0) {
++        combRowFactor_ = 0;
++        return;
++    }
++    int64_t maxCombRows = std::min(COMB_ROW_FACTOR_MAX, rowOfFormerBlock_);
++    combRowFactor_ = rowFactor_;
++    while (combRowFactor_ + rowFactor_ <= maxCombRows &&
++           CalcStage2UbSize(rowFactor_, dFactor_, combRowFactor_ + rowFactor_) <= static_cast<int64_t>(ubSize_)) {
++        combRowFactor_ += rowFactor_;
++    }
++}
++
+ ge::graphStatus HcPreTiling::CalcMKSplitCoreMembasePart2Tiling()
+ {
+     rowOfFormerBlock_ = CeilDiv(bs_, static_cast<int64_t>(aivCoreNum_));
+@@ -254,6 +326,7 @@ ge::graphStatus HcPreTiling::CalcMKSplitCoreMembasePart2Tiling()
+     rowLoopOfTailBlock_ = CeilDiv(rowOfTailBlock_, rowFactor_);
+     tailRowFactorOfFormerBlock_ = rowOfFormerBlock_ % rowFactor_ == 0 ? rowFactor_ : rowOfFormerBlock_ % rowFactor_;
+     tailRowFactorOfTailBlock_ = rowOfTailBlock_ % rowFactor_ == 0 ? rowFactor_ : rowOfTailBlock_ % rowFactor_;
++    CalcCombRowFactor();
+ 
+     tilingData_.set_bs(bs_);
+     tilingData_.set_hcMix(hcMix_);
+@@ -270,6 +343,7 @@ ge::graphStatus HcPreTiling::CalcMKSplitCoreMembasePart2Tiling()
+     tilingData_.set_dLoop(dLoop_);
+     tilingData_.set_dFactor(dFactor_);
+     tilingData_.set_tailDFactor(tailDFactor_);
++    tilingData_.set_combRowFactor(combRowFactor_);
+     tilingData_.set_iterTimes(iterTimes_);
+     tilingData_.set_hcEps(hcEps_);
+     tilingData_.set_normEps(normEps_);
+diff --git a/csrc/moe/hc_pre/op_host/hc_pre_tiling.h b/csrc/moe/hc_pre/op_host/hc_pre_tiling.h
+index b9d2d8d315fd..579b2c66ebdc 100644
+--- a/csrc/moe/hc_pre/op_host/hc_pre_tiling.h
++++ b/csrc/moe/hc_pre/op_host/hc_pre_tiling.h
+@@ -100,6 +100,8 @@ TILING_DATA_FIELD_DEF(int64_t, bufferPool1Size);
+ TILING_DATA_FIELD_DEF(int64_t, mUbSize);
+ TILING_DATA_FIELD_DEF(int64_t, hasPreMix);
+ TILING_DATA_FIELD_DEF(int64_t, hasPreOut);
++// comb rows staged per batched sinkhorn burst; whole multiple of stage2RowFactor
++TILING_DATA_FIELD_DEF(int64_t, combRowFactor);
+ 
+ END_TILING_DATA_DEF;
+ 
+@@ -129,6 +131,10 @@ class HcPreTiling {
+     ge::graphStatus CalcMKSplitCoreMembasePart2Tiling();
+ 
+ private:
++    // not const: the generated tiling-data getters are not const-qualified
++    int64_t CalcStage2UbSize(int64_t rowFactor, int64_t dFactor, int64_t combRowFactor);
++    void CalcCombRowFactor();
++
+     gert::TilingContext *context_ = nullptr;
+     uint64_t tilingKey_ = 0;
+     HcPreTilingData tilingData_;
+@@ -152,6 +158,7 @@ class HcPreTiling {
+     int64_t dLoop_ = 0;
+     int64_t dFactor_ = 0;
+     int64_t tailDFactor_ = 0;
++    int64_t combRowFactor_ = 0;
+     int64_t iterTimes_ = 0;
+     double hcEps_ = 0.0;
+     double normEps_ = 0.0;
+diff --git a/csrc/moe/hc_pre/op_kernel/hc_pre_base.h b/csrc/moe/hc_pre/op_kernel/hc_pre_base.h
+index 65f15c6af581..aabad5c50a1a 100644
+--- a/csrc/moe/hc_pre/op_kernel/hc_pre_base.h
++++ b/csrc/moe/hc_pre/op_kernel/hc_pre_base.h
+@@ -481,6 +481,80 @@ __aicore__ inline void ReduceSumARAPerf(const LocalTensor<float> &output, const
+     PipeBarrier<PIPE_V>();
+ }
+ 
++// Batched sinkhorn column helpers: same [hcMult rows][one block] layout, but the
++// repeat opens over tokens so one column stage costs O(1) instructions per batch.
++// One row per block requires hcMult <= BLOCK_SIZE / sizeof(float).
++
++// out[t][c] = sum over r of in[t][r][c], in the ReduceSumARAPerf accumulation order
++__aicore__ inline void ColSumBlockRowBatch(const LocalTensor<float> &output, const LocalTensor<float> &input,
++                                           const uint32_t hcMult, const uint32_t tokenNum)
++{
++    constexpr uint32_t ELEMS_PER_BLOCK = BLOCK_SIZE / sizeof(float);
++    BinaryRepeatParams sumParams;
++    sumParams.dstBlkStride = 1;
++    sumParams.dstRepStride = 1; // one column-sum block per token
++    sumParams.src0BlkStride = hcMult;
++    sumParams.src0RepStride = hcMult; // next token starts hcMult row blocks later
++    sumParams.src1BlkStride = hcMult;
++    sumParams.src1RepStride = hcMult;
++    Add(output, input, input[ELEMS_PER_BLOCK], hcMult, tokenNum, sumParams);
++    // the next Adds read output in place: keep the barriers, short repeats expose a RAW hazard
++    PipeBarrier<PIPE_V>();
++    BinaryRepeatParams accParams;
++    accParams.dstBlkStride = 1;
++    accParams.dstRepStride = 1;
++    accParams.src0BlkStride = 1;
++    accParams.src0RepStride = 1;
++    accParams.src1BlkStride = hcMult;
++    accParams.src1RepStride = hcMult;
++    for (uint32_t row = NUM_TWO; row < hcMult; row++) {
++        Add(output, output, input[row * ELEMS_PER_BLOCK], hcMult, tokenNum, accParams);
++        PipeBarrier<PIPE_V>();
++    }
++}
++
++// eps on the hcMult valid lanes of each [token][one block]; a packed count misses later tokens
++__aicore__ inline void AddEpsColSumBatch(const LocalTensor<float> &output, const LocalTensor<float> &input,
++                                         const float eps, const uint32_t hcMult, const uint32_t tokenNum)
++{
++    UnaryRepeatParams epsParams;
++    epsParams.dstBlkStride = 1;
++    epsParams.srcBlkStride = 1;
++    epsParams.dstRepStride = 1; // one column-sum block per token
++    epsParams.srcRepStride = 1;
++    Adds(output, input, eps, hcMult, tokenNum, epsParams);
++    PipeBarrier<PIPE_V>();
++}
++
++// out[t][r][c] = in0[t][r][c] / in1[t][c] for every row r; layout as above.
++__aicore__ inline void ColDivBlockRowBatch(const LocalTensor<float> &output, const LocalTensor<float> &input0,
++                                           const LocalTensor<float> &input1, const uint32_t hcMult,
++                                           const uint32_t tokenNum)
++{
++    constexpr uint32_t ELEMS_PER_BLOCK = BLOCK_SIZE / sizeof(float);
++    BinaryRepeatParams divParams;
++    divParams.dstBlkStride = 1;
++    divParams.dstRepStride = hcMult; // token stride: hcMult row blocks
++    divParams.src0BlkStride = 1;
++    divParams.src0RepStride = hcMult;
++    divParams.src1BlkStride = 1;
++    divParams.src1RepStride = 1; // colSum token stride: one block
++    for (uint32_t row = 0; row < hcMult; row++) {
++        Div(output[row * ELEMS_PER_BLOCK], input0[row * ELEMS_PER_BLOCK], input1, hcMult, tokenNum, divParams);
++    }
++    PipeBarrier<PIPE_V>();
++}
++
++// one sinkhorn column stage over all staged tokens; output may alias input
++__aicore__ inline void SinkhornColStage(const LocalTensor<float> &output, const LocalTensor<float> &input,
++                                        const LocalTensor<float> &colSum, const uint32_t tokenNum,
++                                        const uint32_t hcMult, const float eps)
++{
++    ColSumBlockRowBatch(colSum, input, hcMult, tokenNum);
++    AddEpsColSumBatch(colSum, colSum, eps, hcMult, tokenNum);
++    ColDivBlockRowBatch(output, input, colSum, hcMult, tokenNum);
++}
++
+ template <typename T0, typename T1>
+ __aicore__ inline void CastTwoDim(const LocalTensor<T0> &output, const LocalTensor<T1> &input, const uint32_t dim0,
+                                   const uint32_t dim1)
+diff --git a/csrc/moe/hc_pre/op_kernel/hc_pre_m_k_split_core.h b/csrc/moe/hc_pre/op_kernel/hc_pre_m_k_split_core.h
+index 82b4e7fe7097..7ec1a19e3ef2 100644
+--- a/csrc/moe/hc_pre/op_kernel/hc_pre_m_k_split_core.h
++++ b/csrc/moe/hc_pre/op_kernel/hc_pre_m_k_split_core.h
+@@ -237,16 +237,14 @@ class HcPreMembaseKSplitCorePart2 {
+             stage1UsedCoreNum * tilingData->stage2RowFactor *
+             tilingData->hcMult * tilingData->hcMultAlign * sizeof(float));
+         pipe->InitBuffer(squareSumQue, NUM_TWO, stage1UsedCoreNum *
+-        tilingData->stage2RowFactor * SQUARE_SUM_SIZE * sizeof(float));
++            tilingData->stage2RowFactor * SQUARE_SUM_SIZE * sizeof(float));
+         pipe->InitBuffer(xQue, NUM_TWO, xQueNum2 * sizeof(T));
+-        pipe->InitBuffer(squareSumQue, NUM_TWO, stage1UsedCoreNum *
+-        tilingData->stage2RowFactor * SQUARE_SUM_SIZE * sizeof(float));
+         pipe->InitBuffer(yQue, NUM_TWO,
+             tilingData->stage2RowFactor * RoundUp<T>(tilingData->dFactor) * sizeof(T));
+         pipe->InitBuffer(postQue, NUM_TWO,
+             tilingData->stage2RowFactor * tilingData->hcMultAlign * sizeof(float));
+         pipe->InitBuffer(combFragQue, NUM_TWO,
+-            tilingData->stage2RowFactor * tilingData->hcMult *
++            tilingData->combRowFactor * tilingData->hcMult *
+             tilingData->hcMultAlign * sizeof(float));
+     }
+ 
+@@ -259,10 +257,10 @@ class HcPreMembaseKSplitCorePart2 {
+         pipe->InitBuffer(rowBrcbBuf0,
+             RoundUp<float>(tilingData->stage2RowFactor) * BLOCK_SIZE);
+         pipe->InitBuffer(hcBrcbBuf1,
+-            RoundUp<float>(tilingData->stage2RowFactor *
++            RoundUp<float>(tilingData->combRowFactor *
+             tilingData->hcMultAlign) * BLOCK_SIZE);
+         pipe->InitBuffer(reduceBuf,
+-            tilingData->stage2RowFactor * tilingData->hcMultAlign * sizeof(float));
++            tilingData->combRowFactor * tilingData->hcMultAlign * sizeof(float));
+         pipe->InitBuffer(mixes01ReduceBuf, tilingData->stage2RowFactor *
+             tilingData->hcMultAlign * NUM_TWO * sizeof(float));
+         pipe->InitBuffer(mixes02ReduceBuf, tilingData->stage2RowFactor *
+@@ -345,6 +343,9 @@ class HcPreMembaseKSplitCorePart2 {
+             int64_t xGmBlockBaseOffsetPart2 = stage2BlockIdx *
+             tilingData->rowOfFormerBlock * tilingData->hcMult * tilingData->d;
+ 
++            // rows of comb fragment staged so far, and the first bs row they belong to
++            int64_t stagedRows = 0;
++            int64_t chunkStartRow = stage2BlockIdx * tilingData->rowOfFormerBlock;
+             for (int64_t rowOuterIdx = 0; rowOuterIdx < rowOuterLoop; rowOuterIdx++) {
+                 int64_t xGmBsBaseOffsetPart2 = rowOuterIdx * tilingData->stage2RowFactor *
+                 tilingData->hcMult * tilingData->d;
+@@ -454,7 +455,11 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
+                         curRowFactor, tilingData->hcMult);
+                 postQue.FreeTensor(postLocal);
+ 
+-                // combFrag
++                // combFrag: init stays in this per-row loop to overlap the x/y copies
++                // and writes into the staging tensor; the rest runs batched below
++                if (stagedRows == 0) {
++                    combFragLocal = combFragQue.AllocTensor<float>();
++                }
+                 mixes2Local = mixesQue2.AllocTensor<float>();
+                 for (int64_t i = 0; i < stage1UsedCoreNum; ++i) {
+                     for (int64_t j = 0; j < curRowFactor; ++j) {
+@@ -471,8 +476,6 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
+                 mixes2Local = mixesQue2.DeQue<float>();
+                 ReduceSumARAPerf(mixes02ReduceLocal, mixes2Local, 1, stage1UsedCoreNum,
+                 curRowFactor * tilingData->hcMult * tilingData->hcMultAlign);
+-                combFragLocal = combFragQue.AllocTensor<float>();
+-
+                 MulABLastDimBrcInline<float, false>(mixes02ReduceLocal, mixes02ReduceLocal,
+                 rsqrtLocal, rowBrcbLocal0, curRowFactor,
+                 tilingData->hcMult * tilingData->hcMultAlign);
+@@ -483,40 +486,37 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
+                                                 tilingData->hcMult * tilingData->hcMultAlign);
+                 SoftmaxFP32Perf(mixes02ReduceLocal, mixes02ReduceLocal, reduceLocal, hcBrcbLocal1,
+                 curRowFactor * tilingData->hcMult, tilingData->hcMult, tilingData->hcEps);
+-                ReduceSumARAPerf(reduceLocal, mixes02ReduceLocal, curRowFactor, tilingData->hcMult, tilingData->hcMult);
+-                Adds(reduceLocal, reduceLocal, tilingData->hcEps, curRowFactor * tilingData->hcMult);
+-                PipeBarrier<PIPE_V>();
+-                DivABABrcInline(combFragLocal, mixes02ReduceLocal, reduceLocal, curRowFactor, tilingData->hcMult,
+-                                tilingData->hcMult);
+-                for (int64_t iter = 0; iter < tilingData->iterTimes - 1; iter++) {
+-                    LastDimReduceSumPerf(reduceLocal, combFragLocal,
+-                    curRowFactor * tilingData->hcMult, tilingData->hcMult);
+-                    Adds(reduceLocal, reduceLocal, tilingData->hcEps,
+-                    curRowFactor * tilingData->hcMult);
+-                    PipeBarrier<PIPE_V>();
+-                    DivABLastDimBrcInline<float, true>(combFragLocal, combFragLocal,
+-                    reduceLocal, hcBrcbLocal1, curRowFactor * tilingData->hcMult,
+-                    tilingData->hcMult);
+-                    ReduceSumARAPerf(reduceLocal, combFragLocal, curRowFactor,
+-                    tilingData->hcMult, tilingData->hcMult);
+-                    Adds(reduceLocal, reduceLocal, tilingData->hcEps,
+-                    curRowFactor * tilingData->hcMult);
+-                    PipeBarrier<PIPE_V>();
+-                    DivABABrcInline(combFragLocal, combFragLocal, reduceLocal,
+-                    curRowFactor, tilingData->hcMult, tilingData->hcMult);
+-                }
++                SinkhornColStage(combFragLocal[stagedRows * tilingData->hcMult * tilingData->hcMultAlign],
++                    mixes02ReduceLocal, reduceLocal, curRowFactor, tilingData->hcMult, tilingData->hcEps);
+                 mixesQue2.FreeTensor(mixes2Local);
+                 squareSumQue.template FreeTensor(squareSumOutLocal);
+ 
+-                combFragQue.EnQue(combFragLocal);
+-                combFragLocal = combFragQue.DeQue<float>();
+-                CopyOut(combFragLocal,
+-                        combFragGm[stage2BlockIdx * tilingData->rowOfFormerBlock *
+-                        tilingData->hcMult * tilingData->hcMult +
+-                        rowOuterIdx * tilingData->stage2RowFactor * tilingData->hcMult *
+-                        tilingData->hcMult], curRowFactor * tilingData->hcMult,
++                // combRowFactor is a whole multiple of stage2RowFactor, so stagedRows
++                // lands on the bound exactly; the tail group flushes on the last loop
++                stagedRows += curRowFactor;
++                if (stagedRows >= tilingData->combRowFactor || rowOuterIdx == rowOuterLoop - 1) {
++                    for (int64_t iter = 0; iter < tilingData->iterTimes - 1; iter++) {
++                        LastDimReduceSumPerf(reduceLocal, combFragLocal,
++                        stagedRows * tilingData->hcMult, tilingData->hcMult);
++                        Adds(reduceLocal, reduceLocal, tilingData->hcEps,
++                        stagedRows * tilingData->hcMult);
++                        PipeBarrier<PIPE_V>();
++                        DivABLastDimBrcInline<float, true>(combFragLocal, combFragLocal,
++                        reduceLocal, hcBrcbLocal1, stagedRows * tilingData->hcMult,
+                         tilingData->hcMult);
+-                combFragQue.FreeTensor(combFragLocal);
++                        SinkhornColStage(combFragLocal, combFragLocal, reduceLocal, stagedRows,
++                            tilingData->hcMult, tilingData->hcEps);
++                    }
++                    combFragQue.EnQue(combFragLocal);
++                    combFragLocal = combFragQue.DeQue<float>();
++                    CopyOut(combFragLocal,
++                            combFragGm[chunkStartRow * tilingData->hcMult * tilingData->hcMult],
++                            stagedRows * tilingData->hcMult,
++                            tilingData->hcMult);
++                    combFragQue.FreeTensor(combFragLocal);
++                    chunkStartRow += stagedRows;
++                    stagedRows = 0;
++                }
+             }
+         }
+     }
