@@ -257,7 +257,15 @@ __aicore__ inline void DivABLastDimBrcInline(const LocalTensor<T> &output, const
     uint32_t elemInOneRepeat = REPEAT_SIZE / sizeof(T);
     uint32_t curColNumAlign = RoundUp<T>(curColNum);
     if (curColNum <= elemInOneBlock) {
-        Div(output, input0, tmpBuffer, curRowNum * curColNumAlign);
+        uint32_t calCount = curRowNum * curColNumAlign;
+        // A single repeat avoids entering count-mask mode for short vectors.
+        if (calCount > 0 && calCount <= elemInOneRepeat) {
+            Div(output, input0, tmpBuffer, static_cast<uint64_t>(calCount), 1,
+                {DEFAULT_BLOCK_STRIDE, DEFAULT_BLOCK_STRIDE, DEFAULT_BLOCK_STRIDE,
+                 DEFAULT_REPEAT_STRIDE, DEFAULT_REPEAT_STRIDE, DEFAULT_REPEAT_STRIDE});
+        } else {
+            Div(output, input0, tmpBuffer, calCount);
+        }
     } else {
         int32_t numRepeatPerLine = curColNum / elemInOneRepeat;
         int32_t numRemainPerLine = curColNum % elemInOneRepeat;
