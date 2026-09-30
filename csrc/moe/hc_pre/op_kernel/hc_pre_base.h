@@ -487,6 +487,16 @@ __aicore__ inline void CastTwoDim(const LocalTensor<T0> &output, const LocalTens
 {
     uint32_t dim1AlignT0 = RoundUp<T0>(dim1);
     uint32_t dim1AlignT1 = RoundUp<T1>(dim1);
+    // Contiguous rows need no per-row padding or separate Cast commands.
+    if (dim1AlignT0 == dim1 && dim1AlignT1 == dim1) {
+        if constexpr (IsSameType<T1, bfloat16_t>::value && IsSameType<T0, float>::value) {
+            Cast(output, input, AscendC::RoundMode::CAST_NONE, dim0 * dim1);
+        } else {
+            Cast(output, input, AscendC::RoundMode::CAST_RINT, dim0 * dim1);
+        }
+        PipeBarrier<PIPE_V>();
+        return;
+    }
     if constexpr (IsSameType<T1, bfloat16_t>::value && IsSameType<T0, float>::value) {
         for (uint32_t i = 0; i < dim0; i++) {
             Cast(output[i * dim1AlignT0], input[i * dim1AlignT1], AscendC::RoundMode::CAST_NONE, dim1);
