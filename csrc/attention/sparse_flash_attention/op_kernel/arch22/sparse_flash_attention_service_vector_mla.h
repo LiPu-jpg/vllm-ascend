@@ -1060,17 +1060,18 @@ __aicore__ inline void SFAVectorService<SFAT>::MergeKv(const RunInfo &runInfo)
                         kvMergUb_, dataCopyParams);
         }
         if (constInfo.headDimRope > 0) {
-            // The already zeroed key row also holds multiple contiguous RoPE
-            // rows. Reuse it without clearing any additional UB storage.
-            int64_t zeroRopeRows = constInfo.headDim / constInfo.headDimRope;
-            for (int64_t s2GmOffset = s2GmStartOffset + mte2Size; s2GmOffset < s2GmLimit;
-                 s2GmOffset += zeroRopeRows) {
-                int64_t remainingRows = s2GmLimit - s2GmOffset;
-                int64_t copyRows = remainingRows < zeroRopeRows ? remainingRows : zeroRopeRows;
-                dataCopyParams.blockLen = copyRows * constInfo.headDimRope * sizeof(KV_T);
-                DataCopyPad(kvMergeGm_[runInfo.loop % MERGE_CACHE_GM_BUF_NUM * 512 * 576 + 512 * constInfo.headDim +
-                                       s2GmOffset * constInfo.headDimRope],
-                            kvMergUb_, dataCopyParams);
+            // Copy the contiguous RoPE suffix in zeroed key-row chunks.
+            // Element offsets avoid a runtime division; only the tail needs
+            // a different copy length.
+            int64_t ropeOffset = (s2GmStartOffset + mte2Size) * constInfo.headDimRope;
+            int64_t ropeLimit = s2GmLimit * constInfo.headDimRope;
+            int64_t ropeBase = runInfo.loop % MERGE_CACHE_GM_BUF_NUM * 512 * 576 + 512 * constInfo.headDim;
+            for (; ropeOffset + constInfo.headDim <= ropeLimit; ropeOffset += constInfo.headDim) {
+                DataCopyPad(kvMergeGm_[ropeBase + ropeOffset], kvMergUb_, dataCopyParams);
+            }
+            if (ropeOffset < ropeLimit) {
+                dataCopyParams.blockLen = (ropeLimit - ropeOffset) * sizeof(KV_T);
+                DataCopyPad(kvMergeGm_[ropeBase + ropeOffset], kvMergUb_, dataCopyParams);
             }
         }
         SetFlag<AscendC::HardEvent::MTE3_MTE2>(mergeMte3Idx & 1);
