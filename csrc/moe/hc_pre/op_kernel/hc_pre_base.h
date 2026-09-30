@@ -447,14 +447,18 @@ __aicore__ inline void ReduceSumARAPerf(const LocalTensor<float> &output, const 
     uint32_t elemInOneRepeat = REPEAT_SIZE / sizeof(float);
     uint32_t dim2Align = RoundUp<float>(dim2);
 
-    // 拷贝第一个R到output上
-    DataCopyParams copyParams;
-    copyParams.blockCount = dim0;
-    copyParams.blockLen = dim2Align / elemInOneBlock;
-    copyParams.srcStride = (dim1 - 1) * (dim2Align / elemInOneBlock);
-    copyParams.dstStride = 0;
-    DataCopy(output, input, copyParams);
-    PipeBarrier<PIPE_V>();
+    // Seed an aligned reduction with its first addition. Padded reductions
+    // still copy the first row so that their output padding is preserved.
+    const bool seedFromInput = dim1 > 1 && dim2 == dim2Align;
+    if (!seedFromInput) {
+        DataCopyParams copyParams;
+        copyParams.blockCount = dim0;
+        copyParams.blockLen = dim2Align / elemInOneBlock;
+        copyParams.srcStride = (dim1 - 1) * (dim2Align / elemInOneBlock);
+        copyParams.dstStride = 0;
+        DataCopy(output, input, copyParams);
+        PipeBarrier<PIPE_V>();
+    }
     uint32_t dim2RepeatTimes = dim2 / elemInOneRepeat;
     uint32_t dim2Reminder = dim2 % elemInOneRepeat;
     // 沿着dim2方向开repeat
@@ -466,7 +470,20 @@ __aicore__ inline void ReduceSumARAPerf(const LocalTensor<float> &output, const 
     instrParams.src0RepStride = DEFAULT_REPEAT_STRIDE;
     instrParams.src1RepStride = DEFAULT_REPEAT_STRIDE;
     for (uint32_t i = 0; i < dim0; i++) {
-        for (uint32_t j = 1; j < dim1; j++) {
+        uint32_t firstRow = 1;
+        if (seedFromInput) {
+            Add(output[i * dim2Align], input[i * dim1 * dim2Align],
+                input[i * dim1 * dim2Align + dim2Align], elemInOneRepeat, dim2RepeatTimes, instrParams);
+            if (dim2Reminder != 0) {
+                Add(output[i * dim2Align + dim2RepeatTimes * elemInOneRepeat],
+                    input[i * dim1 * dim2Align + dim2RepeatTimes * elemInOneRepeat],
+                    input[i * dim1 * dim2Align + dim2Align + dim2RepeatTimes * elemInOneRepeat],
+                    dim2Reminder, 1, instrParams);
+            }
+            PipeBarrier<PIPE_V>();
+            firstRow = 2;
+        }
+        for (uint32_t j = firstRow; j < dim1; j++) {
             Add(output[i * dim2Align], output[i * dim2Align], input[i * dim1 * dim2Align + j * dim2Align],
                 elemInOneRepeat, dim2RepeatTimes, instrParams);
             if (dim2Reminder != 0) {
