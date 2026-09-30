@@ -1,0 +1,52 @@
+{
+  "scope": "Four-layer BF16 standard-dummy GLM functional parity, not trained-checkpoint accuracy or model throughput",
+  "source": "d50abbec269b1f55983f122388d608b0fab38a62",
+  "shared_prerequisite": "PR #17828 cbb707903e619db01439e19731b0e688377326fe causal-convolution wrapper only",
+  "modes": [
+    {
+      "mode_requested": "model-eager",
+      "requests": 4,
+      "generated_tokens": 32,
+      "logprob_values_compared": 160,
+      "max_abs_logprob_difference": 0.0,
+      "errors": [],
+      "fixture_sha256": [
+        "f259aa655d23962ee587ca2c0449867204ae7ad4b1e218fc36865a66765f481e",
+        "f259aa655d23962ee587ca2c0449867204ae7ad4b1e218fc36865a66765f481e"
+      ],
+      "result_files": [
+        {
+          "path": "/mnt/workspace/hc-pre-reduction-20260930/iteration-02/exact3-fixed-baseline-model-eager/data/functional-results.json",
+          "sha256": "9746530c94216c3aa12588656b59c77ecfb6806f720833fbf6507d51c27bafcd"
+        },
+        {
+          "path": "/mnt/workspace/hc-pre-reduction-20260930/iteration-02/exact3-fixed-peeled-model-eager/data/functional-results.json",
+          "sha256": "9746530c94216c3aa12588656b59c77ecfb6806f720833fbf6507d51c27bafcd"
+        }
+      ]
+    },
+    {
+      "mode_requested": "model-graph",
+      "requests": 4,
+      "generated_tokens": 32,
+      "logprob_values_compared": 160,
+      "max_abs_logprob_difference": 0.0,
+      "errors": [],
+      "fixture_sha256": [
+        "f259aa655d23962ee587ca2c0449867204ae7ad4b1e218fc36865a66765f481e",
+        "f259aa655d23962ee587ca2c0449867204ae7ad4b1e218fc36865a66765f481e"
+      ],
+      "result_files": [
+        {
+          "path": "/mnt/workspace/hc-pre-reduction-20260930/iteration-02/exact3-fixed-baseline-model-graph/data/functional-results.json",
+          "sha256": "9746530c94216c3aa12588656b59c77ecfb6806f720833fbf6507d51c27bafcd"
+        },
+        {
+          "path": "/mnt/workspace/hc-pre-reduction-20260930/iteration-02/exact3-fixed-peeled-model-graph/data/functional-results.json",
+          "sha256": "9746530c94216c3aa12588656b59c77ecfb6806f720833fbf6507d51c27bafcd"
+        }
+      ]
+    }
+  ],
+  "functional_parity_pass": true
+}

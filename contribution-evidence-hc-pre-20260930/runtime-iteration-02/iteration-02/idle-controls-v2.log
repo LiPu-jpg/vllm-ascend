@@ -1,0 +1,25 @@
+START baseline idle2-aa-a1 registration production  500
+COMPLETED idle2-aa-a1
+RESULT idle2-aa-a1 status=0
+START baseline idle2-aa-b1 registration production idle2-aa-a1 500
+COMPLETED idle2-aa-b1
+RESULT idle2-aa-b1 status=0
+START baseline idle2-aa-b2 registration production idle2-aa-a1 500
+COMPLETED idle2-aa-b2
+RESULT idle2-aa-b2 status=0
+START baseline idle2-aa-a2 registration production idle2-aa-a1 500
+COMPLETED idle2-aa-a2
+RESULT idle2-aa-a2 status=0
+START baseline idle2-baseline-a registration production idle2-aa-a1 500
+COMPLETED idle2-baseline-a
+RESULT idle2-baseline-a status=0
+START peeled idle2-peeled-a registration production idle2-aa-a1 500
+COMPLETED idle2-peeled-a
+RESULT idle2-peeled-a status=0
+START peeled idle2-peeled-b registration production idle2-aa-a1 500
+COMPLETED idle2-peeled-b
+RESULT idle2-peeled-b status=0
+START baseline idle2-baseline-b registration production idle2-aa-a1 500
+COMPLETED idle2-baseline-b
+RESULT idle2-baseline-b status=0
+IDLE_CONTROLS_COMPLETE

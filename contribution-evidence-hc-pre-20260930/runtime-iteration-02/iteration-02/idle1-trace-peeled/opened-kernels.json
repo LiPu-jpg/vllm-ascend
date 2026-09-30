@@ -1,0 +1,7 @@
+[
+  {
+    "operation": "open",
+    "path": "/mnt/workspace/hc-pre-reduction-20260930/peeled/opp/vendors/reduction_peeled_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be.o",
+    "sha256": "9bc11fd1d998ed70d1bfd7a4389cab2a8ff28bfb232f763a2b3796a6c6796cfa"
+  }
+]

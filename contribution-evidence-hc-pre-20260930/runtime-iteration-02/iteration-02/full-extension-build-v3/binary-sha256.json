@@ -1,0 +1,4 @@
+{
+  "/mnt/workspace/hc-pre-reduction-20260930/full-plugin-source-v3/vllm_ascend/vllm_ascend_C.cpython-312-aarch64-linux-gnu.so": "50de6a4f00129b30c7121aa14d8d86c80d7ee9a0ce32f8bf027143e158d4a5de",
+  "/mnt/workspace/hc-pre-reduction-20260930/full-plugin-source-v3/vllm_ascend/libvllm_ascend_kernels.so": "14723a803a4c9df04282074347d9b6d701e14484f1e9bc673c473707bc152622"
+}

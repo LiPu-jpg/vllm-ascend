@@ -1,0 +1,10 @@
+START baseline idle1-trace-baseline trace
+COMPLETED idle1-trace-baseline
+RESULT idle1-trace-baseline status=0
+START candidate idle1-trace-candidate trace
+COMPLETED idle1-trace-candidate
+RESULT idle1-trace-candidate status=0
+START peeled idle1-trace-peeled trace
+COMPLETED idle1-trace-peeled
+RESULT idle1-trace-peeled status=0
+START baseline idle1-aa-a1 registration production  500
