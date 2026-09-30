@@ -1,0 +1,2 @@
+Device_id,OP Type,Core Type,Count,Total Time(us),Min Time(us),Avg Time(us),Max Time(us),Ratio(%)
+0,SparseFlashAttention,MIX_AIC,5,213.904,42.041,42.781,43.221,100

@@ -1,5 +1,7 @@
 # Nonempty SFA RoPE-padding experiment evidence
 
+**WITHDRAWN after the third candidate (2026-09-30):** this padding optimization is not accepted as a stable upstream performance improvement. Round3 has 11 lower /41 higher device medians across all52 cases, worst slowdown6.84%; its independent profiler has5 lower /47 higher durations. The unchanged-source rebuild is byte-identical to the original baseline. All three candidates and every negative/aborted result remain preserved. [Final rejection report](a3/optimization-summary.md), [round3 all52/ranges/wall data](a3/performance-table.md), [identical-binary process control](a3/build-control-table.md), [regression reassessment](reassessment-20260930/regression-reassessment.md). `a3` denotes iteration3, **not Ascend A3 hardware**. Earlier “final contribution” wording describes the initial draft proposal and is superseded by this withdrawal.
+
 Independent AscendC implementation based on the publicly licensed vllm-ascend kernel/API. No contest source is redistributed or copied. Contest R152, version/score comparison and upstream mechanisms are discussed in optimization-audit.md; the competition score is not an upstream benchmark.
 
 ## Scope and provenance

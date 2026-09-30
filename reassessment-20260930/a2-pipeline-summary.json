@@ -1,0 +1,1302 @@
+[
+  {
+    "index": 0,
+    "baseline": {
+      "Duration(us)": 28.7168,
+      "aiv_time(us)": 7.3416,
+      "aiv_scalar_time(us)": 4.1948,
+      "aiv_mte2_time(us)": 2.401,
+      "aiv_mte3_time(us)": 0.2196,
+      "aicore_time(us)": 9.747399999999999,
+      "aic_scalar_time(us)": 7.2628,
+      "aiv_icache_miss_rate": 0.036,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_000/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185809124_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 28.3808,
+      "aiv_time(us)": 7.2996,
+      "aiv_scalar_time(us)": 4.2794,
+      "aiv_mte2_time(us)": 2.3534,
+      "aiv_mte3_time(us)": 0.1346,
+      "aicore_time(us)": 9.6762,
+      "aic_scalar_time(us)": 7.2198,
+      "aiv_icache_miss_rate": 0.0382,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_000/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190708443_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 1,
+    "baseline": {
+      "Duration(us)": 32.4566,
+      "aiv_time(us)": 7.5443999999999996,
+      "aiv_scalar_time(us)": 4.2912,
+      "aiv_mte2_time(us)": 2.5494,
+      "aiv_mte3_time(us)": 0.1768,
+      "aicore_time(us)": 9.9472,
+      "aic_scalar_time(us)": 7.2234,
+      "aiv_icache_miss_rate": 0.0296,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_001/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185814057_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 33.696799999999996,
+      "aiv_time(us)": 7.5966000000000005,
+      "aiv_scalar_time(us)": 4.4403999999999995,
+      "aiv_mte2_time(us)": 2.4884,
+      "aiv_mte3_time(us)": 0.14359999999999998,
+      "aicore_time(us)": 9.9314,
+      "aic_scalar_time(us)": 7.1558,
+      "aiv_icache_miss_rate": 0.0332,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_001/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190713354_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 2,
+    "baseline": {
+      "Duration(us)": 37.3848,
+      "aiv_time(us)": 7.721,
+      "aiv_scalar_time(us)": 4.461,
+      "aiv_mte2_time(us)": 2.6038,
+      "aiv_mte3_time(us)": 0.19,
+      "aicore_time(us)": 10.0752,
+      "aic_scalar_time(us)": 7.2348,
+      "aiv_icache_miss_rate": 0.024,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_002/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185819939_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 38.2168,
+      "aiv_time(us)": 7.7878,
+      "aiv_scalar_time(us)": 4.5532,
+      "aiv_mte2_time(us)": 2.6042,
+      "aiv_mte3_time(us)": 0.1528,
+      "aicore_time(us)": 10.1908,
+      "aic_scalar_time(us)": 7.2064,
+      "aiv_icache_miss_rate": 0.0264,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_002/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190718232_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 3,
+    "baseline": {
+      "Duration(us)": 37.0926,
+      "aiv_time(us)": 7.751,
+      "aiv_scalar_time(us)": 4.685,
+      "aiv_mte2_time(us)": 2.9508,
+      "aiv_mte3_time(us)": 0.19920000000000002,
+      "aicore_time(us)": 10.1816,
+      "aic_scalar_time(us)": 7.2386,
+      "aiv_icache_miss_rate": 0.017,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_003/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185824830_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 37.6446,
+      "aiv_time(us)": 7.696,
+      "aiv_scalar_time(us)": 4.8458,
+      "aiv_mte2_time(us)": 2.777,
+      "aiv_mte3_time(us)": 0.169,
+      "aicore_time(us)": 10.0302,
+      "aic_scalar_time(us)": 7.1906,
+      "aiv_icache_miss_rate": 0.021,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_003/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190724137_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 4,
+    "baseline": {
+      "Duration(us)": 49.933,
+      "aiv_time(us)": 40.36,
+      "aiv_scalar_time(us)": 17.614,
+      "aiv_mte2_time(us)": 10.24,
+      "aiv_mte3_time(us)": 7.4982,
+      "aicore_time(us)": 38.259,
+      "aic_scalar_time(us)": 18.259600000000002,
+      "aiv_icache_miss_rate": 0.0274,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_004/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185829841_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 47.425,
+      "aiv_time(us)": 38.463,
+      "aiv_scalar_time(us)": 17.0876,
+      "aiv_mte2_time(us)": 9.4222,
+      "aiv_mte3_time(us)": 6.4024,
+      "aicore_time(us)": 36.4106,
+      "aic_scalar_time(us)": 18.1648,
+      "aiv_icache_miss_rate": 0.024800000000000003,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_004/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190729163_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 5,
+    "baseline": {
+      "Duration(us)": 59.0974,
+      "aiv_time(us)": 47.4308,
+      "aiv_scalar_time(us)": 30.0224,
+      "aiv_mte2_time(us)": 23.3094,
+      "aiv_mte3_time(us)": 7.82,
+      "aicore_time(us)": 45.7314,
+      "aic_scalar_time(us)": 17.656,
+      "aiv_icache_miss_rate": 0.011,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_005/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185835101_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 58.3252,
+      "aiv_time(us)": 47.0758,
+      "aiv_scalar_time(us)": 29.4418,
+      "aiv_mte2_time(us)": 22.8948,
+      "aiv_mte3_time(us)": 7.3694,
+      "aicore_time(us)": 45.2738,
+      "aic_scalar_time(us)": 17.537,
+      "aiv_icache_miss_rate": 0.01,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_005/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190735409_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 6,
+    "baseline": {
+      "Duration(us)": 33.9886,
+      "aiv_time(us)": 7.423,
+      "aiv_scalar_time(us)": 4.2122,
+      "aiv_mte2_time(us)": 2.2418,
+      "aiv_mte3_time(us)": 0.3292,
+      "aicore_time(us)": 9.8762,
+      "aic_scalar_time(us)": 7.405,
+      "aiv_icache_miss_rate": 0.0366,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_006/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185840977_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 31.1484,
+      "aiv_time(us)": 7.5254,
+      "aiv_scalar_time(us)": 4.7184,
+      "aiv_mte2_time(us)": 2.0296000000000003,
+      "aiv_mte3_time(us)": 0.151,
+      "aicore_time(us)": 9.7476,
+      "aic_scalar_time(us)": 7.116,
+      "aiv_icache_miss_rate": 0.0404,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_006/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190740182_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 7,
+    "baseline": {
+      "Duration(us)": 37.449,
+      "aiv_time(us)": 7.7024,
+      "aiv_scalar_time(us)": 4.3722,
+      "aiv_mte2_time(us)": 2.4718,
+      "aiv_mte3_time(us)": 0.2596,
+      "aicore_time(us)": 10.1392,
+      "aic_scalar_time(us)": 7.428,
+      "aiv_icache_miss_rate": 0.0292,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_007/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185846866_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 37.0728,
+      "aiv_time(us)": 7.558,
+      "aiv_scalar_time(us)": 4.476,
+      "aiv_mte2_time(us)": 2.2974,
+      "aiv_mte3_time(us)": 0.1576,
+      "aicore_time(us)": 10.1504,
+      "aic_scalar_time(us)": 7.1016,
+      "aiv_icache_miss_rate": 0.0332,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_007/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190745073_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 8,
+    "baseline": {
+      "Duration(us)": 41.6568,
+      "aiv_time(us)": 7.9758000000000004,
+      "aiv_scalar_time(us)": 4.496,
+      "aiv_mte2_time(us)": 2.6712000000000002,
+      "aiv_mte3_time(us)": 0.2484,
+      "aicore_time(us)": 10.427999999999999,
+      "aic_scalar_time(us)": 7.3892,
+      "aiv_icache_miss_rate": 0.0228,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_008/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185852766_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 42.2488,
+      "aiv_time(us)": 8.165,
+      "aiv_scalar_time(us)": 4.9644,
+      "aiv_mte2_time(us)": 2.477,
+      "aiv_mte3_time(us)": 0.171,
+      "aicore_time(us)": 10.472,
+      "aic_scalar_time(us)": 7.178,
+      "aiv_icache_miss_rate": 0.027,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_008/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190749967_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 9,
+    "baseline": {
+      "Duration(us)": 41.525,
+      "aiv_time(us)": 7.9456,
+      "aiv_scalar_time(us)": 4.739,
+      "aiv_mte2_time(us)": 3.008,
+      "aiv_mte3_time(us)": 0.2064,
+      "aicore_time(us)": 10.3974,
+      "aic_scalar_time(us)": 7.3378,
+      "aiv_icache_miss_rate": 0.016,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_009/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185858650_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 41.888799999999996,
+      "aiv_time(us)": 7.8628,
+      "aiv_scalar_time(us)": 4.9156,
+      "aiv_mte2_time(us)": 2.8134,
+      "aiv_mte3_time(us)": 0.177,
+      "aicore_time(us)": 10.429,
+      "aic_scalar_time(us)": 7.0918,
+      "aiv_icache_miss_rate": 0.0212,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_009/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190754865_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 10,
+    "baseline": {
+      "Duration(us)": 58.333400000000005,
+      "aiv_time(us)": 47.195,
+      "aiv_scalar_time(us)": 19.3528,
+      "aiv_mte2_time(us)": 11.481,
+      "aiv_mte3_time(us)": 11.043000000000001,
+      "aicore_time(us)": 45.2948,
+      "aic_scalar_time(us)": 19.005200000000002,
+      "aiv_icache_miss_rate": 0.0244,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_010/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185904681_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 53.181,
+      "aiv_time(us)": 42.7724,
+      "aiv_scalar_time(us)": 18.195,
+      "aiv_mte2_time(us)": 10.2238,
+      "aiv_mte3_time(us)": 7.1126,
+      "aicore_time(us)": 41.0684,
+      "aic_scalar_time(us)": 18.224,
+      "aiv_icache_miss_rate": 0.022,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_010/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190800905_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 11,
+    "baseline": {
+      "Duration(us)": 64.7412,
+      "aiv_time(us)": 52.1772,
+      "aiv_scalar_time(us)": 31.9652,
+      "aiv_mte2_time(us)": 26.932,
+      "aiv_mte3_time(us)": 8.836,
+      "aicore_time(us)": 50.4828,
+      "aic_scalar_time(us)": 18.6702,
+      "aiv_icache_miss_rate": 0.009,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_011/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185910955_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 63.8332,
+      "aiv_time(us)": 51.5364,
+      "aiv_scalar_time(us)": 32.0822,
+      "aiv_mte2_time(us)": 26.3918,
+      "aiv_mte3_time(us)": 9.6514,
+      "aicore_time(us)": 49.7842,
+      "aic_scalar_time(us)": 18.6998,
+      "aiv_icache_miss_rate": 0.009,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_011/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190806182_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 12,
+    "baseline": {
+      "Duration(us)": 28.7924,
+      "aiv_time(us)": 7.3008,
+      "aiv_scalar_time(us)": 4.1618,
+      "aiv_mte2_time(us)": 2.4322,
+      "aiv_mte3_time(us)": 0.1878,
+      "aicore_time(us)": 9.7332,
+      "aic_scalar_time(us)": 7.1948,
+      "aiv_icache_miss_rate": 0.0356,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_012/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185915847_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 28.6528,
+      "aiv_time(us)": 7.7958,
+      "aiv_scalar_time(us)": 5.117,
+      "aiv_mte2_time(us)": 2.0582,
+      "aiv_mte3_time(us)": 0.1366,
+      "aicore_time(us)": 9.8422,
+      "aic_scalar_time(us)": 7.3180000000000005,
+      "aiv_icache_miss_rate": 0.041,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_012/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190812077_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 13,
+    "baseline": {
+      "Duration(us)": 32.7246,
+      "aiv_time(us)": 7.5144,
+      "aiv_scalar_time(us)": 4.2783999999999995,
+      "aiv_mte2_time(us)": 2.5238,
+      "aiv_mte3_time(us)": 0.1718,
+      "aicore_time(us)": 9.961,
+      "aic_scalar_time(us)": 7.2082,
+      "aiv_icache_miss_rate": 0.0292,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_013/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185921752_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 33.9246,
+      "aiv_time(us)": 7.4818,
+      "aiv_scalar_time(us)": 4.4784,
+      "aiv_mte2_time(us)": 2.354,
+      "aiv_mte3_time(us)": 0.144,
+      "aicore_time(us)": 9.9964,
+      "aic_scalar_time(us)": 7.0698,
+      "aiv_icache_miss_rate": 0.034600000000000006,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_013/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190817971_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 14,
+    "baseline": {
+      "Duration(us)": 37.068799999999996,
+      "aiv_time(us)": 7.690600000000001,
+      "aiv_scalar_time(us)": 4.398,
+      "aiv_mte2_time(us)": 2.6284,
+      "aiv_mte3_time(us)": 0.1886,
+      "aicore_time(us)": 10.0982,
+      "aic_scalar_time(us)": 7.1846000000000005,
+      "aiv_icache_miss_rate": 0.0242,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_014/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185927662_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 38.9486,
+      "aiv_time(us)": 7.8664,
+      "aiv_scalar_time(us)": 4.8652,
+      "aiv_mte2_time(us)": 2.3609999999999998,
+      "aiv_mte3_time(us)": 0.154,
+      "aicore_time(us)": 10.2344,
+      "aic_scalar_time(us)": 7.2452,
+      "aiv_icache_miss_rate": 0.028,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_014/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190823874_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 15,
+    "baseline": {
+      "Duration(us)": 36.952799999999996,
+      "aiv_time(us)": 7.7308,
+      "aiv_scalar_time(us)": 4.6678,
+      "aiv_mte2_time(us)": 2.9354,
+      "aiv_mte3_time(us)": 0.204,
+      "aicore_time(us)": 10.1644,
+      "aic_scalar_time(us)": 7.232,
+      "aiv_icache_miss_rate": 0.017,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_015/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185933570_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 38.0448,
+      "aiv_time(us)": 7.6218,
+      "aiv_scalar_time(us)": 4.9298,
+      "aiv_mte2_time(us)": 2.6346,
+      "aiv_mte3_time(us)": 0.169,
+      "aicore_time(us)": 10.0762,
+      "aic_scalar_time(us)": 7.1356,
+      "aiv_icache_miss_rate": 0.022,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_015/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190828781_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 16,
+    "baseline": {
+      "Duration(us)": 47.769,
+      "aiv_time(us)": 38.5366,
+      "aiv_scalar_time(us)": 17.173000000000002,
+      "aiv_mte2_time(us)": 9.654,
+      "aiv_mte3_time(us)": 7.133,
+      "aicore_time(us)": 36.3958,
+      "aic_scalar_time(us)": 18.0098,
+      "aiv_icache_miss_rate": 0.0272,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_016/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185938613_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 49.193,
+      "aiv_time(us)": 39.8874,
+      "aiv_scalar_time(us)": 17.613,
+      "aiv_mte2_time(us)": 10.0936,
+      "aiv_mte3_time(us)": 6.9064,
+      "aicore_time(us)": 37.419399999999996,
+      "aic_scalar_time(us)": 18.3652,
+      "aiv_icache_miss_rate": 0.0242,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_016/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190834827_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 17,
+    "baseline": {
+      "Duration(us)": 56.4292,
+      "aiv_time(us)": 45.097,
+      "aiv_scalar_time(us)": 29.0646,
+      "aiv_mte2_time(us)": 21.8204,
+      "aiv_mte3_time(us)": 7.183,
+      "aicore_time(us)": 43.6074,
+      "aic_scalar_time(us)": 17.164,
+      "aiv_icache_miss_rate": 0.011,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_017/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185943907_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 58.789,
+      "aiv_time(us)": 46.5614,
+      "aiv_scalar_time(us)": 29.7916,
+      "aiv_mte2_time(us)": 22.3268,
+      "aiv_mte3_time(us)": 6.672,
+      "aicore_time(us)": 45.105,
+      "aic_scalar_time(us)": 18.5688,
+      "aiv_icache_miss_rate": 0.01,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_017/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190841093_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 18,
+    "baseline": {
+      "Duration(us)": 34.0688,
+      "aiv_time(us)": 7.8666,
+      "aiv_scalar_time(us)": 4.5882000000000005,
+      "aiv_mte2_time(us)": 2.3132,
+      "aiv_mte3_time(us)": 0.3322,
+      "aicore_time(us)": 10.128400000000001,
+      "aic_scalar_time(us)": 7.374,
+      "aiv_icache_miss_rate": 0.036,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_018/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185948724_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 31.4526,
+      "aiv_time(us)": 7.5544,
+      "aiv_scalar_time(us)": 4.75,
+      "aiv_mte2_time(us)": 2.0448,
+      "aiv_mte3_time(us)": 0.1508,
+      "aicore_time(us)": 9.8948,
+      "aic_scalar_time(us)": 6.7548,
+      "aiv_icache_miss_rate": 0.04,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_018/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190846005_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 19,
+    "baseline": {
+      "Duration(us)": 37.5086,
+      "aiv_time(us)": 7.724600000000001,
+      "aiv_scalar_time(us)": 4.3486,
+      "aiv_mte2_time(us)": 2.4888,
+      "aiv_mte3_time(us)": 0.2576,
+      "aicore_time(us)": 10.26,
+      "aic_scalar_time(us)": 7.3702,
+      "aiv_icache_miss_rate": 0.029,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_019/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185954636_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 37.4604,
+      "aiv_time(us)": 7.5775999999999994,
+      "aiv_scalar_time(us)": 4.5158000000000005,
+      "aiv_mte2_time(us)": 2.2742,
+      "aiv_mte3_time(us)": 0.157,
+      "aicore_time(us)": 10.2322,
+      "aic_scalar_time(us)": 6.7816,
+      "aiv_icache_miss_rate": 0.033,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_019/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190851915_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 20,
+    "baseline": {
+      "Duration(us)": 42.001,
+      "aiv_time(us)": 7.9632000000000005,
+      "aiv_scalar_time(us)": 4.4878,
+      "aiv_mte2_time(us)": 2.674,
+      "aiv_mte3_time(us)": 0.24459999999999998,
+      "aicore_time(us)": 10.4718,
+      "aic_scalar_time(us)": 7.3102,
+      "aiv_icache_miss_rate": 0.023,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_020/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930185959532_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 42.625,
+      "aiv_time(us)": 8.415,
+      "aiv_scalar_time(us)": 5.302,
+      "aiv_mte2_time(us)": 2.4298,
+      "aiv_mte3_time(us)": 0.168,
+      "aicore_time(us)": 10.5776,
+      "aic_scalar_time(us)": 6.9098,
+      "aiv_icache_miss_rate": 0.0272,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_020/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190856821_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 21,
+    "baseline": {
+      "Duration(us)": 41.696799999999996,
+      "aiv_time(us)": 7.9178,
+      "aiv_scalar_time(us)": 4.773,
+      "aiv_mte2_time(us)": 2.9632,
+      "aiv_mte3_time(us)": 0.2058,
+      "aicore_time(us)": 10.4618,
+      "aic_scalar_time(us)": 7.3554,
+      "aiv_icache_miss_rate": 0.016800000000000002,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_021/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190005449_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 42.2406,
+      "aiv_time(us)": 7.7602,
+      "aiv_scalar_time(us)": 4.926,
+      "aiv_mte2_time(us)": 2.7302,
+      "aiv_mte3_time(us)": 0.17659999999999998,
+      "aicore_time(us)": 10.46,
+      "aic_scalar_time(us)": 6.826,
+      "aiv_icache_miss_rate": 0.0212,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_021/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190901634_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 22,
+    "baseline": {
+      "Duration(us)": 57.189,
+      "aiv_time(us)": 44.571799999999996,
+      "aiv_scalar_time(us)": 18.7502,
+      "aiv_mte2_time(us)": 10.385399999999999,
+      "aiv_mte3_time(us)": 10.2068,
+      "aicore_time(us)": 42.815999999999995,
+      "aic_scalar_time(us)": 18.4432,
+      "aiv_icache_miss_rate": 0.0238,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_022/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190011525_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 55.081,
+      "aiv_time(us)": 44.4082,
+      "aiv_scalar_time(us)": 18.4254,
+      "aiv_mte2_time(us)": 11.0754,
+      "aiv_mte3_time(us)": 7.546,
+      "aicore_time(us)": 42.3834,
+      "aic_scalar_time(us)": 18.6232,
+      "aiv_icache_miss_rate": 0.022,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_022/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190906681_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 23,
+    "baseline": {
+      "Duration(us)": 66.6614,
+      "aiv_time(us)": 52.7776,
+      "aiv_scalar_time(us)": 33.2444,
+      "aiv_mte2_time(us)": 26.4004,
+      "aiv_mte3_time(us)": 7.9116,
+      "aicore_time(us)": 51.196400000000004,
+      "aic_scalar_time(us)": 20.1632,
+      "aiv_icache_miss_rate": 0.008799999999999999,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_023/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190017848_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 66.4092,
+      "aiv_time(us)": 53.404,
+      "aiv_scalar_time(us)": 32.581,
+      "aiv_mte2_time(us)": 26.5548,
+      "aiv_mte3_time(us)": 9.2686,
+      "aicore_time(us)": 51.5886,
+      "aic_scalar_time(us)": 19.861,
+      "aiv_icache_miss_rate": 0.009,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_023/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190912990_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 24,
+    "baseline": {
+      "Duration(us)": 37.941,
+      "aiv_time(us)": 7.7822000000000005,
+      "aiv_scalar_time(us)": 4.7028,
+      "aiv_mte2_time(us)": 3.0238,
+      "aiv_mte3_time(us)": 0.2048,
+      "aicore_time(us)": 10.187,
+      "aic_scalar_time(us)": 7.2414,
+      "aiv_icache_miss_rate": 0.0184,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_024/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190023762_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 38.0208,
+      "aiv_time(us)": 7.446400000000001,
+      "aiv_scalar_time(us)": 4.8424,
+      "aiv_mte2_time(us)": 2.5328,
+      "aiv_mte3_time(us)": 0.17279999999999998,
+      "aicore_time(us)": 10.1272,
+      "aic_scalar_time(us)": 6.9022,
+      "aiv_icache_miss_rate": 0.023,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_024/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190917876_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 25,
+    "baseline": {
+      "Duration(us)": 49.861,
+      "aiv_time(us)": 8.407399999999999,
+      "aiv_scalar_time(us)": 4.8912,
+      "aiv_mte2_time(us)": 2.5871999999999997,
+      "aiv_mte3_time(us)": 0.7958000000000001,
+      "aicore_time(us)": 10.8026,
+      "aic_scalar_time(us)": 8.0886,
+      "aiv_icache_miss_rate": 0.0256,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_025/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190028600_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 49.281,
+      "aiv_time(us)": 8.798,
+      "aiv_scalar_time(us)": 5.6495999999999995,
+      "aiv_mte2_time(us)": 2.2136,
+      "aiv_mte3_time(us)": 0.4914,
+      "aicore_time(us)": 10.9084,
+      "aic_scalar_time(us)": 7.9678,
+      "aiv_icache_miss_rate": 0.03,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_025/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190922825_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 26,
+    "baseline": {
+      "Duration(us)": 54.0576,
+      "aiv_time(us)": 8.599,
+      "aiv_scalar_time(us)": 5.0034,
+      "aiv_mte2_time(us)": 2.7,
+      "aiv_mte3_time(us)": 0.7162,
+      "aicore_time(us)": 10.992,
+      "aic_scalar_time(us)": 8.07,
+      "aiv_icache_miss_rate": 0.022,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_026/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190034570_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 54.561,
+      "aiv_time(us)": 8.4052,
+      "aiv_scalar_time(us)": 5.1292,
+      "aiv_mte2_time(us)": 2.318,
+      "aiv_mte3_time(us)": 0.5006,
+      "aicore_time(us)": 11.0766,
+      "aic_scalar_time(us)": 7.846,
+      "aiv_icache_miss_rate": 0.0264,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_026/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190928788_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 27,
+    "baseline": {
+      "Duration(us)": 58.445,
+      "aiv_time(us)": 8.797600000000001,
+      "aiv_scalar_time(us)": 5.403,
+      "aiv_mte2_time(us)": 3.0982,
+      "aiv_mte3_time(us)": 0.7817999999999999,
+      "aicore_time(us)": 11.203000000000001,
+      "aic_scalar_time(us)": 8.0826,
+      "aiv_icache_miss_rate": 0.0166,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_027/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190040541_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 58.461,
+      "aiv_time(us)": 8.5122,
+      "aiv_scalar_time(us)": 5.5504,
+      "aiv_mte2_time(us)": 2.633,
+      "aiv_mte3_time(us)": 0.5292,
+      "aicore_time(us)": 11.1376,
+      "aic_scalar_time(us)": 7.7298,
+      "aiv_icache_miss_rate": 0.019,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_027/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190934746_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 28,
+    "baseline": {
+      "Duration(us)": 80.785,
+      "aiv_time(us)": 9.9532,
+      "aiv_scalar_time(us)": 6.8684,
+      "aiv_mte2_time(us)": 4.6686000000000005,
+      "aiv_mte3_time(us)": 0.713,
+      "aicore_time(us)": 12.3512,
+      "aic_scalar_time(us)": 8.0836,
+      "aiv_icache_miss_rate": 0.007,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_028/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190046539_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 81.4936,
+      "aiv_time(us)": 9.7826,
+      "aiv_scalar_time(us)": 7.0176,
+      "aiv_mte2_time(us)": 4.3488,
+      "aiv_mte3_time(us)": 0.6378,
+      "aicore_time(us)": 12.394400000000001,
+      "aic_scalar_time(us)": 7.8098,
+      "aiv_icache_miss_rate": 0.009,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_028/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190940733_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 29,
+    "baseline": {
+      "Duration(us)": 103.502,
+      "aiv_time(us)": 81.3686,
+      "aiv_scalar_time(us)": 40.0082,
+      "aiv_mte2_time(us)": 12.906,
+      "aiv_mte3_time(us)": 27.8128,
+      "aicore_time(us)": 80.0274,
+      "aic_scalar_time(us)": 46.1042,
+      "aiv_icache_miss_rate": 0.016,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_029/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190052629_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 99.578,
+      "aiv_time(us)": 78.3174,
+      "aiv_scalar_time(us)": 38.2736,
+      "aiv_mte2_time(us)": 12.5358,
+      "aiv_mte3_time(us)": 23.5464,
+      "aicore_time(us)": 77.05760000000001,
+      "aic_scalar_time(us)": 45.1884,
+      "aiv_icache_miss_rate": 0.015,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_029/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190945846_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 30,
+    "baseline": {
+      "Duration(us)": 151.607,
+      "aiv_time(us)": 120.4374,
+      "aiv_scalar_time(us)": 96.4538,
+      "aiv_mte2_time(us)": 74.0588,
+      "aiv_mte3_time(us)": 25.6832,
+      "aicore_time(us)": 119.121,
+      "aic_scalar_time(us)": 46.5764,
+      "aiv_icache_miss_rate": 0.0036,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_030/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190059956_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 150.471,
+      "aiv_time(us)": 118.9048,
+      "aiv_scalar_time(us)": 95.5802,
+      "aiv_mte2_time(us)": 73.5718,
+      "aiv_mte3_time(us)": 24.410800000000002,
+      "aicore_time(us)": 117.7014,
+      "aic_scalar_time(us)": 46.3804,
+      "aiv_icache_miss_rate": 0.003,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_030/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190952139_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 31,
+    "baseline": {
+      "Duration(us)": 42.5128,
+      "aiv_time(us)": 7.9278,
+      "aiv_scalar_time(us)": 4.8022,
+      "aiv_mte2_time(us)": 3.031,
+      "aiv_mte3_time(us)": 0.2108,
+      "aicore_time(us)": 10.3816,
+      "aic_scalar_time(us)": 7.3906,
+      "aiv_icache_miss_rate": 0.018,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_031/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190105883_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 41.993,
+      "aiv_time(us)": 8.6438,
+      "aiv_scalar_time(us)": 5.55,
+      "aiv_mte2_time(us)": 2.9678,
+      "aiv_mte3_time(us)": 0.1792,
+      "aicore_time(us)": 10.4972,
+      "aic_scalar_time(us)": 7.3518,
+      "aiv_icache_miss_rate": 0.021,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_031/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190957048_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 32,
+    "baseline": {
+      "Duration(us)": 62.1692,
+      "aiv_time(us)": 8.9954,
+      "aiv_scalar_time(us)": 4.9908,
+      "aiv_mte2_time(us)": 2.5696,
+      "aiv_mte3_time(us)": 1.2726,
+      "aicore_time(us)": 11.4306,
+      "aic_scalar_time(us)": 8.1682,
+      "aiv_icache_miss_rate": 0.0264,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_032/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190111861_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 56.8894,
+      "aiv_time(us)": 8.7286,
+      "aiv_scalar_time(us)": 5.0034,
+      "aiv_mte2_time(us)": 2.4014,
+      "aiv_mte3_time(us)": 0.5304,
+      "aicore_time(us)": 11.1016,
+      "aic_scalar_time(us)": 8.0112,
+      "aiv_icache_miss_rate": 0.028800000000000003,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_032/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191001996_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 33,
+    "baseline": {
+      "Duration(us)": 66.3812,
+      "aiv_time(us)": 9.2156,
+      "aiv_scalar_time(us)": 5.1228,
+      "aiv_mte2_time(us)": 2.728,
+      "aiv_mte3_time(us)": 1.1696,
+      "aicore_time(us)": 11.6508,
+      "aic_scalar_time(us)": 8.2338,
+      "aiv_icache_miss_rate": 0.0226,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_033/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190116819_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 63.3692,
+      "aiv_time(us)": 9.0278,
+      "aiv_scalar_time(us)": 5.1254,
+      "aiv_mte2_time(us)": 2.5362,
+      "aiv_mte3_time(us)": 0.5376000000000001,
+      "aicore_time(us)": 11.421,
+      "aic_scalar_time(us)": 8.0974,
+      "aiv_icache_miss_rate": 0.025,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_033/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191007957_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 34,
+    "baseline": {
+      "Duration(us)": 69.9334,
+      "aiv_time(us)": 9.370800000000001,
+      "aiv_scalar_time(us)": 5.5664,
+      "aiv_mte2_time(us)": 3.1774,
+      "aiv_mte3_time(us)": 1.167,
+      "aicore_time(us)": 11.8148,
+      "aic_scalar_time(us)": 8.213,
+      "aiv_icache_miss_rate": 0.016,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_034/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190122783_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 67.9732,
+      "aiv_time(us)": 9.5692,
+      "aiv_scalar_time(us)": 5.9018,
+      "aiv_mte2_time(us)": 2.991,
+      "aiv_mte3_time(us)": 0.5661999999999999,
+      "aicore_time(us)": 11.721,
+      "aic_scalar_time(us)": 8.1234,
+      "aiv_icache_miss_rate": 0.0188,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_034/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191012939_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 35,
+    "baseline": {
+      "Duration(us)": 90.6138,
+      "aiv_time(us)": 10.3948,
+      "aiv_scalar_time(us)": 7.199,
+      "aiv_mte2_time(us)": 4.9628000000000005,
+      "aiv_mte3_time(us)": 0.7896,
+      "aicore_time(us)": 12.8492,
+      "aic_scalar_time(us)": 8.2084,
+      "aiv_icache_miss_rate": 0.006,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_035/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190128808_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 89.4218,
+      "aiv_time(us)": 10.3836,
+      "aiv_scalar_time(us)": 7.2492,
+      "aiv_mte2_time(us)": 4.8196,
+      "aiv_mte3_time(us)": 0.667,
+      "aicore_time(us)": 12.7468,
+      "aic_scalar_time(us)": 8.1,
+      "aiv_icache_miss_rate": 0.009,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_035/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191017939_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 36,
+    "baseline": {
+      "Duration(us)": 128.6266,
+      "aiv_time(us)": 101.8646,
+      "aiv_scalar_time(us)": 43.080799999999996,
+      "aiv_mte2_time(us)": 13.8454,
+      "aiv_mte3_time(us)": 44.242799999999995,
+      "aicore_time(us)": 100.5326,
+      "aic_scalar_time(us)": 48.808800000000005,
+      "aiv_icache_miss_rate": 0.015,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_036/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190134930_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 123.5986,
+      "aiv_time(us)": 96.479,
+      "aiv_scalar_time(us)": 40.5792,
+      "aiv_mte2_time(us)": 13.3934,
+      "aiv_mte3_time(us)": 26.5226,
+      "aicore_time(us)": 95.18,
+      "aic_scalar_time(us)": 47.2922,
+      "aiv_icache_miss_rate": 0.014,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_036/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191023047_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 37,
+    "baseline": {
+      "Duration(us)": 171.059,
+      "aiv_time(us)": 135.3644,
+      "aiv_scalar_time(us)": 106.83500000000001,
+      "aiv_mte2_time(us)": 87.6048,
+      "aiv_mte3_time(us)": 26.687,
+      "aicore_time(us)": 134.0532,
+      "aic_scalar_time(us)": 51.7912,
+      "aiv_icache_miss_rate": 0.003,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_037/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190141407_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 167.6474,
+      "aiv_time(us)": 132.1858,
+      "aiv_scalar_time(us)": 105.777,
+      "aiv_mte2_time(us)": 85.5094,
+      "aiv_mte3_time(us)": 25.9352,
+      "aicore_time(us)": 130.984,
+      "aic_scalar_time(us)": 50.9394,
+      "aiv_icache_miss_rate": 0.003,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_037/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191030470_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 38,
+    "baseline": {
+      "Duration(us)": 37.413,
+      "aiv_time(us)": 7.7468,
+      "aiv_scalar_time(us)": 4.6974,
+      "aiv_mte2_time(us)": 3.0056,
+      "aiv_mte3_time(us)": 0.2036,
+      "aicore_time(us)": 10.1546,
+      "aic_scalar_time(us)": 7.1898,
+      "aiv_icache_miss_rate": 0.018,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_038/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190147324_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 38.581,
+      "aiv_time(us)": 7.6666,
+      "aiv_scalar_time(us)": 4.928,
+      "aiv_mte2_time(us)": 2.6838,
+      "aiv_mte3_time(us)": 0.17179999999999998,
+      "aicore_time(us)": 10.2508,
+      "aic_scalar_time(us)": 7.0531999999999995,
+      "aiv_icache_miss_rate": 0.022,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_038/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191035374_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 39,
+    "baseline": {
+      "Duration(us)": 49.693,
+      "aiv_time(us)": 8.4078,
+      "aiv_scalar_time(us)": 4.8754,
+      "aiv_mte2_time(us)": 2.594,
+      "aiv_mte3_time(us)": 0.8,
+      "aicore_time(us)": 10.7888,
+      "aic_scalar_time(us)": 8.0366,
+      "aiv_icache_miss_rate": 0.0258,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_039/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190153300_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 49.473,
+      "aiv_time(us)": 8.0842,
+      "aiv_scalar_time(us)": 4.9736,
+      "aiv_mte2_time(us)": 2.1026000000000002,
+      "aiv_mte3_time(us)": 0.4948,
+      "aicore_time(us)": 10.5412,
+      "aic_scalar_time(us)": 7.8511999999999995,
+      "aiv_icache_miss_rate": 0.0298,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_039/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191040345_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 40,
+    "baseline": {
+      "Duration(us)": 53.561,
+      "aiv_time(us)": 8.3998,
+      "aiv_scalar_time(us)": 4.995,
+      "aiv_mte2_time(us)": 2.5322,
+      "aiv_mte3_time(us)": 0.7152,
+      "aicore_time(us)": 10.806,
+      "aic_scalar_time(us)": 8.0112,
+      "aiv_icache_miss_rate": 0.022,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_040/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190158285_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 55.033,
+      "aiv_time(us)": 8.5324,
+      "aiv_scalar_time(us)": 5.1658,
+      "aiv_mte2_time(us)": 2.3952,
+      "aiv_mte3_time(us)": 0.4988,
+      "aicore_time(us)": 11.0726,
+      "aic_scalar_time(us)": 7.9198,
+      "aiv_icache_miss_rate": 0.026,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_040/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191046298_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 41,
+    "baseline": {
+      "Duration(us)": 58.3416,
+      "aiv_time(us)": 8.8174,
+      "aiv_scalar_time(us)": 5.4086,
+      "aiv_mte2_time(us)": 3.1362,
+      "aiv_mte3_time(us)": 0.793,
+      "aicore_time(us)": 11.225,
+      "aic_scalar_time(us)": 8.0068,
+      "aiv_icache_miss_rate": 0.016800000000000002,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_041/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190204269_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 58.8092,
+      "aiv_time(us)": 8.7122,
+      "aiv_scalar_time(us)": 5.5268,
+      "aiv_mte2_time(us)": 2.8138,
+      "aiv_mte3_time(us)": 0.531,
+      "aicore_time(us)": 11.1958,
+      "aic_scalar_time(us)": 7.932,
+      "aiv_icache_miss_rate": 0.019,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_041/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191052276_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 42,
+    "baseline": {
+      "Duration(us)": 80.4654,
+      "aiv_time(us)": 9.9236,
+      "aiv_scalar_time(us)": 6.8412,
+      "aiv_mte2_time(us)": 4.6512,
+      "aiv_mte3_time(us)": 0.7323999999999999,
+      "aicore_time(us)": 12.32,
+      "aic_scalar_time(us)": 8.0372,
+      "aiv_icache_miss_rate": 0.007,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_042/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190209287_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 81.1816,
+      "aiv_time(us)": 9.7624,
+      "aiv_scalar_time(us)": 7.0382,
+      "aiv_mte2_time(us)": 4.3354,
+      "aiv_mte3_time(us)": 0.6382,
+      "aicore_time(us)": 12.3418,
+      "aic_scalar_time(us)": 7.987,
+      "aiv_icache_miss_rate": 0.009,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_042/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191057291_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 43,
+    "baseline": {
+      "Duration(us)": 101.618,
+      "aiv_time(us)": 79.933,
+      "aiv_scalar_time(us)": 39.5102,
+      "aiv_mte2_time(us)": 12.8118,
+      "aiv_mte3_time(us)": 27.455000000000002,
+      "aicore_time(us)": 78.5534,
+      "aic_scalar_time(us)": 45.4018,
+      "aiv_icache_miss_rate": 0.0158,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_043/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190215336_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 100.438,
+      "aiv_time(us)": 78.8442,
+      "aiv_scalar_time(us)": 38.7984,
+      "aiv_mte2_time(us)": 12.5192,
+      "aiv_mte3_time(us)": 23.9158,
+      "aicore_time(us)": 77.5048,
+      "aic_scalar_time(us)": 45.5176,
+      "aiv_icache_miss_rate": 0.015,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_043/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191103413_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 44,
+    "baseline": {
+      "Duration(us)": 150.051,
+      "aiv_time(us)": 119.202,
+      "aiv_scalar_time(us)": 96.3298,
+      "aiv_mte2_time(us)": 73.3646,
+      "aiv_mte3_time(us)": 25.6598,
+      "aicore_time(us)": 117.81360000000001,
+      "aic_scalar_time(us)": 45.7036,
+      "aiv_icache_miss_rate": 0.0036,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_044/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190221713_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 150.283,
+      "aiv_time(us)": 118.827,
+      "aiv_scalar_time(us)": 96.122,
+      "aiv_mte2_time(us)": 73.0822,
+      "aiv_mte3_time(us)": 24.5376,
+      "aicore_time(us)": 117.5764,
+      "aic_scalar_time(us)": 46.2326,
+      "aiv_icache_miss_rate": 0.003,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_044/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191109784_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 45,
+    "baseline": {
+      "Duration(us)": 42.001,
+      "aiv_time(us)": 7.9162,
+      "aiv_scalar_time(us)": 4.775,
+      "aiv_mte2_time(us)": 3.0408,
+      "aiv_mte3_time(us)": 0.22080000000000002,
+      "aicore_time(us)": 10.4762,
+      "aic_scalar_time(us)": 7.3108,
+      "aiv_icache_miss_rate": 0.0178,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_045/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190227643_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 42.3326,
+      "aiv_time(us)": 7.812,
+      "aiv_scalar_time(us)": 5.0005999999999995,
+      "aiv_mte2_time(us)": 2.7314,
+      "aiv_mte3_time(us)": 0.1802,
+      "aicore_time(us)": 10.4916,
+      "aic_scalar_time(us)": 6.9352,
+      "aiv_icache_miss_rate": 0.021,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_045/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191115697_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 46,
+    "baseline": {
+      "Duration(us)": 62.0336,
+      "aiv_time(us)": 8.6146,
+      "aiv_scalar_time(us)": 4.9274000000000004,
+      "aiv_mte2_time(us)": 2.3394,
+      "aiv_mte3_time(us)": 1.2813999999999999,
+      "aicore_time(us)": 11.0132,
+      "aic_scalar_time(us)": 7.8868,
+      "aiv_icache_miss_rate": 0.027,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_046/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190232632_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 56.881,
+      "aiv_time(us)": 8.2702,
+      "aiv_scalar_time(us)": 4.9054,
+      "aiv_mte2_time(us)": 2.0692,
+      "aiv_mte3_time(us)": 0.5298,
+      "aicore_time(us)": 10.8346,
+      "aic_scalar_time(us)": 7.3628,
+      "aiv_icache_miss_rate": 0.029,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_046/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191120680_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 47,
+    "baseline": {
+      "Duration(us)": 65.9334,
+      "aiv_time(us)": 9.0488,
+      "aiv_scalar_time(us)": 5.1302,
+      "aiv_mte2_time(us)": 2.591,
+      "aiv_mte3_time(us)": 1.1648,
+      "aicore_time(us)": 11.6284,
+      "aic_scalar_time(us)": 8.1624,
+      "aiv_icache_miss_rate": 0.023,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_047/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190237607_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 63.2454,
+      "aiv_time(us)": 8.8496,
+      "aiv_scalar_time(us)": 5.2526,
+      "aiv_mte2_time(us)": 2.3442,
+      "aiv_mte3_time(us)": 0.5374,
+      "aicore_time(us)": 11.5304,
+      "aic_scalar_time(us)": 7.696,
+      "aiv_icache_miss_rate": 0.0252,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_047/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191126660_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 48,
+    "baseline": {
+      "Duration(us)": 70.0856,
+      "aiv_time(us)": 9.316,
+      "aiv_scalar_time(us)": 5.5578,
+      "aiv_mte2_time(us)": 3.1178,
+      "aiv_mte3_time(us)": 1.1658,
+      "aicore_time(us)": 11.8614,
+      "aic_scalar_time(us)": 8.1496,
+      "aiv_icache_miss_rate": 0.016,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_048/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190242612_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 68.9372,
+      "aiv_time(us)": 9.081,
+      "aiv_scalar_time(us)": 5.6684,
+      "aiv_mte2_time(us)": 2.7508,
+      "aiv_mte3_time(us)": 0.5656,
+      "aicore_time(us)": 11.7746,
+      "aic_scalar_time(us)": 7.696,
+      "aiv_icache_miss_rate": 0.019,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_048/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191131641_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 49,
+    "baseline": {
+      "Duration(us)": 90.654,
+      "aiv_time(us)": 10.3666,
+      "aiv_scalar_time(us)": 7.1686,
+      "aiv_mte2_time(us)": 4.947,
+      "aiv_mte3_time(us)": 0.8191999999999999,
+      "aicore_time(us)": 12.887,
+      "aic_scalar_time(us)": 8.1338,
+      "aiv_icache_miss_rate": 0.006,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_049/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190247647_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 89.5578,
+      "aiv_time(us)": 10.1464,
+      "aiv_scalar_time(us)": 7.323,
+      "aiv_mte2_time(us)": 4.6136,
+      "aiv_mte3_time(us)": 0.6676000000000001,
+      "aicore_time(us)": 12.8226,
+      "aic_scalar_time(us)": 7.7818,
+      "aiv_icache_miss_rate": 0.009,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_049/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191136676_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 50,
+    "baseline": {
+      "Duration(us)": 127.8308,
+      "aiv_time(us)": 100.51599999999999,
+      "aiv_scalar_time(us)": 42.8822,
+      "aiv_mte2_time(us)": 13.7088,
+      "aiv_mte3_time(us)": 43.835,
+      "aicore_time(us)": 99.1074,
+      "aic_scalar_time(us)": 48.2958,
+      "aiv_icache_miss_rate": 0.014799999999999999,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_050/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190252809_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 123.8468,
+      "aiv_time(us)": 97.006,
+      "aiv_scalar_time(us)": 41.1898,
+      "aiv_mte2_time(us)": 13.6348,
+      "aiv_mte3_time(us)": 26.8246,
+      "aicore_time(us)": 95.631,
+      "aic_scalar_time(us)": 47.719,
+      "aiv_icache_miss_rate": 0.014,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_050/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191141842_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  },
+  {
+    "index": 51,
+    "baseline": {
+      "Duration(us)": 169.9718,
+      "aiv_time(us)": 134.126,
+      "aiv_scalar_time(us)": 106.5628,
+      "aiv_mte2_time(us)": 87.0164,
+      "aiv_mte3_time(us)": 26.5222,
+      "aicore_time(us)": 132.7506,
+      "aic_scalar_time(us)": 51.2776,
+      "aiv_icache_miss_rate": 0.003,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-baseline-attempt-1/case_051/752c3fdca26b44da9fd55f3c88dd3113_1307309_20260930190300300_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    },
+    "a2": {
+      "Duration(us)": 167.5512,
+      "aiv_time(us)": 132.39600000000002,
+      "aiv_scalar_time(us)": 106.1272,
+      "aiv_mte2_time(us)": 85.48440000000001,
+      "aiv_mte3_time(us)": 25.7006,
+      "aicore_time(us)": 131.1602,
+      "aic_scalar_time(us)": 50.725,
+      "aiv_icache_miss_rate": 0.003,
+      "source": "reassessment-20260930/a2-kernel-details/profiler-candidate-attempt-2/case_051/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191148334_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv"
+    }
+  }
+]

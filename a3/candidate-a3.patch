@@ -1,0 +1,28 @@
+diff --git a/csrc/attention/sparse_flash_attention/op_kernel/arch22/sparse_flash_attention_service_vector_mla.h b/csrc/attention/sparse_flash_attention/op_kernel/arch22/sparse_flash_attention_service_vector_mla.h
+index 4d1d30f..db9176f 100644
+--- a/csrc/attention/sparse_flash_attention/op_kernel/arch22/sparse_flash_attention_service_vector_mla.h
++++ b/csrc/attention/sparse_flash_attention/op_kernel/arch22/sparse_flash_attention_service_vector_mla.h
+@@ -1060,11 +1060,18 @@ __aicore__ inline void SFAVectorService<SFAT>::MergeKv(const RunInfo &runInfo)
+                         kvMergUb_, dataCopyParams);
+         }
+         if (constInfo.headDimRope > 0) {
+-            dataCopyParams.blockLen = constInfo.headDimRope * sizeof(KV_T);
+-            for (int64_t s2GmOffset = s2GmStartOffset + mte2Size; s2GmOffset < s2GmLimit; s2GmOffset++) {
+-                DataCopyPad(kvMergeGm_[runInfo.loop % MERGE_CACHE_GM_BUF_NUM * 512 * 576 + 512 * constInfo.headDim +
+-                                       s2GmOffset * constInfo.headDimRope],
+-                            kvMergUb_, dataCopyParams);
++            // Copy the contiguous RoPE suffix in zeroed key-row chunks.
++            // Element offsets avoid a runtime division; only the tail needs
++            // a different copy length.
++            int64_t ropeOffset = (s2GmStartOffset + mte2Size) * constInfo.headDimRope;
++            int64_t ropeLimit = s2GmLimit * constInfo.headDimRope;
++            int64_t ropeBase = runInfo.loop % MERGE_CACHE_GM_BUF_NUM * 512 * 576 + 512 * constInfo.headDim;
++            for (; ropeOffset + constInfo.headDim <= ropeLimit; ropeOffset += constInfo.headDim) {
++                DataCopyPad(kvMergeGm_[ropeBase + ropeOffset], kvMergUb_, dataCopyParams);
++            }
++            if (ropeOffset < ropeLimit) {
++                dataCopyParams.blockLen = (ropeLimit - ropeOffset) * sizeof(KV_T);
++                DataCopyPad(kvMergeGm_[ropeBase + ropeOffset], kvMergUb_, dataCopyParams);
+             }
+         }
+         SetFlag<AscendC::HardEvent::MTE3_MTE2>(mergeMte3Idx & 1);

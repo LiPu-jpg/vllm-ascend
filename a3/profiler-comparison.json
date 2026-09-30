@@ -1,0 +1,938 @@
+[
+  {
+    "index": 0,
+    "control": {
+      "duration_us": 27.9406,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_000/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214550560_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_000/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214550560_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.2508,
+      "aiv_mte3_us": 0.1574
+    },
+    "candidate": {
+      "duration_us": 28.556599999999996,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_000/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215121870_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_000/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215121870_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.7749999999999995,
+      "aiv_mte3_us": 0.15159999999999998
+    },
+    "delta_percent": 2.2046770649162717
+  },
+  {
+    "index": 1,
+    "control": {
+      "duration_us": 32.4326,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_001/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214555501_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_001/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214555501_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.4436,
+      "aiv_mte3_us": 0.1572
+    },
+    "candidate": {
+      "duration_us": 33.6846,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_001/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215127820_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_001/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215127820_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.8528,
+      "aiv_mte3_us": 0.1566
+    },
+    "delta_percent": 3.8603133883808427
+  },
+  {
+    "index": 2,
+    "control": {
+      "duration_us": 37.3048,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_002/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214600424_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_002/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214600424_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.514,
+      "aiv_mte3_us": 0.1648
+    },
+    "candidate": {
+      "duration_us": 38.9048,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_002/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215133744_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_002/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215133744_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.9712,
+      "aiv_mte3_us": 0.1606
+    },
+    "delta_percent": 4.288992301258832
+  },
+  {
+    "index": 3,
+    "control": {
+      "duration_us": 37.324799999999996,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_003/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214606357_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_003/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214606357_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.7838,
+      "aiv_mte3_us": 0.1706
+    },
+    "candidate": {
+      "duration_us": 38.2048,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_003/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215139688_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_003/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215139688_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.2286,
+      "aiv_mte3_us": 0.173
+    },
+    "delta_percent": 2.35768175582991
+  },
+  {
+    "index": 4,
+    "control": {
+      "duration_us": 49.293,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_004/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214611411_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_004/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214611411_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 17.1326,
+      "aiv_mte3_us": 6.9628
+    },
+    "candidate": {
+      "duration_us": 49.497,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_004/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215145768_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_004/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215145768_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 17.799,
+      "aiv_mte3_us": 6.6656
+    },
+    "delta_percent": 0.4138518653764134
+  },
+  {
+    "index": 5,
+    "control": {
+      "duration_us": 56.837199999999996,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_005/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214616704_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_005/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214616704_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 29.047800000000002,
+      "aiv_mte3_us": 6.5088
+    },
+    "candidate": {
+      "duration_us": 60.5972,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_005/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215151062_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_005/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215151062_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 30.4704,
+      "aiv_mte3_us": 7.5218
+    },
+    "delta_percent": 6.615385698099141
+  },
+  {
+    "index": 6,
+    "control": {
+      "duration_us": 33.0086,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_006/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214621631_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_006/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214621631_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.2438,
+      "aiv_mte3_us": 0.2518
+    },
+    "candidate": {
+      "duration_us": 32.1766,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_006/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215157000_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_006/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215157000_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.1632,
+      "aiv_mte3_us": 0.1558
+    },
+    "delta_percent": -2.5205552492380767
+  },
+  {
+    "index": 7,
+    "control": {
+      "duration_us": 37.8968,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_007/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214626544_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_007/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214626544_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.4079999999999995,
+      "aiv_mte3_us": 0.2348
+    },
+    "candidate": {
+      "duration_us": 37.8568,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_007/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215202915_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_007/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215202915_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.8524,
+      "aiv_mte3_us": 0.164
+    },
+    "delta_percent": -0.10554980895484123
+  },
+  {
+    "index": 8,
+    "control": {
+      "duration_us": 42.5048,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_008/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214631477_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_008/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214631477_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.5498,
+      "aiv_mte3_us": 0.2142
+    },
+    "candidate": {
+      "duration_us": 43.320800000000006,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_008/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215208842_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_008/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215208842_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.544,
+      "aiv_mte3_us": 0.18059999999999998
+    },
+    "delta_percent": 1.9197831774293794
+  },
+  {
+    "index": 9,
+    "control": {
+      "duration_us": 42.3928,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_009/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214637414_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_009/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214637414_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.8704,
+      "aiv_mte3_us": 0.177
+    },
+    "candidate": {
+      "duration_us": 42.7808,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_009/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215214771_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_009/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215214771_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.3034,
+      "aiv_mte3_us": 0.18259999999999998
+    },
+    "delta_percent": 0.9152497593930997
+  },
+  {
+    "index": 10,
+    "control": {
+      "duration_us": 58.5852,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_010/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214643487_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_010/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214643487_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 18.743,
+      "aiv_mte3_us": 10.4246
+    },
+    "candidate": {
+      "duration_us": 55.197199999999995,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_010/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215220848_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_010/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215220848_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 18.4808,
+      "aiv_mte3_us": 7.3069999999999995
+    },
+    "delta_percent": -5.783030526481103
+  },
+  {
+    "index": 11,
+    "control": {
+      "duration_us": 61.5692,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_011/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214649824_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_011/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214649824_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 30.9792,
+      "aiv_mte3_us": 6.973
+    },
+    "candidate": {
+      "duration_us": 66.3774,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_011/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215227167_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_011/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215227167_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 32.824999999999996,
+      "aiv_mte3_us": 9.2876
+    },
+    "delta_percent": 7.809424192615766
+  },
+  {
+    "index": 12,
+    "control": {
+      "duration_us": 27.7846,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_012/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214654770_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_012/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214654770_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.252,
+      "aiv_mte3_us": 0.1716
+    },
+    "candidate": {
+      "duration_us": 29.924599999999998,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_012/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215233132_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_012/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215233132_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.5600000000000005,
+      "aiv_mte3_us": 0.1432
+    },
+    "delta_percent": 7.702108362186233
+  },
+  {
+    "index": 13,
+    "control": {
+      "duration_us": 33.1006,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_013/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214700694_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_013/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214700694_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.4278,
+      "aiv_mte3_us": 0.1524
+    },
+    "candidate": {
+      "duration_us": 34.3046,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_013/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215239061_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_013/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215239061_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.8724,
+      "aiv_mte3_us": 0.1602
+    },
+    "delta_percent": 3.6373963009733945
+  },
+  {
+    "index": 14,
+    "control": {
+      "duration_us": 37.276799999999994,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_014/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214705627_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_014/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214705627_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.5198,
+      "aiv_mte3_us": 0.16319999999999998
+    },
+    "candidate": {
+      "duration_us": 40.1888,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_014/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215244994_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_014/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215244994_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.4916,
+      "aiv_mte3_us": 0.1602
+    },
+    "delta_percent": 7.811829341574406
+  },
+  {
+    "index": 15,
+    "control": {
+      "duration_us": 36.6528,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_015/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214710548_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_015/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214710548_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.753,
+      "aiv_mte3_us": 0.171
+    },
+    "candidate": {
+      "duration_us": 39.4448,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_015/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215249932_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_015/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215249932_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.2812,
+      "aiv_mte3_us": 0.173
+    },
+    "delta_percent": 7.617426226645718
+  },
+  {
+    "index": 16,
+    "control": {
+      "duration_us": 48.409,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_016/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214716604_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_016/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214716604_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 17.2758,
+      "aiv_mte3_us": 7.3426
+    },
+    "candidate": {
+      "duration_us": 50.185,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_016/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215256003_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_016/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215256003_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 17.9464,
+      "aiv_mte3_us": 7.4752
+    },
+    "delta_percent": 3.6687392840174526
+  },
+  {
+    "index": 17,
+    "control": {
+      "duration_us": 58.0252,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_017/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214722921_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_017/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214722921_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 29.7964,
+      "aiv_mte3_us": 6.9906
+    },
+    "candidate": {
+      "duration_us": 60.7332,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_017/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215301292_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_017/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215301292_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 30.6594,
+      "aiv_mte3_us": 7.6042
+    },
+    "delta_percent": 4.66693781322598
+  },
+  {
+    "index": 18,
+    "control": {
+      "duration_us": 32.7526,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_018/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214728828_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_018/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214728828_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.2712,
+      "aiv_mte3_us": 0.2614
+    },
+    "candidate": {
+      "duration_us": 32.5326,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_018/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215307238_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_018/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215307238_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.7432,
+      "aiv_mte3_us": 0.156
+    },
+    "delta_percent": -0.6717023991988369
+  },
+  {
+    "index": 19,
+    "control": {
+      "duration_us": 37.2368,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_019/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214733731_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_019/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214733731_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.4114,
+      "aiv_mte3_us": 0.2464
+    },
+    "candidate": {
+      "duration_us": 39.1368,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_019/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215313151_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_019/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215313151_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.8984000000000005,
+      "aiv_mte3_us": 0.162
+    },
+    "delta_percent": 5.102479267821081
+  },
+  {
+    "index": 20,
+    "control": {
+      "duration_us": 41.9408,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_020/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214738670_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_020/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214738670_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.5874,
+      "aiv_mte3_us": 0.2174
+    },
+    "candidate": {
+      "duration_us": 44.1088,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_020/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215318085_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_020/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215318085_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.9024,
+      "aiv_mte3_us": 0.174
+    },
+    "delta_percent": 5.169190859497186
+  },
+  {
+    "index": 21,
+    "control": {
+      "duration_us": 40.8288,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_021/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214743620_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_021/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214743620_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.8312,
+      "aiv_mte3_us": 0.177
+    },
+    "candidate": {
+      "duration_us": 43.1968,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_021/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215323018_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_021/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215323018_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.3414,
+      "aiv_mte3_us": 0.18159999999999998
+    },
+    "delta_percent": 5.799827572693794
+  },
+  {
+    "index": 22,
+    "control": {
+      "duration_us": 56.325199999999995,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_022/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214748684_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_022/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214748684_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 18.331599999999998,
+      "aiv_mte3_us": 10.385
+    },
+    "candidate": {
+      "duration_us": 56.75320000000001,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_022/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215328097_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_022/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215328097_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 18.9178,
+      "aiv_mte3_us": 8.0936
+    },
+    "delta_percent": 0.7598730230873763
+  },
+  {
+    "index": 23,
+    "control": {
+      "duration_us": 65.0014,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_023/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214754053_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_023/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214754053_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 32.301,
+      "aiv_mte3_us": 8.2156
+    },
+    "candidate": {
+      "duration_us": 66.4494,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_023/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215333451_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_023/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215333451_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 32.8946,
+      "aiv_mte3_us": 9.209
+    },
+    "delta_percent": 2.2276443276606273
+  },
+  {
+    "index": 24,
+    "control": {
+      "duration_us": 38.3688,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_024/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214758998_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_024/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214758998_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.8004,
+      "aiv_mte3_us": 0.173
+    },
+    "candidate": {
+      "duration_us": 39.4328,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_024/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215339393_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_024/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215339393_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.3797999999999995,
+      "aiv_mte3_us": 0.176
+    },
+    "delta_percent": 2.773086466087027
+  },
+  {
+    "index": 25,
+    "control": {
+      "duration_us": 49.381,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_025/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214804968_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_025/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214804968_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.9862,
+      "aiv_mte3_us": 0.4978
+    },
+    "candidate": {
+      "duration_us": 51.809000000000005,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_025/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215344359_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_025/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215344359_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 6.1696,
+      "aiv_mte3_us": 0.531
+    },
+    "delta_percent": 4.916870861262446
+  },
+  {
+    "index": 26,
+    "control": {
+      "duration_us": 54.6572,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_026/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214810958_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_026/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214810958_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.0458,
+      "aiv_mte3_us": 0.5088
+    },
+    "candidate": {
+      "duration_us": 56.669200000000004,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_026/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215349341_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_026/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215349341_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.5634,
+      "aiv_mte3_us": 0.5404
+    },
+    "delta_percent": 3.6811252680342132
+  },
+  {
+    "index": 27,
+    "control": {
+      "duration_us": 58.7972,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_027/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214815938_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_027/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214815938_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.4534,
+      "aiv_mte3_us": 0.5324
+    },
+    "candidate": {
+      "duration_us": 61.5052,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_027/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215355338_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_027/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215355338_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 6.0018,
+      "aiv_mte3_us": 0.5661999999999999
+    },
+    "delta_percent": 4.605661494084767
+  },
+  {
+    "index": 28,
+    "control": {
+      "duration_us": 80.12960000000001,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_028/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214820953_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_028/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214820953_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 6.9176,
+      "aiv_mte3_us": 0.6418
+    },
+    "candidate": {
+      "duration_us": 83.06960000000001,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_028/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215400351_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_028/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215400351_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 7.5136,
+      "aiv_mte3_us": 0.6684
+    },
+    "delta_percent": 3.669056129070891
+  },
+  {
+    "index": 29,
+    "control": {
+      "duration_us": 102.13,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_029/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214827073_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_029/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214827073_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 38.963,
+      "aiv_mte3_us": 23.98
+    },
+    "candidate": {
+      "duration_us": 102.426,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_029/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215405466_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_029/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215405466_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 39.135600000000004,
+      "aiv_mte3_us": 24.5704
+    },
+    "delta_percent": 0.28982669147166185
+  },
+  {
+    "index": 30,
+    "control": {
+      "duration_us": 150.223,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_030/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214833403_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_030/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214833403_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 96.0498,
+      "aiv_mte3_us": 24.4262
+    },
+    "candidate": {
+      "duration_us": 154.347,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_030/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215411845_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_030/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215411845_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 98.12,
+      "aiv_mte3_us": 25.259
+    },
+    "delta_percent": 2.745252058606207
+  },
+  {
+    "index": 31,
+    "control": {
+      "duration_us": 42.044799999999995,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_031/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214838323_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_031/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214838323_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.8844,
+      "aiv_mte3_us": 0.184
+    },
+    "candidate": {
+      "duration_us": 43.720800000000004,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_031/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215416763_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_031/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215416763_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 6.1948,
+      "aiv_mte3_us": 0.184
+    },
+    "delta_percent": 3.98622421797703
+  },
+  {
+    "index": 32,
+    "control": {
+      "duration_us": 58.9292,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_032/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214843289_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_032/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214843289_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.9754,
+      "aiv_mte3_us": 0.9722
+    },
+    "candidate": {
+      "duration_us": 60.301199999999994,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_032/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215421714_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_032/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215421714_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.404,
+      "aiv_mte3_us": 0.5733999999999999
+    },
+    "delta_percent": 2.328217589921455
+  },
+  {
+    "index": 33,
+    "control": {
+      "duration_us": 64.4092,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_033/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214848241_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_033/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214848241_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.1202,
+      "aiv_mte3_us": 0.9414
+    },
+    "candidate": {
+      "duration_us": 66.2534,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_033/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215426582_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_033/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215426582_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.601999999999999,
+      "aiv_mte3_us": 0.5823999999999999
+    },
+    "delta_percent": 2.8632555597647658
+  },
+  {
+    "index": 34,
+    "control": {
+      "duration_us": 68.2214,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_034/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214854204_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_034/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214854204_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.5468,
+      "aiv_mte3_us": 0.8978
+    },
+    "candidate": {
+      "duration_us": 71.9734,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_034/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215431548_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_034/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215431548_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 6.5574,
+      "aiv_mte3_us": 0.6132
+    },
+    "delta_percent": 5.4997405506190145
+  },
+  {
+    "index": 35,
+    "control": {
+      "duration_us": 90.10979999999999,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_035/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214859237_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_035/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214859237_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 7.1982,
+      "aiv_mte3_us": 0.6714
+    },
+    "candidate": {
+      "duration_us": 90.8138,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_035/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215436550_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_035/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215436550_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 7.7616,
+      "aiv_mte3_us": 0.704
+    },
+    "delta_percent": 0.7812690739520178
+  },
+  {
+    "index": 36,
+    "control": {
+      "duration_us": 128.1146,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_036/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214904413_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_036/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214904413_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 41.8732,
+      "aiv_mte3_us": 40.6468
+    },
+    "candidate": {
+      "duration_us": 126.29459999999999,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_036/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215441670_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_036/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215441670_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 41.1398,
+      "aiv_mte3_us": 29.5826
+    },
+    "delta_percent": -1.4206031162724675
+  },
+  {
+    "index": 37,
+    "control": {
+      "duration_us": 169.0914,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_037/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214910900_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_037/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214910900_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 106.2866,
+      "aiv_mte3_us": 25.4532
+    },
+    "candidate": {
+      "duration_us": 170.4434,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_037/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215448209_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_037/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215448209_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 107.5792,
+      "aiv_mte3_us": 26.9622
+    },
+    "delta_percent": 0.7995675711479189
+  },
+  {
+    "index": 38,
+    "control": {
+      "duration_us": 37.3528,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_038/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214916826_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_038/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214916826_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.7658,
+      "aiv_mte3_us": 0.17379999999999998
+    },
+    "candidate": {
+      "duration_us": 40.1528,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_038/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215453170_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_038/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215453170_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.328,
+      "aiv_mte3_us": 0.1744
+    },
+    "delta_percent": 7.496091323809728
+  },
+  {
+    "index": 39,
+    "control": {
+      "duration_us": 48.952999999999996,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_039/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214922809_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_039/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214922809_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.9734,
+      "aiv_mte3_us": 0.5096
+    },
+    "candidate": {
+      "duration_us": 51.697,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_039/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215458146_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_039/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215458146_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.3996,
+      "aiv_mte3_us": 0.5304
+    },
+    "delta_percent": 5.60537658570468
+  },
+  {
+    "index": 40,
+    "control": {
+      "duration_us": 53.81699999999999,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_040/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214927796_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_040/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214927796_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.0454,
+      "aiv_mte3_us": 0.5138
+    },
+    "candidate": {
+      "duration_us": 56.9772,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_040/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215504136_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_040/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215504136_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.5606,
+      "aiv_mte3_us": 0.5344
+    },
+    "delta_percent": 5.872122191872475
+  },
+  {
+    "index": 41,
+    "control": {
+      "duration_us": 58.5412,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_041/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214932835_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_041/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214932835_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.4556000000000004,
+      "aiv_mte3_us": 0.5314
+    },
+    "candidate": {
+      "duration_us": 61.21319999999999,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_041/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215509127_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_041/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215509127_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.9604,
+      "aiv_mte3_us": 0.567
+    },
+    "delta_percent": 4.564306847143529
+  },
+  {
+    "index": 42,
+    "control": {
+      "duration_us": 80.3656,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_042/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214937891_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_042/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214937891_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 6.9258,
+      "aiv_mte3_us": 0.642
+    },
+    "candidate": {
+      "duration_us": 83.4496,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_042/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215515182_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_042/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215515182_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 7.4874,
+      "aiv_mte3_us": 0.6666000000000001
+    },
+    "delta_percent": 3.837462795026725
+  },
+  {
+    "index": 43,
+    "control": {
+      "duration_us": 99.042,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_043/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214943059_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_043/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214943059_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 38.1778,
+      "aiv_mte3_us": 23.976399999999998
+    },
+    "candidate": {
+      "duration_us": 103.15799999999999,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_043/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215521466_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_043/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215521466_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 39.4424,
+      "aiv_mte3_us": 24.7536
+    },
+    "delta_percent": 4.155812685527338
+  },
+  {
+    "index": 44,
+    "control": {
+      "duration_us": 149.675,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_044/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214949418_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_044/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214949418_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 95.9978,
+      "aiv_mte3_us": 24.6162
+    },
+    "candidate": {
+      "duration_us": 155.13119999999998,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_044/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215527925_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_044/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215527925_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 98.3252,
+      "aiv_mte3_us": 25.369
+    },
+    "delta_percent": 3.645364957407704
+  },
+  {
+    "index": 45,
+    "control": {
+      "duration_us": 41.4568,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_045/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214954335_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_045/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214954335_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.9094,
+      "aiv_mte3_us": 0.182
+    },
+    "candidate": {
+      "duration_us": 43.6848,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_045/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215533849_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_045/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215533849_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.3258,
+      "aiv_mte3_us": 0.185
+    },
+    "delta_percent": 5.37426911869705
+  },
+  {
+    "index": 46,
+    "control": {
+      "duration_us": 58.0252,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_046/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214959335_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_046/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930214959335_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 4.7734,
+      "aiv_mte3_us": 0.9773999999999999
+    },
+    "candidate": {
+      "duration_us": 59.285199999999996,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_046/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215538871_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_046/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215538871_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.2506,
+      "aiv_mte3_us": 0.5818
+    },
+    "delta_percent": 2.171470326685654
+  },
+  {
+    "index": 47,
+    "control": {
+      "duration_us": 63.8852,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_047/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930215004326_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_047/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930215004326_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.1122,
+      "aiv_mte3_us": 0.9514
+    },
+    "candidate": {
+      "duration_us": 65.3252,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_047/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215543883_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_047/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215543883_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 5.553,
+      "aiv_mte3_us": 0.5783999999999999
+    },
+    "delta_percent": 2.2540431899719993
+  },
+  {
+    "index": 48,
+    "control": {
+      "duration_us": 68.8374,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_048/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930215009365_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_048/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930215009365_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 6.3872,
+      "aiv_mte3_us": 0.8738
+    },
+    "candidate": {
+      "duration_us": 71.3774,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_048/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215549914_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_048/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215549914_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 6.0158000000000005,
+      "aiv_mte3_us": 0.6113999999999999
+    },
+    "delta_percent": 3.689854642970225
+  },
+  {
+    "index": 49,
+    "control": {
+      "duration_us": 89.3298,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_049/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930215014427_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_049/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930215014427_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 7.2068,
+      "aiv_mte3_us": 0.6714
+    },
+    "candidate": {
+      "duration_us": 91.0578,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_049/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215554969_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_049/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215554969_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 7.714,
+      "aiv_mte3_us": 0.7091999999999999
+    },
+    "delta_percent": 1.9344048682522486
+  },
+  {
+    "index": 50,
+    "control": {
+      "duration_us": 125.9586,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_050/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930215019571_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_050/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930215019571_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 41.984,
+      "aiv_mte3_us": 40.3842
+    },
+    "candidate": {
+      "duration_us": 126.7026,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_050/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215601169_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_050/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215601169_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 41.358,
+      "aiv_mte3_us": 29.3868
+    },
+    "delta_percent": 0.5906702678499132
+  },
+  {
+    "index": 51,
+    "control": {
+      "duration_us": 168.8674,
+      "op_statistic": "iteration-a3/profiler-control-attempt-1/case_051/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930215026044_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-control-attempt-1/case_051/752c3fdca26b44da9fd55f3c88dd3113_1378378_20260930215026044_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 105.9652,
+      "aiv_mte3_us": 25.6832
+    },
+    "candidate": {
+      "duration_us": 172.2914,
+      "op_statistic": "iteration-a3/profiler-candidate-attempt-1/case_051/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215607743_ascend_pt/ASCEND_PROFILER_OUTPUT/op_statistic.csv",
+      "kernel_details": "iteration-a3/profiler-candidate-attempt-1/case_051/752c3fdca26b44da9fd55f3c88dd3113_1393303_20260930215607743_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "aiv_scalar_us": 107.7384,
+      "aiv_mte3_us": 27.1344
+    },
+    "delta_percent": 2.0276264098339825
+  }
+]

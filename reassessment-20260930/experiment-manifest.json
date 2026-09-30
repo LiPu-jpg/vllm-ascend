@@ -1,0 +1,7 @@
+{
+  "baseline-control-csrc.tar.gz": "399e8b19e7c8d9bef56d1869eb109f99341dee3f10c217e18aa95348bea4b96a",
+  "candidate-a3-csrc.tar.gz": "2d85275a5d8d6c64cb5283ef9b1da1c9f202241893d2179cb65b496c19ff9660",
+  "source_sha256": "80cbbcddc11d4ae5fbf344a53642fc22a8530e2bd3745665745a19126b2ce5ce",
+  "candidate_commit": "32329062a0c4faa9eeb92d806e893aea7bf875c0",
+  "baseline_control_commit": "11682d1e341d161a4129a58863f39a912846f71d"
+}

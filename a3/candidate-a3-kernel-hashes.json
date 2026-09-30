@@ -1,0 +1,19 @@
+{
+  "source_sha256": "80cbbcddc11d4ae5fbf344a53642fc22a8530e2bd3745665745a19126b2ce5ce",
+  "baseline": {
+    "SparseFlashAttention_04d19c29334449b1853b913ad67aa9d4.json": "1fb155c26124454eb9a3173b82a8bdb5720d8b754a886383b8355e382f8654e5",
+    "SparseFlashAttention_04d19c29334449b1853b913ad67aa9d4.o": "ab30a2b08c62f869d0b19d9c697bcd7c13e878451e50d210d0f163e2fc02949d",
+    "SparseFlashAttention_2e25ad8fefac1f04c03bd78f2d2ab366.json": "7ddaf3b8164379f258c3a725338febc036c4eed610ddf66daf79f2e13586be24",
+    "SparseFlashAttention_2e25ad8fefac1f04c03bd78f2d2ab366.o": "8564bfbbfcf1e2e9a8ebe9ed85968487bfe2eaa87e1eb7fac8e43cbe5fbb205f"
+  },
+  "candidate": {
+    "SparseFlashAttention_04d19c29334449b1853b913ad67aa9d4.json": "e159e97c3da6493d18137b28008ab5947a76207b2e7a525ab30b7e78bad4bbb2",
+    "SparseFlashAttention_04d19c29334449b1853b913ad67aa9d4.o": "b30d30fe003e49aa14db50e70f2f4fcd1eedd8a368a675069544ae9d5fac7581",
+    "SparseFlashAttention_2e25ad8fefac1f04c03bd78f2d2ab366.json": "6ec8175a1cc0a6de9b498d41b248da58e7cb5e0e0114d5f025a6f96057086984",
+    "SparseFlashAttention_2e25ad8fefac1f04c03bd78f2d2ab366.o": "b1eafe50cfb730d4377cc651a3bf2728b30b8b485698c912451d94be16e85839"
+  },
+  "shared_libraries": {
+    "vllm_ascend_C.cpython-312-aarch64-linux-gnu.so": "a08968af9746c3867c4e752aa60167c5417efd4064e7ac868448b93e30cf030f",
+    "libvllm_ascend_kernels.so": "1bfcc49510d90e03d4cca79160047cf82c5c426e4733adf3ee5f9056ab200128"
+  }
+}
