@@ -1,5 +1,6 @@
 import gc
 
+import pytest
 import torch
 import torch.nn.functional as F
 import torch_npu
@@ -19,6 +20,7 @@ NORM_EPS = 1e-6
 HC_EPS = 1e-6
 HF32_MANTISSA_BITS = 10
 FP32_MANTISSA_BITS = 23
+SMALL_HIDDEN_SIZE = 128
 Y_DIFF_THRESHOLD = 4e-3
 Y_REQUIRED_PASS_RATE = 0.98
 AUX_DIFF_THRESHOLD = 1e-4
@@ -56,6 +58,7 @@ def _hc_pre_cpu(
     hc_scale: torch.Tensor,
     hc_base: torch.Tensor,
     pre_mix: torch.Tensor | None = None,
+    sinkhorn_iters: int = HC_SINKHORN_ITERS,
 ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]:
     x_float = x.float()
     x_flat = x_float.flatten(-2)
@@ -75,7 +78,7 @@ def _hc_pre_cpu(
 
     comb_frag = comb_frag.softmax(-1) + HC_EPS
     comb_frag = comb_frag / (comb_frag.sum(-2, keepdim=True) + HC_EPS)
-    for _ in range(HC_SINKHORN_ITERS - 1):
+    for _ in range(sinkhorn_iters - 1):
         comb_frag = comb_frag / (comb_frag.sum(-1, keepdim=True) + HC_EPS)
         comb_frag = comb_frag / (comb_frag.sum(-2, keepdim=True) + HC_EPS)
 
@@ -159,6 +162,55 @@ def test_npu_hc_pre_v2_bf16_3d_input():
     torch.npu.reset_peak_memory_stats()
 
 
+@pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+@pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+@pytest.mark.parametrize("signed_inputs", [False, True])
+@pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+@torch.inference_mode()
+def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+    """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+    shape = (*batch_shape, HC_MULT, hidden_size)
+    x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+    if signed_inputs:
+        x = (x.float() - 1).bfloat16()
+        hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+        hc_base = torch.linspace(-3, 3, MIX_HC)
+    inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+    originals = tuple(t.clone() for t in inputs)
+
+    def call_v2():
+        return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+
+    actual = call_v2()
+    v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+        *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+    )
+    expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+    for index, (value, reference) in enumerate(zip(v3, expected)):
+        _assert_close_with_pass_rate(
+            value,
+            reference,
+            diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+            required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+        )
+    assert len(actual) == 3
+    assert v3[3].shape == (*batch_shape, HC_MULT)
+    assert v3[3].dtype == torch.float32
+    for value, reference in zip(actual, v3[:3]):
+        assert value.shape == reference.shape
+        assert value.dtype == reference.dtype
+        assert torch.equal(value.view(torch.uint8), reference.view(torch.uint8))
+    graph = torch.npu.NPUGraph()
+    with torch.npu.graph(graph):
+        captured = call_v2()
+    graph.replay()
+    torch.npu.synchronize()
+    for value, reference in zip(captured, actual):
+        assert torch.equal(value.view(torch.uint8), reference.view(torch.uint8))
+    for value, original in zip(inputs, originals):
+        assert torch.equal(value, original)
+
+
 @torch.inference_mode()
 def test_npu_hc_pre_v2_bf16_4d_input():
     _compare_hc_pre_with_cpu((1, 2, HC_MULT, HIDDEN_SIZE))
@@ -223,3 +275,45 @@ def test_npu_hc_pre_v3_uses_external_pre_mix():
     gc.collect()
     torch.npu.empty_cache()
     torch.npu.reset_peak_memory_stats()
+
+
+@pytest.mark.parametrize("tokens", [1, 257])
+@pytest.mark.parametrize("signed_inputs", [False, True])
+@torch.inference_mode()
+def test_npu_hc_pre_graph_reads_updated_scale(tokens, signed_inputs):
+    """Replay must read the current scale tensor on every kernel invocation."""
+    cpu_inputs = list(_make_hc_pre_inputs((tokens, HC_MULT, HIDDEN_SIZE)))
+    if signed_inputs:
+        cpu_inputs[0] = (cpu_inputs[0].float() - 1).bfloat16()
+        cpu_inputs[1] = cpu_inputs[1] - 0.5 / (HC_MULT * HIDDEN_SIZE)
+        cpu_inputs[3] = torch.linspace(-3, 3, MIX_HC)
+    inputs = tuple(value.npu() for value in cpu_inputs)
+
+    def call_v2():
+        return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, HC_SINKHORN_ITERS, NORM_EPS, HC_EPS)
+
+    call_v2()
+    torch.npu.synchronize()
+    graph = torch.npu.NPUGraph()
+    with torch.npu.graph(graph):
+        captured = call_v2()
+    for values in ((0.0, 0.0, 0.0), (0.25, 1.5, -0.75)):
+        cpu_inputs[2] = torch.tensor(values, dtype=torch.float32)
+        inputs[2].copy_(cpu_inputs[2])
+        graph.replay()
+        actual = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=HC_SINKHORN_ITERS, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        torch.npu.synchronize()
+        expected = _hc_pre_cpu(*cpu_inputs)
+        for index, (value, reference) in enumerate(zip(actual, expected)):
+            _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+        for value, reference in zip(captured, actual[:3]):
+            assert torch.equal(value.view(torch.uint8), reference.view(torch.uint8))
+        for value, reference in zip(inputs, cpu_inputs):
+            assert torch.equal(value.cpu(), reference)

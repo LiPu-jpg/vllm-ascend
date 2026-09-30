@@ -345,6 +345,11 @@ public:
             int64_t xGmBlockBaseOffsetPart2 = stage2BlockIdx *
             tilingData->rowOfFormerBlock * tilingData->hcMult * tilingData->d;
 
+            // The three scale inputs are constant across row tiles in this invocation.
+            const float preScale = hcScaleGm.GetValue(0);
+            const float postScale = hcScaleGm.GetValue(ONE);
+            const float combScale = hcScaleGm.GetValue(NUM_TWO);
+
             for (int64_t rowOuterIdx = 0; rowOuterIdx < rowOuterLoop; rowOuterIdx++) {
                 int64_t xGmBsBaseOffsetPart2 = rowOuterIdx * tilingData->stage2RowFactor *
                 tilingData->hcMult * tilingData->d;
@@ -396,7 +401,7 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
                 ReduceSumARAPerf(mixes01ReduceLocal, mixes01Local, NUM_TWO, stage1UsedCoreNum,
                 curRowFactor * tilingData->hcMultAlign);
                 ProcessPre(mixes01ReduceLocal, mixes01ReduceLocal, hcBase0Local, rsqrtLocal,
-                rowBrcbLocal0, hcBrcbLocal1, hcScaleGm.GetValue(0), tilingData->hcEps,
+                rowBrcbLocal0, hcBrcbLocal1, preScale, tilingData->hcEps,
                 curRowFactor, tilingData->hcMult);
                 if (tilingData->hasPreOut != 0) {
                     event_t eventIdPreOut = static_cast<event_t>(GetTPipePtr()->FetchEventID(HardEvent::V_MTE3));
@@ -443,7 +448,7 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
                 postLocal = postQue.AllocTensor<float>();
                 ProcessPost(postLocal,
                 mixes01ReduceLocal[tilingData->stage2RowFactor * tilingData->hcMultAlign],
-                hcBase1Local, rsqrtLocal, rowBrcbLocal0, hcBrcbLocal1, hcScaleGm.GetValue(1),
+                hcBase1Local, rsqrtLocal, rowBrcbLocal0, hcBrcbLocal1, postScale,
                 curRowFactor, tilingData->hcMult);
                 mixesQue01.template FreeTensor(mixes01Local);
                 postQue.EnQue(postLocal);
@@ -476,7 +481,7 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
                 MulABLastDimBrcInline<float, false>(mixes02ReduceLocal, mixes02ReduceLocal,
                 rsqrtLocal, rowBrcbLocal0, curRowFactor,
                 tilingData->hcMult * tilingData->hcMultAlign);
-                Muls(mixes02ReduceLocal, mixes02ReduceLocal, hcScaleGm.GetValue(NUM_TWO),
+                Muls(mixes02ReduceLocal, mixes02ReduceLocal, combScale,
                         curRowFactor * tilingData->hcMult * tilingData->hcMultAlign);
                 PipeBarrier<PIPE_V>();
                 AddBAFirstDimBrcInline<float>(mixes02ReduceLocal, mixes02ReduceLocal, hcBase2Local, curRowFactor,
