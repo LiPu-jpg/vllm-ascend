@@ -1,0 +1,5 @@
+{
+  "reason": "39 scanner false positives occurred only in the manifest where api_statistic.csv filenames were JSON keys paired directly with file SHA256 values. Separate path/sha256 fields preserve all hashes and raw files. No new scanner suppressions added.",
+  "failed_check_retained": "Private iteration05/evidence-format-profiles-models.log",
+  "raw_artifacts_changed": false
+}
