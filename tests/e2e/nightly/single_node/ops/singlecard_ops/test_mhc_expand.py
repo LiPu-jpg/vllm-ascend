@@ -296,3 +296,12 @@ def test_mhc_expand_optional_compile_dynamic(dtype):
     for tokens, hidden in ((3, 64), (11, 64), (7, 128), (3, 17), (5, 33), (0, 64), (3, 0)):
         x = torch.randn(tokens, hidden, device="npu", dtype=dtype)
         assert_bits_equal(compiled(x, 4), x.unsqueeze(1).repeat(1, 4, 1))
+
+
+@pytest.mark.parametrize("expand", [mhc_expand, hc_expand], ids=["helper", "glm"])
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
+def test_mhc_expand_helper_compile_dynamic(expand, dtype):
+    compiled = torch.compile(expand, backend="eager", dynamic=True, fullgraph=True)
+    for tokens, hidden in ((3, 64), (11, 128), (3, 17), (0, 64)):
+        x = torch.randn(tokens, hidden, device="npu", dtype=dtype)
+        assert_bits_equal(compiled(x, 4), x.unsqueeze(1).repeat(1, 4, 1))
