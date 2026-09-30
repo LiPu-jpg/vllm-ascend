@@ -318,3 +318,50 @@ def test_npu_hc_pre_graph_reads_updated_x(hidden_size, tokens, signed_inputs):
             assert torch.equal(value.view(torch.uint8), reference.view(torch.uint8))
         for value, reference in zip(inputs, cpu_inputs):
             assert torch.equal(value.cpu(), reference)
+
+
+@pytest.mark.parametrize("hidden_size", [HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+@pytest.mark.parametrize("tokens", [1, 257])
+@pytest.mark.parametrize("signed_inputs", [False, True])
+@torch.inference_mode()
+def test_npu_hc_pre_graph_reads_updated_external_pre_mix(hidden_size, tokens, signed_inputs):
+    """External coefficients must remain ordered with prefetched inputs on replay."""
+    cpu_inputs = list(_make_hc_pre_inputs((tokens, HC_MULT, hidden_size)))
+    cpu_pre_mix = torch.rand(tokens, HC_MULT, dtype=torch.float32)
+    if signed_inputs:
+        cpu_inputs[0] = (cpu_inputs[0].float() - 1).bfloat16()
+        cpu_inputs[1] = cpu_inputs[1] - 0.5 / (HC_MULT * hidden_size)
+        cpu_inputs[3] = torch.linspace(-3, 3, MIX_HC)
+        cpu_pre_mix = cpu_pre_mix * 2 - 1
+    inputs = tuple(value.npu() for value in cpu_inputs)
+    pre_mix = cpu_pre_mix.npu()
+
+    def call_v3():
+        return torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, pre_mix, hc_mult=HC_MULT, hc_sinkhorn_iters=HC_SINKHORN_ITERS, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+
+    call_v3()
+    torch.npu.synchronize()
+    graph = torch.npu.NPUGraph()
+    with torch.npu.graph(graph):
+        captured = call_v3()
+    for multiplier, offset in ((0.75, -0.125), (1.125, 0.25)):
+        cpu_pre_mix = cpu_pre_mix * multiplier + offset
+        pre_mix.copy_(cpu_pre_mix)
+        graph.replay()
+        actual = call_v3()
+        torch.npu.synchronize()
+        expected = _hc_pre_cpu(*cpu_inputs, pre_mix=cpu_pre_mix)
+        for index, (value, reference) in enumerate(zip(actual, expected)):
+            _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+        for value, reference in zip(captured, actual):
+            assert torch.equal(value.view(torch.uint8), reference.view(torch.uint8))
+        for value, reference in zip(inputs, cpu_inputs):
+            assert torch.equal(value.cpu(), reference)
+        assert torch.equal(pre_mix.cpu(), cpu_pre_mix)

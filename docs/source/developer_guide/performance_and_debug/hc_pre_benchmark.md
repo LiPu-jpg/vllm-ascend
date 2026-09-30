@@ -47,7 +47,8 @@ Compare complete-operator latency and L1 pipeline diagnostics to determine
 whether the schedule shortens the critical path. Projection, gate formulas,
 FP32 reductions, epsilon placement, finite Sinkhorn iterations and output
 contracts are unchanged. Nightly coverage includes graph replay after updating
-activations, both hidden sizes, signed inputs and row tails.
+activations and external mixing coefficients, both hidden sizes, signed inputs
+and row tails.
 
 This candidate has not yet been built or tested on NPU. No operator or model
 speedup is established. Preserve known baseline numerical failures and compare
