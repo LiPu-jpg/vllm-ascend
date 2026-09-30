@@ -19,9 +19,27 @@ parity-error cases remain. Actual GLM decoder-method24 checks pass each.
 
 V9 controller1427028 is terminal0 with all recovered controls completed.
 V7 exit1 and its foreign-after failure remain; the interrupted old A/A arm is
-not counted as a clean cohort. V10 profiling and standard-loader model stage
-is unstarted due foreign SFA jobs. No final acceptance or NPU outcome for
-other unbuilt candidates is implied. Historical journals retain prior states.
+not counted as a clean cohort. V10 controller1468225 is terminal exit1. All four L1 arms completed with
+60 HcPre kernels per case:28 retained profile records. All7 graph-profile
+Durations increase by3.02% to11.53%; vector busy time changes by at most
+about0.36% in those graph diagnostics. These are diagnostics, not benchmark
+samples or emitted-instruction proof. No critical-path gain is established.
+
+The standard DummyModelLoader smoke produced8 requests,64 generated tokens
+and320 finite logprobs per arm in eager and graph modes, with exact tokens and
+maximum logprob difference0. Graph traces show14 aclmdlRIExecuteAsync events
+and112 graph HcPre kernels plus24 eager kernels per arm. Both private sources
+use the same independent17828 packed-convolution prerequisite. Eager arm
+guards pass. Candidate graph run.exit1 retains a foreign-after failure: SFA
+controller1479427 appeared after the before-check. Functional results do not
+turn that failed guard into a clean cohort. Original logs/statuses are unchanged.
+No trained-checkpoint accuracy or model-throughput gain is claimed.
+
+The short-vector Div candidate is rejected for upstream latency optimization.
+The independent input-prefetch source b8f067cd3f01c78fc2e7d35f12385a948dac1a26
+has93 expected nightly cases and a separate28 benchmark-input CPU diagnostic,
+but no NPU build/test/timing outcome yet. Other candidate runtime changes are
+not stacked. Historical journals retain prior states.
 
 Original logs, tests, guards, commands and raw text files are preserved byte
 for byte. Binary tensors and packages stay in the private cloud workspace.
