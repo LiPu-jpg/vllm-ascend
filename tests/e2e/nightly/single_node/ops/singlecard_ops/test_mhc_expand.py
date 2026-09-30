@@ -305,3 +305,15 @@ def test_mhc_expand_helper_compile_dynamic(expand, dtype):
     for tokens, hidden in ((3, 64), (11, 128), (3, 17), (0, 64)):
         x = torch.randn(tokens, hidden, device="npu", dtype=dtype)
         assert_bits_equal(compiled(x, 4), x.unsqueeze(1).repeat(1, 4, 1))
+
+
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
+@pytest.mark.parametrize("hidden", [4096, 8192])
+@pytest.mark.parametrize("tokens", [39, 40, 41, 79, 80, 81, 127, 128, 129, 159, 160, 161, 205])
+def test_mhc_expand_row_group_boundaries(dtype, hidden, tokens):
+    generator = torch.Generator().manual_seed(tokens + hidden)
+    bits = torch.randint(-32768, 32768, (tokens, hidden), dtype=torch.int16, generator=generator)
+    x = bits.view(dtype).to("npu")
+    for mult in (1, 2, 4, 8):
+        actual = torch.ops._C_ascend.npu_mhc_expand(x, mult)
+        assert_bits_equal(actual, bits.view(dtype).unsqueeze(1).repeat(1, mult, 1))

@@ -16,9 +16,11 @@ native fallback pending hardware qualification of the output-partitioned path.
 
 Adapted from the local mHC Expand competition implementation: copy each input
 tile into UB once, then emit all streams using DMA. Small aligned rows use
-up to 16 rows per batch; full aligned rows use two-row strided output DMA.
+up to 16 rows per batch; full aligned rows use up to four-row strided output DMA.
 When there are no more tokens than launched cores, each core handles one row
-to avoid leaving half the cores idle.
+to avoid leaving half the cores idle. Larger batches assign contiguous row ranges
+to cores, with row counts differing by at most one. Four input rows occupy at most
+eight bytes per tile element, within the host's twelve-byte UB budget.
 Larger rows are split into 32-element-aligned tiles of at most 8192 elements.
 GM offsets use 64-bit arithmetic. Unaligned widths of at least 1024 elements
 partition the flattened output into aligned tiles. Each core owns complete
@@ -39,6 +41,19 @@ See the [official nonaligned-copy guide](https://www.hiascend.com/developer/tech
 ## Integration and evaluation
 
 Register the ACLNN op, Torch PrivateUse1 and symbolic Meta implementations.
+The helper uses an optional-output entry to check metadata and submit within one
+C++ call. Unsupported inputs return `None`; the helper applies the original native
+expression, preserving aliases for empty tensors and multiplier one. The hardware
+capability is immutable, while extension loading remains lazy. Gradient inputs
+stay on the native path. The strict raw operator retains its validation contract.
+
+For base storage formats without caller-local core controls, snapshot sizes,
+strides, storage offsets and storage ownership before queuing ACLNN preparation
+and execution together through the framework's `RunOpApiV2`. This avoids reading
+mutable tensor metadata from the worker. Other formats and core controls retain
+the existing adapter path. Graph replay, streams, temporary tensor lifetimes and
+immediate metadata changes are covered by NPU tests.
+
 Initially build and select this implementation on A2 only. Route GLM mHC
 expansion through the helper; preserve its mean-based contraction.
 The GLM call is at the first layer of each mHC forward, rather than at every
