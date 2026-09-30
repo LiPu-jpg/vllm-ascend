@@ -1,0 +1,3 @@
+[2026-09-30-16:36:47.154] [INFO] [AscendProfiler_TracePreParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/exact3-profile-baseline-eager/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1232172_20260930163646281_ascend_pt/logs/profiler_20260930163647_1232249_TracePreParser.log
+[2026-09-30-16:36:47.155] [INFO] [AscendProfiler_TracePreParser:36] TracePreParser start.
+[2026-09-30-16:36:47.173] [INFO] [AscendProfiler_TracePreParser:50] TracePreParser finish.

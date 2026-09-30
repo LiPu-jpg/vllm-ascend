@@ -1,0 +1,956 @@
+[
+  {
+    "case": "t1-d8-signed0-i1-external0",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+    ],
+    "sha256": "f692fccd7b6a1199d22f66dd49a0af15322a7b1a4388f9dec04074ecb9893e92"
+  },
+  {
+    "case": "t1-d8-signed0-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "d9b61cf5a6b6ac4428a20e703a704f9d5092c48984906dc56947d048f38bcef4"
+  },
+  {
+    "case": "t1-d8-signed0-i3-external0",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+    ],
+    "sha256": "1a4b0f5e83effe420d2756002b9ada7364b187cc5a5049f21cf615d8d15024f6"
+  },
+  {
+    "case": "t1-d8-signed0-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "14b85bcbefc5da76c04f8305e57864a7e6673167848ea7561b518f275449f59f"
+  },
+  {
+    "case": "t1-d8-signed0-i20-external0",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+    ],
+    "sha256": "b6582ecec78931387e65e7e39d7319fb5dcce1b4e5ede34d17e3a76b3b6167a7"
+  },
+  {
+    "case": "t1-d8-signed0-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "5b03531128557b13772f2bbcab289a2d83b103c2155a03668d3c6e93b1d0e082"
+  },
+  {
+    "case": "t1-d8-signed1-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "c29dcbca9a2b58bc112973b5911111431fb53005c8ad70c7e09100a38e39951c"
+  },
+  {
+    "case": "t1-d8-signed1-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "6d6b9c9f7d9876e656ba899ad47b9beafbf67a2f77f53d2fdb45750b2c6db2b6"
+  },
+  {
+    "case": "t1-d8-signed1-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "19d28ff8698295934f18cb84d66693a80b48721255b5480ce91b029871bb9bff"
+  },
+  {
+    "case": "t1-d8-signed1-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "0afb0f001cc419a11f08f6dba50734dd29883cfb7b7c5231d3e77e8562b1fd6f"
+  },
+  {
+    "case": "t1-d8-signed1-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "5e0f3759242d72cfa3adeb9e02f9ed2be4ee02c5ed45b2398cc27064a98e64bb"
+  },
+  {
+    "case": "t1-d8-signed1-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "cdf47cc37cc9ddbe569b163d71136e0d20e75294f2d2b0edf3a25691f61c3898"
+  },
+  {
+    "case": "t17-d8-signed0-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "f6a9cc30cf9564d3b1dc2eab110561cd467a11b9b9ea2c5f5168739c615f1936"
+  },
+  {
+    "case": "t17-d8-signed0-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "f7fe152a9a32ab137144a5aa5697d561b2205fcbd67197138e8152010d6c084a"
+  },
+  {
+    "case": "t17-d8-signed0-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "8f47b997365ca943fc540a725b746a98b17499c4e5256dd800f75165d0d7ceff"
+  },
+  {
+    "case": "t17-d8-signed0-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "4c980eb397312ddbff2e45eed7628cce1e0f28d4cc8d2688179aee0983797df1"
+  },
+  {
+    "case": "t17-d8-signed0-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "68e32e6d16c1d2936aef8cd9f3e5c12b9927063224cd83f1ac329e426044d9b1"
+  },
+  {
+    "case": "t17-d8-signed0-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "f7c71aba19ed920173db64a3281a41af018a1251fe9ae8931d98ddf1cfdc21e6"
+  },
+  {
+    "case": "t17-d8-signed1-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "343c0908aa121123a481022bd52e92a5d1deb85dbf12b517ae1c12de2533c852"
+  },
+  {
+    "case": "t17-d8-signed1-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "c5f2dff4fe05fbc7dc40b94ee211b22cd5d8778ab0f8d102f702af6208ead6d3"
+  },
+  {
+    "case": "t17-d8-signed1-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "a318a957f996de6e7d90cebe8c1e8137928027b0bb013d35aca5cf0e5f04e88e"
+  },
+  {
+    "case": "t17-d8-signed1-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "9e6d4526a07e686b0ec517cbca113676e5ab62f45fe05193a14deb8b8521c536"
+  },
+  {
+    "case": "t17-d8-signed1-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "f99410383bd4ef312c4f6004824e063882cad6b9f09e651c7310a8d940a4df28"
+  },
+  {
+    "case": "t17-d8-signed1-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "3266b005ec9e8241887b8fc75d7e31659499b14d8c6d0f6803b752437ddb06e6"
+  },
+  {
+    "case": "t1-d64-signed0-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "b8fa4079efb5d611992941766e67cd98b2076b3447ba375bbeba40c5288ee1f2"
+  },
+  {
+    "case": "t1-d64-signed0-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "c4444bedd1822cb051ea52bfc2ebe9d1a82c78950b07094682e0e7286ee02ca8"
+  },
+  {
+    "case": "t1-d64-signed0-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "ba021e66664e2fe7dd60f6f0b3a7e18d2217f28fe6dcb47f9d8b1d7fa7185eb5"
+  },
+  {
+    "case": "t1-d64-signed0-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "11a81c391cae4b81d7ecb6cd8051dbb52880c0558cc6f4a44c7a3f96c50c4de1"
+  },
+  {
+    "case": "t1-d64-signed0-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "d41c24d3a497c167eb101e7d11968dfacec47f74bc9b9b7f709c44e442b52742"
+  },
+  {
+    "case": "t1-d64-signed0-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "d63e42f0d261668b39b6b9fb3863a55de4c420ca7adf2f24b0f19b80ad301735"
+  },
+  {
+    "case": "t1-d64-signed1-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "feb9396325716c006eef0822737ada0b4558974fcd28f095013b758a622dc576"
+  },
+  {
+    "case": "t1-d64-signed1-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "c6782f70ebd1865b9b150d7c848e630245f9d4a2fae88e8a97df8898018787fb"
+  },
+  {
+    "case": "t1-d64-signed1-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "f603d6e3af5ee91cc11701594084d9699acdc352c86df7eb8c96f46a32dd1c1a"
+  },
+  {
+    "case": "t1-d64-signed1-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "d9b9b2b0c73628c4f86b1cdacb7f4ea8a88938f8e6df34a157d0f03d642fc54a"
+  },
+  {
+    "case": "t1-d64-signed1-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "7bb98de8e405d2c678917b0357251fd493d4a407f99833ce878a60365a1e405f"
+  },
+  {
+    "case": "t1-d64-signed1-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "807177e2af46b7d91bfe6b2cc1473a61f1c26517c11f117dec19223c87440671"
+  },
+  {
+    "case": "t17-d64-signed0-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "b6991ea666b9f0544473110442a23a855875e6a2bb37631943a48f73de8fae4f"
+  },
+  {
+    "case": "t17-d64-signed0-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "75e9ddb0f6e82ffab81d9c641ec5909292d143f866630dc6fe29e566a2b2cbcd"
+  },
+  {
+    "case": "t17-d64-signed0-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "0d8c5fb254d5d5d994af7b3be94372c3498a2ef40fbd849978320c9b1ee74321"
+  },
+  {
+    "case": "t17-d64-signed0-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "c1f5121f357a80b42f756e9f527d14417a162432903dfafdd0ddc8b96597b265"
+  },
+  {
+    "case": "t17-d64-signed0-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "0f689939163bf43a146c1a7f31087d758a82a48a26548b3b616913663fd28d3e"
+  },
+  {
+    "case": "t17-d64-signed0-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "665746b52cc013d81aebbdf32111ea08297e21d22e4bf4d2dbadbf0f937f7f94"
+  },
+  {
+    "case": "t17-d64-signed1-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "4d056edc82a765f3cb17d4e7bfda9ea999013bc4639f5f1da234e40194499393"
+  },
+  {
+    "case": "t17-d64-signed1-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "ca8c46126c676e84aa262f1c44c3d0ead9bdecd1c4b85c4ba4965d7e0fdd72db"
+  },
+  {
+    "case": "t17-d64-signed1-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "22e4e0173f83d88b434e29b7ef1629f60c9226ce54a505e6ab3f041eb57dc680"
+  },
+  {
+    "case": "t17-d64-signed1-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "9d602a9a53863ef67f5a1d0e12dfc27fe744e5cb596bd11d9fd5e35e34fde784"
+  },
+  {
+    "case": "t17-d64-signed1-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "778a250cc390c6b66c90ee1279d7c1a73955f8468ba707f3b3edd82939d9938b"
+  },
+  {
+    "case": "t17-d64-signed1-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "c975258c0175e5d28ff0b991ee506640b462798f2a3e7252af35a130c984a52c"
+  },
+  {
+    "case": "t1-d4103-signed0-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "77ed1b3a60b9134393c3a097464616a7bddbe585a185081ccbba5b6c86156891"
+  },
+  {
+    "case": "t1-d4103-signed0-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "ad407bb50321a1ce86da8758616b15faa9ae07e01d54aac30936041f570cdf3d"
+  },
+  {
+    "case": "t1-d4103-signed0-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "5291c7d8adb059bb7716b5d48b39f819aaac2a78e9c2832fdde581325c876d92"
+  },
+  {
+    "case": "t1-d4103-signed0-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "005ef88564c6d0e0ff7d7c3c73b4f6cdb2e35c03990342abb54ba092e55fa1e2"
+  },
+  {
+    "case": "t1-d4103-signed0-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "8ec18f6a4bfb16d3f9981e85578bac3062fc1968db34c3bd0589c7d6d10a3ac0"
+  },
+  {
+    "case": "t1-d4103-signed0-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "bf41b935911d9ef9ae72198d0f91cf175df408157ba74128e0e535765aa085e2"
+  },
+  {
+    "case": "t1-d4103-signed1-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "9259d691a1391b275075e79b91b1023a96ae5adb23fb6bfd89ac0033433ed513"
+  },
+  {
+    "case": "t1-d4103-signed1-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "c38abd777c0c21f933a4ed8488533282ade356fd825a621d90128e6d59977589"
+  },
+  {
+    "case": "t1-d4103-signed1-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "13a4c2c1ed24fb0ebb3cf6f8efc1ed3d24120bc1bcffdd5fffaf0ce2c55fec76"
+  },
+  {
+    "case": "t1-d4103-signed1-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "3664607ca400fae2139fd831dff7a00d5f4604ca01919bdaa545a1f314338130"
+  },
+  {
+    "case": "t1-d4103-signed1-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "e2ece681aec6e362bbf5e79c06f35531d4596655d4c24e657f3e883ed4841d8f"
+  },
+  {
+    "case": "t1-d4103-signed1-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "3047115743ea2a17e65d60029cedd9e95860da75800791984278ef07239f505b"
+  },
+  {
+    "case": "t17-d4103-signed0-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "51477c3803df56a18578db86b1f1ad19ce0bed7ce8300fb0e6ff2ae8341c4650"
+  },
+  {
+    "case": "t17-d4103-signed0-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "fe64ee7cf3a77fafa21137aaf5e5b63e91950da579be8a4cd5e689ae8a2edb92"
+  },
+  {
+    "case": "t17-d4103-signed0-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "f7bc8d9e81902e96ccb82f1dd6d3cd371bbb88f0ef8289f9d89e4254eaef9eda"
+  },
+  {
+    "case": "t17-d4103-signed0-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "518a109efdc55ddd2642afd180344b37c6772a3ae7834f1a519a9a62cb2977fe"
+  },
+  {
+    "case": "t17-d4103-signed0-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "df40e21351d88becaef4b10c4be7d1c7f840d88cf5b6555ab4c31b938fd85cc1"
+  },
+  {
+    "case": "t17-d4103-signed0-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "cb9bcbce2b0a3e9c970468b490da5f9aac52bea809a883e452592c1eada489a8"
+  },
+  {
+    "case": "t17-d4103-signed1-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "50675a5c29f45b9add54c84b9fdb1317406808518fb039146389f86a184499b3"
+  },
+  {
+    "case": "t17-d4103-signed1-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "962b04e8c9df2dda8cb65e9e0930b114c0ef40b9bb86531a63d73e85c3fdb410"
+  },
+  {
+    "case": "t17-d4103-signed1-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "c3e2b447e695ba307cdc709b9a68cb55edec9ac32e43f4f88209d5027302a3eb"
+  },
+  {
+    "case": "t17-d4103-signed1-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "d82ba91e090b573b638b685b8be9b060a83b92d5bd78154eeaaee91cc0175382"
+  },
+  {
+    "case": "t17-d4103-signed1-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "a7b6a9829a71ab9ca83e749b6f885e3912ee42132e763c8091defdd94ef44886"
+  },
+  {
+    "case": "t17-d4103-signed1-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "93be4016a4fdfa4f015f488d540e4286390328cf8f45d31eec6aacd12f7a1536"
+  },
+  {
+    "case": "t1-d4104-signed0-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "0f9462e7c10b197a02a5f81308290d408b0dc05b8bc12628d6daece654ba8fb8"
+  },
+  {
+    "case": "t1-d4104-signed0-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "285c0bc45312972d57123fe06c4ceddb270be9dd909322e8b7cc7136628ee08e"
+  },
+  {
+    "case": "t1-d4104-signed0-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "a872daa375f31d8c80cdbd178be80d6f410b5a76b714e626b67501684c7adb3f"
+  },
+  {
+    "case": "t1-d4104-signed0-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "a917b0d0f8c230ff654651d41eef53ef5137f55d1aab6cdbfd2756c58126dce7"
+  },
+  {
+    "case": "t1-d4104-signed0-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "36d51e0c56914d3876de7bd7ba8cc76c7afab084087ca507abfce285b1da3a48"
+  },
+  {
+    "case": "t1-d4104-signed0-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "c3c3e35c82f2f2ae2401913924bc21aaddb00b4067137d5326417f5e483a2024"
+  },
+  {
+    "case": "t1-d4104-signed1-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "06f0400c8e1caf44b6e783e103c6fe6f26609d3630c530ace09b942a89215cfd"
+  },
+  {
+    "case": "t1-d4104-signed1-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "9377614d41ab989a9839eb52fa42c311fc492e8f4c4223efb09be8f28f5802ae"
+  },
+  {
+    "case": "t1-d4104-signed1-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "c9ee74a7b72e66991dd78d5de7b65497a279e942787c92ca67e17d286515d36c"
+  },
+  {
+    "case": "t1-d4104-signed1-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "97a98eccde6ce8a862941cadd22bcab37040266052e6dad90c0362175dbee70d"
+  },
+  {
+    "case": "t1-d4104-signed1-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "0a57b2b880343127086bf7d436274bd32367c1d3d6fbdc0826884797cc3f13b6"
+  },
+  {
+    "case": "t1-d4104-signed1-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "4c7af2b496632a8f0e70372479a0f4bf6365cb81d5edc90254822d046ce86c87"
+  },
+  {
+    "case": "t17-d4104-signed0-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "349390b3da44a923ce18fb12e5af5dc9f682458ee5a9402df1fc4aa96f68b466"
+  },
+  {
+    "case": "t17-d4104-signed0-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "43b7ec4f1133210ca7aab727f1c04b162549a2c240115f4773047b6ad442d5cc"
+  },
+  {
+    "case": "t17-d4104-signed0-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "2773bb157407255a207236f590fcd14ea7f92c20b8a759203cf27a6bfabeae82"
+  },
+  {
+    "case": "t17-d4104-signed0-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "12d64baaf49631b45a66a4b503cb03daffa89c38fd135444cb9e6cfeb62bc7a5"
+  },
+  {
+    "case": "t17-d4104-signed0-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "bf4b0ad7b6d3435c67352fb35a8839e5ea9c2de47107a95f94a40f635d764c5d"
+  },
+  {
+    "case": "t17-d4104-signed0-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "fdc6aac75846e394a893c538fc60140af2f82a7731bbb0792ba159a4920a086e"
+  },
+  {
+    "case": "t17-d4104-signed1-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "3dc32b67d63fdc6c6e4f7b3379c12cab64c2a83c3484cc7491814ec42eafb932"
+  },
+  {
+    "case": "t17-d4104-signed1-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "27b6bc582b3e6a13351db48e252d23925e523b8d7c2176c308b836cb4f40b519"
+  },
+  {
+    "case": "t17-d4104-signed1-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "4041588dd2ba6645991de8d870ee0a7f1d641865a4ed75ea7939510c65b5a7cb"
+  },
+  {
+    "case": "t17-d4104-signed1-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "ed2204966aee9ff89e650fd8304ffe797332f4976847c6a4f62c12fa7a52a376"
+  },
+  {
+    "case": "t17-d4104-signed1-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "d0b450c6fe79833da3e43a61142392911eebb5c4ac603334372ade42728c64a4"
+  },
+  {
+    "case": "t17-d4104-signed1-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "sha256": "9dd31168f6df74737fdc4a68e00af1e61dc3fa33ff250d06c6e6e198f6974a87"
+  },
+  {
+    "case": "t1-d7169-signed0-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "dcce46c935bd93c22cd97710c685f63e8f80ee05cf1395dba62b666c67342eb8"
+  },
+  {
+    "case": "t1-d7169-signed0-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "75a6f600ed07d72bef1b2e6450f14deeb73dd387f0fee1f51678b0b6b2ab4882"
+  },
+  {
+    "case": "t1-d7169-signed0-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "fb2c435a07c05ace63ed5a9c02c4287ace2d2c374dca64a02a3479938e5545b0"
+  },
+  {
+    "case": "t1-d7169-signed0-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "a6ef588aa449483ba172ae15a20bfc6c77e8a444f4258ff61aac5e7ac2cc65a1"
+  },
+  {
+    "case": "t1-d7169-signed0-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "81bbe1a3c52d9809a1ce6152460e92467270dabafb884bc4a183a013c8cd5f73"
+  },
+  {
+    "case": "t1-d7169-signed0-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "6f442bfdb22d120c8034eaefcf8488480c1c2a2da84273fab140d07ffe3493ce"
+  },
+  {
+    "case": "t1-d7169-signed1-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "70aa78b5dbc36549c6f802ac1163e08766713999eb66a4e1a162851a9fd073ff"
+  },
+  {
+    "case": "t1-d7169-signed1-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "50f393aaa608068131879595a104b453dc611c9f1934a2ab875289d2f4ec78cf"
+  },
+  {
+    "case": "t1-d7169-signed1-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "2ce2d639ad7d7e3047fc4f280f71a34af8a1dc2e4ba72d8da20d25dc9f4c83e1"
+  },
+  {
+    "case": "t1-d7169-signed1-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "fdd477dfde6aa288a32084294c159501cdc3326cebe4e6fff12806d4760b17af"
+  },
+  {
+    "case": "t1-d7169-signed1-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "841910569dfa9f3363d0514ad5f3163c4caaa479630fd075b8c32e733b51df3e"
+  },
+  {
+    "case": "t1-d7169-signed1-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "9efc08173fa7476565b20d5aa6e102d62ca8293f9dc654c1e91036d281357e7d"
+  },
+  {
+    "case": "t17-d7169-signed0-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "0d26599257ab567d9149b12d0e0830c631442c38f7f054c9f5e356f2e42c8f3f"
+  },
+  {
+    "case": "t17-d7169-signed0-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "de4c296635b54cd8ec42bbdc2a05d38b9973f1499bb504ec5ba2ab630e120548"
+  },
+  {
+    "case": "t17-d7169-signed0-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "2c07f924f0cfa9277c890f5a65105fd9befff93aaac5b213baaf5a3fa0c81dc2"
+  },
+  {
+    "case": "t17-d7169-signed0-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "20ffa8685ad0c46807fbecb29939320564122dcee42368c16f4f7518c35c4186"
+  },
+  {
+    "case": "t17-d7169-signed0-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "8ba21a00bd145f12c2a60cdecfac6df3e3643f9c2771f78c4b232f1134f495aa"
+  },
+  {
+    "case": "t17-d7169-signed0-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "66c458ad5a69e7a2314c2d2f7c36c1b48d37077a90dc656d9b4196ae7182c50e"
+  },
+  {
+    "case": "t17-d7169-signed1-i1-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "4eb97b71d67a98299c19bfe47f2a0bdb5d319582b362efcd935809c2662bad3c"
+  },
+  {
+    "case": "t17-d7169-signed1-i1-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "3f1c3c37e882f031bf7595af6682816a6d39cbb719f1e6df56cc8b938ac15346"
+  },
+  {
+    "case": "t17-d7169-signed1-i3-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "df47ac36e0851d2a2216fcf05a49f4c93b085e2249f32c96531a17f7e45eeb34"
+  },
+  {
+    "case": "t17-d7169-signed1-i3-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "6431d511a77ae400c05081ebb15e58f87f771d1d0712b6e62a0b7b7c1d0e8e4f"
+  },
+  {
+    "case": "t17-d7169-signed1-i20-external0",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:0",
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "b1a98d3ac4706754b4d52aca6ff441cb7eb902a305e32330d0356a5c468f7d7e"
+  },
+  {
+    "case": "t17-d7169-signed1-i20-external1",
+    "cpu_accuracy_pass": true,
+    "errors": [
+      "baseline parity:1",
+      "baseline parity:2",
+      "baseline parity:3"
+    ],
+    "cpu_errors": [],
+    "sha256": "4df10e292311a87208087055a7f2bd082e5daf60a95df57fabcd1c2af942f344"
+  }
+]

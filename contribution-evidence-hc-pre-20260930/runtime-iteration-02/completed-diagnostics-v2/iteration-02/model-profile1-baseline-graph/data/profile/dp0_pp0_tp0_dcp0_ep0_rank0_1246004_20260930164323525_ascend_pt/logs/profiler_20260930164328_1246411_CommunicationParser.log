@@ -1,0 +1,4 @@
+[2026-09-30-16:43:28.892] [INFO] [AscendProfiler_CommunicationParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-02/model-profile1-baseline-graph/data/profile/dp0_pp0_tp0_dcp0_ep0_rank0_1246004_20260930164323525_ascend_pt/logs/profiler_20260930164328_1246411_CommunicationParser.log
+[2026-09-30-16:43:28.893] [INFO] [AscendProfiler_CommunicationParser:66] CommunicationParser start.
+[2026-09-30-16:43:28.905] [WARNING] [AscendProfiler_CommunicationParser:69] Get step range failed, the step node list is empty.
+[2026-09-30-16:43:28.908] [INFO] [AscendProfiler_CommunicationParser:73] CommunicationParser finish.

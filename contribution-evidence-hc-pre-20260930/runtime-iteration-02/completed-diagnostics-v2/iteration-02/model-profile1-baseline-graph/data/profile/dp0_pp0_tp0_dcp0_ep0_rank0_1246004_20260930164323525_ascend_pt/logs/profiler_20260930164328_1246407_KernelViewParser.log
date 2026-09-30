@@ -1,0 +1,5 @@
+[2026-09-30-16:43:28.832] [INFO] [AscendProfiler_KernelViewParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-02/model-profile1-baseline-graph/data/profile/dp0_pp0_tp0_dcp0_ep0_rank0_1246004_20260930164323525_ascend_pt/logs/profiler_20260930164328_1246407_KernelViewParser.log
+[2026-09-30-16:43:28.832] [INFO] [AscendProfiler_KernelViewParser:38] KernelViewParser start.
+[2026-09-30-16:43:28.844] [WARNING] [AscendProfiler_KernelViewParser:69] Get step range failed, the step node list is empty.
+[2026-09-30-16:43:28.845] [WARNING] [AscendProfiler_KernelViewParser:82] Kernel view get step range failed, the step range is empty.
+[2026-09-30-16:43:29.038] [INFO] [AscendProfiler_KernelViewParser:46] KernelViewParser finish.

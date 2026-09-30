@@ -1,0 +1,4 @@
+[2026-09-30-16:44:53.594] [INFO] [AscendProfiler_TraceStepTimeParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-02/model-profile1-peeled-graph/data/profile/dp0_pp0_tp0_dcp0_ep0_rank0_1246582_20260930164449108_ascend_pt/logs/profiler_20260930164453_1246975_TraceStepTimeParser.log
+[2026-09-30-16:44:53.594] [INFO] [AscendProfiler_TraceStepTimeParser:169] TraceStepTimeParser start.
+[2026-09-30-16:44:53.607] [WARNING] [AscendProfiler_TraceStepTimeParser:69] Get step range failed, the step node list is empty.
+[2026-09-30-16:44:53.839] [INFO] [AscendProfiler_TraceStepTimeParser:177] TraceStepTimeParser finish.

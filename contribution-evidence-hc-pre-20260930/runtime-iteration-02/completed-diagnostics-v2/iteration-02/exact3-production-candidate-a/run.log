@@ -1,0 +1,34 @@
+INFO 09-30 16:23:57 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 09-30 16:23:57 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 09-30 16:23:57 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 09-30 16:23:57 [__init__.py:272] Platform plugin ascend is activated
+INFO 09-30 16:23:57 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+[W930 16:23:58.867577476 NPUCachingAllocator.cpp:202] Warning: The current CANN and HDK(driver) versions require processing for 32 padding size, with memory allocation. (function operator())
+t1-d4096-signed0 [28.273, 28.535, 27.594]
+t1-d4096-signed1 [28.763, 28.506, 28.049]
+t2-d4096-signed0 [28.782, 30.003, 29.651]
+t2-d4096-signed1 [30.426, 29.59, 30.421]
+t4-d4096-signed0 [29.66, 32.216, 29.478]
+t4-d4096-signed1 [31.647, 30.158, 31.289]
+t17-d4096-signed0 [33.172, 33.592, 33.136]
+t17-d4096-signed1 [33.208, 33.429, 33.629]
+t128-d4096-signed0 [64.257, 64.971, 64.419]
+t128-d4096-signed1 [64.682, 64.524, 64.853]
+t257-d4096-signed0 [91.308, 91.092, 91.626]
+t257-d4096-signed1 [91.289, 91.366, 91.144]
+t512-d4096-signed0 [141.165, 141.241, 140.819]
+t512-d4096-signed1 [141.325, 141.528, 141.247]
+t1-d7168-signed0 [31.004, 31.267, 31.385]
+t1-d7168-signed1 [31.295, 30.993, 31.428]
+t2-d7168-signed0 [33.926, 31.874, 33.947]
+t2-d7168-signed1 [32.344, 34.392, 31.955]
+t4-d7168-signed0 [33.639, 32.955, 33.069]
+t4-d7168-signed1 [32.959, 33.483, 32.899]
+t17-d7168-signed0 [36.315, 36.586, 35.683]
+t17-d7168-signed1 [35.514, 35.588, 36.417]
+t128-d7168-signed0 [72.538, 73.011, 72.306]
+t128-d7168-signed1 [73.423, 73.719, 73.118]
+t257-d7168-signed0 [106.947, 106.875, 106.921]
+t257-d7168-signed1 [107.448, 108.091, 106.723]
+t512-d7168-signed0 [167.15, 167.611, 167.531]
+t512-d7168-signed1 [168.354, 167.903, 167.814]

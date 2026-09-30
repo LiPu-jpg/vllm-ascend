@@ -1,0 +1,3 @@
+[2026-09-30-16:38:56.372] [INFO] [AscendProfiler_OperatorViewParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/exact3-profile-candidate-eager/data/t1-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1236823_20260930163853865_ascend_pt/logs/profiler_20260930163856_1237985_OperatorViewParser.log
+[2026-09-30-16:38:56.372] [INFO] [AscendProfiler_OperatorViewParser:30] OperatorViewParser start.
+[2026-09-30-16:38:56.381] [INFO] [AscendProfiler_OperatorViewParser:39] OperatorViewParser finish.

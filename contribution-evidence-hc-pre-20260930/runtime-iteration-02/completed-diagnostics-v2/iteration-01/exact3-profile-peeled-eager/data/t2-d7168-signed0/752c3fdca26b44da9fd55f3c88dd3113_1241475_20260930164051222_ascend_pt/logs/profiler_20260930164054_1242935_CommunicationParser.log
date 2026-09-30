@@ -1,0 +1,3 @@
+[2026-09-30-16:40:54.728] [INFO] [AscendProfiler_CommunicationParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/exact3-profile-peeled-eager/data/t2-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1241475_20260930164051222_ascend_pt/logs/profiler_20260930164054_1242935_CommunicationParser.log
+[2026-09-30-16:40:54.729] [INFO] [AscendProfiler_CommunicationParser:66] CommunicationParser start.
+[2026-09-30-16:40:54.732] [INFO] [AscendProfiler_CommunicationParser:73] CommunicationParser finish.

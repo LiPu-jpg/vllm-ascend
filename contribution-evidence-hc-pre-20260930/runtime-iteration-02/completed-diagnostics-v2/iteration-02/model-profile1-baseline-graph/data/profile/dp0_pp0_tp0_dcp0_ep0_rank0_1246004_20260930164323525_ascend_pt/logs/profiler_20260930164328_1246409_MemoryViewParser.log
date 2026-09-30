@@ -1,0 +1,3 @@
+[2026-09-30-16:43:28.863] [INFO] [AscendProfiler_MemoryViewParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-02/model-profile1-baseline-graph/data/profile/dp0_pp0_tp0_dcp0_ep0_rank0_1246004_20260930164323525_ascend_pt/logs/profiler_20260930164328_1246409_MemoryViewParser.log
+[2026-09-30-16:43:28.863] [INFO] [AscendProfiler_MemoryViewParser:78] MemoryViewParser start.
+[2026-09-30-16:43:28.868] [INFO] [AscendProfiler_MemoryViewParser:89] MemoryViewParser finish.

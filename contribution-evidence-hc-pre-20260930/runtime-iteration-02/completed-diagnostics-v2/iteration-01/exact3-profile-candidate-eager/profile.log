@@ -1,0 +1,34 @@
+INFO 09-30 16:38:36 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 09-30 16:38:36 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 09-30 16:38:36 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 09-30 16:38:36 [__init__.py:272] Platform plugin ascend is activated
+INFO 09-30 16:38:36 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+[W930 16:38:37.531610871 NPUCachingAllocator.cpp:202] Warning: The current CANN and HDK(driver) versions require processing for 32 padding size, with memory allocation. (function operator())
+[2026-09-30 16:38:38] [INFO] [1236882] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/exact3-profile-candidate-eager/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1236823_20260930163838032_ascend_pt
+|/-[2026-09-30 16:38:40] [INFO] [1236891] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029185
+\[2026-09-30 16:38:42] [INFO] [1236882] profiler.py: All profiling data parsed in a total time of 0:00:03.327942
+PROFILE_COMPLETE t1-d4096-signed0
+[2026-09-30 16:38:43] [INFO] [1237166] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/exact3-profile-candidate-eager/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1236823_20260930163842947_ascend_pt
+|/-\[2026-09-30 16:38:46] [INFO] [1237175] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032338
+|[2026-09-30 16:38:47] [INFO] [1237166] profiler.py: All profiling data parsed in a total time of 0:00:04.327503
+PROFILE_COMPLETE t128-d4096-signed1
+[2026-09-30 16:38:49] [INFO] [1237452] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/exact3-profile-candidate-eager/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1236823_20260930163849000_ascend_pt
+|/-[2026-09-30 16:38:51] [INFO] [1237461] profiler.py: CANN profiling data parsed in a total time of 0:00:02.028848
+\[2026-09-30 16:38:53] [INFO] [1237452] profiler.py: All profiling data parsed in a total time of 0:00:03.330253
+PROFILE_COMPLETE t512-d7168-signed0
+[2026-09-30 16:38:54] [INFO] [1237739] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/exact3-profile-candidate-eager/data/t1-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1236823_20260930163853865_ascend_pt
+|/-[2026-09-30 16:38:56] [INFO] [1237748] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029158
+\[2026-09-30 16:38:57] [INFO] [1237739] profiler.py: All profiling data parsed in a total time of 0:00:03.328990
+PROFILE_COMPLETE t1-d7168-signed0
+[2026-09-30 16:38:59] [INFO] [1238025] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/exact3-profile-candidate-eager/data/t2-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1236823_20260930163858729_ascend_pt
+|/-\[2026-09-30 16:39:02] [INFO] [1238034] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032756
+|[2026-09-30 16:39:03] [INFO] [1238025] profiler.py: All profiling data parsed in a total time of 0:00:04.341708
+PROFILE_COMPLETE t2-d7168-signed0
+[2026-09-30 16:39:05] [INFO] [1238310] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/exact3-profile-candidate-eager/data/t4-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1236823_20260930163904591_ascend_pt
+|/-\[2026-09-30 16:39:08] [INFO] [1238319] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032104
+|[2026-09-30 16:39:09] [INFO] [1238310] profiler.py: All profiling data parsed in a total time of 0:00:04.339614
+PROFILE_COMPLETE t4-d7168-signed0
+[2026-09-30 16:39:11] [INFO] [1238596] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/exact3-profile-candidate-eager/data/t2-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1236823_20260930163910436_ascend_pt
+|/-\[2026-09-30 16:39:14] [INFO] [1238605] profiler.py: CANN profiling data parsed in a total time of 0:00:03.033247
+|[2026-09-30 16:39:15] [INFO] [1238596] profiler.py: All profiling data parsed in a total time of 0:00:04.338029
+PROFILE_COMPLETE t2-d4096-signed0
