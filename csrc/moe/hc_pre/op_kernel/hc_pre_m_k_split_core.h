@@ -345,9 +345,10 @@ public:
             int64_t xGmBlockBaseOffsetPart2 = stage2BlockIdx *
             tilingData->rowOfFormerBlock * tilingData->hcMult * tilingData->d;
 
+            if (rowOuterLoop > 0 && tilingData->dLoop > 0) {
+                CopyInXTile(xGmBlockBaseOffsetPart2, 0, 0);
+            }
             for (int64_t rowOuterIdx = 0; rowOuterIdx < rowOuterLoop; rowOuterIdx++) {
-                int64_t xGmBsBaseOffsetPart2 = rowOuterIdx * tilingData->stage2RowFactor *
-                tilingData->hcMult * tilingData->d;
                 int64_t curRowFactor = (rowOuterIdx == rowOuterLoop - 1) ? tailRowFactor : tilingData->stage2RowFactor;
                 squareSumOutLocal = squareSumQue.AllocTensor<float>();
                 //todo
@@ -418,13 +419,11 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
                 for (int64_t dLoopIdx = 0; dLoopIdx < tilingData->dLoop; dLoopIdx++) {
                     int64_t curDFactor =
                         (dLoopIdx == tilingData->dLoop - 1) ? tilingData->tailDFactor : tilingData->dFactor;
-                    xLocal = xQue.template AllocTensor<T>();
-                    CopyIn(xGm[xGmBlockBaseOffsetPart2 + xGmBsBaseOffsetPart2 +
-                    dLoopIdx * tilingData->dFactor], xLocal,
-                    tilingData->stage2RowFactor * tilingData->hcMult, curDFactor,
-                    tilingData->d - curDFactor);
-                    xQue.template EnQue(xLocal);
                     xLocal = xQue.template DeQue<T>();
+                    // Use the other input buffer while the current tile is consumed.
+                    if (dLoopIdx + 1 < tilingData->dLoop) {
+                        CopyInXTile(xGmBlockBaseOffsetPart2, rowOuterIdx, dLoopIdx + 1);
+                    }
                     yLocal = yQue.template AllocTensor<T>();
                     ProcessY(yLocal, xLocal, tilingData->hasPreMix != 0 ? preMixLocal : mixes01ReduceLocal,
                                 hcBrcbLocal1, xCastLocal, yCastLocal, curRowFactor,
@@ -438,6 +437,10 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
                         dLoopIdx * tilingData->dFactor],
                         curRowFactor, curDFactor, tilingData->d - curDFactor);
                     yQue.template FreeTensor(yLocal);
+                }
+                // The next row's input is independent of the current gates and Sinkhorn stages.
+                if (rowOuterIdx + 1 < rowOuterLoop && tilingData->dLoop > 0) {
+                    CopyInXTile(xGmBlockBaseOffsetPart2, rowOuterIdx + 1, 0);
                 }
                 // post
                 postLocal = postQue.AllocTensor<float>();
@@ -522,6 +525,18 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
     }
 
 private:
+    __aicore__ inline void CopyInXTile(const int64_t blockOffset, const int64_t rowIndex,
+                                     const int64_t dIndex)
+    {
+        const int64_t curDFactor =
+            (dIndex == tilingData->dLoop - 1) ? tilingData->tailDFactor : tilingData->dFactor;
+        const int64_t rowOffset = rowIndex * tilingData->stage2RowFactor * tilingData->hcMult * tilingData->d;
+        LocalTensor<T> nextX = xQue.template AllocTensor<T>();
+        CopyIn(xGm[blockOffset + rowOffset + dIndex * tilingData->dFactor], nextX,
+               tilingData->stage2RowFactor * tilingData->hcMult, curDFactor, tilingData->d - curDFactor);
+        xQue.template EnQue(nextX);
+    }
+
     TPipe *pipe;
     const HcPreTilingData *tilingData;
     GlobalTensor<float> mixesGm;
