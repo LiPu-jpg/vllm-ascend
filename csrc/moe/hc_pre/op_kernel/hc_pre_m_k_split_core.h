@@ -359,7 +359,7 @@ public:
                        curRowFactor * SQUARE_SUM_SIZE);
                 squareSumQue.EnQue(squareSumOutLocal);
                 squareSumOutLocal = squareSumQue.DeQue<float>();
-                ReduceSumARAPerf(squareReduceLocal, squareSumOutLocal, 1, stage1UsedCoreNum,
+                ReduceSumARAPerf<true>(squareReduceLocal, squareSumOutLocal, 1, stage1UsedCoreNum,
                 curRowFactor * SQUARE_SUM_SIZE);
 int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
                 rowOuterIdx) * tilingData->stage2RowFactor;
@@ -393,7 +393,7 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
 
                 mixesQue01.EnQue(mixes01Local);
                 mixes01Local = mixesQue01.DeQue<float>();
-                ReduceSumARAPerf(mixes01ReduceLocal, mixes01Local, NUM_TWO, stage1UsedCoreNum,
+                ReduceSumARAPerf<true>(mixes01ReduceLocal, mixes01Local, NUM_TWO, stage1UsedCoreNum,
                 curRowFactor * tilingData->hcMultAlign);
                 ProcessPre(mixes01ReduceLocal, mixes01ReduceLocal, hcBase0Local, rsqrtLocal,
                 rowBrcbLocal0, hcBrcbLocal1, hcScaleGm.GetValue(0), tilingData->hcEps,
@@ -469,7 +469,7 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
                 }
                 mixesQue2.EnQue(mixes2Local);
                 mixes2Local = mixesQue2.DeQue<float>();
-                ReduceSumARAPerf(mixes02ReduceLocal, mixes2Local, 1, stage1UsedCoreNum,
+                ReduceSumARAPerf<true>(mixes02ReduceLocal, mixes2Local, 1, stage1UsedCoreNum,
                 curRowFactor * tilingData->hcMult * tilingData->hcMultAlign);
                 combFragLocal = combFragQue.AllocTensor<float>();
 

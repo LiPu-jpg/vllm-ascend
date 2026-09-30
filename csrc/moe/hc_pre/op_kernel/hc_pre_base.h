@@ -440,6 +440,7 @@ __aicore__ inline void ProcessPre(const LocalTensor<float> &preLocal, const Loca
     PipeBarrier<PIPE_V>();
 }
 
+template <bool seedAlignedReduction = false>
 __aicore__ inline void ReduceSumARAPerf(const LocalTensor<float> &output, const LocalTensor<float> &input,
                                         const uint32_t dim0, const uint32_t dim1, const uint32_t dim2)
 {
@@ -447,9 +448,9 @@ __aicore__ inline void ReduceSumARAPerf(const LocalTensor<float> &output, const 
     uint32_t elemInOneRepeat = REPEAT_SIZE / sizeof(float);
     uint32_t dim2Align = RoundUp<float>(dim2);
 
-    // Seed an aligned reduction with its first addition. Padded reductions
-    // still copy the first row so that their output padding is preserved.
-    const bool seedFromInput = dim1 > 1 && dim2 == dim2Align;
+    // Opt in for aligned partial sums and stream contraction. The default
+    // instantiation retains the copy-based path used by padded Sinkhorn columns.
+    const bool seedFromInput = seedAlignedReduction && dim1 > 1 && dim2 == dim2Align;
     if (!seedFromInput) {
         DataCopyParams copyParams;
         copyParams.blockCount = dim0;
@@ -525,7 +526,7 @@ __aicore__ void inline ProcessY(const LocalTensor<T> &yLocal, const LocalTensor<
 {
     CastTwoDim(xCastLocal, xLocal, dim0 * dim1, dim2);
     MulABLastDimBrcInline<float, true>(xCastLocal, xCastLocal, mix01Local, hcBrcbLocal1, dim0 * dim1, dim2);
-    ReduceSumARAPerf(yCastLocal, xCastLocal, dim0, dim1, dim2);
+    ReduceSumARAPerf<true>(yCastLocal, xCastLocal, dim0, dim1, dim2);
     CastTwoDim(yLocal, yCastLocal, dim0, dim2);
 }
 
