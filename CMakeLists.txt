@@ -54,11 +54,6 @@ include(${ASCENDC_CMAKE_DIR}/ascendc.cmake)
 file(GLOB KERNEL_FILES
 ${CMAKE_CURRENT_SOURCE_DIR}/csrc/kernels/*.cpp)
 
-# mHC direct invocation is qualified on A2 only.
-if(NOT SOC_VERSION MATCHES "ascend910b.*")
-    list(REMOVE_ITEM KERNEL_FILES ${CMAKE_CURRENT_SOURCE_DIR}/csrc/kernels/mhc_expand.cpp)
-endif()
-
 set(VLLM_ASCEND_CUSTOM_OP
     ${KERNEL_FILES}
     ${CMAKE_CURRENT_SOURCE_DIR}/csrc/mla_preprocess/op_kernel/mla_preprocess_kernel.cpp
@@ -116,9 +111,6 @@ set(
 )
 
 pybind11_add_module(vllm_ascend_C ${VLLM_ASCEND_SRC})
-if(SOC_VERSION MATCHES "ascend910b.*")
-    target_compile_definitions(vllm_ascend_C PRIVATE VLLM_ENABLE_MHC_DIRECT)
-endif()
 if(SOC_VERSION MATCHES "ascend910_93.*")
   target_compile_definitions(vllm_ascend_C PRIVATE VLLM_ASCEND_ENABLE_SPARSE_KV_OFFLOAD)
   target_link_libraries(vllm_ascend_C PRIVATE OpenMP::OpenMP_CXX)
