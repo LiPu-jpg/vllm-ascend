@@ -317,3 +317,22 @@ def test_mhc_expand_row_group_boundaries(dtype, hidden, tokens):
     for mult in (1, 2, 4, 8):
         actual = torch.ops._C_ascend.npu_mhc_expand(x, mult)
         assert_bits_equal(actual, bits.view(dtype).unsqueeze(1).repeat(1, mult, 1))
+
+
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
+def test_mhc_expand_stream_core_limit(dtype):
+    # Core-controlled calls retain the ACLNN adapter path. Use a separate stream
+    # and restore its configuration so subsequent callers retain their limits.
+    stream = torch.npu.Stream()
+    stream.wait_stream(torch.npu.current_stream())
+    generator = torch.Generator().manual_seed(1401)
+    bits = torch.randint(-32768, 32768, (33, 8193), dtype=torch.int16, generator=generator)
+    with torch.npu.stream(stream):
+        try:
+            torch.npu.set_stream_limit(stream, vector_num=8)
+            x = bits.view(dtype).to("npu")
+            result = torch.ops._C_ascend.npu_mhc_expand(x, 4)
+            assert_bits_equal(result, bits.view(dtype).unsqueeze(1).repeat(1, 4, 1))
+        finally:
+            stream.synchronize()
+            torch.npu.reset_stream_limit(stream)

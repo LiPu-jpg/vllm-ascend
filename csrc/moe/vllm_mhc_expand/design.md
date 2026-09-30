@@ -47,10 +47,12 @@ expression, preserving aliases for empty tensors and multiplier one. The hardwar
 capability is immutable, while extension loading remains lazy. Gradient inputs
 stay on the native path. The strict raw operator retains its validation contract.
 
-For base storage formats without caller-local core controls, snapshot sizes,
-strides, storage offsets and storage ownership before queuing ACLNN preparation
-and execution together through the framework's `RunOpApiV2`. This avoids reading
-mutable tensor metadata from the worker. Other formats and core controls retain
+For base storage formats without caller-local core controls, use the project's
+AscendC direct-launch library and submit through the framework's `RunOpApiV2`.
+Direct and ACLNN entries share the kernel implementation and host partitioning
+logic. Platform queries provide the available vector cores and UB capacity.
+Snapshot pointers, launch parameters and storage ownership before queuing; the
+worker does not read mutable tensor metadata. Other formats and core controls retain
 the existing adapter path. Graph replay, streams, temporary tensor lifetimes and
 immediate metadata changes are covered by NPU tests.
 
@@ -75,6 +77,9 @@ hardware/software versions and speedups. These are independently designed cases
 
 In an A2 environment with the repository's supported CANN, PyTorch and vLLM
 versions, build/install this branch using the normal project installation flow.
+After editing kernel sources, use a clean operator build. Generated source-copy
+and compilation completion stamps can otherwise retain an older device binary;
+verify the installed kernel artifacts alongside the loaded shared libraries.
 Then run:
 
 ```bash
