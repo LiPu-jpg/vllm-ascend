@@ -1,0 +1,1292 @@
+{
+  "complete": true,
+  "metadata": {
+    "scope": "single DCP receiver component; no distributed communication or model",
+    "remap_backend": "triton",
+    "remap_sha256": "01d2b6bd5f12cc6ddcf7cbfe45b25e0dd8f331a465dc3b06c0571cef9baa614f",
+    "dispatch_sha256": "8230d80d95df23a6e4f5effd99b3825f48044a1334c378644695d0b750572343",
+    "module_path": "/mnt/workspace/sfa-nonempty-perf-20260930/runtime_candidate_a2/vllm_ascend/attention/context_parallel/sfa_cp.py"
+  },
+  "rows": [
+    {
+      "index": 0,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 0,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 1,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 1,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 2,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 2,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 3,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 3,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 4,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 4,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 5,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 5,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 6,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 6,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 7,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 7,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 8,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 8,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 9,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 9,
+      "dtype": "torch.float16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 10,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 10,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 11,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 11,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 12,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 12,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 13,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 13,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 14,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 14,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 15,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 15,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 16,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 16,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 17,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 17,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 18,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 18,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 19,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 19,
+      "dtype": "torch.float16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 20,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 20,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 21,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 21,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 22,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 22,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 23,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 23,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 24,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 24,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 1,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 25,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 25,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 26,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 26,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 27,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 27,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 28,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 28,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 29,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 29,
+      "dtype": "torch.bfloat16",
+      "rank": 0,
+      "interleave": 16,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 30,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 30,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 31,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 31,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 32,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 32,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 33,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 33,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 34,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 34,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 1,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 35,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 35,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 1,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 36,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 36,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 127,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 37,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 37,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 257,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 38,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 38,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 513,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 39,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 0,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 39,
+      "dtype": "torch.bfloat16",
+      "rank": 7,
+      "interleave": 16,
+      "local_count": 2048,
+      "global_topk": 2048,
+      "sparse_mode": 3,
+      "remap_exact": true,
+      "reference": "passed",
+      "bytewise_baseline_by_output": [
+        true,
+        true,
+        true
+      ]
+    }
+  ]
+}

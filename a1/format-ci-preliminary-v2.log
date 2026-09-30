@@ -1,0 +1,33 @@
+ruff check..................................................................Failed
+- hook id: ruff-check
+- exit code: 1
+
+::error title=Ruff (E501),file=/Users/jiaoziang/vllm-ascend-sfa-perf-20260930/benchmarks/ops/benchmark_sparse_flash_attention_kv_padding.py,line=107,col=121,endLine=107,endColumn=123::benchmarks/ops/benchmark_sparse_flash_attention_kv_padding.py:107:121: E501 Line too long (122 > 120)
+
+ruff format.................................................................Failed
+- hook id: ruff-format
+- files were modified by this hook
+
+2 files reformatted, 1716 files left unchanged
+
+codespell...................................................................Passed
+typos.......................................................................Passed
+clang-format................................................................Passed
+markdownlint................................................................Passed
+Lint GitHub Actions workflow files..........................................Passed
+Gitleaks Secret Scan(Local Binary)..........................................Passed
+Lint shell scripts..........................................................Passed
+Lint PNG exports from excalidraw............................................Passed
+Check for spaces in all filenames...........................................Passed
+Enforce __init__.py in Python packages......................................Passed
+Forbid init_logger(__name__) in vllm_ascend modules.........................Passed
+Check for forbidden imports.................................................Passed
+Check for boolean ops in with-statements....................................Passed
+Check that new functions over 100 lines have comments.......................Passed
+Check symbolic shapes in meta kernels.......................................Passed
+Suggestion..................................................................Passed
+- hook id: suggestion
+- duration: 0s
+
+To bypass pre-commit hooks, add --no-verify to git commit.
+

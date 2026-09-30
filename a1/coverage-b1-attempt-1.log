@@ -1,0 +1,49 @@
+/opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/utils/_path_manager.py:66: UserWarning: Permission mismatch: The owner of /opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/lib/libop_plugin_atb.so does not match.
+  warnings.warn(f"Permission mismatch: The owner of {path} does not match.")
+INFO 09-30 17:06:09 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 09-30 17:06:09 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 09-30 17:06:09 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 09-30 17:06:09 [__init__.py:272] Platform plugin ascend is activated
+INFO 09-30 17:06:09 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+[W930 17:06:11.264876907 NPUCachingAllocator.cpp:202] Warning: The current CANN and HDK(driver) versions require processing for 32 padding size, with memory allocation. (function operator())
+{"index": 0, "dtype": "torch.float16", "rope_dim": 0, "layout": "PA_BSND", "sparse_block_size": 1, "sparse_mode": 0, "heads": 64, "selected_tokens": [0, 1, 33, 127, 257, 512], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 1, "dtype": "torch.float16", "rope_dim": 0, "layout": "PA_BSND", "sparse_block_size": 1, "sparse_mode": 3, "heads": 64, "selected_tokens": [0, 1, 33, 127, 257, 512], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 2, "dtype": "torch.float16", "rope_dim": 0, "layout": "PA_BSND", "sparse_block_size": 2, "sparse_mode": 0, "heads": 8, "selected_tokens": [0, 2, 66, 254, 514, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 3, "dtype": "torch.float16", "rope_dim": 0, "layout": "PA_BSND", "sparse_block_size": 2, "sparse_mode": 3, "heads": 8, "selected_tokens": [0, 2, 66, 254, 514, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 4, "dtype": "torch.float16", "rope_dim": 0, "layout": "PA_BSND", "sparse_block_size": 4, "sparse_mode": 0, "heads": 128, "selected_tokens": [0, 4, 132, 508, 1024, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 5, "dtype": "torch.float16", "rope_dim": 0, "layout": "PA_BSND", "sparse_block_size": 4, "sparse_mode": 3, "heads": 128, "selected_tokens": [0, 4, 132, 508, 1020, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 6, "dtype": "torch.float16", "rope_dim": 0, "layout": "PA_BSND", "sparse_block_size": 8, "sparse_mode": 0, "heads": 1, "selected_tokens": [0, 8, 264, 512, 1024, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 7, "dtype": "torch.float16", "rope_dim": 0, "layout": "PA_BSND", "sparse_block_size": 8, "sparse_mode": 3, "heads": 1, "selected_tokens": [0, 8, 264, 512, 1016, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 8, "dtype": "torch.float16", "rope_dim": 0, "layout": "TND", "sparse_block_size": 1, "sparse_mode": 0, "heads": 64, "selected_tokens": [0, 1, 33, 127, 257, 512], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 9, "dtype": "torch.float16", "rope_dim": 0, "layout": "TND", "sparse_block_size": 1, "sparse_mode": 3, "heads": 64, "selected_tokens": [0, 1, 33, 127, 257, 512], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 10, "dtype": "torch.float16", "rope_dim": 0, "layout": "TND", "sparse_block_size": 2, "sparse_mode": 0, "heads": 8, "selected_tokens": [0, 2, 66, 254, 514, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 11, "dtype": "torch.float16", "rope_dim": 0, "layout": "TND", "sparse_block_size": 2, "sparse_mode": 3, "heads": 8, "selected_tokens": [0, 2, 66, 254, 514, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 12, "dtype": "torch.float16", "rope_dim": 0, "layout": "TND", "sparse_block_size": 4, "sparse_mode": 0, "heads": 128, "selected_tokens": [0, 4, 132, 508, 1024, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 13, "dtype": "torch.float16", "rope_dim": 0, "layout": "TND", "sparse_block_size": 4, "sparse_mode": 3, "heads": 128, "selected_tokens": [0, 4, 132, 508, 1020, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 14, "dtype": "torch.float16", "rope_dim": 0, "layout": "TND", "sparse_block_size": 8, "sparse_mode": 0, "heads": 1, "selected_tokens": [0, 8, 264, 512, 1024, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 15, "dtype": "torch.float16", "rope_dim": 0, "layout": "TND", "sparse_block_size": 8, "sparse_mode": 3, "heads": 1, "selected_tokens": [0, 8, 264, 512, 1016, 1024], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 16, "dtype": "torch.float16", "rope_dim": 0, "layout": "BSND", "sparse_block_size": 1, "sparse_mode": 0, "heads": 64, "selected_tokens": [0, 1, 33, 127], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 17, "dtype": "torch.float16", "rope_dim": 0, "layout": "BSND", "sparse_block_size": 1, "sparse_mode": 3, "heads": 64, "selected_tokens": [0, 1, 33, 127], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 18, "dtype": "torch.float16", "rope_dim": 0, "layout": "BSND", "sparse_block_size": 2, "sparse_mode": 0, "heads": 8, "selected_tokens": [0, 2, 66, 254], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 19, "dtype": "torch.float16", "rope_dim": 0, "layout": "BSND", "sparse_block_size": 2, "sparse_mode": 3, "heads": 8, "selected_tokens": [0, 2, 66, 254], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 20, "dtype": "torch.float16", "rope_dim": 0, "layout": "BSND", "sparse_block_size": 4, "sparse_mode": 0, "heads": 128, "selected_tokens": [0, 4, 132, 508], "nonempty_reference": "passed", "bitwise_baseline": false}
+{"index": 21, "dtype": "torch.float16", "rope_dim": 0, "layout": "BSND", "sparse_block_size": 4, "sparse_mode": 3, "heads": 128, "selected_tokens": [0, 4, 132, 508], "nonempty_reference": "passed", "bitwise_baseline": false}
+Traceback (most recent call last):
+  File "/mnt/workspace/sfa-nonempty-perf-20260930/probes/coverage.py", line 144, in <module>
+    main()
+  File "/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/workspace/sfa-nonempty-perf-20260930/probes/coverage.py", line 109, in main
+    actual = check(torch.ops._C_ascend.npu_sparse_flash_attention(**inputs), expected, lse)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/workspace/sfa-nonempty-perf-20260930/probes/coverage.py", line 89, in check
+    torch.testing.assert_close(lse[valid], expected_lse[valid], atol=0.005, rtol=0.001)
+  File "/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch/testing/_comparison.py", line 1600, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not close!
+
+Mismatched elements: 1 / 3 (33.3%)
+Greatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)
+Greatest relative difference: nan at index (1, 0) (up to 0.001 allowed)
+[ERROR] 2026-09-30-17:06:15 (PID:1249875, Device:0, RankID:-1) ERR99999 UNKNOWN applicaiton exception

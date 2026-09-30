@@ -1,0 +1,58 @@
+INFO 09-30 18:37:59 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 09-30 18:37:59 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 09-30 18:37:59 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 09-30 18:37:59 [__init__.py:272] Platform plugin ascend is activated
+INFO 09-30 18:37:59 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+[W930 18:38:01.399469696 NPUCachingAllocator.cpp:202] Warning: The current CANN and HDK(driver) versions require processing for 32 padding size, with memory allocation. (function operator())
+case 0: input SHA256 matches measured workload
+case 1: input SHA256 matches measured workload
+case 2: input SHA256 matches measured workload
+case 3: input SHA256 matches measured workload
+case 4: input SHA256 matches measured workload
+case 5: input SHA256 matches measured workload
+case 6: input SHA256 matches measured workload
+case 7: input SHA256 matches measured workload
+case 8: input SHA256 matches measured workload
+case 9: input SHA256 matches measured workload
+case 10: input SHA256 matches measured workload
+case 11: input SHA256 matches measured workload
+case 12: input SHA256 matches measured workload
+case 13: input SHA256 matches measured workload
+case 14: input SHA256 matches measured workload
+case 15: input SHA256 matches measured workload
+case 16: input SHA256 matches measured workload
+case 17: input SHA256 matches measured workload
+case 18: input SHA256 matches measured workload
+case 19: input SHA256 matches measured workload
+case 20: input SHA256 matches measured workload
+case 21: input SHA256 matches measured workload
+case 22: input SHA256 matches measured workload
+case 23: input SHA256 matches measured workload
+case 24: input SHA256 matches measured workload
+case 25: input SHA256 matches measured workload
+case 26: input SHA256 matches measured workload
+case 27: input SHA256 matches measured workload
+case 28: input SHA256 matches measured workload
+case 29: input SHA256 matches measured workload
+case 30: input SHA256 matches measured workload
+case 31: input SHA256 matches measured workload
+case 32: input SHA256 matches measured workload
+case 33: input SHA256 matches measured workload
+case 34: input SHA256 matches measured workload
+case 35: input SHA256 matches measured workload
+case 36: input SHA256 matches measured workload
+case 37: input SHA256 matches measured workload
+case 38: input SHA256 matches measured workload
+case 39: input SHA256 matches measured workload
+case 40: input SHA256 matches measured workload
+case 41: input SHA256 matches measured workload
+case 42: input SHA256 matches measured workload
+case 43: input SHA256 matches measured workload
+case 44: input SHA256 matches measured workload
+case 45: input SHA256 matches measured workload
+case 46: input SHA256 matches measured workload
+case 47: input SHA256 matches measured workload
+case 48: input SHA256 matches measured workload
+case 49: input SHA256 matches measured workload
+case 50: input SHA256 matches measured workload
+case 51: input SHA256 matches measured workload

@@ -1,0 +1,214 @@
+INFO 09-30 19:07:06 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 09-30 19:07:06 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 09-30 19:07:06 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 09-30 19:07:06 [__init__.py:272] Platform plugin ascend is activated
+INFO 09-30 19:07:06 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+[W930 19:07:08.230132453 NPUCachingAllocator.cpp:202] Warning: The current CANN and HDK(driver) versions require processing for 32 padding size, with memory allocation. (function operator())
+[2026-09-30 19:07:09] [INFO] [1323888] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_000/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190708443_ascend_pt
+|/-[2026-09-30 19:07:11] [INFO] [1323897] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029318
+\[2026-09-30 19:07:12] [INFO] [1323888] profiler.py: All profiling data parsed in a total time of 0:00:03.326077
+candidate case 0: 28.380600 us
+[2026-09-30 19:07:14] [INFO] [1324173] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_001/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190713354_ascend_pt
+|/-[2026-09-30 19:07:16] [INFO] [1324182] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029810
+\[2026-09-30 19:07:17] [INFO] [1324173] profiler.py: All profiling data parsed in a total time of 0:00:03.332202
+candidate case 1: 33.696600 us
+[2026-09-30 19:07:18] [INFO] [1324456] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_002/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190718232_ascend_pt
+|/-\[2026-09-30 19:07:22] [INFO] [1324465] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032410
+|[2026-09-30 19:07:23] [INFO] [1324456] profiler.py: All profiling data parsed in a total time of 0:00:04.333131
+candidate case 2: 38.216800 us
+[2026-09-30 19:07:24] [INFO] [1324742] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_003/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190724137_ascend_pt
+|/-[2026-09-30 19:07:26] [INFO] [1324751] profiler.py: CANN profiling data parsed in a total time of 0:00:02.030432
+\[2026-09-30 19:07:28] [INFO] [1324742] profiler.py: All profiling data parsed in a total time of 0:00:03.333704
+candidate case 3: 37.644800 us
+[2026-09-30 19:07:29] [INFO] [1325026] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_004/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190729163_ascend_pt
+|/-\[2026-09-30 19:07:33] [INFO] [1325035] profiler.py: CANN profiling data parsed in a total time of 0:00:03.033325
+|[2026-09-30 19:07:34] [INFO] [1325026] profiler.py: All profiling data parsed in a total time of 0:00:04.238805
+candidate case 4: 47.425000 us
+[2026-09-30 19:07:36] [INFO] [1325309] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_005/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190735409_ascend_pt
+|/-[2026-09-30 19:07:38] [INFO] [1325318] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029529
+\[2026-09-30 19:07:39] [INFO] [1325309] profiler.py: All profiling data parsed in a total time of 0:00:03.338414
+candidate case 5: 58.325200 us
+[2026-09-30 19:07:40] [INFO] [1325594] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_006/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190740182_ascend_pt
+|/-[2026-09-30 19:07:43] [INFO] [1325603] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029066
+\[2026-09-30 19:07:44] [INFO] [1325594] profiler.py: All profiling data parsed in a total time of 0:00:03.339499
+candidate case 6: 31.148600 us
+[2026-09-30 19:07:45] [INFO] [1325877] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_007/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190745073_ascend_pt
+|/-[2026-09-30 19:07:47] [INFO] [1325886] profiler.py: CANN profiling data parsed in a total time of 0:00:02.030151
+\[2026-09-30 19:07:49] [INFO] [1325877] profiler.py: All profiling data parsed in a total time of 0:00:03.341151
+candidate case 7: 37.072800 us
+[2026-09-30 19:07:50] [INFO] [1326160] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_008/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190749967_ascend_pt
+|/-[2026-09-30 19:07:52] [INFO] [1326169] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029626
+\[2026-09-30 19:07:53] [INFO] [1326160] profiler.py: All profiling data parsed in a total time of 0:00:03.248895
+candidate case 8: 42.248800 us
+[2026-09-30 19:07:55] [INFO] [1326446] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_009/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190754865_ascend_pt
+|/-\[2026-09-30 19:07:58] [INFO] [1326455] profiler.py: CANN profiling data parsed in a total time of 0:00:03.033406
+|[2026-09-30 19:07:59] [INFO] [1326446] profiler.py: All profiling data parsed in a total time of 0:00:04.346840
+candidate case 9: 41.888800 us
+[2026-09-30 19:08:01] [INFO] [1326730] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_010/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190800905_ascend_pt
+|/-[2026-09-30 19:08:03] [INFO] [1326739] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029168
+\[2026-09-30 19:08:04] [INFO] [1326730] profiler.py: All profiling data parsed in a total time of 0:00:03.247919
+candidate case 10: 53.181000 us
+[2026-09-30 19:08:06] [INFO] [1327015] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_011/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190806182_ascend_pt
+|/-\[2026-09-30 19:08:10] [INFO] [1327024] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032657
+|[2026-09-30 19:08:11] [INFO] [1327015] profiler.py: All profiling data parsed in a total time of 0:00:04.246979
+candidate case 11: 63.833200 us
+[2026-09-30 19:08:12] [INFO] [1327298] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_012/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190812077_ascend_pt
+|/-\[2026-09-30 19:08:15] [INFO] [1327307] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032577
+|[2026-09-30 19:08:17] [INFO] [1327298] profiler.py: All profiling data parsed in a total time of 0:00:04.251875
+candidate case 12: 28.652600 us
+[2026-09-30 19:08:18] [INFO] [1327581] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_013/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190817971_ascend_pt
+|/-\[2026-09-30 19:08:21] [INFO] [1327590] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032531
+|[2026-09-30 19:08:23] [INFO] [1327581] profiler.py: All profiling data parsed in a total time of 0:00:04.350002
+candidate case 13: 33.924600 us
+[2026-09-30 19:08:24] [INFO] [1327867] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_014/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190823874_ascend_pt
+|/-[2026-09-30 19:08:26] [INFO] [1327876] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029689
+\[2026-09-30 19:08:27] [INFO] [1327867] profiler.py: All profiling data parsed in a total time of 0:00:03.251613
+candidate case 14: 38.948800 us
+[2026-09-30 19:08:29] [INFO] [1328151] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_015/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190828781_ascend_pt
+|/-\[2026-09-30 19:08:32] [INFO] [1328160] profiler.py: CANN profiling data parsed in a total time of 0:00:03.033142
+|[2026-09-30 19:08:33] [INFO] [1328151] profiler.py: All profiling data parsed in a total time of 0:00:04.349983
+candidate case 15: 38.044800 us
+[2026-09-30 19:08:35] [INFO] [1328436] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_016/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190834827_ascend_pt
+|/-\[2026-09-30 19:08:38] [INFO] [1328445] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032999
+|[2026-09-30 19:08:39] [INFO] [1328436] profiler.py: All profiling data parsed in a total time of 0:00:04.350446
+candidate case 16: 49.193000 us
+[2026-09-30 19:08:41] [INFO] [1328719] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_017/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190841093_ascend_pt
+|/-[2026-09-30 19:08:43] [INFO] [1328728] profiler.py: CANN profiling data parsed in a total time of 0:00:02.030339
+\[2026-09-30 19:08:45] [INFO] [1328719] profiler.py: All profiling data parsed in a total time of 0:00:03.349115
+candidate case 17: 58.789200 us
+[2026-09-30 19:08:46] [INFO] [1329018] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_018/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190846005_ascend_pt
+|/-\[2026-09-30 19:08:49] [INFO] [1329027] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032858
+|[2026-09-30 19:08:51] [INFO] [1329018] profiler.py: All profiling data parsed in a total time of 0:00:04.352766
+candidate case 18: 31.452600 us
+[2026-09-30 19:08:52] [INFO] [1329303] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_019/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190851915_ascend_pt
+|/-[2026-09-30 19:08:54] [INFO] [1329312] profiler.py: CANN profiling data parsed in a total time of 0:00:02.030568
+\[2026-09-30 19:08:55] [INFO] [1329303] profiler.py: All profiling data parsed in a total time of 0:00:03.350397
+candidate case 19: 37.460800 us
+[2026-09-30 19:08:57] [INFO] [1329587] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_020/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190856821_ascend_pt
+|/-[2026-09-30 19:08:59] [INFO] [1329596] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029879
+\[2026-09-30 19:09:00] [INFO] [1329587] profiler.py: All profiling data parsed in a total time of 0:00:03.354504
+candidate case 20: 42.624800 us
+[2026-09-30 19:09:02] [INFO] [1329871] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_021/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190901634_ascend_pt
+|/-[2026-09-30 19:09:04] [INFO] [1329882] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029814
+\[2026-09-30 19:09:05] [INFO] [1329871] profiler.py: All profiling data parsed in a total time of 0:00:03.351758
+candidate case 21: 42.240800 us
+[2026-09-30 19:09:07] [INFO] [1330157] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_022/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190906681_ascend_pt
+|/-\[2026-09-30 19:09:10] [INFO] [1330166] profiler.py: CANN profiling data parsed in a total time of 0:00:03.033065
+|[2026-09-30 19:09:11] [INFO] [1330157] profiler.py: All profiling data parsed in a total time of 0:00:04.352211
+candidate case 22: 55.081200 us
+[2026-09-30 19:09:13] [INFO] [1330440] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_023/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190912990_ascend_pt
+|/-[2026-09-30 19:09:15] [INFO] [1330449] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029805
+\[2026-09-30 19:09:16] [INFO] [1330440] profiler.py: All profiling data parsed in a total time of 0:00:03.257318
+candidate case 23: 66.409400 us
+[2026-09-30 19:09:18] [INFO] [1330725] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_024/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190917876_ascend_pt
+|/-[2026-09-30 19:09:20] [INFO] [1330734] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029942
+\[2026-09-30 19:09:21] [INFO] [1330725] profiler.py: All profiling data parsed in a total time of 0:00:03.355444
+candidate case 24: 38.020800 us
+[2026-09-30 19:09:23] [INFO] [1331009] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_025/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190922825_ascend_pt
+|/-\[2026-09-30 19:09:26] [INFO] [1331018] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032789
+|[2026-09-30 19:09:27] [INFO] [1331009] profiler.py: All profiling data parsed in a total time of 0:00:04.352333
+candidate case 25: 49.281000 us
+[2026-09-30 19:09:29] [INFO] [1331293] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_026/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190928788_ascend_pt
+|/-\[2026-09-30 19:09:32] [INFO] [1331302] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032370
+|[2026-09-30 19:09:33] [INFO] [1331293] profiler.py: All profiling data parsed in a total time of 0:00:04.349476
+candidate case 26: 54.561000 us
+[2026-09-30 19:09:35] [INFO] [1331579] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_027/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190934746_ascend_pt
+|/-\[2026-09-30 19:09:38] [INFO] [1331588] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032885
+|[2026-09-30 19:09:39] [INFO] [1331579] profiler.py: All profiling data parsed in a total time of 0:00:04.355057
+candidate case 27: 58.461200 us
+[2026-09-30 19:09:41] [INFO] [1331862] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_028/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190940733_ascend_pt
+|/-[2026-09-30 19:09:43] [INFO] [1331871] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029417
+\[2026-09-30 19:09:44] [INFO] [1331862] profiler.py: All profiling data parsed in a total time of 0:00:03.247601
+candidate case 28: 81.493600 us
+[2026-09-30 19:09:46] [INFO] [1332147] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_029/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190945846_ascend_pt
+|/-[2026-09-30 19:09:48] [INFO] [1332156] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029377
+\[2026-09-30 19:09:49] [INFO] [1332147] profiler.py: All profiling data parsed in a total time of 0:00:03.350998
+candidate case 29: 99.578000 us
+[2026-09-30 19:09:52] [INFO] [1332430] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_030/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190952139_ascend_pt
+|/-[2026-09-30 19:09:54] [INFO] [1332439] profiler.py: CANN profiling data parsed in a total time of 0:00:02.030029
+\[2026-09-30 19:09:56] [INFO] [1332430] profiler.py: All profiling data parsed in a total time of 0:00:03.354976
+candidate case 30: 150.471000 us
+[2026-09-30 19:09:57] [INFO] [1332716] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_031/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930190957048_ascend_pt
+|/-[2026-09-30 19:09:59] [INFO] [1332725] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029352
+\[2026-09-30 19:10:01] [INFO] [1332716] profiler.py: All profiling data parsed in a total time of 0:00:03.252010
+candidate case 31: 41.992800 us
+[2026-09-30 19:10:02] [INFO] [1333000] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_032/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191001996_ascend_pt
+|/-\[2026-09-30 19:10:05] [INFO] [1333009] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032758
+|[2026-09-30 19:10:07] [INFO] [1333000] profiler.py: All profiling data parsed in a total time of 0:00:04.357890
+candidate case 32: 56.889200 us
+[2026-09-30 19:10:08] [INFO] [1333283] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_033/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191007957_ascend_pt
+|/-[2026-09-30 19:10:10] [INFO] [1333292] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029391
+\[2026-09-30 19:10:12] [INFO] [1333283] profiler.py: All profiling data parsed in a total time of 0:00:03.354188
+candidate case 33: 63.369200 us
+[2026-09-30 19:10:13] [INFO] [1333568] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_034/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191012939_ascend_pt
+|/-[2026-09-30 19:10:15] [INFO] [1333577] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029652
+\[2026-09-30 19:10:16] [INFO] [1333568] profiler.py: All profiling data parsed in a total time of 0:00:03.349258
+candidate case 34: 67.973400 us
+[2026-09-30 19:10:18] [INFO] [1333851] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_035/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191017939_ascend_pt
+|/-[2026-09-30 19:10:20] [INFO] [1333860] profiler.py: CANN profiling data parsed in a total time of 0:00:02.028972
+\[2026-09-30 19:10:21] [INFO] [1333851] profiler.py: All profiling data parsed in a total time of 0:00:03.351284
+candidate case 35: 89.421800 us
+[2026-09-30 19:10:23] [INFO] [1334154] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_036/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191023047_ascend_pt
+|/-\[2026-09-30 19:10:26] [INFO] [1334163] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032605
+|[2026-09-30 19:10:28] [INFO] [1334154] profiler.py: All profiling data parsed in a total time of 0:00:04.360850
+candidate case 36: 123.598400 us
+[2026-09-30 19:10:31] [INFO] [1334497] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_037/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191030470_ascend_pt
+|/-[2026-09-30 19:10:33] [INFO] [1334506] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029088
+\[2026-09-30 19:10:34] [INFO] [1334497] profiler.py: All profiling data parsed in a total time of 0:00:03.347405
+candidate case 37: 167.647400 us
+[2026-09-30 19:10:36] [INFO] [1334810] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_038/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191035374_ascend_pt
+|/-[2026-09-30 19:10:38] [INFO] [1334819] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029921
+\[2026-09-30 19:10:39] [INFO] [1334810] profiler.py: All profiling data parsed in a total time of 0:00:03.260197
+candidate case 38: 38.580800 us
+[2026-09-30 19:10:41] [INFO] [1335137] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_039/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191040345_ascend_pt
+|/-\[2026-09-30 19:10:44] [INFO] [1335146] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032674
+|[2026-09-30 19:10:45] [INFO] [1335137] profiler.py: All profiling data parsed in a total time of 0:00:04.350594
+candidate case 39: 49.473000 us
+[2026-09-30 19:10:47] [INFO] [1335460] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_040/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191046298_ascend_pt
+|/-\[2026-09-30 19:10:50] [INFO] [1335469] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032799
+|[2026-09-30 19:10:51] [INFO] [1335460] profiler.py: All profiling data parsed in a total time of 0:00:04.350671
+candidate case 40: 55.033200 us
+[2026-09-30 19:10:53] [INFO] [1335746] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_041/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191052276_ascend_pt
+|/-[2026-09-30 19:10:55] [INFO] [1335755] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029684
+\[2026-09-30 19:10:56] [INFO] [1335746] profiler.py: All profiling data parsed in a total time of 0:00:03.355756
+candidate case 41: 58.809200 us
+[2026-09-30 19:10:58] [INFO] [1336029] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_042/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191057291_ascend_pt
+|/-\[2026-09-30 19:11:01] [INFO] [1336038] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032478
+|[2026-09-30 19:11:02] [INFO] [1336029] profiler.py: All profiling data parsed in a total time of 0:00:04.360919
+candidate case 42: 81.181600 us
+[2026-09-30 19:11:04] [INFO] [1336313] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_043/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191103413_ascend_pt
+|/-[2026-09-30 19:11:06] [INFO] [1336322] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029755
+\[2026-09-30 19:11:07] [INFO] [1336313] profiler.py: All profiling data parsed in a total time of 0:00:03.357477
+candidate case 43: 100.438000 us
+[2026-09-30 19:11:10] [INFO] [1336598] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_044/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191109784_ascend_pt
+|/-\[2026-09-30 19:11:13] [INFO] [1336607] profiler.py: CANN profiling data parsed in a total time of 0:00:03.033930
+|[2026-09-30 19:11:14] [INFO] [1336598] profiler.py: All profiling data parsed in a total time of 0:00:04.350036
+candidate case 44: 150.283000 us
+[2026-09-30 19:11:16] [INFO] [1336881] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_045/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191115697_ascend_pt
+|/-[2026-09-30 19:11:18] [INFO] [1336890] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029795
+\[2026-09-30 19:11:19] [INFO] [1336881] profiler.py: All profiling data parsed in a total time of 0:00:03.358523
+candidate case 45: 42.332800 us
+[2026-09-30 19:11:21] [INFO] [1337166] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_046/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191120680_ascend_pt
+|/-\[2026-09-30 19:11:24] [INFO] [1337175] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032746
+|[2026-09-30 19:11:25] [INFO] [1337166] profiler.py: All profiling data parsed in a total time of 0:00:04.374728
+candidate case 46: 56.881200 us
+[2026-09-30 19:11:27] [INFO] [1337463] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_047/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191126660_ascend_pt
+|/-[2026-09-30 19:11:29] [INFO] [1337472] profiler.py: CANN profiling data parsed in a total time of 0:00:02.031287
+\[2026-09-30 19:11:30] [INFO] [1337463] profiler.py: All profiling data parsed in a total time of 0:00:03.348731
+candidate case 47: 63.245200 us
+[2026-09-30 19:11:32] [INFO] [1337748] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_048/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191131641_ascend_pt
+|/-[2026-09-30 19:11:34] [INFO] [1337757] profiler.py: CANN profiling data parsed in a total time of 0:00:02.028914
+\[2026-09-30 19:11:35] [INFO] [1337748] profiler.py: All profiling data parsed in a total time of 0:00:03.249610
+candidate case 48: 68.937400 us
+[2026-09-30 19:11:37] [INFO] [1338033] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_049/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191136676_ascend_pt
+|/-[2026-09-30 19:11:39] [INFO] [1338042] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029492
+\[2026-09-30 19:11:40] [INFO] [1338033] profiler.py: All profiling data parsed in a total time of 0:00:03.361883
+candidate case 49: 89.557800 us
+[2026-09-30 19:11:42] [INFO] [1338316] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_050/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191141842_ascend_pt
+|/-[2026-09-30 19:11:44] [INFO] [1338325] profiler.py: CANN profiling data parsed in a total time of 0:00:02.029179
+\[2026-09-30 19:11:45] [INFO] [1338316] profiler.py: All profiling data parsed in a total time of 0:00:03.360873
+candidate case 50: 123.846400 us
+[2026-09-30 19:11:49] [INFO] [1338616] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-a2/profiler-candidate-attempt-2/case_051/752c3fdca26b44da9fd55f3c88dd3113_1323833_20260930191148334_ascend_pt
+|/-\[2026-09-30 19:11:52] [INFO] [1338625] profiler.py: CANN profiling data parsed in a total time of 0:00:03.033124
+|[2026-09-30 19:11:53] [INFO] [1338616] profiler.py: All profiling data parsed in a total time of 0:00:04.353463
+candidate case 51: 167.551400 us

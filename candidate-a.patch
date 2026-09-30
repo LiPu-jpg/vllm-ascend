@@ -1,0 +1,44 @@
+diff --git a/csrc/attention/sparse_flash_attention/op_kernel/arch22/sparse_flash_attention_service_vector_mla.h b/csrc/attention/sparse_flash_attention/op_kernel/arch22/sparse_flash_attention_service_vector_mla.h
+index 4d1d30f..42264bd 100644
+--- a/csrc/attention/sparse_flash_attention/op_kernel/arch22/sparse_flash_attention_service_vector_mla.h
++++ b/csrc/attention/sparse_flash_attention/op_kernel/arch22/sparse_flash_attention_service_vector_mla.h
+@@ -1046,22 +1046,34 @@ __aicore__ inline void SFAVectorService<SFAT>::MergeKv(const RunInfo &runInfo)
+         SetFlag<AscendC::HardEvent::MTE3_V>(0);
+         WaitFlag<AscendC::HardEvent::MTE3_V>(0);
+         WaitFlag<AscendC::HardEvent::MTE3_MTE2>(mergeMte3Idx & 1);
+-        Duplicate(kvMergUb_, static_cast<KV_T>(0.0), constInfo.headDim);
++        // Reuse one merge buffer to fill a padded tail in contiguous chunks.
++        // The preceding MTE3_V wait releases both ping-pong buffers before
++        // vector writes; the existing events also protect the next gather.
++        constexpr int64_t ZERO_FILL_ROWS = ConstInfo::BUFFER_SIZE_BYTE_32K / (512 * sizeof(KV_T));
++        int64_t paddedRows = s2GmLimit - s2GmStartOffset - mte2Size;
++        int64_t zeroRows = paddedRows < ZERO_FILL_ROWS ? paddedRows : ZERO_FILL_ROWS;
++        Duplicate(kvMergUb_, static_cast<KV_T>(0.0), zeroRows * constInfo.headDim);
+         SetFlag<AscendC::HardEvent::V_MTE3>(0);
+         WaitFlag<AscendC::HardEvent::V_MTE3>(0);
+ 
+         DataCopyExtParams dataCopyParams;
+         dataCopyParams.blockCount = 1;
+-        dataCopyParams.blockLen = constInfo.headDim * sizeof(KV_T);
+         dataCopyParams.srcStride = 0;
+         dataCopyParams.dstStride = 0;
+-        for (int64_t s2GmOffset = s2GmStartOffset + mte2Size; s2GmOffset < s2GmLimit; s2GmOffset++) {
++        for (int64_t s2GmOffset = s2GmStartOffset + mte2Size; s2GmOffset < s2GmLimit;
++             s2GmOffset += ZERO_FILL_ROWS) {
++            int64_t remainingRows = s2GmLimit - s2GmOffset;
++            int64_t copyRows = remainingRows < ZERO_FILL_ROWS ? remainingRows : ZERO_FILL_ROWS;
++            dataCopyParams.blockLen = copyRows * constInfo.headDim * sizeof(KV_T);
+             DataCopyPad(kvMergeGm_[runInfo.loop % MERGE_CACHE_GM_BUF_NUM * 512 * 576 + s2GmOffset * constInfo.headDim],
+                         kvMergUb_, dataCopyParams);
+         }
+         if (constInfo.headDimRope > 0) {
+-            dataCopyParams.blockLen = constInfo.headDimRope * sizeof(KV_T);
+-            for (int64_t s2GmOffset = s2GmStartOffset + mte2Size; s2GmOffset < s2GmLimit; s2GmOffset++) {
++            for (int64_t s2GmOffset = s2GmStartOffset + mte2Size; s2GmOffset < s2GmLimit;
++                 s2GmOffset += ZERO_FILL_ROWS) {
++                int64_t remainingRows = s2GmLimit - s2GmOffset;
++                int64_t copyRows = remainingRows < ZERO_FILL_ROWS ? remainingRows : ZERO_FILL_ROWS;
++                dataCopyParams.blockLen = copyRows * constInfo.headDimRope * sizeof(KV_T);
+                 DataCopyPad(kvMergeGm_[runInfo.loop % MERGE_CACHE_GM_BUF_NUM * 512 * 576 + 512 * constInfo.headDim +
+                                        s2GmOffset * constInfo.headDimRope],
+                             kvMergUb_, dataCopyParams);

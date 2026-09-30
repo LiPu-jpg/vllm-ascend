@@ -1,0 +1,396 @@
+CMake Warning (author) at /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/ExternalProject/shared_internal_commands.cmake:1277 (message):
+  The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+  not set.  The policy's OLD behavior will be used.  When using a URL
+  download, the timestamps of extracted files should preferably be that of
+  the time of extraction, otherwise code that depends on the extracted
+  contents might not be rebuilt if the URL changes.  The OLD behavior
+  preserves the timestamps from the archive instead, but this is usually not
+  what you want.  Update your project to the NEW behavior or specify the
+  DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+  robustness issue.
+Call Stack (most recent call first):
+  /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/ExternalProject.cmake:3283 (_ep_add_download_command)
+  cmake/third_party/abseil-cpp.cmake:46 (ExternalProject_Add)
+  CMakeLists.txt:129 (include)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning (author) at /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/ExternalProject/shared_internal_commands.cmake:1277 (message):
+  The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+  not set.  The policy's OLD behavior will be used.  When using a URL
+  download, the timestamps of extracted files should preferably be that of
+  the time of extraction, otherwise code that depends on the extracted
+  contents might not be rebuilt if the URL changes.  The OLD behavior
+  preserves the timestamps from the archive instead, but this is usually not
+  what you want.  Update your project to the NEW behavior or specify the
+  DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+  robustness issue.
+Call Stack (most recent call first):
+  /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/ExternalProject.cmake:3283 (_ep_add_download_command)
+  cmake/third_party/ascend_protobuf.cmake:87 (ExternalProject_Add)
+  CMakeLists.txt:130 (include)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning (author) at /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/FetchContent.cmake:1386 (message):
+  The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+  not set.  The policy's OLD behavior will be used.  When using a URL
+  download, the timestamps of extracted files should preferably be that of
+  the time of extraction, otherwise code that depends on the extracted
+  contents might not be rebuilt if the URL changes.  The OLD behavior
+  preserves the timestamps from the archive instead, but this is usually not
+  what you want.  Update your project to the NEW behavior or specify the
+  DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+  robustness issue.
+Call Stack (most recent call first):
+  cmake/third_party/makeself-fetch.cmake:20 (FetchContent_Declare)
+  CMakeLists.txt:132 (include)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+/mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/cmake/scripts/util/ascendc_impl_build.py:212: SyntaxWarning: invalid escape sequence '\d'
+  ascendc_api_version = re.findall(r"#define ASCENDC_API_VERSION (\d+)", ascendc_api_version_file.read())
+[2026-09-30 18:39:01] [2026-09-30 18:39:01] Info: use CMake generator Ninja
+[2026-09-30 18:39:01] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/gen_bisheng_dir /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc
+[2026-09-30 18:39:01] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc
+[2026-09-30 18:39:01] [2026-09-30 18:39:01] Info: cmake config generator=-G Ninja -DBUILD_OPEN_PROJECT=ON -DASCEND_OP_NAME=sparse_flash_attention -DCANN_3RD_LIB_PATH=/mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/third_party -DCUSTOM_ASCEND_CANN_PACKAGE_PATH=/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0 -DCHECK_COMPATIBLE=true -DENABLE_CCACHE=ON -DCUSTOM_CCACHE=/usr/local/bin/ccache -DASCEND_COMPUTE_UNIT=ascend910b; -DENABLE_HOST_TILING=ON build_cache=/mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build_cache .
+[2026-09-30 18:39:01] -- The C compiler identification is GNU 13.1.0
+[2026-09-30 18:39:01] -- The CXX compiler identification is GNU 13.1.0
+[2026-09-30 18:39:01] -- Detecting C compiler ABI info
+[2026-09-30 18:39:01] -- Detecting C compiler ABI info - done
+[2026-09-30 18:39:01] -- Check for working C compiler: /usr/bin/gcc-13 - skipped
+[2026-09-30 18:39:01] -- Detecting C compile features
+[2026-09-30 18:39:01] -- Detecting C compile features - done
+[2026-09-30 18:39:01] -- Detecting CXX compiler ABI info
+[2026-09-30 18:39:02] -- Detecting CXX compiler ABI info - done
+[2026-09-30 18:39:02] -- Check for working CXX compiler: /usr/bin/g++-13 - skipped
+[2026-09-30 18:39:02] -- Detecting CXX compile features
+[2026-09-30 18:39:02] -- Detecting CXX compile features - done
+[2026-09-30 18:39:02] -- compile project with library
+[2026-09-30 18:39:02] -- Found Python3: /mnt/workspace/mhc-validation-20260930/venv/bin/python3.12 (found version "3.12.14") found components: Interpreter
+[2026-09-30 18:39:02] -- ASCEND_CANN_PACKAGE_PATH=/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0
+[2026-09-30 18:39:02] -- ENABLE_CCACHE=ON, CUSTOM_CCACHE=/usr/local/bin/ccache
+[2026-09-30 18:39:02] -- CCACHE_PROGRAM=/usr/local/bin/ccache
+[2026-09-30 18:39:02] -- ASCEND_COMPUTE_UNIT=ascend910b;
+[2026-09-30 18:39:02] -- ASCEND_OP_NAME=sparse_flash_attention
+[2026-09-30 18:39:02] -- TILING_KEY=
+[2026-09-30 18:39:02] -- TESTS_UT_OPS_TEST=
+[2026-09-30 18:39:02] -- TESTS_EXAMPLE_OPS_TEST=
+[2026-09-30 18:39:02] -- CMAKE_BUILD_TYPE=Release
+[2026-09-30 18:39:02] -- VERSION=
+[2026-09-30 18:39:08] -- Could NOT find json (missing: JSON_INCLUDE) 
+[2026-09-30 18:39:08] -- Start building custom package.
+[2026-09-30 18:39:08] -- Search libs under install path /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0
+[2026-09-30 18:39:08] -- CMAKE_MODULE_PATH            :/mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/cmake/modules
+[2026-09-30 18:39:08] -- compile option:   -Wall -Wextra -Wshadow -Wformat=2 -fno-common -fPIC -Wformat-signedness -Wno-missing-include-dirs -Wno-write-strings
+[2026-09-30 18:39:08] -- Found dlog: /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/pkg_inc/base
+[2026-09-30 18:39:08] -- Transformer Variables in dlog module:
+[2026-09-30 18:39:08] -- dlog_TRANSFORMER_INCLUDE_DIR="/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/pkg_inc/base"
+[2026-09-30 18:39:08] -- dlog_SHARED_LIBRARY="/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/lib64/libascendalog.so"
+[2026-09-30 18:39:08] -- 
+[2026-09-30 18:39:08]  Properties for TARGET dlog:
+[2026-09-30 18:39:08]    dlog.INTERFACE_COMPILE_DEFINITIONS = "LOG_CPP;PROCESS_LOG"
+[2026-09-30 18:39:08]    dlog.INTERFACE_LINK_LIBRARIES = "dlog_headers"
+[2026-09-30 18:39:08]    dlog.IMPORTED_LOCATION = "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/lib64/libascendalog.so"
+[2026-09-30 18:39:08] 
+[2026-09-30 18:39:08] -- 
+[2026-09-30 18:39:08]  Properties for TARGET dlog_headers:
+[2026-09-30 18:39:08]    dlog_headers.INTERFACE_INCLUDE_DIRECTORIES = "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/pkg_inc/base"
+[2026-09-30 18:39:08] 
+[2026-09-30 18:39:08] -- Found securec: /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/include
+[2026-09-30 18:39:08] -- Found OPBASE: /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/include
+[2026-09-30 18:39:08] -- Found OPABSE include:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include
+[2026-09-30 18:39:08] -- Found OPABSE lib:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/lib64/libops_base.so
+[2026-09-30 18:39:08] -- Found platform: /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/include
+[2026-09-30 18:39:08] -- Found platform include:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include
+[2026-09-30 18:39:08] -- Found register library:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/lib64/libregister.so
+[2026-09-30 18:39:08] -- Found opp_registry library:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/lib64/libopp_registry.so
+[2026-09-30 18:39:08] -- Found exe_graph library:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/lib64/libexe_graph.so
+[2026-09-30 18:39:08] -- Found graph_base library:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/lib64/libgraph_base.so
+[2026-09-30 18:39:08] -- Found error_manager library:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/lib64/liberror_manager.so
+[2026-09-30 18:39:08] -- Found metadef library:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/lib64/libmetadef.so
+[2026-09-30 18:39:08] -- Found rt2_registry library:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/lib64/librt2_registry.a
+[2026-09-30 18:39:08] -- Found metadef: /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/include
+[2026-09-30 18:39:08] -- Found source metadef include dir:  /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/exe_graph
+[2026-09-30 18:39:08] -- Found graph library:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/lib64/libgraph.so
+[2026-09-30 18:39:08] -- Found source acl include dir:  /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include
+[2026-09-30 18:39:08] -- Found source npuruntime include dir: /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/pkg_inc/runtime
+[2026-09-30 18:39:08] -- Found aclnn include dir:  /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include
+[2026-09-30 18:39:08] -- Found opdev include dir:  /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/aclnn
+[2026-09-30 18:39:08] -- Found tilingapi include:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include
+[2026-09-30 18:39:08] -- TILINGAPI_INC_DIRS: /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/ascendc;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/ascendc/include;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/ascendc/include/highlevel_api;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/ascendc/include/highlevel_api/lib;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/ascendc/include/highlevel_api/impl;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/ascendc/include/highlevel_api/tiling
+[2026-09-30 18:39:08] -- Found tilingapi lib:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/lib64/libtiling_api.a
+[2026-09-30 18:39:08] -- Using AICPU include dirs: /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/aicpu;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/experiment;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/experiment/cce;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/experiment/msprof;/mnt/workspace/mhc-validation-20260930/CMake Warning (author) at /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/ExternalProject/shared_internal_commands.cmake:1277 (message):
+  The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+  not set.  The policy's OLD behavior will be used.  When using a URL
+  download, the timestamps of extracted files should preferably be that of
+  the time of extraction, otherwise code that depends on the extracted
+  contents might not be rebuilt if the URL changes.  The OLD behavior
+  preserves the timestamps from the archive instead, but this is usually not
+  what you want.  Update your project to the NEW behavior or specify the
+  DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+  robustness issue.
+Call Stack (most recent call first):
+  /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/ExternalProject.cmake:3283 (_ep_add_download_command)
+  cmake/third_party/abseil-cpp.cmake:46 (ExternalProject_Add)
+  CMakeLists.txt:129 (include)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Warning (author) at /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/ExternalProject/shared_internal_commands.cmake:1277 (message):
+  The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+  not set.  The policy's OLD behavior will be used.  When using a URL
+  download, the timestamps of extracted files should preferably be that of
+  the time of extraction, otherwise code that depends on the extracted
+  contents might not be rebuilt if the URL changes.  The OLD behavior
+  preserves the timestamps from the archive instead, but this is usually not
+  what you want.  Update your project to the NEW behavior or specify the
+  DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+  robustness issue.
+Call Stack (most recent call first):
+  /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/ExternalProject.cmake:3283 (_ep_add_download_command)
+  cmake/third_party/ascend_protobuf.cmake:87 (ExternalProject_Add)
+  CMakeLists.txt:130 (include)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+Ascend/cann-9.1.0/aarch64-linux/pkg_inc;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/pkg_inc/aicpu;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/pkg_inc/aicpu_common/context;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/pkg_inc/aicpu_common/context/common;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/pkg_inc/aicpu_common/context/cpu_proto;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/pkg_inc/aicpu_common/context/utils;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/aicpu_common/context;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/aicpu_common/context/common;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/aicpu_common/context/cpu_proto;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/experiment/datagw/aicpu/common;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/aicpu_common/context/utils
+[2026-09-30 18:39:08] -- Could NOT find abseil-cpp (missing: ABSL_SOURCE_DIR) 
+[2026-09-30 18:39:08] -- [ThirdPartyLib][abseil-cpp] https://gitcode.com/cann-src-third-party/abseil-cpp/releases/download/20230802.1/abseil-cpp-20230802.1.tar.gz not found, need download.
+[2026-09-30 18:39:08] -- Could NOT find ascend_protobuf_build_transformer (missing: ASCEND_PROTOBUF_SHARED_INCLUDE) 
+[2026-09-30 18:39:08] -- [ThirdPartyLib][ascend protobuf] ascend protobuf shared not found, finding binary file.
+[2026-09-30 18:39:08] -- [ThirdPartyLib][ascend protobuf] https://gitcode.com/cann-src-third-party/protobuf/releases/download/v25.1/protobuf-25.1.tar.gz not found, need download.
+[2026-09-30 18:39:08] -- Found alog: /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/include
+[2026-09-30 18:39:08] -- Variables in alog module:
+[2026-09-30 18:39:08] -- alog_a_INCLUDE_DIR="/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/include"
+[2026-09-30 18:39:08] -- slog_a_SHARED_LIBRARY="/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/lib64/libascendalog.so"
+[2026-09-30 18:39:08] -- alog_a_SHARED_LIBRARY="/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/lib64/libascendalog.so"
+[2026-09-30 18:39:08] -- 
+[2026-09-30 18:39:08]  Properties for TARGET slog_a:
+[2026-09-30 18:39:08]    slog_a.INTERFACE_COMPILE_DEFINITIONS = "LOG_CPP;PROCESS_LOG"
+[2026-09-30 18:39:08]    slog_a.INTERFACE_LINK_LIBRARIES = "alog_headers"
+[2026-09-30 18:39:08]    slog_a.IMPORTED_LOCATION = "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/lib64/libascendalog.so"
+[2026-09-30 18:39:08] 
+[2026-09-30 18:39:08] -- 
+[2026-09-30 18:39:08]  Properties for TARGET alog_a:
+[2026-09-30 18:39:08]    alog_a.INTERFACE_COMPILE_DEFINITIONS = "LOG_CPP;PROCESS_LOG"
+[2026-09-30 18:39:08]    alog_a.INTERFACE_LINK_LIBRARIES = "alog_headers"
+[2026-09-30 18:39:08]    alog_a.IMPORTED_LOCATION = "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/lib64/libascendalog.so"
+[2026-09-30 18:39:08] 
+[2026-09-30 18:39:08] -- 
+[2026-09-30 18:39:08]  Properties for TARGET alog_headers:
+[2026-09-30 18:39:08]    alog_headers.INTERFACE_INCLUDE_DIRECTORIES = "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/include;/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/include/base"
+[2026-09-30 18:39:08] 
+[2026-09-30 18:39:08] -- Could NOT find unified_dlog (missing: _INCLUDE_ROOT_DIR) 
+[2026-09-30 18:39:08] -- Detected architecture: ARM64
+[2026-09-30 18:39:08] -- End building custom package.
+[2026-09-30 18:39:08] -- create aclnn master header file: /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/aclnn_ops_transformer_custom.h
+[2026-09-30 18:39:08] -- no operator info to generate
+[2026-09-30 18:39:08] -- Configuring done (7.4s)
+[2026-09-30 18:39:09] -- Generating done (0.1s)
+[2026-09-30 18:39:09] -- Build files have been written to: /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build
+[2026-09-30 18:39:09] [0/2] Re-checking globbed directories...
+[2026-09-30 18:39:09] [1/37] Creating directories for 'third_party_json'
+[2026-09-30 18:39:09] [2/37] Performing download step (download and verify) for 'third_party_json'
+[2026-09-30 18:39:09] -- Downloading...
+[2026-09-30 18:39:09]    dst='/mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/third_party/pkg/include.zip'
+[2026-09-30 18:39:09]    timeout='none'
+[2026-09-30 18:39:09]    inactivity timeout='none'
+[2026-09-30 18:39:09] -- Using src='https://gitcode.com/cann-src-third-party/json/releases/download/v3.11.3/include.zip'
+[2026-09-30 18:39:09] -- [download 5% complete]
+[2026-09-30 18:39:09] -- [download 11% complete]
+[2026-09-30 18:39:09] -- [download 16% complete]
+[2026-09-30 18:39:09] -- [download 22% complete]
+[2026-09-30 18:39:09] -- [download 27% complete]
+[2026-09-30 18:39:09] -- [download 32% complete]
+[2026-09-30 18:39:09] -- [download 38% complete]
+[2026-09-30 18:39:09] -- [download 43% complete]
+[2026-09-30 18:39:09] -- [download 49% complete]
+[2026-09-30 18:39:09] -- [download 54% complete]
+[2026-09-30 18:39:09] -- [download 60% complete]
+[2026-09-30 18:39:09] -- [download 65% complete]
+[2026-09-30 18:39:09] -- [download 71% complete]
+[2026-09-30 18:39:09] -- [download 76% complete]
+[2026-09-30 18:39:09] -- [download 82% complete]
+[2026-09-30 18:39:09] -- [download 87% complete]
+[2026-09-30 18:39:09] -- [download 93% complete]
+[2026-09-30 18:39:09] -- [download 100% complete]
+[2026-09-30 18:39:09] -- Downloading... done
+[2026-09-30 18:39:09] [3/37] No update step for 'third_party_json'
+[2026-09-30 18:39:09] [4/37] No patch step for 'third_party_json'
+[2026-09-30 18:39:09] [5/37] No configure step for 'third_party_json'
+[2026-09-30 18:39:09] [6/37] No build step for 'third_party_json'
+[2026-09-30 18:39:09] [7/37] Performing install step for 'third_party_json'
+[2026-09-30 18:39:09] [8/37] Completed 'third_party_json'
+[2026-09-30 18:39:09] [9/37] Generating op_host_aclnn_stub.cpp
+[2026-09-30 18:39:09] [10/37] Generating op_host_aclnn_exc_stub.cpp
+[2026-09-30 18:39:12] [11/37] Building CXX object CMakeFiles/op_host_aclnnInner.dir/attention/sparse_flash_attention/op_host/sparse_flash_attention_def.cpp.o
+[2026-09-30 18:39:12] [12/37] Building CXX object common/stub/op_tiling/CMakeFiles/optiling.dir/op_cache_tiling.cpp.o
+[2026-09-30 18:39:15] [13/37] Building CXX object common/stub/op_tiling/CMakeFiles/optiling.dir/tbe_tiling_api.cpp.o
+[2026-09-30 18:39:15] [14/37] Building CXX object CMakeFiles/op_host_aclnn.dir/op_host_aclnn_stub.cpp.o
+[2026-09-30 18:39:15] [15/37] Linking CXX shared library libop_host_aclnnInner.so
+[2026-09-30 18:39:15] [16/37] Building CXX object CMakeFiles/op_host_aclnnExc.dir/op_host_aclnn_exc_stub.cpp.o
+[2026-09-30 18:39:15] [17/37] Generating binary/ascend910b/src/ascendc/common
+[2026-09-30 18:39:16] [18/37] Building CXX object common/stub/op_tiling/CMakeFiles/optiling.dir/runtime_kb_api.cpp.o
+[2026-09-30 18:39:18] [19/37] Building CXX object common/CMakeFiles/common_transformer_obj.dir/src/fallback_comm.cpp.o
+[2026-09-30 18:39:19] [20/37] Building CXX object common/CMakeFiles/common_transformer_obj.dir/src/fallback_comm_2stages.cpp.o
+[2026-09-30 18:39:19] [21/37] Linking CXX shared library liboptiling.so
+[2026-09-30 18:39:20] [22/37] Building CXX object common/CMakeFiles/common_transformer_obj.dir/src/tiling_base/tiling_util.cpp.o
+[2026-09-30 18:39:20] [23/37] Linking CXX shared library libop_host_aclnn.so
+[2026-09-30 18:39:20] [24/37] Linking CXX shared library libop_host_aclnnExc.so
+[2026-09-30 18:39:20] [25/37] Generating autogen/inner/aclnnInner_sparse_flash_attention.cpp
+[2026-09-30 18:39:21] [26/37] Generating binary/ascend910b/src/common/attention_common_ascend910b_src_copy.done
+[2026-09-30 18:39:21] [27/37] Generating autogen/aic-ascend910b-ops-info.json
+[2026-09-30 18:39:21] 
+[2026-09-30 18:39:21] 
+[2026-09-30 18:39:21] ==============check valid for ops info start==============
+[2026-09-30 18:39:21] ==============check valid for ops info end================
+[2026-09-30 18:39:21] 
+[2026-09-30 18:39:21] 
+[2026-09-30 18:39:21] Compile op info cfg successfully.
+[2026-09-30 18:39:21] [28/37] Generating binary/ascend910b/src/sparse_flash_attention/sparse_flash_attention_ascend910b_src_copy.done
+[2026-09-30 18:39:21] [29/37] Generating binary/ascend910b/src/sparse_flash_attention/SparseFlashAttention.py
+[2026-09-30 18:39:21] [30/37] Generating binary/ascend910b/bin/sparse_flash_attention
+[2026-09-30 18:39:29] [31/37] Building CXX object attention/sparse_flash_attention/op_host/CMakeFiles/ophost_transformer_tiling_obj.dir/sparse_flash_attention_tiling.cpp.o
+[2026-09-30 18:39:29] In file included from /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/common/include/err/ops_err.h:19,
+[2026-09-30 18:39:29]                  from /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:21:
+[2026-09-30 18:39:29] /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/op_common/log/log.h:45:9: warning: redundant redeclaration of ‘int32_t CheckLogLevel(int32_t, int32_t)’ in same scope [-Wredundant-decls]
+[2026-09-30 18:39:29]    45 | int32_t CheckLogLevel(int32_t moduleId, int32_t logLevel);
+[2026-09-30 18:39:29]       |         ^~~~~~~~~~~~~
+[2026-09-30 18:39:29] In file included from <command-line>:
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/common/include/cann_compat.h:24:9: note: previous declaration of ‘int32_t CheckLogLevel(int32_t, int32_t)’
+[2026-09-30 18:39:29]    24 | int32_t CheckLogLevel(int32_t moduleId, int32_t logLevel);
+[2026-09-30 18:39:29]       |         ^~~~~~~~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/op_common/log/log.h:46:6: warning: redundant redeclaration of ‘void DlogRecord(int32_t, int32_t, const char*, ...)’ in same scope [-Wredundant-decls]
+[2026-09-30 18:39:29]    46 | void DlogRecord(int32_t moduleId, int32_t level, const char* fmt, ...);
+[2026-09-30 18:39:29]       |      ^~~~~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/common/include/cann_compat.h:25:6: note: previous declaration of ‘void DlogRecord(int32_t, int32_t, const char*, ...)’
+[2026-09-30 18:39:29]    25 | void DlogRecord(int32_t moduleId, int32_t level, const char *fmt, ...);
+[2026-09-30 18:39:29]       |      ^~~~~~~~~~
+[2026-09-30 18:39:29] In file included from /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:24:
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.h:384:7: warning: ‘class optiling::SFATilingCheck’ has virtual functions and accessible non-virtual destructor [-Wnon-virtual-dtor]
+[2026-09-30 18:39:29]   384 | class SFATilingCheck {
+[2026-09-30 18:39:29]       |       ^~~~~~~~~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp: In member function ‘void optiling::SFAMlaTiling::GenTilingKey()’:
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:252:14: warning: unused variable ‘inputQType’ [-Wunused-variable]
+[2026-09-30 18:39:29]   252 |     uint32_t inputQType = static_cast<uint32_t>(sfaInfo_->inputQType);
+[2026-09-30 18:39:29]       |              ^~~~~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:253:14: warning: unused variable ‘inputKvType’ [-Wunused-variable]
+[2026-09-30 18:39:29]   253 |     uint32_t inputKvType = static_cast<uint32_t>(sfaInfo_->inputKvType);
+[2026-09-30 18:39:29]       |              ^~~~~~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:254:14: warning: unused variable ‘outputType’ [-Wunused-variable]
+[2026-09-30 18:39:29]   254 |     uint32_t outputType = static_cast<uint32_t>(sfaInfo_->outputType);
+[2026-09-30 18:39:29]       |              ^~~~~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp: In member function ‘ge::graphStatus optiling::SFATilingCheck::CheckSingleParaSparseBlockSize() const’:
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:747:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 6 has type ‘long int’ [-Wformat=]
+[2026-09-30 18:39:29]   747 |         OP_LOGE(opName_, "when soc version is Ascend950, sparse_block_size only support 1, but now is %d.",
+[2026-09-30 18:39:29]   748 |         *opParamInfo_.sparseBlockSize), return ge::GRAPH_FAILED);
+[2026-09-30 18:39:29]       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2026-09-30 18:39:29]       |         |
+[2026-09-30 18:39:29]       |         long int
+[2026-09-30 18:39:29] /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/op_common/log/log.h:1130:13: note: in definition of macro ‘OP_CHECK_IF’
+[2026-09-30 18:39:29]  1130 |             log;                                 \
+[2026-09-30 18:39:29]       |             ^~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:747:9: note: in expansion of macro ‘OP_LOGE’
+[2026-09-30 18:39:29]   747 |         OP_LOGE(opName_, "when soc version is Ascend950, sparse_block_size only support 1, but now is %d.",
+[2026-09-30 18:39:29]       |         ^~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp: In member function ‘ge::graphStatus optiling::SFATilingCheck::CheckFeatureMlaNoquantPa() const’:
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1419:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 6 has type ‘long int’ [-Wformat=]
+[2026-09-30 18:39:29]  1419 |         OP_LOGE(opName_, "when page attention is enabled, block_size(%d) should be in range (0, %u].",
+[2026-09-30 18:39:29]  1420 |         blockSize_, MAX_BLOCK_SIZE), return ge::GRAPH_FAILED);
+[2026-09-30 18:39:29]       |         ~~~~~~~~~~        
+[2026-09-30 18:39:29]       |         |
+[2026-09-30 18:39:29]       |         long int
+[2026-09-30 18:39:29] /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/op_common/log/log.h:1130:13: note: in definition of macro ‘OP_CHECK_IF’
+[2026-09-30 18:39:29]  1130 |             log;                                 \
+[2026-09-30 18:39:29]       |             ^~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1419:9: note: in expansion of macro ‘OP_LOGE’
+[2026-09-30 18:39:29]  1419 |         OP_LOGE(opName_, "when page attention is enabled, block_size(%d) should be in range (0, %u].",
+[2026-09-30 18:39:29]       |         ^~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1423:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 6 has type ‘long int’ [-Wformat=]
+[2026-09-30 18:39:29]  1423 |         OP_LOGE(opName_, "when page attention is enabled, block_size(%d) should be 16-aligned.",
+[2026-09-30 18:39:29]  1424 |         blockSize_), return ge::GRAPH_FAILED);
+[2026-09-30 18:39:29]       |         ~~~~~~~~~~        
+[2026-09-30 18:39:29]       |         |
+[2026-09-30 18:39:29]       |         long int
+[2026-09-30 18:39:29] /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/op_common/log/log.h:1130:13: note: in definition of macro ‘OP_CHECK_IF’
+[2026-09-30 18:39:29]  1130 |             log;                                 \
+[2026-09-30 18:39:29]       |             ^~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1423:9: note: in expansion of macro ‘OP_LOGE’
+[2026-09-30 18:39:29]  1423 |         OP_LOGE(opName_, "when page attention is enabled, block_size(%d) should be 16-aligned.",
+[2026-09-30 18:39:29]       |         ^~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1427:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 6 has type ‘long int’ [-Wformat=]
+[2026-09-30 18:39:29]  1427 |         OP_LOGE(opName_, "when page attention is enabled, block_size(%d) must be divided by sparse_block_size(%d), but now the remainder is %d.",
+[2026-09-30 18:39:29]  1428 |         blockSize_, sparseBlockSize_, blockSize_ % sparseBlockSize_), return ge::GRAPH_FAILED);
+[2026-09-30 18:39:29]       |         ~~~~~~~~~~        
+[2026-09-30 18:39:29]       |         |
+[2026-09-30 18:39:29]       |         long int
+[2026-09-30 18:39:29] /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/op_common/log/log.h:1130:13: note: in definition of macro ‘OP_CHECK_IF’
+[2026-09-30 18:39:29]  1130 |             log;                                 \
+[2026-09-30 18:39:29]       |             ^~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1427:9: note: in expansion of macro ‘OP_LOGE’
+[2026-09-30 18:39:29]  1427 |         OP_LOGE(opName_, "when page attention is enabled, block_size(%d) must be divided by sparse_block_size(%d), but now the remainder is %d.",
+[2026-09-30 18:39:29]       |         ^~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1427:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 7 has type ‘long int’ [-Wformat=]
+[2026-09-30 18:39:29]  1427 |         OP_LOGE(opName_, "when page attention is enabled, block_size(%d) must be divided by sparse_block_size(%d), but now the remainder is %d.",
+[2026-09-30 18:39:29]  1428 |         blockSize_, sparseBlockSize_, blockSize_ % sparseBlockSize_), return ge::GRAPH_FAILED);
+[2026-09-30 18:39:29]       |                     ~~~~~~~~~~~~~~~~
+[2026-09-30 18:39:29]       |                     |
+[2026-09-30 18:39:29]       |                     long int
+[2026-09-30 18:39:29] /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/op_common/log/log.h:1130:13: note: in definition of macro ‘OP_CHECK_IF’
+[2026-09-30 18:39:29]  1130 |             log;                                 \
+[2026-09-30 18:39:29]       |             ^~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1427:9: note: in expansion of macro ‘OP_LOGE’
+[2026-09-30 18:39:29]  1427 |         OP_LOGE(opName_, "when page attention is enabled, block_size(%d) must be divided by sparse_block_size(%d), but now the remainder is %d.",
+[2026-09-30 18:39:29]       |         ^~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1427:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘long int’ [-Wformat=]
+[2026-09-30 18:39:29]  1427 |         OP_LOGE(opName_, "when page attention is enabled, block_size(%d) must be divided by sparse_block_size(%d), but now the remainder is %d.",
+[2026-09-30 18:39:29]  1428 |         blockSize_, sparseBlockSize_, blockSize_ % sparseBlockSize_), return ge::GRAPH_FAILED);
+[2026-09-30 18:39:29]       |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2026-09-30 18:39:29]       |                                                  |
+[2026-09-30 18:39:29]       |                                                  long int
+[2026-09-30 18:39:29] /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/op_common/log/log.h:1130:13: note: in definition of macro ‘OP_CHECK_IF’
+[2026-09-30 18:39:29]  1130 |             log;                                 \
+[2026-09-30 18:39:29]       |             ^~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1427:9: note: in expansion of macro ‘OP_LOGE’
+[2026-09-30 18:39:29]  1427 |         OP_LOGE(opName_, "when page attention is enabled, block_size(%d) must be divided by sparse_block_size(%d), but now the remainder is %d.",
+[2026-09-30 18:39:29]       |         ^~~~~~~
+[2026-09-30 18:39:29] In file included from /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/include/op_common/log/log.h:24:
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp: In member function ‘ge::graphStatus optiling::SFAInfoParser::GetKvLayout()’:
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1824:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 6 has type ‘uint32_t’ {aka ‘unsigned int’} [-Wformat=]
+[2026-09-30 18:39:29]  1824 |         OP_LOGE(opName_, "When layoutKV is PA_BSND, kvDimNum must be 4, but now is %d.", keyDimNum);
+[2026-09-30 18:39:29]       |                                                                                          ~~~~~~~~~
+[2026-09-30 18:39:29]       |                                                                                          |
+[2026-09-30 18:39:29]       |                                                                                          uint32_t {aka unsigned int}
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1824:9: note: in expansion of macro ‘OP_LOGE’
+[2026-09-30 18:39:29]  1824 |         OP_LOGE(opName_, "When layoutKV is PA_BSND, kvDimNum must be 4, but now is %d.", keyDimNum);
+[2026-09-30 18:39:29]       |         ^~~~~~~
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp: In member function ‘ge::graphStatus optiling::SFAInfoParser::GetMaxBlockNumPerBatch()’:
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1849:26: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 7 has type ‘long unsigned int’ [-Wformat=]
+[2026-09-30 18:39:29]  1849 |         OP_LOGE(opName_, "the dim num of block_table is %u, it should be %u.", dimNum, DIM_NUM_TWO);
+[2026-09-30 18:39:29]       |                                                                                        ~~~~~~~~~~~
+[2026-09-30 18:39:29]       |                                                                                        |
+[2026-09-30 18:39:29]       |                                                                                        long unsigned int
+[2026-09-30 18:39:29] /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp:1849:9: note: in expansion of macro ‘OP_LOGE’
+[2026-09-30 18:39:29]  1849 |         OP_LOGE(opName_, "the dim num of block_table is %u, it should be %u.", dimNum, DIM_NUM_TWO);
+[2026-09-30 18:39:29]       |         ^~~~~~~
+[2026-09-30 18:39:30] [32/37] Linking CXX shared library libcust_opmaster_rt2.0.so
+[2026-09-30 18:39:30] [33/37] Generating compat/liboptiling.so
+[2026-09-30 18:49:24] [34/37] cd /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/gen && /mnt/workspace/mhc-validation-20260930/venv/bin/python3.12 /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/scripts/build_cache.py run --cache-root /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build_cache --domain custom_operator --unit sparse_flash_attention --output-dir /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/cache_actions/sparse_flash_attention/stages/SparseFlashAttention-1 --environment-profile ascendc --publish-dir /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/bin/sparse_flash_attention --publish-state-dir /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/cache_actions/sparse_flash_attention/publish_state --soc ascend910b --operator sparse_flash_attention --action SparseFlashAttention-1 --operator-source /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention --repo-root /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc --prepared-input /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/src/sparse_flash_attention --prepared-input /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/src/common --prepared-input /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/src/ascendc/common --prepared-input /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/common/include/cann_compat.h --recipe-file /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/gen/SparseFlashAttention-sparse_flash_attention-1.sh --normalize-path /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc --normalize-path /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build --normalize-path /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0 --set-env HI_PYTHON=python3 --set-env TILINGKEY_PAR_COMPILE=1 --set-env BIN_FILENAME_HASHED=1 --set-env ASCEND_CUSTOM_OPP_PATH=/mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/custom -- bash /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/gen/SparseFlashAttention-sparse_flash_attention-1.sh /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/src/sparse_flash_attention/SparseFlashAttention.py /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/cache_actions/sparse_flash_attention/stages/SparseFlashAttention-1
+[2026-09-30 18:49:24] [build-cache] MISS domain=custom_operator unit=sparse_flash_attention key=c687e567a1b1add7a05b8f2c50a3a4323728ada5891a712bbf910a9a97fba91d
+[2026-09-30 18:49:24] [ascend910b] Generating SparseFlashAttention_2e25ad8fefac1f04c03bd78f2d2ab366 ...
+[2026-09-30 18:49:24] [INFO] RUNTIME(1304422,python3):2026-09-30-18:39:35.944.991 [task_fail_callback_data_manager.cc:93] 1304422 TaskFailCallBackManager: Constructor.
+[2026-09-30 18:49:24] [INFO] RUNTIME(1304422,python3):2026-09-30-18:39:35.945.027 [xpu_task_fail_callback_data_manager.cc:59] 1304422 XpuTaskFailCallBackManager: XpuTaskFailCallBackManager Constructor.
+[2026-09-30 18:49:24] Opc tool start working now, please wait for a moment.
+[2026-09-30 18:49:24] [INFO] RUNTIME(1304422,python3):2026-09-30-18:49:23.504.531 [xpu_task_fail_callback_data_manager.cc:64] 1304422 ~XpuTaskFailCallBackManager: XpuTaskFailCallBackManager Destructor.
+[2026-09-30 18:49:24] [INFO] RUNTIME(1304422,python3):2026-09-30-18:49:23.504.565 [task_fail_callback_data_manager.cc:98] 1304422 ~TaskFailCallBackManager: Destructor.
+[2026-09-30 18:49:24] [INFO] ATRACE(1304422,python3):2026-09-30-18:49:23.793.095 [stacktrace_signal.c:199](tid:1304422) unregister all signal handlers, can not capture signal.
+[2026-09-30 18:49:24] [ascend910b] Generating SparseFlashAttention_2e25ad8fefac1f04c03bd78f2d2ab366 Done
+[2026-09-30 18:49:24] [build-cache] SAVED domain=custom_operator unit=sparse_flash_attention key=c687e567a1b1add7a05b8f2c50a3a4323728ada5891a712bbf910a9a97fba91d artifacts=2 build_seconds=593.556
+[2026-09-30 18:49:25] [35/37] cd /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/gen && /mnt/workspace/mhc-validation-20260930/venv/bin/python3.12 /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/scripts/build_cache.py run --cache-root /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build_cache --domain custom_operator --unit sparse_flash_attention --output-dir /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/cache_actions/sparse_flash_attention/stages/SparseFlashAttention-0 --environment-profile ascendc --publish-dir /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/bin/sparse_flash_attention --publish-state-dir /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/cache_actions/sparse_flash_attention/publish_state --soc ascend910b --operator sparse_flash_attention --action SparseFlashAttention-0 --operator-source /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/attention/sparse_flash_attention --repo-root /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc --prepared-input /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/src/sparse_flash_attention --prepared-input /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/src/common --prepared-input /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/src/ascendc/common --prepared-input /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/common/include/cann_compat.h --recipe-file /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/gen/SparseFlashAttention-sparse_flash_attention-0.sh --normalize-path /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc --normalize-path /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build --normalize-path /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0 --set-env HI_PYTHON=python3 --set-env TILINGKEY_PAR_COMPILE=1 --set-env BIN_FILENAME_HASHED=1 --set-env ASCEND_CUSTOM_OPP_PATH=/mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/custom -- bash /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/gen/SparseFlashAttention-sparse_flash_attention-0.sh /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/src/sparse_flash_attention/SparseFlashAttention.py /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/cache_actions/sparse_flash_attention/stages/SparseFlashAttention-0
+[2026-09-30 18:49:25] [build-cache] MISS domain=custom_operator unit=sparse_flash_attention key=f7629bba445a5a2906e372a584996521eee1ac3d45ba485734effb8edea6662b
+[2026-09-30 18:49:25] [ascend910b] Generating SparseFlashAttention_04d19c29334449b1853b913ad67aa9d4 ...
+[2026-09-30 18:49:25] [INFO] RUNTIME(1304416,python3):2026-09-30-18:39:36.074.581 [task_fail_callback_data_manager.cc:93] 1304416 TaskFailCallBackManager: Constructor.
+[2026-09-30 18:49:25] [INFO] RUNTIME(1304416,python3):2026-09-30-18:39:36.074.621 [xpu_task_fail_callback_data_manager.cc:59] 1304416 XpuTaskFailCallBackManager: XpuTaskFailCallBackManager Constructor.
+[2026-09-30 18:49:25] Opc tool start working now, please wait for a moment.
+[2026-09-30 18:49:25] [INFO] RUNTIME(1304416,python3):2026-09-30-18:49:25.650.663 [xpu_task_fail_callback_data_manager.cc:64] 1304416 ~XpuTaskFailCallBackManager: XpuTaskFailCallBackManager Destructor.
+[2026-09-30 18:49:25] [INFO] RUNTIME(1304416,python3):2026-09-30-18:49:25.650.699 [task_fail_callback_data_manager.cc:98] 1304416 ~TaskFailCallBackManager: Destructor.
+[2026-09-30 18:49:25] [INFO] ATRACE(1304416,python3):2026-09-30-18:49:25.800.504 [stacktrace_signal.c:199](tid:1304416) unregister all signal handlers, can not capture signal.
+[2026-09-30 18:49:25] [ascend910b] Generating SparseFlashAttention_04d19c29334449b1853b913ad67aa9d4 Done
+[2026-09-30 18:49:25] [build-cache] SAVED domain=custom_operator unit=sparse_flash_attention key=f7629bba445a5a2906e372a584996521eee1ac3d45ba485734effb8edea6662b artifacts=2 build_seconds=595.414
+[2026-09-30 18:49:26] [36/37] cd /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build && /mnt/workspace/mhc-validation-20260930/venv/bin/python3.12 /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/cmake/scripts/util/ascendc_ops_config.py -p /mnt/workspace/sfa-nonempty-perf-20260930/candidate-a2/csrc/build/binary/ascend910b/bin -s ascend910b

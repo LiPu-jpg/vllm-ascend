@@ -1,0 +1,64 @@
+{
+  "python_version": "3.12.14 (main, Sep 24 2026, 17:56:52) [Clang 22.1.3 ]",
+  "python_executable": "/mnt/workspace/mhc-validation-20260930/venv/bin/python",
+  "torch": "2.10.0+cpu",
+  "torch_npu": "2.10.0.post4",
+  "platform": "Linux-5.10.0-182.0.0.95.r2673_211.hce2.aarch64-aarch64-with-glibc2.31",
+  "machine": "aarch64",
+  "device": "Ascend910B3 physical3 / 64GiB HBM",
+  "driver": "25.5.0",
+  "cann": "9.1.0",
+  "omp_num_threads": 1,
+  "build_commands": [
+    "bash build.sh --opkernel --soc=ascend910b --ops=sparse_flash_attention -j2"
+  ],
+  "cmake_flags": {
+    "candidate/csrc/build/CMakeCache.txt": [
+      "CMAKE_BUILD_TYPE:STRING=Release",
+      "CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13",
+      "CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG",
+      "CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13",
+      "CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG"
+    ],
+    "candidate/csrc/build/prepare_build/CMakeCache.txt": [
+      "CMAKE_BUILD_TYPE:STRING=--version",
+      "CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13",
+      "CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG",
+      "CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13",
+      "CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG"
+    ],
+    "candidate/csrc/build/prepare_build/_deps/makeself-subbuild/CMakeCache.txt": [],
+    "candidate-a2/csrc/build/CMakeCache.txt": [
+      "CMAKE_BUILD_TYPE:STRING=Release",
+      "CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13",
+      "CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG",
+      "CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13",
+      "CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG"
+    ],
+    "candidate-a2/csrc/build/prepare_build/CMakeCache.txt": [
+      "CMAKE_BUILD_TYPE:STRING=--version",
+      "CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13",
+      "CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG",
+      "CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13",
+      "CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG"
+    ],
+    "candidate-a2/csrc/build/prepare_build/_deps/makeself-subbuild/CMakeCache.txt": []
+  },
+  "baseline_sfa_dispatch_ast_sha256": "a3f2d2a835e71ff30755839b9ec74bc3e8f6240451fe2bbdb32cfac6abbee177",
+  "clock_power_control": "not fixed; independent interleaved processes and all observed ranges retained",
+  "binary_traces": "retained in isolated remote workspace; not published here",
+  "baseline_build_cache_flags": [
+    "CMAKE_BUILD_TYPE:STRING=Release",
+    "CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13",
+    "CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG",
+    "CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13",
+    "CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG"
+  ],
+  "baseline_build_cache_source": "/mnt/workspace/mhc-validation-20260930/vllm-ascend/csrc/build/CMakeCache.txt",
+  "project_test_and_public_benchmark_exact_copies": {
+    "benchmarks/ops/benchmark_sparse_flash_attention_kv_padding.py": "1644d3f88f0fdcd73c40d307a0cf7ed8f33927f23f3300a306e50cce41c79320",
+    "tests/e2e/nightly/single_node/ops/singlecard_ops/test_sparse_flash_attention_kv_padding.py": "0a7e6ecab81eed39b5a4da4416d545860f20d013af14320555abf8d48236cfdb"
+  },
+  "canonical_dispatch_method_sha256": "dfb72cf9af0207ba44701b253b86c557978216ae322d68dd2e3830f2404820e5",
+  "final_code_commit": "5e51218dc3285dab1d58684d4804eb680fa51510"
+}

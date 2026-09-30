@@ -1,0 +1,4354 @@
+{
+  "label": "baseline-a2",
+  "cases_sha256": "561c24574b5e8cfbcdf15c732600e2dc47c8fb154ec8a69dd91a666f313044e1",
+  "device": "Ascend910B3",
+  "torch_version": "2.10.0+cpu",
+  "torch_npu_version": "2.10.0.post4",
+  "complete": true,
+  "rows": [
+    {
+      "index": 0,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "0e48b3a2894f661d6d3b7f4624c737f62449ff44ee05db455b19151367d37926",
+      "graph_device_us": [
+        31.289849281311035,
+        31.23967409133911,
+        31.27922534942627,
+        31.240899562835693,
+        31.298949718475342
+      ],
+      "eager_batch_wall_us": [
+        130.05148,
+        124.66344,
+        122.0398,
+        121.853,
+        127.85824000000001
+      ]
+    },
+    {
+      "index": 1,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "2b1fde1f999696a9845eeaeb3f898fac2ebc32ba0a86aecb872bc688ddbbbc20",
+      "graph_device_us": [
+        36.559574604034424,
+        36.60947561264038,
+        36.57829999923706,
+        36.65497541427612,
+        36.58415079116821
+      ],
+      "eager_batch_wall_us": [
+        123.4198,
+        122.9066,
+        139.49996,
+        138.64992,
+        122.75664
+      ]
+    },
+    {
+      "index": 2,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              257
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "ebdbee6e9297be49ac7e8d6fe4cfe5122a8876e099f253030e54208386e49981",
+      "graph_device_us": [
+        40.58219909667969,
+        40.58279991149902,
+        40.59854984283447,
+        40.548176765441895,
+        40.635976791381836
+      ],
+      "eager_batch_wall_us": [
+        205.10808,
+        122.94224,
+        153.86488,
+        151.79524,
+        151.30644
+      ]
+    },
+    {
+      "index": 3,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "2687764e3479f84a31dec90398026740772a73481cd53a0e883de20ec60d444a",
+      "graph_device_us": [
+        40.773749351501465,
+        40.815348625183105,
+        40.78229904174805,
+        40.807576179504395,
+        40.78710079193115
+      ],
+      "eager_batch_wall_us": [
+        158.34452,
+        152.29204,
+        152.78683999999998,
+        151.92924000000002,
+        133.36948
+      ]
+    },
+    {
+      "index": 4,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "fbe4f57efcf253b68317d7f4c15bff83a0ff242c992c427dc870250ca8a86792",
+      "graph_device_us": [
+        50.23712635040283,
+        50.25832653045654,
+        50.286197662353516,
+        50.238375663757324,
+        50.24600028991699
+      ],
+      "eager_batch_wall_us": [
+        139.97835999999998,
+        134.90432,
+        136.21112,
+        135.42948,
+        135.44031999999999
+      ]
+    },
+    {
+      "index": 5,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "26c1357659fdd83debb164a90f3454200d61f5057fad12dab6274173c77fef2a",
+      "graph_device_us": [
+        59.50940132141113,
+        59.62472438812256,
+        59.47390079498291,
+        59.555301666259766,
+        59.51749801635742
+      ],
+      "eager_batch_wall_us": [
+        146.5784,
+        135.33828,
+        135.85712,
+        134.94791999999998,
+        125.83344
+      ]
+    },
+    {
+      "index": 6,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "44822160a8be0125372b8169da9fb3e4d0a74bbe609df44483aa660aeb3d69c6",
+      "graph_device_us": [
+        36.36927604675293,
+        36.353325843811035,
+        36.37577533721924,
+        36.38042449951172,
+        36.407926082611084
+      ],
+      "eager_batch_wall_us": [
+        131.34908,
+        122.96464,
+        122.32620000000001,
+        126.76943999999999,
+        126.21184
+      ]
+    },
+    {
+      "index": 7,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "644b8b374e04bed9d120a99a0413c99224ab0feadf68a41490f398993961cdfb",
+      "graph_device_us": [
+        40.780701637268066,
+        40.798726081848145,
+        42.23289966583252,
+        40.82537651062012,
+        40.78977584838867
+      ],
+      "eager_batch_wall_us": [
+        130.91508,
+        125.28023999999999,
+        122.54979999999999,
+        124.77224,
+        123.2414
+      ]
+    },
+    {
+      "index": 8,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              257
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "aa73c28445675cd8098368bfa4f3c463150cc79bc04c1672f4a9c0569fdb1268",
+      "graph_device_us": [
+        44.68164920806885,
+        44.64059829711914,
+        44.71374988555908,
+        44.66859817504883,
+        44.69032287597656
+      ],
+      "eager_batch_wall_us": [
+        133.58032,
+        126.93384,
+        124.68780000000001,
+        126.73780000000001,
+        124.92584000000001
+      ]
+    },
+    {
+      "index": 9,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "fa386fc01c428974ed3385ecf6b4a7c5318132089289994acad9602f32d20e89",
+      "graph_device_us": [
+        44.83729839324951,
+        44.86754894256592,
+        44.87492561340332,
+        44.89672660827637,
+        44.8109245300293
+      ],
+      "eager_batch_wall_us": [
+        137.22232,
+        125.661,
+        126.28623999999999,
+        124.06984,
+        126.98984
+      ]
+    },
+    {
+      "index": 10,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "ae14fa0d64bcbc9f1419abc457cb2d988599d41bb96edb66ee38a95634461511",
+      "graph_device_us": [
+        58.74847412109375,
+        58.75052452087402,
+        58.81575107574463,
+        58.66000175476074,
+        58.67030143737793
+      ],
+      "eager_batch_wall_us": [
+        168.0286,
+        154.37924,
+        151.74284,
+        154.57084,
+        153.47888
+      ]
+    },
+    {
+      "index": 11,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "f2b137d955dfc9327abd14393e554eee1726b6354c67dd7ff20108cf4b3a0aef",
+      "graph_device_us": [
+        66.14462375640869,
+        66.13782405853271,
+        66.13717555999756,
+        66.15812301635742,
+        66.13564968109131
+      ],
+      "eager_batch_wall_us": [
+        158.86972,
+        154.26764,
+        151.90764,
+        153.55368,
+        152.14964
+      ]
+    },
+    {
+      "index": 12,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "af47806d277fb378bebc98473916bd11cb6461c568fcda71c18eef0073edcca5",
+      "graph_device_us": [
+        31.944150924682617,
+        31.930549144744873,
+        31.950349807739258,
+        31.923201084136963,
+        31.94387435913086
+      ],
+      "eager_batch_wall_us": [
+        156.57448,
+        150.71804,
+        150.39604,
+        126.96943999999999,
+        124.64144
+      ]
+    },
+    {
+      "index": 13,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "95db1aeca641fc805b2cae45f778cdea83adb020bcdfcecfb12fad06353fdc5e",
+      "graph_device_us": [
+        37.05544948577881,
+        37.095749378204346,
+        37.06345081329346,
+        37.052550315856934,
+        37.05427408218384
+      ],
+      "eager_batch_wall_us": [
+        128.22504,
+        125.28984,
+        124.43544,
+        125.89904,
+        135.76432
+      ]
+    },
+    {
+      "index": 14,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              257
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "00ba6763050f2b618103b5497ef9ecb19280b783740c58f2a2f707a137f3a4bc",
+      "graph_device_us": [
+        41.08654975891113,
+        41.05677604675293,
+        41.07402324676514,
+        41.03829860687256,
+        41.053500175476074
+      ],
+      "eager_batch_wall_us": [
+        145.0964,
+        128.83424000000002,
+        131.49828,
+        132.01228,
+        132.11108000000002
+      ]
+    },
+    {
+      "index": 15,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "443efe4fc1611e1a2c0c5157f27a9bd4d66bc965c7cb51befba04d86557f49c6",
+      "graph_device_us": [
+        40.82892417907715,
+        40.90322494506836,
+        40.821051597595215,
+        40.89405059814453,
+        40.85062503814697
+      ],
+      "eager_batch_wall_us": [
+        136.02872,
+        127.95984,
+        126.16064,
+        128.99264,
+        128.93788
+      ]
+    },
+    {
+      "index": 16,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "6bcf59708cef707a1026918457f29742a2264cf63c6c0363c03e704cc02beb4a",
+      "graph_device_us": [
+        51.02367401123047,
+        51.03097438812256,
+        51.04782581329346,
+        51.00647449493408,
+        51.04837417602539
+      ],
+      "eager_batch_wall_us": [
+        131.19064,
+        147.1852,
+        121.30860000000001,
+        124.7558,
+        125.5058
+      ]
+    },
+    {
+      "index": 17,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "6c5f0975b14c622ea2a9bcbc79efdc0bfde699207ff5affdf47dad71f3c5d441",
+      "graph_device_us": [
+        60.70892333984375,
+        60.70847511291504,
+        60.75884819030762,
+        60.713701248168945,
+        60.735697746276855
+      ],
+      "eager_batch_wall_us": [
+        129.21504000000002,
+        126.14824,
+        127.10784,
+        125.26664000000001,
+        123.44064
+      ]
+    },
+    {
+      "index": 18,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "00333317e5d969d2a9326e098c12eae9ffd8794c6de46066f037586d316d530f",
+      "graph_device_us": [
+        37.06549882888794,
+        37.028748989105225,
+        37.06207513809204,
+        37.04699993133545,
+        37.07324981689453
+      ],
+      "eager_batch_wall_us": [
+        130.66428,
+        124.73144,
+        123.691,
+        118.3514,
+        118.6998
+      ]
+    },
+    {
+      "index": 19,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "223e685b24992e3016c7055bf692517f2180a432e96185600f06e5e80b57ee23",
+      "graph_device_us": [
+        40.974202156066895,
+        41.01977348327637,
+        40.961852073669434,
+        41.01900100708008,
+        40.965824127197266
+      ],
+      "eager_batch_wall_us": [
+        124.62544,
+        118.40456,
+        122.5078,
+        122.2782,
+        123.0394
+      ]
+    },
+    {
+      "index": 20,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              257
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "1ff957beeef89b1d2f8429596edeea48e485abd57943da966b1934f61b857bec",
+      "graph_device_us": [
+        44.88032341003418,
+        44.844350814819336,
+        44.88197326660156,
+        44.85915184020996,
+        44.86147403717041
+      ],
+      "eager_batch_wall_us": [
+        132.02468000000002,
+        122.60379999999999,
+        124.51024,
+        122.91704,
+        124.66864
+      ]
+    },
+    {
+      "index": 21,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "2adbeaa9e32e42e71c255234a7ac917fb2b530425d0df1b97949f7aed8acbc79",
+      "graph_device_us": [
+        45.02534866333008,
+        45.06939888000488,
+        45.049424171447754,
+        45.08514881134033,
+        45.10007381439209
+      ],
+      "eager_batch_wall_us": [
+        131.49948,
+        121.79780000000001,
+        123.81620000000001,
+        122.6522,
+        124.0238
+      ]
+    },
+    {
+      "index": 22,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "b69a1e390e7768142c73fe1db76e212fafa6a0ae9fc0516c4800289a6a89d474",
+      "graph_device_us": [
+        59.65195178985596,
+        59.75087642669678,
+        59.742698669433594,
+        59.611148834228516,
+        59.69217300415039
+      ],
+      "eager_batch_wall_us": [
+        143.9884,
+        132.01508,
+        168.52536,
+        135.96312,
+        131.47464
+      ]
+    },
+    {
+      "index": 23,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512,
+              512
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "9c3cb5dec894f321c5c76f8f20912b824e3c67344910e3141b21f18e562fe3cc",
+      "graph_device_us": [
+        67.963547706604,
+        68.75367641448975,
+        67.96889781951904,
+        67.95162677764893,
+        67.89417266845703
+      ],
+      "eager_batch_wall_us": [
+        137.87232,
+        130.65348,
+        131.14148,
+        130.91984,
+        125.41344
+      ]
+    },
+    {
+      "index": 24,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              511
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "b093dad21bc2324f28d83b82b5a71a7389d8f5b52bb27ae5668c4fefd83c21ab",
+      "graph_device_us": [
+        40.67117691040039,
+        40.65502643585205,
+        40.710201263427734,
+        40.661349296569824,
+        40.704026222229004
+      ],
+      "eager_batch_wall_us": [
+        127.04504000000001,
+        122.09100000000001,
+        122.3986,
+        130.65228,
+        122.78739999999999
+      ]
+    },
+    {
+      "index": 25,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "8e6ecbd1dfd33c72160f73451a377975fda92aed1a2c0dab74bd4f1d1afe8b2d",
+      "graph_device_us": [
+        53.62232685089111,
+        53.62709999084473,
+        53.594627380371094,
+        53.63632678985596,
+        53.560776710510254
+      ],
+      "eager_batch_wall_us": [
+        132.34748,
+        123.3858,
+        132.55868,
+        125.81904,
+        127.96024
+      ]
+    },
+    {
+      "index": 26,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "b67103844997db480c23bdb569862458ccc734aa9dcd98b1896477cad73b76af",
+      "graph_device_us": [
+        58.7568998336792,
+        58.727149963378906,
+        58.77687454223633,
+        58.73034954071045,
+        58.80209922790527
+      ],
+      "eager_batch_wall_us": [
+        135.69552,
+        128.30224,
+        126.19384,
+        138.35312,
+        134.93872
+      ]
+    },
+    {
+      "index": 27,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              513
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "27b11c38b53bb03b4c7f4a1cf56d34f62ab07db3edca0690430ae4a3e051ea32",
+      "graph_device_us": [
+        61.515774726867676,
+        61.60297393798828,
+        61.55680179595947,
+        61.62832736968994,
+        61.588873863220215
+      ],
+      "eager_batch_wall_us": [
+        138.24272000000002,
+        127.52944,
+        126.87504000000001,
+        126.45584000000001,
+        150.32524
+      ]
+    },
+    {
+      "index": 28,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              2048
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "b9c69614768bade65f525ae3ee2c6e7b6bd60c1bd38dd1e60b6e1813180590c2",
+      "graph_device_us": [
+        83.44207763671875,
+        83.41272354125977,
+        83.41560363769531,
+        83.41620445251465,
+        83.40412139892578
+      ],
+      "eager_batch_wall_us": [
+        162.24492,
+        157.83128,
+        136.61628000000002,
+        130.01188,
+        135.23472
+      ]
+    },
+    {
+      "index": 29,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "31effaaaa0bba1527fefe7a38983fd320ef3f9a9dac4bb69fac7a7652575ed53",
+      "graph_device_us": [
+        105.1941967010498,
+        104.59569931030273,
+        104.56825256347656,
+        104.64944839477539,
+        104.57112312316895
+      ],
+      "eager_batch_wall_us": [
+        135.27632,
+        123.3218,
+        125.94544,
+        131.40268,
+        128.32424
+      ]
+    },
+    {
+      "index": 30,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "e20ba63e861ecb7d0759fa780bef0dd1e90e85036d37d6c89ad2be98cce6b901",
+      "graph_device_us": [
+        152.56897926330566,
+        152.56107330322266,
+        152.5777530670166,
+        152.56030082702637,
+        152.58509635925293
+      ],
+      "eager_batch_wall_us": [
+        181.48868,
+        168.93580000000003,
+        169.67700000000002,
+        168.80856,
+        167.89416
+      ]
+    },
+    {
+      "index": 31,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              511
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "357162696459f5fecc864a9a1ef60f5eb5d251285aa8c718aeac4ff66f5db7f7",
+      "graph_device_us": [
+        45.123348236083984,
+        45.183725357055664,
+        45.10542392730713,
+        45.177974700927734,
+        45.1255989074707
+      ],
+      "eager_batch_wall_us": [
+        170.59856,
+        164.84455999999997,
+        162.36212,
+        158.76128,
+        160.02252000000001
+      ]
+    },
+    {
+      "index": 32,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "49b99f138255d4b957e5a4177952fd13c0e36b5f077bf93766fa18f163f555a8",
+      "graph_device_us": [
+        62.61634826660156,
+        62.60117530822754,
+        62.62440204620361,
+        62.61845111846924,
+        62.63364791870117
+      ],
+      "eager_batch_wall_us": [
+        174.773,
+        160.89212,
+        131.82708,
+        138.45316,
+        131.83668
+      ]
+    },
+    {
+      "index": 33,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "bf733e98034dd6c16a3285259a2e2c0878a75a193cc16965b17869d1d3fd11eb",
+      "graph_device_us": [
+        66.36505126953125,
+        66.41115188598633,
+        66.7891263961792,
+        66.40692710876465,
+        66.38514995574951
+      ],
+      "eager_batch_wall_us": [
+        138.41716,
+        128.68184,
+        129.04664,
+        128.12948,
+        129.87588
+      ]
+    },
+    {
+      "index": 34,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              513
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "4dc4b051574282106f81da7b6b65c297ccef15a96054ec215f731ed2a458dfe2",
+      "graph_device_us": [
+        70.801100730896,
+        70.81137657165527,
+        70.84080219268799,
+        70.80837726593018,
+        70.83482265472412
+      ],
+      "eager_batch_wall_us": [
+        133.83108000000001,
+        126.17343999999999,
+        124.29540000000001,
+        123.9438,
+        121.6474
+      ]
+    },
+    {
+      "index": 35,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              2048
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "cb38f8c9d8907bfaf2d95f893d65e20e5f7ec2511752de32610733003d65e7d8",
+      "graph_device_us": [
+        92.48287200927734,
+        92.53254890441895,
+        92.53767967224121,
+        92.54574775695801,
+        92.53424644470215
+      ],
+      "eager_batch_wall_us": [
+        129.91908,
+        122.1126,
+        121.6134,
+        129.48588,
+        124.1138
+      ]
+    },
+    {
+      "index": 36,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "9ba2b3b2c398d2d21b8846cfb24d8902a4fe7785b1a07d15f9fc4205e8fa062d",
+      "graph_device_us": [
+        129.12717819213867,
+        129.08815383911133,
+        129.14727210998535,
+        129.06539916992188,
+        129.11669731140137
+      ],
+      "eager_batch_wall_us": [
+        152.13603999999998,
+        139.37636,
+        139.65036,
+        140.29752,
+        142.31915999999998
+      ]
+    },
+    {
+      "index": 37,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "float16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "75d0b82df7d3393806d42e2a9f2c4dc44f1de3f0309b3b27e4e1e77da17421b8",
+      "graph_device_us": [
+        172.46475219726562,
+        172.53154754638672,
+        172.51590728759766,
+        172.5592803955078,
+        172.46929168701172
+      ],
+      "eager_batch_wall_us": [
+        189.46676,
+        187.05151999999998,
+        184.05552,
+        182.06348000000003,
+        183.47747999999999
+      ]
+    },
+    {
+      "index": 38,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              511
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "16cb61c631e6185a097b033832683f8b74f58a1800a02c19142ec83fabc7d801",
+      "graph_device_us": [
+        41.31202697753906,
+        41.21954917907715,
+        41.32002353668213,
+        41.265573501586914,
+        41.26662731170654
+      ],
+      "eager_batch_wall_us": [
+        130.05668,
+        124.95100000000001,
+        130.35784,
+        122.4258,
+        121.07296000000001
+      ]
+    },
+    {
+      "index": 39,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "d78cab994ca1992a9ff4f9a85c6e906a085692aac08a774074ea2d637cf670dc",
+      "graph_device_us": [
+        52.76247501373291,
+        52.80287265777588,
+        52.7745246887207,
+        52.83497333526611,
+        52.76637554168701
+      ],
+      "eager_batch_wall_us": [
+        129.37784,
+        122.1326,
+        141.57116,
+        137.36152,
+        137.21912
+      ]
+    },
+    {
+      "index": 40,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "5d59e0be80b4378279f9493853c99794fac59b8da3b8727ffc74e37df47418e4",
+      "graph_device_us": [
+        57.01747417449951,
+        56.949501037597656,
+        56.993775367736816,
+        56.97159767150879,
+        56.97997570037842
+      ],
+      "eager_batch_wall_us": [
+        142.6508,
+        134.69548,
+        136.06028,
+        144.35876,
+        134.31668
+      ]
+    },
+    {
+      "index": 41,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              513
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "061acf01eba023a581a6a6f006f77f8e84dba06e4bd8e6caa73eeff76582411d",
+      "graph_device_us": [
+        62.10742473602295,
+        62.117676734924316,
+        62.062973976135254,
+        62.06389904022217,
+        62.0748233795166
+      ],
+      "eager_batch_wall_us": [
+        138.25912,
+        132.90428,
+        130.15424000000002,
+        169.12176,
+        168.19616000000002
+      ]
+    },
+    {
+      "index": 42,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              2048
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "575b3c41a8cc916f5184957f672d74821c5408c38ba166a153355edca3f759b9",
+      "graph_device_us": [
+        84.97414588928223,
+        84.21357154846191,
+        84.24667358398438,
+        84.19770240783691,
+        84.25299644470215
+      ],
+      "eager_batch_wall_us": [
+        174.10060000000001,
+        171.1898,
+        162.24132,
+        130.95708000000002,
+        137.84352
+      ]
+    },
+    {
+      "index": 43,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "d083ca5f45e4cdd57bea1c4a780cba7ee3b7c494d4b91c0480c86ad8cb13da4d",
+      "graph_device_us": [
+        104.77945327758789,
+        104.86310005187988,
+        104.78062629699707,
+        104.76297378540039,
+        104.79697227478027
+      ],
+      "eager_batch_wall_us": [
+        138.84472,
+        133.47747999999999,
+        130.58708000000001,
+        137.10272,
+        134.78548
+      ]
+    },
+    {
+      "index": 44,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 0
+          }
+        ]
+      },
+      "input_sha256": "385bab2343992b9e4618b90e543a7beb2acb68caa1935df4f08c6e32426735b9",
+      "graph_device_us": [
+        153.78520011901855,
+        153.7819004058838,
+        153.79150390625,
+        153.7517261505127,
+        153.78257751464844
+      ],
+      "eager_batch_wall_us": [
+        170.89419999999998,
+        167.49336,
+        169.301,
+        164.75412,
+        168.60376
+      ]
+    },
+    {
+      "index": 45,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              512
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              511
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 512
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "04f2e40b8463e5169b349d30ef0ae44299016d8bbc5b94ac2e68e3264c41a479",
+      "graph_device_us": [
+        45.781474113464355,
+        45.842576026916504,
+        45.791850090026855,
+        45.84592342376709,
+        45.768423080444336
+      ],
+      "eager_batch_wall_us": [
+        132.14988,
+        120.78020000000001,
+        123.15464,
+        123.3698,
+        167.6602
+      ]
+    },
+    {
+      "index": 46,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "07c6bc86634169e09969856be2a4a309928f092ef467ef61b7ac5ff842fe7c9b",
+      "graph_device_us": [
+        64.33007717132568,
+        64.30695056915283,
+        64.33862686157227,
+        64.31509971618652,
+        64.41022396087646
+      ],
+      "eager_batch_wall_us": [
+        128.14784,
+        121.86376,
+        128.35664,
+        132.70428,
+        136.94352
+      ]
+    },
+    {
+      "index": 47,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "773fe057a2a1e8cc1f6881f65b4aaba5ebdd33df5c20cedadbe9cd0c900a1dd5",
+      "graph_device_us": [
+        67.27067470550537,
+        67.25427627563477,
+        67.2401762008667,
+        67.27682590484619,
+        67.25339889526367
+      ],
+      "eager_batch_wall_us": [
+        131.71748,
+        126.57504,
+        124.73020000000001,
+        125.75540000000001,
+        127.52064
+      ]
+    },
+    {
+      "index": 48,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              513
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "a8da59a4dce32f8bd3fec4640fc5a8c02980c481c8035ab81b09bb261896474d",
+      "graph_device_us": [
+        71.06232643127441,
+        71.00617408752441,
+        71.05040073394775,
+        71.04020118713379,
+        71.08837604522705
+      ],
+      "eager_batch_wall_us": [
+        131.31864,
+        125.72144,
+        139.76156,
+        172.3082,
+        168.06696
+      ]
+    },
+    {
+      "index": 49,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              1,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              1
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              2048
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "72fed9c3f154e1f8de40dfb8f1bb0c5e3954a79f2a67dd2e1a4c862205949de7",
+      "graph_device_us": [
+        93.0063533782959,
+        93.0521011352539,
+        93.00865173339844,
+        93.00869941711426,
+        93.01335334777832
+      ],
+      "eager_batch_wall_us": [
+        148.7472,
+        134.83388000000002,
+        133.86152,
+        144.43956,
+        142.42316
+      ]
+    },
+    {
+      "index": 50,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127,
+              127
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "bb7b2b951632c6c6d2bf571960e677fbe1ef4ec39f4711a1b454b2cc71d59f9b",
+      "graph_device_us": [
+        130.63292503356934,
+        130.5952262878418,
+        130.6556510925293,
+        130.60455322265625,
+        130.6065273284912
+      ],
+      "eager_batch_wall_us": [
+        149.50603999999998,
+        140.71392,
+        139.92352,
+        144.23796000000002,
+        140.43672
+      ]
+    },
+    {
+      "index": 51,
+      "case": {
+        "inputs": [
+          {
+            "name": "query",
+            "type": "tensor",
+            "required": true,
+            "dtype": "bfloat16",
+            "shape": [
+              32,
+              64,
+              512
+            ]
+          },
+          {
+            "name": "query_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              32
+            ]
+          },
+          {
+            "name": "kv_lengths",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              4096
+            ]
+          },
+          {
+            "name": "selected_counts",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": [
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048,
+              2048
+            ]
+          },
+          {
+            "name": "kv_capacity",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 4096
+          },
+          {
+            "name": "rope_dim",
+            "type": "attr",
+            "required": true,
+            "dtype": "int",
+            "value": 64
+          }
+        ]
+      },
+      "input_sha256": "eb24f29102f8b511f74f7e6262abb079a1cc6357ded2bad0395fe67c7184732a",
+      "graph_device_us": [
+        173.37369918823242,
+        173.3962059020996,
+        173.3723258972168,
+        173.42252731323242,
+        173.302001953125
+      ],
+      "eager_batch_wall_us": [
+        193.3892,
+        183.23472,
+        185.98432,
+        184.80908,
+        209.55812000000003
+      ]
+    }
+  ]
+}

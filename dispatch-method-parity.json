@@ -1,0 +1,5 @@
+{
+  "current_and_runtime_method_text_identical": true,
+  "sha256": "dfb72cf9af0207ba44701b253b86c557978216ae322d68dd2e3830f2404820e5",
+  "note": "Whole modules differ in unrelated code. AST dump hashes differ across Python 3.9/3.12 and must not be compared across interpreter versions."
+}
