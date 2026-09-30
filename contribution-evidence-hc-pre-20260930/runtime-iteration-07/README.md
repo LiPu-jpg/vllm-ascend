@@ -65,11 +65,19 @@ The aligned model's maximum absolute pre-output difference is 2.98023224e-8.
 This is limited normal-coefficient diagnostic evidence on the verified 910B3
 baseline, not certification of special values or other architectures. The
 diagnostic alignment threshold does not change any nightly accuracy threshold.
-Full saved-output sensitivity analysis is prepared but has not completed. Its
-first invocation stopped during PyTorch backend auto-loading because libhccl.so
-was not on the CPU process's library path. The retained CPU-only controller uses
-TORCH_DEVICE_BACKEND_AUTOLOAD=0 and has not started because a foreign SFA test
-was active. That CPU-only analysis is not full plugin integration verification.
+Full saved-output sensitivity analysis is now complete with clean foreign-job
+guards. All 56 original input hashes and saved tensor hashes were checked, and
+the original CPU expected tensors were reproduced byte for byte before changing
+conversion models. The original 10-bit truncation reference still passes only
+16/28 cases per arm; 11-bit truncation passes 27/28, and both 11-bit nearest
+models pass 28/28 with the same output thresholds. The independent midpoint
+diagnostic distinguishes nearest-away from nearest-even. All original failed
+cases and their errors remain in the raw data. This is CPU sensitivity of saved
+NPU outputs, not a new NPU run, timing result, or validation of a different
+candidate. Its first invocation stopped during PyTorch backend auto-loading
+because libhccl.so was not on the CPU process library path; the completed
+CPU-only controller uses TORCH_DEVICE_BACKEND_AUTOLOAD=0. Complete production
+NPU diagnostics and integration coverage above use the real plugin separately.
 
 The SDK mapping archive contains paths, hashes and line ranges only. Licensed
 SDK source excerpts remain private and are not redistributed here. The mapping

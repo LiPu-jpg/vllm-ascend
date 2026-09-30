@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "path": "controller-saved-cpu-v1.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "controller-saved-cpu-v1.log",
+      "sha256": "21d4f4257548b5c733863c015aaf6e3082c833eaeadb133b03fb374a22b16728"
+    },
+    {
+      "path": "controller-saved-cpu-v1.pid",
+      "sha256": "4c6a716e7c275d76519248a8de3e3e131be90e1dbf0b728d237658a21bdfd355"
+    },
+    {
+      "path": "foreign-after-saved-cpu-v1.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "foreign-before-saved-cpu-v1.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "saved-benchmark-cpu-hf32-v1/results.json",
+      "sha256": "9557f426766d49ad0d464dfea07fd8e6e794566b4f03efbb62d08af4205fef23"
+    },
+    {
+      "path": "saved-benchmark-cpu-hf32-v1/summary.json",
+      "sha256": "c5f70bcec07ea6d52b99f26967f1865e41321b718eff04e35ff5087dcbc18786"
+    }
+  ],
+  "scope": "CPU sensitivity of original saved tensors, not new NPU execution"
+}

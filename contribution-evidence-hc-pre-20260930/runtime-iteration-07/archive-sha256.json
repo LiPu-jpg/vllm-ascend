@@ -4,7 +4,7 @@
   "files": [
     {
       "path": "README.md",
-      "sha256": "6e2ac884581a43679c3e7264613e2f5a3cbbb262c7d52410c404054040b83012"
+      "sha256": "22cad3f799f5faa89e43f2dd7746b43b28e70295c31e11b370cd4f5384360ebc"
     },
     {
       "path": "analysis-historical-regression-v1.json",
@@ -833,6 +833,38 @@
     {
       "path": "completed-hf32-rounding-text-v1/prefetch-diagnostic-hf32-roundings-baseline/verification.log",
       "sha256": "ee097c05702cc724c5763fe7977f6105bfc569f1a63f17669153d29b9e728909"
+    },
+    {
+      "path": "completed-saved-cpu-text-v1/archive-sha256.json",
+      "sha256": "b97c27adcaf0b2b84f6a12cb28253fb660314ad19e8384eb3e2bcd4207efbaf2"
+    },
+    {
+      "path": "completed-saved-cpu-text-v1/controller-saved-cpu-v1.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "completed-saved-cpu-text-v1/controller-saved-cpu-v1.log",
+      "sha256": "21d4f4257548b5c733863c015aaf6e3082c833eaeadb133b03fb374a22b16728"
+    },
+    {
+      "path": "completed-saved-cpu-text-v1/controller-saved-cpu-v1.pid",
+      "sha256": "4c6a716e7c275d76519248a8de3e3e131be90e1dbf0b728d237658a21bdfd355"
+    },
+    {
+      "path": "completed-saved-cpu-text-v1/foreign-after-saved-cpu-v1.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "completed-saved-cpu-text-v1/foreign-before-saved-cpu-v1.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "completed-saved-cpu-text-v1/saved-benchmark-cpu-hf32-v1/results.json",
+      "sha256": "9557f426766d49ad0d464dfea07fd8e6e794566b4f03efbb62d08af4205fef23"
+    },
+    {
+      "path": "completed-saved-cpu-text-v1/saved-benchmark-cpu-hf32-v1/summary.json",
+      "sha256": "c5f70bcec07ea6d52b99f26967f1865e41321b718eff04e35ff5087dcbc18786"
     },
     {
       "path": "controlled-hf32-bit-findings-v1.json",

@@ -1,0 +1,19 @@
+{
+  "scope": "Independent CPU sensitivity analysis, not NPU revalidation or performance",
+  "driver_sha256": "527f61b318fb5d1247dc8781b4ff407b58d97550ae902a226ae68988e76bb43d",
+  "cases": 56,
+  "counts": {
+    "baseline": {
+      "10-rtz": 16,
+      "11-rtz": 27,
+      "11-nearest-even": 28,
+      "11-nearest-away": 28
+    },
+    "candidate": {
+      "10-rtz": 16,
+      "11-rtz": 27,
+      "11-nearest-even": 28,
+      "11-nearest-away": 28
+    }
+  }
+}
