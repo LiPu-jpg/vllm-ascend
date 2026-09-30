@@ -55,3 +55,12 @@ epsilon placement and precision thresholds must stay unchanged.
 This candidate has not yet been built or tested on NPU. No operator or model
 speedup is established. Preserve known baseline numerical failures alongside
 candidate results.
+
+The A2/A3 nightly CPU reference models HF32 coefficient conversion with 11
+fractional bits and nearest rounding, with midpoint ties away from zero. Six
+single-activation NPU regressions cover positive and negative coefficients,
+even/odd mantissas and exponent carry. These checks distinguish the conversion
+from truncation without changing the operator accuracy thresholds. The A5
+reference retains its existing 10-bit truncation pending hardware validation;
+the A2/A3 midpoint regressions do not certify that separate format. Keep the
+original failing results when revalidating with the corrected reference.

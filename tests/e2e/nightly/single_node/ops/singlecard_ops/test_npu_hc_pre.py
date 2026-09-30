@@ -5,6 +5,7 @@ import torch
 import torch.nn.functional as F
 import torch_npu
 
+from vllm_ascend.device.device_config import is_950
 from vllm_ascend.utils import enable_custom_op
 
 torch_npu.npu.config.allow_internal_format = True
@@ -18,7 +19,8 @@ MIX_HC = 24
 HC_SINKHORN_ITERS = 20
 NORM_EPS = 1e-6
 HC_EPS = 1e-6
-HF32_MANTISSA_BITS = 10
+HF32_MANTISSA_BITS = 11
+A5_HF32_MANTISSA_BITS = 10
 FP32_MANTISSA_BITS = 23
 SMALL_HIDDEN_SIZE = 128
 Y_DIFF_THRESHOLD = 4e-3
@@ -46,9 +48,15 @@ def _make_hc_pre_inputs(shape: tuple[int, ...]):
 
 
 def _to_hf32(tensor: torch.Tensor) -> torch.Tensor:
-    dropped_mantissa_bits = FP32_MANTISSA_BITS - HF32_MANTISSA_BITS
+    # Preserve the existing A5 reference pending hardware validation. A2/A3
+    # SetHF32TransMode(1) rounds to nearest, with midpoint ties away from zero.
+    legacy_a5 = is_950()
+    mantissa_bits = A5_HF32_MANTISSA_BITS if legacy_a5 else HF32_MANTISSA_BITS
+    dropped_mantissa_bits = FP32_MANTISSA_BITS - mantissa_bits
     mantissa_mask = ~((1 << dropped_mantissa_bits) - 1)
     bits = tensor.contiguous().view(torch.int32)
+    if not legacy_a5:
+        bits = bits + (1 << (dropped_mantissa_bits - 1))
     return (bits & mantissa_mask).view(torch.float32)
 
 
@@ -64,7 +72,7 @@ def _hc_pre_cpu(
     x_flat = x_float.flatten(-2)
     inv_rms = torch.rsqrt(x_flat.square().mean(-1, keepdim=True) + NORM_EPS)
 
-    # HcPre performs this matmul in HF32 round-toward-zero mode.
+    # Quantize the inputs to the HF32 format used by the installed kernel.
     mixes = F.linear(_to_hf32(x_flat), _to_hf32(hc_fn)) * inv_rms
     pre, post, comb_frag = mixes.split(
         [HC_MULT, HC_MULT, HC_MULT * HC_MULT],
@@ -365,3 +373,37 @@ def test_npu_hc_pre_graph_reads_updated_external_pre_mix(hidden_size, tokens, si
         for value, reference in zip(inputs, cpu_inputs):
             assert torch.equal(value.cpu(), reference)
         assert torch.equal(pre_mix.cpu(), cpu_pre_mix)
+
+
+@pytest.mark.skipif(is_950(), reason="A5 uses a distinct HF32 format; its reference is unchanged")
+@pytest.mark.parametrize("hidden_size", [HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+@pytest.mark.parametrize("anchor", [1.0, 1.0 + 2**-11, 2.0 - 2**-11])
+def test_npu_hc_pre_hf32_midpoint_rounding(hidden_size: int, anchor: float):
+    # A single nonzero activation isolates coefficient conversion from summation.
+    # Even/odd mantissas and exponent carry distinguish nearest-away from
+    # truncation and nearest-even without adapting a threshold to the result.
+    ulp = 2**-11
+    coefficients = torch.tensor([anchor, anchor + ulp / 2, -anchor, -(anchor + ulp / 2)])
+    rounded = torch.tensor([anchor, anchor + ulp, -anchor, -(anchor + ulp)])
+    x = torch.zeros(1, HC_MULT, hidden_size, dtype=torch.bfloat16)
+    x[0, 0, 0] = 1
+    hc_fn = torch.zeros(MIX_HC, HC_MULT * hidden_size)
+    hc_fn[:HC_MULT, 0] = coefficients
+    inv_rms = torch.rsqrt(x.float().flatten(-2).square().mean(-1) + NORM_EPS)
+    hc_scale = torch.ones(3)
+    hc_base = torch.zeros(MIX_HC)
+    hc_base[:HC_MULT] = torch.tensor([-anchor, -anchor, anchor, anchor]) * inv_rms
+    inputs = tuple(value.npu() for value in (x, hc_fn, hc_scale, hc_base))
+    actual = torch.ops._C_ascend.npu_hc_pre_v3(
+        *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=HC_SINKHORN_ITERS, norm_eps=NORM_EPS, hc_eps=HC_EPS
+    )
+    expected_pre = torch.sigmoid(rounded * inv_rms + hc_base[:HC_MULT]) + HC_EPS
+    assert torch.equal(_to_hf32(coefficients), rounded)
+    for value in actual:
+        assert torch.isfinite(value.cpu()).all()
+    _assert_close_with_pass_rate(
+        actual[3].reshape(-1),
+        expected_pre,
+        diff_threshold=AUX_DIFF_THRESHOLD,
+        required_pass_rate=AUX_REQUIRED_PASS_RATE,
+    )
