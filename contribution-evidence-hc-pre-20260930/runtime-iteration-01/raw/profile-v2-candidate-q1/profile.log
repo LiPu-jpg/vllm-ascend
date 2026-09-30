@@ -1,0 +1,21 @@
+INFO 09-30 14:00:24 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 09-30 14:00:24 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 09-30 14:00:24 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 09-30 14:00:25 [__init__.py:272] Platform plugin ascend is activated
+INFO 09-30 14:00:25 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+[W930 14:00:26.274917064 NPUCachingAllocator.cpp:202] Warning: The current CANN and HDK(driver) versions require processing for 32 padding size, with memory allocation. (function operator())
+[2026-09-30 14:00:27] [INFO] [1044939] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q1/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1044882_20260930140026789_ascend_pt
+|/-[2026-09-30 14:00:30] [ERROR] [1044939] profiler.py: Failed to get acl to npu flow events. For details, please check the logs at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q1/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1044882_20260930140026789_ascend_pt/logs
+\[2026-09-30 14:00:30] [INFO] [1044948] profiler.py: CANN profiling data parsed in a total time of 0:00:03.033977
+|[2026-09-30 14:00:31] [INFO] [1044939] profiler.py: All profiling data parsed in a total time of 0:00:04.349267
+PROFILE_COMPLETE t1-d4096-signed0
+[2026-09-30 14:00:33] [INFO] [1045224] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q1/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1044882_20260930140032746_ascend_pt
+|/-[2026-09-30 14:00:36] [ERROR] [1045224] profiler.py: Failed to get acl to npu flow events. For details, please check the logs at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q1/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1044882_20260930140032746_ascend_pt/logs
+\[2026-09-30 14:00:36] [INFO] [1045233] profiler.py: CANN profiling data parsed in a total time of 0:00:03.032308
+|[2026-09-30 14:00:37] [INFO] [1045224] profiler.py: All profiling data parsed in a total time of 0:00:04.330142
+PROFILE_COMPLETE t128-d4096-signed1
+[2026-09-30 14:00:39] [INFO] [1045538] profiler.py: Start parsing profiling data in sync mode at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q1/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1044882_20260930140038880_ascend_pt
+|/-[2026-09-30 14:00:42] [ERROR] [1045538] profiler.py: Failed to get acl to npu flow events. For details, please check the logs at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q1/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1044882_20260930140038880_ascend_pt/logs
+\[2026-09-30 14:00:42] [INFO] [1045547] profiler.py: CANN profiling data parsed in a total time of 0:00:03.033170
+|[2026-09-30 14:00:43] [INFO] [1045538] profiler.py: All profiling data parsed in a total time of 0:00:04.337360
+PROFILE_COMPLETE t512-d7168-signed0

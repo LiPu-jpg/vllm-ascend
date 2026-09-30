@@ -1,0 +1,1238 @@
+[
+  {
+    "run": "profile-baseline-q0",
+    "case": "t1-d4096-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-baseline-q0/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1040108_20260930134843785_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 28.9605,
+      "min": 25.68,
+      "max": 31.261
+    },
+    "Wait Time(us)": {
+      "median": 2.88,
+      "min": 0.0,
+      "max": 93.749
+    },
+    "aicore_time(us)": {
+      "median": 16.773,
+      "min": 16.31,
+      "max": 18.325
+    },
+    "aiv_time(us)": {
+      "median": 19.9895,
+      "min": 17.069,
+      "max": 21.372
+    },
+    "aiv_vec_time(us)": {
+      "median": 0.208,
+      "min": 0.206,
+      "max": 0.21
+    },
+    "aiv_scalar_time(us)": {
+      "median": 5.474,
+      "min": 5.161,
+      "max": 5.915
+    },
+    "aiv_mte2_time(us)": {
+      "median": 3.0404999999999998,
+      "min": 2.444,
+      "max": 3.447
+    },
+    "aiv_mte3_time(us)": {
+      "median": 0.097,
+      "min": 0.075,
+      "max": 0.166
+    },
+    "db_counts": {
+      "CANN_API": 12,
+      "TASK": 131,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-baseline-q0",
+    "case": "t128-d4096-signed1",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-baseline-q0/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1040108_20260930134849717_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 60.751000000000005,
+      "min": 58.921,
+      "max": 67.901
+    },
+    "Wait Time(us)": {
+      "median": 2.894,
+      "min": 0.0,
+      "max": 100.459
+    },
+    "aicore_time(us)": {
+      "median": 25.267,
+      "min": 24.147,
+      "max": 28.49
+    },
+    "aiv_time(us)": {
+      "median": 50.95,
+      "min": 49.398,
+      "max": 56.437
+    },
+    "aiv_vec_time(us)": {
+      "median": 18.713,
+      "min": 18.698,
+      "max": 18.725
+    },
+    "aiv_scalar_time(us)": {
+      "median": 17.3305,
+      "min": 16.896,
+      "max": 20.527
+    },
+    "aiv_mte2_time(us)": {
+      "median": 8.712499999999999,
+      "min": 8.196,
+      "max": 10.131
+    },
+    "aiv_mte3_time(us)": {
+      "median": 4.532,
+      "min": 4.319,
+      "max": 4.826
+    },
+    "db_counts": {
+      "CANN_API": 12,
+      "TASK": 131,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-baseline-q0",
+    "case": "t512-d7168-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-baseline-q0/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1040108_20260930134855757_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 165.873,
+      "min": 163.563,
+      "max": 172.364
+    },
+    "Wait Time(us)": {
+      "median": 2.8815,
+      "min": 0.0,
+      "max": 106.657
+    },
+    "aicore_time(us)": {
+      "median": 64.3865,
+      "min": 63.22,
+      "max": 69.323
+    },
+    "aiv_time(us)": {
+      "median": 160.20850000000002,
+      "min": 158.138,
+      "max": 166.626
+    },
+    "aiv_vec_time(us)": {
+      "median": 81.113,
+      "min": 81.097,
+      "max": 81.12
+    },
+    "aiv_scalar_time(us)": {
+      "median": 56.059,
+      "min": 55.421,
+      "max": 60.557
+    },
+    "aiv_mte2_time(us)": {
+      "median": 27.215,
+      "min": 26.506,
+      "max": 28.573
+    },
+    "aiv_mte3_time(us)": {
+      "median": 26.2135,
+      "min": 25.823,
+      "max": 27.163
+    },
+    "db_counts": {
+      "CANN_API": 12,
+      "TASK": 131,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-baseline-q1",
+    "case": "t1-d4096-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-baseline-q1/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1038169_20260930134740211_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 28.5705,
+      "min": 26.141,
+      "max": 30.441
+    },
+    "Wait Time(us)": {
+      "median": 2.8099999999999996,
+      "min": 0.0,
+      "max": 89.919
+    },
+    "aicore_time(us)": {
+      "median": 17.837,
+      "min": 16.666,
+      "max": 19.641
+    },
+    "aiv_time(us)": {
+      "median": 20.441499999999998,
+      "min": 18.06,
+      "max": 22.411
+    },
+    "aiv_vec_time(us)": {
+      "median": 0.208,
+      "min": 0.206,
+      "max": 0.209
+    },
+    "aiv_scalar_time(us)": {
+      "median": 5.4355,
+      "min": 4.75,
+      "max": 7.864
+    },
+    "aiv_mte2_time(us)": {
+      "median": 2.8754999999999997,
+      "min": 2.007,
+      "max": 3.266
+    },
+    "aiv_mte3_time(us)": {
+      "median": 0.0985,
+      "min": 0.075,
+      "max": 0.162
+    },
+    "db_counts": {
+      "TASK": 131,
+      "CANN_API": 12,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-baseline-q1",
+    "case": "t128-d4096-signed1",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-baseline-q1/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1038169_20260930134746130_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 62.581999999999994,
+      "min": 61.081,
+      "max": 65.241
+    },
+    "Wait Time(us)": {
+      "median": 2.829,
+      "min": 0.0,
+      "max": 84.939
+    },
+    "aicore_time(us)": {
+      "median": 25.358,
+      "min": 23.731,
+      "max": 27.482
+    },
+    "aiv_time(us)": {
+      "median": 52.173500000000004,
+      "min": 50.874,
+      "max": 54.389
+    },
+    "aiv_vec_time(us)": {
+      "median": 18.713,
+      "min": 18.697,
+      "max": 18.722
+    },
+    "aiv_scalar_time(us)": {
+      "median": 17.299,
+      "min": 16.418,
+      "max": 19.591
+    },
+    "aiv_mte2_time(us)": {
+      "median": 9.5045,
+      "min": 8.238,
+      "max": 10.412
+    },
+    "aiv_mte3_time(us)": {
+      "median": 4.4775,
+      "min": 4.309,
+      "max": 4.805
+    },
+    "db_counts": {
+      "CANN_API": 12,
+      "TASK": 131,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-baseline-q1",
+    "case": "t512-d7168-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-baseline-q1/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1038169_20260930134752212_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 169.3435,
+      "min": 165.003,
+      "max": 171.504
+    },
+    "Wait Time(us)": {
+      "median": 2.8665000000000003,
+      "min": 0.0,
+      "max": 99.596
+    },
+    "aicore_time(us)": {
+      "median": 64.79400000000001,
+      "min": 63.009,
+      "max": 68.562
+    },
+    "aiv_time(us)": {
+      "median": 163.5775,
+      "min": 159.572,
+      "max": 166.589
+    },
+    "aiv_vec_time(us)": {
+      "median": 81.109,
+      "min": 81.098,
+      "max": 81.118
+    },
+    "aiv_scalar_time(us)": {
+      "median": 56.04600000000001,
+      "min": 54.836,
+      "max": 59.93
+    },
+    "aiv_mte2_time(us)": {
+      "median": 29.575000000000003,
+      "min": 27.762,
+      "max": 30.831
+    },
+    "aiv_mte3_time(us)": {
+      "median": 26.331,
+      "min": 25.961,
+      "max": 27.502
+    },
+    "db_counts": {
+      "CANN_API": 12,
+      "TASK": 131,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-candidate-q0",
+    "case": "t1-d4096-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-candidate-q0/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1041119_20260930134916650_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 24.9905,
+      "min": 23.761,
+      "max": 30.481
+    },
+    "Wait Time(us)": {
+      "median": 2.9195,
+      "min": 0.0,
+      "max": 105.169
+    },
+    "aicore_time(us)": {
+      "median": 15.8885,
+      "min": 14.689,
+      "max": 17.093
+    },
+    "aiv_time(us)": {
+      "median": 16.405,
+      "min": 15.175,
+      "max": 20.216
+    },
+    "aiv_vec_time(us)": {
+      "median": 0.204,
+      "min": 0.204,
+      "max": 0.206
+    },
+    "aiv_scalar_time(us)": {
+      "median": 4.879,
+      "min": 4.371,
+      "max": 5.594
+    },
+    "aiv_mte2_time(us)": {
+      "median": 2.4154999999999998,
+      "min": 1.807,
+      "max": 2.78
+    },
+    "aiv_mte3_time(us)": {
+      "median": 0.0915,
+      "min": 0.074,
+      "max": 0.135
+    },
+    "db_counts": {
+      "CANN_API": 12,
+      "TASK": 131,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-candidate-q0",
+    "case": "t128-d4096-signed1",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-candidate-q0/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1041119_20260930134922576_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 62.561,
+      "min": 60.422,
+      "max": 64.201
+    },
+    "Wait Time(us)": {
+      "median": 2.8585000000000003,
+      "min": 0.0,
+      "max": 84.499
+    },
+    "aicore_time(us)": {
+      "median": 23.47,
+      "min": 22.302,
+      "max": 26.194
+    },
+    "aiv_time(us)": {
+      "median": 51.4765,
+      "min": 49.549,
+      "max": 52.757
+    },
+    "aiv_vec_time(us)": {
+      "median": 18.528,
+      "min": 18.499,
+      "max": 18.558
+    },
+    "aiv_scalar_time(us)": {
+      "median": 19.034,
+      "min": 18.546,
+      "max": 21.728
+    },
+    "aiv_mte2_time(us)": {
+      "median": 8.76,
+      "min": 7.29,
+      "max": 9.311
+    },
+    "aiv_mte3_time(us)": {
+      "median": 4.4725,
+      "min": 4.28,
+      "max": 4.62
+    },
+    "db_counts": {
+      "CANN_API": 12,
+      "TASK": 131,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-candidate-q0",
+    "case": "t512-d7168-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-candidate-q0/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1041119_20260930134928625_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 163.9235,
+      "min": 161.303,
+      "max": 166.763
+    },
+    "Wait Time(us)": {
+      "median": 2.797,
+      "min": 0.0,
+      "max": 114.946
+    },
+    "aicore_time(us)": {
+      "median": 63.138,
+      "min": 61.719,
+      "max": 67.069
+    },
+    "aiv_time(us)": {
+      "median": 158.03199999999998,
+      "min": 155.712,
+      "max": 161.833
+    },
+    "aiv_vec_time(us)": {
+      "median": 79.834,
+      "min": 79.825,
+      "max": 79.885
+    },
+    "aiv_scalar_time(us)": {
+      "median": 62.048,
+      "min": 61.28,
+      "max": 66.03
+    },
+    "aiv_mte2_time(us)": {
+      "median": 26.936500000000002,
+      "min": 25.14,
+      "max": 28.427
+    },
+    "aiv_mte3_time(us)": {
+      "median": 26.241999999999997,
+      "min": 25.866,
+      "max": 26.816
+    },
+    "db_counts": {
+      "TASK": 131,
+      "CANN_API": 12,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-candidate-q1",
+    "case": "t1-d4096-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-candidate-q1/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1039137_20260930134812367_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 25.151,
+      "min": 24.06,
+      "max": 29.72
+    },
+    "Wait Time(us)": {
+      "median": 2.88,
+      "min": 0.0,
+      "max": 96.67
+    },
+    "aicore_time(us)": {
+      "median": 15.361,
+      "min": 14.827,
+      "max": 18.15
+    },
+    "aiv_time(us)": {
+      "median": 16.277,
+      "min": 15.217,
+      "max": 19.731
+    },
+    "aiv_vec_time(us)": {
+      "median": 0.204,
+      "min": 0.204,
+      "max": 0.208
+    },
+    "aiv_scalar_time(us)": {
+      "median": 4.727,
+      "min": 4.27,
+      "max": 5.346
+    },
+    "aiv_mte2_time(us)": {
+      "median": 2.4379999999999997,
+      "min": 1.105,
+      "max": 2.776
+    },
+    "aiv_mte3_time(us)": {
+      "median": 0.095,
+      "min": 0.074,
+      "max": 0.249
+    },
+    "db_counts": {
+      "CANN_API": 12,
+      "TASK": 131,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-candidate-q1",
+    "case": "t128-d4096-signed1",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-candidate-q1/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1039137_20260930134818273_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 61.781,
+      "min": 59.862,
+      "max": 66.121
+    },
+    "Wait Time(us)": {
+      "median": 2.818,
+      "min": 0.0,
+      "max": 99.709
+    },
+    "aicore_time(us)": {
+      "median": 23.758,
+      "min": 23.423,
+      "max": 30.375
+    },
+    "aiv_time(us)": {
+      "median": 51.349,
+      "min": 49.963,
+      "max": 56.528
+    },
+    "aiv_vec_time(us)": {
+      "median": 18.517,
+      "min": 18.494,
+      "max": 18.544
+    },
+    "aiv_scalar_time(us)": {
+      "median": 18.3965,
+      "min": 16.95,
+      "max": 24.594
+    },
+    "aiv_mte2_time(us)": {
+      "median": 8.368500000000001,
+      "min": 6.355,
+      "max": 9.671
+    },
+    "aiv_mte3_time(us)": {
+      "median": 4.4079999999999995,
+      "min": 4.276,
+      "max": 4.568
+    },
+    "db_counts": {
+      "CANN_API": 12,
+      "TASK": 131,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-candidate-q1",
+    "case": "t512-d7168-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-candidate-q1/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1039137_20260930134823313_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 165.083,
+      "min": 161.123,
+      "max": 173.044
+    },
+    "Wait Time(us)": {
+      "median": 2.757,
+      "min": 0.0,
+      "max": 127.287
+    },
+    "aicore_time(us)": {
+      "median": 64.479,
+      "min": 62.56,
+      "max": 72.803
+    },
+    "aiv_time(us)": {
+      "median": 159.76999999999998,
+      "min": 155.856,
+      "max": 168.121
+    },
+    "aiv_vec_time(us)": {
+      "median": 79.829,
+      "min": 79.81,
+      "max": 79.872
+    },
+    "aiv_scalar_time(us)": {
+      "median": 61.3545,
+      "min": 59.712,
+      "max": 69.782
+    },
+    "aiv_mte2_time(us)": {
+      "median": 27.4565,
+      "min": 24.175,
+      "max": 28.854
+    },
+    "aiv_mte3_time(us)": {
+      "median": 26.231,
+      "min": 26.001,
+      "max": 26.975
+    },
+    "db_counts": {
+      "CANN_API": 12,
+      "TASK": 131,
+      "STRING_IDS": 53
+    }
+  },
+  {
+    "run": "profile-v2-baseline-q0",
+    "case": "t1-d4096-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-baseline-q0/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1045864_20260930140059090_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 28.441,
+      "min": 24.66,
+      "max": 29.941
+    },
+    "Wait Time(us)": {
+      "median": 2.8040000000000003,
+      "min": 0.0,
+      "max": 5.469
+    },
+    "aicore_time(us)": {
+      "median": 16.143500000000003,
+      "min": 14.743,
+      "max": 17.262
+    },
+    "aiv_time(us)": {
+      "median": 18.863,
+      "min": 16.715,
+      "max": 20.211
+    },
+    "aiv_vec_time(us)": {
+      "median": 0.208,
+      "min": 0.206,
+      "max": 0.209
+    },
+    "aiv_scalar_time(us)": {
+      "median": 4.907,
+      "min": 4.417,
+      "max": 6.012
+    },
+    "aiv_mte2_time(us)": {
+      "median": 2.5815,
+      "min": 1.631,
+      "max": 2.989
+    },
+    "aiv_mte3_time(us)": {
+      "median": 0.0865,
+      "min": 0.075,
+      "max": 0.166
+    },
+    "db_counts": {
+      "CANN_API": 9,
+      "TASK": 130,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  },
+  {
+    "run": "profile-v2-baseline-q0",
+    "case": "t128-d4096-signed1",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-baseline-q0/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1045864_20260930140105007_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 60.341,
+      "min": 58.541,
+      "max": 63.421
+    },
+    "Wait Time(us)": {
+      "median": 2.849,
+      "min": 0.0,
+      "max": 5.529
+    },
+    "aicore_time(us)": {
+      "median": 23.612000000000002,
+      "min": 22.094,
+      "max": 26.428
+    },
+    "aiv_time(us)": {
+      "median": 50.081999999999994,
+      "min": 48.687,
+      "max": 53.483
+    },
+    "aiv_vec_time(us)": {
+      "median": 18.717,
+      "min": 18.698,
+      "max": 18.723
+    },
+    "aiv_scalar_time(us)": {
+      "median": 16.7945,
+      "min": 15.986,
+      "max": 19.843
+    },
+    "aiv_mte2_time(us)": {
+      "median": 8.100999999999999,
+      "min": 7.156,
+      "max": 9.372
+    },
+    "aiv_mte3_time(us)": {
+      "median": 4.3149999999999995,
+      "min": 4.195,
+      "max": 4.749
+    },
+    "db_counts": {
+      "CANN_API": 9,
+      "TASK": 130,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  },
+  {
+    "run": "profile-v2-baseline-q0",
+    "case": "t512-d7168-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-baseline-q0/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1045864_20260930140111058_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 165.3235,
+      "min": 162.783,
+      "max": 170.284
+    },
+    "Wait Time(us)": {
+      "median": 2.807,
+      "min": 0.0,
+      "max": 5.477
+    },
+    "aicore_time(us)": {
+      "median": 64.189,
+      "min": 62.31,
+      "max": 68.297
+    },
+    "aiv_time(us)": {
+      "median": 159.74450000000002,
+      "min": 156.84,
+      "max": 165.247
+    },
+    "aiv_vec_time(us)": {
+      "median": 81.117,
+      "min": 81.099,
+      "max": 81.123
+    },
+    "aiv_scalar_time(us)": {
+      "median": 55.955,
+      "min": 54.696,
+      "max": 60.394
+    },
+    "aiv_mte2_time(us)": {
+      "median": 28.4645,
+      "min": 26.155,
+      "max": 29.444
+    },
+    "aiv_mte3_time(us)": {
+      "median": 27.331,
+      "min": 26.698,
+      "max": 28.44
+    },
+    "db_counts": {
+      "TASK": 130,
+      "CANN_API": 9,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  },
+  {
+    "run": "profile-v2-baseline-q1",
+    "case": "t1-d4096-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-baseline-q1/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1043930_20260930135954613_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 28.091,
+      "min": 25.721,
+      "max": 30.3
+    },
+    "Wait Time(us)": {
+      "median": 2.79,
+      "min": 0.0,
+      "max": 5.91
+    },
+    "aicore_time(us)": {
+      "median": 15.904,
+      "min": 14.788,
+      "max": 18.008
+    },
+    "aiv_time(us)": {
+      "median": 18.8595,
+      "min": 16.789,
+      "max": 21.059
+    },
+    "aiv_vec_time(us)": {
+      "median": 0.208,
+      "min": 0.206,
+      "max": 0.21
+    },
+    "aiv_scalar_time(us)": {
+      "median": 5.0425,
+      "min": 4.453,
+      "max": 6.77
+    },
+    "aiv_mte2_time(us)": {
+      "median": 2.5805,
+      "min": 1.768,
+      "max": 3.071
+    },
+    "aiv_mte3_time(us)": {
+      "median": 0.0875,
+      "min": 0.073,
+      "max": 0.154
+    },
+    "db_counts": {
+      "TASK": 130,
+      "CANN_API": 9,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  },
+  {
+    "run": "profile-v2-baseline-q1",
+    "case": "t128-d4096-signed1",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-baseline-q1/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1043930_20260930140000553_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 59.941,
+      "min": 58.142,
+      "max": 64.322
+    },
+    "Wait Time(us)": {
+      "median": 2.8890000000000002,
+      "min": 0.0,
+      "max": 5.829
+    },
+    "aicore_time(us)": {
+      "median": 24.0955,
+      "min": 22.999,
+      "max": 26.446
+    },
+    "aiv_time(us)": {
+      "median": 50.632999999999996,
+      "min": 49.206,
+      "max": 53.705
+    },
+    "aiv_vec_time(us)": {
+      "median": 18.7105,
+      "min": 18.696,
+      "max": 18.723
+    },
+    "aiv_scalar_time(us)": {
+      "median": 16.804499999999997,
+      "min": 16.266,
+      "max": 19.463
+    },
+    "aiv_mte2_time(us)": {
+      "median": 8.7285,
+      "min": 7.97,
+      "max": 9.625
+    },
+    "aiv_mte3_time(us)": {
+      "median": 4.3325,
+      "min": 4.172,
+      "max": 4.653
+    },
+    "db_counts": {
+      "CANN_API": 9,
+      "TASK": 130,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  },
+  {
+    "run": "profile-v2-baseline-q1",
+    "case": "t512-d7168-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-baseline-q1/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1043930_20260930140006678_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 166.774,
+      "min": 164.463,
+      "max": 169.723
+    },
+    "Wait Time(us)": {
+      "median": 2.8064999999999998,
+      "min": 0.0,
+      "max": 5.557
+    },
+    "aicore_time(us)": {
+      "median": 63.595,
+      "min": 62.298,
+      "max": 67.577
+    },
+    "aiv_time(us)": {
+      "median": 160.73149999999998,
+      "min": 157.868,
+      "max": 164.922
+    },
+    "aiv_vec_time(us)": {
+      "median": 81.117,
+      "min": 81.098,
+      "max": 81.123
+    },
+    "aiv_scalar_time(us)": {
+      "median": 56.0205,
+      "min": 55.173,
+      "max": 60.135
+    },
+    "aiv_mte2_time(us)": {
+      "median": 28.5305,
+      "min": 26.431,
+      "max": 29.19
+    },
+    "aiv_mte3_time(us)": {
+      "median": 27.133000000000003,
+      "min": 26.627,
+      "max": 27.778
+    },
+    "db_counts": {
+      "TASK": 130,
+      "CANN_API": 9,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  },
+  {
+    "run": "profile-v2-candidate-q0",
+    "case": "t1-d4096-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q0/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1046810_20260930140132294_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 26.081,
+      "min": 24.98,
+      "max": 30.4
+    },
+    "Wait Time(us)": {
+      "median": 2.7640000000000002,
+      "min": 0.0,
+      "max": 5.94
+    },
+    "aicore_time(us)": {
+      "median": 16.8545,
+      "min": 16.254,
+      "max": 19.552
+    },
+    "aiv_time(us)": {
+      "median": 17.7175,
+      "min": 16.67,
+      "max": 22.389
+    },
+    "aiv_vec_time(us)": {
+      "median": 0.204,
+      "min": 0.204,
+      "max": 0.205
+    },
+    "aiv_scalar_time(us)": {
+      "median": 5.279999999999999,
+      "min": 4.931,
+      "max": 6.475
+    },
+    "aiv_mte2_time(us)": {
+      "median": 2.7270000000000003,
+      "min": 2.299,
+      "max": 3.104
+    },
+    "aiv_mte3_time(us)": {
+      "median": 0.0935,
+      "min": 0.074,
+      "max": 0.155
+    },
+    "db_counts": {
+      "CANN_API": 9,
+      "TASK": 130,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  },
+  {
+    "run": "profile-v2-candidate-q0",
+    "case": "t128-d4096-signed1",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q0/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1046810_20260930140138221_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 64.011,
+      "min": 60.581,
+      "max": 67.201
+    },
+    "Wait Time(us)": {
+      "median": 2.8485,
+      "min": 0.0,
+      "max": 5.378
+    },
+    "aicore_time(us)": {
+      "median": 24.9055,
+      "min": 23.847,
+      "max": 27.654
+    },
+    "aiv_time(us)": {
+      "median": 53.2185,
+      "min": 50.773,
+      "max": 55.66
+    },
+    "aiv_vec_time(us)": {
+      "median": 18.522,
+      "min": 18.497,
+      "max": 18.536
+    },
+    "aiv_scalar_time(us)": {
+      "median": 19.203,
+      "min": 18.788,
+      "max": 22.042
+    },
+    "aiv_mte2_time(us)": {
+      "median": 9.211,
+      "min": 8.383,
+      "max": 9.828
+    },
+    "aiv_mte3_time(us)": {
+      "median": 4.313000000000001,
+      "min": 4.097,
+      "max": 4.424
+    },
+    "db_counts": {
+      "CANN_API": 9,
+      "TASK": 130,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  },
+  {
+    "run": "profile-v2-candidate-q0",
+    "case": "t512-d7168-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q0/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1046810_20260930140144293_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 165.82350000000002,
+      "min": 164.603,
+      "max": 172.344
+    },
+    "Wait Time(us)": {
+      "median": 2.7965,
+      "min": 0.0,
+      "max": 5.936
+    },
+    "aicore_time(us)": {
+      "median": 64.748,
+      "min": 63.628,
+      "max": 69.212
+    },
+    "aiv_time(us)": {
+      "median": 160.2575,
+      "min": 158.767,
+      "max": 166.676
+    },
+    "aiv_vec_time(us)": {
+      "median": 79.829,
+      "min": 79.814,
+      "max": 79.872
+    },
+    "aiv_scalar_time(us)": {
+      "median": 62.533500000000004,
+      "min": 62.147,
+      "max": 66.717
+    },
+    "aiv_mte2_time(us)": {
+      "median": 28.648,
+      "min": 27.91,
+      "max": 29.979
+    },
+    "aiv_mte3_time(us)": {
+      "median": 26.98,
+      "min": 26.723,
+      "max": 27.695
+    },
+    "db_counts": {
+      "CANN_API": 9,
+      "TASK": 130,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  },
+  {
+    "run": "profile-v2-candidate-q1",
+    "case": "t1-d4096-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q1/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1044882_20260930140026789_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 24.7605,
+      "min": 23.34,
+      "max": 30.981
+    },
+    "Wait Time(us)": {
+      "median": 2.755,
+      "min": 0.0,
+      "max": 5.45
+    },
+    "aicore_time(us)": {
+      "median": 16.0975,
+      "min": 14.851,
+      "max": 20.981
+    },
+    "aiv_time(us)": {
+      "median": 16.467,
+      "min": 15.253,
+      "max": 23.496
+    },
+    "aiv_vec_time(us)": {
+      "median": 0.204,
+      "min": 0.204,
+      "max": 0.205
+    },
+    "aiv_scalar_time(us)": {
+      "median": 4.832,
+      "min": 4.381,
+      "max": 6.776
+    },
+    "aiv_mte2_time(us)": {
+      "median": 2.4865,
+      "min": 2.164,
+      "max": 2.808
+    },
+    "aiv_mte3_time(us)": {
+      "median": 0.089,
+      "min": 0.073,
+      "max": 0.143
+    },
+    "db_counts": {
+      "CANN_API": 9,
+      "TASK": 130,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  },
+  {
+    "run": "profile-v2-candidate-q1",
+    "case": "t128-d4096-signed1",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q1/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1044882_20260930140032746_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 61.8715,
+      "min": 59.941,
+      "max": 68.662
+    },
+    "Wait Time(us)": {
+      "median": 2.8585000000000003,
+      "min": 0.0,
+      "max": 5.959
+    },
+    "aicore_time(us)": {
+      "median": 23.924500000000002,
+      "min": 23.073,
+      "max": 29.288
+    },
+    "aiv_time(us)": {
+      "median": 51.358,
+      "min": 49.86,
+      "max": 58.166
+    },
+    "aiv_vec_time(us)": {
+      "median": 18.513,
+      "min": 18.495,
+      "max": 18.533
+    },
+    "aiv_scalar_time(us)": {
+      "median": 18.5315,
+      "min": 18.148,
+      "max": 22.779
+    },
+    "aiv_mte2_time(us)": {
+      "median": 8.818,
+      "min": 8.055,
+      "max": 10.034
+    },
+    "aiv_mte3_time(us)": {
+      "median": 4.2835,
+      "min": 4.158,
+      "max": 4.421
+    },
+    "db_counts": {
+      "TASK": 130,
+      "CANN_API": 9,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  },
+  {
+    "run": "profile-v2-candidate-q1",
+    "case": "t512-d7168-signed0",
+    "count": 60,
+    "csv": "/mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q1/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1044882_20260930140038880_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+    "Duration(us)": {
+      "median": 164.45350000000002,
+      "min": 162.323,
+      "max": 173.384
+    },
+    "Wait Time(us)": {
+      "median": 2.842,
+      "min": 0.0,
+      "max": 5.487
+    },
+    "aicore_time(us)": {
+      "median": 64.6695,
+      "min": 62.905,
+      "max": 70.597
+    },
+    "aiv_time(us)": {
+      "median": 159.053,
+      "min": 156.994,
+      "max": 168.006
+    },
+    "aiv_vec_time(us)": {
+      "median": 79.826,
+      "min": 79.814,
+      "max": 79.872
+    },
+    "aiv_scalar_time(us)": {
+      "median": 61.7045,
+      "min": 61.24,
+      "max": 68.071
+    },
+    "aiv_mte2_time(us)": {
+      "median": 29.484,
+      "min": 28.346,
+      "max": 30.341
+    },
+    "aiv_mte3_time(us)": {
+      "median": 27.094,
+      "min": 26.61,
+      "max": 27.496
+    },
+    "db_counts": {
+      "TASK": 130,
+      "CANN_API": 9,
+      "STRING_IDS": 53,
+      "PYTORCH_API": 1
+    }
+  }
+]

@@ -1,0 +1,4 @@
+[2026-09-30-13:47:46.990] [INFO] [AscendProfiler_TracePreParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-baseline-q1/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1038169_20260930134746130_ascend_pt/logs/profiler_20260930134746_1038523_TracePreParser.log
+[2026-09-30-13:47:46.990] [INFO] [AscendProfiler_TracePreParser:36] TracePreParser start.
+[2026-09-30-13:47:46.991] [ERROR] [AscendProfiler_TracePreParser:108] Get fwk trace data failed, framework data is empty.
+[2026-09-30-13:47:46.991] [INFO] [AscendProfiler_TracePreParser:50] TracePreParser finish.

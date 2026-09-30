@@ -1,0 +1,4 @@
+[2026-09-30-14:01:03.017] [INFO] [AscendProfiler_KernelViewParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-baseline-q0/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1045864_20260930140059090_ascend_pt/logs/profiler_20260930140103_1046165_KernelViewParser.log
+[2026-09-30-14:01:03.017] [INFO] [AscendProfiler_KernelViewParser:38] KernelViewParser start.
+[2026-09-30-14:01:03.018] [ERROR] [AscendProfiler_KernelViewParser:78] Kernel view get step range failed, the kernel dict is empty.
+[2026-09-30-14:01:03.023] [INFO] [AscendProfiler_KernelViewParser:46] KernelViewParser finish.

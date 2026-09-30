@@ -1,0 +1,5 @@
+[2026-09-30-14:01:42.724] [INFO] [AscendProfiler_CommunicationParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q0/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1046810_20260930140138221_ascend_pt/logs/profiler_20260930140142_1047392_CommunicationParser.log
+[2026-09-30-14:01:42.725] [INFO] [AscendProfiler_CommunicationParser:66] CommunicationParser start.
+[2026-09-30-14:01:42.725] [ERROR] [AscendProfiler_CommunicationParser:282] Init step list failed, the kernel dict is empty.
+[2026-09-30-14:01:42.725] [ERROR] [AscendProfiler_CommunicationParser:64] Get step range failed, the kernel dict is empty.
+[2026-09-30-14:01:42.728] [INFO] [AscendProfiler_CommunicationParser:73] CommunicationParser finish.

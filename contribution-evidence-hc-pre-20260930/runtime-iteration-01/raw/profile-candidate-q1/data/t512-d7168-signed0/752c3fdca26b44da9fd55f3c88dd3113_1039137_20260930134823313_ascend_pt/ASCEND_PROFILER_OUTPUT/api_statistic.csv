@@ -1,0 +1,5 @@
+Device_id,Level,API Name,Time(us),Count,Avg(us),Min(us),Max(us),Variance
+host,acl,aclmdlRICaptureGetInfo,7.91,3,2.637,1.95,3.76,0.641
+host,acl,aclmdlRIExecuteAsync,101.34,3,33.78,16.51,65.22,495.838
+host,acl,aclrtGetDeviceCount,11.94,2,5.97,5,6.94,0.941
+host,acl,aclrtSynchronizeDeviceWithTimeout,10112.49,4,2528.123,53.13,3373.94,2042235.918

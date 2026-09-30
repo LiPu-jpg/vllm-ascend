@@ -1,0 +1,3 @@
+START peeled v2-peeled-production-tests nightly
+RESULT v2-peeled-production-tests status=1
+STOP idle guard or setup failure; no further device work

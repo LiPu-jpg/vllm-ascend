@@ -1,0 +1,3 @@
+[2026-09-30-14:01:05.814] [INFO] [AscendProfiler_CANNExportParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-baseline-q0/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1045864_20260930140105007_ascend_pt/logs/profiler_20260930140105_1046206_CANNExportParser.log
+[2026-09-30-14:01:05.814] [INFO] [AscendProfiler_CANNExportParser:59] CANNExportParser start.
+[2026-09-30-14:01:08.848] [INFO] [AscendProfiler_CANNExportParser:108] CANNExportParser finish.

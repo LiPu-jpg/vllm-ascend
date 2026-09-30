@@ -1,0 +1,3 @@
+[2026-09-30-13:48:53.137] [INFO] [AscendProfiler_TraceViewParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-baseline-q0/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1040108_20260930134849717_ascend_pt/logs/profiler_20260930134853_1040669_TraceViewParser.log
+[2026-09-30-13:48:53.138] [INFO] [AscendProfiler_TraceViewParser:53] TraceViewParser start.
+[2026-09-30-13:48:53.146] [INFO] [AscendProfiler_TraceViewParser:68] TraceViewParser finish.

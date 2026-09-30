@@ -1,0 +1,3 @@
+[2026-09-30-14:00:36.641] [INFO] [AscendProfiler_IntegrateParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q1/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1044882_20260930140032746_ascend_pt/logs/profiler_20260930140036_1045505_IntegrateParser.log
+[2026-09-30-14:00:36.641] [INFO] [AscendProfiler_IntegrateParser:37] IntegrateParser start.
+[2026-09-30-14:00:36.649] [INFO] [AscendProfiler_IntegrateParser:46] IntegrateParser finish.

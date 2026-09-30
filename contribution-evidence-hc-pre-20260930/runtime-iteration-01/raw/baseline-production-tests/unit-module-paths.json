@@ -1,0 +1,6 @@
+{
+  "vllm": "/mnt/workspace/mhc-validation-20260930/vllm/vllm/__init__.py",
+  "vllm_ascend": "/mnt/workspace/hc-pre-reduction-20260930/full-plugin-source-v2/vllm_ascend/__init__.py",
+  "vllm_ascend.utils": "/mnt/workspace/hc-pre-reduction-20260930/full-plugin-source-v2/vllm_ascend/utils.py",
+  "vllm_ascend.vllm_ascend_C": null
+}

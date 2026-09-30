@@ -1,0 +1,3 @@
+[2026-09-30-14:01:35.760] [INFO] [AscendProfiler_CANNAnalyzeParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q0/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1046810_20260930140132294_ascend_pt/logs/profiler_20260930140135_1047094_CANNAnalyzeParser.log
+[2026-09-30-14:01:35.760] [INFO] [AscendProfiler_CANNAnalyzeParser:41] CANNAnalyzeParser start.
+[2026-09-30-14:01:36.785] [INFO] [AscendProfiler_CANNAnalyzeParser:67] CANNAnalyzeParser finish.

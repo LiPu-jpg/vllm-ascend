@@ -1,0 +1,4 @@
+[2026-09-30-14:01:47.817] [INFO] [AscendProfiler_TraceStepTimeParser:97] Profiler logger initialized at: /mnt/workspace/hc-pre-reduction-20260930/iteration-01/profile-v2-candidate-q0/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1046810_20260930140144293_ascend_pt/logs/profiler_20260930140147_1047674_TraceStepTimeParser.log
+[2026-09-30-14:01:47.817] [INFO] [AscendProfiler_TraceStepTimeParser:169] TraceStepTimeParser start.
+[2026-09-30-14:01:47.817] [ERROR] [AscendProfiler_TraceStepTimeParser:64] Get step range failed, the kernel dict is empty.
+[2026-09-30-14:01:47.822] [INFO] [AscendProfiler_TraceStepTimeParser:177] TraceStepTimeParser finish.
