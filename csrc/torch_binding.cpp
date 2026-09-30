@@ -1446,13 +1446,15 @@ void check_hc_pre_shape_and_dtype(
 std::tuple<at::Tensor, at::Tensor, at::Tensor, at::Tensor> run_hc_pre_fusion(
     const at::Tensor& x, const at::Tensor& hc_fn, const at::Tensor& hc_scale, const at::Tensor& hc_base,
     const c10::optional<at::Tensor>& pre_mix, int64_t hc_mult, int64_t hc_sinkhorn_iters, double norm_eps,
-    double hc_eps)
+    double hc_eps, bool return_pre)
 {
     auto output_tensors = construct_hc_pre_output_tensor(x, hc_mult);
     at::Tensor y = std::get<0>(output_tensors);
     at::Tensor post = std::get<1>(output_tensors);
     at::Tensor comb_frag = std::get<2>(output_tensors);
-    at::Tensor pre = construct_hc_pre_pre_output_tensor(x, hc_mult);
+    // V2 returns only y, post and comb_frag. Leave the optional pre output
+    // undefined so HcPre skips its allocation and device writeback.
+    at::Tensor pre = return_pre ? construct_hc_pre_pre_output_tensor(x, hc_mult) : at::Tensor();
     EXEC_NPU_CMD(aclnnHcPre, x, hc_fn, hc_scale, hc_base, pre_mix, hc_mult, hc_sinkhorn_iters, hc_eps, norm_eps,
                  y, post, comb_frag, pre);
 
@@ -1466,7 +1468,7 @@ std::tuple<at::Tensor, at::Tensor, at::Tensor> npu_hc_pre_v2_npu(
     const c10::optional<at::Tensor> pre_mix = c10::nullopt;
     check_hc_pre_shape_and_dtype(x, hc_fn, hc_scale, hc_base, pre_mix, hc_mult);
     auto outputs = run_hc_pre_fusion(x, hc_fn, hc_scale, hc_base, pre_mix, hc_mult, hc_sinkhorn_iters, norm_eps,
-                                     hc_eps);
+                                     hc_eps, false);
     return {std::get<0>(outputs), std::get<1>(outputs), std::get<2>(outputs)};
 }
 
@@ -1476,7 +1478,8 @@ std::tuple<at::Tensor, at::Tensor, at::Tensor, at::Tensor> npu_hc_pre_v3_npu(
     double hc_eps)
 {
     check_hc_pre_shape_and_dtype(x, hc_fn, hc_scale, hc_base, pre_mix, hc_mult);
-    return run_hc_pre_fusion(x, hc_fn, hc_scale, hc_base, pre_mix, hc_mult, hc_sinkhorn_iters, norm_eps, hc_eps);
+    return run_hc_pre_fusion(x, hc_fn, hc_scale, hc_base, pre_mix, hc_mult, hc_sinkhorn_iters, norm_eps, hc_eps,
+                             true);
 }
 
 void inplace_partial_rotary_mul_npu(at::Tensor & x, const at::Tensor &r1, const at::Tensor &r2, c10::string_view rotary_mode, at::IntArrayRef partial_slice, bool negate_sin)
