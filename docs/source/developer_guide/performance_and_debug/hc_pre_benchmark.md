@@ -38,5 +38,10 @@ original conversions. This preserves dtype, rounding modes, synchronization,
 FP32 reductions and the requested Sinkhorn iteration count. Stage 1 input
 conversion and Stage 2 residual-stream conversion use the helper. Fewer source
 API calls do not establish fewer emitted instructions or a shorter critical
-path. Correctness, stable performance and profiling evidence for this candidate
-are currently pending.
+path. This candidate is excluded from the contribution after matched NPU
+measurements: graph ABBA and BAAB geometric mean speedups are 0.978565531 and
+0.994634162. Eager process pairs disagree in direction. Normal nightly passes
+41/41 per variant, while boundary failures remain retained. No stable latency
+gain or model throughput improvement is established. See the
+[complete immutable evidence](https://github.com/LiPu-jpg/vllm-ascend/tree/b6bfe2644fef2f6ff02198b94dbe650f37fdf882/contribution-evidence-hc-pre-20260930/runtime-iteration-04)
+for every case, sample, slowdown, correctness failure and profiling result.
