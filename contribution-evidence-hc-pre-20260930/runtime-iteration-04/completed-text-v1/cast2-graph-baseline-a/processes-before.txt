@@ -1,0 +1,66 @@
+    PID    PPID ELAPSED %CPU COMMAND
+      1       0  262217  0.0 /usr/local/bin/tini -- /start_docker.sh -s -- /start_docker.sh --cap-add=SYS_PTRACE --security-opt seccomp=unconfined
+      7       1  262217  0.0 sudo -E /home/developer/.local/bin/supervisord -n -c /etc/supervisor/supervisord.conf
+   4216       7  262177  0.0 [sudo] <defunct>
+   5030       7  262173  0.0 /opt/buildtools/Python-3.11.4/bin/python3.11 /home/developer/.local/bin/supervisord -n -c /etc/supervisor/supervisord.conf
+   5281    5030  262172  0.0 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+   5282    5030  262172  0.1 /usr/.devenv/devenvd --set register.server_addr=wss://codeartspipeline-gitcode-devenv-backend.cn-north-4.myhuaweicloud.com:9443/v1/devenvcontrol/register/752c3fdca26b44da9fd55f3c88dd3113?register_code=5D6891DB351984503F5157695DF0CC7FB8CE870946F4AE0D4245EAD93A89249A --set register.server_ca_pem=-----BEGIN CERTIFICATE----- MIIFVDCCAzygAwIBAgIRAIzN0ZyVrTb3vp7y/+cvU5cwDQYJKoZIhvcNAQELBQAw QTELMAkGA1UEBhMCQ04xCzAJBgNVBAgMAk5KMQswCQYDVQQHDAJOSjELMAkGA1UE CgwCSFcxCzAJBgNVBAsMAkhXMB4XDTI1MDkyMzE1MDk0N1oXDTM1MDkyMzE1MTk0 N1owIjEgMB4GA1UEAxMXVGVuYW50LUhERm9yd2FyZFNlcnZpY2UwggIiMA0GCSqG SIb3DQEBAQUAA4ICDwAwggIKAoICAQC9Pa9yBnB7nihn+2Gve/BDkMuEb1mnKSCQ UzfxaTGYIL0SsZP4J+iwoNxbvJu0C5qnO8rCst6qGC5505CzKvP2J9KEVZV46doQ A9eZGuTmfVuzUYna2NM6Ekz+Nq3LOmXHg2DA9lQdz4xkdLgbhbitQKERzEjRcN3L fXush9T+6sfOkFxADNpQrzRI9ryY0bkXNayfF/7vaNZmJi6AdXaTDo63B8nGPdbC bXnrFHF4unsrwP/r3D+Q+dbU5+Ylp0mRKN6PQMDYEOTRbyd9BJtoSie1EmEsUXo4 GXbzJ/rC+wrCyULYPAI8CLfBVhWJ4WE+7C6zoU/O8HX9XfUQ4ZOjXiFSFwDBKlNi 0cLi8l3WVJj3dU/EzdGAbYmXhmLCCKzPiZNMbx04vXu7QHBsmZY4sncP80EoMitc F2ZZntwnoZMDlpQinenhGPOge1YSSdfIN6mgJARGXLA3T6XhHurIS2sEv3M5py/1 Mln4ZUdkZk43eT5azjt2A3i2as/yPNNRE5+QqJ+wiA6rfo2XpQdf3b51zEfWQeWe do1/tLWK0MTEXGY81bymz96y5Q8PxQbGoiC1dTwglQS+Ri6TQjNwZwsBslumy8GS +9KkxCTfskeaMXWJCsOTI78T/zvT+937TIwbSWItZqheqBZZl3lzTmF0Yrr0qe2o cSn9gOST9wIDAQABo2YwZDAOBgNVHQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB /wIBATAdBgNVHQ4EFgQUr2NVDW2bonuBngd7C3TZEoeNwXIwHwYDVR0jBBgwFoAU HPlez+6Re/zlDclRKwDAhyVInD4wDQYJKoZIhvcNAQELBQADggIBAJaMpSox0e4Q AppmRygcxbxrOEZsI84zl2WzMeCzkEgfoOSoMEofHlZGVlAliKKc9No8hOgs08DQ X31BpE0esG2Pim+ayJDmPDwWAK6glTkBZHoNfCTDD91ouCo479v5n+CvFC4oIOoO hLdZXcLnDnTLkNTmmwrAd1z5ifCVNAF6pVof2ju/CQjpovKKhiTGUU5cOi0uvw3K Zr3AT4X3R8YYqQfn2HD7l7wOZoPitf0Aoe0Mp4wvsIMExlO3P3l7fattKMYP/Sv+ 30Chy1M1ydX26VoG2M4nDRWIeShzpa3cI8GiirUqOAg3s5JyWUSvUCxNLMyXFFlB Em7a1btNm/rsbvoLkKnc4FZFprbPAANHT6oausBXwIfN7SNDF1qWj8d2VJu4FZDM FPNthJ8Z5GBs/M5xFrMf81JuGQ2R4y5NA3vwUcRUYi7Kd69LEymfX73wsTfh/fpS VmmIpfKquh+9uS3C4C0d0jqsQqXX+MNpccer8fTWg6CVFLIJ27z199tf4xggTzzM Hn118/ockuU/b3vmFs8yRiVQZqxiztVTzH1e4ErpAL3I7FPC7njGBBhab6Ztk/XW +EPwzXofmSueGzAb9Tk+YIPA885sG30o0ZdJXo6GxnDzTOGrcReaHxWGJEHyZ2tf X+5/6N9D5wd4DiNL84egSQVRRcylMyWY -----END CERTIFICATE-----  --set-string logger.log_path=/var/log/devenvd.log --set logger.log_level=info --set logger.console=false --set logger.max_size=100 --set logger.max_age=7 --set logger.max_backups=5 --set container_meta.devenv_id=752c3fdca26b44da9fd55f3c88dd3113 --set container_meta.instance_id=
+   5283    5030  262172  0.0 sh /home/developer/codearts/bin/codearts-server --without-connection-token --locale zh-cn --host 0.0.0.0 --port 8888 --max-old-space-size 8196
+   5294    5283  262172  0.0 /home/developer/codearts/node /home/developer/codearts/out/server-main.js --without-connection-token --locale zh-cn --host 0.0.0.0 --port 8888 --max-old-space-size 8196
+   6671       1  261806  0.0 /home/developer/.vscode-server/code-645f29cc3176500b4b5762ba887cf2a7f0ffdf2c --cli-data-dir /home/developer/.vscode-server/cli agent host
+ 239196    5281  203569  0.0 sshd: developer [priv]
+ 239208  239196  203569  0.0 sshd: developer@notty
+ 295870    5294   74275  0.1 /home/developer/codearts/node /home/developer/codearts/out/bootstrap-fork --type=ptyHost --logsPath /home/developer/.codearts-server/data/logs/20260927T195129
+ 295881  295870   74274  0.0 /bin/bash --init-file /home/developer/codearts/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+ 296303  295870   72387  0.0 /bin/bash --init-file /home/developer/codearts/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+ 298883  295870   71689  0.0 /bin/bash --init-file /home/developer/codearts/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+ 300342  295870   71539  0.0 /bin/bash --init-file /home/developer/codearts/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+ 350970  295870   64093  0.0 /bin/bash --init-file /home/developer/codearts/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+ 950659    5294   36135  0.7 /home/developer/codearts/node --dns-result-order=ipv4first /home/developer/codearts/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+ 951138  950659   36122  0.0 /home/developer/codearts/node /home/developer/codearts/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=950659
+ 951868  950659   36109  1.7 /home/developer/.opencode/bin/opencode serve --port 47001
+ 960884    5281   32491  0.0 sshd: developer [priv]
+ 960896  960884   32491  0.0 sshd: developer@notty
+ 960897  960896   32491  0.0 /usr/lib/openssh/sftp-server
+ 975072    5281   31431  0.0 sshd: developer [priv]
+ 975085  975072   31431  0.0 sshd: developer@notty
+ 975090  975085   31431  0.0 rsync --server -g -l --partial -o -p -D -r -t -z --dirs . /mnt/workspace/mhc-validation-20260930/fla-npu-v26.9.1-beta2/
+ 975108  975090   31426  0.0 rsync --server -g -l --partial -o -p -D -r -t -z --dirs . /mnt/workspace/mhc-validation-20260930/fla-npu-v26.9.1-beta2/
+1001298    5281   28870  0.0 sshd: developer [priv]
+1001316 1001298   28869  0.0 sshd: developer@notty
+1001317 1001316   28869  0.0 /usr/lib/openssh/sftp-server
+1001362    5281   28859  0.0 sshd: developer [priv]
+1001442 1001362   28848  0.0 sshd: developer@notty
+1001993    5281   28764  0.0 sshd: developer [priv]
+1002007 1001993   28763  0.0 sshd: developer@notty
+1002008 1002007   28763  0.0 /usr/lib/openssh/sftp-server
+1005223       1   28341  0.0 sh /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/bin/code-server --connection-token=remotessh --accept-server-license-terms --agent-host-bridge-port=43101 --agent-host-bridge-host=127.0.0.1 --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-437a3159-864b-4160-862b-e750cefd0846
+1005227 1005223   28341  0.1 /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --agent-host-bridge-port=43101 --agent-host-bridge-host=127.0.0.1 --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-437a3159-864b-4160-862b-e750cefd0846
+1005528    6671   28340  0.0 sh /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/bin/code-server --socket-path /tmp/code-42fa0a70-af3f-4768-a1e9-02f2c5118bf7 --agent-host-path /tmp/code-594da178-7890-470a-9523-21ba56ea150d --start-server --accept-server-license-terms --enable-remote-auto-shutdown --without-connection-token
+1005536 1005528   28340  0.0 /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/out/server-main.js --socket-path /tmp/code-42fa0a70-af3f-4768-a1e9-02f2c5118bf7 --agent-host-path /tmp/code-594da178-7890-470a-9523-21ba56ea150d --start-server --accept-server-license-terms --enable-remote-auto-shutdown --without-connection-token
+1005884 1005536   28339  0.0 /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/out/bootstrap-fork --type=agentHost --logsPath /home/developer/.vscode-server/data/logs/20260930T124841 --user-data-dir /home/developer/.vscode-server/data --telemetry-level all
+1005905 1005227   28339  0.0 /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/out/bootstrap-fork --type=ptyHost --logsPath /home/developer/.vscode-server/data/logs/20260930T124840
+1005936 1005884   28338  0.0 /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node_modules/@github/copilot-sdk-linux-arm64/prebuilds/linux-arm64/copilot-runtime --headless --no-auto-update --log-level info --stdio --no-auto-login
+1006296 1005905   28333  0.0 /bin/bash --init-file /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+1258565    5281   10226  0.0 sshd: developer [priv]
+1258577 1258565   10225  0.0 sshd: developer@notty
+1304866 1005227    6987  2.5 /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node --dns-result-order=ipv4first /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+1304878 1005227    6987  0.3 /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/out/bootstrap-fork --type=fileWatcher
+1305014 1304866    6971  0.0 /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node /home/developer/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=1304866
+1306496    5281    6419  0.0 sshd: developer [priv]
+1306508 1306496    6418  0.0 sshd: developer@notty
+1306509 1306508    6418  0.0 python3 -
+1339949 1304866    4902  1.9 /home/developer/.opencode/bin/opencode serve --port 47000
+1340585    5281    4081  0.0 sshd: developer [priv]
+1340597 1340585    4080  0.0 sshd: developer@notty
+1340598 1340597    4080  0.0 /usr/lib/openssh/sftp-server
+1340599    5281    4079  0.0 sshd: developer [priv]
+1340611 1340599    4078  0.0 sshd: developer
+1340824    5281    3957  0.0 sshd: developer [priv]
+1340849 1340824    3956  0.0 sshd: developer@notty
+1340850 1340849    3956  0.0 /usr/lib/openssh/sftp-server
+1345654       1    3169  0.0 bash /mnt/workspace/hc-pre-reduction-20260930/iteration-04/controller_v2.sh
+1345655       1    3169  0.0 bash /mnt/workspace/hc-pre-reduction-20260930/iteration-04/controller_v3.sh
+1358787 1345654      19  0.0 bash /mnt/workspace/hc-pre-reduction-20260930/iteration-04/run_validation.sh baseline cast2-graph-baseline-a graph cast1-graph-baseline-a
+1358890 1345655       3  0.0 sleep 5
+1358905 1358787       0  0.0 ps -eo pid,ppid,etimes,%cpu,args

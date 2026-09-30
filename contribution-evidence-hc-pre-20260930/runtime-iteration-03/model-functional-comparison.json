@@ -1,0 +1,39 @@
+{
+  "scope": "4-layer BF16 GLM standard dummy model functional parity; no checkpoint accuracy or throughput claim",
+  "shared_prerequisite": "#17828 cbb707903e619db01439e19731b0e688377326fe",
+  "modes": [
+    {
+      "mode": "eager",
+      "requests": 4,
+      "tokens": 32,
+      "logprobs": 160,
+      "max_abs_difference": 0.0,
+      "errors": [],
+      "config_sha256": [
+        "f259aa655d23962ee587ca2c0449867204ae7ad4b1e218fc36865a66765f481e",
+        "f259aa655d23962ee587ca2c0449867204ae7ad4b1e218fc36865a66765f481e"
+      ],
+      "results_sha256": [
+        "9746530c94216c3aa12588656b59c77ecfb6806f720833fbf6507d51c27bafcd",
+        "9746530c94216c3aa12588656b59c77ecfb6806f720833fbf6507d51c27bafcd"
+      ]
+    },
+    {
+      "mode": "graph",
+      "requests": 4,
+      "tokens": 32,
+      "logprobs": 160,
+      "max_abs_difference": 0.0,
+      "errors": [],
+      "config_sha256": [
+        "f259aa655d23962ee587ca2c0449867204ae7ad4b1e218fc36865a66765f481e",
+        "f259aa655d23962ee587ca2c0449867204ae7ad4b1e218fc36865a66765f481e"
+      ],
+      "results_sha256": [
+        "9746530c94216c3aa12588656b59c77ecfb6806f720833fbf6507d51c27bafcd",
+        "9746530c94216c3aa12588656b59c77ecfb6806f720833fbf6507d51c27bafcd"
+      ]
+    }
+  ],
+  "pass": true
+}

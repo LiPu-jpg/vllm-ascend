@@ -1,0 +1,6 @@
+{
+  "vllm": "/mnt/workspace/mhc-validation-20260930/vllm/vllm/__init__.py",
+  "vllm_ascend": "/mnt/workspace/hc-pre-reduction-20260930/cast-source-candidate/vllm_ascend/__init__.py",
+  "vllm_ascend.utils": "/mnt/workspace/hc-pre-reduction-20260930/cast-source-candidate/vllm_ascend/utils.py",
+  "vllm_ascend.vllm_ascend_C": "/mnt/workspace/hc-pre-reduction-20260930/cast-source-candidate/vllm_ascend/vllm_ascend_C.cpython-312-aarch64-linux-gnu.so"
+}

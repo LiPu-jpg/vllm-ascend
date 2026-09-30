@@ -1,0 +1,783 @@
+{
+  "scope": "Boundary diagnostics, failures retained; not counted as 60 passing cases",
+  "input_hashes_match": true,
+  "CPU_pass_bitmaps_equal": true,
+  "baseline_cpu_pass": 45,
+  "candidate_cpu_pass": 45,
+  "cases": [
+    {
+      "case": "t1-d8-signed0-i1",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [
+        "v2:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125",
+        "v3:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+      ],
+      "candidate_CPU_errors": [
+        "v2:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125",
+        "v3:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+      ]
+    },
+    {
+      "case": "t1-d8-signed0-i3",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [
+        "v2:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125",
+        "v3:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+      ],
+      "candidate_CPU_errors": [
+        "v2:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125",
+        "v3:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+      ]
+    },
+    {
+      "case": "t1-d8-signed0-i20",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [
+        "v2:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125",
+        "v3:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+      ],
+      "candidate_CPU_errors": [
+        "v2:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125",
+        "v3:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+      ]
+    },
+    {
+      "case": "t1-d8-signed1-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d8-signed1-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d8-signed1-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d8-signed0-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d8-signed0-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d8-signed0-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d8-signed1-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d8-signed1-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d8-signed1-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d64-signed0-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d64-signed0-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d64-signed0-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d64-signed1-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d64-signed1-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d64-signed1-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d64-signed0-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d64-signed0-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d64-signed0-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d64-signed1-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d64-signed1-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d64-signed1-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4103-signed0-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4103-signed0-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4103-signed0-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4103-signed1-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4103-signed1-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4103-signed1-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4103-signed0-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4103-signed0-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4103-signed0-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4103-signed1-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4103-signed1-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4103-signed1-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4104-signed0-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4104-signed0-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4104-signed0-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4104-signed1-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4104-signed1-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d4104-signed1-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4104-signed0-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4104-signed0-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4104-signed0-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4104-signed1-i1",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4104-signed1-i3",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t17-d4104-signed1-i20",
+      "baseline_CPU_pass": true,
+      "candidate_CPU_pass": true,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [],
+      "candidate_CPU_errors": []
+    },
+    {
+      "case": "t1-d7169-signed0-i1",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [
+        "baseline:v2:0",
+        "baseline:v2:1",
+        "baseline:v2:2",
+        "baseline:v3:0",
+        "baseline:v3:1",
+        "baseline:v3:2",
+        "baseline:v3:3"
+      ],
+      "baseline_CPU_errors": [
+        "v2:0:pass rate 93.75% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0003955364227294922",
+        "v2:2:pass rate 12.50% is below 99.50%; max absolute difference: 0.0008243024349212646",
+        "v3:0:pass rate 93.75% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0003955364227294922",
+        "v3:2:pass rate 12.50% is below 99.50%; max absolute difference: 0.0008243024349212646",
+        "v3:3:pass rate 0.00% is below 99.50%; max absolute difference: 0.000811159610748291"
+      ],
+      "candidate_CPU_errors": [
+        "v2:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+        "v2:2:pass rate 12.50% is below 99.50%; max absolute difference: 0.0007213950157165527",
+        "v3:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+        "v3:2:pass rate 12.50% is below 99.50%; max absolute difference: 0.0007213950157165527",
+        "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.000659644603729248"
+      ]
+    },
+    {
+      "case": "t1-d7169-signed0-i3",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [
+        "baseline:v2:0",
+        "baseline:v2:1",
+        "baseline:v2:2",
+        "baseline:v3:0",
+        "baseline:v3:1",
+        "baseline:v3:2",
+        "baseline:v3:3"
+      ],
+      "baseline_CPU_errors": [
+        "v2:0:pass rate 93.75% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0003955364227294922",
+        "v2:2:pass rate 6.25% is below 99.50%; max absolute difference: 0.0006271898746490479",
+        "v3:0:pass rate 93.75% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0003955364227294922",
+        "v3:2:pass rate 6.25% is below 99.50%; max absolute difference: 0.0006271898746490479",
+        "v3:3:pass rate 0.00% is below 99.50%; max absolute difference: 0.000811159610748291"
+      ],
+      "candidate_CPU_errors": [
+        "v2:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+        "v2:2:pass rate 18.75% is below 99.50%; max absolute difference: 0.0006406009197235107",
+        "v3:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+        "v3:2:pass rate 18.75% is below 99.50%; max absolute difference: 0.0006406009197235107",
+        "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.000659644603729248"
+      ]
+    },
+    {
+      "case": "t1-d7169-signed0-i20",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [
+        "baseline:v2:0",
+        "baseline:v2:1",
+        "baseline:v2:2",
+        "baseline:v3:0",
+        "baseline:v3:1",
+        "baseline:v3:2",
+        "baseline:v3:3"
+      ],
+      "baseline_CPU_errors": [
+        "v2:0:pass rate 93.75% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0003955364227294922",
+        "v2:2:pass rate 6.25% is below 99.50%; max absolute difference: 0.0006272792816162109",
+        "v3:0:pass rate 93.75% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0003955364227294922",
+        "v3:2:pass rate 6.25% is below 99.50%; max absolute difference: 0.0006272792816162109",
+        "v3:3:pass rate 0.00% is below 99.50%; max absolute difference: 0.000811159610748291"
+      ],
+      "candidate_CPU_errors": [
+        "v2:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+        "v2:2:pass rate 18.75% is below 99.50%; max absolute difference: 0.0006455481052398682",
+        "v3:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+        "v3:2:pass rate 18.75% is below 99.50%; max absolute difference: 0.0006455481052398682",
+        "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.000659644603729248"
+      ]
+    },
+    {
+      "case": "t1-d7169-signed1-i1",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [
+        "baseline:v2:0",
+        "baseline:v2:1",
+        "baseline:v2:2",
+        "baseline:v3:0",
+        "baseline:v3:1",
+        "baseline:v3:2",
+        "baseline:v3:3"
+      ],
+      "baseline_CPU_errors": [
+        "v2:1:pass rate 25.00% is below 99.50%; max absolute difference: 0.0011542439460754395",
+        "v2:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0012843012809753418",
+        "v3:1:pass rate 25.00% is below 99.50%; max absolute difference: 0.0011542439460754395",
+        "v3:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0012843012809753418",
+        "v3:3:pass rate 0.00% is below 99.50%; max absolute difference: 0.0007615238428115845"
+      ],
+      "candidate_CPU_errors": [
+        "v2:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+        "v2:2:pass rate 6.25% is below 99.50%; max absolute difference: 0.0017907917499542236",
+        "v3:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+        "v3:2:pass rate 6.25% is below 99.50%; max absolute difference: 0.0017907917499542236",
+        "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.0006251707673072815"
+      ]
+    },
+    {
+      "case": "t1-d7169-signed1-i3",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [
+        "baseline:v2:0",
+        "baseline:v2:1",
+        "baseline:v2:2",
+        "baseline:v3:0",
+        "baseline:v3:1",
+        "baseline:v3:2",
+        "baseline:v3:3"
+      ],
+      "baseline_CPU_errors": [
+        "v2:1:pass rate 25.00% is below 99.50%; max absolute difference: 0.0011542439460754395",
+        "v2:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0011983215808868408",
+        "v3:1:pass rate 25.00% is below 99.50%; max absolute difference: 0.0011542439460754395",
+        "v3:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0011983215808868408",
+        "v3:3:pass rate 0.00% is below 99.50%; max absolute difference: 0.0007615238428115845"
+      ],
+      "candidate_CPU_errors": [
+        "v2:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+        "v2:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0015991628170013428",
+        "v3:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+        "v3:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0015991628170013428",
+        "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.0006251707673072815"
+      ]
+    },
+    {
+      "case": "t1-d7169-signed1-i20",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [
+        "baseline:v2:0",
+        "baseline:v2:1",
+        "baseline:v2:2",
+        "baseline:v3:0",
+        "baseline:v3:1",
+        "baseline:v3:2",
+        "baseline:v3:3"
+      ],
+      "baseline_CPU_errors": [
+        "v2:1:pass rate 25.00% is below 99.50%; max absolute difference: 0.0011542439460754395",
+        "v2:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0011983215808868408",
+        "v3:1:pass rate 25.00% is below 99.50%; max absolute difference: 0.0011542439460754395",
+        "v3:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0011983215808868408",
+        "v3:3:pass rate 0.00% is below 99.50%; max absolute difference: 0.0007615238428115845"
+      ],
+      "candidate_CPU_errors": [
+        "v2:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+        "v2:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0015991628170013428",
+        "v3:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+        "v3:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0015991628170013428",
+        "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.0006251707673072815"
+      ]
+    },
+    {
+      "case": "t17-d7169-signed0-i1",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [
+        "v2:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v2:2:pass rate 59.19% is below 99.50%; max absolute difference: 0.00041465461254119873",
+        "v3:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v3:2:pass rate 59.19% is below 99.50%; max absolute difference: 0.00041465461254119873",
+        "v3:3:pass rate 32.35% is below 99.50%; max absolute difference: 0.00048065185546875"
+      ],
+      "candidate_CPU_errors": [
+        "v2:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v2:2:pass rate 59.19% is below 99.50%; max absolute difference: 0.00041465461254119873",
+        "v3:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v3:2:pass rate 59.19% is below 99.50%; max absolute difference: 0.00041465461254119873",
+        "v3:3:pass rate 32.35% is below 99.50%; max absolute difference: 0.00048065185546875"
+      ]
+    },
+    {
+      "case": "t17-d7169-signed0-i3",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [
+        "v2:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v2:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038051605224609375",
+        "v3:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v3:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038051605224609375",
+        "v3:3:pass rate 32.35% is below 99.50%; max absolute difference: 0.00048065185546875"
+      ],
+      "candidate_CPU_errors": [
+        "v2:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v2:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038051605224609375",
+        "v3:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v3:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038051605224609375",
+        "v3:3:pass rate 32.35% is below 99.50%; max absolute difference: 0.00048065185546875"
+      ]
+    },
+    {
+      "case": "t17-d7169-signed0-i20",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [
+        "v2:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v2:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038060545921325684",
+        "v3:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v3:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038060545921325684",
+        "v3:3:pass rate 32.35% is below 99.50%; max absolute difference: 0.00048065185546875"
+      ],
+      "candidate_CPU_errors": [
+        "v2:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v2:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v2:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038060545921325684",
+        "v3:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+        "v3:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+        "v3:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038060545921325684",
+        "v3:3:pass rate 32.35% is below 99.50%; max absolute difference: 0.00048065185546875"
+      ]
+    },
+    {
+      "case": "t17-d7169-signed1-i1",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [
+        "v2:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v2:2:pass rate 26.84% is below 99.50%; max absolute difference: 0.0009444057941436768",
+        "v3:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v3:2:pass rate 26.84% is below 99.50%; max absolute difference: 0.0009444057941436768",
+        "v3:3:pass rate 35.29% is below 99.50%; max absolute difference: 0.00043191760778427124"
+      ],
+      "candidate_CPU_errors": [
+        "v2:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v2:2:pass rate 26.84% is below 99.50%; max absolute difference: 0.0009444057941436768",
+        "v3:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v3:2:pass rate 26.84% is below 99.50%; max absolute difference: 0.0009444057941436768",
+        "v3:3:pass rate 35.29% is below 99.50%; max absolute difference: 0.00043191760778427124"
+      ]
+    },
+    {
+      "case": "t17-d7169-signed1-i3",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [
+        "v2:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v2:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+        "v3:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v3:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+        "v3:3:pass rate 35.29% is below 99.50%; max absolute difference: 0.00043191760778427124"
+      ],
+      "candidate_CPU_errors": [
+        "v2:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v2:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+        "v3:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v3:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+        "v3:3:pass rate 35.29% is below 99.50%; max absolute difference: 0.00043191760778427124"
+      ]
+    },
+    {
+      "case": "t17-d7169-signed1-i20",
+      "baseline_CPU_pass": false,
+      "candidate_CPU_pass": false,
+      "baseline_errors": [],
+      "candidate_errors": [],
+      "baseline_CPU_errors": [
+        "v2:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v2:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+        "v3:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v3:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+        "v3:3:pass rate 35.29% is below 99.50%; max absolute difference: 0.00043191760778427124"
+      ],
+      "candidate_CPU_errors": [
+        "v2:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v2:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+        "v3:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+        "v3:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+        "v3:3:pass rate 35.29% is below 99.50%; max absolute difference: 0.00043191760778427124"
+      ]
+    }
+  ]
+}

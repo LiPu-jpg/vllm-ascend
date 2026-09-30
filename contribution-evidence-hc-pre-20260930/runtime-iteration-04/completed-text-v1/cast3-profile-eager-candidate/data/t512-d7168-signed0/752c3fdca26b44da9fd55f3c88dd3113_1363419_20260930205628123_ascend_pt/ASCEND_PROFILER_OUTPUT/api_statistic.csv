@@ -1,0 +1,11 @@
+Device_id,Level,API Name,Time(us),Count,Avg(us),Min(us),Max(us),Variance
+host,acl,aclnnHcPre,1812.02,60,30.2,20.8,78.63,149.861
+host,acl,aclnnHcPreGetWorkspaceSize,1038.43,60,17.307,15.46,34.92,6.332
+host,acl,aclrtCtxGetSysParamOpt,130.83,60,2.181,1.83,3,0.033
+host,acl,aclrtGetDeviceCount,6.12,1,6.12,6.12,6.12,0
+host,acl,aclrtGetHardwareSyncAddr,100.7,60,1.678,1.19,4.79,0.546
+host,acl,aclrtGetResInCurrentThread,158.81,120,1.323,0.29,2.99,0.939
+host,acl,aclrtGetStreamAttribute,45.75,60,0.763,0.5,1.98,0.065
+host,acl,aclrtLaunchKernelWithHostArgs,697.42,60,11.624,7.01,46.89,39.626
+host,acl,aclrtSynchronizeDeviceWithTimeout,1105.75,2,552.875,29.89,1075.86,273513.31
+host,node,launch,914.1,60,15.235,9.68,49.74,57.029

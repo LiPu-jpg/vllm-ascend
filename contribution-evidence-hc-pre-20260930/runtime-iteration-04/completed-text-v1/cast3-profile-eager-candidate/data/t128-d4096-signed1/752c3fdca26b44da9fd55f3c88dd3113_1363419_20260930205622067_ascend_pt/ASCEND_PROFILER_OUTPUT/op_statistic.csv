@@ -1,0 +1,2 @@
+Device_id,OP Type,Core Type,Count,Total Time(us),Min Time(us),Avg Time(us),Max Time(us),Ratio(%)
+0,HcPre,MIX_AIC,60,3760.675,61.181,62.678,66.081,100

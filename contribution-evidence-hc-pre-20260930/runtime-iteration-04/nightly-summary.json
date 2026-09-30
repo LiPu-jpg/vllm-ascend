@@ -1,0 +1,44 @@
+[
+  {
+    "variant": "baseline",
+    "count": 41,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "test_input_sha256": "6911913a94284b8d4b0d3733775de2caa86925f747884f4448bfad8c63802d91",
+    "source_ref": "11682d1e341d161a4129a58863f39a912846f71d",
+    "source_status": "?? opp/\n",
+    "module_paths": {
+      "vllm": "/mnt/workspace/mhc-validation-20260930/vllm/vllm/__init__.py",
+      "vllm_ascend": "/mnt/workspace/hc-pre-reduction-20260930/cast-source-baseline/vllm_ascend/__init__.py",
+      "vllm_ascend.utils": "/mnt/workspace/hc-pre-reduction-20260930/cast-source-baseline/vllm_ascend/utils.py",
+      "vllm_ascend.vllm_ascend_C": "/mnt/workspace/hc-pre-reduction-20260930/cast-source-baseline/vllm_ascend/vllm_ascend_C.cpython-312-aarch64-linux-gnu.so"
+    },
+    "xml_sha256": "d8cd8dc5e68445394e9ac54df51b30e47f2faea21fea7a551a5e85580211595b",
+    "npu_before": "+------------------------------------------------------------------------------------------------+\n| npu-smi 25.5.0                   Version: 25.5.0                                               |\n+---------------------------+---------------+----------------------------------------------------+\n| NPU   Name                | Health        | Power(W)    Temp(C)           Hugepages-Usage(page)|\n| Chip                      | Bus-Id        | AICore(%)   Memory-Usage(MB)  HBM-Usage(MB)        |\n+===========================+===============+====================================================+\n| 3     910B3               | OK            | 87.7        38                0    / 0             |\n| 0                         | 0000:0A:00.0  | 0           0    / 0          3449 / 65536         |\n+===========================+===============+====================================================+\n+---------------------------+---------------+----------------------------------------------------+\n| NPU     Chip              | Process id    | Process name             | Process memory(MB)      |\n+===========================+===============+====================================================+\n| No running processes found in NPU 3                                                            |\n+===========================+===============+====================================================+\n",
+    "npu_after": "+------------------------------------------------------------------------------------------------+\n| npu-smi 25.5.0                   Version: 25.5.0                                               |\n+---------------------------+---------------+----------------------------------------------------+\n| NPU   Name                | Health        | Power(W)    Temp(C)           Hugepages-Usage(page)|\n| Chip                      | Bus-Id        | AICore(%)   Memory-Usage(MB)  HBM-Usage(MB)        |\n+===========================+===============+====================================================+\n| 3     910B3               | OK            | 95.8        38                0    / 0             |\n| 0                         | 0000:0A:00.0  | 0           0    / 0          3450 / 65536         |\n+===========================+===============+====================================================+\n+---------------------------+---------------+----------------------------------------------------+\n| NPU     Chip              | Process id    | Process name             | Process memory(MB)      |\n+===========================+===============+====================================================+\n| No running processes found in NPU 3                                                            |\n+===========================+===============+====================================================+\n",
+    "other_jobs_before": "",
+    "other_jobs_after": ""
+  },
+  {
+    "variant": "candidate",
+    "count": 41,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "test_input_sha256": "6911913a94284b8d4b0d3733775de2caa86925f747884f4448bfad8c63802d91",
+    "source_ref": "5983ac07f62095c1e7fa725e0b7f9ce692e8d5f1",
+    "source_status": "?? opp/\n",
+    "module_paths": {
+      "vllm": "/mnt/workspace/mhc-validation-20260930/vllm/vllm/__init__.py",
+      "vllm_ascend": "/mnt/workspace/hc-pre-reduction-20260930/cast-source-candidate/vllm_ascend/__init__.py",
+      "vllm_ascend.utils": "/mnt/workspace/hc-pre-reduction-20260930/cast-source-candidate/vllm_ascend/utils.py",
+      "vllm_ascend.vllm_ascend_C": "/mnt/workspace/hc-pre-reduction-20260930/cast-source-candidate/vllm_ascend/vllm_ascend_C.cpython-312-aarch64-linux-gnu.so"
+    },
+    "xml_sha256": "2eeb9028ee04e3cdb9639e48b3fd5ff92dfdd11a6480cb21ff633fb9249f2d01",
+    "npu_before": "+------------------------------------------------------------------------------------------------+\n| npu-smi 25.5.0                   Version: 25.5.0                                               |\n+---------------------------+---------------+----------------------------------------------------+\n| NPU   Name                | Health        | Power(W)    Temp(C)           Hugepages-Usage(page)|\n| Chip                      | Bus-Id        | AICore(%)   Memory-Usage(MB)  HBM-Usage(MB)        |\n+===========================+===============+====================================================+\n| 3     910B3               | OK            | 87.7        38                0    / 0             |\n| 0                         | 0000:0A:00.0  | 0           0    / 0          3449 / 65536         |\n+===========================+===============+====================================================+\n+---------------------------+---------------+----------------------------------------------------+\n| NPU     Chip              | Process id    | Process name             | Process memory(MB)      |\n+===========================+===============+====================================================+\n| No running processes found in NPU 3                                                            |\n+===========================+===============+====================================================+\n",
+    "npu_after": "+------------------------------------------------------------------------------------------------+\n| npu-smi 25.5.0                   Version: 25.5.0                                               |\n+---------------------------+---------------+----------------------------------------------------+\n| NPU   Name                | Health        | Power(W)    Temp(C)           Hugepages-Usage(page)|\n| Chip                      | Bus-Id        | AICore(%)   Memory-Usage(MB)  HBM-Usage(MB)        |\n+===========================+===============+====================================================+\n| 3     910B3               | OK            | 95.7        38                0    / 0             |\n| 0                         | 0000:0A:00.0  | 0           0    / 0          3450 / 65536         |\n+===========================+===============+====================================================+\n+---------------------------+---------------+----------------------------------------------------+\n| NPU     Chip              | Process id    | Process name             | Process memory(MB)      |\n+===========================+===============+====================================================+\n| No running processes found in NPU 3                                                            |\n+===========================+===============+====================================================+\n",
+    "other_jobs_before": "",
+    "other_jobs_after": ""
+  }
+]

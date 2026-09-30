@@ -1,0 +1,537 @@
+{
+  "scope": "L1 diagnostics; not benchmark samples",
+  "cases": [
+    {
+      "experiment": "optional3-profile-eager-baseline",
+      "case": "t1-d4096-signed0",
+      "source": "optional3-profile-eager-baseline/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1259790_20260930175423152_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"1,4096;1,4;1,4,4;1,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 300,
+        "aten::empty": 300
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 29.54,
+      "aiv_scalar_time(us)": 5.2725,
+      "aiv_vec_time(us)": 0.2085,
+      "aiv_mte3_time(us)": 0.10200000000000001,
+      "aicore_time(us)": 17.304000000000002
+    },
+    {
+      "experiment": "optional3-profile-eager-baseline",
+      "case": "t1-d7168-signed0",
+      "source": "optional3-profile-eager-baseline/data/t1-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1259790_20260930175440997_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"1,7168;1,4;1,4,4;1,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 300,
+        "aten::empty": 300
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 32.200500000000005,
+      "aiv_scalar_time(us)": 5.5355,
+      "aiv_vec_time(us)": 0.237,
+      "aiv_mte3_time(us)": 0.1505,
+      "aicore_time(us)": 19.266
+    },
+    {
+      "experiment": "optional3-profile-eager-baseline",
+      "case": "t128-d4096-signed1",
+      "source": "optional3-profile-eager-baseline/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1259790_20260930175429092_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"128,4096;128,4;128,4,4;128,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 300,
+        "aten::empty": 300
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 62.311499999999995,
+      "aiv_scalar_time(us)": 17.339,
+      "aiv_vec_time(us)": 18.711,
+      "aiv_mte3_time(us)": 4.369,
+      "aicore_time(us)": 24.968
+    },
+    {
+      "experiment": "optional3-profile-eager-baseline",
+      "case": "t2-d4096-signed0",
+      "source": "optional3-profile-eager-baseline/data/t2-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1259790_20260930175457603_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"2,4096;2,4;2,4,4;2,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 300,
+        "aten::empty": 300
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 29.810000000000002,
+      "aiv_scalar_time(us)": 5.7135,
+      "aiv_vec_time(us)": 0.358,
+      "aiv_mte3_time(us)": 0.198,
+      "aicore_time(us)": 17.4225
+    },
+    {
+      "experiment": "optional3-profile-eager-baseline",
+      "case": "t2-d7168-signed0",
+      "source": "optional3-profile-eager-baseline/data/t2-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1259790_20260930175445854_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"2,7168;2,4;2,4,4;2,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 300,
+        "aten::empty": 300
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 32.501000000000005,
+      "aiv_scalar_time(us)": 6.0005,
+      "aiv_vec_time(us)": 0.415,
+      "aiv_mte3_time(us)": 0.3135,
+      "aicore_time(us)": 19.405
+    },
+    {
+      "experiment": "optional3-profile-eager-baseline",
+      "case": "t4-d7168-signed0",
+      "source": "optional3-profile-eager-baseline/data/t4-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1259790_20260930175451738_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"4,7168;4,4;4,4,4;4,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 300,
+        "aten::empty": 300
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 32.8605,
+      "aiv_scalar_time(us)": 6.1805,
+      "aiv_vec_time(us)": 0.758,
+      "aiv_mte3_time(us)": 0.344,
+      "aicore_time(us)": 19.31
+    },
+    {
+      "experiment": "optional3-profile-eager-baseline",
+      "case": "t512-d7168-signed0",
+      "source": "optional3-profile-eager-baseline/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1259790_20260930175435135_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"512,7168;512,4;512,4,4;512,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 300,
+        "aten::empty": 300
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 170.25349999999997,
+      "aiv_scalar_time(us)": 56.4755,
+      "aiv_vec_time(us)": 81.112,
+      "aiv_mte3_time(us)": 26.308999999999997,
+      "aicore_time(us)": 64.668
+    },
+    {
+      "experiment": "optional3-profile-eager-candidate",
+      "case": "t1-d4096-signed0",
+      "source": "optional3-profile-eager-candidate/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1261968_20260930175537212_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"1,4096;1,4;1,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 240,
+        "aten::empty": 240
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 29.141,
+      "aiv_scalar_time(us)": 5.399,
+      "aiv_vec_time(us)": 0.208,
+      "aiv_mte3_time(us)": 0.097,
+      "aicore_time(us)": 17.67
+    },
+    {
+      "experiment": "optional3-profile-eager-candidate",
+      "case": "t1-d7168-signed0",
+      "source": "optional3-profile-eager-candidate/data/t1-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1261968_20260930175553042_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"1,7168;1,4;1,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 240,
+        "aten::empty": 240
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 30.661,
+      "aiv_scalar_time(us)": 5.5725,
+      "aiv_vec_time(us)": 0.237,
+      "aiv_mte3_time(us)": 0.15,
+      "aicore_time(us)": 18.8735
+    },
+    {
+      "experiment": "optional3-profile-eager-candidate",
+      "case": "t128-d4096-signed1",
+      "source": "optional3-profile-eager-candidate/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1261968_20260930175542145_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"128,4096;128,4;128,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 240,
+        "aten::empty": 240
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 60.4215,
+      "aiv_scalar_time(us)": 16.612000000000002,
+      "aiv_vec_time(us)": 18.708,
+      "aiv_mte3_time(us)": 3.7954999999999997,
+      "aicore_time(us)": 24.614
+    },
+    {
+      "experiment": "optional3-profile-eager-candidate",
+      "case": "t2-d4096-signed0",
+      "source": "optional3-profile-eager-candidate/data/t2-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1261968_20260930175609614_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"2,4096;2,4;2,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 240,
+        "aten::empty": 240
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 28.250500000000002,
+      "aiv_scalar_time(us)": 5.557499999999999,
+      "aiv_vec_time(us)": 0.355,
+      "aiv_mte3_time(us)": 0.167,
+      "aicore_time(us)": 17.866500000000002
+    },
+    {
+      "experiment": "optional3-profile-eager-candidate",
+      "case": "t2-d7168-signed0",
+      "source": "optional3-profile-eager-candidate/data/t2-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1261968_20260930175558909_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"2,7168;2,4;2,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 240,
+        "aten::empty": 240
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 31.32,
+      "aiv_scalar_time(us)": 5.9925,
+      "aiv_vec_time(us)": 0.415,
+      "aiv_mte3_time(us)": 0.304,
+      "aicore_time(us)": 18.993000000000002
+    },
+    {
+      "experiment": "optional3-profile-eager-candidate",
+      "case": "t4-d7168-signed0",
+      "source": "optional3-profile-eager-candidate/data/t4-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1261968_20260930175603762_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"4,7168;4,4;4,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 240,
+        "aten::empty": 240
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 31.600499999999997,
+      "aiv_scalar_time(us)": 6.2805,
+      "aiv_vec_time(us)": 0.7575000000000001,
+      "aiv_mte3_time(us)": 0.34450000000000003,
+      "aicore_time(us)": 19.4865
+    },
+    {
+      "experiment": "optional3-profile-eager-candidate",
+      "case": "t512-d7168-signed0",
+      "source": "optional3-profile-eager-candidate/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1261968_20260930175547186_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"512,7168;512,4;512,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 240,
+        "aten::empty": 240
+      },
+      "hc_pre_cpu_count": 60,
+      "Duration(us)": 164.903,
+      "aiv_scalar_time(us)": 55.339,
+      "aiv_vec_time(us)": 81.111,
+      "aiv_mte3_time(us)": 24.573999999999998,
+      "aicore_time(us)": 64.3155
+    },
+    {
+      "experiment": "optional3-profile-graph-baseline",
+      "case": "t1-d4096-signed0",
+      "source": "optional3-profile-graph-baseline/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1264158_20260930175649032_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"1,4096;1,4;1,4,4;1,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 27.811,
+      "aiv_scalar_time(us)": 4.6915,
+      "aiv_vec_time(us)": 0.208,
+      "aiv_mte3_time(us)": 0.0775,
+      "aicore_time(us)": 15.2555
+    },
+    {
+      "experiment": "optional3-profile-graph-baseline",
+      "case": "t1-d7168-signed0",
+      "source": "optional3-profile-graph-baseline/data/t1-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1264158_20260930175706861_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"1,7168;1,4;1,4,4;1,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 31.2705,
+      "aiv_scalar_time(us)": 5.0235,
+      "aiv_vec_time(us)": 0.237,
+      "aiv_mte3_time(us)": 0.17149999999999999,
+      "aicore_time(us)": 17.1335
+    },
+    {
+      "experiment": "optional3-profile-graph-baseline",
+      "case": "t128-d4096-signed1",
+      "source": "optional3-profile-graph-baseline/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1264158_20260930175654958_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"128,4096;128,4;128,4,4;128,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 60.9415,
+      "aiv_scalar_time(us)": 16.7625,
+      "aiv_vec_time(us)": 18.714,
+      "aiv_mte3_time(us)": 4.352,
+      "aicore_time(us)": 23.511000000000003
+    },
+    {
+      "experiment": "optional3-profile-graph-baseline",
+      "case": "t2-d4096-signed0",
+      "source": "optional3-profile-graph-baseline/data/t2-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1264158_20260930175724448_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"2,4096;2,4;2,4,4;2,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 27.950499999999998,
+      "aiv_scalar_time(us)": 4.983499999999999,
+      "aiv_vec_time(us)": 0.357,
+      "aiv_mte3_time(us)": 0.20450000000000002,
+      "aicore_time(us)": 15.3625
+    },
+    {
+      "experiment": "optional3-profile-graph-baseline",
+      "case": "t2-d7168-signed0",
+      "source": "optional3-profile-graph-baseline/data/t2-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1264158_20260930175712723_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"2,7168;2,4;2,4,4;2,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 30.700499999999998,
+      "aiv_scalar_time(us)": 5.447,
+      "aiv_vec_time(us)": 0.415,
+      "aiv_mte3_time(us)": 0.3455,
+      "aicore_time(us)": 17.4295
+    },
+    {
+      "experiment": "optional3-profile-graph-baseline",
+      "case": "t4-d7168-signed0",
+      "source": "optional3-profile-graph-baseline/data/t4-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1264158_20260930175718585_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"4,7168;4,4;4,4,4;4,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 31.1705,
+      "aiv_scalar_time(us)": 5.862500000000001,
+      "aiv_vec_time(us)": 0.758,
+      "aiv_mte3_time(us)": 0.402,
+      "aicore_time(us)": 17.511
+    },
+    {
+      "experiment": "optional3-profile-graph-baseline",
+      "case": "t512-d7168-signed0",
+      "source": "optional3-profile-graph-baseline/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1264158_20260930175700998_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"512,7168;512,4;512,4,4;512,4\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 165.423,
+      "aiv_scalar_time(us)": 55.644999999999996,
+      "aiv_vec_time(us)": 81.1185,
+      "aiv_mte3_time(us)": 26.291,
+      "aicore_time(us)": 62.7605
+    },
+    {
+      "experiment": "optional3-profile-graph-candidate",
+      "case": "t1-d4096-signed0",
+      "source": "optional3-profile-graph-candidate/data/t1-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1266334_20260930175804581_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"1,4096;1,4;1,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 29.311,
+      "aiv_scalar_time(us)": 5.362500000000001,
+      "aiv_vec_time(us)": 0.208,
+      "aiv_mte3_time(us)": 0.1105,
+      "aicore_time(us)": 17.4535
+    },
+    {
+      "experiment": "optional3-profile-graph-candidate",
+      "case": "t1-d7168-signed0",
+      "source": "optional3-profile-graph-candidate/data/t1-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1266334_20260930175821413_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"1,7168;1,4;1,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 32.991,
+      "aiv_scalar_time(us)": 5.678000000000001,
+      "aiv_vec_time(us)": 0.237,
+      "aiv_mte3_time(us)": 0.168,
+      "aicore_time(us)": 19.164
+    },
+    {
+      "experiment": "optional3-profile-graph-candidate",
+      "case": "t128-d4096-signed1",
+      "source": "optional3-profile-graph-candidate/data/t128-d4096-signed1/752c3fdca26b44da9fd55f3c88dd3113_1266334_20260930175810492_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"128,4096;128,4;128,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 61.7315,
+      "aiv_scalar_time(us)": 17.04,
+      "aiv_vec_time(us)": 18.7115,
+      "aiv_mte3_time(us)": 3.9845,
+      "aicore_time(us)": 24.945
+    },
+    {
+      "experiment": "optional3-profile-graph-candidate",
+      "case": "t2-d4096-signed0",
+      "source": "optional3-profile-graph-candidate/data/t2-d4096-signed0/752c3fdca26b44da9fd55f3c88dd3113_1266334_20260930175838009_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"2,4096;2,4;2,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 29.3405,
+      "aiv_scalar_time(us)": 5.766,
+      "aiv_vec_time(us)": 0.357,
+      "aiv_mte3_time(us)": 0.194,
+      "aicore_time(us)": 17.4485
+    },
+    {
+      "experiment": "optional3-profile-graph-candidate",
+      "case": "t2-d7168-signed0",
+      "source": "optional3-profile-graph-candidate/data/t2-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1266334_20260930175827277_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"2,7168;2,4;2,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 33.1905,
+      "aiv_scalar_time(us)": 6.140000000000001,
+      "aiv_vec_time(us)": 0.415,
+      "aiv_mte3_time(us)": 0.289,
+      "aicore_time(us)": 19.444499999999998
+    },
+    {
+      "experiment": "optional3-profile-graph-candidate",
+      "case": "t4-d7168-signed0",
+      "source": "optional3-profile-graph-candidate/data/t4-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1266334_20260930175832150_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"4,7168;4,4;4,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 33.861,
+      "aiv_scalar_time(us)": 6.433,
+      "aiv_vec_time(us)": 0.758,
+      "aiv_mte3_time(us)": 0.3735,
+      "aicore_time(us)": 19.542
+    },
+    {
+      "experiment": "optional3-profile-graph-candidate",
+      "case": "t512-d7168-signed0",
+      "source": "optional3-profile-graph-candidate/data/t512-d7168-signed0/752c3fdca26b44da9fd55f3c88dd3113_1266334_20260930175815563_ascend_pt/ASCEND_PROFILER_OUTPUT/kernel_details.csv",
+      "count": 60,
+      "output_shapes": [
+        "\"512,7168;512,4;512,4,4;\""
+      ],
+      "allocation_events": {
+        "empty_tensor": 0,
+        "aten::empty": 0
+      },
+      "hc_pre_cpu_count": 0,
+      "Duration(us)": 168.62349999999998,
+      "aiv_scalar_time(us)": 56.048,
+      "aiv_vec_time(us)": 81.105,
+      "aiv_mte3_time(us)": 25.063499999999998,
+      "aicore_time(us)": 64.57900000000001
+    }
+  ]
+}

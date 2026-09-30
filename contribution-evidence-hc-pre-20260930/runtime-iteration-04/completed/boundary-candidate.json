@@ -1,0 +1,923 @@
+[
+  {
+    "case": "t1-d8-signed0-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "v2:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125",
+      "v3:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+    ],
+    "input_sha256": [
+      "fe65f6e8dfaf50e877dfcaf2c0bdc467a8f9a8f999cbcf1bc6d81bc27c8e82b5",
+      "cce9e24dfeef79b9ae58815f3d1e3d2b09f6d169ba98d05db4af5798b73f7077",
+      "14e43cb94cc16cb3cd8a6868844c34a7b1481a9b7451793b8b0552f801b4b44a",
+      "3b3ba5839fa53ca383d2a86e4cca4a47150a5bbfd89796a2c8170a103e4cfd9b"
+    ],
+    "sha256": "d5f189f5332f10c9a6f1fac96b7de1e0a359ebdf6ea7860867937b19a77289bd"
+  },
+  {
+    "case": "t1-d8-signed0-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "v2:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125",
+      "v3:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+    ],
+    "input_sha256": [
+      "fe65f6e8dfaf50e877dfcaf2c0bdc467a8f9a8f999cbcf1bc6d81bc27c8e82b5",
+      "cce9e24dfeef79b9ae58815f3d1e3d2b09f6d169ba98d05db4af5798b73f7077",
+      "14e43cb94cc16cb3cd8a6868844c34a7b1481a9b7451793b8b0552f801b4b44a",
+      "3b3ba5839fa53ca383d2a86e4cca4a47150a5bbfd89796a2c8170a103e4cfd9b"
+    ],
+    "sha256": "d566a4100e4ddf1462215dc8ae7a3cac627eb7888a936c2b2540dbc1146de966"
+  },
+  {
+    "case": "t1-d8-signed0-i20",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "v2:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125",
+      "v3:0:pass rate 87.50% is below 98.00%; max absolute difference: 0.03125"
+    ],
+    "input_sha256": [
+      "fe65f6e8dfaf50e877dfcaf2c0bdc467a8f9a8f999cbcf1bc6d81bc27c8e82b5",
+      "cce9e24dfeef79b9ae58815f3d1e3d2b09f6d169ba98d05db4af5798b73f7077",
+      "14e43cb94cc16cb3cd8a6868844c34a7b1481a9b7451793b8b0552f801b4b44a",
+      "3b3ba5839fa53ca383d2a86e4cca4a47150a5bbfd89796a2c8170a103e4cfd9b"
+    ],
+    "sha256": "3bbde99e8e8c5bbb981410a582b0e976d4bf13a81eca5818321752085897ed53"
+  },
+  {
+    "case": "t1-d8-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "e9472981ae4bde4213a2a62486fcb1b9819a737a15d09c2a2bba9ab7bdadced6",
+      "328fd9b2b8f03163a95e01f33868301ca37a665380d70b428c557c143415a1a6",
+      "14e43cb94cc16cb3cd8a6868844c34a7b1481a9b7451793b8b0552f801b4b44a",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "410a48da1ea2a0191b015a3846049292b3b281bbf7f892cb2be5b3c46982f7cf"
+  },
+  {
+    "case": "t1-d8-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "e9472981ae4bde4213a2a62486fcb1b9819a737a15d09c2a2bba9ab7bdadced6",
+      "328fd9b2b8f03163a95e01f33868301ca37a665380d70b428c557c143415a1a6",
+      "14e43cb94cc16cb3cd8a6868844c34a7b1481a9b7451793b8b0552f801b4b44a",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "7c3baa67fa54b7c420e0fe7923a185cc366fe9ee2a9728c114b705ee9c45a015"
+  },
+  {
+    "case": "t1-d8-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "e9472981ae4bde4213a2a62486fcb1b9819a737a15d09c2a2bba9ab7bdadced6",
+      "328fd9b2b8f03163a95e01f33868301ca37a665380d70b428c557c143415a1a6",
+      "14e43cb94cc16cb3cd8a6868844c34a7b1481a9b7451793b8b0552f801b4b44a",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "9f39cd7343d4b39162e36682d6a2f9fd6806d50a860b710d859c6845a240cfb1"
+  },
+  {
+    "case": "t17-d8-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "f922ab3306796ff45e88d08d711c399ba8561f8bc5f0ae968e5294fa0b8f7cd6",
+      "23802620ddf3c5a16aa3f177e0bd9673a841405a3f0aa67537a00d51c885f589",
+      "c81a65706307b16d67c606d617a8e9f31d4fc29ee477c1dbdab1bb4ef621962c",
+      "0feaadbac186d5153f04bfb03609f70c698099d33f29df002792c85f7fb3c87a"
+    ],
+    "sha256": "1f1f2982d833571045b12b138b753bf3ab129464d23c77be5467c2777a371a5a"
+  },
+  {
+    "case": "t17-d8-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "f922ab3306796ff45e88d08d711c399ba8561f8bc5f0ae968e5294fa0b8f7cd6",
+      "23802620ddf3c5a16aa3f177e0bd9673a841405a3f0aa67537a00d51c885f589",
+      "c81a65706307b16d67c606d617a8e9f31d4fc29ee477c1dbdab1bb4ef621962c",
+      "0feaadbac186d5153f04bfb03609f70c698099d33f29df002792c85f7fb3c87a"
+    ],
+    "sha256": "b8b526a16a31629ad0dc4a12acf8898aabb1377b40c415e652f8769bf9c20619"
+  },
+  {
+    "case": "t17-d8-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "f922ab3306796ff45e88d08d711c399ba8561f8bc5f0ae968e5294fa0b8f7cd6",
+      "23802620ddf3c5a16aa3f177e0bd9673a841405a3f0aa67537a00d51c885f589",
+      "c81a65706307b16d67c606d617a8e9f31d4fc29ee477c1dbdab1bb4ef621962c",
+      "0feaadbac186d5153f04bfb03609f70c698099d33f29df002792c85f7fb3c87a"
+    ],
+    "sha256": "0b6ab942cf88a214a111427aa8c22a14e363eef0b84ff498d65018f59c4d1dfc"
+  },
+  {
+    "case": "t17-d8-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "4508dfe7d11f19e15c4e58f950e42c5c4f61f6f264a5bdf695b43a5fc156a9fe",
+      "7fdce3fb4548539a2b91a67dd6a6a99cc55792f9a8f8d42455dcee96436b2d2c",
+      "c81a65706307b16d67c606d617a8e9f31d4fc29ee477c1dbdab1bb4ef621962c",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "6bc7c4fffe4d0d9e688332b61ed3d1d14f10aa1332b02acffe12f9c87dc0e8c7"
+  },
+  {
+    "case": "t17-d8-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "4508dfe7d11f19e15c4e58f950e42c5c4f61f6f264a5bdf695b43a5fc156a9fe",
+      "7fdce3fb4548539a2b91a67dd6a6a99cc55792f9a8f8d42455dcee96436b2d2c",
+      "c81a65706307b16d67c606d617a8e9f31d4fc29ee477c1dbdab1bb4ef621962c",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "c87e839c64c97e194fc1345866abd31feae66faaa6113c10a4f95ec95e951537"
+  },
+  {
+    "case": "t17-d8-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "4508dfe7d11f19e15c4e58f950e42c5c4f61f6f264a5bdf695b43a5fc156a9fe",
+      "7fdce3fb4548539a2b91a67dd6a6a99cc55792f9a8f8d42455dcee96436b2d2c",
+      "c81a65706307b16d67c606d617a8e9f31d4fc29ee477c1dbdab1bb4ef621962c",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "b201307b4b0e033f39480671d031713bcd388ed4079e1398db515acb79f1a6b0"
+  },
+  {
+    "case": "t1-d64-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "6b3ed3d7a89b742abea69480342a7ca2dfca476229aef12c785fca4062a3102b",
+      "ef1154fcd5f66e9006957ca99d0b10a2003752b2df7ea7318c2e608eb0322254",
+      "f9937decb5c6e7647e8dcf30d4ec1b585175288b89c772c73177ef8e3fbb9638",
+      "c30e08dbcf33b43a2798788cc65f4115b173838dd3a2832aebfcda582290e8d5"
+    ],
+    "sha256": "d8905559c8d4ecb686592224029fbe3d64d3d9e147cffad803a6d45b689d67a0"
+  },
+  {
+    "case": "t1-d64-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "6b3ed3d7a89b742abea69480342a7ca2dfca476229aef12c785fca4062a3102b",
+      "ef1154fcd5f66e9006957ca99d0b10a2003752b2df7ea7318c2e608eb0322254",
+      "f9937decb5c6e7647e8dcf30d4ec1b585175288b89c772c73177ef8e3fbb9638",
+      "c30e08dbcf33b43a2798788cc65f4115b173838dd3a2832aebfcda582290e8d5"
+    ],
+    "sha256": "3acb8ea1423fe18bcc0474e5579e4ba59dfa39dcc88911eb6b99f43698cc3601"
+  },
+  {
+    "case": "t1-d64-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "6b3ed3d7a89b742abea69480342a7ca2dfca476229aef12c785fca4062a3102b",
+      "ef1154fcd5f66e9006957ca99d0b10a2003752b2df7ea7318c2e608eb0322254",
+      "f9937decb5c6e7647e8dcf30d4ec1b585175288b89c772c73177ef8e3fbb9638",
+      "c30e08dbcf33b43a2798788cc65f4115b173838dd3a2832aebfcda582290e8d5"
+    ],
+    "sha256": "9a577534fe0cf446df9036ef626f3341ed3ea9073ae6ea223763065079f2c658"
+  },
+  {
+    "case": "t1-d64-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "9a193ee1ae035540b061eedc0401d552a549cb975d4827606ef4e2b2395e31a3",
+      "700b884db658ed7a7df410b4f21a222a4f558404a50b5ac76e97a0b16ab680ee",
+      "f9937decb5c6e7647e8dcf30d4ec1b585175288b89c772c73177ef8e3fbb9638",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "dcb11a84f316d5ac827b289c83f220b2a3f04f4e2c322eec9f3663e5765f6b77"
+  },
+  {
+    "case": "t1-d64-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "9a193ee1ae035540b061eedc0401d552a549cb975d4827606ef4e2b2395e31a3",
+      "700b884db658ed7a7df410b4f21a222a4f558404a50b5ac76e97a0b16ab680ee",
+      "f9937decb5c6e7647e8dcf30d4ec1b585175288b89c772c73177ef8e3fbb9638",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "428f85b1f7bd178d93a8cdceee27aa8b04805512e91b3690bb38782ba7e94eb9"
+  },
+  {
+    "case": "t1-d64-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "9a193ee1ae035540b061eedc0401d552a549cb975d4827606ef4e2b2395e31a3",
+      "700b884db658ed7a7df410b4f21a222a4f558404a50b5ac76e97a0b16ab680ee",
+      "f9937decb5c6e7647e8dcf30d4ec1b585175288b89c772c73177ef8e3fbb9638",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "2239f74c14bc6535df9b2473344cab33952c41dca415250388cdc54856ee7097"
+  },
+  {
+    "case": "t17-d64-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "84a58ebf4343ca2d0a0ec7cc76da2c1eeadc825f29168e03baa52291cbf27849",
+      "316022ec326adde56548094d842011e2c8f2d71dae8aeb5bd8bb070043f84b5d",
+      "aa0d53cb83b632c3e1e1f8915bfffc8dee6456921c0bf99a97587c1d7ab41e57",
+      "51fdd4d58c9540ad335b8c267cae841352f6f589773637959b177c9937d47beb"
+    ],
+    "sha256": "11b6b80daa4507017b717f2933ddd8b0d3956ba0a94e8cd3f27c66b31518a2dd"
+  },
+  {
+    "case": "t17-d64-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "84a58ebf4343ca2d0a0ec7cc76da2c1eeadc825f29168e03baa52291cbf27849",
+      "316022ec326adde56548094d842011e2c8f2d71dae8aeb5bd8bb070043f84b5d",
+      "aa0d53cb83b632c3e1e1f8915bfffc8dee6456921c0bf99a97587c1d7ab41e57",
+      "51fdd4d58c9540ad335b8c267cae841352f6f589773637959b177c9937d47beb"
+    ],
+    "sha256": "3373bbb0bf07db66577c2158b457690332ced112398423ad6d4507fa4126b928"
+  },
+  {
+    "case": "t17-d64-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "84a58ebf4343ca2d0a0ec7cc76da2c1eeadc825f29168e03baa52291cbf27849",
+      "316022ec326adde56548094d842011e2c8f2d71dae8aeb5bd8bb070043f84b5d",
+      "aa0d53cb83b632c3e1e1f8915bfffc8dee6456921c0bf99a97587c1d7ab41e57",
+      "51fdd4d58c9540ad335b8c267cae841352f6f589773637959b177c9937d47beb"
+    ],
+    "sha256": "855e5de1fb9a0549e5d4901ced2e0cf309474c318403d848d9cb66d11aa4fc27"
+  },
+  {
+    "case": "t17-d64-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "2a6c54f0aecb97ed2202169f861de90ab3be426a8acb651b23e0b6a7f1ae1106",
+      "77c79f8461b81ea08fa67ba6669f54faffbb27cc61ea0582e47f08a020b52e2e",
+      "aa0d53cb83b632c3e1e1f8915bfffc8dee6456921c0bf99a97587c1d7ab41e57",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "8fbed04825ed9d56773869c96a6df0f4041c373925f876819045f1d2af9efa30"
+  },
+  {
+    "case": "t17-d64-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "2a6c54f0aecb97ed2202169f861de90ab3be426a8acb651b23e0b6a7f1ae1106",
+      "77c79f8461b81ea08fa67ba6669f54faffbb27cc61ea0582e47f08a020b52e2e",
+      "aa0d53cb83b632c3e1e1f8915bfffc8dee6456921c0bf99a97587c1d7ab41e57",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "334bf635bea557bb12fe89c92de624b8de34ab40535983e7384387f31d994a40"
+  },
+  {
+    "case": "t17-d64-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "2a6c54f0aecb97ed2202169f861de90ab3be426a8acb651b23e0b6a7f1ae1106",
+      "77c79f8461b81ea08fa67ba6669f54faffbb27cc61ea0582e47f08a020b52e2e",
+      "aa0d53cb83b632c3e1e1f8915bfffc8dee6456921c0bf99a97587c1d7ab41e57",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "9e57b8ee471ae360c3605d131d6d02c08750effddbfa7f4c105b5981472aecf5"
+  },
+  {
+    "case": "t1-d4103-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "3558a6489a5dbace1d194228e76a20475a42636d2f15776cfe63e887c994d3b0",
+      "b6eaababb47f613b1990eae13238f14d52fc183687702094a3916509beb29f4b",
+      "51c8a27afd731251d1a497c1d8bb8d74cadde6838697c0d0eef95e6073bd79b2",
+      "a5f1a0358de12e009ca92ca52de1badf2671c1981c6eb4cd0062d022cdd93401"
+    ],
+    "sha256": "da87b923df19f798c2e3fcee1724fa55d934580314ba19b2740091ee690187bc"
+  },
+  {
+    "case": "t1-d4103-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "3558a6489a5dbace1d194228e76a20475a42636d2f15776cfe63e887c994d3b0",
+      "b6eaababb47f613b1990eae13238f14d52fc183687702094a3916509beb29f4b",
+      "51c8a27afd731251d1a497c1d8bb8d74cadde6838697c0d0eef95e6073bd79b2",
+      "a5f1a0358de12e009ca92ca52de1badf2671c1981c6eb4cd0062d022cdd93401"
+    ],
+    "sha256": "48071e78080fadc44be0da062322d786bdd82aa365084957ff49bb5d1ca94d06"
+  },
+  {
+    "case": "t1-d4103-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "3558a6489a5dbace1d194228e76a20475a42636d2f15776cfe63e887c994d3b0",
+      "b6eaababb47f613b1990eae13238f14d52fc183687702094a3916509beb29f4b",
+      "51c8a27afd731251d1a497c1d8bb8d74cadde6838697c0d0eef95e6073bd79b2",
+      "a5f1a0358de12e009ca92ca52de1badf2671c1981c6eb4cd0062d022cdd93401"
+    ],
+    "sha256": "3c31f1f013eedfac18782e2e22382cf4ba30b2e56e1f806f9fe32fc38b8fe3c4"
+  },
+  {
+    "case": "t1-d4103-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "a525fa48366fe69b1a343b9d575ed806183ebef344a1dff408fc291c42e433aa",
+      "04f2caf22ea2126612936c1f3a53ce13cfac2970729bb6cd1127d58ec57c105a",
+      "51c8a27afd731251d1a497c1d8bb8d74cadde6838697c0d0eef95e6073bd79b2",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "7c36ffe39e3605f3b6ef1f4218be2da31cb67eab91dd44be074f4ac177bdb818"
+  },
+  {
+    "case": "t1-d4103-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "a525fa48366fe69b1a343b9d575ed806183ebef344a1dff408fc291c42e433aa",
+      "04f2caf22ea2126612936c1f3a53ce13cfac2970729bb6cd1127d58ec57c105a",
+      "51c8a27afd731251d1a497c1d8bb8d74cadde6838697c0d0eef95e6073bd79b2",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "202e09f2133166ad87a5e9459c63db27a1ff6753b481e3896b9effea6f1405b2"
+  },
+  {
+    "case": "t1-d4103-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "a525fa48366fe69b1a343b9d575ed806183ebef344a1dff408fc291c42e433aa",
+      "04f2caf22ea2126612936c1f3a53ce13cfac2970729bb6cd1127d58ec57c105a",
+      "51c8a27afd731251d1a497c1d8bb8d74cadde6838697c0d0eef95e6073bd79b2",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "74f6a5e8b8be9e400108893b391a36a08a6c0e49a4650b44d38a036fdaeeb4c3"
+  },
+  {
+    "case": "t17-d4103-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "39faf8fb0a905bc51cc27c204062e2a20f93c2160292e6e954cd105d1dcc9133",
+      "1affe4f4fbf85e0418b1b19f1d7ec51c5ad4706914e0fc0a4b5d4e16e6397006",
+      "0e3b049c879844abf658b03c22aaebb0736f937109e9812b53b834d4771dbf19",
+      "a63035faba146c6acbc896530890205779869fb2829b46a511822b5928340084"
+    ],
+    "sha256": "d19e071725ae9fba688d0aa5336d4d4cfd2b89e215fb13aeb750848113ff6931"
+  },
+  {
+    "case": "t17-d4103-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "39faf8fb0a905bc51cc27c204062e2a20f93c2160292e6e954cd105d1dcc9133",
+      "1affe4f4fbf85e0418b1b19f1d7ec51c5ad4706914e0fc0a4b5d4e16e6397006",
+      "0e3b049c879844abf658b03c22aaebb0736f937109e9812b53b834d4771dbf19",
+      "a63035faba146c6acbc896530890205779869fb2829b46a511822b5928340084"
+    ],
+    "sha256": "166922b920011511d4e41a0e3d9899a88aa56a53a128be3af5532048c2c7f3f2"
+  },
+  {
+    "case": "t17-d4103-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "39faf8fb0a905bc51cc27c204062e2a20f93c2160292e6e954cd105d1dcc9133",
+      "1affe4f4fbf85e0418b1b19f1d7ec51c5ad4706914e0fc0a4b5d4e16e6397006",
+      "0e3b049c879844abf658b03c22aaebb0736f937109e9812b53b834d4771dbf19",
+      "a63035faba146c6acbc896530890205779869fb2829b46a511822b5928340084"
+    ],
+    "sha256": "76a65ae71348df11f2cf4896746f5f695e724217f605da24bdb415177079cef9"
+  },
+  {
+    "case": "t17-d4103-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "90ba8d3d46b8c54556f11d5e929e1af7b720d734d062e2be30598b7fc37aecca",
+      "19e3011eac8ddc1818ce56e6b4d6f402261041ed4a306521da60a6bc44858750",
+      "0e3b049c879844abf658b03c22aaebb0736f937109e9812b53b834d4771dbf19",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "fb083da15a39010786b6503b3fe946130287b067c494fce9bed63e6812929d0f"
+  },
+  {
+    "case": "t17-d4103-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "90ba8d3d46b8c54556f11d5e929e1af7b720d734d062e2be30598b7fc37aecca",
+      "19e3011eac8ddc1818ce56e6b4d6f402261041ed4a306521da60a6bc44858750",
+      "0e3b049c879844abf658b03c22aaebb0736f937109e9812b53b834d4771dbf19",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "13a8a24c37674f78e9c542ba1ce77553152d2b886e91b2ccde27392b3f0870ca"
+  },
+  {
+    "case": "t17-d4103-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "90ba8d3d46b8c54556f11d5e929e1af7b720d734d062e2be30598b7fc37aecca",
+      "19e3011eac8ddc1818ce56e6b4d6f402261041ed4a306521da60a6bc44858750",
+      "0e3b049c879844abf658b03c22aaebb0736f937109e9812b53b834d4771dbf19",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "dbab32f71963fda81ef6d64e978c4217aeccfed985d9a8cd17e24aa70cc1bb9e"
+  },
+  {
+    "case": "t1-d4104-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "996b292fcb9ad0741c9a4f4ffcdd94efbbb50ffaf7f78edc58ab627c7ef5566f",
+      "d082f0c3c50e0dab515a311f68428315f5ff05ffa549492a0319516cd49635e6",
+      "6df97e2ec4c1cae4ef36047de601f1ba168fe4245b16463b4c54a8e295f97ae2",
+      "6c94fd89a26e74eed95a988506fb84888ead1c1b501307c71ca39ebce4008373"
+    ],
+    "sha256": "9bf55803b3b85752eb5b1af5b381250794b6032447113d775c089c53b0ce32b9"
+  },
+  {
+    "case": "t1-d4104-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "996b292fcb9ad0741c9a4f4ffcdd94efbbb50ffaf7f78edc58ab627c7ef5566f",
+      "d082f0c3c50e0dab515a311f68428315f5ff05ffa549492a0319516cd49635e6",
+      "6df97e2ec4c1cae4ef36047de601f1ba168fe4245b16463b4c54a8e295f97ae2",
+      "6c94fd89a26e74eed95a988506fb84888ead1c1b501307c71ca39ebce4008373"
+    ],
+    "sha256": "b6f948547475f7f35a2fe11f29d1f8d5c4add663c8c67ad8f1fc2b1401468854"
+  },
+  {
+    "case": "t1-d4104-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "996b292fcb9ad0741c9a4f4ffcdd94efbbb50ffaf7f78edc58ab627c7ef5566f",
+      "d082f0c3c50e0dab515a311f68428315f5ff05ffa549492a0319516cd49635e6",
+      "6df97e2ec4c1cae4ef36047de601f1ba168fe4245b16463b4c54a8e295f97ae2",
+      "6c94fd89a26e74eed95a988506fb84888ead1c1b501307c71ca39ebce4008373"
+    ],
+    "sha256": "29513ccd3b834c48c592da73b7199c4bdecc2c308e6cabb293af802bf6c994b9"
+  },
+  {
+    "case": "t1-d4104-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "ffc77043678e1783bdd0c2892eee3f68fb6442de11c74d2e4f22a03b3546ea35",
+      "c2ddc327ef4f407d9c473f5ef2bb907092333ab039a22bc269ad4b6ee1b899b1",
+      "6df97e2ec4c1cae4ef36047de601f1ba168fe4245b16463b4c54a8e295f97ae2",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "199a658fa1389c2abf5c8da24909daebab73be1e28c8926481f4cb878406d5c0"
+  },
+  {
+    "case": "t1-d4104-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "ffc77043678e1783bdd0c2892eee3f68fb6442de11c74d2e4f22a03b3546ea35",
+      "c2ddc327ef4f407d9c473f5ef2bb907092333ab039a22bc269ad4b6ee1b899b1",
+      "6df97e2ec4c1cae4ef36047de601f1ba168fe4245b16463b4c54a8e295f97ae2",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "71c399bd800809ccb15d5d7b204338c17b462917beb9dbe776288551b5c94f9f"
+  },
+  {
+    "case": "t1-d4104-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "ffc77043678e1783bdd0c2892eee3f68fb6442de11c74d2e4f22a03b3546ea35",
+      "c2ddc327ef4f407d9c473f5ef2bb907092333ab039a22bc269ad4b6ee1b899b1",
+      "6df97e2ec4c1cae4ef36047de601f1ba168fe4245b16463b4c54a8e295f97ae2",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "2b5442545b3d1506366a803c1cffaf3576710b39fd23ea03c68ba86e8f11526e"
+  },
+  {
+    "case": "t17-d4104-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "453da9342ada826e7fdb34824c314601a3b65b27df57542cbd9bdab3523c2987",
+      "5f9fc6d77cf5d4ede8397786784c460ae2f18e38a3439973c617cc89c1ff68f5",
+      "e04c1e4e666e4b0ea2cbca4519098906301e478d7269b5eaf8832b26e98a5bdd",
+      "f2a5221b0d846fba86ddffcc2a72d8bbaf7242a03c41057185df0e1dd76830ca"
+    ],
+    "sha256": "622227c17b488f77b08c37f4f893557b5ba3ecdfcb985ce3d9c43b84f4ba2af0"
+  },
+  {
+    "case": "t17-d4104-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "453da9342ada826e7fdb34824c314601a3b65b27df57542cbd9bdab3523c2987",
+      "5f9fc6d77cf5d4ede8397786784c460ae2f18e38a3439973c617cc89c1ff68f5",
+      "e04c1e4e666e4b0ea2cbca4519098906301e478d7269b5eaf8832b26e98a5bdd",
+      "f2a5221b0d846fba86ddffcc2a72d8bbaf7242a03c41057185df0e1dd76830ca"
+    ],
+    "sha256": "866ebcf638f79695aa2b172b37917d03b47e7b229e1ad5d42e3e8678a563a42e"
+  },
+  {
+    "case": "t17-d4104-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "453da9342ada826e7fdb34824c314601a3b65b27df57542cbd9bdab3523c2987",
+      "5f9fc6d77cf5d4ede8397786784c460ae2f18e38a3439973c617cc89c1ff68f5",
+      "e04c1e4e666e4b0ea2cbca4519098906301e478d7269b5eaf8832b26e98a5bdd",
+      "f2a5221b0d846fba86ddffcc2a72d8bbaf7242a03c41057185df0e1dd76830ca"
+    ],
+    "sha256": "7986332c78e8e808a2b99a30d6c790d223e3d9c774e0943fe6c3c51579a97c0b"
+  },
+  {
+    "case": "t17-d4104-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "39fdb922c1c7d2617fe601c0ca2bd1d2c3ec0132f1650ea58b439fc39ac77b67",
+      "93bda0f472cd8d6f1e5c128f337da80e104e78386f9f4a32562e4838d254aa7a",
+      "e04c1e4e666e4b0ea2cbca4519098906301e478d7269b5eaf8832b26e98a5bdd",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "6dd88b584cb667027b9044122ebc87e189864deeeca686d3047845f2ae141e65"
+  },
+  {
+    "case": "t17-d4104-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "39fdb922c1c7d2617fe601c0ca2bd1d2c3ec0132f1650ea58b439fc39ac77b67",
+      "93bda0f472cd8d6f1e5c128f337da80e104e78386f9f4a32562e4838d254aa7a",
+      "e04c1e4e666e4b0ea2cbca4519098906301e478d7269b5eaf8832b26e98a5bdd",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "fbdb6eeeba475f3bb98be8a7938f6034deed53ccc67748d27eabf2b3bed6e49c"
+  },
+  {
+    "case": "t17-d4104-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "input_sha256": [
+      "39fdb922c1c7d2617fe601c0ca2bd1d2c3ec0132f1650ea58b439fc39ac77b67",
+      "93bda0f472cd8d6f1e5c128f337da80e104e78386f9f4a32562e4838d254aa7a",
+      "e04c1e4e666e4b0ea2cbca4519098906301e478d7269b5eaf8832b26e98a5bdd",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "93099e83333da094bd54890eb2b938beec55c83c15516dfac940cdba8fe29ff1"
+  },
+  {
+    "case": "t1-d7169-signed0-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "baseline:v2:0",
+      "baseline:v2:1",
+      "baseline:v2:2",
+      "baseline:v3:0",
+      "baseline:v3:1",
+      "baseline:v3:2",
+      "baseline:v3:3"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+      "v2:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+      "v2:2:pass rate 12.50% is below 99.50%; max absolute difference: 0.0007213950157165527",
+      "v3:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+      "v3:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+      "v3:2:pass rate 12.50% is below 99.50%; max absolute difference: 0.0007213950157165527",
+      "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.000659644603729248"
+    ],
+    "input_sha256": [
+      "f1a8cbc69fe591dd36af401b97dc6da5fa0a742b69a9f68b50fce7ae9263091e",
+      "3059959100cfa6da592e8c6f3f0988312b709b35eed86d196cd91f83fd79dc04",
+      "483c5e191a90ced674ae859492cd1e6257a46d9c02f15c30a3d0e41433164ced",
+      "2064f69261780503b24550943f9060575be0ebbd5115db47ba0c06b2a7682677"
+    ],
+    "sha256": "11b913aaef8d8cadc751e16bccd2ebfd423ce7dd1ee6bf80e3a00e941371dc84"
+  },
+  {
+    "case": "t1-d7169-signed0-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "baseline:v2:0",
+      "baseline:v2:1",
+      "baseline:v2:2",
+      "baseline:v3:0",
+      "baseline:v3:1",
+      "baseline:v3:2",
+      "baseline:v3:3"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+      "v2:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+      "v2:2:pass rate 18.75% is below 99.50%; max absolute difference: 0.0006406009197235107",
+      "v3:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+      "v3:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+      "v3:2:pass rate 18.75% is below 99.50%; max absolute difference: 0.0006406009197235107",
+      "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.000659644603729248"
+    ],
+    "input_sha256": [
+      "f1a8cbc69fe591dd36af401b97dc6da5fa0a742b69a9f68b50fce7ae9263091e",
+      "3059959100cfa6da592e8c6f3f0988312b709b35eed86d196cd91f83fd79dc04",
+      "483c5e191a90ced674ae859492cd1e6257a46d9c02f15c30a3d0e41433164ced",
+      "2064f69261780503b24550943f9060575be0ebbd5115db47ba0c06b2a7682677"
+    ],
+    "sha256": "3864c883b7ccf3dd4ccec7fffbfc80eb7d536f15effeb81afe9b7bc1afacd3cd"
+  },
+  {
+    "case": "t1-d7169-signed0-i20",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "baseline:v2:0",
+      "baseline:v2:1",
+      "baseline:v2:2",
+      "baseline:v3:0",
+      "baseline:v3:1",
+      "baseline:v3:2",
+      "baseline:v3:3"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+      "v2:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+      "v2:2:pass rate 18.75% is below 99.50%; max absolute difference: 0.0006455481052398682",
+      "v3:0:pass rate 94.87% is below 98.00%; max absolute difference: 0.03125",
+      "v3:1:pass rate 50.00% is below 99.50%; max absolute difference: 0.0011644363403320312",
+      "v3:2:pass rate 18.75% is below 99.50%; max absolute difference: 0.0006455481052398682",
+      "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.000659644603729248"
+    ],
+    "input_sha256": [
+      "f1a8cbc69fe591dd36af401b97dc6da5fa0a742b69a9f68b50fce7ae9263091e",
+      "3059959100cfa6da592e8c6f3f0988312b709b35eed86d196cd91f83fd79dc04",
+      "483c5e191a90ced674ae859492cd1e6257a46d9c02f15c30a3d0e41433164ced",
+      "2064f69261780503b24550943f9060575be0ebbd5115db47ba0c06b2a7682677"
+    ],
+    "sha256": "cc1073593f94d84f6ed5b3ee26c0372a6a5d7b4302c89b68c75a23812acb82da"
+  },
+  {
+    "case": "t1-d7169-signed1-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "baseline:v2:0",
+      "baseline:v2:1",
+      "baseline:v2:2",
+      "baseline:v3:0",
+      "baseline:v3:1",
+      "baseline:v3:2",
+      "baseline:v3:3"
+    ],
+    "cpu_errors": [
+      "v2:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+      "v2:2:pass rate 6.25% is below 99.50%; max absolute difference: 0.0017907917499542236",
+      "v3:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+      "v3:2:pass rate 6.25% is below 99.50%; max absolute difference: 0.0017907917499542236",
+      "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.0006251707673072815"
+    ],
+    "input_sha256": [
+      "889ca6b7b44dea63cf85321a5ad70c5a1d99fd47b804c34f62fe82f500e4cc39",
+      "d95018c0b51520ae89f76e576a24d342da5b212fab309fb48c944acd25b1fcdd",
+      "483c5e191a90ced674ae859492cd1e6257a46d9c02f15c30a3d0e41433164ced",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "f483fdda31cce8babe32645a3a792e0a11ca6bb03957ad2b6e7e87dbf7dbf024"
+  },
+  {
+    "case": "t1-d7169-signed1-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "baseline:v2:0",
+      "baseline:v2:1",
+      "baseline:v2:2",
+      "baseline:v3:0",
+      "baseline:v3:1",
+      "baseline:v3:2",
+      "baseline:v3:3"
+    ],
+    "cpu_errors": [
+      "v2:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+      "v2:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0015991628170013428",
+      "v3:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+      "v3:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0015991628170013428",
+      "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.0006251707673072815"
+    ],
+    "input_sha256": [
+      "889ca6b7b44dea63cf85321a5ad70c5a1d99fd47b804c34f62fe82f500e4cc39",
+      "d95018c0b51520ae89f76e576a24d342da5b212fab309fb48c944acd25b1fcdd",
+      "483c5e191a90ced674ae859492cd1e6257a46d9c02f15c30a3d0e41433164ced",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "01cb21dcd8254043b1a2cc8472901cf0e4822c9cfc20c4b49781fb9f2853c7de"
+  },
+  {
+    "case": "t1-d7169-signed1-i20",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "baseline:v2:0",
+      "baseline:v2:1",
+      "baseline:v2:2",
+      "baseline:v3:0",
+      "baseline:v3:1",
+      "baseline:v3:2",
+      "baseline:v3:3"
+    ],
+    "cpu_errors": [
+      "v2:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+      "v2:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0015991628170013428",
+      "v3:1:pass rate 0.00% is below 99.50%; max absolute difference: 0.002384960651397705",
+      "v3:2:pass rate 0.00% is below 99.50%; max absolute difference: 0.0015991628170013428",
+      "v3:3:pass rate 25.00% is below 99.50%; max absolute difference: 0.0006251707673072815"
+    ],
+    "input_sha256": [
+      "889ca6b7b44dea63cf85321a5ad70c5a1d99fd47b804c34f62fe82f500e4cc39",
+      "d95018c0b51520ae89f76e576a24d342da5b212fab309fb48c944acd25b1fcdd",
+      "483c5e191a90ced674ae859492cd1e6257a46d9c02f15c30a3d0e41433164ced",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "e39ad607eb508bdafc3947b147264ed16279c9c85b4fc376e0efd1b0b73c5729"
+  },
+  {
+    "case": "t17-d7169-signed0-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "v2:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+      "v2:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+      "v2:2:pass rate 59.19% is below 99.50%; max absolute difference: 0.00041465461254119873",
+      "v3:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+      "v3:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+      "v3:2:pass rate 59.19% is below 99.50%; max absolute difference: 0.00041465461254119873",
+      "v3:3:pass rate 32.35% is below 99.50%; max absolute difference: 0.00048065185546875"
+    ],
+    "input_sha256": [
+      "7d23a69bdcbea438e5b1ae16cd41a52adcdb8092428ff158ffa27a1c56a356c8",
+      "328566d171ce8ad83fd5c03ee1c72e6edbacdf88b73a0e10abb03322b8f63d32",
+      "d30d28bba2e25cccc171c0018deb8621b89c470bcb467731822195a3c6791251",
+      "18ad0191b5845f37fb8930729921132ab0a7d895053c3498e055cd8c8816587b"
+    ],
+    "sha256": "38788c4d125c6b582db2a7d3811bb47c13055e9de1ec9fe80b07e60df18c8f9a"
+  },
+  {
+    "case": "t17-d7169-signed0-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "v2:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+      "v2:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+      "v2:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038051605224609375",
+      "v3:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+      "v3:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+      "v3:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038051605224609375",
+      "v3:3:pass rate 32.35% is below 99.50%; max absolute difference: 0.00048065185546875"
+    ],
+    "input_sha256": [
+      "7d23a69bdcbea438e5b1ae16cd41a52adcdb8092428ff158ffa27a1c56a356c8",
+      "328566d171ce8ad83fd5c03ee1c72e6edbacdf88b73a0e10abb03322b8f63d32",
+      "d30d28bba2e25cccc171c0018deb8621b89c470bcb467731822195a3c6791251",
+      "18ad0191b5845f37fb8930729921132ab0a7d895053c3498e055cd8c8816587b"
+    ],
+    "sha256": "869e9ee09cfed3eae3be78f9802da089aef9f49efd095b66993d9584e4c08afd"
+  },
+  {
+    "case": "t17-d7169-signed0-i20",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "v2:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+      "v2:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+      "v2:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038060545921325684",
+      "v3:0:pass rate 97.71% is below 98.00%; max absolute difference: 0.03125",
+      "v3:1:pass rate 85.29% is below 99.50%; max absolute difference: 0.0003001689910888672",
+      "v3:2:pass rate 56.99% is below 99.50%; max absolute difference: 0.00038060545921325684",
+      "v3:3:pass rate 32.35% is below 99.50%; max absolute difference: 0.00048065185546875"
+    ],
+    "input_sha256": [
+      "7d23a69bdcbea438e5b1ae16cd41a52adcdb8092428ff158ffa27a1c56a356c8",
+      "328566d171ce8ad83fd5c03ee1c72e6edbacdf88b73a0e10abb03322b8f63d32",
+      "d30d28bba2e25cccc171c0018deb8621b89c470bcb467731822195a3c6791251",
+      "18ad0191b5845f37fb8930729921132ab0a7d895053c3498e055cd8c8816587b"
+    ],
+    "sha256": "e958a3deb0eefa8eeb21533b0a6bb757fe5662804f0e6a21a72c55eec7b3b05b"
+  },
+  {
+    "case": "t17-d7169-signed1-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "v2:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+      "v2:2:pass rate 26.84% is below 99.50%; max absolute difference: 0.0009444057941436768",
+      "v3:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+      "v3:2:pass rate 26.84% is below 99.50%; max absolute difference: 0.0009444057941436768",
+      "v3:3:pass rate 35.29% is below 99.50%; max absolute difference: 0.00043191760778427124"
+    ],
+    "input_sha256": [
+      "45b070ff5b900bdc32343b1a5ed0307430627ebdd5612381b655f13d3d2812b4",
+      "c1061c323d9d9921054900df9dc79ddf3bfb470a1aa0c3717230f2029a732dd5",
+      "d30d28bba2e25cccc171c0018deb8621b89c470bcb467731822195a3c6791251",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "d96e5694a8f2b7ed8b7e0e9bf10f54b7bb6e414be40dd714ba062d04d3c532c4"
+  },
+  {
+    "case": "t17-d7169-signed1-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "v2:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+      "v2:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+      "v3:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+      "v3:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+      "v3:3:pass rate 35.29% is below 99.50%; max absolute difference: 0.00043191760778427124"
+    ],
+    "input_sha256": [
+      "45b070ff5b900bdc32343b1a5ed0307430627ebdd5612381b655f13d3d2812b4",
+      "c1061c323d9d9921054900df9dc79ddf3bfb470a1aa0c3717230f2029a732dd5",
+      "d30d28bba2e25cccc171c0018deb8621b89c470bcb467731822195a3c6791251",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "d633f11b3ff4d7e358bb3364ff66e1186b2e20fc2d2e76dd92e13d2afb178e39"
+  },
+  {
+    "case": "t17-d7169-signed1-i20",
+    "cpu_accuracy_pass": false,
+    "errors": [],
+    "cpu_errors": [
+      "v2:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+      "v2:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+      "v3:1:pass rate 61.76% is below 99.50%; max absolute difference: 0.0004172027111053467",
+      "v3:2:pass rate 27.21% is below 99.50%; max absolute difference: 0.0008423030376434326",
+      "v3:3:pass rate 35.29% is below 99.50%; max absolute difference: 0.00043191760778427124"
+    ],
+    "input_sha256": [
+      "45b070ff5b900bdc32343b1a5ed0307430627ebdd5612381b655f13d3d2812b4",
+      "c1061c323d9d9921054900df9dc79ddf3bfb470a1aa0c3717230f2029a732dd5",
+      "d30d28bba2e25cccc171c0018deb8621b89c470bcb467731822195a3c6791251",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "9190632e3ce862ff344551c2cf9375dd646eb2090fc20440591a1098ff8904f9"
+  }
+]

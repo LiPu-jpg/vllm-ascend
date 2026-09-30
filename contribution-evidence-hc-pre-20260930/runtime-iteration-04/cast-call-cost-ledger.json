@@ -1,0 +1,25 @@
+{
+  "scope": "Source/API-level ledger only; not emitted instruction counts or speedup",
+  "helper": "CastTwoDim",
+  "condition": "Both rounded row strides equal logical width",
+  "contiguous": {
+    "baseline_cast_calls": "dim0",
+    "candidate_cast_calls": 1,
+    "baseline_post_cast_pipe_barriers": 1,
+    "candidate_post_cast_pipe_barriers": 1,
+    "elements_converted": "dim0 * dim1, unchanged",
+    "rounding": "BF16->FP32 CAST_NONE; original CAST_RINT for reverse, unchanged"
+  },
+  "padded": {
+    "cast_calls": "dim0 in both variants",
+    "source_stride": "RoundUp<T1>(dim1), unchanged",
+    "destination_stride": "RoundUp<T0>(dim1), unchanged"
+  },
+  "SDK": "CANN 9.1.0 dav_c220 count Cast uint32_t count; each call enters count mask, sets count, invokes type-specific Cast intrinsic, restores normal/full mask",
+  "actual_callers": [
+    "HcPreMembaseKSplitCorePart1 input conversion",
+    "ProcessY four residual streams",
+    "ProcessY output conversion"
+  ],
+  "acceptance": "Requires complete-plugin NPU correctness and stable fair performance plus critical-path evidence"
+}

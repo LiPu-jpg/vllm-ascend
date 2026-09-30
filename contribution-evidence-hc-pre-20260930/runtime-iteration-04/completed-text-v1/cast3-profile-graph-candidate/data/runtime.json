@@ -1,0 +1,56 @@
+{
+  "registration": "production",
+  "mode": "graph",
+  "driver_sha256": "a950349797d0d660d3cd497b9df039c977ec4ce58d2d4c4b2d25c770156a1748",
+  "schema": "_C_ascend::npu_hc_pre_v2(Tensor x, Tensor hc_fn, Tensor hc_scale, Tensor hc_base, int hc_mult, int hc_sinkhorn_iters, float norm_eps, float hc_eps) -> (Tensor y, Tensor post, Tensor comb_frag)",
+  "torch": "2.10.0+cpu",
+  "torch_npu": "2.10.0.post4",
+  "device": "Ascend910B3",
+  "environment": {
+    "TASK_QUEUE_ENABLE": "1",
+    "ASCEND_LAUNCH_BLOCKING": "0",
+    "ASCEND_CUSTOM_OPP_PATH": "/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/fla_npu/opp/vendors/fla_npu_transformer:/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/fla_npu/opp/vendors/fla_npu_transformer/op_api/lib:/mnt/workspace/hc-pre-reduction-20260930/cast-source-candidate/opp/vendors/cast_candidate_transformer:/mnt/workspace/mhc-validation-20260930/vllm-ascend/vllm_ascend/_cann_ops_custom/vendors/custom_transformer",
+    "ASCEND_CACHE_PATH": "/mnt/workspace/hc-pre-reduction-20260930/iteration-04/cache-candidate",
+    "TORCHINDUCTOR_CACHE_DIR": "/mnt/workspace/hc-pre-reduction-20260930/iteration-04/inductor",
+    "LD_LIBRARY_PATH": "/mnt/workspace/hc-pre-reduction-20260930/cast-source-candidate/opp/vendors/cast_candidate_transformer/op_api/lib/:/mnt/workspace/mhc-validation-20260930/Ascend/nnal/atb/latest/atb/cxx_abi_1/lib:/mnt/workspace/mhc-validation-20260930/Ascend/nnal/atb/latest/atb/cxx_abi_1/examples:/mnt/workspace/mhc-validation-20260930/Ascend/nnal/atb/latest/atb/cxx_abi_1/tests/atbopstest:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/lib64:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/lib64/plugin/opskernel:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/lib64/plugin/nnengine:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/opp/built-in/op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver",
+    "VLLM_BATCH_INVARIANT": null,
+    "PYTORCH_NPU_ALLOC_CONF": null
+  },
+  "cases": [
+    {
+      "case": "t1-d4096-signed0",
+      "replays": 3,
+      "calls_per_replay": 20
+    },
+    {
+      "case": "t128-d4096-signed1",
+      "replays": 3,
+      "calls_per_replay": 20
+    },
+    {
+      "case": "t512-d7168-signed0",
+      "replays": 3,
+      "calls_per_replay": 20
+    },
+    {
+      "case": "t1-d7168-signed0",
+      "replays": 3,
+      "calls_per_replay": 20
+    },
+    {
+      "case": "t2-d7168-signed0",
+      "replays": 3,
+      "calls_per_replay": 20
+    },
+    {
+      "case": "t4-d7168-signed0",
+      "replays": 3,
+      "calls_per_replay": 20
+    },
+    {
+      "case": "t2-d4096-signed0",
+      "replays": 3,
+      "calls_per_replay": 20
+    }
+  ]
+}

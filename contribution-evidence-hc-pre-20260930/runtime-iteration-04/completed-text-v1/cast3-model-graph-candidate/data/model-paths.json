@@ -1,0 +1,103 @@
+[
+  {
+    "layers": 4,
+    "kda": 3,
+    "mla": 1,
+    "mhc": 4,
+    "expand_impl": "vllm_ascend.models.glm5next.ops.mhc_ops.hc_expand",
+    "kda_caches": [
+      [
+        {
+          "shape": [
+            113,
+            3,
+            24576
+          ],
+          "stride": [
+            2228224,
+            24576,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "shape": [
+            113,
+            64,
+            128,
+            128
+          ],
+          "stride": [
+            1114112,
+            16384,
+            128,
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      ],
+      [
+        {
+          "shape": [
+            113,
+            3,
+            24576
+          ],
+          "stride": [
+            2228224,
+            24576,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "shape": [
+            113,
+            64,
+            128,
+            128
+          ],
+          "stride": [
+            1114112,
+            16384,
+            128,
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      ],
+      [
+        {
+          "shape": [
+            113,
+            3,
+            24576
+          ],
+          "stride": [
+            2228224,
+            24576,
+            1
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        {
+          "shape": [
+            113,
+            64,
+            128,
+            128
+          ],
+          "stride": [
+            1114112,
+            16384,
+            128,
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      ]
+    ],
+    "max_model_len": 8192,
+    "max_encoder_len": 0
+  }
+]
