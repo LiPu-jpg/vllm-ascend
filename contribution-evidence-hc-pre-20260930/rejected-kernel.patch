@@ -1,0 +1,57 @@
+diff --git a/csrc/moe/hc_pre/op_kernel/hc_pre_base.h b/csrc/moe/hc_pre/op_kernel/hc_pre_base.h
+index 65f15c6..15cfd6d 100644
+--- a/csrc/moe/hc_pre/op_kernel/hc_pre_base.h
++++ b/csrc/moe/hc_pre/op_kernel/hc_pre_base.h
+@@ -447,14 +447,19 @@ __aicore__ inline void ReduceSumARAPerf(const LocalTensor<float> &output, const
+     uint32_t elemInOneRepeat = REPEAT_SIZE / sizeof(float);
+     uint32_t dim2Align = RoundUp<float>(dim2);
+ 
+-    // 拷贝第一个R到output上
+-    DataCopyParams copyParams;
+-    copyParams.blockCount = dim0;
+-    copyParams.blockLen = dim2Align / elemInOneBlock;
+-    copyParams.srcStride = (dim1 - 1) * (dim2Align / elemInOneBlock);
+-    copyParams.dstStride = 0;
+-    DataCopy(output, input, copyParams);
+-    PipeBarrier<PIPE_V>();
++    // For complete blocks, the first add can seed the accumulator directly.
++    // Keep the copy for a single row or a padded tail: the latter also carries
++    // the first row's padding into output, as required by the existing layout.
++    const bool seedFromInput = dim1 > 1 && dim2 == dim2Align;
++    if (!seedFromInput) {
++        DataCopyParams copyParams;
++        copyParams.blockCount = dim0;
++        copyParams.blockLen = dim2Align / elemInOneBlock;
++        copyParams.srcStride = (dim1 - 1) * (dim2Align / elemInOneBlock);
++        copyParams.dstStride = 0;
++        DataCopy(output, input, copyParams);
++        PipeBarrier<PIPE_V>();
++    }
+     uint32_t dim2RepeatTimes = dim2 / elemInOneRepeat;
+     uint32_t dim2Reminder = dim2 % elemInOneRepeat;
+     // 沿着dim2方向开repeat
+@@ -467,11 +472,15 @@ __aicore__ inline void ReduceSumARAPerf(const LocalTensor<float> &output, const
+     instrParams.src1RepStride = DEFAULT_REPEAT_STRIDE;
+     for (uint32_t i = 0; i < dim0; i++) {
+         for (uint32_t j = 1; j < dim1; j++) {
+-            Add(output[i * dim2Align], output[i * dim2Align], input[i * dim1 * dim2Align + j * dim2Align],
++            LocalTensor<float> accumulator = output[i * dim2Align];
++            if (seedFromInput && j == 1) {
++                accumulator = input[i * dim1 * dim2Align];
++            }
++            Add(output[i * dim2Align], accumulator, input[i * dim1 * dim2Align + j * dim2Align],
+                 elemInOneRepeat, dim2RepeatTimes, instrParams);
+             if (dim2Reminder != 0) {
+                 Add(output[i * dim2Align + dim2RepeatTimes * elemInOneRepeat],
+-                    output[i * dim2Align + dim2RepeatTimes * elemInOneRepeat],
++                    accumulator[dim2RepeatTimes * elemInOneRepeat],
+                     input[i * dim1 * dim2Align + j * dim2Align + +dim2RepeatTimes * elemInOneRepeat], dim2Reminder, 1,
+                     instrParams);
+             }
+@@ -685,4 +694,4 @@ __aicore__ inline void CopyOut(const LocalTensor<T> &outputTensor, const GlobalT
+ 
+ } // namespace HcPre
+ 
+-#endif
+\ No newline at end of file
++#endif

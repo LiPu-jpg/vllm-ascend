@@ -1,0 +1,45 @@
+[1/2] /usr/bin/g++-13 -MMD -MF probe.o.d -DTORCH_EXTENSION_NAME=hc_pre_reduction_probe -DTORCH_API_INCLUDE_EXTENSION_H -I/mnt/workspace/hc-pre-reduction-20260930/baseline/csrc -I/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages -I/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/include -I/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch_npu/include -isystem /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch/include -isystem /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /home/developer/.local/share/uv/python/cpython-3.12.14-linux-aarch64-gnu/include/python3.12 -fPIC -std=c++17 -O2 -c /mnt/workspace/hc-pre-reduction-20260930/probe.cpp -o probe.o 
+In file included from /mnt/workspace/hc-pre-reduction-20260930/probe.cpp:21:
+/mnt/workspace/hc-pre-reduction-20260930/probe.cpp: In function ‘std::tuple<at::Tensor, at::Tensor, at::Tensor, at::Tensor> run_hc_pre_fusion(const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const std::optional<at::Tensor>&, int64_t, int64_t, double, double)’:
+/mnt/workspace/hc-pre-reduction-20260930/baseline/csrc/aclnn_torch_adapter/op_api_common.h:743:22: warning: narrowing conversion of ‘workspace_size’ from ‘uint64_t’ {aka ‘long unsigned int’} to ‘long int’ [-Wnarrowing]
+  743 |           at::empty({workspace_size}, options.dtype(kByte));                  \
+      |                      ^~~~~~~~~~~~~~
+/mnt/workspace/hc-pre-reduction-20260930/probe.cpp:123:5: note: in expansion of macro ‘EXEC_NPU_CMD’
+  123 |     EXEC_NPU_CMD(aclnnHcPre, x, hc_fn, hc_scale, hc_base, pre_mix, hc_mult, hc_sinkhorn_iters, hc_eps, norm_eps,
+      |     ^~~~~~~~~~~~
+/mnt/workspace/hc-pre-reduction-20260930/baseline/csrc/aclnn_torch_adapter/op_api_common.h:743:22: warning: narrowing conversion of ‘workspace_size’ from ‘uint64_t’ {aka ‘long unsigned int’} to ‘long int’ [-Wnarrowing]
+  743 |           at::empty({workspace_size}, options.dtype(kByte));                  \
+      |                      ^~~~~~~~~~~~~~
+/mnt/workspace/hc-pre-reduction-20260930/probe.cpp:123:5: note: in expansion of macro ‘EXEC_NPU_CMD’
+  123 |     EXEC_NPU_CMD(aclnnHcPre, x, hc_fn, hc_scale, hc_base, pre_mix, hc_mult, hc_sinkhorn_iters, hc_eps, norm_eps,
+      |     ^~~~~~~~~~~~
+[2/2] /usr/bin/g++-13 probe.o NPUBridge.o NPUStorageImpl.o -shared -L/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch_npu/lib -ltorch_npu -L/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/lib64 -lascendcl -L/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch/lib -lc10 -ltorch_cpu -ltorch -ltorch_python -o hc_pre_reduction_probe.so
+[W930 12:04:07.387189341 NPUCachingAllocator.cpp:202] Warning: The current CANN and HDK(driver) versions require processing for 32 padding size, with memory allocation. (function operator())
+t1-d4096-signed0 [218.73, 219.33, 215.76]
+t1-d4096-signed1 [223.36, 220.69, 223.14]
+t2-d4096-signed0 [226.07, 227.71, 227.24]
+t2-d4096-signed1 [226.77, 221.77, 221.35]
+t4-d4096-signed0 [215.73, 221.25, 301.96]
+t4-d4096-signed1 [302.97, 305.51, 303.6]
+t17-d4096-signed0 [305.61, 302.18, 306.34]
+t17-d4096-signed1 [312.39, 305.64, 303.19]
+t128-d4096-signed0 [291.77, 292.59, 298.0]
+t128-d4096-signed1 [225.5, 230.1, 219.02]
+t257-d4096-signed0 [220.34, 218.64, 223.09]
+t257-d4096-signed1 [228.77, 227.02, 229.57]
+t512-d4096-signed0 [259.89, 267.43, 266.91]
+t512-d4096-signed1 [258.36, 263.41, 257.23]
+t1-d7168-signed0 [237.28, 237.79, 235.0]
+t1-d7168-signed1 [220.27, 225.35, 221.78]
+t2-d7168-signed0 [217.93, 218.0, 220.47]
+t2-d7168-signed1 [228.26, 226.42, 226.59]
+t4-d7168-signed0 [226.51, 223.94, 308.7]
+t4-d7168-signed1 [313.17, 226.33, 225.21]
+t17-d7168-signed0 [225.76, 227.57, 224.97]
+t17-d7168-signed1 [222.98, 223.7, 224.29]
+t128-d7168-signed0 [300.36, 311.42, 308.56]
+t128-d7168-signed1 [294.71, 303.99, 310.94]
+t257-d7168-signed0 [238.5, 241.59, 241.77]
+t257-d7168-signed1 [236.54, 240.48, 235.1]
+t512-d7168-signed0 [301.42, 290.53, 296.4]
+t512-d7168-signed1 [285.47, 288.47, 289.55]

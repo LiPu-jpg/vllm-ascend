@@ -1,0 +1,4 @@
+0509097d638095c15ca35270fe30e53514df14b2529f3ebc8cfc6d0a40d29c88  /mnt/workspace/hc-pre-reduction-20260930/baseline/csrc/moe/hc_pre/op_kernel/hc_pre_base.h
+ca6808f3a70e0591bf3dbce4cf3f1df6736e8c7a893377b6f590b0abee1410fb  /mnt/workspace/hc-pre-reduction-20260930/probe.py
+dec92a5e08d5984524164f12d996dc3f150f43933d19c50c30c1a670f4c29ae7  /mnt/workspace/hc-pre-reduction-20260930/test_npu_hc_pre.py
+58057dfd630ca50b6a6b987e53ef72d5d97d0a6c784a246c0aef13d8d26b6391  /mnt/workspace/hc-pre-reduction-20260930/hc_pre.py

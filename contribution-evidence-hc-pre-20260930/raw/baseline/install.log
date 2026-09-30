@@ -1,0 +1,23 @@
+Verifying archive integrity...     0%    43%    86%  100%   SHA256 checksums are OK. All good.
+Uncompressing version:1.0     0%    43%    86%  100%  
+[ops_custom] [2026-09-30 11:50:11] [INFO] create /mnt/workspace/hc-pre-reduction-20260930/baseline/opp/vendors.
+[ops_custom] [2026-09-30 11:50:11] [INFO] create /mnt/workspace/hc-pre-reduction-20260930/baseline/opp/vendors/reduction_baseline_transformer.
+[ops_custom] [2026-09-30 11:50:11] [INFO] validate shared libraries before installation
+[ops_custom] [2026-09-30 11:50:11] [INFO] upgrade framework
+[ops_custom] [2026-09-30 11:50:11] [INFO] no need to upgrade ops framework files
+[ops_custom] [2026-09-30 11:50:11] [INFO] upgrade op proto
+[ops_custom] [2026-09-30 11:50:11] [INFO] create /mnt/workspace/hc-pre-reduction-20260930/baseline/opp/vendors/reduction_baseline_transformer/op_proto.
+[ops_custom] [2026-09-30 11:50:11] [INFO] copy new ops op_proto files ......
+[ops_custom] [2026-09-30 11:50:11] [INFO] upgrade op impl
+[ops_custom] [2026-09-30 11:50:11] [INFO] create /mnt/workspace/hc-pre-reduction-20260930/baseline/opp/vendors/reduction_baseline_transformer/op_impl.
+[ops_custom] [2026-09-30 11:50:11] [INFO] copy new ops op_impl files ......
+[ops_custom] [2026-09-30 11:50:11] [INFO] upgrade op api
+[ops_custom] [2026-09-30 11:50:11] [INFO] create /mnt/workspace/hc-pre-reduction-20260930/baseline/opp/vendors/reduction_baseline_transformer/op_api.
+[ops_custom] [2026-09-30 11:50:11] [INFO] copy new ops op_api files ......
+[ops_custom] [2026-09-30 11:50:11] [INFO] upgrade uninstall
+[ops_custom] [2026-09-30 11:50:11] [INFO] copy new uninstall.sh files ......
+[ops_custom] [2026-09-30 11:50:11] [INFO] upgrade version.info
+[ops_custom] [2026-09-30 11:50:11] [INFO] copy new version.info files ......
+[ops_custom] [2026-09-30 11:50:11] [INFO] no need to upgrade custom.proto files
+[ops_custom] [2026-09-30 11:50:11] [INFO] using requirements: when custom module install finished or before you run the custom module, execute the command [ source /mnt/workspace/hc-pre-reduction-20260930/baseline/opp/vendors/reduction_baseline_transformer/bin/set_env.bash ] to set the environment path
+SUCCESS

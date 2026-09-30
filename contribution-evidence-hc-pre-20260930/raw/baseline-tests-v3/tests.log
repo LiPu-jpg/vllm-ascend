@@ -1,0 +1,23 @@
+[1/2] /usr/bin/g++-13 -MMD -MF probe.o.d -DTORCH_EXTENSION_NAME=hc_pre_reduction_probe -DTORCH_API_INCLUDE_EXTENSION_H -I/mnt/workspace/hc-pre-reduction-20260930/baseline/csrc -I/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages -I/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/include -I/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch_npu/include -isystem /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch/include -isystem /mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /home/developer/.local/share/uv/python/cpython-3.12.14-linux-aarch64-gnu/include/python3.12 -fPIC -std=c++17 -O2 -c /mnt/workspace/hc-pre-reduction-20260930/probe.cpp -o probe.o 
+In file included from /mnt/workspace/hc-pre-reduction-20260930/probe.cpp:21:
+/mnt/workspace/hc-pre-reduction-20260930/probe.cpp: In function ‘std::tuple<at::Tensor, at::Tensor, at::Tensor, at::Tensor> run_hc_pre_fusion(const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const std::optional<at::Tensor>&, int64_t, int64_t, double, double)’:
+/mnt/workspace/hc-pre-reduction-20260930/baseline/csrc/aclnn_torch_adapter/op_api_common.h:743:22: warning: narrowing conversion of ‘workspace_size’ from ‘uint64_t’ {aka ‘long unsigned int’} to ‘long int’ [-Wnarrowing]
+  743 |           at::empty({workspace_size}, options.dtype(kByte));                  \
+      |                      ^~~~~~~~~~~~~~
+/mnt/workspace/hc-pre-reduction-20260930/probe.cpp:123:5: note: in expansion of macro ‘EXEC_NPU_CMD’
+  123 |     EXEC_NPU_CMD(aclnnHcPre, x, hc_fn, hc_scale, hc_base, pre_mix, hc_mult, hc_sinkhorn_iters, hc_eps, norm_eps,
+      |     ^~~~~~~~~~~~
+/mnt/workspace/hc-pre-reduction-20260930/baseline/csrc/aclnn_torch_adapter/op_api_common.h:743:22: warning: narrowing conversion of ‘workspace_size’ from ‘uint64_t’ {aka ‘long unsigned int’} to ‘long int’ [-Wnarrowing]
+  743 |           at::empty({workspace_size}, options.dtype(kByte));                  \
+      |                      ^~~~~~~~~~~~~~
+/mnt/workspace/hc-pre-reduction-20260930/probe.cpp:123:5: note: in expansion of macro ‘EXEC_NPU_CMD’
+  123 |     EXEC_NPU_CMD(aclnnHcPre, x, hc_fn, hc_scale, hc_base, pre_mix, hc_mult, hc_sinkhorn_iters, hc_eps, norm_eps,
+      |     ^~~~~~~~~~~~
+[2/2] /usr/bin/g++-13 probe.o NPUBridge.o NPUStorageImpl.o -shared -L/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch_npu/lib -ltorch_npu -L/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/lib64 -lascendcl -L/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/torch/lib -lc10 -ltorch_cpu -ltorch -ltorch_python -o hc_pre_reduction_probe.so
+/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/pytest_asyncio/plugin.py:247: PytestDeprecationWarning: The configuration option "asyncio_default_fixture_loop_scope" is unset.
+The event loop scope for asynchronous fixtures will default to the fixture caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to function scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are: "function", "class", "module", "package", "session"
+
+  warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+.....................                                                    [100%]
+- generated xml file: /mnt/workspace/hc-pre-reduction-20260930/baseline-tests-v3/tests.xml -
+21 passed in 3.83s
