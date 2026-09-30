@@ -19,20 +19,11 @@ inline void LaunchMhcExpand(const at::Tensor& x, int64_t mult, const at::Tensor&
         MhcExpandLaunchConfig config;
         TORCH_CHECK(MakeMhcExpandConfig(x.size(0), x.size(1), mult,
                     platform->GetCoreNumAiv(), ubBytes, config), "Invalid mHC Expand launch configuration");
-        const auto npuStream = c10_npu::getCurrentNPUStream();
-        const auto stream = npuStream.stream(false);
-        void* input = x.data_ptr();
-        void* output = y.data_ptr();
-        // Snapshot pointers and launch parameters on the caller, retaining
-        // storage ownership through submission without reading TensorImpl later.
-        at_npu::native::OpCommand::RunOpApiV2("mhc_expand_direct",
-            [input, output, config, npuStream, stream, inputStorage = x.storage(), outputStorage = y.storage()]() -> int {
-                (void)inputStorage;
-                (void)outputStorage;
-                const c10_npu::NPUStreamGuard streamGuard(npuStream.unwrap());
-                mhc_expand_direct_impl(stream, input, output, config);
-                return 0;
-            });
+        // Drain pending framework submissions before launching on the caller.
+        // Producers and subsequent consumers retain their stream order; device
+        // execution stays asynchronous. Tensor metadata is consumed here.
+        const auto stream = c10_npu::getCurrentNPUStream().stream();
+        mhc_expand_direct_impl(stream, x.data_ptr(), y.data_ptr(), config);
         return;
     }
 #endif

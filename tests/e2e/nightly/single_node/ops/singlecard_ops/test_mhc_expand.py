@@ -89,7 +89,7 @@ def test_mhc_expand_npu_graph(dtype, tokens, hidden):
 
 @pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
 def test_mhc_expand_addresses_and_streams(dtype):
-    # Keep every allocation live: queued dispatch must preserve both addresses
+    # Keep every allocation live: dispatch must preserve both addresses
     # and must not overwrite an earlier result or share state between streams.
     streams = [torch.npu.Stream(), torch.npu.Stream()]
     pending = []
@@ -126,8 +126,8 @@ def test_mhc_expand_validation(device):
 
 @pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
 def test_mhc_expand_temporary_inputs(dtype):
-    # Only retain outputs on the caller. Queued preparation must keep each
-    # temporary input alive while later allocations put pressure on its storage.
+    # Only retain outputs on the caller. Submitted work must safely consume each
+    # temporary input while later allocations put pressure on its storage.
     pending = []
     for iteration in range(12):
         generator = torch.Generator().manual_seed(401 + iteration)
@@ -150,8 +150,8 @@ def test_mhc_expand_metadata_snapshot(dtype, change_output):
         expected = bits.view(dtype)
         x = expected.to("npu")
         output = torch.ops._C_ascend.npu_mhc_expand(x, 4)
-        # Metadata mutation is immediate on the caller; queued work must use
-        # the original descriptor even if its preparation has not started yet.
+        # Metadata mutation is immediate on the caller; both dispatch paths must
+        # finish reading the original descriptor before returning.
         if change_output:
             output.transpose_(0, 2)
         else:
@@ -336,3 +336,22 @@ def test_mhc_expand_stream_core_limit(dtype):
         finally:
             stream.synchronize()
             torch.npu.reset_stream_limit(stream)
+
+
+@pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
+@pytest.mark.parametrize("separate_stream", [False, True], ids=["current", "separate"])
+def test_mhc_expand_queued_producers_and_consumers(dtype, separate_stream):
+    stream = torch.npu.Stream() if separate_stream else torch.npu.current_stream()
+    stream.wait_stream(torch.npu.current_stream())
+    pending = []
+    with torch.npu.stream(stream):
+        x = torch.empty(17, 4096, device="npu", dtype=dtype)
+        for value in range(12):
+            # No intermediate synchronization: every expansion must observe its
+            # producer, and the consumer must finish before a later write to x.
+            x.fill_(value)
+            y = torch.ops._C_ascend.npu_mhc_expand(x, 4)
+            pending.append((y + 3, value + 3))
+    stream.synchronize()
+    for actual, expected in pending:
+        assert_bits_equal(actual, torch.full((17, 4, 4096), expected, dtype=dtype))

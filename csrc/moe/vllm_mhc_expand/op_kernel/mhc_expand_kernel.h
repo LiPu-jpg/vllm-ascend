@@ -146,4 +146,3 @@ private:
     GlobalTensor<T> input_, output_;
     Params p_;
 };
-

@@ -48,13 +48,15 @@ capability is immutable, while extension loading remains lazy. Gradient inputs
 stay on the native path. The strict raw operator retains its validation contract.
 
 For base storage formats without caller-local core controls, use the project's
-AscendC direct-launch library and submit through the framework's `RunOpApiV2`.
-Direct and ACLNN entries share the kernel implementation and host partitioning
-logic. Platform queries provide the available vector cores and UB capacity.
-Snapshot pointers, launch parameters and storage ownership before queuing; the
-worker does not read mutable tensor metadata. Other formats and core controls retain
-the existing adapter path. Graph replay, streams, temporary tensor lifetimes and
-immediate metadata changes are covered by NPU tests.
+AscendC direct-launch library. Obtain the current stream through the framework's
+queue-draining accessor before submitting on the caller thread. This preserves
+ordering with queued input producers and later consumers while device execution
+remains asynchronous. Direct and ACLNN entries share the kernel implementation
+and host partitioning logic. Platform queries provide the available vector cores
+and UB capacity. Both paths consume tensor metadata before returning. Other
+formats and core controls retain the existing adapter path. Graph replay, streams,
+queued producer/consumer chains, temporary tensor lifetimes and immediate metadata
+changes are covered by NPU tests.
 
 Initially build and select this implementation on A2 only. Route GLM mHC
 expansion through the helper; preserve its mean-based contraction.
