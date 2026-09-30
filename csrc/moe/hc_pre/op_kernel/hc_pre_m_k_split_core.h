@@ -456,17 +456,10 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
 
                 // combFrag
                 mixes2Local = mixesQue2.AllocTensor<float>();
-                for (int64_t i = 0; i < stage1UsedCoreNum; ++i) {
-                    for (int64_t j = 0; j < curRowFactor; ++j) {
-                        CopyIn(workspaceGm[workspaceSize1 + i * tilingData->bs * mmLastAxisSize +
-                        j * mmLastAxisSize +
-                        stage2BlockIdx * tilingData->rowOfFormerBlock * mmLastAxisSize +
-                        rowOuterIdx * tilingData->stage2RowFactor * mmLastAxisSize +
-                        tilingData->hcMult * NUM_TWO],
-                        mixes2Local[(i * curRowFactor + j) * tilingData->hcMult *
-                        tilingData->hcMultAlign], tilingData->hcMult, tilingData->hcMult);
-                    }
-                }
+                const uint64_t combBaseOffset = workspaceSize1 +
+                    stage2BlockIdx * tilingData->rowOfFormerBlock * mmLastAxisSize +
+                    rowOuterIdx * tilingData->stage2RowFactor * mmLastAxisSize + tilingData->hcMult * NUM_TWO;
+                CopyInCombMixes(mixes2Local, combBaseOffset, curRowFactor, mmLastAxisSize);
                 mixesQue2.EnQue(mixes2Local);
                 mixes2Local = mixesQue2.DeQue<float>();
                 ReduceSumARAPerf(mixes02ReduceLocal, mixes2Local, 1, stage1UsedCoreNum,
@@ -522,6 +515,44 @@ int64_t curBsIdxForAll = (stage2BlockIdx * tilingData->rowLoopOfFormerBlock +
     }
 
 private:
+    __aicore__ inline void CopyInCombMixes(const LocalTensor<float> &destination, const uint64_t baseOffset,
+                                         const int64_t rowCount, const int64_t gmRowSize)
+    {
+        constexpr uint64_t MAX_DMA_STRIDE = 0xFFFFFFFF;
+        constexpr int64_t MAX_DMA_BLOCK_COUNT = 4095;
+        const int64_t partialCount = tilingData->cubeBlockDimK;
+        const uint64_t gmPartialStride = static_cast<uint64_t>(tilingData->bs) * gmRowSize;
+        const uint64_t ubPartialStride = static_cast<uint64_t>(rowCount) *
+            tilingData->hcMult * tilingData->hcMultAlign;
+        const uint64_t sourceGap = gmPartialStride - tilingData->hcMult;
+        const uint64_t destinationGap = ubPartialStride - tilingData->hcMultAlign;
+
+        // Traverse the partials in one DMA instead of submitting one DMA per partial.
+        // Keep the [partial][token][matrix row][aligned column] UB layout.
+        if (partialCount > tilingData->hcMult && partialCount <= MAX_DMA_BLOCK_COUNT &&
+            sourceGap <= MAX_DMA_STRIDE / sizeof(float) && destinationGap <= MAX_DMA_STRIDE) {
+            for (int64_t matrixRow = 0; matrixRow < tilingData->hcMult; ++matrixRow) {
+                for (int64_t row = 0; row < rowCount; ++row) {
+                    CopyIn(workspaceGm[baseOffset + row * gmRowSize + matrixRow * tilingData->hcMult],
+                        destination[row * tilingData->hcMult * tilingData->hcMultAlign +
+                                    matrixRow * tilingData->hcMultAlign],
+                        partialCount, tilingData->hcMult, static_cast<uint32_t>(sourceGap),
+                        static_cast<uint32_t>(destinationGap));
+                }
+            }
+            return;
+        }
+
+        // Fewer partials or an unrepresentable stride retain the original traversal.
+        for (int64_t partial = 0; partial < partialCount; ++partial) {
+            for (int64_t row = 0; row < rowCount; ++row) {
+                CopyIn(workspaceGm[baseOffset + partial * gmPartialStride + row * gmRowSize],
+                    destination[(partial * rowCount + row) * tilingData->hcMult * tilingData->hcMultAlign],
+                    tilingData->hcMult, tilingData->hcMult);
+            }
+        }
+    }
+
     TPipe *pipe;
     const HcPreTilingData *tilingData;
     GlobalTensor<float> mixesGm;
