@@ -134,7 +134,14 @@ def main():
                         expected = torch.load(args.reference / f"{key}.pt", weights_only=True)
                     for round_index in range(args.rounds):
                         outputs, events, walls = measure(
-                            inputs, args.iterations, args.samples, args.warmup, args.timing, args.replays, args.api, args.graph_batch
+                            inputs,
+                            args.iterations,
+                            args.samples,
+                            args.warmup,
+                            args.timing,
+                            args.replays,
+                            args.api,
+                            args.graph_batch,
                         )
                         if expected is not None:
                             for actual, reference in zip(outputs, expected):

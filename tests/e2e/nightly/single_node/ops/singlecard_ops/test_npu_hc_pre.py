@@ -57,6 +57,7 @@ def _hc_pre_cpu(
     hc_scale: torch.Tensor,
     hc_base: torch.Tensor,
     pre_mix: torch.Tensor | None = None,
+    sinkhorn_iters: int = HC_SINKHORN_ITERS,
 ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]:
     x_float = x.float()
     x_flat = x_float.flatten(-2)
@@ -76,7 +77,7 @@ def _hc_pre_cpu(
 
     comb_frag = comb_frag.softmax(-1) + HC_EPS
     comb_frag = comb_frag / (comb_frag.sum(-2, keepdim=True) + HC_EPS)
-    for _ in range(HC_SINKHORN_ITERS - 1):
+    for _ in range(sinkhorn_iters - 1):
         comb_frag = comb_frag / (comb_frag.sum(-1, keepdim=True) + HC_EPS)
         comb_frag = comb_frag / (comb_frag.sum(-2, keepdim=True) + HC_EPS)
 
