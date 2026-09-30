@@ -1,0 +1,20 @@
+[2026-09-30 12:53:31] [INFO] get env VLLM_USE_BREAKABLE_CUDAGRAPH = 0
+ImportError while loading conftest '/mnt/workspace/hc-pre-reduction-20260930/full-plugin-source-v2/tests/e2e/conftest.py'.
+tests/e2e/conftest.py:73: in <module>
+    adapt_patch(False)
+vllm_ascend/utils.py:636: in adapt_patch
+    from vllm_ascend.patch import worker  # noqa: F401
+vllm_ascend/patch/worker/__init__.py:23: in <module>
+    import vllm_ascend.patch.worker.patch_triton
+vllm_ascend/patch/worker/patch_triton.py:13: in <module>
+    from vllm_ascend.ops.triton.fla.chunk import chunk_gated_delta_rule
+vllm_ascend/ops/triton/fla/chunk.py:15: in <module>
+    from fla_npu.ops.ascendc import chunk_gated_delta_rule_fwd_h as fla_chunk_gated_delta_rule_fwd_h
+E   ModuleNotFoundError: No module named 'fla_npu'
+INFO 09-30 12:53:27 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 09-30 12:53:27 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 09-30 12:53:27 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 09-30 12:53:27 [__init__.py:272] Platform plugin ascend is activated
+INFO 09-30 12:53:27 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+INFO 09-30 12:53:33 [patch_indexer_kv_dtype.py:102] Patched AttentionConfig.indexer_kv_dtype to accept 'int8' (DeepSeek V4 Ascend indexer K cache dtype).
+INFO 09-30 12:53:33 [patch_kv_cache_dtype.py:115] Patched CacheConfig.cache_dtype to accept 'int8' (DeepSeek V4 Ascend MLA KV cache dtype).

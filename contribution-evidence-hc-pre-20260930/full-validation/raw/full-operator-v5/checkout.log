@@ -1,0 +1,4 @@
+From /mnt/workspace/hc-pre-reduction-20260930/hc-pre-keyword-fix.bundle
+ * branch            HEAD       -> FETCH_HEAD
+Previous HEAD position was 4fc4745 test(ops): cover HcPre finite reductions and add reproducible benchmark
+HEAD is now at 52c8d05 fix(benchmarks): use HcPre keyword-only scalar arguments

@@ -1,0 +1,9 @@
+INFO 09-30 12:53:11 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 09-30 12:53:11 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 09-30 12:53:11 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 09-30 12:53:11 [__init__.py:272] Platform plugin ascend is activated
+INFO 09-30 12:53:12 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+vllm: /mnt/workspace/mhc-validation-20260930/vllm/vllm/__init__.py
+plugin: /mnt/workspace/hc-pre-reduction-20260930/full-plugin-source-v2/vllm_ascend/__init__.py
+extension: /mnt/workspace/hc-pre-reduction-20260930/full-plugin-source-v2/vllm_ascend/vllm_ascend_C.cpython-312-aarch64-linux-gnu.so
+HcPre: _C_ascend.npu_hc_pre_v3

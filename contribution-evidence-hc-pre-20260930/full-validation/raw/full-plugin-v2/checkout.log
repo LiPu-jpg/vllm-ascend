@@ -1,0 +1,18 @@
+Cloning into '/mnt/workspace/hc-pre-reduction-20260930/full-plugin-source-v2'...
+From /mnt/workspace/hc-pre-reduction-20260930/hc-pre-pr.bundle
+ * branch            HEAD       -> FETCH_HEAD
+Warning: you are leaving 6 commits behind, not connected to
+any of your branches:
+
+  b1b5a16 test: validate benchmark module spec before loading
+  7709a1f fix: normalize non-base mHC input storage before ACLNN dispatch
+  34ed49e perf: reduce mHC dispatch overhead and balance row copies
+  b45a9fa Merge branch 'main' into codex/mhc-expand-npu
+ ... and 2 more.
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> b1b5a16
+
+HEAD is now at 4fc4745 test(ops): cover HcPre finite reductions and add reproducible benchmark

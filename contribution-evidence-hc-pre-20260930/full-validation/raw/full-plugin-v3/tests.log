@@ -1,0 +1,30 @@
+[2026-09-30 12:56:29] [INFO] get env VLLM_USE_BREAKABLE_CUDAGRAPH = 0
+[2026-09-30 12:56:31] [INFO] get env ASCEND_OPP_PATH = /mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/opp
+[2026-09-30 12:56:31] [INFO] get env ASCEND_CUSTOM_OPP_PATH = /mnt/workspace/hc-pre-reduction-20260930/baseline/opp/vendors/reduction_baseline_transformer:
+ImportError while loading conftest '/mnt/workspace/hc-pre-reduction-20260930/full-plugin-source-v2/tests/e2e/conftest.py'.
+tests/e2e/conftest.py:73: in <module>
+    adapt_patch(False)
+vllm_ascend/utils.py:636: in adapt_patch
+    from vllm_ascend.patch import worker  # noqa: F401
+vllm_ascend/patch/worker/__init__.py:23: in <module>
+    import vllm_ascend.patch.worker.patch_triton
+vllm_ascend/patch/worker/patch_triton.py:13: in <module>
+    from vllm_ascend.ops.triton.fla.chunk import chunk_gated_delta_rule
+vllm_ascend/ops/triton/fla/chunk.py:15: in <module>
+    from fla_npu.ops.ascendc import chunk_gated_delta_rule_fwd_h as fla_chunk_gated_delta_rule_fwd_h
+../../mhc-validation-20260930/fla-npu-v26.9.1-beta2/torch_custom/fla_npu/fla_npu/__init__.py:259: in <module>
+    load_ascendc_opapi_libraries()
+../../mhc-validation-20260930/fla-npu-v26.9.1-beta2/torch_custom/fla_npu/fla_npu/__init__.py:141: in load_ascendc_opapi_libraries
+    vendor_dir = _prepare_embedded_opp()
+../../mhc-validation-20260930/fla-npu-v26.9.1-beta2/torch_custom/fla_npu/fla_npu/__init__.py:72: in _prepare_embedded_opp
+    op_api_lib = _resolve_packaged_opapi(vendor_dir)
+../../mhc-validation-20260930/fla-npu-v26.9.1-beta2/torch_custom/fla_npu/fla_npu/__init__.py:55: in _resolve_packaged_opapi
+    raise FileNotFoundError(
+E   FileNotFoundError: Unable to find the packaged FLA NPU op_api library. Expected /mnt/workspace/mhc-validation-20260930/fla-npu-v26.9.1-beta2/torch_custom/fla_npu/fla_npu/opp/vendors/fla_npu_transformer/op_api/lib/libcust_opapi.so. Reinstall the complete wheel, or overlay the matching run package into the installed fla_npu package.
+INFO 09-30 12:56:24 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 09-30 12:56:24 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 09-30 12:56:24 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 09-30 12:56:25 [__init__.py:272] Platform plugin ascend is activated
+INFO 09-30 12:56:25 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+INFO 09-30 12:56:31 [patch_indexer_kv_dtype.py:102] Patched AttentionConfig.indexer_kv_dtype to accept 'int8' (DeepSeek V4 Ascend indexer K cache dtype).
+INFO 09-30 12:56:31 [patch_kv_cache_dtype.py:115] Patched CacheConfig.cache_dtype to accept 'int8' (DeepSeek V4 Ascend MLA KV cache dtype).
