@@ -1,0 +1,34 @@
+{
+  "scope": "Terminal build integrity; does not override any guard failure",
+  "controller_pid": 1487378,
+  "controller_exit": "1",
+  "completion_marker": false,
+  "variants": {
+    "baseline": {
+      "source_head": "62e05feb3db521230c27714ad4347bd0d9d38f1a",
+      "verified_binary_sha256": {
+        "vllm_ascend/vllm_ascend_C.cpython-312-aarch64-linux-gnu.so": "62dcc2cf29936b3491777e32386ec4ae4e3fd243a3ba0e98dd2eafa19b08cbcb",
+        "vllm_ascend/libvllm_ascend_kernels.so": "eebb909c05e51a0c6707097405abde63643448c33a718c0aa55ff533eaf01f50",
+        "opp/vendors/prefetch_x_baseline_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be.o": "e4fe3ba278578281a0bb142d5da21cbfeb6d55e355378112fc429440eea23622",
+        "opp/vendors/prefetch_x_baseline_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be_relocatable.o": "751638b5707420d50db581a9522e86ddd9229412ad9a8e26cf3805a5cc10b158"
+      }
+    },
+    "candidate": {
+      "source_head": "b8f067cd3f01c78fc2e7d35f12385a948dac1a26",
+      "verified_binary_sha256": {
+        "vllm_ascend/vllm_ascend_C.cpython-312-aarch64-linux-gnu.so": "011b1d6353d433da2a7e619367b0be7b7bce0155b225fb1ce0d1b6c1488ef6d6",
+        "vllm_ascend/libvllm_ascend_kernels.so": "eebb909c05e51a0c6707097405abde63643448c33a718c0aa55ff533eaf01f50",
+        "opp/vendors/prefetch_x_candidate_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be.o": "243e493f210b0980b5c4164b5b393fa1c07172e0c3c9a33b94db91a875e09c24",
+        "opp/vendors/prefetch_x_candidate_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be_relocatable.o": "63fee9f99947c5ff6f16b4088708bc83ea18c449e021340675baf7246dcec1fd"
+      }
+    }
+  },
+  "foreign_after_build": [
+    {
+      "cwd": "/home/developer",
+      "pid": 1490655,
+      "script": "/mnt/workspace/sfa-nonempty-perf-20260930/merge-index-loop-20261001/defer_d3.py"
+    }
+  ],
+  "npu_after_build_snapshot_exists": false
+}

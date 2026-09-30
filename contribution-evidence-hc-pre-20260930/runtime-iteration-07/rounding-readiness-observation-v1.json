@@ -1,0 +1,72 @@
+{
+  "observed_at_utc": "2026-09-30T20:56:15.516509+00:00",
+  "previous_goal_turn": "progress: independent rounding diagnostic and CPU replay scripts prepared/uploaded",
+  "this_turn_progress": [
+    "actual installed CANN9.1.0 mapping verified and recorded with four source hashes",
+    "42-case result classifier prepared and uploaded",
+    "latest upstream and related PR heads reverified"
+  ],
+  "foreign_guard_exit": 1,
+  "foreign_jobs": [
+    {
+      "cwd": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc",
+      "pid": 1518225,
+      "script": "/mnt/workspace/sfa-nonempty-perf-20260930/small-query-head-split-20261001/controller_build_d4.sh"
+    },
+    {
+      "cwd": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc",
+      "pid": 1519906,
+      "script": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build.sh"
+    },
+    {
+      "cwd": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build",
+      "pid": 1519914,
+      "script": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/build.sh"
+    },
+    {
+      "cwd": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/gen",
+      "pid": 1520438,
+      "script": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/scripts/build_cache.py"
+    },
+    {
+      "cwd": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/gen",
+      "pid": 1520439,
+      "script": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/scripts/build_cache.py"
+    },
+    {
+      "cwd": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/gen",
+      "pid": 1520448,
+      "script": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/gen/SparseFlashAttention-sparse_flash_attention-0.sh"
+    },
+    {
+      "cwd": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/gen",
+      "pid": 1520449,
+      "script": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/src/sparse_flash_attention/SparseFlashAttention.py"
+    },
+    {
+      "cwd": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/gen",
+      "pid": 1520450,
+      "script": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/gen/SparseFlashAttention-sparse_flash_attention-1.sh"
+    },
+    {
+      "cwd": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/gen",
+      "pid": 1520452,
+      "script": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/src/sparse_flash_attention/SparseFlashAttention.py"
+    },
+    {
+      "cwd": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/gen",
+      "pid": 1520457,
+      "script": "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/python/site-packages/opc_tool/opc.py"
+    },
+    {
+      "cwd": "/mnt/workspace/sfa-nonempty-perf-20260930/candidate-d4/csrc/build/binary/ascend910b/gen",
+      "pid": 1520461,
+      "script": "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/python/site-packages/opc_tool/opc.py"
+    }
+  ],
+  "rounding_started": false,
+  "performance_started": false,
+  "original_oracle_changed": false,
+  "nightly_or_benchmark_thresholds_changed": false,
+  "next_action": "Run one-shot rounding diagnostic when actual foreign processes are gone and guards pass; classify all42; CPU-reproduce original expected bytes and input hashes before alternative reference assessment"
+}

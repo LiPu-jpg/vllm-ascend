@@ -1,0 +1,18 @@
+{
+  "scope": "Static source/queue review only, not synchronization correctness or speed proof",
+  "kernel_source_sha256": "5e0188552a6957c6f76e3046939e36792674f48d66d4a2ff37c8498baf1fc953",
+  "buffer_count_unchanged": 2,
+  "queue_depth_unchanged": 1,
+  "maximum_enqueued_tiles_by_control_flow": 1,
+  "live_buffers_by_control_flow": 2,
+  "current_buffer_lifetime": "DeQue current, allocate/enqueue next via separate nextX, ProcessY current, Free current",
+  "tail_policy": "Same nominal stage2RowFactor input-copy rows and same curDFactor/padding as baseline; unchanged output row count",
+  "untested_risks": [
+    "manual external preMix event while an X input tile is pending",
+    "final hidden tile and final row",
+    "actual overlap versus MTE2 contention with reductions",
+    "candidate numerical failures and graph replay races"
+  ],
+  "npu_evidence": "None yet; matched build live, correctness/timing unstarted",
+  "decision": "Keep frozen source unchanged until measured; do not stack another candidate"
+}

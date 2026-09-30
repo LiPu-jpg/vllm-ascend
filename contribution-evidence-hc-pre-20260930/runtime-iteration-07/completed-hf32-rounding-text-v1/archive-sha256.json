@@ -1,0 +1,66 @@
+[
+  {
+    "path": "controlled-hf32-rounding-findings-v1.json",
+    "sha256": "f3b33ef27d5eadeb0bf02e8e433db2c25cc87b7ba4bc4f6e1ca7711040e4588e"
+  },
+  {
+    "path": "controller-hf32-rounding.exit",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "controller-hf32-rounding.log",
+    "sha256": "cb7b96b57469b72399d887a404ccae420ec5b92961d1c79ec5fa1b4ee4a7b5f4"
+  },
+  {
+    "path": "controller-hf32-rounding.pid",
+    "sha256": "861ece4840e88ea6d5eae8c471a021445dc38dbebc4d33569b0fdd54b3c4d1d2"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/data/results.json",
+    "sha256": "312d86140094387bcee2aa0c90614c029b8d5331daa60267d9ad237c1bbea529"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/foreign-after.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/foreign-before.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/guards-after-status.json",
+    "sha256": "39da28e471a53f38451d7c6218759542c9799f552770b2a1732fffe3f783e667"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/npu-after.txt",
+    "sha256": "d009acf4e5a403fc7ba50dee7c9dc69ef1c157cadf128205d7ba8fe74ef864b7"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/npu-before.txt",
+    "sha256": "dcc88a64166f1065e3bee1d07367cd908e96a7ada17cb92bb56a40dfad374579"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/opened-kernels.json",
+    "sha256": "fc13c55efb9ec74b34212ee60bc12ce834ec644d0a609270a6d7abcb59733298"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/run.exit",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/run.log",
+    "sha256": "6b24b804cd699d86b08780966632e0350e0c1a427ca427ef9ae704b4f52973c3"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/source-head.txt",
+    "sha256": "7a886f907b178f25d9a3f8528ed3ebc2717aee63557e576384baf2514d2a4d31"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/source-status.txt",
+    "sha256": "c1caf793d3051585a1e307f4861e84250a0dfec5af896e8346128bd8a262af67"
+  },
+  {
+    "path": "prefetch-diagnostic-hf32-roundings-baseline/verification.log",
+    "sha256": "ee097c05702cc724c5763fe7977f6105bfc569f1a63f17669153d29b9e728909"
+  }
+]

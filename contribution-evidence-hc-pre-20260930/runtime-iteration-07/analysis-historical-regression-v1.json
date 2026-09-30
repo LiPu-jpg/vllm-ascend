@@ -1,0 +1,41 @@
+{
+  "scope": "Analysis arithmetic regression on retained historical short-Div data; not input-prefetch NPU validation",
+  "analyzer_sha256": "ad8115297ed541a9e0f3172d5f2334e7fe90d1eb40516665f7a86c0e2ac01f93",
+  "cohorts": {
+    "graph-abba": {
+      "historical_event_ratio_reproduced": 0.995288552144213,
+      "wall_ratio": 0.9951465835602509,
+      "all_cases": 28,
+      "measured_samples_per_arm_case": 150,
+      "calls_per_graph_sample": 640
+    },
+    "graph-aa": {
+      "historical_event_ratio_reproduced": 0.9630107639854758,
+      "wall_ratio": 0.9633233210696496,
+      "all_cases": 28,
+      "measured_samples_per_arm_case": 150,
+      "calls_per_graph_sample": 640
+    },
+    "graph-baab": {
+      "historical_event_ratio_reproduced": 0.9877529453485497,
+      "wall_ratio": 0.9883228435846607,
+      "all_cases": 28,
+      "measured_samples_per_arm_case": 150,
+      "calls_per_graph_sample": 640
+    },
+    "event-abba": {
+      "historical_event_ratio_reproduced": 1.067104549743223,
+      "wall_ratio": 1.0782991893372689,
+      "all_cases": 28,
+      "measured_samples_per_arm_case": 150,
+      "calls_per_graph_sample": 1
+    },
+    "event-aa": {
+      "historical_event_ratio_reproduced": 0.9752871222094138,
+      "wall_ratio": 0.9770397179583671,
+      "all_cases": 28,
+      "measured_samples_per_arm_case": 150,
+      "calls_per_graph_sample": 1
+    }
+  }
+}

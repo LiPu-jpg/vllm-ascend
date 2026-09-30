@@ -1,0 +1,21 @@
+{
+  "scope": "Controlled production HcPre input/output evidence, not performance or corrected CPU accuracy certification",
+  "driver_sha256": "80126aca3d30fa3da47ed2de785a7c1a77dfcc0a209bd798ba741f16fe77c052",
+  "cases": 18,
+  "normal_input_hidden_sizes": [
+    4096,
+    7168
+  ],
+  "actual_private_object": "e4fe3ba278578281a0bb142d5da21cbfeb6d55e355378112fc429440eea23622",
+  "controlled_findings": [
+    "bit11 coefficient difference preserved for both signs and both hidden sizes",
+    "bit12 midpoint produces same output as bit11 coefficient, inconsistent with the original 10-bit truncation oracle",
+    "bit19 coefficient difference lost, rejecting 19-bit truncation hypothesis on this device"
+  ],
+  "remaining_proof": "Need below/at/above-midpoint and parity controls before implementing a revised rounding model. Original oracle and failed28-case results untouched.",
+  "official_reference_urls": [
+    "https://www.hiascend.com/document/detail/en/CANNCommunityEdition/910/API/ascendcopapi/docs/en/api/SIMD-API/basic_api/cube_compute_TensorAPI/mmad_compute_key_features/HF32.md",
+    "https://www.hiascend.com/doc_center/source/zh/canncommercial/80RC3/apiref/ascendcopapi/atlasascendc_api_07_0247.html"
+  ],
+  "hardware_device": "Ascend910B3 physical3 logical0"
+}

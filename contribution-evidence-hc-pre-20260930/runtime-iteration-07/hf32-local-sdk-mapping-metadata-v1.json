@@ -1,0 +1,30 @@
+{
+  "scope": "Read-only local CANN9.1.0 API mapping audit; not rounding hardware certification",
+  "records": [
+    {
+      "path": "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/asc/include/basic_api/kernel_operator_mm_intf.h",
+      "sha256": "45ceccd4666efcd7b8ae50e6b617355494fc7d48a32cee02aa48c8aab3bfe976",
+      "first_line": 462,
+      "last_line": 478
+    },
+    {
+      "path": "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/asc/impl/basic_api/kernel_operator_mm_intf_impl.h",
+      "sha256": "98a2ad8196c005ce7906064b1024f391def4060c79b0c0ba5c542d75b5b219e7",
+      "first_line": 670,
+      "last_line": 685
+    },
+    {
+      "path": "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/asc/impl/basic_api/kernel_reg.h",
+      "sha256": "5cda2f31bfb8eb2147bbdfd58bf8a1563fb762de4b7e91a04b280089e33bdeea",
+      "first_line": 178,
+      "last_line": 185
+    },
+    {
+      "path": "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/aarch64-linux/asc/impl/adv_api/detail/matmul/matmul_impl_base.h",
+      "sha256": "3756e3309f4d1f1818820ccd6d2c7b58b2913941c14fa2bee840438a7031724d",
+      "first_line": 476,
+      "last_line": 496
+    }
+  ],
+  "conclusion": "Advanced transMode1 and legacy bool true both reach SetHF32TransModeImpl(true). SDK comments use towards-zero terminology; exact hardware behavior still requires boundary controls."
+}

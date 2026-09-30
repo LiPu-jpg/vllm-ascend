@@ -1,0 +1,338 @@
+[
+  {
+    "case": "t1-d4096-signed0-norm0-i1-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "645975fe6d18e08a471fbc62f34081b23335c2b84a5ff6878db3a50a2e87872c"
+  },
+  {
+    "case": "t1-d4096-signed0-norm1-i3-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "af15825f294d569ab5a2e714200ca0b3167b10b6ab6d9085160d4af5814c8128"
+  },
+  {
+    "case": "t1-d4096-signed1-norm0-i20-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "e2d1e4dd098c1cfb30e9108b8a0df63235161a79d5b3b0519f728ce991cb1184"
+  },
+  {
+    "case": "t1-d4096-signed1-norm1-i1-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "8eb3abdd05ec997d6946cd5f8f77101c259c6658d0a4f380258cdbc260762aae"
+  },
+  {
+    "case": "t17-d4096-signed0-norm0-i3-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "846a59c65019104dc8790517a298cc088088ef020ed33dbd4212fdab170b42ca"
+  },
+  {
+    "case": "t17-d4096-signed0-norm1-i20-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "623e9efbddcdfe44f4bbc94e61a9f97ced952a52acbab3ec8a88d9a28ba14107"
+  },
+  {
+    "case": "t17-d4096-signed1-norm0-i1-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "860ffacf5e3bde0fe2c840b33f0879c3137139bf2b09e387304264c928282d33"
+  },
+  {
+    "case": "t17-d4096-signed1-norm1-i3-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "fc9a66eadad282a4f722ef7c829c7b62be083baae8cb8895c358c9a4e88a828b"
+  },
+  {
+    "case": "t129-d4096-signed0-norm0-i20-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "4a86d4519cb33af55da65beda780b035169267769ad8e79177db69168787d12c"
+  },
+  {
+    "case": "t129-d4096-signed0-norm1-i1-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "6d28338414a24765c3b07d0685d671e6ff30d7b6c4010749a9da5249c01aae13"
+  },
+  {
+    "case": "t129-d4096-signed1-norm0-i3-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "5a7752a3592bff0d9bdce71828e597e028ddceb8efbf12d0bbd267ecffe77f7a"
+  },
+  {
+    "case": "t129-d4096-signed1-norm1-i20-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "28a86a2ff61b853df6ffd7bb94ab6a5547c9bc3c645c11f6062187f8ebea75a5"
+  },
+  {
+    "case": "t1-d7168-signed0-norm0-i1-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "e7e86bf9bdbb1adf13d99e196ca8ce0dd0b83418d62f638db721d941f1f15539"
+  },
+  {
+    "case": "t1-d7168-signed0-norm1-i3-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "850acc501667cb1290ab8d5d26843bc8b7ccaa510ae25d524a59d5273a5e7158"
+  },
+  {
+    "case": "t1-d7168-signed1-norm0-i20-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "d9108e6803ce963804a845c275cbc098d4a504207cd1739a449514abde708a2a"
+  },
+  {
+    "case": "t1-d7168-signed1-norm1-i1-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "a13376239a4a21131d7a36f51e2aa86067ae1991c18937e2361992ce4fa021c8"
+  },
+  {
+    "case": "t17-d7168-signed0-norm0-i3-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "c52de97d4b71b6529bedb60b336c83c90b108023211d73c98b5109d36e43cd2d"
+  },
+  {
+    "case": "t17-d7168-signed0-norm1-i20-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "aa591db9e6a7bf8e44fc44f876133b8ed83d3ad3c41bf7935c3249fb1f9bcc31"
+  },
+  {
+    "case": "t17-d7168-signed1-norm0-i1-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "6deeed300061bffe4b7a6fd2bac18bec00140ad9ea4a8f747df2a714c01f2446"
+  },
+  {
+    "case": "t17-d7168-signed1-norm1-i3-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "f02ed09f49761eaf4e4dbdd8d9c15ed08359f237635a526a552abc1e036b1e75"
+  },
+  {
+    "case": "t129-d7168-signed0-norm0-i20-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "46fba1261d19cbf6a445d66aeba600ee604f9f5ef58be23321f7b690955106a3"
+  },
+  {
+    "case": "t129-d7168-signed0-norm1-i1-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "6c9498aa067b2ebc5d6f89fdc0fed8be6cb7ed8a00cfb8990c2ad28e75337b31"
+  },
+  {
+    "case": "t129-d7168-signed1-norm0-i3-p2.0",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "0f454e3a9a2f823328bb6ddbf6b379032bd60ad9e6a9bfa2104b8adb7b674ee0"
+  },
+  {
+    "case": "t129-d7168-signed1-norm1-i20-p1.5",
+    "errors": [],
+    "mode": "eager+graph",
+    "cpu_checks": [
+      "pre:0:pass",
+      "pre:1:pass",
+      "pre:2:pass",
+      "post_pre:0:pass",
+      "post_pre:1:pass",
+      "post_pre:2:pass"
+    ],
+    "sha256": "705d2aa241b86ce5aea068cc1077e3bebe9476bc76779cd48855af6c64d66112"
+  }
+]

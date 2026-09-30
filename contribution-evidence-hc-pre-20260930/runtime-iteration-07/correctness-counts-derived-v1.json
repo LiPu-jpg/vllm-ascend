@@ -1,0 +1,178 @@
+{
+  "baseline": {
+    "nightly": {
+      "total": 93,
+      "passed": 81,
+      "failed": [
+        "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape3-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape3-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape3-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape3-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape3-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape3-128]"
+      ]
+    },
+    "fixture": {
+      "cases": 72,
+      "errors": 12,
+      "cpu_pass": 60,
+      "cpu_failed_cases": [
+        "b257-d128-signed0-i1",
+        "b257-d128-signed0-i3",
+        "b257-d128-signed0-i20",
+        "b257-d128-signed1-i1",
+        "b257-d128-signed1-i3",
+        "b257-d128-signed1-i20",
+        "b3x17-d128-signed0-i1",
+        "b3x17-d128-signed0-i3",
+        "b3x17-d128-signed0-i20",
+        "b3x17-d128-signed1-i1",
+        "b3x17-d128-signed1-i3",
+        "b3x17-d128-signed1-i20"
+      ],
+      "real_hidden_cases": 48,
+      "real_hidden_cpu_pass": 48,
+      "real_hidden_errors": 0
+    },
+    "benchmark-fixture": {
+      "cases": 28,
+      "errors": 0,
+      "cpu_pass": 16,
+      "cpu_failed_cases": [
+        "t1-d4096-signed1",
+        "t4-d4096-signed1",
+        "t17-d4096-signed1",
+        "t128-d4096-signed1",
+        "t257-d4096-signed1",
+        "t512-d4096-signed1",
+        "t2-d7168-signed1",
+        "t4-d7168-signed1",
+        "t17-d7168-signed1",
+        "t128-d7168-signed1",
+        "t257-d7168-signed1",
+        "t512-d7168-signed1"
+      ]
+    },
+    "boundary": {
+      "cases": 60,
+      "errors": 0,
+      "cpu_pass": 45,
+      "cpu_failed_cases": [
+        "t1-d8-signed0-i1",
+        "t1-d8-signed0-i3",
+        "t1-d8-signed0-i20",
+        "t1-d7169-signed0-i1",
+        "t1-d7169-signed0-i3",
+        "t1-d7169-signed0-i20",
+        "t1-d7169-signed1-i1",
+        "t1-d7169-signed1-i3",
+        "t1-d7169-signed1-i20",
+        "t17-d7169-signed0-i1",
+        "t17-d7169-signed0-i3",
+        "t17-d7169-signed0-i20",
+        "t17-d7169-signed1-i1",
+        "t17-d7169-signed1-i3",
+        "t17-d7169-signed1-i20"
+      ]
+    },
+    "caller": {
+      "cases": 24,
+      "errors": 0,
+      "cpu_pass": 24
+    }
+  },
+  "candidate": {
+    "nightly": {
+      "total": 93,
+      "passed": 81,
+      "failed": [
+        "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape3-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape3-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape3-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape3-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape3-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape2-128]",
+        "test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape3-128]"
+      ]
+    },
+    "fixture": {
+      "cases": 72,
+      "errors": 12,
+      "cpu_pass": 60,
+      "cpu_failed_cases": [
+        "b257-d128-signed0-i1",
+        "b257-d128-signed0-i3",
+        "b257-d128-signed0-i20",
+        "b257-d128-signed1-i1",
+        "b257-d128-signed1-i3",
+        "b257-d128-signed1-i20",
+        "b3x17-d128-signed0-i1",
+        "b3x17-d128-signed0-i3",
+        "b3x17-d128-signed0-i20",
+        "b3x17-d128-signed1-i1",
+        "b3x17-d128-signed1-i3",
+        "b3x17-d128-signed1-i20"
+      ],
+      "real_hidden_cases": 48,
+      "real_hidden_cpu_pass": 48,
+      "real_hidden_errors": 0
+    },
+    "benchmark-fixture": {
+      "cases": 28,
+      "errors": 0,
+      "cpu_pass": 16,
+      "cpu_failed_cases": [
+        "t1-d4096-signed1",
+        "t4-d4096-signed1",
+        "t17-d4096-signed1",
+        "t128-d4096-signed1",
+        "t257-d4096-signed1",
+        "t512-d4096-signed1",
+        "t2-d7168-signed1",
+        "t4-d7168-signed1",
+        "t17-d7168-signed1",
+        "t128-d7168-signed1",
+        "t257-d7168-signed1",
+        "t512-d7168-signed1"
+      ]
+    },
+    "boundary": {
+      "cases": 60,
+      "errors": 6,
+      "cpu_pass": 45,
+      "cpu_failed_cases": [
+        "t1-d8-signed0-i1",
+        "t1-d8-signed0-i3",
+        "t1-d8-signed0-i20",
+        "t1-d7169-signed0-i1",
+        "t1-d7169-signed0-i3",
+        "t1-d7169-signed0-i20",
+        "t1-d7169-signed1-i1",
+        "t1-d7169-signed1-i3",
+        "t1-d7169-signed1-i20",
+        "t17-d7169-signed0-i1",
+        "t17-d7169-signed0-i3",
+        "t17-d7169-signed0-i20",
+        "t17-d7169-signed1-i1",
+        "t17-d7169-signed1-i3",
+        "t17-d7169-signed1-i20"
+      ]
+    },
+    "caller": {
+      "cases": 24,
+      "errors": 0,
+      "cpu_pass": 24
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "refs": {
+    "baseline": "62e05feb3db521230c27714ad4347bd0d9d38f1a",
+    "candidate": "b8f067cd3f01c78fc2e7d35f12385a948dac1a26"
+  },
+  "status": "DCO source committed, full format.sh ci passed; no NPU build or correctness/performance validation yet",
+  "runtime_diff": "Earlier input tile submission on existing two-buffer xQue; prefetch first tile before rows, next hidden tile after dequeue, next row before post/Sinkhorn",
+  "actual_callers": [
+    "vllm_ascend/models/glm5next/model.py:499",
+    "vllm_ascend/models/deepseek_v4/model.py:746"
+  ],
+  "candidate_origin": "Original implementation of generic async row/tile pipeline idea from competition; no source copied, no license inferred",
+  "retained_license": "Existing CANN Open Software License Agreement Version 2.0 kernel header",
+  "unchanged": [
+    "input offsets/counts/padding",
+    "tiling",
+    "buffer count",
+    "API",
+    "dtype",
+    "math order",
+    "epsilon",
+    "finite iterations",
+    "arch35"
+  ],
+  "queue_invariant": "At most one enqueued tensor; current tile dequeued before next allocation/enqueue; current tile freed after ProcessY",
+  "SDK_review": "Installed CANN9.1 TPipe FetchEventID returns first unoccupied event; TQue EnQue allocates and DeQue releases events. This removes a suspected manual-event collision, but is not NPU synchronization proof.",
+  "expected_normal_cases": 93,
+  "retained_failure_policy": "No threshold relaxed; all baseline failures retained, new baseline must be rerun. Equal failure sets do not make failures pass.",
+  "unverified": [
+    "NPU build",
+    "normal nightly85",
+    "bounds/external pre_mix",
+    "actual GLM caller",
+    "kernel selection",
+    "ABBA/BAAB/AA performance",
+    "L1 critical path",
+    "standard-loader model integration"
+  ],
+  "performance_hypothesis": "Earlier DMA submission may overlap vector work. Existing framework might already overlap; no gain or emitted-instruction proof claimed.",
+  "competition_license_audit": "Competition clone4546d1864b3a16da3fc8bfe5ad3b06de380526bd contains no top-level LICENSE/COPYING/NOTICE; no code copied or permission inferred.",
+  "current_upstream": "62e05feb3db521230c27714ad4347bd0d9d38f1a reverified via git ls-remote October1",
+  "related_open_PR": {
+    "number": 17054,
+    "head": "33bfef419bc4dbe679582011104beca9112373be",
+    "scope": "Batch comb/Sinkhorn stages and change tiling; no next-input prefetch implementation found. Same file touched; independent review/integration needed if it merges."
+  },
+  "related_merged_PR": {
+    "number": 16321,
+    "scope": "Real GLM model uses existing fused HcPre/HcPost; model fusion is already upstream and must not be submitted again."
+  },
+  "additional_correctness": "Separate28 unchanged benchmark inputs checked against same CPU oracle/thresholds, including amplified signed fn; all48 normal real-hidden and all28 benchmark cases required before timing. No diagnostic or timing run for this candidate yet.",
+  "additional_graph_coverage": "16 added replay checks: eight updated activations and eight updated external pre_mix, tokens1/257, hidden4096/7168, both signed modes; no NPU outcome yet."
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "operation": "open",
+    "path": "/mnt/workspace/hc-pre-reduction-20260930/prefetch-x-source-candidate/opp/vendors/prefetch_x_candidate_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be.o",
+    "sha256": "243e493f210b0980b5c4164b5b393fa1c07172e0c3c9a33b94db91a875e09c24"
+  }
+]

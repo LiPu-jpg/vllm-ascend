@@ -1,0 +1,17 @@
+{
+  "scope": "Read-only metadata, no torch/torch_npu import or NPU execution",
+  "python": "3.12.14 (main, Sep 24 2026, 17:56:52) [Clang 22.1.3 ]",
+  "versions": {
+    "torch": "2.10.0+cpu",
+    "torch_npu": "2.10.0.post4",
+    "vllm": "0.1.dev1+gced6857af.empty",
+    "flash-linear-attention": null
+  },
+  "cann_realpath": "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0",
+  "vllm_head": "ced6857afa0ea7b2e3f0846a62e1394e90f15607",
+  "vllm_status": "",
+  "fla_distributions": {
+    "flash-linear-attention-npu-a2": "26.9.1+unknown.deva4a7958",
+    "Flask": "3.1.3"
+  }
+}

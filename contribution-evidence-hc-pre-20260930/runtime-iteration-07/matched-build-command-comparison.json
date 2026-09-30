@@ -1,0 +1,30 @@
+{
+  "scope": "Build command/compiler configuration comparison; not timing or proof of actual kernel selection",
+  "path_and_vendor_normalization": [
+    "baseline -> VARIANT",
+    "candidate -> VARIANT"
+  ],
+  "build_commands_identical_after_normalization": true,
+  "native_compile_commands_identical_after_normalization": true,
+  "OPP_install_commands_identical_after_normalization": true,
+  "native_c_compiler": "/usr/bin/gcc-13",
+  "native_cpp_compiler": "/usr/bin/g++-13",
+  "OPP_protobuf_compiler": "default GCC9 observed live; unchanged both sides",
+  "files": {
+    "baseline": {
+      "commands.json": "7432af53fbd4c6451e6cae870d5f3780a40fda51999ad9440d64b174c4273d35",
+      "compile_commands.json": "8d41eb8260e8834e97621897bf0deb868e83f1618f7df6f0b14a2fdbf50dd028",
+      "binary-sha256.json": "bcfd2047b8bdb456d2fd06f27f2467c2767d8e354abcf380b18092025057e3e2",
+      "opp-install-command.json": "ffc53a75a517b9495d7235e97dbe06471a758dfa820dd49064e98551d60c771a",
+      "CMakeCache.txt": "f3b0a2ec5c946a35d643572a0585b5f279a2a69312542223a02e4e5d7ecb351f"
+    },
+    "candidate": {
+      "commands.json": "6727bad39651334b4abf1c0313f1616874d177e0ac43f2a13e437294a49bb4fa",
+      "compile_commands.json": "7304e04759b6d73a998960518d04298fc7ec1583f73957313aeafe20f0ca0094",
+      "binary-sha256.json": "8a5639276e3ab037c09ace9967ba922102804c1cc666f3c2f90d9c4bc509005b",
+      "opp-install-command.json": "212c5601a9a3cace143a91c4e450a2728b2bf162eb0becf05d0d7c15336a7760",
+      "CMakeCache.txt": "fbfabb5fd136996b52fbc81a15a53d8989472ed4541033b3980acf4d04beea6e"
+    }
+  },
+  "runtime_selection": "Still requires separate LD_PRELOAD tracer process and actual private object hash verification before first timed arm; never instrument timing process"
+}

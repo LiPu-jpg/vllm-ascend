@@ -1,0 +1,6 @@
+{
+  "vllm_ascend/vllm_ascend_C.cpython-312-aarch64-linux-gnu.so": "62dcc2cf29936b3491777e32386ec4ae4e3fd243a3ba0e98dd2eafa19b08cbcb",
+  "vllm_ascend/libvllm_ascend_kernels.so": "eebb909c05e51a0c6707097405abde63643448c33a718c0aa55ff533eaf01f50",
+  "opp/vendors/prefetch_x_baseline_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be.o": "e4fe3ba278578281a0bb142d5da21cbfeb6d55e355378112fc429440eea23622",
+  "opp/vendors/prefetch_x_baseline_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be_relocatable.o": "751638b5707420d50db581a9522e86ddd9229412ad9a8e26cf3805a5cc10b158"
+}
