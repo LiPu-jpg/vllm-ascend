@@ -1,11 +1,16 @@
 # HcPre reduction contribution evidence
 
 This branch preserves the 2026-09-30 audit, all numerical results and all
-performance samples for an independent HcPre contribution. The final source
+performance samples for an independent HcPre contribution. The initial source
 commit is `4fc47457d8a0300f386291afb15fb75a77605410`, based on
 `e86df700993c6a83a17306e1320723db86f04691`. Its test/benchmark diff is unchanged
 from the tested tree. The HcPre implementation is byte-identical to the tested
 `12fd3a90a0895aebbc58926334e9891683c00699` source.
+
+[Additional real-plugin validation](full-validation/README.md) covers the updated
+PR revision `52c8d05cba1b3b40999dbe473030ed3d29045561`: a benchmark schema fix,
+53 passing tests, all 28 eager/graph cases, collection failures, and a separate
+complete-plugin ABBA comparison. The original evidence below is retained.
 
 ## Accepted contribution
 

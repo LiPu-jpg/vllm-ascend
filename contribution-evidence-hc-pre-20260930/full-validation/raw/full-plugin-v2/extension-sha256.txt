@@ -1,0 +1,2 @@
+1bfcc49510d90e03d4cca79160047cf82c5c426e4733adf3ee5f9056ab200128  vllm_ascend/libvllm_ascend_kernels.so
+a08968af9746c3867c4e752aa60167c5417efd4064e7ac868448b93e30cf030f  vllm_ascend/vllm_ascend_C.cpython-312-aarch64-linux-gnu.so

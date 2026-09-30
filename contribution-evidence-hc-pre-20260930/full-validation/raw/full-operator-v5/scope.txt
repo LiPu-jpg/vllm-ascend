@@ -1,0 +1,1 @@
+Full plugin loader and unchanged test file. Collection excludes parent conftest files because FLA dependency is not built. This is not complete nightly/model integration.

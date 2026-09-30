@@ -1,0 +1,2 @@
+Unchanged HcPre binding SHA256: 7172960791b45ebc201c8d988a2b6bb5a9eef98bbf33e1f62ac58848db0ca18c
+Other operators in reused extension are outside this validation scope.

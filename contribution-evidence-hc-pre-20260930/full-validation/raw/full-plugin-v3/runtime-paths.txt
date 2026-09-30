@@ -1,0 +1,2 @@
+/mnt/workspace/hc-pre-reduction-20260930/full-plugin-source-v2:/mnt/workspace/mhc-validation-20260930/vllm:/mnt/workspace/mhc-validation-20260930/fla-npu-v26.9.1-beta2/torch_custom/fla_npu:/mnt/workspace/hc-pre-reduction-20260930:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/python/site-packages:/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/opp/built-in/op_impl/ai_core/tbe:
+/mnt/workspace/hc-pre-reduction-20260930/baseline/opp/vendors/reduction_baseline_transformer:
