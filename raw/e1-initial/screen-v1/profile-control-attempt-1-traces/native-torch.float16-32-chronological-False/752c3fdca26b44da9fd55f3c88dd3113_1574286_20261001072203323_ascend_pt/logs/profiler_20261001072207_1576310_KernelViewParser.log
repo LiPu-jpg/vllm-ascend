@@ -1,0 +1,3 @@
+[2026-10-01-07:22:07.341] [INFO] [AscendProfiler_KernelViewParser:97] Profiler logger initialized at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-e1/screen-v1/profile-control-attempt-1-traces/native-torch.float16-32-chronological-False/752c3fdca26b44da9fd55f3c88dd3113_1574286_20261001072203323_ascend_pt/logs/profiler_20261001072207_1576310_KernelViewParser.log
+[2026-10-01-07:22:07.341] [INFO] [AscendProfiler_KernelViewParser:38] KernelViewParser start.
+[2026-10-01-07:22:07.345] [INFO] [AscendProfiler_KernelViewParser:46] KernelViewParser finish.

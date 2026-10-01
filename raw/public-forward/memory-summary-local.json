@@ -1,0 +1,242 @@
+{
+  "1": {
+    "eager": {
+      "cases": 4,
+      "min_reduction_bytes": 57796096,
+      "max_reduction_bytes": 57796096,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "graph": {
+      "cases": 4,
+      "min_reduction_bytes": 57796096,
+      "max_reduction_bytes": 57796096,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "2": {
+    "eager": {
+      "cases": 4,
+      "min_reduction_bytes": 65135104,
+      "max_reduction_bytes": 65135104,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "graph": {
+      "cases": 4,
+      "min_reduction_bytes": 65135104,
+      "max_reduction_bytes": 65135104,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "4": {
+    "eager": {
+      "cases": 4,
+      "min_reduction_bytes": 58818560,
+      "max_reduction_bytes": 58818560,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "graph": {
+      "cases": 4,
+      "min_reduction_bytes": 58818560,
+      "max_reduction_bytes": 58818560,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "8": {
+    "eager": {
+      "cases": 4,
+      "min_reduction_bytes": 44113920,
+      "max_reduction_bytes": 44113920,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "graph": {
+      "cases": 4,
+      "min_reduction_bytes": 44113920,
+      "max_reduction_bytes": 44113920,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "16": {
+    "eager": {
+      "cases": 4,
+      "min_reduction_bytes": 14704640,
+      "max_reduction_bytes": 14704640,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "graph": {
+      "cases": 4,
+      "min_reduction_bytes": 14704640,
+      "max_reduction_bytes": 14704640,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "20": {
+    "eager": {
+      "cases": 4,
+      "min_reduction_bytes": 0,
+      "max_reduction_bytes": 0,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "graph": {
+      "cases": 4,
+      "min_reduction_bytes": 0,
+      "max_reduction_bytes": 0,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "21": {
+    "eager": {
+      "cases": 4,
+      "min_reduction_bytes": 0,
+      "max_reduction_bytes": 0,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "graph": {
+      "cases": 4,
+      "min_reduction_bytes": 0,
+      "max_reduction_bytes": 0,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "24": {
+    "eager": {
+      "cases": 4,
+      "min_reduction_bytes": 0,
+      "max_reduction_bytes": 0,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "graph": {
+      "cases": 4,
+      "min_reduction_bytes": 0,
+      "max_reduction_bytes": 0,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "25": {
+    "eager": {
+      "cases": 4,
+      "min_reduction_bytes": 0,
+      "max_reduction_bytes": 0,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "graph": {
+      "cases": 4,
+      "min_reduction_bytes": 0,
+      "max_reduction_bytes": 0,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "32": {
+    "eager": {
+      "cases": 4,
+      "min_reduction_bytes": 0,
+      "max_reduction_bytes": 0,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "graph": {
+      "cases": 4,
+      "min_reduction_bytes": 0,
+      "max_reduction_bytes": 0,
+      "original_to_launch_only_deltas": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

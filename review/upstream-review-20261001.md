@@ -1,0 +1,11 @@
+# Current upstream and related contribution review
+
+GitHub main was rechecked at62e05feb3db521230c27714ad4347bd0d9d38f1a (2026-09-30T14:29:14Z), unchanged from the tested base. The current host SplitBalanced sets usedCoreNum_=aicNum_; the A2/A3 kernel InitCalcParamsEach computes actual query-group work on device, returning idle groups. GetS1Size returns the query tensor T dimension for TND. E1 caps the launch using that tensor bound without reading actual device lengths. E2 uses GetBlockNum-compatible core count for scratch allocation, retaining API workspace and per-core sizes.
+
+Related PR17653 remains open at228695eb49afd8d7f189fea710bd7bac70558257. Its inspected files change A3 valid-prefix kernel computation, tests, compile options, benchmark and docs, not the SFA host tiling. PR17434's inspected file list has no op_host change and concerns A5 KV splitting. These findings do not claim that every pending operator proposal has been exhaustively excluded; current source and the directly related changes have no equivalent host small-query launch/allocation guard.
+
+Merged PR17538 uses a concrete MiniMax-M3 MRV2 idle-DP trigger and reports its actual model A/B result separately from scope exclusions. Merged PR16913 documents a concrete4352-token A5 page rejection, token-address preservation and regression checks. Their problem-first descriptions, test commands, limitations and standard template sections guide this contribution. Their model numbers are not evidence for SFA operator speedup.
+
+The public reproduction benchmark is independently written, freezes actual native/quantized Indexer outputs on synthetic features, measures unquantized NoPE SFA, retains failures and raw samples, checks eager/graph outputs against FP64, and separates allocator observations from event latency. New docs are linked in mkdocs navigation. Full format.shci passes. The public script's NPU execution remains queued behind actual controller liveness and a free-window guard, so it is not represented as validated yet.
+
+Contest R152 source is retained only as audited historical design evidence; no contest kernel source is transplanted. Existing CANN2.0 host notice is preserved and independently written tests/benchmark use Apache2.0. Physical A3, a full model run and distributed behavior remain unverified. No new PR has been created.

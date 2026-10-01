@@ -1,0 +1,8 @@
+/opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/utils/_path_manager.py:66: UserWarning: Permission mismatch: The owner of /opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/lib/libop_plugin_atb.so does not match.
+  warnings.warn(f"Permission mismatch: The owner of {path} does not match.")
+nm: /mnt/workspace/sfa-nonempty-perf-20260930/control-d4/csrc/build/libcust_opmaster_rt2.0.so: no symbols
+Traceback (most recent call last):
+  File "/mnt/workspace/sfa-nonempty-perf-20260930/active-cores-20261001/install_e1_v3.py", line 29, in <module>
+    assert "SFAMlaTiling::SplitBalanced()" in subprocess.check_output(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

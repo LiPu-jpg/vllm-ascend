@@ -1,0 +1,97 @@
+/opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/utils/_path_manager.py:66: UserWarning: Permission mismatch: The owner of /opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/lib/libop_plugin_atb.so does not match.
+  warnings.warn(f"Permission mismatch: The owner of {path} does not match.")
+smoke-control attempt 1
+smoke-candidate attempt 1
+pytest-control attempt 1
+pytest-candidate attempt 1
+nope-capture attempt 1
+nope-check attempt 1
+nope-b1 attempt 1
+nope-c1 attempt 1
+nope-c2 attempt 1
+nope-b2 attempt 1
+{
+  "q1-indexer-lseFalse": {
+    "cases": 4,
+    "lower": 1,
+    "higher": 3,
+    "best_change_percent": -0.5729885340406304,
+    "worst_change_percent": 0.6498681105329362,
+    "geometric_mean_time_change_percent": 0.2320635003915772,
+    "separated_lower": 0,
+    "separated_higher": 1
+  },
+  "q1-indexer-lseTrue": {
+    "cases": 4,
+    "lower": 1,
+    "higher": 3,
+    "best_change_percent": -0.17722448104238175,
+    "worst_change_percent": 0.975126194396303,
+    "geometric_mean_time_change_percent": 0.4871175925006854,
+    "separated_lower": 0,
+    "separated_higher": 1
+  },
+  "q1-chronological-lseFalse": {
+    "cases": 4,
+    "lower": 2,
+    "higher": 2,
+    "best_change_percent": -0.41577300666058026,
+    "worst_change_percent": 1.8545052369434378,
+    "geometric_mean_time_change_percent": 0.6916193630919221,
+    "separated_lower": 0,
+    "separated_higher": 2
+  },
+  "q1-chronological-lseTrue": {
+    "cases": 4,
+    "lower": 0,
+    "higher": 4,
+    "best_change_percent": 0.36888026034838095,
+    "worst_change_percent": 1.5157674777218189,
+    "geometric_mean_time_change_percent": 0.8798864756198954,
+    "separated_lower": 0,
+    "separated_higher": 1
+  },
+  "q32-indexer-lseFalse": {
+    "cases": 4,
+    "lower": 0,
+    "higher": 4,
+    "best_change_percent": 0.3639524604631461,
+    "worst_change_percent": 1.028205805911897,
+    "geometric_mean_time_change_percent": 0.6675134442673425,
+    "separated_lower": 0,
+    "separated_higher": 2
+  },
+  "q32-indexer-lseTrue": {
+    "cases": 4,
+    "lower": 1,
+    "higher": 3,
+    "best_change_percent": -0.042050482949107515,
+    "worst_change_percent": 0.6260950611042926,
+    "geometric_mean_time_change_percent": 0.33968490575033705,
+    "separated_lower": 0,
+    "separated_higher": 1
+  },
+  "q32-chronological-lseFalse": {
+    "cases": 4,
+    "lower": 0,
+    "higher": 4,
+    "best_change_percent": 0.20546190054280267,
+    "worst_change_percent": 1.220948130781263,
+    "geometric_mean_time_change_percent": 0.580477736608298,
+    "separated_lower": 0,
+    "separated_higher": 2
+  },
+  "q32-chronological-lseTrue": {
+    "cases": 4,
+    "lower": 0,
+    "higher": 4,
+    "best_change_percent": 0.45194872048681667,
+    "worst_change_percent": 0.9798542229845886,
+    "geometric_mean_time_change_percent": 0.710704592136735,
+    "separated_lower": 0,
+    "separated_higher": 2
+  }
+}
+profile-control attempt 1
+profile-candidate attempt 1
+504 tests per build, 32 frozen-input checks, balanced timing and separate profiles complete; broader acceptance pending

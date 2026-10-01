@@ -1,0 +1,6 @@
+{
+  "accepted": false,
+  "reason": "Actual profiler launch remains20AIC/40AIV for candidateq1. Swapped compat path but actual rt2.0 host remained older3a2bc13b64fa789db46b988206967781871f2175d9ac95a5286be0a3fb9d6346. Loaded library presence alone did not prove execution.",
+  "latency_conclusion": "Cannot attribute screen-v1 timings to E1; preserve all measurements, withdraw candidate optimization assessment.",
+  "next": "Fresh isolated packages, proper compat symlink, changed actual host library, launch gate before tests/timings."
+}

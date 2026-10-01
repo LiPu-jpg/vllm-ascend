@@ -1,0 +1,517 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "variant": "control",
+      "case": "native-torch.float16-1",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.float16-1",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.float16-1",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.float16-1",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.float16-32",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.float16-32",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.float16-32",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.float16-32",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.bfloat16-1",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.bfloat16-1",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.bfloat16-1",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.bfloat16-1",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.bfloat16-32",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.bfloat16-32",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.bfloat16-32",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "native-torch.bfloat16-32",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.float16-1",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.float16-1",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.float16-1",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.float16-1",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.float16-32",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.float16-32",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.float16-32",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.float16-32",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.bfloat16-1",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.bfloat16-1",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.bfloat16-1",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.bfloat16-1",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.bfloat16-32",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.bfloat16-32",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.bfloat16-32",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "control",
+      "case": "quant-torch.bfloat16-32",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.float16-1",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.float16-1",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.float16-1",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.float16-1",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.float16-32",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.float16-32",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.float16-32",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.float16-32",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.bfloat16-1",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.bfloat16-1",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.bfloat16-1",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.bfloat16-1",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.bfloat16-32",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.bfloat16-32",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.bfloat16-32",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "native-torch.bfloat16-32",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.float16-1",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.float16-1",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.float16-1",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.float16-1",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.float16-32",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.float16-32",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.float16-32",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.float16-32",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.bfloat16-1",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.bfloat16-1",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.bfloat16-1",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.bfloat16-1",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 1,
+      "aiv": 2
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.bfloat16-32",
+      "order": "indexer",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.bfloat16-32",
+      "order": "indexer",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.bfloat16-32",
+      "order": "chronological",
+      "return_lse": false,
+      "aic": 20,
+      "aiv": 40
+    },
+    {
+      "variant": "candidate",
+      "case": "quant-torch.bfloat16-32",
+      "order": "chronological",
+      "return_lse": true,
+      "aic": 20,
+      "aiv": 40
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+[2026-10-01-08:21:57.938] [INFO] [AscendProfiler_CANNAnalyzeParser:97] Profiler logger initialized at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-e1/screen-v2/profile-control-attempt-1-traces/native-torch.bfloat16-32-indexer-True/752c3fdca26b44da9fd55f3c88dd3113_1600137_20261001082154364_ascend_pt/logs/profiler_20261001082157_1604214_CANNAnalyzeParser.log
+[2026-10-01-08:21:57.939] [INFO] [AscendProfiler_CANNAnalyzeParser:41] CANNAnalyzeParser start.
+[2026-10-01-08:21:58.964] [INFO] [AscendProfiler_CANNAnalyzeParser:67] CANNAnalyzeParser finish.

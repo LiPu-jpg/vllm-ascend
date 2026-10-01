@@ -1,0 +1,18 @@
+{
+  "audit_complete": true,
+  "public_tests_per_build": 418,
+  "retained_private_tests_per_build": 198,
+  "all_legacy_numerical_cases_passed": false,
+  "nonempty_coverage_and_all_statistics_byte_parity": true,
+  "known_empty_output_byte_differences": 20,
+  "empty_output_difference": "block8/head1 empty rows: original NaN, candidate Inf; both invalid; all512 differing elements per row confined to empty output",
+  "legacy_lse_reference_failures": 8,
+  "legacy_partial_block_reference_failures": 20,
+  "large_index_numerical_cases_per_build": 6,
+  "large_index_original_rejections_and_candidate_not_executed": 4,
+  "physical_A3_distributed_full_model": "unverified",
+  "source_integration_commit": "7f5fb60ea4eebc9fa02915764123a0a1aa17627a",
+  "tested_base": "62e05feb3db521230c27714ad4347bd0d9d38f1a",
+  "latest_main_reviewed": "a8fcedb03d93e60efceddbfc912406f7fa491d57",
+  "latest_change": "CI file moves only; native SFA, dispatcher and changed PR paths match tested base."
+}

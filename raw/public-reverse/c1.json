@@ -1,0 +1,536 @@
+{
+  "phase": "measure",
+  "device": "Ascend910B3",
+  "torch_version": "2.10.0+cpu",
+  "torch_npu_version": "2.10.0.post4",
+  "script_sha256": "0f70784892bea85c74c76433ffd61389211e64cbc0178749532501d46f4bfb53",
+  "scope": "Unquantized NoPE SFA on synthetic features and actual native/quantized Indexer outputs. Memory is Torch allocator usage, not device-wide HBM. No model speedup claim.",
+  "samples": 5,
+  "replays": 100,
+  "graph_calls": 8,
+  "return_lse": false,
+  "rows": [
+    {
+      "case": "native-torch.float16-1",
+      "capture_sha256": "ba7fa7c470cc282acdae2ffc55b0a445a66638ce3f7db5525dbc3ba993de64e2",
+      "graph_device_us": [
+        78.71347427368164,
+        78.6787748336792,
+        78.706374168396,
+        78.66819858551025,
+        78.69147300720215
+      ],
+      "median_device_us": 78.69147300720215,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.float16-2",
+      "capture_sha256": "690ef5087348bb55c05feb0327164dc93d1dca6a9cdfc34019cd0e4e32dc18a6",
+      "graph_device_us": [
+        79.45382595062256,
+        79.42817687988281,
+        79.42322731018066,
+        79.48307514190674,
+        79.42794799804688
+      ],
+      "median_device_us": 79.42817687988281,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.float16-4",
+      "capture_sha256": "c052ac4146c8df7930bf760d9a96a8285fd8293ebca30a8e4668f7f0a4400912",
+      "graph_device_us": [
+        80.53302764892578,
+        80.61844825744629,
+        80.54274559020996,
+        80.53244590759277,
+        80.54015159606934
+      ],
+      "median_device_us": 80.54015159606934,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.float16-8",
+      "capture_sha256": "1b176a241941d27480feae15b6269151b6542278b1ee89ae2fdc818d19e9b102",
+      "graph_device_us": [
+        83.07602882385254,
+        83.05472373962402,
+        83.00310134887695,
+        83.02142143249512,
+        83.03324699401855
+      ],
+      "median_device_us": 83.03324699401855,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.float16-16",
+      "capture_sha256": "81fcde62433c9a7fd34260f087001cfb18035a569ce9744977a9f45b5b601df6",
+      "graph_device_us": [
+        89.96467590332031,
+        89.98294830322266,
+        90.02132415771484,
+        89.98982429504395,
+        90.00965118408203
+      ],
+      "median_device_us": 89.98982429504395,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.float16-20",
+      "capture_sha256": "d22e826e1149105bd038658403b56c6dc4d6d7e0594ce9dc4453becf55df737d",
+      "graph_device_us": [
+        93.08859825134277,
+        93.04010391235352,
+        93.08830261230469,
+        93.05600166320801,
+        93.06137084960938
+      ],
+      "median_device_us": 93.06137084960938,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.float16-21",
+      "capture_sha256": "4b577ba43958b8fde616bde5b02fb76275dc39837afc4a029f22318039e0873b",
+      "graph_device_us": [
+        150.7734203338623,
+        150.7608985900879,
+        150.75844764709473,
+        150.7787036895752,
+        150.79432487487793
+      ],
+      "median_device_us": 150.7734203338623,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.float16-24",
+      "capture_sha256": "fbb5b9be3fc0750cf36a3c02062a85480fdc71daf92a2ae7aef81a3c15c5c2f8",
+      "graph_device_us": [
+        151.3346004486084,
+        151.38172149658203,
+        151.34302139282227,
+        151.3324737548828,
+        151.37530326843262
+      ],
+      "median_device_us": 151.34302139282227,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.float16-25",
+      "capture_sha256": "3ed25da5335b6b6c85af2be3370764a1b73e5e7f8b9861af074a43ad352bfa9a",
+      "graph_device_us": [
+        151.53852462768555,
+        151.50335311889648,
+        151.50659561157227,
+        151.5879249572754,
+        151.53887748718262
+      ],
+      "median_device_us": 151.53852462768555,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.float16-32",
+      "capture_sha256": "19455453e2b5a1fd8942df2e6ed563aaf42f61334018d7ca9e0924afab74641e",
+      "graph_device_us": [
+        153.2570457458496,
+        153.00557136535645,
+        153.00827026367188,
+        152.96480178833008,
+        152.99972534179688
+      ],
+      "median_device_us": 153.00557136535645,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.bfloat16-1",
+      "capture_sha256": "4aa359046b43815a585b58970065c08c77e09e97c82a7b6cc1335a09a73bc33a",
+      "graph_device_us": [
+        78.7905740737915,
+        78.81760120391846,
+        78.76830101013184,
+        78.77854824066162,
+        78.78194808959961
+      ],
+      "median_device_us": 78.78194808959961,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.bfloat16-2",
+      "capture_sha256": "73a588156a0cfeab069b948bf9522a0929a4c0428cd5199276b0b058a08eb792",
+      "graph_device_us": [
+        79.67167377471924,
+        79.63095188140869,
+        79.60782527923584,
+        79.6167516708374,
+        79.62319850921631
+      ],
+      "median_device_us": 79.62319850921631,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.bfloat16-4",
+      "capture_sha256": "877bb338ee81ea1f9ffeb94c39ef1d54a23bd97204bb3c5fc3cd377dc5d67272",
+      "graph_device_us": [
+        81.3065242767334,
+        81.26282691955566,
+        81.25152587890625,
+        81.26794815063477,
+        81.73822402954102
+      ],
+      "median_device_us": 81.26794815063477,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.bfloat16-8",
+      "capture_sha256": "7afd38008a8ffa76eaa95d0aa5a38864dc4129f4bed28e8410784e64343c46b8",
+      "graph_device_us": [
+        84.8951530456543,
+        84.8463249206543,
+        84.85230445861816,
+        84.8631763458252,
+        84.84564781188965
+      ],
+      "median_device_us": 84.85230445861816,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.bfloat16-16",
+      "capture_sha256": "81c0acc5867e6fc4bce288ee39fb256234ebee3f5bc11e604816d66ac05022bc",
+      "graph_device_us": [
+        90.52432060241699,
+        90.52689552307129,
+        90.57982444763184,
+        90.5152702331543,
+        90.51910400390625
+      ],
+      "median_device_us": 90.52432060241699,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.bfloat16-20",
+      "capture_sha256": "e51cae953d11eaf22e9962c8e8b717546276c1bcf887ed9dc04091500e16389a",
+      "graph_device_us": [
+        94.5894718170166,
+        94.5286750793457,
+        94.5121955871582,
+        94.49150085449219,
+        94.50632095336914
+      ],
+      "median_device_us": 94.5121955871582,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.bfloat16-21",
+      "capture_sha256": "85ad7b54c70a49996770e5ef2bcfb59f4c47320f6dceb629440489ad52716e8a",
+      "graph_device_us": [
+        151.1525535583496,
+        151.19637489318848,
+        151.15692138671875,
+        151.19122505187988,
+        151.1533260345459
+      ],
+      "median_device_us": 151.15692138671875,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.bfloat16-24",
+      "capture_sha256": "697cbfca0762447cc87f3c8d103ad04219c1372fe551dfbc84e49aad77473d92",
+      "graph_device_us": [
+        150.84707260131836,
+        150.83105087280273,
+        150.81497192382812,
+        150.84304809570312,
+        150.82857131958008
+      ],
+      "median_device_us": 150.83105087280273,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.bfloat16-25",
+      "capture_sha256": "86a28f427dc8ecded82f18cdb2c942f86d1081c2e00838916bb6e3860cbfe655",
+      "graph_device_us": [
+        150.96967697143555,
+        150.94297409057617,
+        150.99377632141113,
+        151.01722717285156,
+        150.96117973327637
+      ],
+      "median_device_us": 150.96967697143555,
+      "status": "passed"
+    },
+    {
+      "case": "native-torch.bfloat16-32",
+      "capture_sha256": "a344108cebc5273973e0ad896e311387781bcef05efafb3b78a85c3eb375bc79",
+      "graph_device_us": [
+        154.81257438659668,
+        154.7966480255127,
+        154.80565071105957,
+        154.84734535217285,
+        154.78437423706055
+      ],
+      "median_device_us": 154.80565071105957,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.float16-1",
+      "capture_sha256": "ece3a7660d72086d1be7c9e16cf774c7ca3cc51d6ec04968dc6c6c7ab336ba0c",
+      "graph_device_us": [
+        78.52452278137207,
+        78.49850177764893,
+        78.51492404937744,
+        78.49832534790039,
+        78.51174831390381
+      ],
+      "median_device_us": 78.51174831390381,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.float16-2",
+      "capture_sha256": "b256daecc1e92355635b97e15e5e29d394f4b65d6f6e597c3898339f2546b450",
+      "graph_device_us": [
+        79.82729911804199,
+        79.46577548980713,
+        79.45922374725342,
+        79.46052551269531,
+        79.46702480316162
+      ],
+      "median_device_us": 79.46577548980713,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.float16-4",
+      "capture_sha256": "5674c4ee35cfb80d8546ddfc09ada88ea05bf5cb8491a7fca8d3d0c72207bf70",
+      "graph_device_us": [
+        80.48707962036133,
+        80.50742149353027,
+        80.49602508544922,
+        80.50527572631836,
+        80.51329612731934
+      ],
+      "median_device_us": 80.50527572631836,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.float16-8",
+      "capture_sha256": "29381e442b313abd1e5fa8c3bd6288a56d1665421343b2dd0365c64c09badf85",
+      "graph_device_us": [
+        82.95822143554688,
+        82.96369552612305,
+        82.95760154724121,
+        82.95502662658691,
+        82.9458999633789
+      ],
+      "median_device_us": 82.95760154724121,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.float16-16",
+      "capture_sha256": "2b3f36a4950cc1d55496a976d42951e2b346afa31ebb3a14412adec4b565d03b",
+      "graph_device_us": [
+        90.93867301940918,
+        90.07650375366211,
+        90.06540298461914,
+        90.09830474853516,
+        90.09394645690918
+      ],
+      "median_device_us": 90.09394645690918,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.float16-20",
+      "capture_sha256": "138254ae8725084cf2862dcc6338af7742ca9b9d18f9c88246fc5dc4700f869e",
+      "graph_device_us": [
+        92.67947196960449,
+        92.6795482635498,
+        92.67365455627441,
+        92.68617630004883,
+        92.7161979675293
+      ],
+      "median_device_us": 92.6795482635498,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.float16-21",
+      "capture_sha256": "161adbe4418927394acd8231a0f363278ec73655a35eef43f5dd628fb0b961d6",
+      "graph_device_us": [
+        151.19640350341797,
+        151.1678981781006,
+        151.17369651794434,
+        151.17714881896973,
+        151.15452766418457
+      ],
+      "median_device_us": 151.17369651794434,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.float16-24",
+      "capture_sha256": "c4743d24489a7f61833fbe52364b1324f32d32d91a7260ff1972d7a0e6d3814f",
+      "graph_device_us": [
+        151.11709594726562,
+        151.1118984222412,
+        151.11160278320312,
+        151.11635208129883,
+        151.1226463317871
+      ],
+      "median_device_us": 151.11635208129883,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.float16-25",
+      "capture_sha256": "c4f76bdb01e67def3b800cdbf07468aeeee150554385552fde9fc6c58075f900",
+      "graph_device_us": [
+        151.0453987121582,
+        151.03705406188965,
+        150.99205017089844,
+        151.0022258758545,
+        151.05152130126953
+      ],
+      "median_device_us": 151.03705406188965,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.float16-32",
+      "capture_sha256": "0e312147254edd1ffd38f03af0829a7d33d45d2a99aafe15ff94a94a92c465a6",
+      "graph_device_us": [
+        152.52647399902344,
+        152.53037452697754,
+        152.5443458557129,
+        152.5333023071289,
+        152.51947402954102
+      ],
+      "median_device_us": 152.53037452697754,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.bfloat16-1",
+      "capture_sha256": "1d2e19eb5dc2bd8f24fbdfba7c6e93759efd4804d4b005c5b3f18a99feb73058",
+      "graph_device_us": [
+        78.66974830627441,
+        78.67007732391357,
+        78.67340087890625,
+        78.70237350463867,
+        78.70617389678955
+      ],
+      "median_device_us": 78.67340087890625,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.bfloat16-2",
+      "capture_sha256": "cd2e7da27b025330bc96b81f1238abc5b072820e64ebf9d2ebff77d58bba6cad",
+      "graph_device_us": [
+        79.62500095367432,
+        79.60344791412354,
+        79.60840225219727,
+        79.61054801940918,
+        79.64540004730225
+      ],
+      "median_device_us": 79.61054801940918,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.bfloat16-4",
+      "capture_sha256": "797e16592cf467b6274b03909e56c04f9719079319e926a1d5efbe7c73effdd0",
+      "graph_device_us": [
+        81.28642082214355,
+        81.28157615661621,
+        81.31472587585449,
+        81.32584571838379,
+        81.28677368164062
+      ],
+      "median_device_us": 81.28677368164062,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.bfloat16-8",
+      "capture_sha256": "d4ccec03c1a14fe25d53d0e5a3b38cb926dd8c8064bf34381eb965036f802f5b",
+      "graph_device_us": [
+        84.84277725219727,
+        84.7893238067627,
+        85.38232803344727,
+        84.7782039642334,
+        84.8015022277832
+      ],
+      "median_device_us": 84.8015022277832,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.bfloat16-16",
+      "capture_sha256": "571940b57491599175e2e47c0a1a5831af2e56ffb6be9ae9bb30c6982a3155a5",
+      "graph_device_us": [
+        90.38887023925781,
+        90.34749984741211,
+        90.35772323608398,
+        90.34424781799316,
+        90.35844802856445
+      ],
+      "median_device_us": 90.35772323608398,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.bfloat16-20",
+      "capture_sha256": "1bd619e2d5c4b9992c227486216c8eeece3cdcb72f9bc7be114baffdd5fbdc69",
+      "graph_device_us": [
+        94.169921875,
+        94.15160179138184,
+        94.16680335998535,
+        94.14114952087402,
+        94.11540031433105
+      ],
+      "median_device_us": 94.15160179138184,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.bfloat16-21",
+      "capture_sha256": "759600777f7a806ca09f60a1ba40c192756e5a0353cdbbc2a52694e8793c81d0",
+      "graph_device_us": [
+        151.34142875671387,
+        151.34099960327148,
+        151.3008975982666,
+        151.3249969482422,
+        151.32237434387207
+      ],
+      "median_device_us": 151.3249969482422,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.bfloat16-24",
+      "capture_sha256": "9603f80b5acb2f64bae14aa9b07e8174853b287c014b44ed481537fefc7ca0fd",
+      "graph_device_us": [
+        151.4088249206543,
+        151.38614654541016,
+        151.40685081481934,
+        151.39697074890137,
+        151.41465187072754
+      ],
+      "median_device_us": 151.40685081481934,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.bfloat16-25",
+      "capture_sha256": "0f2580e4f1092317e4a1d3ed08e0f87cd51802e8f879a9024f623e2e9281ba8e",
+      "graph_device_us": [
+        151.5085506439209,
+        151.5023708343506,
+        151.47324562072754,
+        151.49680137634277,
+        151.49232864379883
+      ],
+      "median_device_us": 151.49680137634277,
+      "status": "passed"
+    },
+    {
+      "case": "quant-torch.bfloat16-32",
+      "capture_sha256": "0f07779db95b2cae7dd42b1c5b3c64b7d250b319dd80a7b3e0558858ea3ba84b",
+      "graph_device_us": [
+        152.85059928894043,
+        152.82852172851562,
+        152.84674644470215,
+        152.85767555236816,
+        152.84747123718262
+      ],
+      "median_device_us": 152.84747123718262,
+      "status": "passed"
+    }
+  ],
+  "complete": true,
+  "all_passed": true
+}

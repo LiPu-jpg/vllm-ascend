@@ -1,0 +1,12 @@
+{
+  "full-tests-control": {
+    "test_sparse_flash_attention_active_cores": 402,
+    "test_sparse_flash_attention_active_workspace": 16,
+    "test_sparse_flash_attention_sparse_indices": 198
+  },
+  "full-tests-candidate": {
+    "test_sparse_flash_attention_active_cores": 402,
+    "test_sparse_flash_attention_active_workspace": 16,
+    "test_sparse_flash_attention_sparse_indices": 198
+  }
+}

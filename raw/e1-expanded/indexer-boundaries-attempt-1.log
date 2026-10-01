@@ -1,0 +1,56 @@
+/opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/utils/_path_manager.py:66: UserWarning: Permission mismatch: The owner of /opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/lib/libop_plugin_atb.so does not match.
+  warnings.warn(f"Permission mismatch: The owner of {path} does not match.")
+INFO 10-01 09:22:51 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 10-01 09:22:51 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 10-01 09:22:51 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-01 09:22:51 [__init__.py:272] Platform plugin ascend is activated
+INFO 10-01 09:22:51 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+[W1001 09:22:53.533463022 NPUCachingAllocator.cpp:202] Warning: The current CANN and HDK(driver) versions require processing for 32 padding size, with memory allocation. (function operator())
+{"case": "native-torch.float16-2", "status": "passed", "input_file_sha256": "9926e9094842a53750abe3f2390c98cf3f1caec511ea3bdc29fba96bf719715c"}
+{"case": "native-torch.float16-4", "status": "passed", "input_file_sha256": "fb0b20d01841fcfb5391bee609917b7464e7642bae5a96dd69eaa46d39b56c96"}
+{"case": "native-torch.float16-9", "status": "passed", "input_file_sha256": "2fa5566738e7b7b8fe0180c324e264871cb25cc9e244a570bf3f45cf710e8d3f"}
+{"case": "native-torch.float16-10", "status": "passed", "input_file_sha256": "cd7f9dab3fd78ca1e484137488560ff5f0ed7f7e40c0bb67a4d140fdda9d6e37"}
+{"case": "native-torch.float16-11", "status": "passed", "input_file_sha256": "e0a84b2e8c9624248e21940580a545408e5908e71f31d5f11698f300b695384b"}
+{"case": "native-torch.float16-12", "status": "passed", "input_file_sha256": "c285a5798e3e85411ec921b4b10ad85fcd73bb84d56d1ea7fd3349e2ee804c49"}
+{"case": "native-torch.float16-13", "status": "passed", "input_file_sha256": "710734b99ea16ad8cc34412b28e4b26e5f006ed63cb91f4667251dd718ab8a5c"}
+{"case": "native-torch.float16-16", "status": "passed", "input_file_sha256": "12aa92e902a0f94487e676badbaca86bd53163a7c412171dac7f6cd55c428af3"}
+{"case": "native-torch.float16-19", "status": "passed", "input_file_sha256": "8a89ea2843f1c8e9863d8d04be31c34114d16766b0b8c65b74cc053e9751f63b"}
+{"case": "native-torch.float16-20", "status": "passed", "input_file_sha256": "29acccf3073d4065278acb43778c50ef0b7fcb58f3ef022911605f89d46f9b2d"}
+{"case": "native-torch.float16-21", "status": "passed", "input_file_sha256": "2ac0748c2f0e2bdec7841c0508a9365422c8a9165ea598141415fc6d9ec380f7"}
+{"case": "native-torch.float16-24", "status": "passed", "input_file_sha256": "292d1ebe15c4bfe0453dd49539b4f558d975df1dfe40789de397ee1ffa71a4fa"}
+{"case": "native-torch.bfloat16-2", "status": "passed", "input_file_sha256": "9aa1fab5ebe493d456ae8e8a130a5bf9a1a2f5e469fbeb2d2cb9ff9c0abe63e2"}
+{"case": "native-torch.bfloat16-4", "status": "passed", "input_file_sha256": "6ef962a5841eacb03a740f7e77e25f204ccfe4c795eb3d06c92d967cc809abad"}
+{"case": "native-torch.bfloat16-9", "status": "passed", "input_file_sha256": "1210fc6504a6be20b046bc0a9b435edbf4feadcad0e8cd66bc74c3d2772e03b0"}
+{"case": "native-torch.bfloat16-10", "status": "passed", "input_file_sha256": "8acab95e7879a6507bef74f461714802e622a94d2e4cb67218b8dc9f8fe9e05d"}
+{"case": "native-torch.bfloat16-11", "status": "passed", "input_file_sha256": "bd446872fb198fb87206254d71e5222a0190ff07d41ae52c27d9c8240404977b"}
+{"case": "native-torch.bfloat16-12", "status": "passed", "input_file_sha256": "9b8544c21df09f8c723252dd7ecb08c71b4158a21a58efb5875763329cdc3732"}
+{"case": "native-torch.bfloat16-13", "status": "passed", "input_file_sha256": "551f959af1a9c7d9c0d5ec52c49543f8112ed669542f3087ae87db82e96de74b"}
+{"case": "native-torch.bfloat16-16", "status": "passed", "input_file_sha256": "5059f74e68f492750bfc1cff11428e594026ecacccc56685e25e63590f586d5d"}
+{"case": "native-torch.bfloat16-19", "status": "passed", "input_file_sha256": "619bf0e4160a37175d33cd8d89ba902e5e9d62fe3e985c55bcd064b1573c609f"}
+{"case": "native-torch.bfloat16-20", "status": "passed", "input_file_sha256": "84c7e6be89e21370303e873e56709ecd1da65583a5bb3ed7283def51c6e7c45f"}
+{"case": "native-torch.bfloat16-21", "status": "passed", "input_file_sha256": "9b572170ef5e47df446ecd7816e538551bb145abca3a36ffe6c29ee52382efd5"}
+{"case": "native-torch.bfloat16-24", "status": "passed", "input_file_sha256": "15095122d07f36688c4a851a1e7b37f2f92b77b639b8de984ecdf3591a5db85d"}
+{"case": "quant-torch.float16-2", "status": "passed", "input_file_sha256": "c98339c278bdea460dcc040ba4b3595635c65eea09e7c61a72b9fed750ef908e"}
+{"case": "quant-torch.float16-4", "status": "passed", "input_file_sha256": "4a11a17a6a5bac8e90d1c31778bd0672182c4401840f63c3c859381403e94770"}
+{"case": "quant-torch.float16-9", "status": "passed", "input_file_sha256": "93417b7b40d4dfb3dec6ed40e9a76b94e34fd8bf0b5f839dfa2dab18a94a3e5f"}
+{"case": "quant-torch.float16-10", "status": "passed", "input_file_sha256": "75bd11c4d7ce60fd8b0c94034af3a0f1db712c42f07e1af5251d0256dfb3ed9c"}
+{"case": "quant-torch.float16-11", "status": "passed", "input_file_sha256": "2fdcb5aa07ead080bc1f2359b75fd35e63d31b824c16884b630c97010c5c8d5a"}
+{"case": "quant-torch.float16-12", "status": "passed", "input_file_sha256": "6f6efbedb69c3e176f9c9be511ab4ceb406ad436bc033b67766837c49bb504b6"}
+{"case": "quant-torch.float16-13", "status": "passed", "input_file_sha256": "af9aedede23eb23ab3dddd001896ccb6b6e1f4388ac5f7a9a831b56eb48f0366"}
+{"case": "quant-torch.float16-16", "status": "passed", "input_file_sha256": "1305e0cbb38ea94d99437fad13d17d2bac43f7870262a72b7e780d78fbce8ad2"}
+{"case": "quant-torch.float16-19", "status": "passed", "input_file_sha256": "0fd3e8ec983f9e9933a390bffe0d5644951d3ed42eaab1ca47d0e22810313d13"}
+{"case": "quant-torch.float16-20", "status": "passed", "input_file_sha256": "7bab57e3c23504b8c4bf45c0645779a080912522f86853d5bdbe575b2a0b1d27"}
+{"case": "quant-torch.float16-21", "status": "passed", "input_file_sha256": "057e950f42ce592417eb7a3699722bcc6b948397471c586d0925b1eedc488f46"}
+{"case": "quant-torch.float16-24", "status": "passed", "input_file_sha256": "b6dc30af97a6a980a4c0a6a3d9a6527e53005bd5e317d8930b23e095c9a02dff"}
+{"case": "quant-torch.bfloat16-2", "status": "passed", "input_file_sha256": "cd81804c77573e1b586635abbe8186ec18231e9a8e2b8fc4b872b35faf523f4b"}
+{"case": "quant-torch.bfloat16-4", "status": "passed", "input_file_sha256": "71c1e3ebac3f69e48beec976614e877d47c4d5184901220d82e88ac8fd6be64c"}
+{"case": "quant-torch.bfloat16-9", "status": "passed", "input_file_sha256": "1a080edb41733ed3d892a97bad5dca79b787292f49a7df16d8cfdd6ed487d58c"}
+{"case": "quant-torch.bfloat16-10", "status": "passed", "input_file_sha256": "c5ec11426cb3ac88e574dc3070c6482d31434376ba52f603f13b273203844eed"}
+{"case": "quant-torch.bfloat16-11", "status": "passed", "input_file_sha256": "a0a9fde37e0470bd5c3ca5c697c85d5b114d901bc762b1a7f0a342807d538826"}
+{"case": "quant-torch.bfloat16-12", "status": "passed", "input_file_sha256": "ad4dcc3fea9c2c41fd6e5a8baf10bc7b5b651aa58b2816601c319083468b7614"}
+{"case": "quant-torch.bfloat16-13", "status": "passed", "input_file_sha256": "4fddef69cc99cdaafcc3f4aae455fef29ba7874545878cfc543cc7937052df0b"}
+{"case": "quant-torch.bfloat16-16", "status": "passed", "input_file_sha256": "512519ae22dbe78c2958fc901d689a9eb771b4a1f74c59d31174d02259903cb4"}
+{"case": "quant-torch.bfloat16-19", "status": "passed", "input_file_sha256": "9f5cf3512e894ad26d16a474c68191075e919cbbc95a7a4082952cf1810d36a1"}
+{"case": "quant-torch.bfloat16-20", "status": "passed", "input_file_sha256": "51b3ba950b24aa8496403f06158d95abd8767e568fa659a360bc90b7ff1787a2"}
+{"case": "quant-torch.bfloat16-21", "status": "passed", "input_file_sha256": "093c93d8d1803c375c0fdfe2695d4990fbcfb6df778179b3d1b3a32b6e637335"}
+{"case": "quant-torch.bfloat16-24", "status": "passed", "input_file_sha256": "e3c9d9310b6058c2ba07cf11ae3c3a09535b24d971679591c4e3e36d71fa0549"}

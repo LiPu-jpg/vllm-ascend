@@ -1,0 +1,3 @@
+[2026-10-01-08:25:11.655] [INFO] [AscendProfiler_TraceViewParser:97] Profiler logger initialized at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-e1/screen-v2/profile-candidate-attempt-1-traces/native-torch.bfloat16-1-indexer-True/752c3fdca26b44da9fd55f3c88dd3113_1609513_20261001082509211_ascend_pt/logs/profiler_20261001082511_1612392_TraceViewParser.log
+[2026-10-01-08:25:11.655] [INFO] [AscendProfiler_TraceViewParser:53] TraceViewParser start.
+[2026-10-01-08:25:11.663] [INFO] [AscendProfiler_TraceViewParser:68] TraceViewParser finish.

@@ -1,0 +1,3 @@
+[2026-10-01-08:25:30.215] [INFO] [AscendProfiler_CommunicationParser:97] Profiler logger initialized at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-e1/screen-v2/profile-candidate-attempt-1-traces/native-torch.bfloat16-32-indexer-False/752c3fdca26b44da9fd55f3c88dd3113_1609513_20261001082525565_ascend_pt/logs/profiler_20261001082530_1613279_CommunicationParser.log
+[2026-10-01-08:25:30.215] [INFO] [AscendProfiler_CommunicationParser:66] CommunicationParser start.
+[2026-10-01-08:25:30.218] [INFO] [AscendProfiler_CommunicationParser:73] CommunicationParser finish.

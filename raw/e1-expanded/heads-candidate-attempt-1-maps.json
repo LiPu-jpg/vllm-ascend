@@ -1,0 +1,17 @@
+{
+  "program": "/mnt/workspace/sfa-nonempty-perf-20260930/active-cores-20261001/heads_suite.py",
+  "status": 0,
+  "error": null,
+  "expected_runtime": "/mnt/workspace/sfa-nonempty-perf-20260930/runtime_candidate_e1_v4",
+  "expected_host_tiling": "/mnt/workspace/sfa-nonempty-perf-20260930/runtime_candidate_e1_v4/vllm_ascend/_cann_ops_custom/vendors/custom_transformer/op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64/libcust_opmaster_rt2.0.so",
+  "expected_host_tiling_loaded": true,
+  "loaded_libraries": {
+    "/mnt/workspace/mhc-validation-20260930/Ascend/cann-9.1.0/opp/built-in/op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64/liboptiling.so": "1ef91dda3af076033a49a45d4035de790577c9fd50b01802270532ae58b32edb",
+    "/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/fla_npu/opp/vendors/fla_npu_transformer/op_impl/ai_core/tbe/op_tiling/liboptiling.so": "ac308444ae02c5c8253baddb6239f311fbceaba9a4498ebc10c902cdf1b0327c",
+    "/mnt/workspace/sfa-nonempty-perf-20260930/runtime_candidate_e1_v4/vllm_ascend/_cann_ops_custom/vendors/custom_transformer/op_api/lib/libcust_opapi.so": "8c5e516920b1f152efa4c943e1ff4ed2d653f3e6b3fe3a274fcb72612694c1dd",
+    "/mnt/workspace/sfa-nonempty-perf-20260930/runtime_candidate_e1_v4/vllm_ascend/_cann_ops_custom/vendors/custom_transformer/op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64/libcust_opmaster_rt2.0.so": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec",
+    "/mnt/workspace/sfa-nonempty-perf-20260930/runtime_candidate_e1_v4/vllm_ascend/_cann_ops_custom/vendors/custom_transformer/op_proto/lib/linux/aarch64/libcust_opsproto_rt2.0.so": "c8d666aa3344dfcc39374916607647b55753fc298090a9f8b19219c26919727b",
+    "/mnt/workspace/sfa-nonempty-perf-20260930/runtime_candidate_e1_v4/vllm_ascend/libvllm_ascend_kernels.so": "1bfcc49510d90e03d4cca79160047cf82c5c426e4733adf3ee5f9056ab200128",
+    "/mnt/workspace/sfa-nonempty-perf-20260930/runtime_candidate_e1_v4/vllm_ascend/vllm_ascend_C.cpython-312-aarch64-linux-gnu.so": "a08968af9746c3867c4e752aa60167c5417efd4064e7ac868448b93e30cf030f"
+  }
+}

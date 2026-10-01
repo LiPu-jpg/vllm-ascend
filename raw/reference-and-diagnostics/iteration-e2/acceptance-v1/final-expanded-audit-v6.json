@@ -1,0 +1,3471 @@
+{
+  "complete": true,
+  "source_commit": "c7eaba024d79bed9016298657e3dc38501214393",
+  "total_pytest_cases_per_build": 616,
+  "public_tests_per_build": 418,
+  "retained_private_tests_per_build": 198,
+  "retained_checks": {
+    "correctness": 60,
+    "coverage": 98,
+    "dcp": 80,
+    "edges": 78
+  },
+  "large_index_cases_considered_per_build": 10,
+  "large_index_numerical_cases_per_build": 6,
+  "original_large_index_rejections_and_candidate_not_executed": [
+    {
+      "original": {
+        "case": "torch.float16-optional-True-block-2",
+        "status": "original_execution_failed",
+        "error": "call aclnnSparseFlashAttention failed, detail:[PID: 1652515] 2026-10-01-10:23:15.165.434 Execution_Error(EZ1008): Failed to execute operator SparseFlashAttention_0. Reason: Failed to execute tiling function.\n        Solution: 1.If the tiling function does not exist, check whether the tiling function is registered successfully. 2.If the tiling function fails to be executed, check the implementation logic of the tiling function.\nTraceBack (most recent call last):\n        actualSeqLengths should not be null[FUNC:CheckExists][FILE:sparse_flash_attention_tiling.cpp][LINE:824]\n        Failed to execute operator SparseFlashAttention_0. Reason: Failed to execute tiling function.\n        Check NnopbaseExecutorDoTiling(executor) failed\n        Check NnopbaseExecutorTilingAndUpdateBinInfo(executor) failed\n        Check NnopbaseExecutorMatchCache(executor) failed\n        Check NnopbaseRunForWorkspace(*executor, workspaceSize) failed\n"
+      },
+      "candidate": {
+        "case": "torch.float16-optional-True-block-2",
+        "status": "missing_original_capture"
+      }
+    },
+    {
+      "original": {
+        "case": "torch.float16-optional-True-block-4",
+        "status": "original_execution_failed",
+        "error": "call aclnnSparseFlashAttention failed, detail:[PID: 1652515] 2026-10-01-10:23:15.213.086 Execution_Error(EZ1008): Failed to execute operator SparseFlashAttention_0. Reason: Failed to execute tiling function.\n        Solution: 1.If the tiling function does not exist, check whether the tiling function is registered successfully. 2.If the tiling function fails to be executed, check the implementation logic of the tiling function.\nTraceBack (most recent call last):\n        actualSeqLengths should not be null[FUNC:CheckExists][FILE:sparse_flash_attention_tiling.cpp][LINE:824]\n        Failed to execute operator SparseFlashAttention_0. Reason: Failed to execute tiling function.\n        Check NnopbaseExecutorDoTiling(executor) failed\n        Check NnopbaseExecutorTilingAndUpdateBinInfo(executor) failed\n        Check NnopbaseExecutorMatchCache(executor) failed\n        Check NnopbaseRunForWorkspace(*executor, workspaceSize) failed\n"
+      },
+      "candidate": {
+        "case": "torch.float16-optional-True-block-4",
+        "status": "missing_original_capture"
+      }
+    },
+    {
+      "original": {
+        "case": "torch.bfloat16-optional-True-block-2",
+        "status": "original_execution_failed",
+        "error": "call aclnnSparseFlashAttention failed, detail:[PID: 1652515] 2026-10-01-10:23:15.609.607 Execution_Error(EZ1008): Failed to execute operator SparseFlashAttention_0. Reason: Failed to execute tiling function.\n        Solution: 1.If the tiling function does not exist, check whether the tiling function is registered successfully. 2.If the tiling function fails to be executed, check the implementation logic of the tiling function.\nTraceBack (most recent call last):\n        actualSeqLengths should not be null[FUNC:CheckExists][FILE:sparse_flash_attention_tiling.cpp][LINE:824]\n        Failed to execute operator SparseFlashAttention_0. Reason: Failed to execute tiling function.\n        Check NnopbaseExecutorDoTiling(executor) failed\n        Check NnopbaseExecutorTilingAndUpdateBinInfo(executor) failed\n        Check NnopbaseExecutorMatchCache(executor) failed\n        Check NnopbaseRunForWorkspace(*executor, workspaceSize) failed\n"
+      },
+      "candidate": {
+        "case": "torch.bfloat16-optional-True-block-2",
+        "status": "missing_original_capture"
+      }
+    },
+    {
+      "original": {
+        "case": "torch.bfloat16-optional-True-block-4",
+        "status": "original_execution_failed",
+        "error": "call aclnnSparseFlashAttention failed, detail:[PID: 1652515] 2026-10-01-10:23:15.650.582 Execution_Error(EZ1008): Failed to execute operator SparseFlashAttention_0. Reason: Failed to execute tiling function.\n        Solution: 1.If the tiling function does not exist, check whether the tiling function is registered successfully. 2.If the tiling function fails to be executed, check the implementation logic of the tiling function.\nTraceBack (most recent call last):\n        actualSeqLengths should not be null[FUNC:CheckExists][FILE:sparse_flash_attention_tiling.cpp][LINE:824]\n        Failed to execute operator SparseFlashAttention_0. Reason: Failed to execute tiling function.\n        Check NnopbaseExecutorDoTiling(executor) failed\n        Check NnopbaseExecutorTilingAndUpdateBinInfo(executor) failed\n        Check NnopbaseExecutorMatchCache(executor) failed\n        Check NnopbaseRunForWorkspace(*executor, workspaceSize) failed\n"
+      },
+      "candidate": {
+        "case": "torch.bfloat16-optional-True-block-4",
+        "status": "missing_original_capture"
+      }
+    }
+  ],
+  "boundary_performance_cases": 192,
+  "retained_performance_cases": 172,
+  "boundary_production_dispatcher_cases_per_build": 96,
+  "boundary_lse_diagnostic_cases_per_build": 96,
+  "existing_reference_failures": {
+    "coverage": [
+      {
+        "index": 22,
+        "dtype": "torch.float16",
+        "rope_dim": 0,
+        "layout": "BSND",
+        "sparse_block_size": 8,
+        "sparse_mode": 0,
+        "heads": 1,
+        "selected_tokens": [
+          0,
+          8,
+          264,
+          1016
+        ],
+        "nonempty_reference": "failed",
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+        "bytewise_baseline_by_output": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "index": 23,
+        "dtype": "torch.float16",
+        "rope_dim": 0,
+        "layout": "BSND",
+        "sparse_block_size": 8,
+        "sparse_mode": 3,
+        "heads": 1,
+        "selected_tokens": [
+          0,
+          8,
+          264,
+          1016
+        ],
+        "nonempty_reference": "failed",
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+        "bytewise_baseline_by_output": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "index": 46,
+        "dtype": "torch.float16",
+        "rope_dim": 64,
+        "layout": "BSND",
+        "sparse_block_size": 8,
+        "sparse_mode": 0,
+        "heads": 1,
+        "selected_tokens": [
+          0,
+          8,
+          264,
+          1016
+        ],
+        "nonempty_reference": "failed",
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+        "bytewise_baseline_by_output": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "index": 47,
+        "dtype": "torch.float16",
+        "rope_dim": 64,
+        "layout": "BSND",
+        "sparse_block_size": 8,
+        "sparse_mode": 3,
+        "heads": 1,
+        "selected_tokens": [
+          0,
+          8,
+          264,
+          1016
+        ],
+        "nonempty_reference": "failed",
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+        "bytewise_baseline_by_output": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "index": 70,
+        "dtype": "torch.bfloat16",
+        "rope_dim": 0,
+        "layout": "BSND",
+        "sparse_block_size": 8,
+        "sparse_mode": 0,
+        "heads": 1,
+        "selected_tokens": [
+          0,
+          8,
+          264,
+          1016
+        ],
+        "nonempty_reference": "failed",
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+        "bytewise_baseline_by_output": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "index": 71,
+        "dtype": "torch.bfloat16",
+        "rope_dim": 0,
+        "layout": "BSND",
+        "sparse_block_size": 8,
+        "sparse_mode": 3,
+        "heads": 1,
+        "selected_tokens": [
+          0,
+          8,
+          264,
+          1016
+        ],
+        "nonempty_reference": "failed",
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+        "bytewise_baseline_by_output": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "index": 94,
+        "dtype": "torch.bfloat16",
+        "rope_dim": 64,
+        "layout": "BSND",
+        "sparse_block_size": 8,
+        "sparse_mode": 0,
+        "heads": 1,
+        "selected_tokens": [
+          0,
+          8,
+          264,
+          1016
+        ],
+        "nonempty_reference": "failed",
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+        "bytewise_baseline_by_output": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "index": 95,
+        "dtype": "torch.bfloat16",
+        "rope_dim": 64,
+        "layout": "BSND",
+        "sparse_block_size": 8,
+        "sparse_mode": 3,
+        "heads": 1,
+        "selected_tokens": [
+          0,
+          8,
+          264,
+          1016
+        ],
+        "nonempty_reference": "failed",
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+        "bytewise_baseline_by_output": [
+          false,
+          true,
+          true
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "index": 20,
+        "kind": "eager",
+        "dtype": "torch.float16",
+        "capacity": 257,
+        "block": 2,
+        "mode": 0,
+        "input_sha256": "0f16d84158b44ff09f5f317b90f792b4ff478bf873958f778b997e1053fd14b1",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 64 / 32768 (0.2%)\nGreatest absolute difference: 0.05180809535374739 at index (31, 27) (up to 0.03 allowed)\nGreatest relative difference: 24.71853961673455 at index (31, 48) (up to 0.01 allowed)"
+      },
+      {
+        "index": 21,
+        "kind": "eager",
+        "dtype": "torch.float16",
+        "capacity": 257,
+        "block": 2,
+        "mode": 3,
+        "input_sha256": "23a6096068014395c77bb10e24928d6897ecf6103a1bb1181dc181c7f5154908",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 64 / 32768 (0.2%)\nGreatest absolute difference: 0.05180809535374739 at index (31, 27) (up to 0.03 allowed)\nGreatest relative difference: 24.71853961673455 at index (31, 48) (up to 0.01 allowed)"
+      },
+      {
+        "index": 22,
+        "kind": "eager",
+        "dtype": "torch.float16",
+        "capacity": 257,
+        "block": 4,
+        "mode": 0,
+        "input_sha256": "00f546ecae9324e55b0252b72f3e76378155509c692c1dba49b3aef55fc71760",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 599 / 32768 (1.8%)\nGreatest absolute difference: 0.0923384479015204 at index (58, 415) (up to 0.03 allowed)\nGreatest relative difference: 657.1668341983832 at index (46, 263) (up to 0.01 allowed)"
+      },
+      {
+        "index": 23,
+        "kind": "eager",
+        "dtype": "torch.float16",
+        "capacity": 257,
+        "block": 4,
+        "mode": 3,
+        "input_sha256": "b03f3c87d4e4ffe24c5693b3ac178aab75d5827df2e7a8c9477adf5b5f5f7d4c",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 599 / 32768 (1.8%)\nGreatest absolute difference: 0.0923384479015204 at index (58, 415) (up to 0.03 allowed)\nGreatest relative difference: 657.1668341983832 at index (46, 263) (up to 0.01 allowed)"
+      },
+      {
+        "index": 26,
+        "kind": "eager",
+        "dtype": "torch.float16",
+        "capacity": 513,
+        "block": 2,
+        "mode": 0,
+        "input_sha256": "69e9b9ca660d1d376488580262c903fce12d612a2f3195a547e0e61f8a017ac0",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 64 / 32768 (0.2%)\nGreatest absolute difference: 0.05180809535374739 at index (31, 27) (up to 0.03 allowed)\nGreatest relative difference: 24.71853961673455 at index (31, 48) (up to 0.01 allowed)"
+      },
+      {
+        "index": 27,
+        "kind": "eager",
+        "dtype": "torch.float16",
+        "capacity": 513,
+        "block": 2,
+        "mode": 3,
+        "input_sha256": "f23b52cee7b025d6949b052b6f62ea2912b0c5fc23d7ceb1524fb2a8accb5428",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 64 / 32768 (0.2%)\nGreatest absolute difference: 0.05180809535374739 at index (31, 27) (up to 0.03 allowed)\nGreatest relative difference: 24.71853961673455 at index (31, 48) (up to 0.01 allowed)"
+      },
+      {
+        "index": 28,
+        "kind": "eager",
+        "dtype": "torch.float16",
+        "capacity": 513,
+        "block": 4,
+        "mode": 0,
+        "input_sha256": "2f57bf58b32a7edf90f14edd183353fe7cae9e85c3294f4f6e664eab77911531",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 599 / 32768 (1.8%)\nGreatest absolute difference: 0.0923384479015204 at index (58, 415) (up to 0.03 allowed)\nGreatest relative difference: 657.1668341983832 at index (46, 263) (up to 0.01 allowed)"
+      },
+      {
+        "index": 29,
+        "kind": "eager",
+        "dtype": "torch.float16",
+        "capacity": 513,
+        "block": 4,
+        "mode": 3,
+        "input_sha256": "0eedb16e35684b37dac5587aaf28e4346976ebfc5a85897607594f4f68b06479",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 599 / 32768 (1.8%)\nGreatest absolute difference: 0.0923384479015204 at index (58, 415) (up to 0.03 allowed)\nGreatest relative difference: 657.1668341983832 at index (46, 263) (up to 0.01 allowed)"
+      },
+      {
+        "index": 35,
+        "kind": "graph-count-513",
+        "dtype": "torch.float16",
+        "capacity": 513,
+        "block": 2,
+        "mode": 0,
+        "input_sha256": "69e9b9ca660d1d376488580262c903fce12d612a2f3195a547e0e61f8a017ac0",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 64 / 32768 (0.2%)\nGreatest absolute difference: 0.05180809535374739 at index (31, 27) (up to 0.03 allowed)\nGreatest relative difference: 24.71853961673455 at index (31, 48) (up to 0.01 allowed)"
+      },
+      {
+        "index": 38,
+        "kind": "graph-count-513",
+        "dtype": "torch.float16",
+        "capacity": 513,
+        "block": 4,
+        "mode": 0,
+        "input_sha256": "2f57bf58b32a7edf90f14edd183353fe7cae9e85c3294f4f6e664eab77911531",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 599 / 32768 (1.8%)\nGreatest absolute difference: 0.0923384479015204 at index (58, 415) (up to 0.03 allowed)\nGreatest relative difference: 657.1668341983832 at index (46, 263) (up to 0.01 allowed)"
+      },
+      {
+        "index": 59,
+        "kind": "eager",
+        "dtype": "torch.bfloat16",
+        "capacity": 257,
+        "block": 2,
+        "mode": 0,
+        "input_sha256": "cb55d84695d008e2d80af97963e29e70726fa74f96e370dc9707adc340d65f2a",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 99 / 32768 (0.3%)\nGreatest absolute difference: 0.06373484343860983 at index (36, 38) (up to 0.03 allowed)\nGreatest relative difference: 84.06868285806745 at index (36, 464) (up to 0.01 allowed)"
+      },
+      {
+        "index": 60,
+        "kind": "eager",
+        "dtype": "torch.bfloat16",
+        "capacity": 257,
+        "block": 2,
+        "mode": 3,
+        "input_sha256": "d70985d82e5bb0a704d18d0d6372bb6cd3a4374100be734e59a732520919dae9",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 99 / 32768 (0.3%)\nGreatest absolute difference: 0.06373484343860983 at index (36, 38) (up to 0.03 allowed)\nGreatest relative difference: 84.06868285806745 at index (36, 464) (up to 0.01 allowed)"
+      },
+      {
+        "index": 61,
+        "kind": "eager",
+        "dtype": "torch.bfloat16",
+        "capacity": 257,
+        "block": 4,
+        "mode": 0,
+        "input_sha256": "e05e5e5cc9daedac33c4a41b43938fe124ad3a3b4fbf80716b3bb00a293824f4",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 403 / 32768 (1.2%)\nGreatest absolute difference: 0.07692730533182572 at index (49, 233) (up to 0.03 allowed)\nGreatest relative difference: 165.16813195970252 at index (2, 133) (up to 0.01 allowed)"
+      },
+      {
+        "index": 62,
+        "kind": "eager",
+        "dtype": "torch.bfloat16",
+        "capacity": 257,
+        "block": 4,
+        "mode": 3,
+        "input_sha256": "1d3e3449300aecb735c7656a06e4732f67811616e7446bc1d22f80d8e23ec1e3",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 403 / 32768 (1.2%)\nGreatest absolute difference: 0.07692730533182572 at index (49, 233) (up to 0.03 allowed)\nGreatest relative difference: 165.16813195970252 at index (2, 133) (up to 0.01 allowed)"
+      },
+      {
+        "index": 65,
+        "kind": "eager",
+        "dtype": "torch.bfloat16",
+        "capacity": 513,
+        "block": 2,
+        "mode": 0,
+        "input_sha256": "a5e1bea29403a96ff5f12f56f1e34028d8d3e1a21938ac95e83ff49030a11132",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 99 / 32768 (0.3%)\nGreatest absolute difference: 0.06373484343860983 at index (36, 38) (up to 0.03 allowed)\nGreatest relative difference: 84.06868285806745 at index (36, 464) (up to 0.01 allowed)"
+      },
+      {
+        "index": 66,
+        "kind": "eager",
+        "dtype": "torch.bfloat16",
+        "capacity": 513,
+        "block": 2,
+        "mode": 3,
+        "input_sha256": "4ad2c096156e09fb5c2594333d500d436fcc4e55f2670f1143e87024e2cdda1c",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 99 / 32768 (0.3%)\nGreatest absolute difference: 0.06373484343860983 at index (36, 38) (up to 0.03 allowed)\nGreatest relative difference: 84.06868285806745 at index (36, 464) (up to 0.01 allowed)"
+      },
+      {
+        "index": 67,
+        "kind": "eager",
+        "dtype": "torch.bfloat16",
+        "capacity": 513,
+        "block": 4,
+        "mode": 0,
+        "input_sha256": "279ba249f0b6c414f1c570a49daa090bcc606cbc20a0e1374f118d5787e997c9",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 403 / 32768 (1.2%)\nGreatest absolute difference: 0.07692730533182572 at index (49, 233) (up to 0.03 allowed)\nGreatest relative difference: 165.16813195970252 at index (2, 133) (up to 0.01 allowed)"
+      },
+      {
+        "index": 68,
+        "kind": "eager",
+        "dtype": "torch.bfloat16",
+        "capacity": 513,
+        "block": 4,
+        "mode": 3,
+        "input_sha256": "9add59ab439dbb1333e2e1c9ab84f0901fbd9e5b5c62ce25e438762ca9cbd8de",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 403 / 32768 (1.2%)\nGreatest absolute difference: 0.07692730533182572 at index (49, 233) (up to 0.03 allowed)\nGreatest relative difference: 165.16813195970252 at index (2, 133) (up to 0.01 allowed)"
+      },
+      {
+        "index": 74,
+        "kind": "graph-count-513",
+        "dtype": "torch.bfloat16",
+        "capacity": 513,
+        "block": 2,
+        "mode": 0,
+        "input_sha256": "a5e1bea29403a96ff5f12f56f1e34028d8d3e1a21938ac95e83ff49030a11132",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 99 / 32768 (0.3%)\nGreatest absolute difference: 0.06373484343860983 at index (36, 38) (up to 0.03 allowed)\nGreatest relative difference: 84.06868285806745 at index (36, 464) (up to 0.01 allowed)"
+      },
+      {
+        "index": 77,
+        "kind": "graph-count-513",
+        "dtype": "torch.bfloat16",
+        "capacity": 513,
+        "block": 4,
+        "mode": 0,
+        "input_sha256": "279ba249f0b6c414f1c570a49daa090bcc606cbc20a0e1374f118d5787e997c9",
+        "bytewise_parity": "passed",
+        "reference_passed": false,
+        "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 403 / 32768 (1.2%)\nGreatest absolute difference: 0.07692730533182572 at index (49, 233) (up to 0.03 allowed)\nGreatest relative difference: 165.16813195970252 at index (2, 133) (up to 0.01 allowed)"
+      }
+    ]
+  },
+  "loaded_host_records": [
+    {
+      "label": "full-tests-control",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "full-tests-candidate",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "correctness-candidate",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "coverage-candidate",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "dcp-candidate",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "edges-candidate",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "large-bounds-control",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "large-bounds-candidate",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "boundary-capture",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "boundary-check",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "boundary-b1",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "boundary-c1",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "boundary-c2",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "boundary-b2",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "paired-b1",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "paired-c1",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "paired-c2",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "paired-b2",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "unsorted-b1",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "unsorted-c1",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "unsorted-c2",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "unsorted-b2",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "indexer-b1",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "indexer-c1",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "indexer-c2",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "indexer-b2",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "page48-b1",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "page48-c1",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "page48-c2",
+      "variant": "candidate",
+      "sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8"
+    },
+    {
+      "label": "page48-b2",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    }
+  ],
+  "kernel_binaries_unchanged": true,
+  "runtime_artifact_hashes_checked": 512,
+  "all_legacy_numerical_cases_passed": false,
+  "coverage_nonempty_output_and_statistics_byte_parity": true,
+  "legacy_empty_output_byte_parity": false,
+  "known_empty_row_byte_differences": [
+    {
+      "index": 22,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "b430704a307d42b90356ddc013baa4901f750467df7eeb5f5cd311f96fe02bbf",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "c0aabb50235d983cb0d422eb1e9f962eb0244c98125ccc9de8c3357d789ac341"
+    },
+    {
+      "index": 23,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "654798469effd36914a839765752dbdd6c3fc28c8747238823e919cdadf7136e",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "09f9f54e3c2aeb3b6fe70a577555d2ccd0cf30f2f6c6dbb3cc4355b37ca4e151"
+    },
+    {
+      "index": 30,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "3c32be0b5c3e4ba6877541cb966835b6de9884322e5fae973704fea29865179a",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "d6af7beba72f687db3be1e9c9283e39555b78abde19b2badd0d02f5696d87fa8"
+    },
+    {
+      "index": 31,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "5ac77821a4c0f2f488d13fd657a991581c4215281f765dafcd560c728322411c",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "ad30dfdee79a5c31e5850b943e1397df3fa5386b0a06b1b70ae85e0ca9e393c2"
+    },
+    {
+      "index": 38,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "7f6bd443c3d6d310d3b94933fd2321f1055ac015717a667fdb89e944530d7eaa",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "dd9547509b9541636a85f74487a9d9bb643b1dc9e9d7ac019bceadb9758ce192"
+    },
+    {
+      "index": 39,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "45648b9e6ea5a605201c8df9c097b47b7b33aabc42cf7eacf89ef997c17c5e75",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "718ea2cb139fe7779ffa253c93dbee9b59dc9d072d631b54577b60e569bcdfb5"
+    },
+    {
+      "index": 46,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "2ae3028bcb97563159a1223ffdb39d169dd175dbb836386b048f11a82eb48cac",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "fa2bb92f33043393c85bd47acbee83d40da83a0e7e29d0604b267ecaeb50733b"
+    },
+    {
+      "index": 47,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "9a5da1ad09bac6be87271f0320c62d718a0bf8608bcdf0f795d85542971ce137",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "ffe6b4e2ccf1c5d2d2510455ab668e11a61a17048413444312b348d782a57b42"
+    },
+    {
+      "index": 54,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "cb4c4e6be675cb011b752342cd8be1f5b7b41365a889e1894e5e788cef0ac9b3",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "0d07a09657931eb6059cdbb1b2ddf1dbb24670db4db79fbc1082ce4aa97bbb44"
+    },
+    {
+      "index": 55,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "741a80d159d072c46626fc767ef3a00d957c9a94b45cfcc8e9501565de34cb43",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "b23d6024c5cf812efaa2d623667636e6c776a6b4227e7d645ce93eb067cd97ee"
+    },
+    {
+      "index": 62,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "41b855da373939d2289cd18b0cd49deee489cedf7360efd9cfd89e23cdbe76d0",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "59cc513fd9f7f2a8a753a47bc85424b5ea3ccac27014b250ec7eca7fbe8d03b9"
+    },
+    {
+      "index": 63,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "a8de2de73aaf8bf716961e0be5bf9e3f911550aa9d7e21a6c325a878ef628dbd",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "d12621ed0b69f3cc86114980c2a608f4b8215c3ee1a7b8f2ccf3a49e6c488173"
+    },
+    {
+      "index": 70,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "496135a93b7595acb7803d2e2f061ccd34ce7097dad5a66ea4b10bd86c210ff9",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "b0f0436a6534b291c099197243d2aaa123d0aa209332b24d80d4f95a4463e6de"
+    },
+    {
+      "index": 71,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "ca54761f06de683b7850d55558db89089926665685a9c82cad01f2f3213141ab",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "e3357cab66dd2fb1ce84a9b560705f2802245199887d17d850ea9aade2cfb85c"
+    },
+    {
+      "index": 78,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "3ea1630c655b35a5d3aff2d4ece49deaec0eeb6b646743ff26192f7b44d58759",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "392682ac85f2292580f0d576e795a60a55cd9ddfdf627f3fde7a47fdf5bb0a82"
+    },
+    {
+      "index": 79,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "2a9bdccf7e6d29825ccf52a539fedacc44a34df736709538fc07fa6a6fbe7fed",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "3ec90db019aa9a074e495dae24d6292c9295ea9a2b1b8366a6edabee78a7313d"
+    },
+    {
+      "index": 86,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "2b445ff02bb2fd1b28fbbc1da89318930aff14df8f03e34a2ff31f6cf4c131ac",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "e0e641ed5dac816393eb61e3054a06a4d123b06532f4eb982682dace56af165a"
+    },
+    {
+      "index": 87,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "3b3c9ec2628af0c16f60c6eed11a7cd8f239c2cf0f4ee5192a3ec4ee984c0f5b",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "ffb3e63a47278401db785f0c0683497cba2b2c68c40ddb1e0d92f6e13c9a7bca"
+    },
+    {
+      "index": 94,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "0c7821e41b97ea90729f3b70cdff46e3671c2773370ccbb22a1ce5aa02715c87",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "4c89b5d5bff6f3c5c8c72a602d6bfed39330f526e57d7efd71c00735189312d9"
+    },
+    {
+      "index": 95,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "099b4352ef4f60142586c9679a780505b980bea9cb7f846c5cf835ece1a80c87",
+      "against_frozen": [
+        {
+          "bitwise_equal": false,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 512,
+          "examples": [
+            {
+              "coordinate": [
+                0,
+                0,
+                0
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                1
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                2
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                3
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                4
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                5
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                6
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            },
+            {
+              "coordinate": [
+                0,
+                0,
+                7
+              ],
+              "selected_count": 0,
+              "actual": "inf",
+              "reference": "nan"
+            }
+          ]
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "diagnostic_tensor_sha256": "cf140b4572ffc6815b1276c2c08437598f54900063d6abe0100e34ce6a64c9ba"
+    }
+  ],
+  "scope": "One physical A2. Audit complete does not mean all legacy numerical cases passed. Retain 8 BSND/block8 LSE oracle failures and20 partial-block reference failures reproduced on original. Also retain20 block8/head1 empty output NaN-to-Inf differences, with every nonempty output/statistic bitwise equal; both original and candidate empty values are invalid. All these configurations are outside the optimization guard. Public benchmark and reverse are audited separately. Physical A3, distributed and whole-model behavior remain unverified."
+}

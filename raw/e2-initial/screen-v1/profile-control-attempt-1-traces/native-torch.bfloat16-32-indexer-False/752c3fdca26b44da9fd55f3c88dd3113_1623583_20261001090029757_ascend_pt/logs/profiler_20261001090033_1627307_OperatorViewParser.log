@@ -1,0 +1,3 @@
+[2026-10-01-09:00:33.395] [INFO] [AscendProfiler_OperatorViewParser:97] Profiler logger initialized at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-e2/screen-v1/profile-control-attempt-1-traces/native-torch.bfloat16-32-indexer-False/752c3fdca26b44da9fd55f3c88dd3113_1623583_20261001090029757_ascend_pt/logs/profiler_20261001090033_1627307_OperatorViewParser.log
+[2026-10-01-09:00:33.396] [INFO] [AscendProfiler_OperatorViewParser:30] OperatorViewParser start.
+[2026-10-01-09:00:33.398] [INFO] [AscendProfiler_OperatorViewParser:39] OperatorViewParser finish.

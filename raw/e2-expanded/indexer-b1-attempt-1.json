@@ -1,0 +1,510 @@
+{
+  "metadata": {
+    "variant": "baseline",
+    "device": "Ascend910B3",
+    "package_path": "/mnt/workspace/sfa-nonempty-perf-20260930/runtime_control_e1_v4/vllm_ascend",
+    "torch_version": "2.10.0+cpu",
+    "torch_npu_version": "2.10.0.post4",
+    "script_sha256": "b1af2b9b6f171e75f2828d9850e6db71c1086b6f05ff5f753738711303c93e36",
+    "paired_sha256": "a7a2c64235641c8c7167b88acdb37d02b740f93543df59d08190c17c15b53cbb"
+  },
+  "complete": true,
+  "rows": [
+    {
+      "case": "native-torch.float16-1",
+      "order": "indexer",
+      "status": "passed",
+      "input_sha256": "c2a515f2be41ba3ed081521a158daa9c3784c84fad9511976a6485ff9115b84b",
+      "locality": {
+        "adjacent_page_hits": 50,
+        "adjacent_transitions": 2040,
+        "page_hit_rate": 0.024509803921568627,
+        "ascending_rows": 0,
+        "total_rows": 1
+      },
+      "graph_device_us": [
+        92.6872730255127,
+        92.59187698364258,
+        92.68942832946777,
+        92.58732795715332,
+        92.66987800598145
+      ],
+      "eager_batch_wall_us": [
+        135.21348,
+        133.28708,
+        138.77672,
+        132.77024,
+        134.62468
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "native-torch.float16-1",
+      "order": "chronological",
+      "status": "passed",
+      "input_sha256": "ee0f86d039d8e895e382a9f64dbe706229c2dfd300412f511115cfd3af1afc0a",
+      "locality": {
+        "adjacent_page_hits": 2010,
+        "adjacent_transitions": 2040,
+        "page_hit_rate": 0.9852941176470589,
+        "ascending_rows": 1,
+        "total_rows": 1
+      },
+      "graph_device_us": [
+        92.63714790344238,
+        92.63019561767578,
+        92.68622398376465,
+        92.66485214233398,
+        92.6570987701416
+      ],
+      "eager_batch_wall_us": [
+        145.25276,
+        131.57984,
+        134.63428,
+        132.91428,
+        130.69988
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "native-torch.float16-32",
+      "order": "indexer",
+      "status": "passed",
+      "input_sha256": "a449a017ffe24a24c34f88b6a0a299686e37cb57e04118d3dba0be63efb9e224",
+      "locality": {
+        "adjacent_page_hits": 1953,
+        "adjacent_transitions": 65280,
+        "page_hit_rate": 0.029917279411764707,
+        "ascending_rows": 0,
+        "total_rows": 32
+      },
+      "graph_device_us": [
+        171.89834594726562,
+        171.85152053833008,
+        171.96077346801758,
+        171.8875503540039,
+        171.95409774780273
+      ],
+      "eager_batch_wall_us": [
+        194.59795999999997,
+        187.22428,
+        188.57468,
+        187.87032,
+        187.48348000000001
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "native-torch.float16-32",
+      "order": "chronological",
+      "status": "passed",
+      "input_sha256": "30d77417e013d5c9d68591fd083fc6e789c2a0e7724c33af2876e92c9570143d",
+      "locality": {
+        "adjacent_page_hits": 64294,
+        "adjacent_transitions": 65280,
+        "page_hit_rate": 0.9848958333333333,
+        "ascending_rows": 32,
+        "total_rows": 32
+      },
+      "graph_device_us": [
+        173.16171646118164,
+        173.19040298461914,
+        173.1517791748047,
+        173.23837280273438,
+        173.20499420166016
+      ],
+      "eager_batch_wall_us": [
+        193.22552,
+        186.71068,
+        187.20708,
+        191.04476,
+        188.39792
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "native-torch.bfloat16-1",
+      "order": "indexer",
+      "status": "passed",
+      "input_sha256": "490f9015f86548082f79d08bb9336d9ca8f12e2fc1170810284c51f2149c07e3",
+      "locality": {
+        "adjacent_page_hits": 66,
+        "adjacent_transitions": 2040,
+        "page_hit_rate": 0.03235294117647059,
+        "ascending_rows": 0,
+        "total_rows": 1
+      },
+      "graph_device_us": [
+        93.23232650756836,
+        93.19602966308594,
+        93.23647499084473,
+        93.20815086364746,
+        93.25590133666992
+      ],
+      "eager_batch_wall_us": [
+        135.27552,
+        129.12344,
+        128.8038,
+        125.35780000000001,
+        133.72868
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "native-torch.bfloat16-1",
+      "order": "chronological",
+      "status": "passed",
+      "input_sha256": "eee1a15c11acf78fef3845244440f4f40e6eb20ace9f620484481e1a45fae1c2",
+      "locality": {
+        "adjacent_page_hits": 2009,
+        "adjacent_transitions": 2040,
+        "page_hit_rate": 0.9848039215686275,
+        "ascending_rows": 1,
+        "total_rows": 1
+      },
+      "graph_device_us": [
+        93.75897407531738,
+        93.78267288208008,
+        93.7444019317627,
+        93.78047943115234,
+        93.77907752990723
+      ],
+      "eager_batch_wall_us": [
+        136.35988,
+        130.54183999999998,
+        131.45264,
+        132.42184,
+        152.91443999999998
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "native-torch.bfloat16-32",
+      "order": "indexer",
+      "status": "passed",
+      "input_sha256": "64c0e3ec99edd46a7a715ff63a3db1f51b1f09fb6c050dda0dc6038fc6269f9e",
+      "locality": {
+        "adjacent_page_hits": 2050,
+        "adjacent_transitions": 65280,
+        "page_hit_rate": 0.0314031862745098,
+        "ascending_rows": 0,
+        "total_rows": 32
+      },
+      "graph_device_us": [
+        173.1934928894043,
+        173.1374168395996,
+        173.12355041503906,
+        173.17703247070312,
+        173.1233024597168
+      ],
+      "eager_batch_wall_us": [
+        192.65396,
+        187.37792000000002,
+        188.59992,
+        188.38351999999998,
+        193.58236
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "native-torch.bfloat16-32",
+      "order": "chronological",
+      "status": "passed",
+      "input_sha256": "3f00d5a3b273296e1db6843a6874c391cf3e1b7f71b73cad5dbf785af7d6a6f5",
+      "locality": {
+        "adjacent_page_hits": 64296,
+        "adjacent_transitions": 65280,
+        "page_hit_rate": 0.9849264705882353,
+        "ascending_rows": 32,
+        "total_rows": 32
+      },
+      "graph_device_us": [
+        174.1720199584961,
+        174.1558074951172,
+        174.1226577758789,
+        174.14016723632812,
+        174.13944244384766
+      ],
+      "eager_batch_wall_us": [
+        195.43036,
+        188.62671999999998,
+        187.83948,
+        189.79912000000002,
+        188.26312000000001
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "quant-torch.float16-1",
+      "order": "indexer",
+      "status": "passed",
+      "input_sha256": "1e0a1f961c10cc798bc5808b64e916bb7760ea3cba0bebe728476feef5d6aeb7",
+      "locality": {
+        "adjacent_page_hits": 63,
+        "adjacent_transitions": 2040,
+        "page_hit_rate": 0.030882352941176472,
+        "ascending_rows": 0,
+        "total_rows": 1
+      },
+      "graph_device_us": [
+        92.57377624511719,
+        92.51667976379395,
+        92.60190010070801,
+        92.55842208862305,
+        92.55035400390625
+      ],
+      "eager_batch_wall_us": [
+        144.91595999999998,
+        134.33268,
+        131.83184,
+        131.38904,
+        130.19824
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "quant-torch.float16-1",
+      "order": "chronological",
+      "status": "passed",
+      "input_sha256": "f62862f3342f6574d7bb63445e10c5c88035effda4353d68de73954465572dce",
+      "locality": {
+        "adjacent_page_hits": 2009,
+        "adjacent_transitions": 2040,
+        "page_hit_rate": 0.9848039215686275,
+        "ascending_rows": 1,
+        "total_rows": 1
+      },
+      "graph_device_us": [
+        93.22332382202148,
+        93.25567245483398,
+        93.20847511291504,
+        93.25212478637695,
+        93.21455001831055
+      ],
+      "eager_batch_wall_us": [
+        138.14392,
+        137.70828,
+        134.78468,
+        134.29147999999998,
+        141.37995999999998
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "quant-torch.float16-32",
+      "order": "indexer",
+      "status": "passed",
+      "input_sha256": "e3fef3e466be2c0e64a9d7cd2fd34b1c43512d72f09de20a8df6236a5fb5aca0",
+      "locality": {
+        "adjacent_page_hits": 2061,
+        "adjacent_transitions": 65280,
+        "page_hit_rate": 0.03157169117647059,
+        "ascending_rows": 0,
+        "total_rows": 32
+      },
+      "graph_device_us": [
+        172.6992416381836,
+        172.68339157104492,
+        172.7672576904297,
+        172.7110481262207,
+        172.7145767211914
+      ],
+      "eager_batch_wall_us": [
+        196.70919999999998,
+        187.18872,
+        187.70508,
+        186.89232,
+        188.27472
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "quant-torch.float16-32",
+      "order": "chronological",
+      "status": "passed",
+      "input_sha256": "97944fb6ae7ae8ea01a68dad86dd59c56810b52f8e82474ddc00a9ee263abe9a",
+      "locality": {
+        "adjacent_page_hits": 64299,
+        "adjacent_transitions": 65280,
+        "page_hit_rate": 0.9849724264705882,
+        "ascending_rows": 32,
+        "total_rows": 32
+      },
+      "graph_device_us": [
+        172.01345443725586,
+        171.98650360107422,
+        172.00504302978516,
+        171.99016571044922,
+        172.02377319335938
+      ],
+      "eager_batch_wall_us": [
+        195.53995999999998,
+        188.26748,
+        187.31748,
+        190.66872,
+        187.04868
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "quant-torch.bfloat16-1",
+      "order": "indexer",
+      "status": "passed",
+      "input_sha256": "150e976b800563bf3bd09614fee9bff9e2425c435dd7780ab8ef728d5de28ec8",
+      "locality": {
+        "adjacent_page_hits": 63,
+        "adjacent_transitions": 2040,
+        "page_hit_rate": 0.030882352941176472,
+        "ascending_rows": 0,
+        "total_rows": 1
+      },
+      "graph_device_us": [
+        93.14362525939941,
+        93.09874534606934,
+        93.0875015258789,
+        93.11847686767578,
+        93.14990043640137
+      ],
+      "eager_batch_wall_us": [
+        141.19111999999998,
+        131.08984,
+        136.27708,
+        130.18224,
+        131.11188
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "quant-torch.bfloat16-1",
+      "order": "chronological",
+      "status": "passed",
+      "input_sha256": "5ccf13dc6186a1336f4e47d74cc3c7ceecef0f2abc676182502cbb24fc00d98e",
+      "locality": {
+        "adjacent_page_hits": 2009,
+        "adjacent_transitions": 2040,
+        "page_hit_rate": 0.9848039215686275,
+        "ascending_rows": 1,
+        "total_rows": 1
+      },
+      "graph_device_us": [
+        93.35655212402344,
+        93.43932151794434,
+        93.34322929382324,
+        93.39712142944336,
+        93.3326530456543
+      ],
+      "eager_batch_wall_us": [
+        135.01588,
+        135.53948,
+        141.47516,
+        131.72704,
+        133.54908
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "quant-torch.bfloat16-32",
+      "order": "indexer",
+      "status": "passed",
+      "input_sha256": "a3b384047aaa05c5d3b820da681ffe8c832db2a5aa3629851c4d6563e5d7a9bf",
+      "locality": {
+        "adjacent_page_hits": 2061,
+        "adjacent_transitions": 65280,
+        "page_hit_rate": 0.03157169117647059,
+        "ascending_rows": 0,
+        "total_rows": 32
+      },
+      "graph_device_us": [
+        174.3968963623047,
+        174.388427734375,
+        174.41513061523438,
+        174.37625885009766,
+        174.3961524963379
+      ],
+      "eager_batch_wall_us": [
+        194.08795999999998,
+        189.94792,
+        188.58632,
+        189.31392,
+        190.11312
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    },
+    {
+      "case": "quant-torch.bfloat16-32",
+      "order": "chronological",
+      "status": "passed",
+      "input_sha256": "c2c4305bab58ca3d3788b057777721a94ffc3f671751ef5924810e8aef1ec9af",
+      "locality": {
+        "adjacent_page_hits": 64299,
+        "adjacent_transitions": 65280,
+        "page_hit_rate": 0.9849724264705882,
+        "ascending_rows": 32,
+        "total_rows": 32
+      },
+      "graph_device_us": [
+        173.91971588134766,
+        173.89713287353516,
+        173.89093399047852,
+        173.92850875854492,
+        173.8751220703125
+      ],
+      "eager_batch_wall_us": [
+        195.25396,
+        191.25912,
+        190.26872,
+        188.94632000000001,
+        188.14268
+      ],
+      "empty_rows": 0,
+      "empty_nonzero_elements": 0,
+      "empty_nan_elements": 0,
+      "empty_max_abs": 0.0
+    }
+  ]
+}

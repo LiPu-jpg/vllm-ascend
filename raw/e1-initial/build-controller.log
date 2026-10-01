@@ -1,0 +1,17 @@
+/opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/utils/_path_manager.py:66: UserWarning: Permission mismatch: The owner of /opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/lib/libop_plugin_atb.so does not match.
+  warnings.warn(f"Permission mismatch: The owner of {path} does not match.")
+Building candidate-d4 with matched source base and flags
+Traceback (most recent call last):
+  File "/mnt/workspace/sfa-nonempty-perf-20260930/active-cores-20261001/install_e1.py", line 26, in <module>
+    assert extract(flags)==extract(original_flags),(field,extract(flags),extract(original_flags))
+           ^^^^^^^^^^^^^^
+  File "/mnt/workspace/sfa-nonempty-perf-20260930/active-cores-20261001/install_e1.py", line 25, in <lambda>
+    extract=lambda p:next(l for l in p.read_text().splitlines() if l.startswith(field+' ='))
+                                     ^^^^^^^^^^^^^
+  File "/home/developer/.local/share/uv/python/cpython-3.12.14-linux-aarch64-gnu/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/developer/.local/share/uv/python/cpython-3.12.14-linux-aarch64-gnu/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/workspace/sfa-nonempty-perf-20260930/candidate-e1/csrc/build/attention/sparse_flash_attention/op_host/CMakeFiles/ophost_transformer_tiling_obj.dir/flags.make'

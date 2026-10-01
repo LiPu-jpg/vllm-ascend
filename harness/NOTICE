@@ -1,0 +1,3 @@
+Production helper bodies in production_caller.py are extracted from vllm-project/vllm-ascend, vllm_ascend/attention/sfa_v1.py at 62e05feb3db521230c27714ad4347bd0d9d38f1a, under Apache-2.0. Original source: https://github.com/vllm-project/vllm-ascend/blob/62e05feb3db521230c27714ad4347bd0d9d38f1a/vllm_ascend/attention/sfa_v1.py
+
+The test_helper.py fixtures are retained independently written SFA regression helpers from the local contribution/experiments; they are not upstream-existing helpers at the tested base. Their Apache-2.0 notices are preserved.

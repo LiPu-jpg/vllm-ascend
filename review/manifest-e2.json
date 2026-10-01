@@ -1,0 +1,41 @@
+{
+  "base": "62e05feb3db521230c27714ad4347bd0d9d38f1a",
+  "parent": "6a61a613e1e33d8dd1367686593612355da55022",
+  "commit": "c7eaba024d79bed9016298657e3dc38501214393",
+  "archive_sha256": "8d68fc43dfb94ce5cf496a7c7475f92f43cdb84e7027fc5c8758829056593fc6",
+  "source_hashes": {
+    "attention/sparse_flash_attention/CMakeLists.txt": "b402e8b709c2110e43ab4a82b1538469a011926501afcfd5e6be2d8772300b17",
+    "attention/sparse_flash_attention/README.md": "d00ea397a1ed9c69fe38bbc1a3a0821bdcefc5af1c05d437e90d9ca7aa2fe9a5",
+    "attention/sparse_flash_attention/docs/aclnnSparseFlashAttention.md": "f8a52fabc58aa893dafd10df199d1a2cc965ef19694b15b4e7afd8959c1b07b3",
+    "attention/sparse_flash_attention/examples/test_aclnn_sparse_flash_attention.cpp": "dc1ce44676bafc2c11d7ba91ace7464c7151da7075c6690543d41072d14553da",
+    "attention/sparse_flash_attention/op_host/CMakeLists.txt": "684445946f39d46be044624d6eb2b9f4259ec6d273a7ac39fffe2ecfd72d079c",
+    "attention/sparse_flash_attention/op_host/op_api/aclnn_sparse_flash_attention.cpp": "9703b57e5c01c7e61d200812bb210871bf892409e8004c7ffac377d8a78eaf52",
+    "attention/sparse_flash_attention/op_host/op_api/aclnn_sparse_flash_attention.h": "60a105d83fa4e4d959d7e081ef5c098bd6dbfd896490b92a218fab7673c43069",
+    "attention/sparse_flash_attention/op_host/sparse_flash_attention_def.cpp": "e07f98f7944f64ce6544734a143fd3b545617faea95dea19ee420c6fd2a2e684",
+    "attention/sparse_flash_attention/op_host/sparse_flash_attention_infershape.cpp": "47e962a92eb4c4a8a6f8cc1f824a46f86aa3d595856ab35d8129fa5d23d24c04",
+    "attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp": "012122ee44ccd57c1690f2f10c9a54234fa3795061168bf933e4dedf3ebf6812",
+    "attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.h": "09cbcebfd87f27dc019a24349f5af787174d5b9353a08bf634242cc798dc2df1",
+    "attention/sparse_flash_attention/op_kernel/arch22/sparse_flash_attention_kernel_mla.h": "cec94843ad2144f80e5a504b33f92a682ba8908037435de65da26f5682ce7cdd",
+    "attention/sparse_flash_attention/op_kernel/arch22/sparse_flash_attention_service_cube_mla.h": "dbc124eb56d0e1a3bb625930fe66653246335e28dd5f490a25ec3713262550e7",
+    "attention/sparse_flash_attention/op_kernel/arch22/sparse_flash_attention_service_vector_mla.h": "5bef8d39f9949e3c4c372fd6eaf85a2e08ce0409fa4496043d6878a535f8ac82",
+    "attention/sparse_flash_attention/op_kernel/arch35/sparse_flash_attention_common_arch35.h": "efa306bd0a6312d17dbc6c81d0dc33359418c48c84f41b11c4b0d25502fa4677",
+    "attention/sparse_flash_attention/op_kernel/arch35/sparse_flash_attention_kernel_mla.h": "384c53d562840c2f1ecd3bfe2673426e5167b2c51c9e27e90cd732bb133a9d56",
+    "attention/sparse_flash_attention/op_kernel/arch35/sparse_flash_attention_kvcache.h": "73bd63dfa2fd67910fdb575df82fa271a3aea9c5b3cf9d7a1a929d96839128bc",
+    "attention/sparse_flash_attention/op_kernel/arch35/sparse_flash_attention_service_cube_mla.h": "b1ff97cc03546234e9acea99ae6497b487a879ba3cf37b39213913d473874894",
+    "attention/sparse_flash_attention/op_kernel/arch35/sparse_flash_attention_service_vector_mla.h": "5ea44a03ed521c7964a26d119cfdc2cf4c7f5c3ec8c8e02463b5dcfbe940aeba",
+    "attention/sparse_flash_attention/op_kernel/arch35/util_regbase.h": "97e26a02180356ff4f1259987d42c2965720250c07025b805ca15dccfecc21ca",
+    "attention/sparse_flash_attention/op_kernel/sparse_flash_attention.cpp": "d78d073dfcc4bd2bf7eab378be62557209152bfdf325dbace8af3632bfc249e2",
+    "attention/sparse_flash_attention/op_kernel/sparse_flash_attention_common.h": "a993dd4b25433ba43cb4b1af1178f412c3881e5e42d9c497ddd1aa4c6734d2c5",
+    "attention/sparse_flash_attention/op_kernel/sparse_flash_attention_template_tiling_key.h": "a9594eab83b8e3038a4a68f6ba1159078020cf6a725e84aa26eda687155d8163",
+    "attention/sparse_flash_attention/sparse_flash_attention_torch_adpt.h": "78a0a9695efa8680f447766cd8bcef326a398b7f7f55037917c60f2256bbf737"
+  },
+  "test_hashes": {
+    "test_sparse_flash_attention_sparse_indices.py": "633f5468125ee44cffcebd03c61c31e06f3ddff7ed4c81c0e850ce4d76c9d450",
+    "test_sparse_flash_attention_active_workspace.py": "23f58f309b88a0f4cb62d0c760419b31f5cd88d79a5cc95929d8a52fb297a436",
+    "__init__.py": "6c6ec57de9f82ef42d82760f144a4571cb16b3cd6de33aaa7aa9fd65e8ab1fa1",
+    "test_sparse_flash_attention_active_cores.py": "6cf74ec455cf47fd56c61b0f44de1b04060a212e74fb9c89c87ce5ce87e66b2f"
+  },
+  "npu_cases": 520,
+  "new_mixed_graph_cases": 16,
+  "status": "Prepared only; no cloud build/CPU Torch/NPU/memory/performance proof. No PR."
+}

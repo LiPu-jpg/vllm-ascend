@@ -1,0 +1,6 @@
+{
+  "public_tests_per_build": 418,
+  "retained_private_tests_per_build": 198,
+  "boundary_performance_cases": 192,
+  "retained_performance_cases": 172
+}

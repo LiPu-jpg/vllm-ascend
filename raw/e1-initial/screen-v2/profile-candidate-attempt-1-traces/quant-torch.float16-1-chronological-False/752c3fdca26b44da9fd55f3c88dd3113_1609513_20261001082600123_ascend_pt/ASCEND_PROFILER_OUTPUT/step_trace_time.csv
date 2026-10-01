@@ -1,0 +1,6 @@
+Device_id,Step,Computing,Communication(Not Overlapped),Overlapped,Communication,Free,Stage,Bubble,Communication(Not Overlapped and Exclude Receive),Preparing
+0,5,74.721,0,0,0,0,74.75,0,0,15164.75
+0,6,74.321,0,0,0,0,74.25,0,0,15191.0
+0,7,74.441,0,0,0,0,74.5,0,0,15163.0
+0,8,74.401,0,0,0,0,74.5,0,0,15331.0
+0,9,74.301,0,0,0,0,74.25,0,0,15188.0

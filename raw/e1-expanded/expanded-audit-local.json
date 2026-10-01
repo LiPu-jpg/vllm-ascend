@@ -1,0 +1,233 @@
+{
+  "complete": true,
+  "controller_exit": 0,
+  "archive_files_verified": 170,
+  "loaded_host_records": [
+    {
+      "label": "heads-control",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "heads-candidate",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "correctness-candidate",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "coverage-candidate",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "dcp-candidate",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "edges-candidate",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "large-bounds-control",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "large-bounds-candidate",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "boundary-capture",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "boundary-check",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "boundary-b1",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "boundary-c1",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "boundary-c2",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "boundary-b2",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "paired-b1",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "paired-c1",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "paired-c2",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "paired-b2",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "unsorted-b1",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "unsorted-c1",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "unsorted-c2",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "unsorted-b2",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "indexer-b1",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "indexer-c1",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "indexer-c2",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "indexer-b2",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "page48-b1",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    },
+    {
+      "label": "page48-c1",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "page48-c2",
+      "variant": "candidate",
+      "sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec"
+    },
+    {
+      "label": "page48-b2",
+      "variant": "control",
+      "sha256": "3c0153068bfac9008513e96f14176f7b375ab4e010fd0186d0f6b561cd8e831a"
+    }
+  ],
+  "head_tests_per_build": 96,
+  "performance_cases": 364,
+  "lower": 326,
+  "higher": 38,
+  "worst_increase_percent": 2.0192702947606556,
+  "matrix_summary": {
+    "cases": 172,
+    "lower": 140,
+    "unchanged": 0,
+    "higher": 32,
+    "best_change_percent": -22.041171294901584,
+    "worst_change_percent": 2.0192702947606556,
+    "geometric_mean_time_change_percent": -5.075179797289775,
+    "separated_lower": 72,
+    "separated_higher": 4
+  },
+  "matrix_groups": {
+    "paired": {
+      "cases": 52,
+      "lower": 48,
+      "unchanged": 0,
+      "higher": 4,
+      "best_change_percent": -20.19233099599337,
+      "worst_change_percent": 2.0192702947606556,
+      "geometric_mean_time_change_percent": -5.613555532606707,
+      "separated_lower": 20,
+      "separated_higher": 0
+    },
+    "unsorted": {
+      "cases": 52,
+      "lower": 47,
+      "unchanged": 0,
+      "higher": 5,
+      "best_change_percent": -22.041171294901584,
+      "worst_change_percent": 0.7925569916604536,
+      "geometric_mean_time_change_percent": -6.036819405991023,
+      "separated_lower": 29,
+      "separated_higher": 1
+    },
+    "indexer": {
+      "cases": 16,
+      "lower": 5,
+      "unchanged": 0,
+      "higher": 11,
+      "best_change_percent": -0.32933020065835095,
+      "worst_change_percent": 1.53949040340009,
+      "geometric_mean_time_change_percent": 0.29946679559289535,
+      "separated_lower": 0,
+      "separated_higher": 2
+    },
+    "page48": {
+      "cases": 52,
+      "lower": 40,
+      "unchanged": 0,
+      "higher": 12,
+      "best_change_percent": -20.673497416415177,
+      "worst_change_percent": 1.8631360461122126,
+      "geometric_mean_time_change_percent": -5.177288339454044,
+      "separated_lower": 23,
+      "separated_higher": 1
+    }
+  },
+  "boundary_summary": {
+    "cases": 192,
+    "lower": 186,
+    "higher": 6,
+    "worst_increase_percent": 1.1036317363412929
+  },
+  "existing_oracle_failures": {
+    "coverage": 8,
+    "edges": 20,
+    "fresh_control_replay": "Queued; preserved bytewise parity does not imply a numerical pass."
+  },
+  "scope": "Expanded E1 launch-only acceptance on one A2, not E2/public benchmark acceptance. All slowdowns retained; no full-model claim.",
+  "numerical_acceptance_complete": false,
+  "numerical_acceptance_pending": "8 legacy coverage and20 partial-block reference failures need fresh original replay; all are preserved. This audit establishes execution/result provenance, not every numerical check passing."
+}

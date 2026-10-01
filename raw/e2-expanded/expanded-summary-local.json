@@ -1,0 +1,35 @@
+{
+  "complete_expanded_performance": true,
+  "corrected_numerical_acceptance_pending_original_replay": true,
+  "cases": 364,
+  "lower": 234,
+  "higher": 130,
+  "best_change_percent": -20.183677732055283,
+  "worst_change_percent": 3.876291910948426,
+  "boundary": {
+    "cases": 192,
+    "lower": 124,
+    "higher": 68
+  },
+  "retained_matrix": {
+    "cases": 172,
+    "lower": 110,
+    "unchanged": 0,
+    "higher": 62,
+    "best_change_percent": -20.183677732055283,
+    "worst_change_percent": 3.876291910948426,
+    "geometric_mean_time_change_percent": -3.8678125855770684,
+    "separated_lower": 58,
+    "separated_higher": 13
+  },
+  "archive_sha256": "867b768fe9ec24d664309ce40c82c291ce4db6f6151b097ffa8c7e9d4db76ecf",
+  "archive_data_files": 170,
+  "public_tests_per_build": 418,
+  "retained_private_tests_per_build": 198,
+  "pending": [
+    "40-case reverse",
+    "fresh original legacy replay"
+  ],
+  "interpretation": "All original cases and controls retained. Worst observed increase occurs in RoPE outside guard; no attribution or noise claim. No model claim.",
+  "final_note": "Snapshot before final diagnostics. See final V6 scope audit; legacy failures/differences remain recorded and are not numerical passes."
+}

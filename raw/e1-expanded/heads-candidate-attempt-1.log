@@ -1,0 +1,15 @@
+/opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/utils/_path_manager.py:66: UserWarning: Permission mismatch: The owner of /opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/lib/libop_plugin_atb.so does not match.
+  warnings.warn(f"Permission mismatch: The owner of {path} does not match.")
+INFO 10-01 09:17:26 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 10-01 09:17:26 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 10-01 09:17:26 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-01 09:17:26 [__init__.py:272] Platform plugin ascend is activated
+INFO 10-01 09:17:27 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+/mnt/workspace/mhc-validation-20260930/venv/lib/python3.12/site-packages/pytest_asyncio/plugin.py:247: PytestDeprecationWarning: The configuration option "asyncio_default_fixture_loop_scope" is unset.
+The event loop scope for asynchronous fixtures will default to the fixture caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to function scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are: "function", "class", "module", "package", "session"
+
+  warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+........................................................................ [ 75%]
+........................                                                 [100%]
+- generated xml file: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-e1/acceptance-v2/heads-candidate-attempt-1.xml -
+96 passed in 10.98s

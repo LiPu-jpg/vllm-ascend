@@ -1,0 +1,190 @@
+/opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/utils/_path_manager.py:66: UserWarning: Permission mismatch: The owner of /opt/buildtools/Python-3.11.4/lib/python3.11/site-packages/torch_npu/lib/libop_plugin_atb.so does not match.
+  warnings.warn(f"Permission mismatch: The owner of {path} does not match.")
+Building candidate-e2 with matched source base and flags
+smoke-control attempt 1
+smoke-candidate attempt 1
+pytest-control attempt 1
+pytest-candidate attempt 1
+nope-capture attempt 1
+nope-check attempt 1
+nope-b1 attempt 1
+nope-c1 attempt 1
+nope-c2 attempt 1
+nope-b2 attempt 1
+{
+  "q1-indexer-lseFalse": {
+    "cases": 4,
+    "lower": 4,
+    "higher": 0,
+    "best_change_percent": -8.64323135130437,
+    "worst_change_percent": -6.4235346700731055,
+    "geometric_mean_time_change_percent": -7.608242119295738,
+    "separated_lower": 4,
+    "separated_higher": 0
+  },
+  "q1-indexer-lseTrue": {
+    "cases": 4,
+    "lower": 4,
+    "higher": 0,
+    "best_change_percent": -8.313007865558363,
+    "worst_change_percent": -6.82971742918247,
+    "geometric_mean_time_change_percent": -7.46568718845605,
+    "separated_lower": 4,
+    "separated_higher": 0
+  },
+  "q1-chronological-lseFalse": {
+    "cases": 4,
+    "lower": 4,
+    "higher": 0,
+    "best_change_percent": -8.04056172028581,
+    "worst_change_percent": -6.4635734998151335,
+    "geometric_mean_time_change_percent": -7.2122889916595545,
+    "separated_lower": 4,
+    "separated_higher": 0
+  },
+  "q1-chronological-lseTrue": {
+    "cases": 4,
+    "lower": 4,
+    "higher": 0,
+    "best_change_percent": -7.277470036292888,
+    "worst_change_percent": -6.634139608744249,
+    "geometric_mean_time_change_percent": -6.927521717617758,
+    "separated_lower": 4,
+    "separated_higher": 0
+  },
+  "q32-indexer-lseFalse": {
+    "cases": 4,
+    "lower": 3,
+    "higher": 1,
+    "best_change_percent": -0.9087478990424058,
+    "worst_change_percent": 0.41106899665130925,
+    "geometric_mean_time_change_percent": -0.3002839713338368,
+    "separated_lower": 1,
+    "separated_higher": 1
+  },
+  "q32-indexer-lseTrue": {
+    "cases": 4,
+    "lower": 4,
+    "higher": 0,
+    "best_change_percent": -0.5370357204571685,
+    "worst_change_percent": -0.3106674854299718,
+    "geometric_mean_time_change_percent": -0.4124062058952105,
+    "separated_lower": 0,
+    "separated_higher": 0
+  },
+  "q32-chronological-lseFalse": {
+    "cases": 4,
+    "lower": 4,
+    "higher": 0,
+    "best_change_percent": -0.5065278306811694,
+    "worst_change_percent": -0.08812748049146224,
+    "geometric_mean_time_change_percent": -0.28599443615616726,
+    "separated_lower": 0,
+    "separated_higher": 0
+  },
+  "q32-chronological-lseTrue": {
+    "cases": 4,
+    "lower": 3,
+    "higher": 1,
+    "best_change_percent": -0.49931619342094,
+    "worst_change_percent": 0.1730683576158354,
+    "geometric_mean_time_change_percent": -0.19077467087691424,
+    "separated_lower": 0,
+    "separated_higher": 0
+  }
+}
+profile-control attempt 1
+profile-candidate attempt 1
+memory-control attempt 1
+memory-launch_only attempt 1
+memory-candidate attempt 1
+64 profile records prove original20/40, candidateq1=1/2 and q32=20/40
+nope-capture attempt 1
+nope-check attempt 1
+nope-b1 attempt 1
+nope-c1 attempt 1
+nope-c2 attempt 1
+nope-b2 attempt 1
+{
+  "q1-indexer-lseFalse": {
+    "cases": 4,
+    "lower": 2,
+    "higher": 2,
+    "best_change_percent": -0.9043263888657505,
+    "worst_change_percent": 0.6331521230572346,
+    "geometric_mean_time_change_percent": -0.1662333524001247,
+    "separated_lower": 0,
+    "separated_higher": 1
+  },
+  "q1-indexer-lseTrue": {
+    "cases": 4,
+    "lower": 1,
+    "higher": 3,
+    "best_change_percent": -0.014139261790979685,
+    "worst_change_percent": 0.12771062617265017,
+    "geometric_mean_time_change_percent": 0.051175337219411254,
+    "separated_lower": 0,
+    "separated_higher": 1
+  },
+  "q1-chronological-lseFalse": {
+    "cases": 4,
+    "lower": 0,
+    "higher": 4,
+    "best_change_percent": 0.009272835859786,
+    "worst_change_percent": 0.17267685239978903,
+    "geometric_mean_time_change_percent": 0.08242433289038509,
+    "separated_lower": 0,
+    "separated_higher": 2
+  },
+  "q1-chronological-lseTrue": {
+    "cases": 4,
+    "lower": 0,
+    "higher": 4,
+    "best_change_percent": 0.029974453141834445,
+    "worst_change_percent": 0.1443881635586619,
+    "geometric_mean_time_change_percent": 0.08724114740550348,
+    "separated_lower": 0,
+    "separated_higher": 2
+  },
+  "q32-indexer-lseFalse": {
+    "cases": 4,
+    "lower": 3,
+    "higher": 1,
+    "best_change_percent": -1.124217898399138,
+    "worst_change_percent": 0.042373942158180355,
+    "geometric_mean_time_change_percent": -0.333489685324484,
+    "separated_lower": 1,
+    "separated_higher": 0
+  },
+  "q32-indexer-lseTrue": {
+    "cases": 4,
+    "lower": 2,
+    "higher": 2,
+    "best_change_percent": -0.7604562620480926,
+    "worst_change_percent": 0.6506833362719178,
+    "geometric_mean_time_change_percent": -0.05705202396935061,
+    "separated_lower": 1,
+    "separated_higher": 0
+  },
+  "q32-chronological-lseFalse": {
+    "cases": 4,
+    "lower": 2,
+    "higher": 2,
+    "best_change_percent": -0.6685574392018223,
+    "worst_change_percent": 0.19387824115693064,
+    "geometric_mean_time_change_percent": -0.2363114600323346,
+    "separated_lower": 2,
+    "separated_higher": 0
+  },
+  "q32-chronological-lseTrue": {
+    "cases": 4,
+    "lower": 2,
+    "higher": 2,
+    "best_change_percent": -0.6246880575840885,
+    "worst_change_percent": 0.35386206049075053,
+    "geometric_mean_time_change_percent": -0.03063697554606115,
+    "separated_lower": 0,
+    "separated_higher": 0
+  }
+}
+520 tests per build, 32 frozen-input checks, balanced timing and separate profiles complete; broader acceptance pending

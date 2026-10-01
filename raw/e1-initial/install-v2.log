@@ -1,0 +1,1 @@
+{"host_sha256": "40e98eadc9fa724494a010c47ba11359cdb9eb7393057791049b34fb73df65ec", "changed_runtime_files": ["vllm_ascend/_cann_ops_custom/vendors/custom_transformer/op_impl/ai_core/tbe/op_tiling/liboptiling.so"], "identical_original_kernel_binaries": true}

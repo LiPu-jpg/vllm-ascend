@@ -1,0 +1,3 @@
+coverage-control-replay attempt 1
+edges-control-replay attempt 1
+Fresh original control replayed every legacy coverage/partial-block case; all baseline oracle failures remain recorded.

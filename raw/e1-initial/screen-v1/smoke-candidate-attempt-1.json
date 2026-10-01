@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "case": "native-torch.float16-1",
+      "return_lse": false,
+      "status": "passed",
+      "input_sha256": "9e03a1c173546de991b88aa8c8025f4e4d3f94fb7ecba7effc8485ea3af964f9"
+    },
+    {
+      "case": "native-torch.float16-1",
+      "return_lse": true,
+      "status": "passed",
+      "input_sha256": "9e03a1c173546de991b88aa8c8025f4e4d3f94fb7ecba7effc8485ea3af964f9"
+    },
+    {
+      "case": "native-torch.bfloat16-1",
+      "return_lse": false,
+      "status": "passed",
+      "input_sha256": "39f8f1697789e8262cbac958934e806ecc5784864aa3e60b7644f1aaa3d9c1e2"
+    },
+    {
+      "case": "native-torch.bfloat16-1",
+      "return_lse": true,
+      "status": "passed",
+      "input_sha256": "39f8f1697789e8262cbac958934e806ecc5784864aa3e60b7644f1aaa3d9c1e2"
+    }
+  ]
+}

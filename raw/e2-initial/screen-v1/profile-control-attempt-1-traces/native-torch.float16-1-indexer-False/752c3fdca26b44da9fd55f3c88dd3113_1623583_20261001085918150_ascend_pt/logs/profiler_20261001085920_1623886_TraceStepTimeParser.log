@@ -1,0 +1,3 @@
+[2026-10-01-08:59:20.691] [INFO] [AscendProfiler_TraceStepTimeParser:97] Profiler logger initialized at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-e2/screen-v1/profile-control-attempt-1-traces/native-torch.float16-1-indexer-False/752c3fdca26b44da9fd55f3c88dd3113_1623583_20261001085918150_ascend_pt/logs/profiler_20261001085920_1623886_TraceStepTimeParser.log
+[2026-10-01-08:59:20.691] [INFO] [AscendProfiler_TraceStepTimeParser:169] TraceStepTimeParser start.
+[2026-10-01-08:59:20.695] [INFO] [AscendProfiler_TraceStepTimeParser:177] TraceStepTimeParser finish.

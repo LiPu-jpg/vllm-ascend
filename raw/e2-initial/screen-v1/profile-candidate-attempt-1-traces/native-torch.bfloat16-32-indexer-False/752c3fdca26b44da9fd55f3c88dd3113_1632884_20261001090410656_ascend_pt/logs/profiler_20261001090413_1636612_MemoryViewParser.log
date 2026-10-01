@@ -1,0 +1,3 @@
+[2026-10-01-09:04:13.770] [INFO] [AscendProfiler_MemoryViewParser:97] Profiler logger initialized at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-e2/screen-v1/profile-candidate-attempt-1-traces/native-torch.bfloat16-32-indexer-False/752c3fdca26b44da9fd55f3c88dd3113_1632884_20261001090410656_ascend_pt/logs/profiler_20261001090413_1636612_MemoryViewParser.log
+[2026-10-01-09:04:13.770] [INFO] [AscendProfiler_MemoryViewParser:78] MemoryViewParser start.
+[2026-10-01-09:04:13.775] [INFO] [AscendProfiler_MemoryViewParser:89] MemoryViewParser finish.

@@ -1,0 +1,9 @@
+{
+  "audit_complete": false,
+  "audit_version": "audit_expanded_e2_v2.py",
+  "failure": "assert all(row[bytewise_baseline_by_output])",
+  "coverage_cases_with_full_output_byte_mismatch": 20,
+  "scope": "All20 have sparse_block_size8, outside changed guard; all softmax maximum/total outputs remain byte-identical. Eight also retain known nonempty LSE reference failures. Actual output difference locations remain under diagnostic.",
+  "diagnostic_controller_pid": 1657350,
+  "corrected_claim": "Do not claim all legacy coverage outputs are byte-identical to frozen original. Public418+private198 pytest per build remain passed."
+}

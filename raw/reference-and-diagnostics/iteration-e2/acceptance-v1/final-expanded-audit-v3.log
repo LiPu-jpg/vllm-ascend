@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/mnt/workspace/sfa-nonempty-perf-20260930/active-workspace-20261001/audit_expanded_e2_v3.py", line 202, in <module>
+    main()
+  File "/mnt/workspace/sfa-nonempty-perf-20260930/active-workspace-20261001/audit_expanded_e2_v3.py", line 159, in main
+    assert detail.get(key) == row.get(key) == before_detail.get(key), (name, index, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('dcp', 0, 'rope_dim')

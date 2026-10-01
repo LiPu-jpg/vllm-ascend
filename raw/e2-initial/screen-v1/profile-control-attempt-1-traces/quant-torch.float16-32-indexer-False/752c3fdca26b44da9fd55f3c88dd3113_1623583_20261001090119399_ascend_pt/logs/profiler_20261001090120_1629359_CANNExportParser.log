@@ -1,0 +1,3 @@
+[2026-10-01-09:01:20.454] [INFO] [AscendProfiler_CANNExportParser:97] Profiler logger initialized at: /mnt/workspace/sfa-nonempty-perf-20260930/iteration-e2/screen-v1/profile-control-attempt-1-traces/quant-torch.float16-32-indexer-False/752c3fdca26b44da9fd55f3c88dd3113_1623583_20261001090119399_ascend_pt/logs/profiler_20261001090120_1629359_CANNExportParser.log
+[2026-10-01-09:01:20.455] [INFO] [AscendProfiler_CANNExportParser:59] CANNExportParser start.
+[2026-10-01-09:01:22.487] [INFO] [AscendProfiler_CANNExportParser:108] CANNExportParser finish.

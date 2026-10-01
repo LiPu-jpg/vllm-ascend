@@ -1,0 +1,8 @@
+{
+  "commit": "62e05feb3db521230c27714ad4347bd0d9d38f1a",
+  "repository_path": "vllm_ascend/attention/sfa_v1.py",
+  "source_sha256": "504f3e28ce878444795e2a48a581aca91836aebe761bbfeb93dcb53ebb0e903c",
+  "functions_text_sha256": "0f78f50facbd35f2415f6c0ff2d2929a397743084823224692fb30b7aec10e27",
+  "functions_ast_sha256": "5de2bbf6b005df899222975bf20724806ca06eb1fbb8316c6e45c90ec19a8270",
+  "scope": "Exact two function bodies; only metadata.smla_metadata=None A2/A3 branch executed; no full model module import or model throughput claim"
+}

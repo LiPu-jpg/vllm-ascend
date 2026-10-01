@@ -1,0 +1,1 @@
+{"host_sha256": "15b25ede0611ab543053a03abf825ad5b486c06c874c4cc4c0a8747865aaa0f8", "changed_runtime_files": ["vllm_ascend/_cann_ops_custom/vendors/custom_transformer/op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64/libcust_opmaster_rt2.0.so"], "identical_original_kernel_binaries": true}

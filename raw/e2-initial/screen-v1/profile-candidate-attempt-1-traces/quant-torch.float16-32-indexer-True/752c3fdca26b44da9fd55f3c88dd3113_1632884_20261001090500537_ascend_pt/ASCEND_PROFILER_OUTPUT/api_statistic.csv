@@ -1,0 +1,11 @@
+Device_id,Level,API Name,Time(us),Count,Avg(us),Min(us),Max(us),Variance
+host,acl,aclnnInnerSparseFlashAttention,294.43,5,58.886,46.71,77.59,111.293
+host,acl,aclnnInnerSparseFlashAttentionGetWorkspaceSize,198.21,5,39.642,38.83,40.37,0.409
+host,acl,aclrtCtxGetSysParamOpt,21.6,5,4.32,4.15,4.54,0.026
+host,acl,aclrtGetDeviceCount,6.61,1,6.61,6.61,6.61,0
+host,acl,aclrtGetHardwareSyncAddr,20.93,5,4.186,3.61,5.45,0.434
+host,acl,aclrtGetResInCurrentThread,27.67,10,2.767,0.36,5.31,5.676
+host,acl,aclrtGetStreamAttribute,5.95,5,1.19,0.99,1.33,0.013
+host,acl,aclrtLaunchKernelWithHostArgs,109.13,5,21.826,13.32,39.22,88.485
+host,acl,aclrtSynchronizeDeviceWithTimeout,57.35,1,57.35,57.35,57.35,0
+host,node,launch,139.7,5,27.94,18.36,46.15,98.098

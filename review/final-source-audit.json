@@ -1,0 +1,24 @@
+{
+  "final_integration_commit": "7f5fb60ea4eebc9fa02915764123a0a1aa17627a",
+  "native_source_matches_compiled_c7": true,
+  "native_source_files": 24,
+  "public_test_cases_per_build": 418,
+  "retained_private_test_cases_per_build": 198,
+  "total_pytest_cases_per_build": 616,
+  "format_ci_exit": 0,
+  "format_log_sha256": "61551b98eaf391e93b0062acbdcd66300e5cd272ac4f49c356bcbe7fce82ebbf",
+  "dco_commits": 3,
+  "git_clean": true,
+  "performance_acceptance_complete": false,
+  "new_pr": null,
+  "performance_complete": true,
+  "final_performance_summary": {
+    "cases": 364,
+    "lower": 234,
+    "higher": 130,
+    "maximum_increase_percent": 3.876291910948426
+  },
+  "final_scope_audit": "raw/reference-and-diagnostics/iteration-e2/acceptance-v1/final-expanded-audit-v6.json",
+  "all_legacy_numerical_cases_passed": false,
+  "latest_main_reviewed": "a8fcedb03d93e60efceddbfc912406f7fa491d57"
+}

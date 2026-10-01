@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "variant": "candidate",
+    "package_path": "/mnt/workspace/sfa-nonempty-perf-20260930/runtime_candidate_e2/vllm_ascend",
+    "script_sha256": "91084dd3834a7ceda4a9c184bbdade09823f036902e922df326371e18cc419a0"
+  },
+  "complete": true,
+  "rows": [
+    {
+      "case": "torch.float16-optional-False-block-1",
+      "status": "byte_parity_passed",
+      "input_sha256": "721ce3646d2ae756cf5ca614e7cf8f25b2cdb59e965305b6fb555007db8753d5",
+      "reference_passed": true,
+      "reference_error": null,
+      "max_valid_logical_token": 2147483646,
+      "block_table_bytes": 67108864
+    },
+    {
+      "case": "torch.float16-optional-False-block-2",
+      "status": "byte_parity_passed",
+      "input_sha256": "9075514fecb10185af048333ac7ca95154f1f369dfe62c7a5ec9f0f51b937813",
+      "reference_passed": true,
+      "reference_error": null,
+      "max_valid_logical_token": 2147483645,
+      "block_table_bytes": 67108864
+    },
+    {
+      "case": "torch.float16-optional-False-block-4",
+      "status": "byte_parity_passed",
+      "input_sha256": "286dfe3e7eba235abc7b63156163d11cddf3ea932a0032ef08c570bcb6467032",
+      "reference_passed": true,
+      "reference_error": null,
+      "max_valid_logical_token": 2147483643,
+      "block_table_bytes": 67108864
+    },
+    {
+      "case": "torch.float16-optional-True-block-2",
+      "status": "missing_original_capture"
+    },
+    {
+      "case": "torch.float16-optional-True-block-4",
+      "status": "missing_original_capture"
+    },
+    {
+      "case": "torch.bfloat16-optional-False-block-1",
+      "status": "byte_parity_passed",
+      "input_sha256": "899a41ef1d21d63396f016ad9439bad07219ab986f7b0fac1cc872cb1add87b4",
+      "reference_passed": true,
+      "reference_error": null,
+      "max_valid_logical_token": 2147483646,
+      "block_table_bytes": 67108864
+    },
+    {
+      "case": "torch.bfloat16-optional-False-block-2",
+      "status": "byte_parity_passed",
+      "input_sha256": "651b07410f19bb083f1b5df2c34b1d43105ae35756fa85ada3ed65ad75354666",
+      "reference_passed": true,
+      "reference_error": null,
+      "max_valid_logical_token": 2147483645,
+      "block_table_bytes": 67108864
+    },
+    {
+      "case": "torch.bfloat16-optional-False-block-4",
+      "status": "byte_parity_passed",
+      "input_sha256": "7b381c9f61e55a97c69ca19b8c96ecfad23424b40582f229333da30c96a58a42",
+      "reference_passed": true,
+      "reference_error": null,
+      "max_valid_logical_token": 2147483643,
+      "block_table_bytes": 67108864
+    },
+    {
+      "case": "torch.bfloat16-optional-True-block-2",
+      "status": "missing_original_capture"
+    },
+    {
+      "case": "torch.bfloat16-optional-True-block-4",
+      "status": "missing_original_capture"
+    }
+  ]
+}

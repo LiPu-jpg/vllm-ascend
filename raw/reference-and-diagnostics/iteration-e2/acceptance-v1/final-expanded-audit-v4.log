@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/mnt/workspace/sfa-nonempty-perf-20260930/active-workspace-20261001/audit_expanded_e2_v4.py", line 205, in <module>
+    main()
+  File "/mnt/workspace/sfa-nonempty-perf-20260930/active-workspace-20261001/audit_expanded_e2_v4.py", line 173, in main
+    assert baseline["input_sha256"] == candidate["input_sha256"]
+           ~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'input_sha256'

@@ -1,0 +1,5706 @@
+{
+  "complete": true,
+  "variant": "baseline",
+  "rows": [
+    {
+      "index": 0,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "8834999a6801bb8ba82a5605a49c15dbb62489f3a0034a5b55be10978c509106",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "b6a83872e3e90f2c69f8f3d2310763281e9838825d64a1d52d6641e6a6c0eac7",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "5494cd4c11810ab65241169fcf1d5136e4a10aa9292b1fc252668f062322fa94",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "e7afa3dfd81cfdc1d3494ff8ec9eb06d53de1e809c57eeaf0fb3099febc95ac7",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "dbee192778b1b2d5181e941e63da7a716f654c13be41f11aeb0834d00b5577ff",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1020,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "ec8f63475fe5f7b36b92f0e72c91feebbec36d412e2f4f8183a2a364c317ce32",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "e04e5d54ef67fa3df94acc27b6365e0b861d6f81d28f98a08bbcd23c36fc76b4",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "7d2c8621da657ddf788735e84f06a756565ede13b31c7b25533f86d86b1cf70a",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "d637b254d0796741ea7d721cc05f6a49702c247f51eefbf613cd033650217f28",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "0df7b1dd8157fbb6de2f3f544bfcafffb74a325198d460f412805f43b99656a8",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "67228c7714fe60f1d31ebf12019ef3e33a9fdcefa500ae608b7d3ac5ca549227",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "9bfeab856b9cf22cb5a0adcad76f8b56ed1cd4c41dc9ae37eef6ddf38e2e8ec5",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "168d306c8c627ae703f3fea8337ce18172fd6b58cbec493bec0fb5174a675141",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1020,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "49d725db74fac1921758f44e5ed77fafbfca8711d487ae19ea05b931f9ab1045",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "deee3abb668cb3e62ac5655fa8f2fd41a3b11694bcc3c06665a61a9777470493",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "4ae77e9a22c8b092861b984ee0aa8dfc900d9543fa913fde335d07878da16c88",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "7c4bf2c78d0009b6fecccaeef0c69c550557e4f59cedd6cea6d7f28393d4ac1a",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "3b1d90d61308c7f6cfe36f77161999e8b42fc25d9cd6700c74aa19f8d070789d",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "4bc72b317c5f45ed50f89078f4c9907fd34a5d0be6ea3c8c2f88ddbb82bd616d",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "ce3888dc749910b4c8690167233a590da10e1e2baa91578f26f73e1ff7462480",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "2db85cc284ad57e0f851f6a0e4d8ad848cd040cd5298864e2cddf0a2dd0ad0f3",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "bfbdab65ca2a413556db1bcf3a8e1745f26dfc8ba194660017055e1ea69824a4",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "b430704a307d42b90356ddc013baa4901f750467df7eeb5f5cd311f96fe02bbf",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "dtype": "torch.float16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "654798469effd36914a839765752dbdd6c3fc28c8747238823e919cdadf7136e",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "a9f8fc8d1e820fe0197670eb5848e1eb8dd3d7e15fdb64c22029138fe3d0f80d",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "8283a49ee8d25741cb0d6100104c143c329c4987e1f9158b928ca312e9a3b082",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "c5180b3e28a88631b02b1ad062c55cdedca7d5b554d557c7960885e5a08248aa",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "07532477f5bccf72040c39afd6daf00d990b8a78a9617864484d001ef585f12a",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "4f2b714429bcf096412823b20041166a38b2ba95e70cbe9f959692ff4a10cb32",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1020,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "fcd0b39d2ed1e19f26f9724e57b685904b57fb25084a87c88b897bbdfae1aa31",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "3c32be0b5c3e4ba6877541cb966835b6de9884322e5fae973704fea29865179a",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "5ac77821a4c0f2f488d13fd657a991581c4215281f765dafcd560c728322411c",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "1558d9cddf3946332223d548e176af516662c11f1a03aa4301ed052ff9b80e7c",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "3fba1530fe191b7461274486958f5c45e1888deb0ec2ccb078b77ebac53b4d06",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "ed9c4df3657f505ba2ff8b2cee17bedcfc51a91d1600c5c303abfd3a43f4506d",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "e02beca572aabf23edac39ba328d795d310d703bc905823d8a20f48a1d5efbbb",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "74f1f94daf457bcd5b2b94c5f09f5f4a1a75636eaaf599daa4956f5c4e62d150",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1020,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "8c2a75c51d05a5b5871f74584ff831038b596c7ce00f1aecedfd6009ebddea8d",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "7f6bd443c3d6d310d3b94933fd2321f1055ac015717a667fdb89e944530d7eaa",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "45648b9e6ea5a605201c8df9c097b47b7b33aabc42cf7eacf89ef997c17c5e75",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "c14e831505e3a7b9c1b606bb24bd562c7f8b71ce7038ee71fad799c8be166b50",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "26e525b2fbd912ef758bd8d034d83bff22a191250b06007a9dadbed356314c80",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "e02bb0c0dd0bfb1b876232a5f87902f243984113c74f258ac2697d21a2a0055a",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "26a5534c971fac60c7cc111f0a4305044062b8d284a00a515ad4f1778f12a9c0",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "51f15c580797e904ade8a636eabbda0058155f4c4b341d0670df1ed31762b28c",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "5c287649108d704d15344105887a3db52ea7391d85c89dfeddfc21fe742faffd",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "2ae3028bcb97563159a1223ffdb39d169dd175dbb836386b048f11a82eb48cac",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "dtype": "torch.float16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "9a5da1ad09bac6be87271f0320c62d718a0bf8608bcdf0f795d85542971ce137",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "421326c825049b12752b6784c1b9d9005949461241ee2917bd1aeec7d4c4ae5e",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "7333217a5478a3303d25e0d0e6658a3f50bd49b11a70eeb0322e9624409e096f",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "d2134dea45a6c833447d363850b9d82649b433c13f20451272baeb8ef2eef810",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "27b00002ebf8833dfc42dc1738066cad2392850c89caef69bd8aa77de19d8262",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "767da7ccc488008045a031a39324e12b86ab62b6565854d254a2ee11dd319c1a",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1020,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "2a223f45c20c1ea0fa704c9560fffa8945a33bfd9281b2b13e4223cf3cd8831f",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "cb4c4e6be675cb011b752342cd8be1f5b7b41365a889e1894e5e788cef0ac9b3",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "741a80d159d072c46626fc767ef3a00d957c9a94b45cfcc8e9501565de34cb43",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "028e5a04dc6935bd9be47aa144a88a823720b416ea19734782fec41c7aae2fc7",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "8d62ac23572c196a23225f1031dbf4e9376adbf1638f4967625ae9f66a806980",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "23672847a65739102fbae4a0a6d109b1999de3f37c4c61b2bbb1c7f750ff9144",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "768955b9f21b8d6e2312fc8b3b447f195223c72716dfb42b4fb1366a915112cc",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "b4f907e8abc991c83038d468a330d943a9e0f766f621eef819736dbf7c1b311b",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1020,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "5ee8f84bbdab0159e431a0a8dd1ff25993933f46e2848cb8286ee7008fb837c3",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "41b855da373939d2289cd18b0cd49deee489cedf7360efd9cfd89e23cdbe76d0",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "a8de2de73aaf8bf716961e0be5bf9e3f911550aa9d7e21a6c325a878ef628dbd",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "f7e972782dd2df2bdbd83b74e1e68115441a50659d38d9c8f44cb4a8d7f9e651",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "beda577cb1080bd66488c4d2f47facbf852c512c9333f3017327d6e42c4cc5b3",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "3bbf44c13b5c5eb89a522bcf2339b4aa30b72c63e5ca0fff48d4158ef84b1703",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "cb51f070a0e3d9251be0c7b008bf1ca6707ada7ff3c7c014cf3f8217ffd1eb2d",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "1d3c4ad83f11ac624100d8ec652323d87245fb8fa4635a1d5af8b78e8bd0609f",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "fa3f2854da4c183de1bca3e7aecb9573195ee2b3685a6fe0685326b1afbf3c54",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "496135a93b7595acb7803d2e2f061ccd34ce7097dad5a66ea4b10bd86c210ff9",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 0,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "ca54761f06de683b7850d55558db89089926665685a9c82cad01f2f3213141ab",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "500c507c56e039d78dc74164c9e74005e06345cf4a166ecbebd551a6136c9494",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "1555d09e0352d5e72b058c1068c36c21c5475af672c7a0c035ef9184708f6a47",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "bd484991e263599fa098ce35f94f7139d301960f3149ca0a5b316724bccc0874",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "e2087eabdefaa5b011e1d2d10dd7522b06e83d0e5f99735fabd7c9b258cf5822",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "5486baa8486fed2f72652b439f80a2ce15e594c0175efcc547786e75f54ba28c",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1020,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "32bf7c97c55a593461fa2bd4f20421301132226af8186391f44165edb98aa4dc",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "3ea1630c655b35a5d3aff2d4ece49deaec0eeb6b646743ff26192f7b44d58759",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "PA_BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "2a9bdccf7e6d29825ccf52a539fedacc44a34df736709538fc07fa6a6fbe7fed",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "1f150a42ec9c1052661aa50fc4148238fa5e8a084bb08c6ebfc1305a6a3d8c0e",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127,
+        257,
+        512
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "c5e801c2e0a4b5a38501f745f1ffaa25bcf10ef130ba4f79b8f870f1fd48f80d",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "4640f049d16af55df195df791722206f5b403be64ea5ddbefae3bafb1f88ca07",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254,
+        514,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "a005e7ffa5407f5d7d826ca9b04669395c2167f07d3dfbd8634e8d0cc5e04a5e",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "c5c223e0b520d82590687cc4b1a7bf59209bcfb16e0906d4620eea0968b49572",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508,
+        1020,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "941b3ae1793badb21eca2ebee6eafc8e7c1893b5f9c29e5ed6c6a4b1bd618ab2",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1024,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "2b445ff02bb2fd1b28fbbc1da89318930aff14df8f03e34a2ff31f6cf4c131ac",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "TND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        512,
+        1016,
+        1024
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "3b3c9ec2628af0c16f60c6eed11a7cd8f239c2cf0f4ee5192a3ec4ee984c0f5b",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 0,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "cc224b90873628c7a24b17dcfe7ef025a2e43707327bc9f3c7f58a17f7227778",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 1,
+      "sparse_mode": 3,
+      "heads": 64,
+      "selected_tokens": [
+        0,
+        1,
+        33,
+        127
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "30a963e0901a72a888e92621ac3e396b605868236f39886fa40894a26f51bfe2",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 0,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "c766a30ac2f0e4b9f8d2c0eb64427de0f2738c1b0580b7b87b85179de7b56943",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 91,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 2,
+      "sparse_mode": 3,
+      "heads": 8,
+      "selected_tokens": [
+        0,
+        2,
+        66,
+        254
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "a6f819b2c8b640234eeafcfce1104f29a0fd5561df5131a4e2003262841a573c",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 0,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "20b2e49e3a2d52c269227f6a220dba78f7b5cf777e913fab9cae566e59467bbb",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 93,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 4,
+      "sparse_mode": 3,
+      "heads": 128,
+      "selected_tokens": [
+        0,
+        4,
+        132,
+        508
+      ],
+      "nonempty_reference": "passed",
+      "reference_error": null,
+      "frozen_sha256": "ea09da959f876733e632af250b19fafb07c459b0f9982022c69115f56b34f6bc",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 0,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "0c7821e41b97ea90729f3b70cdff46e3671c2773370ccbb22a1ce5aa02715c87",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "dtype": "torch.bfloat16",
+      "rope_dim": 64,
+      "layout": "BSND",
+      "sparse_block_size": 8,
+      "sparse_mode": 3,
+      "heads": 1,
+      "selected_tokens": [
+        0,
+        8,
+        264,
+        1016
+      ],
+      "nonempty_reference": "failed",
+      "reference_error": "Tensor-likes are not close!\n\nMismatched elements: 1 / 3 (33.3%)\nGreatest absolute difference: nan at index (1, 0) (up to 0.005 allowed)\nGreatest relative difference: nan at index (1, 0) (up to 0.001 allowed)",
+      "frozen_sha256": "099b4352ef4f60142586c9679a780505b980bea9cb7f846c5cf835ece1a80c87",
+      "against_frozen": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ],
+      "repeat_within_process": [
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        },
+        {
+          "bitwise_equal": true,
+          "differing_nonempty_elements": 0,
+          "differing_empty_elements": 0,
+          "examples": []
+        }
+      ]
+    }
+  ],
+  "script_sha256": "28c7fb888bc01aa72ee06f7a0400279ef3ccf3c73d55ea02f98779fd0f5517b3",
+  "coverage_source_sha256": "09da34edd3d0b3ff4be92ae0448bdecb4f0c7804e6d45470317ba4b507083136",
+  "torch_version": "2.10.0+cpu",
+  "torch_npu_version": "2.10.0.post4"
+}
