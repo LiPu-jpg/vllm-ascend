@@ -1,5 +1,5 @@
 {
-  "README.md": "a3d99dc551ab81fdeb201747a669d379d04079de5a1e1066447f922bd0c26b2a",
+  "README.md": "d32105d88ad09a33c05a11a95f33a326678b112349f035df74890cb4e469a277",
   "analysis/analyze_acceptance_matrix.py": "b5deef11ecdc9e42c207ced4d23ee6117522fd4bd5b444241bf4973f20204cd6",
   "analysis/analyze_memory_e2.py": "535c5fbddab2fa419389753da7192f093968e040c479567ab1444dd204dd13f2",
   "analysis/analyze_nope_boundaries_e1.py": "fb244aadfcb0acab3c9a7ac6f95625335d07831e7be927bed70bc73e6279ca37",
@@ -5464,11 +5464,13 @@
   "review/final-scope-review.json": "0603548f0d33e53af00a76ae0ac922245e992cbb1bd38836cd7756f88118a92a",
   "review/final-source-audit.json": "c33b489038a5b6a13d299a49e727a6dcbd899205371883e278f4ab28c41706bc",
   "review/format-final-7f5fb60.log": "61551b98eaf391e93b0062acbdcd66300e5cd272ac4f49c356bcbe7fce82ebbf",
+  "review/format-rebased-final.log": "61551b98eaf391e93b0062acbdcd66300e5cd272ac4f49c356bcbe7fce82ebbf",
   "review/harness-export-cloud-audit.json": "d87455478cf7fef3982989e836bef6dde6714185e717cb4951dad26d6a1d69ce",
   "review/installation-audit-20261001.md": "d0ac962d666ca131bb64ea41a0c5482a50de80330972600594b4e1d14c9bc879",
   "review/legacy-byte-parity-audit-failure-20261001.json": "8b748564b6963fb0baedc277baf066a7f90bc15ac32cab82a15e0ebb1baf5b69",
   "review/manifest-e2.json": "e1daeba96e171d90ff45f897e3c7ca21fa7412ea53b2e5b3106a148a935005b7",
   "review/native-change.patch": "1b52f91f15fb3c7f19c76e5a6bd08198cfb20a7e60ab847b344b65812306bc02",
+  "review/rebased-source-identity.json": "ee8564a2939fa1f3f13588242f0d2744d46bc8d2bc278dfe8c6a4e7cc9c684c1",
   "review/test-scope-and-scheduling-review.md": "a229c6ad8fe9ddaa00a8711c258c1c2ab02e67f30462a544c13759c9d39b5b3b",
   "review/upstream-review-20261001.md": "86c995b7e61a4e6692d455e3bd0dec3590c211fcc7abdd4beb325b67a5b7b730"
 }

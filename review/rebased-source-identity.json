@@ -1,0 +1,17 @@
+{
+  "old_tested_integration": "7f5fb60ea4eebc9fa02915764123a0a1aa17627a",
+  "rebased_head": "90d996d244bbf1521afb4999ea360325c3021dbb",
+  "rebased_base": "a8fcedb03d93e60efceddbfc912406f7fa491d57",
+  "native_files_byte_equal": 24,
+  "changed_pr_files_byte_equal": {
+    "benchmarks/benchmark_sparse_flash_attention_small_query.py": "0f70784892bea85c74c76433ffd61389211e64cbc0178749532501d46f4bfb53",
+    "csrc/attention/sparse_flash_attention/op_host/sparse_flash_attention_tiling.cpp": "012122ee44ccd57c1690f2f10c9a54234fa3795061168bf933e4dedf3ebf6812",
+    "docs/source/user_guide/feature_guide/sfa_small_query.md": "fcad41f7c48900c6110aee64d9c48b520d5e0aac37555291d26e106f9009ad4a",
+    "mkdocs.yml": "130a1587e8c81d542607c4940dbc68bd4b9c67b3632b1bac0a684a28d5edb060",
+    "tests/e2e/nightly/single_node/ops/singlecard_ops/test_sparse_flash_attention_active_cores.py": "b223b26dd53529b64153bc38d5226f6c0e2474b1e5f4124da867e9222d539953",
+    "tests/e2e/nightly/single_node/ops/singlecard_ops/test_sparse_flash_attention_active_workspace.py": "23f58f309b88a0f4cb62d0c760419b31f5cd88d79a5cc95929d8a52fb297a436"
+  },
+  "dco_commits": 3,
+  "source_change": false,
+  "reason": "Synchronize existing main CI refactor and trigger checks after correcting PR title. Runtime/native and public files match executed snapshots; no new performance claim."
+}

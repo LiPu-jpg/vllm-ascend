@@ -1,6 +1,6 @@
 # Small-query NoPE SFA evidence
 
-Source integration: `7f5fb60ea4eebc9fa02915764123a0a1aa17627a`, tested against upstream `62e05feb3db521230c27714ad4347bd0d9d38f1a`. [Source branch](https://github.com/LiPu-jpg/vllm-ascend/tree/codex/sfa-small-query-workspace-20261001). Nine host-tiling lines bound launch and scratch allocation by tensor rows. Original kernel binaries are unchanged. The three source commits have DCO Signed-off-by; final all-file formatting passed.
+Executed source integration: `7f5fb60ea4eebc9fa02915764123a0a1aa17627a`, tested against upstream `62e05feb3db521230c27714ad4347bd0d9d38f1a`. The source PR is now rebased onto `a8fcedb` at `90d996d244bbf1521afb4999ea360325c3021dbb`; all 24 native files and all six changed PR files are byte-identical to executed copies. [Rebase identity](review/rebased-source-identity.json). The all-file formatting check passed again. [Source branch](https://github.com/LiPu-jpg/vllm-ascend/tree/codex/sfa-small-query-workspace-20261001). Nine host-tiling lines bound launch and scratch allocation by tensor rows. Original kernel binaries are unchanged. The three source commits have DCO Signed-off-by; final all-file formatting passed.
 
 Latest upstream reviewed: `a8fcedb03d93e60efceddbfc912406f7fa491d57`. Its only additional commit moves CI scripts/configs; SFA native source, dispatcher and all changed PR paths match the tested base. Related PR #17653 remains open and changes A3 valid-prefix kernel work rather than this host launch rule. Physical A3 and their combination remain unverified.
 
