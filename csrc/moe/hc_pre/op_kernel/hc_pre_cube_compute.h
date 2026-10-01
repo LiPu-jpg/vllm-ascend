@@ -315,20 +315,25 @@ __aicore__ inline void HC_PRE_CUBE_COMPUTE_TEMPLATE_CLASS::ComputeDecode(
 
     WaitFlag<HardEvent::MTE2_MTE1>(MM1_MTE2_MTE1_EVENT + l1aLoopIdx_ % L1_BUF_NUM);
     for (uint64_t kL1Offset = 0; kL1Offset < curKL1Size; kL1Offset += K_L0_SIZE) {
+        const uint64_t remainingK = curKL1Size - kL1Offset;
+        const uint64_t curKL0Size = remainingK < K_L0_SIZE ? remainingK : K_L0_SIZE;
+        // Load only the populated FP32 fractals and keep the logical K size
+        // for Mmad; L1 data beyond the tail's final C0 block is not initialized.
+        const uint64_t loadKL0Size = CeilAlign(curKL0Size, FLOAT_C0_SIZE);
         WaitFlag<HardEvent::M_MTE1>(M_MTE1_EVENT_L0A + l0aLoopIdx_ % L0A_BUF_NUM);
-        LoadAToL0A(kL1Offset, K_L0_SIZE, l1aLoopIdx_, mmParams);  // to l0a
+        LoadAToL0A(kL1Offset, loadKL0Size, l1aLoopIdx_, mmParams);  // to l0a
 
         WaitFlag<HardEvent::M_MTE1>(M_MTE1_EVENT_L0B + l0bLoopIdx_ % L0B_BUF_NUM);
-        LoadAToL0B(kL1Offset, K_L0_SIZE, l1aLoopIdx_, mmParams);  // to l0b
-        MmadA2(kGmOffset + kL1Offset - mmParams.curKL1, K_L0_SIZE,
-            mmParams.isLastK && kL1Offset + K_L0_SIZE >= curKL1Size, mmParams);
+        LoadAToL0B(kL1Offset, loadKL0Size, l1aLoopIdx_, mmParams);  // to l0b
+        MmadA2(kGmOffset + kL1Offset - mmParams.curKL1, curKL0Size,
+            mmParams.isLastK && kL1Offset + curKL0Size >= curKL1Size, mmParams);
         SetFlag<HardEvent::M_MTE1>(M_MTE1_EVENT_L0B + l0bLoopIdx_ % L0B_BUF_NUM);
         l0bLoopIdx_++;
 
         WaitFlag<HardEvent::M_MTE1>(M_MTE1_EVENT_L0B + l0bLoopIdx_ % L0B_BUF_NUM);
-        LoadBToL0B((kGmOffset + kL1Offset - mmParams.curKL1)  % mmParams.xWsKSize, K_L0_SIZE, l1bLoopIdx_, mmParams);  // to l0b
-        MmadAB(kGmOffset + kL1Offset - mmParams.curKL1, K_L0_SIZE,
-            mmParams.isLastK && kL1Offset + K_L0_SIZE >= curKL1Size,
+        LoadBToL0B((kGmOffset + kL1Offset - mmParams.curKL1)  % mmParams.xWsKSize, loadKL0Size, l1bLoopIdx_, mmParams);  // to l0b
+        MmadAB(kGmOffset + kL1Offset - mmParams.curKL1, curKL0Size,
+            mmParams.isLastK && kL1Offset + curKL0Size >= curKL1Size,
             mmParams);
         SetFlag<HardEvent::M_MTE1>(M_MTE1_EVENT_L0B + l0bLoopIdx_ % L0B_BUF_NUM);
         l0bLoopIdx_++;

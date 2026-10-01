@@ -1,5 +1,6 @@
 import gc
 
+import pytest
 import torch
 import torch.nn.functional as F
 import torch_npu
@@ -23,6 +24,8 @@ Y_DIFF_THRESHOLD = 4e-3
 Y_REQUIRED_PASS_RATE = 0.98
 AUX_DIFF_THRESHOLD = 1e-4
 AUX_REQUIRED_PASS_RATE = 0.995
+TAIL_HIDDEN_SIZES = (4103, 4104, 7169)
+PRECEDING_HIDDEN_SIZE = 8192
 
 
 def _make_hc_pre_inputs(shape: tuple[int, ...]):
@@ -220,6 +223,56 @@ def test_npu_hc_pre_v3_uses_external_pre_mix():
             diff_threshold=diff_threshold,
             required_pass_rate=required_pass_rate,
         )
+    gc.collect()
+    torch.npu.empty_cache()
+    torch.npu.reset_peak_memory_stats()
+
+
+@pytest.mark.parametrize("hidden_size", TAIL_HIDDEN_SIZES)
+@pytest.mark.parametrize("tokens", (1, 17))
+@pytest.mark.parametrize("preceding_value", (0.0, 16.0))
+@torch.inference_mode()
+def test_npu_hc_pre_zero_weights_after_preceding_call(hidden_size, tokens, preceding_value):
+    # A full-K preceding call initializes every Cube core, including the extra
+    # core used by the four-element tail. Zero target weights give an oracle
+    # independent of HF32 conversion and the target's RMS normalization.
+    preceding_x = torch.full(
+        (tokens, HC_MULT, PRECEDING_HIDDEN_SIZE), preceding_value, dtype=torch.bfloat16, device="npu"
+    )
+    preceding_fn = torch.full(
+        (MIX_HC, HC_MULT * PRECEDING_HIDDEN_SIZE),
+        preceding_value / (HC_MULT * PRECEDING_HIDDEN_SIZE),
+        dtype=torch.float32,
+        device="npu",
+    )
+    scale = torch.ones(3, dtype=torch.float32, device="npu")
+    base = torch.zeros(MIX_HC, dtype=torch.float32, device="npu")
+    preceding = torch.ops._C_ascend.npu_hc_pre_v2(
+        preceding_x, preceding_fn, scale, base, HC_MULT, HC_SINKHORN_ITERS, NORM_EPS, HC_EPS
+    )
+    assert all(bool(torch.isfinite(tensor).all()) for tensor in preceding)
+    x = torch.ones((tokens, HC_MULT, hidden_size), dtype=torch.bfloat16, device="npu")
+    fn = torch.zeros((MIX_HC, HC_MULT * hidden_size), dtype=torch.float32, device="npu")
+    expected_y, expected_post, expected_comb, expected_pre = _hc_pre_cpu(x.cpu(), fn.cpu(), scale.cpu(), base.cpu())
+    y, post, comb, pre = torch.ops._C_ascend.npu_hc_pre_v3(
+        x,
+        fn,
+        scale,
+        base,
+        None,
+        hc_mult=HC_MULT,
+        hc_sinkhorn_iters=HC_SINKHORN_ITERS,
+        norm_eps=NORM_EPS,
+        hc_eps=HC_EPS,
+    )
+    for actual, expected, threshold, pass_rate in (
+        (y, expected_y, Y_DIFF_THRESHOLD, Y_REQUIRED_PASS_RATE),
+        (post, expected_post, AUX_DIFF_THRESHOLD, AUX_REQUIRED_PASS_RATE),
+        (comb, expected_comb, AUX_DIFF_THRESHOLD, AUX_REQUIRED_PASS_RATE),
+        (pre, expected_pre, AUX_DIFF_THRESHOLD, AUX_REQUIRED_PASS_RATE),
+    ):
+        assert bool(torch.isfinite(actual).all())
+        _assert_close_with_pass_rate(actual, expected, diff_threshold=threshold, required_pass_rate=pass_rate)
     gc.collect()
     torch.npu.empty_cache()
     torch.npu.reset_peak_memory_stats()
