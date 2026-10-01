@@ -1,0 +1,14 @@
+
+/mnt/workspace/hc-pre-reduction-20260930/batch-comb-source-candidate/opp/vendors/batch_comb_candidate_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be.o:	file format elf64-hiipu
+
+RELOCATION RECORDS FOR [.text]:
+OFFSET           TYPE                     VALUE
+000000000000003c R_AICORE_BLOCK_LOCAL_OFFSET12 g_sysWorkspaceReserved
+0000000000000198 R_AICORE_BLOCK_LOCAL_OFFSET12 g_sysWorkspaceReserved
+000000000000027c R_AICORE_BLOCK_LOCAL_OFFSET12 g_cubeTPipePtr
+0000000000001434 R_AICORE_BLOCK_LOCAL_OFFSET12 g_cubeTPipePtr
+00000000000023e8 R_AICORE_BLOCK_LOCAL_OFFSET12 g_sysWorkspaceReserved
+00000000000024a0 R_AICORE_BLOCK_LOCAL_OFFSET12 g_vecTPipePtr
+00000000000027ac R_AICORE_BLOCK_LOCAL_OFFSET12 g_vecTPipePtr
+0000000000002f88 R_AICORE_BLOCK_LOCAL_OFFSET12 g_vecTPipePtr
+0000000000003aa4 R_AICORE_BLOCK_LOCAL_OFFSET12 g_vecTPipePtr

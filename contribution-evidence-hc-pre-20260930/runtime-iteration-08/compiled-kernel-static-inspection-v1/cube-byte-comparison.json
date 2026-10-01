@@ -1,0 +1,15 @@
+{
+  "scope": "CPU byte inspection of verified production compiled ELF files; no NPU or performance measurement",
+  "cube_symbol_size": 9056,
+  "cube_instruction_bytes_identical": true,
+  "cube_text_sha256": {
+    "baseline": "473a6f9226bf6b63fe9de349743df2d94cc06af9542f0ff30be8ec27ba85747c",
+    "candidate": "473a6f9226bf6b63fe9de349743df2d94cc06af9542f0ff30be8ec27ba85747c"
+  },
+  "relocation_table_identical": false,
+  "vector_text_size": {
+    "baseline": 22448,
+    "candidate": 22744
+  },
+  "aic_metadata_identical": true
+}

@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-10-01T00:24:21.929359+00:00",
+  "scope": "Completed production-plugin correctness records; runtime optimization not yet ready for formal review",
+  "base": "62e05feb3db521230c27714ad4347bd0d9d38f1a",
+  "candidate": "d64140c62797ebddea73b2cf091a3590b4956d99",
+  "archive_files": 364,
+  "archive_local_sha256_verified": true,
+  "controllers": {
+    "original_recovery": {
+      "pid": 1592950,
+      "actual_exit": 0,
+      "numerical_failures_retained": true
+    },
+    "corrected_reference": {
+      "pid": 1595663,
+      "actual_exit": 0,
+      "numerical_failures_retained": true
+    },
+    "unsupported_generic_diagnostic": {
+      "pid": 1598265,
+      "actual_exit": 1,
+      "positive_coverage": 0
+    }
+  },
+  "per_arm_corrected": {
+    "nightly": {
+      "total": 99,
+      "pass": 87,
+      "failed": 12,
+      "new_midpoint_pass": 6
+    },
+    "fixture": {
+      "total": 72,
+      "pass": 60,
+      "failed": 12,
+      "all48_real_shapes_pass": true
+    },
+    "benchmark_inputs": {
+      "total": 28,
+      "pass": 28
+    },
+    "boundary": {
+      "total": 60,
+      "pass": 48,
+      "failed": 12
+    },
+    "glm_caller": {
+      "total": 24,
+      "six_cpu_checks_and_eager_graph_pass_each": true
+    }
+  },
+  "candidate_additional_cross_byte_failures": [
+    "t1-d7169-signed0-i1",
+    "t1-d7169-signed0-i3",
+    "t1-d7169-signed0-i20",
+    "t1-d7169-signed1-i1",
+    "t1-d7169-signed1-i3",
+    "t1-d7169-signed1-i20"
+  ],
+  "saved_baseline_comparison": {
+    "cases": 60,
+    "input_hash_matches": 60,
+    "output_byte_mismatches": 0,
+    "cpu_expected_saved": false,
+    "new_npu_execution": false
+  },
+  "performance_started": false,
+  "profile_started": false,
+  "current_candidate_model_smoke_started": false,
+  "speedup_proved": false,
+  "fresh_foreign_task_guard": {
+    "actual_exit": 1,
+    "observed_pids": [
+      1599156,
+      1599282,
+      1600008,
+      1600137
+    ],
+    "new_npu_task_started": false
+  },
+  "upstream_recheck": {
+    "main": "62e05feb3db521230c27714ad4347bd0d9d38f1a",
+    "pr17054_state": "OPEN",
+    "pr17054_head": "33bfef419bc4dbe679582011104beca9112373be"
+  },
+  "next": "Diagnose tail differences before accepting candidate; benchmark all supported real cases only in a fresh clean window. Preserve old generic failure and classify native hc_mult=4 rejection separately."
+}

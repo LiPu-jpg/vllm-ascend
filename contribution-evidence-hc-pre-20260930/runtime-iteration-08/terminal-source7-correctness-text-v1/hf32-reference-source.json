@@ -1,0 +1,11 @@
+{
+  "test_revision": "e4ccfa6e4edf5e687190abbd0a1670ca52ac4c4a",
+  "runtime_candidate_revision": "d64140c62797ebddea73b2cf091a3590b4956d99",
+  "baseline_revision": "62e05feb3db521230c27714ad4347bd0d9d38f1a",
+  "thresholds_changed": false,
+  "original_reference_cohort_retained": true,
+  "a5_reference_changed": false,
+  "new_midpoint_regressions": 6,
+  "expected_nightly_cases": 99,
+  "npu_validation_started": false
+}

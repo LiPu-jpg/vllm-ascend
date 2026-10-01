@@ -1,0 +1,4392 @@
+{
+  "scope": "CPU analysis of saved baseline tensors from two completed production NPU runs; no new NPU execution or performance claim",
+  "source_heads": [
+    "62e05feb3db521230c27714ad4347bd0d9d38f1a",
+    "62e05feb3db521230c27714ad4347bd0d9d38f1a"
+  ],
+  "old_directory": "/mnt/workspace/hc-pre-reduction-20260930/iteration-07/prefetch1-boundary-baseline",
+  "new_directory": "/mnt/workspace/hc-pre-reduction-20260930/iteration-08/batch-comb1r-boundary-baseline",
+  "cases": [
+    {
+      "case": "t1-d4103-signed0-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d4103-signed0-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d4103-signed0-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d4103-signed1-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d4103-signed1-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d4103-signed1-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d4104-signed0-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d4104-signed0-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d4104-signed0-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d4104-signed1-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d4104-signed1-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d4104-signed1-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d64-signed0-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d64-signed0-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d64-signed0-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d64-signed1-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d64-signed1-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d64-signed1-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d7169-signed0-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d7169-signed0-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d7169-signed0-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d7169-signed1-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d7169-signed1-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d7169-signed1-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d8-signed0-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d8-signed0-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d8-signed0-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d8-signed1-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d8-signed1-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t1-d8-signed1-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4103-signed0-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4103-signed0-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4103-signed0-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4103-signed1-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4103-signed1-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4103-signed1-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4104-signed0-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4104-signed0-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4104-signed0-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4104-signed1-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4104-signed1-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d4104-signed1-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d64-signed0-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d64-signed0-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d64-signed0-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d64-signed1-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d64-signed1-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d64-signed1-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d7169-signed0-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d7169-signed0-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d7169-signed0-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d7169-signed1-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d7169-signed1-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d7169-signed1-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": false,
+      "new_cpu_accuracy_pass": false,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d8-signed0-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d8-signed0-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d8-signed0-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d8-signed1-i1",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d8-signed1-i20",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "t17-d8-signed1-i3",
+      "input_sha256_equal": true,
+      "cpu_expected_saved": false,
+      "old_cpu_accuracy_pass": true,
+      "new_cpu_accuracy_pass": true,
+      "all_npu_output_bytes_equal": true,
+      "output_metrics": [
+        {
+          "api": "v2",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v2",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 0,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 1,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 2,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        },
+        {
+          "api": "v3",
+          "output": 3,
+          "byte_equal": true,
+          "different_value_count": 0,
+          "old_nonfinite_count": 0,
+          "new_nonfinite_count": 0,
+          "max_finite_absolute_difference": 0.0
+        }
+      ]
+    }
+  ],
+  "byte_mismatch_cases": []
+}

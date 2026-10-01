@@ -1,5 +1,9 @@
 # HcPre reduction contribution evidence
 
+[Comb-copy batching correctness and unresolved tails](runtime-iteration-08/README.md)
+retains the later production-plugin results, corrected-reference coverage,
+original failures and unexecuted performance status. It establishes no speedup.
+
 This branch preserves the 2026-09-30 audit, all numerical results and all
 performance samples for an independent HcPre contribution. The initial source
 commit is `4fc47457d8a0300f386291afb15fb75a77605410`, based on

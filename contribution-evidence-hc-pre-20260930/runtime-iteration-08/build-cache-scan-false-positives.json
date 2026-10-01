@@ -1,0 +1,80 @@
+{
+  "scope": "Exactly 12 verified SHA256 cache identities in retained build log; no global rule suppression",
+  "source_head": "d64140c62797ebddea73b2cf091a3590b4956d99",
+  "source": "csrc/scripts/build_cache.py",
+  "key_construction_line": 1478,
+  "findings": [
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 625,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    },
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 634,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    },
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 636,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    },
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 645,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    },
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 661,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    },
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 1260,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    },
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 3346,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    },
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 3355,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    },
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 3357,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    },
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 3366,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    },
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 3382,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    },
+    {
+      "rule": "generic-api-key",
+      "file": "contribution-evidence-hc-pre-20260930/runtime-iteration-08/terminal-source7-reproduction-supplement-v1/controller-v1.log",
+      "line": 3981,
+      "classification": "SHA256 build-cache content identity; not a credential"
+    }
+  ]
+}

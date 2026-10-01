@@ -1,0 +1,35 @@
+
+/mnt/workspace/hc-pre-reduction-20260930/batch-comb-source-baseline/opp/vendors/batch_comb_baseline_transformer/op_impl/ai_core/tbe/kernel/ascend910b/hc_pre/HcPre_6c9f0fa710253eff38b1c0e6be6a67be.o:	file format elf64-hiipu
+
+Sections:
+Idx Name                                                          Size     VMA              Type
+  0                                                               00000000 0000000000000000 
+  1 .text                                                         00007b10 0000000000000000 TEXT
+  2 .data                                                         00000008 0000000000008000 DATA
+  3 .rela.text                                                    000000d8 0000000000000000 
+  4 .ascend.stack.size.record                                     00000010 0000000000000000 
+  5 .ascend.meta.HcPre_6c9f0fa710253eff38b1c0e6be6a67be_0_mix_aic 000000f4 0000000000000000 
+  6 __CCE_KernelArgSize                                           00000008 0000000000000000 
+  7 .comment                                                      0000006b 0000000000000000 
+  8 .ascend.meta.HcPre_6c9f0fa710253eff38b1c0e6be6a67be_0_mix_aiv 000000f4 0000000000000000 
+  9 .bl_uninit                                                    00000018 0000000000000000 
+ 10 .symtab                                                       00000180 0000000000000000 
+ 11 .shstrtab                                                     000000f0 0000000000000000 
+ 12 .strtab                                                       0000010e 0000000000000000 
+
+SYMBOL TABLE:
+0000000000000000 l    d  .text	0000000000000000 .text
+0000000000000000 l    d  .ascend.stack.size.record	0000000000000000 .ascend.stack.size.record
+0000000000008000 l    d  .data	0000000000000000 .data
+0000000000000000 l    d  .ascend.meta.HcPre_6c9f0fa710253eff38b1c0e6be6a67be_0_mix_aic	0000000000000000 .ascend.meta.HcPre_6c9f0fa710253eff38b1c0e6be6a67be_0_mix_aic
+0000000000000000 l    d  __CCE_KernelArgSize	0000000000000000 __CCE_KernelArgSize
+0000000000000000 l    d  .ascend.meta.HcPre_6c9f0fa710253eff38b1c0e6be6a67be_0_mix_aiv	0000000000000000 .ascend.meta.HcPre_6c9f0fa710253eff38b1c0e6be6a67be_0_mix_aiv
+0000000000000000 l    d  .comment	0000000000000000 .comment
+0000000000000000 g     F .text	0000000000002360 HcPre_6c9f0fa710253eff38b1c0e6be6a67be_0_mix_aic
+0000000000000000  w    O .bl_uninit	0000000000000008 g_sysWorkspaceReserved
+0000000000000008  w    O .bl_uninit	0000000000000008 g_cubeTPipePtr
+0000000000008000 g     O .data	0000000000000100 g_opSystemRunCfg
+0000000000000000  w    O __CCE_KernelArgSize	0000000000000004 HcPre_6c9f0fa710253eff38b1c0e6be6a67be_0_mix_aic__
+0000000000002360 g     F .text	00000000000057b0 HcPre_6c9f0fa710253eff38b1c0e6be6a67be_0_mix_aiv
+0000000000000010  w    O .bl_uninit	0000000000000008 g_vecTPipePtr
+0000000000000004  w    O __CCE_KernelArgSize	0000000000000004 HcPre_6c9f0fa710253eff38b1c0e6be6a67be_0_mix_aiv__

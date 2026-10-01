@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="12" skipped="0" tests="93" time="13.177" timestamp="2026-10-01T07:05:31.851618+08:00" hostname="752c3fdca26b44da9fd55f3c88dd3113"><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_bf16_3d_input" time="1.278" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape0-128]" time="0.417" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape0-4096]" time="0.021" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape0-7168]" time="0.022" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape1-128]" time="0.013" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape1-4096]" time="0.023" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape1-7168]" time="0.031" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape2-128]" time="0.009"><failure message="AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: nan&#10;assert 0.15819552540779114 &gt;= 0.98">hidden_size = 128, batch_shape = (257,), signed_inputs = False
+sinkhorn_iters = 1
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[3.3750, 4.1562, 2.0938,  ..., 2.9844, 3.4219, 3.0625],
+        [1.3828, 0.8828, 1.8281,  ..., 2.5938, 1.8203,...3.6875, 0.5234, 2.0312,  ..., 2.5938, 3.6094, 1.7500],
+        [   nan,    nan,    nan,  ...,    nan,    nan,    nan]])
+expected = tensor([[3.3750, 4.1562, 2.0938,  ..., 2.9844, 3.4219, 3.0625],
+        [1.8594, 1.2188, 2.4844,  ..., 3.6094, 2.3438,...4.9375, 0.6914, 2.7344,  ..., 3.5625, 4.7812, 2.4062],
+        [4.0938, 4.0312, 1.5469,  ..., 2.9844, 1.7188, 3.2188]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: nan
+E       assert 0.15819552540779114 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape2-4096]" time="0.105" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape2-7168]" time="0.175" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape3-128]" time="0.006"><failure message="AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375&#10;assert 0.5075061321258545 &gt;= 0.98">hidden_size = 128, batch_shape = (3, 17), signed_inputs = False
+sinkhorn_iters = 1
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[[3.7188, 4.5625, 2.3281,  ..., 3.3438, 3.6562, 3.4375],
+         [1.5000, 0.9531, 1.9766,  ..., 2.8125, 1.968...3516, 3.2969, 2.2188,  ..., 2.1875, 1.8828, 1.6172],
+         [4.2812, 0.7422, 4.6562,  ..., 3.4219, 3.7344, 2.8594]]])
+expected = tensor([[[3.7188, 4.5625, 2.3281,  ..., 3.3438, 3.6562, 3.4375],
+         [2.0625, 1.3359, 2.7812,  ..., 3.8906, 2.703...8672, 4.6250, 3.1094,  ..., 3.0781, 2.6719, 2.2656],
+         [4.2812, 0.7422, 4.6562,  ..., 3.4219, 3.7344, 2.8594]]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375
+E       assert 0.5075061321258545 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape3-4096]" time="0.034" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-False-batch_shape3-7168]" time="0.050" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape0-128]" time="0.013" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape0-4096]" time="0.018" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape0-7168]" time="0.022" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape1-128]" time="0.013" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape1-4096]" time="0.023" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape1-7168]" time="0.031" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape2-128]" time="0.009"><failure message="AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan&#10;assert 0.294534295797348 &gt;= 0.98">hidden_size = 128, batch_shape = (257,), signed_inputs = True
+sinkhorn_iters = 1
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[-1.9409e-02,  8.6914e-02, -7.4219e-02,  ...,  3.5553e-03,
+         -9.2316e-04,  5.6396e-02],
+        [-7.773...,         nan],
+        [ 1.3672e-01,  9.2285e-02, -1.2695e-01,  ..., -5.8350e-02,
+         -1.3379e-01, -2.6123e-02]])
+expected = tensor([[-0.0194,  0.0869, -0.0742,  ...,  0.0036, -0.0009,  0.0564],
+        [-0.1050, -0.1836, -0.0708,  ...,  0.007...2236, -0.0498,  ...,  0.0330,  0.1377, -0.0554],
+        [ 0.1348,  0.0913, -0.1250,  ..., -0.0576, -0.1318, -0.0264]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan
+E       assert 0.294534295797348 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape2-4096]" time="0.118" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape2-7168]" time="0.198" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape3-128]" time="0.006"><failure message="AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375&#10;assert 0.5130208134651184 &gt;= 0.98">hidden_size = 128, batch_shape = (3, 17), signed_inputs = True
+sinkhorn_iters = 1
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[[-1.8799e-02,  8.7891e-02, -7.5195e-02,  ...,  3.6163e-03,
+          -5.6076e-04,  5.6152e-02],
+         [-7....6.8750e-01],
+         [ 8.2031e-02, -2.2656e-01,  1.3379e-01,  ..., -1.0132e-02,
+           3.5645e-02, -1.4099e-02]]])
+expected = tensor([[[-0.0188,  0.0879, -0.0752,  ...,  0.0036, -0.0006,  0.0562],
+         [-0.1040, -0.1816, -0.0703,  ...,  0.0...47, -0.0156,  ..., -0.0034, -0.1050, -0.1001],
+         [ 0.0820, -0.2266,  0.1338,  ..., -0.0101,  0.0356, -0.0141]]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375
+E       assert 0.5130208134651184 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape3-4096]" time="0.038" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[1-True-batch_shape3-7168]" time="0.058" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape0-128]" time="0.012" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape0-4096]" time="0.018" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape0-7168]" time="0.022" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape1-128]" time="0.012" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape1-4096]" time="0.023" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape1-7168]" time="0.030" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape2-128]" time="0.009"><failure message="AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: nan&#10;assert 0.15819552540779114 &gt;= 0.98">hidden_size = 128, batch_shape = (257,), signed_inputs = False
+sinkhorn_iters = 3
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[3.3750, 4.1562, 2.0938,  ..., 2.9844, 3.4219, 3.0625],
+        [1.3828, 0.8828, 1.8281,  ..., 2.5938, 1.8203,...3.6875, 0.5234, 2.0312,  ..., 2.5938, 3.6094, 1.7500],
+        [   nan,    nan,    nan,  ...,    nan,    nan,    nan]])
+expected = tensor([[3.3750, 4.1562, 2.0938,  ..., 2.9844, 3.4219, 3.0625],
+        [1.8594, 1.2188, 2.4844,  ..., 3.6094, 2.3438,...4.9375, 0.6914, 2.7344,  ..., 3.5625, 4.7812, 2.4062],
+        [4.0938, 4.0312, 1.5469,  ..., 2.9844, 1.7188, 3.2188]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: nan
+E       assert 0.15819552540779114 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape2-4096]" time="0.104" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape2-7168]" time="0.176" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape3-128]" time="0.006"><failure message="AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375&#10;assert 0.5075061321258545 &gt;= 0.98">hidden_size = 128, batch_shape = (3, 17), signed_inputs = False
+sinkhorn_iters = 3
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[[3.7188, 4.5625, 2.3281,  ..., 3.3438, 3.6562, 3.4375],
+         [1.5000, 0.9531, 1.9766,  ..., 2.8125, 1.968...3516, 3.2969, 2.2188,  ..., 2.1875, 1.8828, 1.6172],
+         [4.2812, 0.7422, 4.6562,  ..., 3.4219, 3.7344, 2.8594]]])
+expected = tensor([[[3.7188, 4.5625, 2.3281,  ..., 3.3438, 3.6562, 3.4375],
+         [2.0625, 1.3359, 2.7812,  ..., 3.8906, 2.703...8672, 4.6250, 3.1094,  ..., 3.0781, 2.6719, 2.2656],
+         [4.2812, 0.7422, 4.6562,  ..., 3.4219, 3.7344, 2.8594]]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375
+E       assert 0.5075061321258545 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape3-4096]" time="0.034" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-False-batch_shape3-7168]" time="0.053" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape0-128]" time="0.012" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape0-4096]" time="0.018" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape0-7168]" time="0.022" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape1-128]" time="0.013" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape1-4096]" time="0.023" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape1-7168]" time="0.031" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape2-128]" time="0.009"><failure message="AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan&#10;assert 0.294534295797348 &gt;= 0.98">hidden_size = 128, batch_shape = (257,), signed_inputs = True
+sinkhorn_iters = 3
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[-1.9409e-02,  8.6914e-02, -7.4219e-02,  ...,  3.5553e-03,
+         -9.2316e-04,  5.6396e-02],
+        [-7.773...,         nan],
+        [ 1.3672e-01,  9.2285e-02, -1.2695e-01,  ..., -5.8350e-02,
+         -1.3379e-01, -2.6123e-02]])
+expected = tensor([[-0.0194,  0.0869, -0.0742,  ...,  0.0036, -0.0009,  0.0564],
+        [-0.1050, -0.1836, -0.0708,  ...,  0.007...2236, -0.0498,  ...,  0.0330,  0.1377, -0.0554],
+        [ 0.1348,  0.0913, -0.1250,  ..., -0.0576, -0.1318, -0.0264]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan
+E       assert 0.294534295797348 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape2-4096]" time="0.119" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape2-7168]" time="0.207" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape3-128]" time="0.006"><failure message="AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375&#10;assert 0.5130208134651184 &gt;= 0.98">hidden_size = 128, batch_shape = (3, 17), signed_inputs = True
+sinkhorn_iters = 3
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[[-1.8799e-02,  8.7891e-02, -7.5195e-02,  ...,  3.6163e-03,
+          -5.6076e-04,  5.6152e-02],
+         [-7....6.8750e-01],
+         [ 8.2031e-02, -2.2656e-01,  1.3379e-01,  ..., -1.0132e-02,
+           3.5645e-02, -1.4099e-02]]])
+expected = tensor([[[-0.0188,  0.0879, -0.0752,  ...,  0.0036, -0.0006,  0.0562],
+         [-0.1040, -0.1816, -0.0703,  ...,  0.0...47, -0.0156,  ..., -0.0034, -0.1050, -0.1001],
+         [ 0.0820, -0.2266,  0.1338,  ..., -0.0101,  0.0356, -0.0141]]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375
+E       assert 0.5130208134651184 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape3-4096]" time="0.036" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[3-True-batch_shape3-7168]" time="0.058" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape0-128]" time="0.013" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape0-4096]" time="0.018" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape0-7168]" time="0.022" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape1-128]" time="0.013" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape1-4096]" time="0.023" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape1-7168]" time="0.031" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape2-128]" time="0.010"><failure message="AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: nan&#10;assert 0.15819552540779114 &gt;= 0.98">hidden_size = 128, batch_shape = (257,), signed_inputs = False
+sinkhorn_iters = 20
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[3.3750, 4.1562, 2.0938,  ..., 2.9844, 3.4219, 3.0625],
+        [1.3828, 0.8828, 1.8281,  ..., 2.5938, 1.8203,...3.6875, 0.5234, 2.0312,  ..., 2.5938, 3.6094, 1.7500],
+        [   nan,    nan,    nan,  ...,    nan,    nan,    nan]])
+expected = tensor([[3.3750, 4.1562, 2.0938,  ..., 2.9844, 3.4219, 3.0625],
+        [1.8594, 1.2188, 2.4844,  ..., 3.6094, 2.3438,...4.9375, 0.6914, 2.7344,  ..., 3.5625, 4.7812, 2.4062],
+        [4.0938, 4.0312, 1.5469,  ..., 2.9844, 1.7188, 3.2188]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 15.82% is below 98.00%; max absolute difference: nan
+E       assert 0.15819552540779114 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape2-4096]" time="0.113" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape2-7168]" time="0.183" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape3-128]" time="0.007"><failure message="AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375&#10;assert 0.5075061321258545 &gt;= 0.98">hidden_size = 128, batch_shape = (3, 17), signed_inputs = False
+sinkhorn_iters = 20
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[[3.7188, 4.5625, 2.3281,  ..., 3.3438, 3.6562, 3.4375],
+         [1.5000, 0.9531, 1.9766,  ..., 2.8125, 1.968...3516, 3.2969, 2.2188,  ..., 2.1875, 1.8828, 1.6172],
+         [4.2812, 0.7422, 4.6562,  ..., 3.4219, 3.7344, 2.8594]]])
+expected = tensor([[[3.7188, 4.5625, 2.3281,  ..., 3.3438, 3.6562, 3.4375],
+         [2.0625, 1.3359, 2.7812,  ..., 3.8906, 2.703...8672, 4.6250, 3.1094,  ..., 3.0781, 2.6719, 2.2656],
+         [4.2812, 0.7422, 4.6562,  ..., 3.4219, 3.7344, 2.8594]]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 50.75% is below 98.00%; max absolute difference: 1.84375
+E       assert 0.5075061321258545 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape3-4096]" time="0.038" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-False-batch_shape3-7168]" time="0.056" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape0-128]" time="0.013" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape0-4096]" time="0.018" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape0-7168]" time="0.022" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape1-128]" time="0.013" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape1-4096]" time="0.024" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape1-7168]" time="0.032" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape2-128]" time="0.011"><failure message="AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan&#10;assert 0.294534295797348 &gt;= 0.98">hidden_size = 128, batch_shape = (257,), signed_inputs = True
+sinkhorn_iters = 20
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[-1.9409e-02,  8.6914e-02, -7.4219e-02,  ...,  3.5553e-03,
+         -9.2316e-04,  5.6396e-02],
+        [-7.773...,         nan],
+        [ 1.3672e-01,  9.2285e-02, -1.2695e-01,  ..., -5.8350e-02,
+         -1.3379e-01, -2.6123e-02]])
+expected = tensor([[-0.0194,  0.0869, -0.0742,  ...,  0.0036, -0.0009,  0.0564],
+        [-0.1050, -0.1836, -0.0708,  ...,  0.007...2236, -0.0498,  ...,  0.0330,  0.1377, -0.0554],
+        [ 0.1348,  0.0913, -0.1250,  ..., -0.0576, -0.1318, -0.0264]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 29.45% is below 98.00%; max absolute difference: nan
+E       assert 0.294534295797348 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape2-4096]" time="0.119" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape2-7168]" time="0.204" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape3-128]" time="0.007"><failure message="AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375&#10;assert 0.5130208134651184 &gt;= 0.98">hidden_size = 128, batch_shape = (3, 17), signed_inputs = True
+sinkhorn_iters = 20
+
+    @pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+    @pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+    @pytest.mark.parametrize("signed_inputs", [False, True])
+    @pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+    @torch.inference_mode()
+    def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+        """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+        shape = (*batch_shape, HC_MULT, hidden_size)
+        x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+        if signed_inputs:
+            x = (x.float() - 1).bfloat16()
+            hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+            hc_base = torch.linspace(-3, 3, MIX_HC)
+        inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+        originals = tuple(t.clone() for t in inputs)
+    
+        def call_v2():
+            return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+    
+        actual = call_v2()
+        v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+        for index, (value, reference) in enumerate(zip(v3, expected)):
+&gt;           _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:190: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+actual = tensor([[[-1.8799e-02,  8.7891e-02, -7.5195e-02,  ...,  3.6163e-03,
+          -5.6076e-04,  5.6152e-02],
+         [-7....6.8750e-01],
+         [ 8.2031e-02, -2.2656e-01,  1.3379e-01,  ..., -1.0132e-02,
+           3.5645e-02, -1.4099e-02]]])
+expected = tensor([[[-0.0188,  0.0879, -0.0752,  ...,  0.0036, -0.0006,  0.0562],
+         [-0.1040, -0.1816, -0.0703,  ...,  0.0...47, -0.0156,  ..., -0.0034, -0.1050, -0.1001],
+         [ 0.0820, -0.2266,  0.1338,  ..., -0.0101,  0.0356, -0.0141]]])
+
+    def _assert_close_with_pass_rate(
+        actual: torch.Tensor,
+        expected: torch.Tensor,
+        *,
+        diff_threshold: float,
+        required_pass_rate: float,
+    ):
+        actual = actual.cpu().float()
+        expected = expected.cpu().float()
+        abs_diff = (actual - expected).abs()
+        magnitude = torch.maximum(actual.abs(), expected.abs())
+        close = (abs_diff &lt;= diff_threshold) | (
+            abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) &lt;= diff_threshold
+        )
+        pass_rate = close.float().mean().item()
+        max_abs_diff = abs_diff.max().item()
+&gt;       assert pass_rate &gt;= required_pass_rate, (
+            f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+        )
+E       AssertionError: pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375
+E       assert 0.5130208134651184 &gt;= 0.98
+
+tests/e2e/nightly/single_node/ops/singlecard_ops/test_npu_hc_pre.py:106: AssertionError</failure></testcase><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape3-4096]" time="0.038" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_v3_finite_iterations[20-True-batch_shape3-7168]" time="0.059" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_bf16_4d_input" time="0.447" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_bf16_dsv4_flash_hidden_size" time="0.427" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v2_bf16_extended_hidden_size" time="0.433" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_v3_uses_external_pre_mix" time="0.429" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_x[False-1-4096]" time="0.025" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_x[False-1-7168]" time="0.031" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_x[False-257-4096]" time="0.205" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_x[False-257-7168]" time="0.368" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_x[True-1-4096]" time="0.026" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_x[True-1-7168]" time="0.033" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_x[True-257-4096]" time="0.223" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_x[True-257-7168]" time="0.390" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_external_pre_mix[False-1-4096]" time="0.027" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_external_pre_mix[False-1-7168]" time="0.033" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_external_pre_mix[False-257-4096]" time="0.182" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_external_pre_mix[False-257-7168]" time="0.313" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_external_pre_mix[True-1-4096]" time="0.027" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_external_pre_mix[True-1-7168]" time="0.034" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_external_pre_mix[True-257-4096]" time="0.192" /><testcase classname="tests.e2e.nightly.single_node.ops.singlecard_ops.test_npu_hc_pre" name="test_npu_hc_pre_graph_reads_updated_external_pre_mix[True-257-7168]" time="3.779" /></testsuite></testsuites>

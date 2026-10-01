@@ -1,0 +1,19 @@
+{
+  "scope": "CPU inspection of completed production API rejection records; no new NPU execution",
+  "classification": "All 24 inputs per arm are outside the native hc_mult=4 contract and were rejected identically.",
+  "sources": {
+    "baseline": {
+      "head": "62e05feb3db521230c27714ad4347bd0d9d38f1a",
+      "binding_sha256": "cbfd870c9c16df67d4b5b2985bbe7260429aada8a0fefd2e0028dff98f806d06"
+    },
+    "candidate": {
+      "head": "d64140c62797ebddea73b2cf091a3590b4956d99",
+      "binding_sha256": "cbfd870c9c16df67d4b5b2985bbe7260429aada8a0fefd2e0028dff98f806d06"
+    }
+  },
+  "original_controller_exit": 1,
+  "original_comparison_kept_failed": true,
+  "positive_generic_width_correctness_coverage": 0,
+  "performance_or_model_speedup_proved": false,
+  "all_recorded_inputs_and_errors_verified": true
+}

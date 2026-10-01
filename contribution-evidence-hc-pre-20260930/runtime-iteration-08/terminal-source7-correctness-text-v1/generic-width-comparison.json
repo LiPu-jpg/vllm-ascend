@@ -1,0 +1,398 @@
+{
+  "scope": "Generic-width correctness recording; no performance claim",
+  "cases_per_arm": 24,
+  "cpu_failed_cases": {
+    "baseline": [
+      "hc1-t1-signed0-i1",
+      "hc1-t1-signed0-i3",
+      "hc1-t1-signed1-i1",
+      "hc1-t1-signed1-i3",
+      "hc1-t17-signed0-i1",
+      "hc1-t17-signed0-i3",
+      "hc1-t17-signed1-i1",
+      "hc1-t17-signed1-i3",
+      "hc3-t1-signed0-i1",
+      "hc3-t1-signed0-i3",
+      "hc3-t1-signed1-i1",
+      "hc3-t1-signed1-i3",
+      "hc3-t17-signed0-i1",
+      "hc3-t17-signed0-i3",
+      "hc3-t17-signed1-i1",
+      "hc3-t17-signed1-i3",
+      "hc8-t1-signed0-i1",
+      "hc8-t1-signed0-i3",
+      "hc8-t1-signed1-i1",
+      "hc8-t1-signed1-i3",
+      "hc8-t17-signed0-i1",
+      "hc8-t17-signed0-i3",
+      "hc8-t17-signed1-i1",
+      "hc8-t17-signed1-i3"
+    ],
+    "candidate": [
+      "hc1-t1-signed0-i1",
+      "hc1-t1-signed0-i3",
+      "hc1-t1-signed1-i1",
+      "hc1-t1-signed1-i3",
+      "hc1-t17-signed0-i1",
+      "hc1-t17-signed0-i3",
+      "hc1-t17-signed1-i1",
+      "hc1-t17-signed1-i3",
+      "hc3-t1-signed0-i1",
+      "hc3-t1-signed0-i3",
+      "hc3-t1-signed1-i1",
+      "hc3-t1-signed1-i3",
+      "hc3-t17-signed0-i1",
+      "hc3-t17-signed0-i3",
+      "hc3-t17-signed1-i1",
+      "hc3-t17-signed1-i3",
+      "hc8-t1-signed0-i1",
+      "hc8-t1-signed0-i3",
+      "hc8-t1-signed1-i1",
+      "hc8-t1-signed1-i3",
+      "hc8-t17-signed0-i1",
+      "hc8-t17-signed0-i3",
+      "hc8-t17-signed1-i1",
+      "hc8-t17-signed1-i3"
+    ]
+  },
+  "defects": [
+    {
+      "arm": "baseline",
+      "case": "hc1-t1-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc1-t1-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc1-t1-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc1-t1-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc1-t1-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc1-t1-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc1-t1-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc1-t1-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc1-t17-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc1-t17-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc1-t17-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc1-t17-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc1-t17-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc1-t17-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc1-t17-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc1-t17-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 1."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc3-t1-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc3-t1-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc3-t1-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc3-t1-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc3-t1-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc3-t1-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc3-t1-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc3-t1-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc3-t17-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc3-t17-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc3-t17-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc3-t17-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc3-t17-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc3-t17-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc3-t17-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc3-t17-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 3."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc8-t1-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc8-t1-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc8-t1-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc8-t1-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc8-t1-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc8-t1-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc8-t1-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc8-t1-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc8-t17-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc8-t17-signed0-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc8-t17-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc8-t17-signed0-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc8-t17-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc8-t17-signed1-i1",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "baseline",
+      "case": "hc8-t17-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    },
+    {
+      "arm": "candidate",
+      "case": "hc8-t17-signed1-i3",
+      "errors": [
+        "RuntimeError:hc_mult only supports 4, actual 8."
+      ]
+    }
+  ],
+  "parity_and_recording_complete": false,
+  "all_cpu_cases_passed": false
+}

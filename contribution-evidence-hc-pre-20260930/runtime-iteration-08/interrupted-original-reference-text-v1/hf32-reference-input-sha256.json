@@ -1,0 +1,8 @@
+{
+  "test_npu_hc_pre_hf32_reference.py": "f33db915b3cff28a417f2fdf68a77295cbfb9fe7e74cdaed189a2467af84c19b",
+  "run_validation_hf32_reference.sh": "a364adfd6e0992cdec6cbc03eece7dddfa277576edaef9063b9c0c1adba5db03",
+  "glm_native_caller_hf32_reference.py": "5d5b449faf015e9588b8b44624595656fcbbf6c9532c13dc7d9ab7e62a33cc08",
+  "compare_nightly_hf32_reference.py": "c6731eb011f87dc93ef996d8500b72dc7202cb4c3c680a11aed11884ed0ea1e6",
+  "controller_hf32_reference.sh": "78d3735e84bd8297bb19b9a78e7a05062c77b57c84a55bd37c5e912f2c227be2",
+  "validate_comparison_inputs_hf32.py": "3ce37b1d5cbc83c3ee85a99fbc40067552c470d58d6d8713ecdb78d920a3589c"
+}

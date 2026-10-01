@@ -1,0 +1,21 @@
+{
+  "scope": "Static byte and relocation inspection; no runtime validation or performance proof",
+  "cube_instructions_identical": true,
+  "cube_relocations_identical": true,
+  "cube_relocations": {
+    "baseline": [
+      "000000000000003c R_AICORE_BLOCK_LOCAL_OFFSET12 g_sysWorkspaceReserved",
+      "0000000000000198 R_AICORE_BLOCK_LOCAL_OFFSET12 g_sysWorkspaceReserved",
+      "000000000000027c R_AICORE_BLOCK_LOCAL_OFFSET12 g_cubeTPipePtr",
+      "0000000000001434 R_AICORE_BLOCK_LOCAL_OFFSET12 g_cubeTPipePtr"
+    ],
+    "candidate": [
+      "000000000000003c R_AICORE_BLOCK_LOCAL_OFFSET12 g_sysWorkspaceReserved",
+      "0000000000000198 R_AICORE_BLOCK_LOCAL_OFFSET12 g_sysWorkspaceReserved",
+      "000000000000027c R_AICORE_BLOCK_LOCAL_OFFSET12 g_cubeTPipePtr",
+      "0000000000001434 R_AICORE_BLOCK_LOCAL_OFFSET12 g_cubeTPipePtr"
+    ]
+  },
+  "whole_relocation_table_identical": false,
+  "difference_scope": "The full relocation table differs in Vector function offsets; all Cube entries match."
+}

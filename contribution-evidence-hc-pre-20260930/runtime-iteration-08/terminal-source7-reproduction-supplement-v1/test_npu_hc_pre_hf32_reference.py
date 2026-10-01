@@ -1,0 +1,409 @@
+import gc
+
+import pytest
+import torch
+import torch.nn.functional as F
+import torch_npu
+
+from vllm_ascend.device.device_config import is_950
+from vllm_ascend.utils import enable_custom_op
+
+torch_npu.npu.config.allow_internal_format = True
+enable_custom_op()
+
+HC_MULT = 4
+DSV4_FLASH_HIDDEN_SIZE = 4096
+HIDDEN_SIZE = DSV4_FLASH_HIDDEN_SIZE
+EXTENDED_HIDDEN_SIZE = 7168
+MIX_HC = 24
+HC_SINKHORN_ITERS = 20
+NORM_EPS = 1e-6
+HC_EPS = 1e-6
+HF32_MANTISSA_BITS = 11
+A5_HF32_MANTISSA_BITS = 10
+FP32_MANTISSA_BITS = 23
+SMALL_HIDDEN_SIZE = 128
+Y_DIFF_THRESHOLD = 4e-3
+Y_REQUIRED_PASS_RATE = 0.98
+AUX_DIFF_THRESHOLD = 1e-4
+AUX_REQUIRED_PASS_RATE = 0.995
+
+
+def _make_hc_pre_inputs(shape: tuple[int, ...]):
+    torch.manual_seed(1024)
+    hidden_size = shape[-1]
+    fan_in = HC_MULT * hidden_size
+    x = (torch.rand(shape, dtype=torch.float32) * 2).to(torch.bfloat16)
+    hc_fn = (
+        torch.rand(
+            MIX_HC,
+            fan_in,
+            dtype=torch.float32,
+        )
+        / fan_in
+    )
+    hc_scale = torch.rand(3, dtype=torch.float32) * 2
+    hc_base = torch.rand(MIX_HC, dtype=torch.float32) * 2
+    return x, hc_fn, hc_scale, hc_base
+
+
+def _to_hf32(tensor: torch.Tensor) -> torch.Tensor:
+    # Preserve the existing A5 reference pending hardware validation. A2/A3
+    # SetHF32TransMode(1) rounds to nearest, with midpoint ties away from zero.
+    legacy_a5 = is_950()
+    mantissa_bits = A5_HF32_MANTISSA_BITS if legacy_a5 else HF32_MANTISSA_BITS
+    dropped_mantissa_bits = FP32_MANTISSA_BITS - mantissa_bits
+    mantissa_mask = ~((1 << dropped_mantissa_bits) - 1)
+    bits = tensor.contiguous().view(torch.int32)
+    if not legacy_a5:
+        bits = bits + (1 << (dropped_mantissa_bits - 1))
+    return (bits & mantissa_mask).view(torch.float32)
+
+
+def _hc_pre_cpu(
+    x: torch.Tensor,
+    hc_fn: torch.Tensor,
+    hc_scale: torch.Tensor,
+    hc_base: torch.Tensor,
+    pre_mix: torch.Tensor | None = None,
+    sinkhorn_iters: int = HC_SINKHORN_ITERS,
+) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]:
+    x_float = x.float()
+    x_flat = x_float.flatten(-2)
+    inv_rms = torch.rsqrt(x_flat.square().mean(-1, keepdim=True) + NORM_EPS)
+
+    # Quantize the inputs to the HF32 format used by the installed kernel.
+    mixes = F.linear(_to_hf32(x_flat), _to_hf32(hc_fn)) * inv_rms
+    pre, post, comb_frag = mixes.split(
+        [HC_MULT, HC_MULT, HC_MULT * HC_MULT],
+        dim=-1,
+    )
+    comb_frag = comb_frag.unflatten(-1, (HC_MULT, HC_MULT))
+
+    pre = torch.sigmoid(pre * hc_scale[0] + hc_base[:HC_MULT]) + HC_EPS
+    post = 2 * torch.sigmoid(post * hc_scale[1] + hc_base[HC_MULT : 2 * HC_MULT])
+    comb_frag = comb_frag * hc_scale[2] + hc_base[2 * HC_MULT :].view(HC_MULT, HC_MULT)
+
+    comb_frag = comb_frag.softmax(-1) + HC_EPS
+    comb_frag = comb_frag / (comb_frag.sum(-2, keepdim=True) + HC_EPS)
+    for _ in range(sinkhorn_iters - 1):
+        comb_frag = comb_frag / (comb_frag.sum(-1, keepdim=True) + HC_EPS)
+        comb_frag = comb_frag / (comb_frag.sum(-2, keepdim=True) + HC_EPS)
+
+    mix_for_y = pre_mix.float() if pre_mix is not None else pre
+    y = (mix_for_y.unsqueeze(-1) * x_float).sum(dim=-2).to(x.dtype)
+    return y, post, comb_frag, pre
+
+
+def _assert_close_with_pass_rate(
+    actual: torch.Tensor,
+    expected: torch.Tensor,
+    *,
+    diff_threshold: float,
+    required_pass_rate: float,
+):
+    actual = actual.cpu().float()
+    expected = expected.cpu().float()
+    abs_diff = (actual - expected).abs()
+    magnitude = torch.maximum(actual.abs(), expected.abs())
+    close = (abs_diff <= diff_threshold) | (
+        abs_diff / magnitude.clamp_min(torch.finfo(torch.float32).tiny) <= diff_threshold
+    )
+    pass_rate = close.float().mean().item()
+    max_abs_diff = abs_diff.max().item()
+    assert pass_rate >= required_pass_rate, (
+        f"pass rate {pass_rate:.2%} is below {required_pass_rate:.2%}; max absolute difference: {max_abs_diff}"
+    )
+
+
+def _compare_hc_pre_with_cpu(shape: tuple[int, ...]):
+    x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+    expected_y, expected_post, expected_comb_frag, _ = _hc_pre_cpu(
+        x,
+        hc_fn,
+        hc_scale,
+        hc_base,
+    )
+    y, post, comb_frag = torch.ops._C_ascend.npu_hc_pre_v2(
+        x.npu(),
+        hc_fn.npu(),
+        hc_scale.npu(),
+        hc_base.npu(),
+        HC_MULT,
+        HC_SINKHORN_ITERS,
+        NORM_EPS,
+        HC_EPS,
+    )
+
+    batch_shape = shape[:-2]
+    assert y.shape == (*batch_shape, shape[-1])
+    assert post.shape == (*batch_shape, HC_MULT)
+    assert comb_frag.shape == (*batch_shape, HC_MULT, HC_MULT)
+    assert y.dtype == torch.bfloat16
+    assert post.dtype == torch.float32
+    assert comb_frag.dtype == torch.float32
+    _assert_close_with_pass_rate(
+        y,
+        expected_y,
+        diff_threshold=Y_DIFF_THRESHOLD,
+        required_pass_rate=Y_REQUIRED_PASS_RATE,
+    )
+    _assert_close_with_pass_rate(
+        post,
+        expected_post,
+        diff_threshold=AUX_DIFF_THRESHOLD,
+        required_pass_rate=AUX_REQUIRED_PASS_RATE,
+    )
+    _assert_close_with_pass_rate(
+        comb_frag,
+        expected_comb_frag,
+        diff_threshold=AUX_DIFF_THRESHOLD,
+        required_pass_rate=AUX_REQUIRED_PASS_RATE,
+    )
+
+
+@torch.inference_mode()
+def test_npu_hc_pre_v2_bf16_3d_input():
+    _compare_hc_pre_with_cpu((2, HC_MULT, HIDDEN_SIZE))
+    gc.collect()
+    torch.npu.empty_cache()
+    torch.npu.reset_peak_memory_stats()
+
+
+@pytest.mark.parametrize("hidden_size", [SMALL_HIDDEN_SIZE, HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+@pytest.mark.parametrize("batch_shape", [(1,), (17,), (257,), (3, 17)])
+@pytest.mark.parametrize("signed_inputs", [False, True])
+@pytest.mark.parametrize("sinkhorn_iters", [1, 3, HC_SINKHORN_ITERS])
+@torch.inference_mode()
+def test_npu_hc_pre_v2_v3_finite_iterations(hidden_size, batch_shape, signed_inputs, sinkhorn_iters):
+    """Check finite Sinkhorn iterations, V2/V3 parity and graph replay."""
+    shape = (*batch_shape, HC_MULT, hidden_size)
+    x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+    if signed_inputs:
+        x = (x.float() - 1).bfloat16()
+        hc_fn = hc_fn - 0.5 / (HC_MULT * hidden_size)
+        hc_base = torch.linspace(-3, 3, MIX_HC)
+    inputs = tuple(t.npu() for t in (x, hc_fn, hc_scale, hc_base))
+    originals = tuple(t.clone() for t in inputs)
+
+    def call_v2():
+        return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, sinkhorn_iters, NORM_EPS, HC_EPS)
+
+    actual = call_v2()
+    v3 = torch.ops._C_ascend.npu_hc_pre_v3(
+        *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=sinkhorn_iters, norm_eps=NORM_EPS, hc_eps=HC_EPS
+    )
+    expected = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, sinkhorn_iters=sinkhorn_iters)
+    for index, (value, reference) in enumerate(zip(v3, expected)):
+        _assert_close_with_pass_rate(
+            value,
+            reference,
+            diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+            required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+        )
+    assert len(actual) == 3
+    assert v3[3].shape == (*batch_shape, HC_MULT)
+    assert v3[3].dtype == torch.float32
+    for value, reference in zip(actual, v3[:3]):
+        assert value.shape == reference.shape
+        assert value.dtype == reference.dtype
+        assert torch.equal(value.view(torch.uint8), reference.view(torch.uint8))
+    graph = torch.npu.NPUGraph()
+    with torch.npu.graph(graph):
+        captured = call_v2()
+    graph.replay()
+    torch.npu.synchronize()
+    for value, reference in zip(captured, actual):
+        assert torch.equal(value.view(torch.uint8), reference.view(torch.uint8))
+    for value, original in zip(inputs, originals):
+        assert torch.equal(value, original)
+
+
+@torch.inference_mode()
+def test_npu_hc_pre_v2_bf16_4d_input():
+    _compare_hc_pre_with_cpu((1, 2, HC_MULT, HIDDEN_SIZE))
+    gc.collect()
+    torch.npu.empty_cache()
+    torch.npu.reset_peak_memory_stats()
+
+
+@torch.inference_mode()
+def test_npu_hc_pre_v2_bf16_dsv4_flash_hidden_size():
+    _compare_hc_pre_with_cpu((4, HC_MULT, DSV4_FLASH_HIDDEN_SIZE))
+    gc.collect()
+    torch.npu.empty_cache()
+    torch.npu.reset_peak_memory_stats()
+
+
+@torch.inference_mode()
+def test_npu_hc_pre_v2_bf16_extended_hidden_size():
+    _compare_hc_pre_with_cpu((2, HC_MULT, EXTENDED_HIDDEN_SIZE))
+    gc.collect()
+    torch.npu.empty_cache()
+    torch.npu.reset_peak_memory_stats()
+
+
+@torch.inference_mode()
+def test_npu_hc_pre_v3_uses_external_pre_mix():
+    shape = (2, HC_MULT, HIDDEN_SIZE)
+    x, hc_fn, hc_scale, hc_base = _make_hc_pre_inputs(shape)
+    pre_mix = torch.rand(shape[:-1], dtype=torch.float32)
+    expected_y, expected_post, expected_comb_frag, expected_pre = _hc_pre_cpu(x, hc_fn, hc_scale, hc_base, pre_mix)
+    y, post, comb_frag, pre = torch.ops._C_ascend.npu_hc_pre_v3(
+        x.npu(),
+        hc_fn.npu(),
+        hc_scale.npu(),
+        hc_base.npu(),
+        pre_mix.npu(),
+        hc_mult=HC_MULT,
+        hc_sinkhorn_iters=HC_SINKHORN_ITERS,
+        norm_eps=NORM_EPS,
+        hc_eps=HC_EPS,
+    )
+    assert y.shape == (shape[0], shape[-1])
+    assert post.shape == (shape[0], HC_MULT)
+    assert comb_frag.shape == (shape[0], HC_MULT, HC_MULT)
+    assert pre.shape == (shape[0], HC_MULT)
+    assert y.dtype == torch.bfloat16
+    assert post.dtype == torch.float32
+    assert comb_frag.dtype == torch.float32
+    assert pre.dtype == torch.float32
+    for actual, expected, diff_threshold, required_pass_rate in (
+        (y, expected_y, Y_DIFF_THRESHOLD, Y_REQUIRED_PASS_RATE),
+        (post, expected_post, AUX_DIFF_THRESHOLD, AUX_REQUIRED_PASS_RATE),
+        (comb_frag, expected_comb_frag, AUX_DIFF_THRESHOLD, AUX_REQUIRED_PASS_RATE),
+        (pre, expected_pre, AUX_DIFF_THRESHOLD, AUX_REQUIRED_PASS_RATE),
+    ):
+        _assert_close_with_pass_rate(
+            actual,
+            expected,
+            diff_threshold=diff_threshold,
+            required_pass_rate=required_pass_rate,
+        )
+    gc.collect()
+    torch.npu.empty_cache()
+    torch.npu.reset_peak_memory_stats()
+
+
+@pytest.mark.parametrize("hidden_size", [HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+@pytest.mark.parametrize("tokens", [1, 257])
+@pytest.mark.parametrize("signed_inputs", [False, True])
+@torch.inference_mode()
+def test_npu_hc_pre_graph_reads_updated_x(hidden_size, tokens, signed_inputs):
+    """Replay must consume current activations across input tiles and row tails."""
+    cpu_inputs = list(_make_hc_pre_inputs((tokens, HC_MULT, hidden_size)))
+    if signed_inputs:
+        cpu_inputs[0] = (cpu_inputs[0].float() - 1).bfloat16()
+        cpu_inputs[1] = cpu_inputs[1] - 0.5 / (HC_MULT * hidden_size)
+        cpu_inputs[3] = torch.linspace(-3, 3, MIX_HC)
+    inputs = tuple(value.npu() for value in cpu_inputs)
+
+    def call_v2():
+        return torch.ops._C_ascend.npu_hc_pre_v2(*inputs, HC_MULT, HC_SINKHORN_ITERS, NORM_EPS, HC_EPS)
+
+    call_v2()
+    torch.npu.synchronize()
+    graph = torch.npu.NPUGraph()
+    with torch.npu.graph(graph):
+        captured = call_v2()
+    for multiplier, offset in ((0.75, 0.125), (1.125, -0.25)):
+        cpu_inputs[0] = (cpu_inputs[0].float() * multiplier + offset).bfloat16()
+        inputs[0].copy_(cpu_inputs[0])
+        graph.replay()
+        actual = torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=HC_SINKHORN_ITERS, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+        torch.npu.synchronize()
+        expected = _hc_pre_cpu(*cpu_inputs)
+        for index, (value, reference) in enumerate(zip(actual, expected)):
+            _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+        for value, reference in zip(captured, actual[:3]):
+            assert torch.equal(value.view(torch.uint8), reference.view(torch.uint8))
+        for value, reference in zip(inputs, cpu_inputs):
+            assert torch.equal(value.cpu(), reference)
+
+
+@pytest.mark.parametrize("hidden_size", [HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+@pytest.mark.parametrize("tokens", [1, 257])
+@pytest.mark.parametrize("signed_inputs", [False, True])
+@torch.inference_mode()
+def test_npu_hc_pre_graph_reads_updated_external_pre_mix(hidden_size, tokens, signed_inputs):
+    """External coefficients must remain ordered with prefetched inputs on replay."""
+    cpu_inputs = list(_make_hc_pre_inputs((tokens, HC_MULT, hidden_size)))
+    cpu_pre_mix = torch.rand(tokens, HC_MULT, dtype=torch.float32)
+    if signed_inputs:
+        cpu_inputs[0] = (cpu_inputs[0].float() - 1).bfloat16()
+        cpu_inputs[1] = cpu_inputs[1] - 0.5 / (HC_MULT * hidden_size)
+        cpu_inputs[3] = torch.linspace(-3, 3, MIX_HC)
+        cpu_pre_mix = cpu_pre_mix * 2 - 1
+    inputs = tuple(value.npu() for value in cpu_inputs)
+    pre_mix = cpu_pre_mix.npu()
+
+    def call_v3():
+        return torch.ops._C_ascend.npu_hc_pre_v3(
+            *inputs, pre_mix, hc_mult=HC_MULT, hc_sinkhorn_iters=HC_SINKHORN_ITERS, norm_eps=NORM_EPS, hc_eps=HC_EPS
+        )
+
+    call_v3()
+    torch.npu.synchronize()
+    graph = torch.npu.NPUGraph()
+    with torch.npu.graph(graph):
+        captured = call_v3()
+    for multiplier, offset in ((0.75, -0.125), (1.125, 0.25)):
+        cpu_pre_mix = cpu_pre_mix * multiplier + offset
+        pre_mix.copy_(cpu_pre_mix)
+        graph.replay()
+        actual = call_v3()
+        torch.npu.synchronize()
+        expected = _hc_pre_cpu(*cpu_inputs, pre_mix=cpu_pre_mix)
+        for index, (value, reference) in enumerate(zip(actual, expected)):
+            _assert_close_with_pass_rate(
+                value,
+                reference,
+                diff_threshold=Y_DIFF_THRESHOLD if index == 0 else AUX_DIFF_THRESHOLD,
+                required_pass_rate=Y_REQUIRED_PASS_RATE if index == 0 else AUX_REQUIRED_PASS_RATE,
+            )
+        for value, reference in zip(captured, actual):
+            assert torch.equal(value.view(torch.uint8), reference.view(torch.uint8))
+        for value, reference in zip(inputs, cpu_inputs):
+            assert torch.equal(value.cpu(), reference)
+        assert torch.equal(pre_mix.cpu(), cpu_pre_mix)
+
+
+@pytest.mark.skipif(is_950(), reason="A5 uses a distinct HF32 format; its reference is unchanged")
+@pytest.mark.parametrize("hidden_size", [HIDDEN_SIZE, EXTENDED_HIDDEN_SIZE])
+@pytest.mark.parametrize("anchor", [1.0, 1.0 + 2**-11, 2.0 - 2**-11])
+def test_npu_hc_pre_hf32_midpoint_rounding(hidden_size: int, anchor: float):
+    # A single nonzero activation isolates coefficient conversion from summation.
+    # Even/odd mantissas and exponent carry distinguish nearest-away from
+    # truncation and nearest-even without adapting a threshold to the result.
+    ulp = 2**-11
+    coefficients = torch.tensor([anchor, anchor + ulp / 2, -anchor, -(anchor + ulp / 2)])
+    rounded = torch.tensor([anchor, anchor + ulp, -anchor, -(anchor + ulp)])
+    x = torch.zeros(1, HC_MULT, hidden_size, dtype=torch.bfloat16)
+    x[0, 0, 0] = 1
+    hc_fn = torch.zeros(MIX_HC, HC_MULT * hidden_size)
+    hc_fn[:HC_MULT, 0] = coefficients
+    inv_rms = torch.rsqrt(x.float().flatten(-2).square().mean(-1) + NORM_EPS)
+    hc_scale = torch.ones(3)
+    hc_base = torch.zeros(MIX_HC)
+    hc_base[:HC_MULT] = torch.tensor([-anchor, -anchor, anchor, anchor]) * inv_rms
+    inputs = tuple(value.npu() for value in (x, hc_fn, hc_scale, hc_base))
+    actual = torch.ops._C_ascend.npu_hc_pre_v3(
+        *inputs, None, hc_mult=HC_MULT, hc_sinkhorn_iters=HC_SINKHORN_ITERS, norm_eps=NORM_EPS, hc_eps=HC_EPS
+    )
+    expected_pre = torch.sigmoid(rounded * inv_rms + hc_base[:HC_MULT]) + HC_EPS
+    assert torch.equal(_to_hf32(coefficients), rounded)
+    for value in actual:
+        assert torch.isfinite(value.cpu()).all()
+    _assert_close_with_pass_rate(
+        actual[3].reshape(-1),
+        expected_pre,
+        diff_threshold=AUX_DIFF_THRESHOLD,
+        required_pass_rate=AUX_REQUIRED_PASS_RATE,
+    )

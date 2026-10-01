@@ -1,0 +1,338 @@
+[
+  {
+    "case": "hc1-t1-signed0-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 1."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "5662e6eeb8132ae361925df05cbbd476aaa9777de5d3e3888810fe53f31801af",
+      "8164b8ad88dcf760c56285abf7d2a8be6fc4891338124b2d7c8ebeca84f66c39",
+      "66549973e23810af62c6da721899378c1babbff4e2f6ca8af21bbb208ed407d9",
+      "8ae1a3af42aeca31ed3f839e3b1bf22c757624abff64ee716c61b8c58d0419d4"
+    ]
+  },
+  {
+    "case": "hc1-t1-signed0-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 1."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "5662e6eeb8132ae361925df05cbbd476aaa9777de5d3e3888810fe53f31801af",
+      "8164b8ad88dcf760c56285abf7d2a8be6fc4891338124b2d7c8ebeca84f66c39",
+      "66549973e23810af62c6da721899378c1babbff4e2f6ca8af21bbb208ed407d9",
+      "8ae1a3af42aeca31ed3f839e3b1bf22c757624abff64ee716c61b8c58d0419d4"
+    ]
+  },
+  {
+    "case": "hc1-t1-signed1-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 1."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "2d8a38a06a36d3c010842f3d468efef3d5fb83eee626c27f77d66647c02b7954",
+      "e1a33184747968ab76d55650059b4cbb033feb8fae6d19d6278c62e5f7b50f6c",
+      "66549973e23810af62c6da721899378c1babbff4e2f6ca8af21bbb208ed407d9",
+      "e371729b2ed69c2cc7a3e03e971dfece49c2858d0a0842b9d24311978448c6b6"
+    ]
+  },
+  {
+    "case": "hc1-t1-signed1-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 1."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "2d8a38a06a36d3c010842f3d468efef3d5fb83eee626c27f77d66647c02b7954",
+      "e1a33184747968ab76d55650059b4cbb033feb8fae6d19d6278c62e5f7b50f6c",
+      "66549973e23810af62c6da721899378c1babbff4e2f6ca8af21bbb208ed407d9",
+      "e371729b2ed69c2cc7a3e03e971dfece49c2858d0a0842b9d24311978448c6b6"
+    ]
+  },
+  {
+    "case": "hc1-t17-signed0-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 1."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "5ce5d665816947477431f59a8f7e68d21d2dba71f66f6c59aacc80d727247b86",
+      "267fd4e427f1854eeddb8e963028522bef2de2a5c911e4489da1344ab250fdef",
+      "6fec169b53810f0957186a7cc65244f6ef21c706ec2f31113561403dcfbc6778",
+      "9d31fb69e1a603cffeeb3fe328e3a4ce1cf446dc2883494ab3622bda266ac234"
+    ]
+  },
+  {
+    "case": "hc1-t17-signed0-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 1."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "5ce5d665816947477431f59a8f7e68d21d2dba71f66f6c59aacc80d727247b86",
+      "267fd4e427f1854eeddb8e963028522bef2de2a5c911e4489da1344ab250fdef",
+      "6fec169b53810f0957186a7cc65244f6ef21c706ec2f31113561403dcfbc6778",
+      "9d31fb69e1a603cffeeb3fe328e3a4ce1cf446dc2883494ab3622bda266ac234"
+    ]
+  },
+  {
+    "case": "hc1-t17-signed1-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 1."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "eb63213732ff6d644d5074bd799b6ab3421d77825faa2e7b1522ab81485f0fdb",
+      "27d4aa3a584ace5d1f57f3587e0fa3b1bc6033545e0778573add788213786d6c",
+      "6fec169b53810f0957186a7cc65244f6ef21c706ec2f31113561403dcfbc6778",
+      "e371729b2ed69c2cc7a3e03e971dfece49c2858d0a0842b9d24311978448c6b6"
+    ]
+  },
+  {
+    "case": "hc1-t17-signed1-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 1."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "eb63213732ff6d644d5074bd799b6ab3421d77825faa2e7b1522ab81485f0fdb",
+      "27d4aa3a584ace5d1f57f3587e0fa3b1bc6033545e0778573add788213786d6c",
+      "6fec169b53810f0957186a7cc65244f6ef21c706ec2f31113561403dcfbc6778",
+      "e371729b2ed69c2cc7a3e03e971dfece49c2858d0a0842b9d24311978448c6b6"
+    ]
+  },
+  {
+    "case": "hc3-t1-signed0-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 3."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "baff9d4511b64ee634e79a40725a520d032a4670db07577f5d0ef8fb219d778e",
+      "208f1a108a448711567f7c950cd4d168ecc494d73936db31b0efafa10e8f0b3c",
+      "a87c4eef91d9aba2adad5b8a0171ed5d95930fcda7cc34c3223c9dcc6b5aaf86",
+      "8be9ed0b69801ffc9cb7ee640c0a0d7a79d2a8519c87da00a071d3509647b63f"
+    ]
+  },
+  {
+    "case": "hc3-t1-signed0-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 3."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "baff9d4511b64ee634e79a40725a520d032a4670db07577f5d0ef8fb219d778e",
+      "208f1a108a448711567f7c950cd4d168ecc494d73936db31b0efafa10e8f0b3c",
+      "a87c4eef91d9aba2adad5b8a0171ed5d95930fcda7cc34c3223c9dcc6b5aaf86",
+      "8be9ed0b69801ffc9cb7ee640c0a0d7a79d2a8519c87da00a071d3509647b63f"
+    ]
+  },
+  {
+    "case": "hc3-t1-signed1-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 3."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "820614df577e800d39619112a9220157d3becb61e1cbacaaab58765706a498f6",
+      "cb76c7a9486fe9e0262adcf3fda99c3272b44304fd670f64915035c55ae6ff2a",
+      "a87c4eef91d9aba2adad5b8a0171ed5d95930fcda7cc34c3223c9dcc6b5aaf86",
+      "ab7b19162ab0a4b1a366cd698fe95ed419e019f2bac5096ee7c34364a18ecdd6"
+    ]
+  },
+  {
+    "case": "hc3-t1-signed1-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 3."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "820614df577e800d39619112a9220157d3becb61e1cbacaaab58765706a498f6",
+      "cb76c7a9486fe9e0262adcf3fda99c3272b44304fd670f64915035c55ae6ff2a",
+      "a87c4eef91d9aba2adad5b8a0171ed5d95930fcda7cc34c3223c9dcc6b5aaf86",
+      "ab7b19162ab0a4b1a366cd698fe95ed419e019f2bac5096ee7c34364a18ecdd6"
+    ]
+  },
+  {
+    "case": "hc3-t17-signed0-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 3."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "2bcd0445a409921602ef71e7289af39167382d7ff4d42072c3f5d44d48ceae2f",
+      "7172c73620da1a5907fda5fccb22283e814c125166f86f1cf5442200cfa8d1d8",
+      "cb5814874be31e49c22a663b5a957b4efa9ea1d1381da260194279ca5aa21eda",
+      "b7c583e965bc8729833844f2bbea793addcca1527faea99f96b10c5e2ce4cbaa"
+    ]
+  },
+  {
+    "case": "hc3-t17-signed0-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 3."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "2bcd0445a409921602ef71e7289af39167382d7ff4d42072c3f5d44d48ceae2f",
+      "7172c73620da1a5907fda5fccb22283e814c125166f86f1cf5442200cfa8d1d8",
+      "cb5814874be31e49c22a663b5a957b4efa9ea1d1381da260194279ca5aa21eda",
+      "b7c583e965bc8729833844f2bbea793addcca1527faea99f96b10c5e2ce4cbaa"
+    ]
+  },
+  {
+    "case": "hc3-t17-signed1-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 3."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "e733a3a07334417e5378031f8fb53aa39c13f5c06b956614a6d91bef11497bd0",
+      "12aac1eb640a3ec99c147c0af3b5c40f3edfd0d40ebd045c9fdd8076184ad43d",
+      "cb5814874be31e49c22a663b5a957b4efa9ea1d1381da260194279ca5aa21eda",
+      "ab7b19162ab0a4b1a366cd698fe95ed419e019f2bac5096ee7c34364a18ecdd6"
+    ]
+  },
+  {
+    "case": "hc3-t17-signed1-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 3."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "e733a3a07334417e5378031f8fb53aa39c13f5c06b956614a6d91bef11497bd0",
+      "12aac1eb640a3ec99c147c0af3b5c40f3edfd0d40ebd045c9fdd8076184ad43d",
+      "cb5814874be31e49c22a663b5a957b4efa9ea1d1381da260194279ca5aa21eda",
+      "ab7b19162ab0a4b1a366cd698fe95ed419e019f2bac5096ee7c34364a18ecdd6"
+    ]
+  },
+  {
+    "case": "hc8-t1-signed0-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 8."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "0ace5644fc3694d563451b7a337aeb978ecc4727746efb52cc972bcd8ff57f25",
+      "9fa88d37e1493b3f79ebbf5d609fe24bae93132f96039ad2ad6b65d1ef5c35e6",
+      "3c328f05190f6ea82e544ddf1fa12097ba2bcd728726ff719d6c16ae0c5b9a00",
+      "58d64adaf339e8f8aa881ecfea35b9e863948807cdac3687ac2cebbbda238536"
+    ]
+  },
+  {
+    "case": "hc8-t1-signed0-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 8."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "0ace5644fc3694d563451b7a337aeb978ecc4727746efb52cc972bcd8ff57f25",
+      "9fa88d37e1493b3f79ebbf5d609fe24bae93132f96039ad2ad6b65d1ef5c35e6",
+      "3c328f05190f6ea82e544ddf1fa12097ba2bcd728726ff719d6c16ae0c5b9a00",
+      "58d64adaf339e8f8aa881ecfea35b9e863948807cdac3687ac2cebbbda238536"
+    ]
+  },
+  {
+    "case": "hc8-t1-signed1-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 8."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "99cd54620b22f3593353aad3a114620c8ed4b25c7c42eca60f5dabd4a23f04ee",
+      "da3aea6ec5b2172485539716a3b4f844ec7b9eafa95cdad141c79832501615db",
+      "3c328f05190f6ea82e544ddf1fa12097ba2bcd728726ff719d6c16ae0c5b9a00",
+      "f6bdeb32aedb06e9f44c844f4cb6fff2f813a1b4b1dfc069397f6a2501f76be6"
+    ]
+  },
+  {
+    "case": "hc8-t1-signed1-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 8."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "99cd54620b22f3593353aad3a114620c8ed4b25c7c42eca60f5dabd4a23f04ee",
+      "da3aea6ec5b2172485539716a3b4f844ec7b9eafa95cdad141c79832501615db",
+      "3c328f05190f6ea82e544ddf1fa12097ba2bcd728726ff719d6c16ae0c5b9a00",
+      "f6bdeb32aedb06e9f44c844f4cb6fff2f813a1b4b1dfc069397f6a2501f76be6"
+    ]
+  },
+  {
+    "case": "hc8-t17-signed0-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 8."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "7df6ea67a621438f98c01f8735af8efb5751dce19c25d5f670ba946a0af43005",
+      "7c984171aea3f39bce57e673e93ad078b5c5d3f0a55cd772ba31a6db717c8065",
+      "d418840a89b5d5aa4af280e78b194bd4084e20df84ae435af5c02ea7900f2f0a",
+      "c9754d8cc594ddcecd2fd77aff6779d16780b009940a600e1fbfb14a7bc287d4"
+    ]
+  },
+  {
+    "case": "hc8-t17-signed0-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 8."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "7df6ea67a621438f98c01f8735af8efb5751dce19c25d5f670ba946a0af43005",
+      "7c984171aea3f39bce57e673e93ad078b5c5d3f0a55cd772ba31a6db717c8065",
+      "d418840a89b5d5aa4af280e78b194bd4084e20df84ae435af5c02ea7900f2f0a",
+      "c9754d8cc594ddcecd2fd77aff6779d16780b009940a600e1fbfb14a7bc287d4"
+    ]
+  },
+  {
+    "case": "hc8-t17-signed1-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 8."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "87a8e32016c6e9f05b0e1f60b2557cd5e189312616681922b7e1c3abaa16ac82",
+      "134e436b64e69ec66e1656bd521285b207e459130fa5c71d5f4e6c38d280e468",
+      "d418840a89b5d5aa4af280e78b194bd4084e20df84ae435af5c02ea7900f2f0a",
+      "f6bdeb32aedb06e9f44c844f4cb6fff2f813a1b4b1dfc069397f6a2501f76be6"
+    ]
+  },
+  {
+    "case": "hc8-t17-signed1-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "RuntimeError:hc_mult only supports 4, actual 8."
+    ],
+    "cpu_metrics": [],
+    "input_sha256": [
+      "87a8e32016c6e9f05b0e1f60b2557cd5e189312616681922b7e1c3abaa16ac82",
+      "134e436b64e69ec66e1656bd521285b207e459130fa5c71d5f4e6c38d280e468",
+      "d418840a89b5d5aa4af280e78b194bd4084e20df84ae435af5c02ea7900f2f0a",
+      "f6bdeb32aedb06e9f44c844f4cb6fff2f813a1b4b1dfc069397f6a2501f76be6"
+    ]
+  }
+]

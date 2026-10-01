@@ -1,0 +1,5636 @@
+[
+  {
+    "case": "b1-d128-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "8f6d4c03040186cf37bedee237ad3e7ff5665ec291bbdd0c179e02a624ab341e",
+      "17dfded361c25d965c7ffec39a9f55a5e06def86f6fc4bd41e1eb8fb73ce4a84",
+      "58d216b10091349d40b0ea71d780818053176f6bc4f87ea41127cb5b4b86abba",
+      "827bd308f29effcbdf663448c5ab83f29c4e609fbdce661ac185e20b1cffdcb8"
+    ],
+    "sha256": "91bb223234e604de73853285141a697712a7614ae6de6bf8d9749360cb26386a"
+  },
+  {
+    "case": "b1-d128-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "8f6d4c03040186cf37bedee237ad3e7ff5665ec291bbdd0c179e02a624ab341e",
+      "17dfded361c25d965c7ffec39a9f55a5e06def86f6fc4bd41e1eb8fb73ce4a84",
+      "58d216b10091349d40b0ea71d780818053176f6bc4f87ea41127cb5b4b86abba",
+      "827bd308f29effcbdf663448c5ab83f29c4e609fbdce661ac185e20b1cffdcb8"
+    ],
+    "sha256": "56793043e9a6995e683b147a70a6e0f83839557be1f924e2d21430a818cda3e6"
+  },
+  {
+    "case": "b1-d128-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "8f6d4c03040186cf37bedee237ad3e7ff5665ec291bbdd0c179e02a624ab341e",
+      "17dfded361c25d965c7ffec39a9f55a5e06def86f6fc4bd41e1eb8fb73ce4a84",
+      "58d216b10091349d40b0ea71d780818053176f6bc4f87ea41127cb5b4b86abba",
+      "827bd308f29effcbdf663448c5ab83f29c4e609fbdce661ac185e20b1cffdcb8"
+    ],
+    "sha256": "bc81c820e60abd000966faf3c3f913cd7bf6123aa2ac2638294b15aa639a79ab"
+  },
+  {
+    "case": "b1-d128-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "728719b31574c874040435f057b9e02dd3a8cb862e228eb3a7395cdc146296b5",
+      "3f2e266592fa38865900f19e0bcb9cc1a0b4bcdc85ddba50191658b384969420",
+      "58d216b10091349d40b0ea71d780818053176f6bc4f87ea41127cb5b4b86abba",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "4a7f0cf2f3379f0e05ac100bf3024ba7de8e4953e3e5857363ea406a1fb218f5"
+  },
+  {
+    "case": "b1-d128-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "728719b31574c874040435f057b9e02dd3a8cb862e228eb3a7395cdc146296b5",
+      "3f2e266592fa38865900f19e0bcb9cc1a0b4bcdc85ddba50191658b384969420",
+      "58d216b10091349d40b0ea71d780818053176f6bc4f87ea41127cb5b4b86abba",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "7ca030dfff45b525c144702f6822d7c0f9c62184497f2771464767c9a7869f3c"
+  },
+  {
+    "case": "b1-d128-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "728719b31574c874040435f057b9e02dd3a8cb862e228eb3a7395cdc146296b5",
+      "3f2e266592fa38865900f19e0bcb9cc1a0b4bcdc85ddba50191658b384969420",
+      "58d216b10091349d40b0ea71d780818053176f6bc4f87ea41127cb5b4b86abba",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "b2d9e45c157f6b1731a33397ee39c48097e667c6652e6495be5e6c1aedcb1856"
+  },
+  {
+    "case": "b17-d128-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "462d4867ab21343c0e46817a5573af19d8cbbfb5e82044373f2eb270aaccdb30",
+      "602017ae5132ee7a95b9a3fc0947edad2a0b16dc7d193462b4dfe7200265bb3a",
+      "93f9c31e50c35c991294dea03bc703244db7e5b4861a04ed4614febfb3924c4e",
+      "1b7ccc691b6ddfca3bcad7d21ce443ca5dd4263acde4c14e6b36d2cc800d38c9"
+    ],
+    "sha256": "e59db373bea83d5fdd4ce21f1f72646d8cf30ab365707cb114a39f794cfdb469"
+  },
+  {
+    "case": "b17-d128-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "462d4867ab21343c0e46817a5573af19d8cbbfb5e82044373f2eb270aaccdb30",
+      "602017ae5132ee7a95b9a3fc0947edad2a0b16dc7d193462b4dfe7200265bb3a",
+      "93f9c31e50c35c991294dea03bc703244db7e5b4861a04ed4614febfb3924c4e",
+      "1b7ccc691b6ddfca3bcad7d21ce443ca5dd4263acde4c14e6b36d2cc800d38c9"
+    ],
+    "sha256": "49ed9f0547c737ad27edb3bb45424e5ec2560cf8160a144b45bce6a8ee935c27"
+  },
+  {
+    "case": "b17-d128-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "462d4867ab21343c0e46817a5573af19d8cbbfb5e82044373f2eb270aaccdb30",
+      "602017ae5132ee7a95b9a3fc0947edad2a0b16dc7d193462b4dfe7200265bb3a",
+      "93f9c31e50c35c991294dea03bc703244db7e5b4861a04ed4614febfb3924c4e",
+      "1b7ccc691b6ddfca3bcad7d21ce443ca5dd4263acde4c14e6b36d2cc800d38c9"
+    ],
+    "sha256": "33e4a6eeef25371edfe31a52b66e32dd9810ae4cf4a175c0a4055275aed6a725"
+  },
+  {
+    "case": "b17-d128-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0ed0c75d54bdb6c1582e87a11f48f3a714d20c86c4107bd2896de0d772d04e3e",
+      "4054131c80d5bca2198b2e12218df0639549cd55cba54f3e51437f8497fd88c9",
+      "93f9c31e50c35c991294dea03bc703244db7e5b4861a04ed4614febfb3924c4e",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "95f43239146ad881d9a5be73d6f328a23320bee51e08b879042d3cb054562ffa"
+  },
+  {
+    "case": "b17-d128-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0ed0c75d54bdb6c1582e87a11f48f3a714d20c86c4107bd2896de0d772d04e3e",
+      "4054131c80d5bca2198b2e12218df0639549cd55cba54f3e51437f8497fd88c9",
+      "93f9c31e50c35c991294dea03bc703244db7e5b4861a04ed4614febfb3924c4e",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "b43233fb8497589d03a199f66b43037e8a055da8aaae69e91687456786651bfa"
+  },
+  {
+    "case": "b17-d128-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0ed0c75d54bdb6c1582e87a11f48f3a714d20c86c4107bd2896de0d772d04e3e",
+      "4054131c80d5bca2198b2e12218df0639549cd55cba54f3e51437f8497fd88c9",
+      "93f9c31e50c35c991294dea03bc703244db7e5b4861a04ed4614febfb3924c4e",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "316d3e7c5b785da39b0e9586b3a81f3a4152d78fea868c41550bd2b4f0f0841d"
+  },
+  {
+    "case": "b257-d128-signed0-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 15.87% is below 98.00%; max absolute difference: nan",
+      "v2:1:pass rate 14.01% is below 99.50%; max absolute difference: nan",
+      "v2:2:pass rate 94.87% is below 99.50%; max absolute difference: 0.00029590725898742676",
+      "v3:0:pass rate 15.87% is below 98.00%; max absolute difference: nan",
+      "v3:1:pass rate 14.01% is below 99.50%; max absolute difference: nan",
+      "v3:2:pass rate 94.87% is below 99.50%; max absolute difference: 0.00029590725898742676",
+      "v3:3:pass rate 14.40% is below 99.50%; max absolute difference: nan"
+    ],
+    "shape": [
+      257,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.15868189930915833,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 128,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.14007781445980072,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 4,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9486867785453796,
+        "max_abs_diff": 0.00029590725898742676,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.15868189930915833,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 128,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.14007781445980072,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 4,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9486867785453796,
+        "max_abs_diff": 0.00029590725898742676,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.143968865275383,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 4,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "a57a4526a3b8874da0fc5a9a1010fa73b3ac508e97c014513160a56ace8f713b",
+      "2f58dc021c2bdfa763ec5004f63f72bdd97062b40ccff2522353a67a57c9d0ba",
+      "69046ec4eac585b5525b520f046a0a217c1ee3d1610138434851188cc5e13652",
+      "2360c644fb872814c747f5c260fac2298bec0d75b32c6533f123f09d929089f7"
+    ],
+    "sha256": "068913da917b81f069a89550ce26ce19032e63670b426b693cc7d7f128ff1821"
+  },
+  {
+    "case": "b257-d128-signed0-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 15.87% is below 98.00%; max absolute difference: nan",
+      "v2:1:pass rate 14.01% is below 99.50%; max absolute difference: nan",
+      "v2:2:pass rate 95.04% is below 99.50%; max absolute difference: 0.00030556321144104004",
+      "v3:0:pass rate 15.87% is below 98.00%; max absolute difference: nan",
+      "v3:1:pass rate 14.01% is below 99.50%; max absolute difference: nan",
+      "v3:2:pass rate 95.04% is below 99.50%; max absolute difference: 0.00030556321144104004",
+      "v3:3:pass rate 14.40% is below 99.50%; max absolute difference: nan"
+    ],
+    "shape": [
+      257,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.15868189930915833,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 128,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.14007781445980072,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 4,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9503890872001648,
+        "max_abs_diff": 0.00030556321144104004,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.15868189930915833,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 128,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.14007781445980072,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 4,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9503890872001648,
+        "max_abs_diff": 0.00030556321144104004,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.143968865275383,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 4,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "a57a4526a3b8874da0fc5a9a1010fa73b3ac508e97c014513160a56ace8f713b",
+      "2f58dc021c2bdfa763ec5004f63f72bdd97062b40ccff2522353a67a57c9d0ba",
+      "69046ec4eac585b5525b520f046a0a217c1ee3d1610138434851188cc5e13652",
+      "2360c644fb872814c747f5c260fac2298bec0d75b32c6533f123f09d929089f7"
+    ],
+    "sha256": "e3ffa785a09dd1321599645455bb891f4218bc2818a77a9e26e5f33d709cc1ca"
+  },
+  {
+    "case": "b257-d128-signed0-i20",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 15.87% is below 98.00%; max absolute difference: nan",
+      "v2:1:pass rate 14.01% is below 99.50%; max absolute difference: nan",
+      "v2:2:pass rate 95.01% is below 99.50%; max absolute difference: 0.0003057122230529785",
+      "v3:0:pass rate 15.87% is below 98.00%; max absolute difference: nan",
+      "v3:1:pass rate 14.01% is below 99.50%; max absolute difference: nan",
+      "v3:2:pass rate 95.01% is below 99.50%; max absolute difference: 0.0003057122230529785",
+      "v3:3:pass rate 14.40% is below 99.50%; max absolute difference: nan"
+    ],
+    "shape": [
+      257,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.15868189930915833,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 128,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.14007781445980072,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 4,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9501459002494812,
+        "max_abs_diff": 0.0003057122230529785,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.15868189930915833,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 128,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.14007781445980072,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 4,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9501459002494812,
+        "max_abs_diff": 0.0003057122230529785,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.143968865275383,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 4,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "a57a4526a3b8874da0fc5a9a1010fa73b3ac508e97c014513160a56ace8f713b",
+      "2f58dc021c2bdfa763ec5004f63f72bdd97062b40ccff2522353a67a57c9d0ba",
+      "69046ec4eac585b5525b520f046a0a217c1ee3d1610138434851188cc5e13652",
+      "2360c644fb872814c747f5c260fac2298bec0d75b32c6533f123f09d929089f7"
+    ],
+    "sha256": "0243aaaf9d576cafeebfbea8b145262793555728ff1a0d1956ab11d0c4a210cb"
+  },
+  {
+    "case": "b257-d128-signed1-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 29.06% is below 98.00%; max absolute difference: nan",
+      "v2:1:pass rate 14.11% is below 99.50%; max absolute difference: nan",
+      "v2:2:pass rate 96.43% is below 99.50%; max absolute difference: 0.00031706690788269043",
+      "v3:0:pass rate 29.06% is below 98.00%; max absolute difference: nan",
+      "v3:1:pass rate 14.11% is below 99.50%; max absolute difference: nan",
+      "v3:2:pass rate 96.43% is below 99.50%; max absolute difference: 0.00031706690788269043",
+      "v3:3:pass rate 14.69% is below 99.50%; max absolute difference: nan"
+    ],
+    "shape": [
+      257,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.29064324498176575,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 11648,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.1410505771636963,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 220,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9642509818077087,
+        "max_abs_diff": 0.00031706690788269043,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.29064324498176575,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 11648,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.1410505771636963,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 220,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9642509818077087,
+        "max_abs_diff": 0.00031706690788269043,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.1468871533870697,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 364,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "bb935e521cfe204cbf158b5e894b60456a0da74c70f802b774ade35798d3d958",
+      "b6c419cc326450ad470abae78c0643a3f60d7f953b2e9609a1fc738d38f6ae35",
+      "69046ec4eac585b5525b520f046a0a217c1ee3d1610138434851188cc5e13652",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "37d0902fbdaa0ffa13612512d337d5b05afc151f436b391aae495a181d2ff7b0"
+  },
+  {
+    "case": "b257-d128-signed1-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 29.06% is below 98.00%; max absolute difference: nan",
+      "v2:1:pass rate 14.11% is below 99.50%; max absolute difference: nan",
+      "v2:2:pass rate 96.74% is below 99.50%; max absolute difference: 0.0002864450216293335",
+      "v3:0:pass rate 29.06% is below 98.00%; max absolute difference: nan",
+      "v3:1:pass rate 14.11% is below 99.50%; max absolute difference: nan",
+      "v3:2:pass rate 96.74% is below 99.50%; max absolute difference: 0.0002864450216293335",
+      "v3:3:pass rate 14.69% is below 99.50%; max absolute difference: nan"
+    ],
+    "shape": [
+      257,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.29064324498176575,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 11648,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.1410505771636963,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 220,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9674124717712402,
+        "max_abs_diff": 0.0002864450216293335,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.29064324498176575,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 11648,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.1410505771636963,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 220,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9674124717712402,
+        "max_abs_diff": 0.0002864450216293335,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.1468871533870697,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 364,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "bb935e521cfe204cbf158b5e894b60456a0da74c70f802b774ade35798d3d958",
+      "b6c419cc326450ad470abae78c0643a3f60d7f953b2e9609a1fc738d38f6ae35",
+      "69046ec4eac585b5525b520f046a0a217c1ee3d1610138434851188cc5e13652",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "cf9a75d2c604105595f785e6d02967d7b9e6957aa6f9d6cf201b6fa56593a852"
+  },
+  {
+    "case": "b257-d128-signed1-i20",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 29.06% is below 98.00%; max absolute difference: nan",
+      "v2:1:pass rate 14.11% is below 99.50%; max absolute difference: nan",
+      "v2:2:pass rate 96.72% is below 99.50%; max absolute difference: 0.0002864450216293335",
+      "v3:0:pass rate 29.06% is below 98.00%; max absolute difference: nan",
+      "v3:1:pass rate 14.11% is below 99.50%; max absolute difference: nan",
+      "v3:2:pass rate 96.72% is below 99.50%; max absolute difference: 0.0002864450216293335",
+      "v3:3:pass rate 14.69% is below 99.50%; max absolute difference: nan"
+    ],
+    "shape": [
+      257,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.29064324498176575,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 11648,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.1410505771636963,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 220,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9671692848205566,
+        "max_abs_diff": 0.0002864450216293335,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.29064324498176575,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 11648,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.1410505771636963,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 220,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9671692848205566,
+        "max_abs_diff": 0.0002864450216293335,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.1468871533870697,
+        "max_abs_diff": NaN,
+        "actual_nonfinite": 364,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "bb935e521cfe204cbf158b5e894b60456a0da74c70f802b774ade35798d3d958",
+      "b6c419cc326450ad470abae78c0643a3f60d7f953b2e9609a1fc738d38f6ae35",
+      "69046ec4eac585b5525b520f046a0a217c1ee3d1610138434851188cc5e13652",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "0c21ee7f8e5b263966921a04bdd2cc8036051f83e59b9807302f7644cb72b19f"
+  },
+  {
+    "case": "b3x17-d128-signed0-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 50.98% is below 98.00%; max absolute difference: 1.84375",
+      "v2:1:pass rate 49.02% is below 99.50%; max absolute difference: 0.8196768760681152",
+      "v2:2:pass rate 99.26% is below 99.50%; max absolute difference: 0.00017508864402770996",
+      "v3:0:pass rate 50.98% is below 98.00%; max absolute difference: 1.84375",
+      "v3:1:pass rate 49.02% is below 99.50%; max absolute difference: 0.558408260345459",
+      "v3:2:pass rate 99.26% is below 99.50%; max absolute difference: 0.00017508864402770996",
+      "v3:3:pass rate 50.98% is below 99.50%; max absolute difference: 0.2823488712310791"
+    ],
+    "shape": [
+      3,
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 1.84375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.4901960790157318,
+        "max_abs_diff": 0.8196768760681152,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9926470518112183,
+        "max_abs_diff": 0.00017508864402770996,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 1.84375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.4901960790157318,
+        "max_abs_diff": 0.558408260345459,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9926470518112183,
+        "max_abs_diff": 0.00017508864402770996,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 0.2823488712310791,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5bf47d7c9829731f467c39707c90d847731c342436d25c0c5b87f4fcb58623e0",
+      "299f0079021ef0a4bd408e2b8e2656d8ec7d040722f07979caefb5e0f98c32c4",
+      "ecaa238ffb3352cefc300772ea519a3c2cf64e23c02267610d9cb1cf066c2a57",
+      "7a1bb593ff34ac446dfc9e853d7a22ef4588a772a6ac37b71adb8353b8c75b06"
+    ],
+    "sha256": "6df5ebe5ab25eca263d1186afa6a3467ea669dcfa5138fe1ef07bc0d9719a47e"
+  },
+  {
+    "case": "b3x17-d128-signed0-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 50.98% is below 98.00%; max absolute difference: 1.84375",
+      "v2:1:pass rate 49.02% is below 99.50%; max absolute difference: 0.81954026222229",
+      "v2:2:pass rate 99.14% is below 99.50%; max absolute difference: 0.00017246603965759277",
+      "v3:0:pass rate 50.98% is below 98.00%; max absolute difference: 1.84375",
+      "v3:1:pass rate 49.02% is below 99.50%; max absolute difference: 0.558408260345459",
+      "v3:2:pass rate 99.14% is below 99.50%; max absolute difference: 0.00017246603965759277",
+      "v3:3:pass rate 50.98% is below 99.50%; max absolute difference: 0.2823488712310791"
+    ],
+    "shape": [
+      3,
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 1.84375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.4901960790157318,
+        "max_abs_diff": 0.81954026222229,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9914215803146362,
+        "max_abs_diff": 0.00017246603965759277,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 1.84375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.4901960790157318,
+        "max_abs_diff": 0.558408260345459,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9914215803146362,
+        "max_abs_diff": 0.00017246603965759277,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 0.2823488712310791,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5bf47d7c9829731f467c39707c90d847731c342436d25c0c5b87f4fcb58623e0",
+      "299f0079021ef0a4bd408e2b8e2656d8ec7d040722f07979caefb5e0f98c32c4",
+      "ecaa238ffb3352cefc300772ea519a3c2cf64e23c02267610d9cb1cf066c2a57",
+      "7a1bb593ff34ac446dfc9e853d7a22ef4588a772a6ac37b71adb8353b8c75b06"
+    ],
+    "sha256": "1c88aff48eab773df94f32e103f498a65e012b07d41026fb493f69745a0e99b3"
+  },
+  {
+    "case": "b3x17-d128-signed0-i20",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 50.98% is below 98.00%; max absolute difference: 1.84375",
+      "v2:1:pass rate 49.02% is below 99.50%; max absolute difference: 0.81954026222229",
+      "v2:2:pass rate 99.14% is below 99.50%; max absolute difference: 0.000172540545463562",
+      "v3:0:pass rate 50.98% is below 98.00%; max absolute difference: 1.84375",
+      "v3:1:pass rate 49.02% is below 99.50%; max absolute difference: 0.558408260345459",
+      "v3:2:pass rate 99.14% is below 99.50%; max absolute difference: 0.000172540545463562",
+      "v3:3:pass rate 50.98% is below 99.50%; max absolute difference: 0.2823488712310791"
+    ],
+    "shape": [
+      3,
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 1.84375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.4901960790157318,
+        "max_abs_diff": 0.81954026222229,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9914215803146362,
+        "max_abs_diff": 0.000172540545463562,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 1.84375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.4901960790157318,
+        "max_abs_diff": 0.558408260345459,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9914215803146362,
+        "max_abs_diff": 0.000172540545463562,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 0.2823488712310791,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5bf47d7c9829731f467c39707c90d847731c342436d25c0c5b87f4fcb58623e0",
+      "299f0079021ef0a4bd408e2b8e2656d8ec7d040722f07979caefb5e0f98c32c4",
+      "ecaa238ffb3352cefc300772ea519a3c2cf64e23c02267610d9cb1cf066c2a57",
+      "7a1bb593ff34ac446dfc9e853d7a22ef4588a772a6ac37b71adb8353b8c75b06"
+    ],
+    "sha256": "eb8a402a8a8afdc18e1db87cf0472f02f74a876aa5706cb02902303c230e48c6"
+  },
+  {
+    "case": "b3x17-d128-signed1-i1",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375",
+      "v2:1:pass rate 49.02% is below 99.50%; max absolute difference: 0.2777675986289978",
+      "v2:2:pass rate 98.90% is below 99.50%; max absolute difference: 0.00016394257545471191",
+      "v3:0:pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375",
+      "v3:1:pass rate 49.51% is below 99.50%; max absolute difference: 0.13678143918514252",
+      "v3:2:pass rate 98.90% is below 99.50%; max absolute difference: 0.00016394257545471191",
+      "v3:3:pass rate 50.98% is below 99.50%; max absolute difference: 0.4582400619983673"
+    ],
+    "shape": [
+      3,
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.5130208134651184,
+        "max_abs_diff": 1.537109375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.4901960790157318,
+        "max_abs_diff": 0.2777675986289978,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9889705777168274,
+        "max_abs_diff": 0.00016394257545471191,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.5130208134651184,
+        "max_abs_diff": 1.537109375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.4950980246067047,
+        "max_abs_diff": 0.13678143918514252,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9889705777168274,
+        "max_abs_diff": 0.00016394257545471191,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 0.4582400619983673,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "e388e07bb434673d210002c93e257aa54ea71bcfa4202590c352d83f12afaac3",
+      "705a269401f320b3f1a03ad0568ed946c9912c05a656e5340242da8aacb9373c",
+      "ecaa238ffb3352cefc300772ea519a3c2cf64e23c02267610d9cb1cf066c2a57",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "6ec7873b0537ce5d6a75e9477222dffd0f5f94ab640917589459a1074a2b19e3"
+  },
+  {
+    "case": "b3x17-d128-signed1-i3",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375",
+      "v2:1:pass rate 49.02% is below 99.50%; max absolute difference: 0.2777675986289978",
+      "v2:2:pass rate 98.90% is below 99.50%; max absolute difference: 0.0001615285873413086",
+      "v3:0:pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375",
+      "v3:1:pass rate 49.51% is below 99.50%; max absolute difference: 0.13678143918514252",
+      "v3:2:pass rate 98.90% is below 99.50%; max absolute difference: 0.0001615285873413086",
+      "v3:3:pass rate 50.98% is below 99.50%; max absolute difference: 0.4582400619983673"
+    ],
+    "shape": [
+      3,
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.5130208134651184,
+        "max_abs_diff": 1.537109375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.4901960790157318,
+        "max_abs_diff": 0.2777675986289978,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9889705777168274,
+        "max_abs_diff": 0.0001615285873413086,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.5130208134651184,
+        "max_abs_diff": 1.537109375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.4950980246067047,
+        "max_abs_diff": 0.13678143918514252,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9889705777168274,
+        "max_abs_diff": 0.0001615285873413086,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 0.4582400619983673,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "e388e07bb434673d210002c93e257aa54ea71bcfa4202590c352d83f12afaac3",
+      "705a269401f320b3f1a03ad0568ed946c9912c05a656e5340242da8aacb9373c",
+      "ecaa238ffb3352cefc300772ea519a3c2cf64e23c02267610d9cb1cf066c2a57",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "a10afa6305c70357eabc061260565ef1d569c12745982a980d8a1c41a87be986"
+  },
+  {
+    "case": "b3x17-d128-signed1-i20",
+    "cpu_accuracy_pass": false,
+    "errors": [
+      "repeat:1",
+      "v3:1",
+      "graph:1"
+    ],
+    "cpu_errors": [
+      "v2:0:pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375",
+      "v2:1:pass rate 49.02% is below 99.50%; max absolute difference: 0.2777675986289978",
+      "v2:2:pass rate 98.90% is below 99.50%; max absolute difference: 0.0001615285873413086",
+      "v3:0:pass rate 51.30% is below 98.00%; max absolute difference: 1.537109375",
+      "v3:1:pass rate 49.51% is below 99.50%; max absolute difference: 0.13678143918514252",
+      "v3:2:pass rate 98.90% is below 99.50%; max absolute difference: 0.0001615285873413086",
+      "v3:3:pass rate 50.98% is below 99.50%; max absolute difference: 0.4582400619983673"
+    ],
+    "shape": [
+      3,
+      17,
+      4,
+      128
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.5130208134651184,
+        "max_abs_diff": 1.537109375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 0.4901960790157318,
+        "max_abs_diff": 0.2777675986289978,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 0.9889705777168274,
+        "max_abs_diff": 0.0001615285873413086,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.5130208134651184,
+        "max_abs_diff": 1.537109375,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 0.4950980246067047,
+        "max_abs_diff": 0.13678143918514252,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 0.9889705777168274,
+        "max_abs_diff": 0.0001615285873413086,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 0.5098039507865906,
+        "max_abs_diff": 0.4582400619983673,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "e388e07bb434673d210002c93e257aa54ea71bcfa4202590c352d83f12afaac3",
+      "705a269401f320b3f1a03ad0568ed946c9912c05a656e5340242da8aacb9373c",
+      "ecaa238ffb3352cefc300772ea519a3c2cf64e23c02267610d9cb1cf066c2a57",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "52c4bfc3b5f57d5eb492ffdec6425f9b1f6ed29e5aea2b5eed71256623c1b538"
+  },
+  {
+    "case": "b1-d4096-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 4.470348358154297e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 4.470348358154297e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.7881393432617188e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "41f4b90ccac5d489c5fbfc594b5687e26543f7fb376f33caef400e4ccceee297",
+      "0da4fd99618f720a672706a4453a403d8385fd8dc3af31834abe86f0854ad942",
+      "e442364435d7bb1d58ab7431f62c772ee2c79c0ced0301620edcb4f8fea6e953",
+      "19baa3fc01c1bcd4e3b934af8a2c0c265bb37fd0f298f443446c5366f8223652"
+    ],
+    "sha256": "b320e781431b9182e44ad42801915e47138361bbcee3ca07052991744fe438c1"
+  },
+  {
+    "case": "b1-d4096-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 4.172325134277344e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 4.172325134277344e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.7881393432617188e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "41f4b90ccac5d489c5fbfc594b5687e26543f7fb376f33caef400e4ccceee297",
+      "0da4fd99618f720a672706a4453a403d8385fd8dc3af31834abe86f0854ad942",
+      "e442364435d7bb1d58ab7431f62c772ee2c79c0ced0301620edcb4f8fea6e953",
+      "19baa3fc01c1bcd4e3b934af8a2c0c265bb37fd0f298f443446c5366f8223652"
+    ],
+    "sha256": "9387b7132385902c2aa9994a75901da8b471788c8aecff4d395efa2ff2f9ee0f"
+  },
+  {
+    "case": "b1-d4096-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 4.023313522338867e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 4.023313522338867e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.7881393432617188e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "41f4b90ccac5d489c5fbfc594b5687e26543f7fb376f33caef400e4ccceee297",
+      "0da4fd99618f720a672706a4453a403d8385fd8dc3af31834abe86f0854ad942",
+      "e442364435d7bb1d58ab7431f62c772ee2c79c0ced0301620edcb4f8fea6e953",
+      "19baa3fc01c1bcd4e3b934af8a2c0c265bb37fd0f298f443446c5366f8223652"
+    ],
+    "sha256": "94854e4ed297c4dcec5247b53140c184e6769e09e469e26bb52905bcfe9c484d"
+  },
+  {
+    "case": "b1-d4096-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5c532c46edd5b31c69edbf984508ae7478d0115d27db7424cdf4be5eb406c266",
+      "9f22e5fa4f389ad7c08457639db330572310f96268af83c5f8436dafe0d8467f",
+      "e442364435d7bb1d58ab7431f62c772ee2c79c0ced0301620edcb4f8fea6e953",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "9960f8d647ffc66787386b28d2142e1d6a06567f564081b4f9f82a8fa153902c"
+  },
+  {
+    "case": "b1-d4096-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 4.470348358154297e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 4.470348358154297e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5c532c46edd5b31c69edbf984508ae7478d0115d27db7424cdf4be5eb406c266",
+      "9f22e5fa4f389ad7c08457639db330572310f96268af83c5f8436dafe0d8467f",
+      "e442364435d7bb1d58ab7431f62c772ee2c79c0ced0301620edcb4f8fea6e953",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "e5d762ecfd67532da0c2f6ec4caa93bb20500fac35157f8db399c3c165303481"
+  },
+  {
+    "case": "b1-d4096-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5c532c46edd5b31c69edbf984508ae7478d0115d27db7424cdf4be5eb406c266",
+      "9f22e5fa4f389ad7c08457639db330572310f96268af83c5f8436dafe0d8467f",
+      "e442364435d7bb1d58ab7431f62c772ee2c79c0ced0301620edcb4f8fea6e953",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "d5203456713bad27af2e1b847afc6b4cab06dd41ce91bf1b58a29f54a7eb7768"
+  },
+  {
+    "case": "b17-d4096-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999856352806091,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 7.152557373046875e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.043081283569336e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999856352806091,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 7.152557373046875e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.043081283569336e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5e61e1e3cfb3df405f343d4bbe754c01e51a08288d47b1162a59d358c97149e0",
+      "a1817de8768790ac207686a745ad5261a1463115d4342c0d4f084a117875a3a6",
+      "c70830fd5462d1ef1998db9e434deac0e55aa2756e8b8e80495fdf8d8a15d1c5",
+      "006e9274c50caf40d7aa16e91a9b54322293dbb6da82be9542e4f07b86a458f5"
+    ],
+    "sha256": "616450d7225ee2fe1d48a77b0086028c73c2d57058b760bb58eb15cf251775e9"
+  },
+  {
+    "case": "b17-d4096-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999856352806091,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 7.152557373046875e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999856352806091,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 7.152557373046875e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5e61e1e3cfb3df405f343d4bbe754c01e51a08288d47b1162a59d358c97149e0",
+      "a1817de8768790ac207686a745ad5261a1463115d4342c0d4f084a117875a3a6",
+      "c70830fd5462d1ef1998db9e434deac0e55aa2756e8b8e80495fdf8d8a15d1c5",
+      "006e9274c50caf40d7aa16e91a9b54322293dbb6da82be9542e4f07b86a458f5"
+    ],
+    "sha256": "bf7d526c22aca95cc3a65be5cc2f4d49e4009214829de465991928ab78cb2836"
+  },
+  {
+    "case": "b17-d4096-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999856352806091,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 7.152557373046875e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999856352806091,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 7.152557373046875e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5e61e1e3cfb3df405f343d4bbe754c01e51a08288d47b1162a59d358c97149e0",
+      "a1817de8768790ac207686a745ad5261a1463115d4342c0d4f084a117875a3a6",
+      "c70830fd5462d1ef1998db9e434deac0e55aa2756e8b8e80495fdf8d8a15d1c5",
+      "006e9274c50caf40d7aa16e91a9b54322293dbb6da82be9542e4f07b86a458f5"
+    ],
+    "sha256": "1eddb48932da03ce5faf5a480d395451d1d7a02f9fb1d2454a235a40dacfa897"
+  },
+  {
+    "case": "b17-d4096-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5e961549a65980128f133b9aa0af8b555d1f9fde4e0543fb23b37a2148e6af28",
+      "dec1ea181d083045cbf99cddf835a879760576336e0c41d483c0ca47d062f63e",
+      "c70830fd5462d1ef1998db9e434deac0e55aa2756e8b8e80495fdf8d8a15d1c5",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "2c89efca261429d912919c9af80ab9ed1074e43fbfcf39ddc5a7700a4ec9a1e8"
+  },
+  {
+    "case": "b17-d4096-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5e961549a65980128f133b9aa0af8b555d1f9fde4e0543fb23b37a2148e6af28",
+      "dec1ea181d083045cbf99cddf835a879760576336e0c41d483c0ca47d062f63e",
+      "c70830fd5462d1ef1998db9e434deac0e55aa2756e8b8e80495fdf8d8a15d1c5",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "1f5cd0593dcdd2636cb8dece597311b9edb4054fcc532bd6c2ac5246319eebc0"
+  },
+  {
+    "case": "b17-d4096-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "5e961549a65980128f133b9aa0af8b555d1f9fde4e0543fb23b37a2148e6af28",
+      "dec1ea181d083045cbf99cddf835a879760576336e0c41d483c0ca47d062f63e",
+      "c70830fd5462d1ef1998db9e434deac0e55aa2756e8b8e80495fdf8d8a15d1c5",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "224a7b3bef1b7ee5c2aa454cb57c651f767fa1a982727cf347d7dc16a01840c6"
+  },
+  {
+    "case": "b257-d4096-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999923706054688,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.7881393432617188e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999923706054688,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.7881393432617188e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0ef8bbbae98d9dac1f684ef1dea77ea6d188d5206e911105434ded69d2adea01",
+      "a04e0fa4a2afd00a2dd83a3714e500cbdc7d45e2147045b35679fa6b9cae2e56",
+      "f23b9e58595c383d6cce424f91d4614bc4a0bd0f579da234a4ac0a9c909ab1f0",
+      "2970fa72d85053ee90bfcb0f8921c8726ce48cd2cb570c48cb8c22b5194bf849"
+    ],
+    "sha256": "0740316a66e16d30b92172a38929ab175fba01f0f40575513251b75f40d05e30"
+  },
+  {
+    "case": "b257-d4096-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999923706054688,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999923706054688,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0ef8bbbae98d9dac1f684ef1dea77ea6d188d5206e911105434ded69d2adea01",
+      "a04e0fa4a2afd00a2dd83a3714e500cbdc7d45e2147045b35679fa6b9cae2e56",
+      "f23b9e58595c383d6cce424f91d4614bc4a0bd0f579da234a4ac0a9c909ab1f0",
+      "2970fa72d85053ee90bfcb0f8921c8726ce48cd2cb570c48cb8c22b5194bf849"
+    ],
+    "sha256": "fbb10c833c04a557ceb7957511f39576234f84a99e4a15b515901fa7ef820e81"
+  },
+  {
+    "case": "b257-d4096-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999923706054688,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999923706054688,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.5762786865234375e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0ef8bbbae98d9dac1f684ef1dea77ea6d188d5206e911105434ded69d2adea01",
+      "a04e0fa4a2afd00a2dd83a3714e500cbdc7d45e2147045b35679fa6b9cae2e56",
+      "f23b9e58595c383d6cce424f91d4614bc4a0bd0f579da234a4ac0a9c909ab1f0",
+      "2970fa72d85053ee90bfcb0f8921c8726ce48cd2cb570c48cb8c22b5194bf849"
+    ],
+    "sha256": "e1bf8f0046048d1cd2ed1f59abec34c0eae74b2a9d4e8240ca68e60e549b956c"
+  },
+  {
+    "case": "b257-d4096-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 7.450580596923828e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 7.450580596923828e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.2351741790771484e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "1ab53c24495151f48128768e339d4d66383a786b84732101355f4dfd5b2900eb",
+      "1160ec03ea7b1fdd08f81886749fbba2dd9834c1db21d4685944cc35029eab88",
+      "f23b9e58595c383d6cce424f91d4614bc4a0bd0f579da234a4ac0a9c909ab1f0",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "fd0301d21ac514c11b9b1b4a223a14e6a251a487da5568c8ec91b5d765094529"
+  },
+  {
+    "case": "b257-d4096-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.2351741790771484e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "1ab53c24495151f48128768e339d4d66383a786b84732101355f4dfd5b2900eb",
+      "1160ec03ea7b1fdd08f81886749fbba2dd9834c1db21d4685944cc35029eab88",
+      "f23b9e58595c383d6cce424f91d4614bc4a0bd0f579da234a4ac0a9c909ab1f0",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "e6dc5ba0b257f380710f1560bb74089c51d5ba3406de298821c5c8a87d3337d5"
+  },
+  {
+    "case": "b257-d4096-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.2351741790771484e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "1ab53c24495151f48128768e339d4d66383a786b84732101355f4dfd5b2900eb",
+      "1160ec03ea7b1fdd08f81886749fbba2dd9834c1db21d4685944cc35029eab88",
+      "f23b9e58595c383d6cce424f91d4614bc4a0bd0f579da234a4ac0a9c909ab1f0",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "0594ca9b510841fc8647ca1f373886753ac0e15a988deb9c62aaaea461ddd863"
+  },
+  {
+    "case": "b3x17-d4096-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "f46756a04201f580143e00e27cb3fe75d0efed52a0a96d7957b9ddfa741dd133",
+      "6eefc1e88c2f437e4c4c15f46e3cd99b4dd549a770182ad50181e960606c09f3",
+      "4f60afb88cb2586f1d63ffe6cf2b11de9a9340c57664f4c5729893f3f1795566",
+      "486f321050c2d0513b7d930f08fbaffe7a943f30e2c1a575484eab536b421df0"
+    ],
+    "sha256": "b0029388b3677020d3240c03674f3d3bbb25c57a2975e69b19c3349a1b7523d7"
+  },
+  {
+    "case": "b3x17-d4096-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "f46756a04201f580143e00e27cb3fe75d0efed52a0a96d7957b9ddfa741dd133",
+      "6eefc1e88c2f437e4c4c15f46e3cd99b4dd549a770182ad50181e960606c09f3",
+      "4f60afb88cb2586f1d63ffe6cf2b11de9a9340c57664f4c5729893f3f1795566",
+      "486f321050c2d0513b7d930f08fbaffe7a943f30e2c1a575484eab536b421df0"
+    ],
+    "sha256": "7fd26696362b46f93e0217bd217f91172526c3b2615d2024dc6d3e0233d1098c"
+  },
+  {
+    "case": "b3x17-d4096-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "f46756a04201f580143e00e27cb3fe75d0efed52a0a96d7957b9ddfa741dd133",
+      "6eefc1e88c2f437e4c4c15f46e3cd99b4dd549a770182ad50181e960606c09f3",
+      "4f60afb88cb2586f1d63ffe6cf2b11de9a9340c57664f4c5729893f3f1795566",
+      "486f321050c2d0513b7d930f08fbaffe7a943f30e2c1a575484eab536b421df0"
+    ],
+    "sha256": "aeaac1dddf954cc3e2c5ecf553ac20d2e8f31ad73ade62fd8a94f8b0094735e9"
+  },
+  {
+    "case": "b3x17-d4096-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.00048828125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.00048828125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "6c4108a9381d1d0cd44452368a8db2d552ea262412ef709a4862dea1d267c1f8",
+      "e971aaaf4a5761f4226561ed1307c6eba97c9cf291605f1bdb169f7e3ded0e86",
+      "4f60afb88cb2586f1d63ffe6cf2b11de9a9340c57664f4c5729893f3f1795566",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "afcb62e531683d2ff5c331f5c17a45eed4c203205e1f81e7ac1febdb23083ff5"
+  },
+  {
+    "case": "b3x17-d4096-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.00048828125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.00048828125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "6c4108a9381d1d0cd44452368a8db2d552ea262412ef709a4862dea1d267c1f8",
+      "e971aaaf4a5761f4226561ed1307c6eba97c9cf291605f1bdb169f7e3ded0e86",
+      "4f60afb88cb2586f1d63ffe6cf2b11de9a9340c57664f4c5729893f3f1795566",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "f501e753be28c01230a41e4fbb417cd420d2955c17b5aa7223ea995e171fd6ed"
+  },
+  {
+    "case": "b3x17-d4096-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      4096
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.00048828125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.00048828125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "6c4108a9381d1d0cd44452368a8db2d552ea262412ef709a4862dea1d267c1f8",
+      "e971aaaf4a5761f4226561ed1307c6eba97c9cf291605f1bdb169f7e3ded0e86",
+      "4f60afb88cb2586f1d63ffe6cf2b11de9a9340c57664f4c5729893f3f1795566",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "83231572c7d3f36d2d421cd790c2aea154181ba14f3f8c5ee69a9d9c792ca52a"
+  },
+  {
+    "case": "b1-d7168-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.2782554626464844e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.2782554626464844e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "2812580a7428317d480450127ef25f424ae5e32ef6d7fdb978d795cd60532ec5",
+      "672526b84f7c5fe09b82c8ed381b6ae188f44f44367d4ae0f9666130a1219b85",
+      "3d96f5c40cbb8f96b1008e6958d711beb637dae0fb574c21731695318a0cce2b",
+      "1b8b518356367a6ac1d280331d169aff55068fbf006cf6391119c299a9c31b49"
+    ],
+    "sha256": "ee2a16082a44e0bf435bee5a947e696243ce93edcb309fa08f9d21eb0117bc79"
+  },
+  {
+    "case": "b1-d7168-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.980232238769531e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.980232238769531e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "2812580a7428317d480450127ef25f424ae5e32ef6d7fdb978d795cd60532ec5",
+      "672526b84f7c5fe09b82c8ed381b6ae188f44f44367d4ae0f9666130a1219b85",
+      "3d96f5c40cbb8f96b1008e6958d711beb637dae0fb574c21731695318a0cce2b",
+      "1b8b518356367a6ac1d280331d169aff55068fbf006cf6391119c299a9c31b49"
+    ],
+    "sha256": "ccec4d89e60391f1a6c9262d9274c3b122ebc90b80070e50ccf51ab547b06c08"
+  },
+  {
+    "case": "b1-d7168-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.682209014892578e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.682209014892578e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "2812580a7428317d480450127ef25f424ae5e32ef6d7fdb978d795cd60532ec5",
+      "672526b84f7c5fe09b82c8ed381b6ae188f44f44367d4ae0f9666130a1219b85",
+      "3d96f5c40cbb8f96b1008e6958d711beb637dae0fb574c21731695318a0cce2b",
+      "1b8b518356367a6ac1d280331d169aff55068fbf006cf6391119c299a9c31b49"
+    ],
+    "sha256": "f87fa5ee33840f1bd282bca36c8681bf57c4016e62d292987a0b9c30a4815c14"
+  },
+  {
+    "case": "b1-d7168-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0d0003be033e93da61e141ebedee80b28edd21c26df169c1033e10e1a57d0362",
+      "586a97f36c444adc387abd9592057de491a4b0391ee9e4593a9cf62618f2ac00",
+      "3d96f5c40cbb8f96b1008e6958d711beb637dae0fb574c21731695318a0cce2b",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "630bcf99a8fdda16be7f9e1532ba3f8afa5e9c491b235cb656c8877920673391"
+  },
+  {
+    "case": "b1-d7168-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0d0003be033e93da61e141ebedee80b28edd21c26df169c1033e10e1a57d0362",
+      "586a97f36c444adc387abd9592057de491a4b0391ee9e4593a9cf62618f2ac00",
+      "3d96f5c40cbb8f96b1008e6958d711beb637dae0fb574c21731695318a0cce2b",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "ff4d00a0197561749cc8c1bfea809a100fde888131b5ab48e42f46ac33520466"
+  },
+  {
+    "case": "b1-d7168-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      1,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.9802322387695312e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0d0003be033e93da61e141ebedee80b28edd21c26df169c1033e10e1a57d0362",
+      "586a97f36c444adc387abd9592057de491a4b0391ee9e4593a9cf62618f2ac00",
+      "3d96f5c40cbb8f96b1008e6958d711beb637dae0fb574c21731695318a0cce2b",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "8e68c5272380cb31219be825b0f9164e95e7540d06b78c55f877bdc6f938c662"
+  },
+  {
+    "case": "b17-d7168-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999753832817078,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 9.5367431640625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999753832817078,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 9.5367431640625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 6.556510925292969e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "aedd8e8140a05943798181ba09e8aa715dd90deba6382c68d42e5eb0e296bfbf",
+      "9b47d97a78f44a6341ad8c9740c43b5ffae760e114c6613fa637c4c1414cbfad",
+      "7b6f15e97e756760790bcd6b3a4c9a4216d87fea142923a8b8591a20e5444b0d",
+      "1776be844018124aeed95815ef2f16ce57af3ee9589c4138b173c87236a7814b"
+    ],
+    "sha256": "d2918162c868ece15d15c148ffa71fcd80f95a268454313362e48c8cd66717bd"
+  },
+  {
+    "case": "b17-d7168-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999753832817078,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 9.5367431640625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999753832817078,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 9.5367431640625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 6.556510925292969e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "aedd8e8140a05943798181ba09e8aa715dd90deba6382c68d42e5eb0e296bfbf",
+      "9b47d97a78f44a6341ad8c9740c43b5ffae760e114c6613fa637c4c1414cbfad",
+      "7b6f15e97e756760790bcd6b3a4c9a4216d87fea142923a8b8591a20e5444b0d",
+      "1776be844018124aeed95815ef2f16ce57af3ee9589c4138b173c87236a7814b"
+    ],
+    "sha256": "62a83aa613dc4aed1a9417b10dabace1984a639f7d2e84b5bd660d2781b8f377"
+  },
+  {
+    "case": "b17-d7168-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999753832817078,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 9.5367431640625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.682209014892578e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999753832817078,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 9.5367431640625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.682209014892578e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 6.556510925292969e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "aedd8e8140a05943798181ba09e8aa715dd90deba6382c68d42e5eb0e296bfbf",
+      "9b47d97a78f44a6341ad8c9740c43b5ffae760e114c6613fa637c4c1414cbfad",
+      "7b6f15e97e756760790bcd6b3a4c9a4216d87fea142923a8b8591a20e5444b0d",
+      "1776be844018124aeed95815ef2f16ce57af3ee9589c4138b173c87236a7814b"
+    ],
+    "sha256": "037d8c1d9cbf3bd3b9ab0966eace78b5aee854cf406a4a2cb2581f04a557281a"
+  },
+  {
+    "case": "b17-d7168-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.0517578125e-05,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.0517578125e-05,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "db5ebcee643ada77307bb8baa73e0c5a0f0c24c59191d2112bed552cc52d25f4",
+      "71ea0d65eade36b05f1dd1ab65390255ee87d9fbcfc4090dc38568694c4f5908",
+      "7b6f15e97e756760790bcd6b3a4c9a4216d87fea142923a8b8591a20e5444b0d",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "39960af026d34951df5d97ce85a7b7acf101869fd018e99c2bfacecf37e45f6c"
+  },
+  {
+    "case": "b17-d7168-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.0517578125e-05,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.0517578125e-05,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "db5ebcee643ada77307bb8baa73e0c5a0f0c24c59191d2112bed552cc52d25f4",
+      "71ea0d65eade36b05f1dd1ab65390255ee87d9fbcfc4090dc38568694c4f5908",
+      "7b6f15e97e756760790bcd6b3a4c9a4216d87fea142923a8b8591a20e5444b0d",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "4920fe43c31a588fdba06738c8fbe6eb5f87c08b6198fe1ca609643f4e7b0871"
+  },
+  {
+    "case": "b17-d7168-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.0517578125e-05,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 3.0517578125e-05,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "db5ebcee643ada77307bb8baa73e0c5a0f0c24c59191d2112bed552cc52d25f4",
+      "71ea0d65eade36b05f1dd1ab65390255ee87d9fbcfc4090dc38568694c4f5908",
+      "7b6f15e97e756760790bcd6b3a4c9a4216d87fea142923a8b8591a20e5444b0d",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "c7fb74769edb632269a5288b13b902f6161ed3c4137849dd4b6f66e8796f3a19"
+  },
+  {
+    "case": "b257-d7168-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999929666519165,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999929666519165,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.7881393432617188e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "50993942dad2a713a7ced1d878d9b3bbc3975cd796f61caaa1e7f9cff1fc576f",
+      "e32e456e65e7e269f75212ae04c6a8767849fdab78415646d46c1bfd1bdb62a5",
+      "f6aedebd946d427ce9773cf44ef80a8f821fba1c5b4f3a02b54f6d83bc045520",
+      "e03e8bf8a569aa6397f2cef812534a9bdb670587c47330140a6ae005b03f81db"
+    ],
+    "sha256": "849fc0d0f82858ffbf26797ab756229e2e01221a1b4452d60097eb6ac8c9cfd8"
+  },
+  {
+    "case": "b257-d7168-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999929666519165,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999929666519165,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.7881393432617188e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "50993942dad2a713a7ced1d878d9b3bbc3975cd796f61caaa1e7f9cff1fc576f",
+      "e32e456e65e7e269f75212ae04c6a8767849fdab78415646d46c1bfd1bdb62a5",
+      "f6aedebd946d427ce9773cf44ef80a8f821fba1c5b4f3a02b54f6d83bc045520",
+      "e03e8bf8a569aa6397f2cef812534a9bdb670587c47330140a6ae005b03f81db"
+    ],
+    "sha256": "b68b74310d29e6b81753773b729979029596b776fff840c2ed196a8a1cfd7478"
+  },
+  {
+    "case": "b257-d7168-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999929666519165,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999929666519165,
+        "max_abs_diff": 0.03125,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.7881393432617188e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "50993942dad2a713a7ced1d878d9b3bbc3975cd796f61caaa1e7f9cff1fc576f",
+      "e32e456e65e7e269f75212ae04c6a8767849fdab78415646d46c1bfd1bdb62a5",
+      "f6aedebd946d427ce9773cf44ef80a8f821fba1c5b4f3a02b54f6d83bc045520",
+      "e03e8bf8a569aa6397f2cef812534a9bdb670587c47330140a6ae005b03f81db"
+    ],
+    "sha256": "99bf094466ebf7b5b1349fc54fd22c1afdb7f7c62036d67f0beb10c7cbc34026"
+  },
+  {
+    "case": "b257-d7168-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.2351741790771484e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0c9648557f4687143d83d05791994a698f7812127dd6b77862839c6234e76a1b",
+      "4f3a2c493926603a2fe763dc42002ebb47435951856523d46fc576bc8eb25774",
+      "f6aedebd946d427ce9773cf44ef80a8f821fba1c5b4f3a02b54f6d83bc045520",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "59778c1eed5f09bf3a16cebb1f21f3e76692215a51647e1328b26be0666d72d5"
+  },
+  {
+    "case": "b257-d7168-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 7.450580596923828e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 7.450580596923828e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.2351741790771484e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0c9648557f4687143d83d05791994a698f7812127dd6b77862839c6234e76a1b",
+      "4f3a2c493926603a2fe763dc42002ebb47435951856523d46fc576bc8eb25774",
+      "f6aedebd946d427ce9773cf44ef80a8f821fba1c5b4f3a02b54f6d83bc045520",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "6d6e24d01a4c643e4c91a188a34dcc61e136ff4086eeade70630c84a726fda39"
+  },
+  {
+    "case": "b257-d7168-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      257,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.0009765625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.2351741790771484e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "0c9648557f4687143d83d05791994a698f7812127dd6b77862839c6234e76a1b",
+      "4f3a2c493926603a2fe763dc42002ebb47435951856523d46fc576bc8eb25774",
+      "f6aedebd946d427ce9773cf44ef80a8f821fba1c5b4f3a02b54f6d83bc045520",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "d9dde3bff296d8670fe1a01b8e2f1d516c36c94be1d6a8da5dfa7ea3059c835e"
+  },
+  {
+    "case": "b3x17-d7168-signed0-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999972581863403,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999972581863403,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "9795e785504d2dd8e97f3558758feeb4dbf521d157064b84160ceb0c80b6d065",
+      "8f70a3d7cc1eb0c914ecdfc1e23903f482fb82a06a9ccfa118d0be63ca7b4a1a",
+      "82afa48ef1207f896cf169b8b1aca983a8f960ef0876bc60cc654f8758d2edf2",
+      "2152436eedff99ed6dd5948f8a93c51542dd131a74265a5c4ff43709a0839f95"
+    ],
+    "sha256": "b04ea582282676a9292e09eb055b9ca7cda5380950d4840d786126e52ce9ec40"
+  },
+  {
+    "case": "b3x17-d7168-signed0-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999972581863403,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999972581863403,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 8.940696716308594e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "9795e785504d2dd8e97f3558758feeb4dbf521d157064b84160ceb0c80b6d065",
+      "8f70a3d7cc1eb0c914ecdfc1e23903f482fb82a06a9ccfa118d0be63ca7b4a1a",
+      "82afa48ef1207f896cf169b8b1aca983a8f960ef0876bc60cc654f8758d2edf2",
+      "2152436eedff99ed6dd5948f8a93c51542dd131a74265a5c4ff43709a0839f95"
+    ],
+    "sha256": "e9079345e0684b553c6985565dc1be8dc29c5eece3043eb8a70f7155788c1c54"
+  },
+  {
+    "case": "b3x17-d7168-signed0-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 0.9999972581863403,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 0.9999972581863403,
+        "max_abs_diff": 0.015625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 2.384185791015625e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "9795e785504d2dd8e97f3558758feeb4dbf521d157064b84160ceb0c80b6d065",
+      "8f70a3d7cc1eb0c914ecdfc1e23903f482fb82a06a9ccfa118d0be63ca7b4a1a",
+      "82afa48ef1207f896cf169b8b1aca983a8f960ef0876bc60cc654f8758d2edf2",
+      "2152436eedff99ed6dd5948f8a93c51542dd131a74265a5c4ff43709a0839f95"
+    ],
+    "sha256": "8e738a6f13dd5306769bfb1699e5dfed009ff29169163762ae6a8cc088d2b59a"
+  },
+  {
+    "case": "b3x17-d7168-signed1-i1",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.000244140625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.000244140625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "b5affcd819f87cd0503899e43a2c078c082f118d058a86a23abfa30d19580c6f",
+      "ff0567d49ec618214e503e017e4ca66b9519ece980ffba56fcc156358f4a4622",
+      "82afa48ef1207f896cf169b8b1aca983a8f960ef0876bc60cc654f8758d2edf2",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "d93b5061575811b54bea16737283bf44bdf7c202b44de5f7d238eb8fb608d593"
+  },
+  {
+    "case": "b3x17-d7168-signed1-i3",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.000244140625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.000244140625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "b5affcd819f87cd0503899e43a2c078c082f118d058a86a23abfa30d19580c6f",
+      "ff0567d49ec618214e503e017e4ca66b9519ece980ffba56fcc156358f4a4622",
+      "82afa48ef1207f896cf169b8b1aca983a8f960ef0876bc60cc654f8758d2edf2",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "fc98d987541f61788b8be16c10224392ae5257c0390b0f49fb2204932e1bd5d9"
+  },
+  {
+    "case": "b3x17-d7168-signed1-i20",
+    "cpu_accuracy_pass": true,
+    "errors": [],
+    "cpu_errors": [],
+    "shape": [
+      3,
+      17,
+      4,
+      7168
+    ],
+    "cpu_metrics": [
+      {
+        "api": "v2",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.000244140625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v2",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 0,
+        "pass_rate": 1.0,
+        "max_abs_diff": 0.000244140625,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 1,
+        "pass_rate": 1.0,
+        "max_abs_diff": 5.960464477539063e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 2,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.1920928955078125e-07,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      },
+      {
+        "api": "v3",
+        "output": 3,
+        "pass_rate": 1.0,
+        "max_abs_diff": 1.4901161193847656e-08,
+        "actual_nonfinite": 0,
+        "expected_nonfinite": 0
+      }
+    ],
+    "input_sha256": [
+      "b5affcd819f87cd0503899e43a2c078c082f118d058a86a23abfa30d19580c6f",
+      "ff0567d49ec618214e503e017e4ca66b9519ece980ffba56fcc156358f4a4622",
+      "82afa48ef1207f896cf169b8b1aca983a8f960ef0876bc60cc654f8758d2edf2",
+      "c9950e6abc48320ce04faf52ceefb4fbe6be984418b7942e50cf3f7f59887aaa"
+    ],
+    "sha256": "903eba1ec2f31341c0d74636130e47386816d8285d05a6d25755bb18bb30c8b6"
+  }
+]
