@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/mnt/workspace/hc-pre-reduction-20260930/iteration-08/compare_historical_boundary_cpu.py", line 105, in <module>
+    main()
+  File "/mnt/workspace/hc-pre-reduction-20260930/iteration-08/compare_historical_boundary_cpu.py", line 50, in main
+    assert len(old["expected"]) == len(new["expected"])
+               ~~~^^^^^^^^^^^^
+KeyError: 'expected'

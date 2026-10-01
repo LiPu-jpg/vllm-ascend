@@ -1,0 +1,15 @@
+PROGRAM_COMPLETED batch-comb0-kernel-selection-baseline
+PROGRAM_COMPLETED batch-comb0-kernel-selection-candidate
+RETAINED_STATUS batch-comb1-nightly-baseline 1
+RETAINED_STATUS batch-comb1-nightly-candidate 1
+NIGHTLY baseline 93 FAILED 12
+NIGHTLY candidate 93 FAILED 12
+FAILURE_BITMAP_EQUAL; FAILURES_RETAINED_NOT_PASSED
+RETAINED_STATUS batch-comb1-fixture-baseline 1
+RETAINED_STATUS batch-comb1-fixture-candidate 1
+RETAINED_STATUS batch-comb1-benchmark-fixture-baseline 1
+RETAINED_STATUS batch-comb1-benchmark-fixture-candidate 1
+Traceback (most recent call last):
+  File "/mnt/workspace/hc-pre-reduction-20260930/iteration-08/validate_postguards.py", line 8, in <module>
+    assert all(code == 0 for code in statuses.values()), statuses
+AssertionError: {'npu_query': 0, 'npu_idle': 0, 'other_jobs': 0, 'foreign_jobs': 1}

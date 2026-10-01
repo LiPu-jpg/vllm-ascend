@@ -1,0 +1,31 @@
+INFO 10-01 08:02:51 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 10-01 08:02:51 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 10-01 08:02:51 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-01 08:02:51 [__init__.py:272] Platform plugin ascend is activated
+INFO 10-01 08:02:52 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+[W1001 08:02:53.184252868 NPUCachingAllocator.cpp:202] Warning: The current CANN and HDK(driver) versions require processing for 32 padding size, with memory allocation. (function operator())
+GENERIC_COMB_RESULT hc1-t1-signed0-i1 False ['RuntimeError:hc_mult only supports 4, actual 1.']
+GENERIC_COMB_RESULT hc1-t1-signed0-i3 False ['RuntimeError:hc_mult only supports 4, actual 1.']
+GENERIC_COMB_RESULT hc1-t1-signed1-i1 False ['RuntimeError:hc_mult only supports 4, actual 1.']
+GENERIC_COMB_RESULT hc1-t1-signed1-i3 False ['RuntimeError:hc_mult only supports 4, actual 1.']
+GENERIC_COMB_RESULT hc1-t17-signed0-i1 False ['RuntimeError:hc_mult only supports 4, actual 1.']
+GENERIC_COMB_RESULT hc1-t17-signed0-i3 False ['RuntimeError:hc_mult only supports 4, actual 1.']
+GENERIC_COMB_RESULT hc1-t17-signed1-i1 False ['RuntimeError:hc_mult only supports 4, actual 1.']
+GENERIC_COMB_RESULT hc1-t17-signed1-i3 False ['RuntimeError:hc_mult only supports 4, actual 1.']
+GENERIC_COMB_RESULT hc3-t1-signed0-i1 False ['RuntimeError:hc_mult only supports 4, actual 3.']
+GENERIC_COMB_RESULT hc3-t1-signed0-i3 False ['RuntimeError:hc_mult only supports 4, actual 3.']
+GENERIC_COMB_RESULT hc3-t1-signed1-i1 False ['RuntimeError:hc_mult only supports 4, actual 3.']
+GENERIC_COMB_RESULT hc3-t1-signed1-i3 False ['RuntimeError:hc_mult only supports 4, actual 3.']
+GENERIC_COMB_RESULT hc3-t17-signed0-i1 False ['RuntimeError:hc_mult only supports 4, actual 3.']
+GENERIC_COMB_RESULT hc3-t17-signed0-i3 False ['RuntimeError:hc_mult only supports 4, actual 3.']
+GENERIC_COMB_RESULT hc3-t17-signed1-i1 False ['RuntimeError:hc_mult only supports 4, actual 3.']
+GENERIC_COMB_RESULT hc3-t17-signed1-i3 False ['RuntimeError:hc_mult only supports 4, actual 3.']
+GENERIC_COMB_RESULT hc8-t1-signed0-i1 False ['RuntimeError:hc_mult only supports 4, actual 8.']
+GENERIC_COMB_RESULT hc8-t1-signed0-i3 False ['RuntimeError:hc_mult only supports 4, actual 8.']
+GENERIC_COMB_RESULT hc8-t1-signed1-i1 False ['RuntimeError:hc_mult only supports 4, actual 8.']
+GENERIC_COMB_RESULT hc8-t1-signed1-i3 False ['RuntimeError:hc_mult only supports 4, actual 8.']
+GENERIC_COMB_RESULT hc8-t17-signed0-i1 False ['RuntimeError:hc_mult only supports 4, actual 8.']
+GENERIC_COMB_RESULT hc8-t17-signed0-i3 False ['RuntimeError:hc_mult only supports 4, actual 8.']
+GENERIC_COMB_RESULT hc8-t17-signed1-i1 False ['RuntimeError:hc_mult only supports 4, actual 8.']
+GENERIC_COMB_RESULT hc8-t17-signed1-i3 False ['RuntimeError:hc_mult only supports 4, actual 8.']
+GENERIC_COMB_ALL_RESULTS_RECORDED 24

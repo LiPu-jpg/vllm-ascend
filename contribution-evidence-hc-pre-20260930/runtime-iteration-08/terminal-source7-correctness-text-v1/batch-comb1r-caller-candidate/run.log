@@ -1,0 +1,32 @@
+INFO 10-01 07:43:32 [__init__.py:52] Available plugins for group vllm.platform_plugins:
+INFO 10-01 07:43:32 [__init__.py:54] - ascend -> vllm_ascend:register
+INFO 10-01 07:43:32 [__init__.py:57] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 10-01 07:43:32 [__init__.py:272] Platform plugin ascend is activated
+INFO 10-01 07:43:32 [platform.py:71] Breakable CUDAGraph on Ascend is opt-in; using VLLM_USE_BREAKABLE_CUDAGRAPH=0.
+WARNING 10-01 07:43:41 [indexer_topk.py:29] Failed to import the DeepSelect extension (vllm._deepselect_C): No module named 'vllm._deepselect_C'
+[W1001 07:43:43.695567107 NPUCachingAllocator.cpp:202] Warning: The current CANN and HDK(driver) versions require processing for 32 padding size, with memory allocation. (function operator())
+t1-d4096-signed0-norm0-i1-p2.0 PASS
+t1-d4096-signed0-norm1-i3-p1.5 PASS
+t1-d4096-signed1-norm0-i20-p2.0 PASS
+t1-d4096-signed1-norm1-i1-p1.5 PASS
+t17-d4096-signed0-norm0-i3-p2.0 PASS
+t17-d4096-signed0-norm1-i20-p1.5 PASS
+t17-d4096-signed1-norm0-i1-p2.0 PASS
+t17-d4096-signed1-norm1-i3-p1.5 PASS
+t129-d4096-signed0-norm0-i20-p2.0 PASS
+t129-d4096-signed0-norm1-i1-p1.5 PASS
+t129-d4096-signed1-norm0-i3-p2.0 PASS
+t129-d4096-signed1-norm1-i20-p1.5 PASS
+t1-d7168-signed0-norm0-i1-p2.0 PASS
+t1-d7168-signed0-norm1-i3-p1.5 PASS
+t1-d7168-signed1-norm0-i20-p2.0 PASS
+t1-d7168-signed1-norm1-i1-p1.5 PASS
+t17-d7168-signed0-norm0-i3-p2.0 PASS
+t17-d7168-signed0-norm1-i20-p1.5 PASS
+t17-d7168-signed1-norm0-i1-p2.0 PASS
+t17-d7168-signed1-norm1-i3-p1.5 PASS
+t129-d7168-signed0-norm0-i20-p2.0 PASS
+t129-d7168-signed0-norm1-i1-p1.5 PASS
+t129-d7168-signed1-norm0-i3-p2.0 PASS
+t129-d7168-signed1-norm1-i20-p1.5 PASS
+DECODER_METHOD_RESULTS 24 0

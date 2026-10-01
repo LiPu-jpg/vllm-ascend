@@ -1,0 +1,21 @@
+PROGRAM_COMPLETED batch-comb2-kernel-selection-baseline
+PROGRAM_COMPLETED batch-comb2-kernel-selection-candidate
+RETAINED_STATUS batch-comb2-nightly-baseline 1
+RETAINED_STATUS batch-comb2-nightly-candidate 1
+NIGHTLY baseline 99 FAILED 12
+NIGHTLY candidate 99 FAILED 12
+ALL6_HF32_MIDPOINT_HARDWARE_REGRESSIONS_PASS_PER_ARM
+FAILURE_BITMAP_EQUAL; FAILURES_RETAINED_NOT_PASSED
+RETAINED_STATUS batch-comb2-fixture-baseline 1
+RETAINED_STATUS batch-comb2-fixture-candidate 1
+PROGRAM_COMPLETED batch-comb2-benchmark-fixture-baseline
+RETAINED_STATUS batch-comb2-benchmark-fixture-baseline 0
+PROGRAM_COMPLETED batch-comb2-benchmark-fixture-candidate
+RETAINED_STATUS batch-comb2-benchmark-fixture-candidate 0
+RETAINED_STATUS batch-comb2-boundary-baseline 1
+RETAINED_STATUS batch-comb2-boundary-candidate 1
+PROGRAM_COMPLETED batch-comb2-caller-baseline
+RETAINED_STATUS batch-comb2-caller-baseline 0
+PROGRAM_COMPLETED batch-comb2-caller-candidate
+RETAINED_STATUS batch-comb2-caller-candidate 0
+BATCH_COMB_CORRECTED_HF32_REFERENCE_RESULTS_RECORDED_WITH_FAILURES

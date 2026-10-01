@@ -1,0 +1,18 @@
+PROGRAM_COMPLETED batch-comb0r-kernel-selection-baseline
+PROGRAM_COMPLETED batch-comb0r-kernel-selection-candidate
+RETAINED_STATUS batch-comb1r-nightly-baseline 1
+RETAINED_STATUS batch-comb1r-nightly-candidate 1
+NIGHTLY baseline 93 FAILED 12
+NIGHTLY candidate 93 FAILED 12
+FAILURE_BITMAP_EQUAL; FAILURES_RETAINED_NOT_PASSED
+RETAINED_STATUS batch-comb1r-fixture-baseline 1
+RETAINED_STATUS batch-comb1r-fixture-candidate 1
+RETAINED_STATUS batch-comb1r-benchmark-fixture-baseline 1
+RETAINED_STATUS batch-comb1r-benchmark-fixture-candidate 1
+RETAINED_STATUS batch-comb1r-boundary-baseline 1
+RETAINED_STATUS batch-comb1r-boundary-candidate 1
+PROGRAM_COMPLETED batch-comb1r-caller-baseline
+RETAINED_STATUS batch-comb1r-caller-baseline 0
+PROGRAM_COMPLETED batch-comb1r-caller-candidate
+RETAINED_STATUS batch-comb1r-caller-candidate 0
+BATCH_COMB_ORIGINAL_REFERENCE_RECOVERY_RESULTS_RECORDED_WITH_FAILURES
